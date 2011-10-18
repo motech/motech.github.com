@@ -18,21 +18,15 @@
 									<li><a href="modules.html">Modules</a></li>
 								</ul>
 							</li>
-							<li><a href="wiki.html">Knowledgebase</a>
+							<li><a href="wiki.html">Documentation</a>
 								<ul>
-									<li><a href="wiki-single.html">Single&nbsp;article</a></li>
+									<li><a href="wiki-single.html">Wiki</a></li>
 									<li><a href="documentation/index.html">Documentation</a></li>
 									<li><a href="contact.html">Contact&nbsp;support</a></li>
 								</ul>
 							</li>
-							<li><a href="4-column-pricing.html">Contribute</a>
-								<ul>
-									<li><a href="3-column-pricing.html">Three&nbsp;columns</a></li>
-									<li><a href="4-column-pricing.html">Four&nbsp;columns</a></li>
-									<li><a href="5-column-pricing.html">Five&nbsp;columns</a></li>
-								</ul>
-							</li>
-							<li><a href="blog.html">Releases</a></li>
+							<li><a href="4-column-pricing.html">Contribute</a></li>
+							<li><a href="releases.html">Releases</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul><!-- end #nav -->
 					</nav>
