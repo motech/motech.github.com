@@ -4,9 +4,9 @@
 				<nav>
 					<ul id="footer-nav" class="clearfix">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="4-column-pricing.html">Sign up</a></li>
-						<li><a href="#">Legal</a></li>
-						<li><a href="wiki.html">Support</a></li>
+						<li><a href="http://www.grameenfoundation.org/">Grameen Foundation</a></li>
+						<li><a href="https://raw.github.com/motech/MOTECH/master/LICENSE.txt">License</a></li>
+						<li><a href="contribute.html">Contribute</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
@@ -14,7 +14,7 @@
 				<!-- Set margin-top on logo to negative half of image height (to center it vertically) in CSS (.footer-logo) -->
 				<a href="index.html"><img class="footer-logo" src="images/light-blue/logo-small.png" width="107" height="39" alt="logo" /></a>
 				
-				<small class="copyright">&copy;2011&nbsp;&nbsp;&middot;&nbsp;&nbsp;CheerApp HTML template by <a href="http://themeforest.net/user/pogoking?ref=pogoking">Mateusz Hajdziony</a></small>
+				<small class="copyright">&copy;2011&nbsp;&nbsp;&middot;&nbsp;&nbsp;Grameen Foundation USA</small>
 			
 			</div>
 		</footer><!-- end footer -->
