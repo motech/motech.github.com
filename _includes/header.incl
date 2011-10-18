@@ -1,0 +1,41 @@
+			<header id="header">
+				<div class="inner-wrap clearfix">
+				
+					<h1 id="logo">
+						<a href="index.html">Motech - Mobile Technology for Community Health</a>
+					</h1>
+					
+					<nav class="dropdown">
+						<ul id="nav" class="clearfix">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="#">Features</a>
+								<ul>
+									<li><a href="architecture.html">Architecture</a></li>
+									<li><a href="platform.html">Platform</a></li>
+									<li><a href="modules.html">Modules</a></li>
+								</ul>
+							</li>
+							<li><a href="wiki.html">Knowledgebase</a>
+								<ul>
+									<li><a href="wiki-single.html">Single&nbsp;article</a></li>
+									<li><a href="documentation/index.html">Documentation</a></li>
+									<li><a href="contact.html">Contact&nbsp;support</a></li>
+								</ul>
+							</li>
+							<li><a href="4-column-pricing.html">Contribute</a>
+								<ul>
+									<li><a href="3-column-pricing.html">Three&nbsp;columns</a></li>
+									<li><a href="4-column-pricing.html">Four&nbsp;columns</a></li>
+									<li><a href="5-column-pricing.html">Five&nbsp;columns</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Releases</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul><!-- end #nav -->
+					</nav>
+								
+				</div><!-- end .inner-wrap -->
+			</header><!-- end header -->
