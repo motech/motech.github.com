@@ -3,7 +3,9 @@ layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
 
-**Consumed events:**
+{% include releases/dr1/OutboxHeader.incl %}
+
+## Consumed events:
 
 ***
 

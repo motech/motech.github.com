@@ -3,6 +3,10 @@ layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
 
+{% include releases/dr1/ScheduleTrackingHeader.incl %}
+
+## Questions
+
 Alert configurations are specified in the JSON document and properly read into MilestoneWindows, as expected. However, the way alerts are currently sent does not incorporate these configurations whatsoever. Regardless of any custom alerts that have been defined, one alert will be sent per day during the Due, Late and Past periods of a milestone, until it is fulfilled or the schedule's duration has elapsed.
 
 ***

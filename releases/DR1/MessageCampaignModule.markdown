@@ -3,7 +3,7 @@ layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
 
-# **Message Campaign Module DR1**
+{% include releases/dr1/MessageCampaignHeader.incl %}
 
 ## Description
 The MoTeCH message campaign module is used to enroll users into messaging campaigns. A user may be a patient, worker, lab, facility, or other desired recipient of the information to be disseminated. A campaign is a course of informational messages that are sent to the target user on an assigned date or schedule. A user can be entered into a campaign at any point during its duration. Users may be removed or re-enrolled into campaigns. The languages and formats of the campaign messages can be specified (IVR, SMS, English, etc). Campaign messages follow a clearly defined schedule and are automatically triggered by the scheduling system.

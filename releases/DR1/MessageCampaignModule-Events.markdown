@@ -3,6 +3,7 @@ layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
 
+{% include releases/dr1/MessageCampaignHeader.incl %}
 
 ## Consumed events:
 CampaignMessageHandler handles and consumes events with the key EventKeys.MESSAGE_CAMPAIGN_SEND_EVENT_SUBJECT

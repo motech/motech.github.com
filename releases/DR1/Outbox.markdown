@@ -3,15 +3,12 @@ layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
 
-# Outbox Module
+{% include releases/dr1/OutboxHeader.incl %}
 
 ### Description
-***
 The outbox module acts as a repository of pending and saved voice messages for the client. The module provides a service for the retrieval and manipulation of messages and information from a party's outbox. A party could be a patient, nurse, doctor, etc. The module provides event handling that allows for the scheduling or unscheduling of voice messages for a specific time of day. End users may configure some of the details regarding the outbox's limits (for example, the maximum number of messages in the outbox may be configured).
 
 ### Information for implementation
-
-***
 
 The outbox module presents end users with the following functionality:
 
@@ -26,9 +23,6 @@ Pending and saved OutboundVoiceMessages are stored in CouchDB.
 
 
 ### Retrieval and manipulation of information and messages from an outbox
-
-***
-
 
 The VoiceOutBoxService interface provides methods for the retrieval and manipulation of information and messages from a party's outbox.
 
@@ -57,8 +51,6 @@ Several methods of the service require OutboundVoiceMessages. [See here](https:/
 
 
 ### Configuration of outbox properties
-
-***
 
 In the applicationOutboxAPI.xml configuration file, the number of days to keep saved messages and the maximum number of pending messages can be set through Spring setter injection:
 
@@ -109,8 +101,6 @@ This event is automatically created and scheduled by the schedule method.
 See event handling for a more detailed description regarding the payloads of these events.
 
 ### Outbox as an OSGi module
-
-***
 
 The Outbox acts as an OSGi module that exposes (exports) several of its constituent classes. VxmlController and OutboxExecutionHandler are not exported and are private to the module. These are accessed with HTTP requests and event emissions, respectively. The characteristics of the module are specified with a plugin in the Maven pom.xml.  
 

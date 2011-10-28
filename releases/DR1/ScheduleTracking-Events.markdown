@@ -3,8 +3,9 @@ layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
 
+{% include releases/dr1/ScheduleTrackingHeader.incl %}
 
-## Consumed events
+## Consumed events:
 
 ScheduleTrackingEventService handles and consumes the following keyed event(s):
 
