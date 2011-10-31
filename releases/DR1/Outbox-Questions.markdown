@@ -2,6 +2,9 @@
 layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
+{% include releases/dr1/OutboxHeader.incl %}
+
+## Questions
 
 What is the fundamental role of OutboxExecutionHandler? As it stands, implementing the scheduling of calls with the OutboxExecutionHandler would require writing and emitting your own scheduled events that are then handled. Should there be an easier way to schedule, or is this old functionality that is no longer delegated to the outbox module?
 

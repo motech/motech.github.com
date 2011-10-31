@@ -3,6 +3,8 @@ layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
 
+{% include releases/dr1/ScheduleTrackingHeader.incl %}
+
 ## Description
 The schedule tracking module allows a client to be enrolled in a clearly defined schedule consisting of specified milestones. Milestones represent windows of time that a certain criteria, treatment, course, etc should be fulfilled before moving on to the next milestone. Alerts are sent to the enrolled clients when they are due, late or past on the period of fulfillment. Clients may be enrolled in unlimited schedules, but can only be enrolled once in any given schedule.  
 

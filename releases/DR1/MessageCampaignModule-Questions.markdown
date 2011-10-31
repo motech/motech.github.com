@@ -3,6 +3,8 @@ layout: main
 title: MOTECH - Mobile Technology for Community Health
 ---
 
+{% include releases/dr1/MessageCampaignHeader.incl %}
+
 ## Questions and concerns regarding the message campaign module
 
 ***
