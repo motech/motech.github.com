@@ -12,7 +12,7 @@
 				</nav>
 				
 				<!-- Set margin-top on logo to negative half of image height (to center it vertically) in CSS (.footer-logo) -->
-				<a href="index.html"><img class="footer-logo" src="/images/light-blue/logo-small-subtext.png" width="107" height="39" alt="logo" /></a>
+				<a href="index.html"><img class="footer-logo" src="/images/light-blue/logo-small-subtext.png" width="117" height="50" alt="logo" /></a>
 				
 				<small class="copyright">&copy;2011&nbsp;&nbsp;&middot;&nbsp;&nbsp;Grameen Foundation USA</small> | 
 				<small class="copyright">Some icons from <a href="http://thenounproject.com/">The Noun Project</a></small>
