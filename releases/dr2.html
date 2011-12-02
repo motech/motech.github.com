@@ -11,9 +11,11 @@ title: MOTECH - Mobile Technology for Community Health
 					
 					<h4>Release Notes</h4>
 					
+					Please refer to the following <a href="http://code.google.com/p/motech/wiki/DR2">link</a> for the release notes for this release.
+					
 					<h4>Build Instructions</h4>
 					
-					You can build the platform by checking out the <a href="https://github.com/motech/MOTECH/tree/DR2">DR2</a> tag and running <pre>mvn install</pre>
+					You can build the platform by checking out the <a href="http://code.google.com/p/motech/source/list?name=DR2">DR2</a> tag and running <pre>mvn install</pre>
 					
 					You can include any platform module in your mvn build by placing the following in your pom:
 					
@@ -35,13 +37,13 @@ title: MOTECH - Mobile Technology for Community Health
 					
 					<h4>Installation Instructions</h4>
 					
-					We will be releasing a puppet script that can be run on Ubunutu to install and start pre-requisite services. The script will also pull down the DR2 release and install it in a tomcat container. If you want to manually install Motech you will need:
+					We will be releasing a puppet script that can be run on Ubuntu to install and start pre-requisite services. The script will also pull down the DR2 release and install it in a tomcat container. If you want to manually install Motech you will need:
 					
 					<ul>
 						<li>Tomcat</li>
 						<li>MySQL</li>
 						<li>CouchDB</li>
-						<li>java</li>
+						<li>Java</li>
 						<li>ActiveMQ</li>
 					</ul>
 					
@@ -52,99 +54,99 @@ title: MOTECH - Mobile Technology for Community Health
 					<h4>Modules</h4>
 					<table>
 						<tr>
-							<th>Name</th>
-							<th>Status</th>
-							<th>Documentation</th>
-							<th>Download</th>
-							<th>Description</th>
+							<th><b>Name</b></th>
+							<th><b>Status</b></th>
+							<th><b>Documentation</b></th>
+							<th><b>Download</b></th>
+							<th><b>Description</b></th>
 						</tr>
 						<tr>
-							<td>Alerts</td>
-							<td>Beta</td>
-							<td></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-alerts-api/DR2/motech-alerts-api-DR2.jar">jar</a></td>
+							<td align="left">Alerts</td>
+							<td align="left">Beta</td>
+							<td align="left"></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-alerts-api/DR2/motech-alerts-api-DR2.jar">jar</a></td>
 							<td>Collects alerts for users in an inbox like container</td>
 						</tr>
 						
 						<tr>
-							<td>Appointments</td>
-							<td>Beta</td>
-							<td></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-appointments/DR2/motech-appointments-DR2.jar">jar</a></td>
-							<td>Provides appointment scheduling and reminding</td>
+							<td align="left">Appointments</td>
+							<td align="left">Beta</td>
+							<td align="left"></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-appointments/DR2/motech-appointments-DR2.jar">jar</a></td>
+							<td align="left">Provides appointment scheduling and reminding</td>
 						</tr>
 
 						<tr>
-							<td>CMS Lite</td>
-							<td>Beta</td>
-							<td></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-cmslite/DR2/motech-cmslite-DR2.jar">jar</a></td>
-							<td>Provides basic content storage and retrieval</td>
+							<td align="left">CMS Lite</td>
+							<td align="left">Beta</td>
+							<td align="left"></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-cmslite/DR2/motech-cmslite-DR2.jar">jar</a></td>
+							<td align="left">Provides basic content storage and retrieval</td>
 						</tr>
 
 						<tr>
-							<td>Event Tracking</td>
-							<td>Alpha</td>
-							<td></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-event-tracking-api/DR2/motech-event-tracking-api-DR2.jar">jar</a></td>
-							<td></td>
+							<td align="left">Event Tracking</td>
+							<td align="left">Alpha</td>
+							<td align="left"></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-event-tracking-api/DR2/motech-event-tracking-api-DR2.jar">jar</a></td>
+							<td align="left"></td>
 						</tr>
 
 						<tr>
-							<td>Message Campaign</td>
-							<td>Beta</td>
-							<td><a href="/releases/DR2/MessageCampaignModule.html">Description</a> | <a href="/releases/DR2/MessageCampaignModule-Events.html">Events</a> | <a href="/releases/DR2/MessageCampaignModule-Questions.html">Questions</a></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-message-campaign/DR2/motech-message-campaign-DR2.jar">jar</a></td>
-							<td>Enroll users in drip campaigns with flexibly content scheduling rules.</td>
+							<td align="left">Message Campaign</td>
+							<td align="left">Beta</td>
+							<td align="left"><a href="/releases/DR2/MessageCampaignModule.html">Description</a> | <a href="/releases/DR2/MessageCampaignModule-Events.html">Events</a> | <a href="/releases/DR2/MessageCampaignModule-Questions.html">Questions</a></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-message-campaign/DR2/motech-message-campaign-DR2.jar">jar</a></td>
+							<td align="left">Enroll users in drip campaigns with flexibly content scheduling rules.</td>
 						</tr>
 
 
 						<tr>
-							<td>Outbox</td>
-							<td>Beta</td>
-							<td><a href="/releases/DR2/Outbox.html">Description</a> | <a href="/releases/DR2/Outbox-Events.html">Events</a> | <a href="/releases/DR2/Outbox-Questions.html">Questions</a></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-outbox/DR2/motech-outbox-DR2.jar">jar</a></td>
-							<td>A voicemail like messaging system for end users</td>
+							<td align="left">Outbox</td>
+							<td align="left">Beta</td>
+							<td align="left"><a href="/releases/DR2/Outbox.html">Description</a> | <a href="/releases/DR2/Outbox-Events.html">Events</a> | <a href="/releases/DR2/Outbox-Questions.html">Questions</a></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-outbox/DR2/motech-outbox-DR2.jar">jar</a></td>
+							<td align="left">A voicemail like messaging system for end users</td>
 						</tr>
 						
 						<tr>
-							<td>Pill Reminder</td>
-							<td>Beta</td>
-							<td></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-pillreminder/DR2/motech-pillreminder-DR2.jar">jar</a></td>
-							<td>A flexible reminder system focused on medication </td>
+							<td align="left">Pill Reminder</td>
+							<td align="left">Beta</td>
+							<td align="left"></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-pillreminder/DR2/motech-pillreminder-DR2.jar">jar</a></td>
+							<td align="left">A flexible reminder system focused on medication </td>
 						</tr>
 
 						<tr>
-							<td>Schedule Tracking</td>
-							<td>Alpha</td>
-							<td><a href="/releases/DR2/ScheduleTracking.html">Description</a> | <a href="/releases/DR2/ScheduleTracking-Events.html">Events</a> | <a href="/releases/DR2/ScheduleTracking-Questions.html">Questions</a></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-scheduletracking-api/DR2/motech-scheduletracking-api-DR2.jar">jar</a></td>
-							<td> </td>
+							<td align="left">Schedule Tracking</td>
+							<td align="left">Alpha</td>
+							<td align="left"><a href="/releases/DR2/ScheduleTracking.html">Description</a> | <a href="/releases/DR2/ScheduleTracking-Events.html">Events</a> | <a href="/releases/DR2/ScheduleTracking-Questions.html">Questions</a></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-scheduletracking-api/DR2/motech-scheduletracking-api-DR2.jar">jar</a></td>
+							<td align="left"> </td>
 						</tr>
 
 						<tr>
-							<td>Asterisk IVR</td>
-							<td>Beta</td>
-							<td></td>
-							<td>N/A</td>
-							<td>Connects the platform IVR with a asterisk server using VoiceGlue VXML browser</td>
+							<td align="left">Asterisk IVR</td>
+							<td align="left">Beta</td>
+							<td align="left"></td>
+							<td align="left">N/A</td>
+							<td align="left">Connects the platform IVR with a asterisk server using VoiceGlue VXML browser</td>
 						</tr>
 						
 						<tr>
-							<td>Voxeo IVR</td>
-							<td>Alpha</td>
-							<td></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/voxeo/DR2/voxeo-DR2.jar">jar</a></td>
-							<td>Connects the platform IVR with <a href="http://www.voxeo.com/">Voxeo's</a> hosted IVR</td>
+							<td align="left">Voxeo IVR</td>
+							<td align="left">Alpha</td>
+							<td align="left"></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/voxeo/DR2/voxeo-DR2.jar">jar</a></td>
+							<td align="left">Connects the platform IVR with <a href="http://www.voxeo.com/">Voxeo's</a> hosted IVR</td>
 						</tr>
 						
 						<tr>
-							<td>Kookoo IVR</td>
-							<td>Beta</td>
-							<td></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-ivr-kookoo/DR2/motech-ivr-kookoo-DR2.jar">jar</a></td>
-							<td>Connects the platform IVR with <a href="http://www.kookoo.in/">Kookoo's</a> hosted IVR</td>
+							<td align="left">Kookoo IVR</td>
+							<td align="left">Beta</td>
+							<td align="left"></td>
+							<td align="left"><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-ivr-kookoo/DR2/motech-ivr-kookoo-DR2.jar">jar</a></td>
+							<td align="left">Connects the platform IVR with <a href="http://www.kookoo.in/">Kookoo's</a> hosted IVR</td>
 						</tr>
 					</table>
 					
@@ -155,7 +157,7 @@ title: MOTECH - Mobile Technology for Community Health
 					The MOTECH platform is available under the following OpenSource software license: <br>
 
 					<br>
-					Copyright (c) 2011 Grameen Foundation USA.  All rights reserved. <br>
+					Copyright (c) 2011 Grameen Foundation USA. All rights reserved. <br>
 					
 					<br>
 					Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: <br>
