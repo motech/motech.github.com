@@ -8,7 +8,7 @@
 					<nav class="dropdown">
 						<ul id="nav" class="clearfix">
 							<li><a href="/index.html">Home</a></li>
-							<li>Google Code
+							<li>Code
                                 <ul>
                                         <li><a href="http://code.google.com/p/motech/">Source</a></li>
                                         <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
@@ -18,6 +18,7 @@
 							<li><a href="/contribute.html">Contribute</a></li>
 							<li><a href="/releases.html">Releases</a>
                               <ul>
+                                <li><a href="/releases/dr1.html">Developer Release 1</a></li>
                                 <li><a href="/releases/dr2.html">Developer Release 2</a></li>
                               </ul>
                             </li>
