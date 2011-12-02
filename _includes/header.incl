@@ -8,7 +8,7 @@
 					<nav class="dropdown">
 						<ul id="nav" class="clearfix">
 							<li><a href="/index.html">Home</a></li>
-							<li>Github
+							<li>Google Code
                                 <ul>
                                         <li><a href="http://code.google.com/p/motech/">Source</a></li>
                                         <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
