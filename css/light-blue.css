@@ -2446,7 +2446,7 @@ form #response .success {
 
 table {
 	border-collapse: separate;
-	text-align: center;
+	text-align: left;
 	vertical-align: center;
 	
 	-moz-border-radius: 4px;
