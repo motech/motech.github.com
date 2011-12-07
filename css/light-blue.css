@@ -2460,12 +2460,12 @@ table {
 }
 
 thead tr {
-	background-color: gray;
 	color: white;
 }
 
 thead td {
 	background: #ebedf0 url(../images/light-blue/background-texture.png) repeat 0 0;
+	background-color: gray;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 10px;
