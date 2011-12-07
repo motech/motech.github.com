@@ -2503,10 +2503,6 @@ thead td {
 	);
 }
 
-thead td:last-child {
-	border-right: 0;
-}
-
 thead td.highlight {
 	background: #e1e3e5 url(../images/light-blue/background-texture.png) repeat 0 0;
 	border-right-width: 1px;
@@ -2544,15 +2540,6 @@ thead td.highlight {
     	#dee0e3 0%,
     	#e6e8eb 100%
 	);
-}
-
-tbody tr:first-child td {
-	background: #f5f7fa url(../images/light-blue/background-texture.png) repeat 0 0;
-	border-right: 1px solid #e4e6e8;
-}
-
-tbody tr:first-child td:last-child {
-	border-right: 0;
 }
 
 tbody tr:first-child td.highlight {
