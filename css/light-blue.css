@@ -2461,8 +2461,7 @@ table {
 
 thead td {
 	background: #ebedf0 url(../images/light-blue/background-texture.png) repeat 0 0;
-	border-bottom: 1px solid #dcdee0;
-	border-right: 1px solid #d5d6d9;
+	background-color: gray;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 10px;
