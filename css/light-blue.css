@@ -2459,10 +2459,6 @@ table {
 	width: 958px;
 }
 
-thead tr {
-	color: white;
-}
-
 thead td {
 	background: #ebedf0 url(../images/light-blue/background-texture.png) repeat 0 0;
 	background-color: rgb(124, 169, 214);
