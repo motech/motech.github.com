@@ -1,0 +1,236 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+				<div class="column-container clearfix">
+					
+					<h4>Description</h4>
+					
+					Release 0.5 of the MOTECH platform is meant as an early technology release focused on developers. At this point in time the system is functional, but we have not spent much time yet on documentation or user interface so the use of the system for non-developers is limited.
+					
+					<h4>Release Notes</h4>
+					
+					Please refer to the following <a href="https://code.google.com/p/motech/wiki/ReleaseZeroPointFour">link</a> for the release notes for this release.
+					
+					<h4>Build Instructions</h4>
+					
+					You can build the platform by checking out the <a href="http://code.google.com/p/motech/source/list?name=motech-0.5">motech-0.5</a> tag and running <pre>mvn install</pre>
+					
+					You can include any platform module in your mvn build by placing the following in your pom:
+					
+					{% highlight xml %}
+				    <repositories>
+				        <repository>
+				            <id>motech-repo</id>
+				            <name>Motech Maven Repository</name>
+				            <url>http://nexus.motechproject.org/content/repositories/public</url>
+				        </repository>
+				    </repositories>
+				
+					<dependency>
+					  <groupId>org.motechproject</groupId>
+					  <artifactId>[module name]</artifactId>
+					  <version>0.5</version>
+					</dependency>
+					{% endhighlight %}
+					
+					<h4>Installation Instructions</h4>
+					
+					We will be releasing a puppet script that can be run on Ubuntu to install and start pre-requisite services. The script will also pull down release 0.5 and install it in a tomcat container. If you want to manually install Motech you will need:
+					
+					<ul>
+						<li>Tomcat</li>
+						<li>MySQL</li>
+						<li>CouchDB</li>
+						<li>Java</li>
+						<li>ActiveMQ</li>
+					</ul>
+					
+					<h4>Platform</h4>
+					
+					Grab the platform war from our nexus repository: <a href="http://nexus.motechproject.org/content/groups/all/org/motechproject/motech-platform-server/0.5/motech-platform-server-0.5.war">war</a>
+					
+					<h4>Modules</h4>
+					<table border="1">
+						<thead>
+							<tr>
+							<td>Name</td>
+							<td>Status</td>
+							<td>Documentation</td>
+							<td>Download</td>
+							<td>Description</td>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Alerts</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-alerts-api/0.5/motech-alerts-api-0.5.jar">jar</a></td>
+							<td>Collects alerts for users in an inbox-like container</td>
+						</tr>
+						
+						<tr>
+							<td>Appointments</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-appointments/0.5/motech-appointments-0.5.jar">jar</a></td>
+							<td>Provides appointment scheduling and reminding</td>
+						</tr>
+
+						<tr>
+							<td>CMS Lite</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-cmslite/0.5/motech-cmslite-0.5.jar">jar</a></td>
+							<td>Provides basic content storage and retrieval</td>
+						</tr>
+
+						<tr>
+							<td>Decision Tree</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-decisiontree/0.5/motech-platform-decisiontree-0.5.jar">jar</a></td>
+							<td>Provides APIs for constructing an IVR decision tree</td>
+						</tr>
+
+						<tr>
+							<td>Event Tracking</td>
+							<td>Alpha</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-event-tracking-api/0.5/motech-event-tracking-api-0.5.jar">jar</a></td>
+							<td>Provides basic operations for publishing and subscribing events</td>
+						</tr>
+
+						<tr>
+							<td>IVR</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-ivr/0.5/motech-platform-ivr-0.5.jar">jar</a></td>
+							<td>Provides basic specification for integrating platform with an IVR service provider; Also, connects the platform IVR with an asterisk server using VoiceGlue VXML browser</td>
+						</tr>
+
+						<tr>
+							<td>IVR Kookoo</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-ivr-kookoo/0.5/motech-ivr-kookoo-0.5.jar">jar</a></td>
+							<td>Integrates the platform with <a href="http://www.kookoo.in/">Kookoo's</a> hosted IVR</td>
+						</tr>
+						
+						<tr>
+							<td>IVR Voxeo</td>
+							<td>Alpha</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/voxeo/0.5/voxeo-0.5.jar">jar</a></td>
+							<td>Integrates the platform with <a href="http://www.voxeo.com/">Voxeo's</a> hosted IVR</td>
+						</tr>
+
+						<tr>
+							<td>Message Campaign</td>
+							<td>Beta</td>
+							<td><a href="http://code.google.com/p/motech/wiki/MessageCampaignModule">Description</a> | <a href="http://code.google.com/p/motech/wiki/EventsConsumedAndEmittedByTheMessageCampaignModule">Events</a> | <a href="http://code.google.com/p/motech/wiki/MessageCampaignQuestions">Questions</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-message-campaign/0.5/motech-message-campaign-0.5.jar">jar</a></td>
+							<td>Enrolls users in message campaigns with flexible content scheduling rules</td>
+						</tr>
+
+						<tr>
+							<td>MRS (Medical Record System)</td>
+							<td>Alpha</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-mrs-api/0.5/motech-mrs-api-0.5.jar">jar</a></td>
+							<td>Provides basic specification for integrating platform with a medical record system</td>
+						</tr>
+
+						<tr>
+							<td>OpenMRS</td>
+							<td>Alpha</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-openmrs-api/0.5/motech-openmrs-api-0.5.jar">jar</a></td>
+							<td>Integrates platform with OpenMRS system</td>
+						</tr>						
+						
+						<tr>
+							<td>OpenMRS OMOD</td>
+							<td>Alpha</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-openmrs-omod/0.5/motech-openmrs-omod-api-0.5.jar">jar</a></td>
+							<td>Provides OpenMRS specific OMOD implementation</td>
+						</tr>
+
+						<tr>
+							<td>Outbox</td>
+							<td>Beta</td>
+							<td><a href="http://code.google.com/p/motech/wiki/OutboxModule">Description</a> | <a href="http://code.google.com/p/motech/wiki/EventsConsumedAndEmittedByTheOutboxModule">Events</a> | <a href="http://code.google.com/p/motech/wiki/OutboxQuestions">Questions</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-outbox/0.5/motech-outbox-0.5.jar">jar</a></td>
+							<td>A voicemail like messaging system for end users</td>
+						</tr>
+						
+						<tr>
+							<td>Pill Reminder</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-pillreminder/0.5/motech-pillreminder-0.5.jar">jar</a></td>
+							<td>A flexible reminder system focused on medication </td>
+						</tr>
+
+						<tr>
+							<td>Scheduler</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-scheduler/0.5/motech-platform-scheduler-0.5.jar">jar</a></td>
+							<td>Provides APIs for scheduling and unscheduling reminder jobs</td>
+						</tr>
+
+						<tr>
+							<td>Schedule Tracking</td>
+							<td>Alpha</td>
+							<td><a href="http://code.google.com/p/motech/wiki/ScheduleTrackingModule">Description</a> | <a href="http://code.google.com/p/motech/wiki/EventsConsumedAndEmittedByTheScheduleTrackingModule">Events</a> | <a href="http://code.google.com/p/motech/wiki/ScheduleTrackingQuestions">Questions</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-scheduletracking-api/0.5/motech-scheduletracking-api-0.5.jar">jar</a></td>
+							<td>Enrolls users for alerts based on complex scheduling rules</td>
+						</tr>
+
+						<tr>
+							<td>SMS</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-sms-api/0.5/motech-sms-api-0.5.jar">jar</a></td>
+							<td>Provides basic specification for integrating platform with an SMS provider to send out SMS messages</td>
+						</tr>
+
+						<tr>
+							<td>SMS Kookoo</td>
+							<td>Beta</td>
+							<td>In Progress</td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-sms-kookoo/0.5/motech-sms-kookoo-0.5.jar">jar</a></td>
+							<td>Integrates platform with <a href="http://www.kookoo.in/">Kookoo</a> to send out SMS messages</td>
+						</tr>
+					</tbody>
+					</table>
+					
+					
+					<br>
+					<h4>Open Source License</h4>
+					
+					The MOTECH platform is available under the following OpenSource software license: <br>
+
+					<br>
+					Copyright (c) 2011 Grameen Foundation USA. All rights reserved. <br>
+					
+					<br>
+					Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: <br>
+
+
+					1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. <br>
+
+					2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. <br>
+
+					3. Neither the name of Grameen Foundation USA, nor its respective contributors may be used to endorse or promote products derived from this software without specific prior written permission. <br>
+
+					<br>					
+					THIS SOFTWARE IS PROVIDED BY GRAMEEN FOUNDATION USA AND ITS CONTRIBUTORS *AS IS* AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL GRAMEEN FOUNDATION USA OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+
+
+				</div><!-- end .column-container -->
+					
