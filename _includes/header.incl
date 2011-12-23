@@ -7,7 +7,7 @@
 					
 					<nav class="dropdown">
 						<ul id="nav" class="clearfix">
-							<li><a href="/index.html">Home</a></li>
+							<li><a href="~/index.html">Home</a></li>
 							<li>Code
                                 <ul>
                                         <li><a href="http://code.google.com/p/motech/source/checkout">Source</a></li>
