@@ -7,15 +7,15 @@ title: MOTECH - Mobile Technology for Community Health
 					
 					<h4>Description</h4>
 					
-					Release 0.6 of the MOTECH platform is meant as an early technology release focused on developers. At this point in time the system is functional, but we have not spent much time yet on documentation or user interface so the use of the system for non-developers is limited.
+					Release 0.7 of the MOTECH platform is meant as an early technology release focused on developers. At this point in time the system is functional, but we have not spent much time yet on documentation or user interface so the use of the system for non-developers is limited.
 					
 					<h4>Release Notes</h4>
 					
-					Please refer to the following <a href="https://code.google.com/p/motech/wiki/ReleaseZeroPointSix">link</a> for the release notes for this release.
+					Please refer to the following <a href="https://code.google.com/p/motech/wiki/ReleaseZeroPointSeven">link</a> for the release notes for this release.
 					
 					<h4>Build Instructions</h4>
 					
-					You can build the platform by checking out the <a href="http://code.google.com/p/motech/source/list?name=motech-0.6">motech-0.6</a> tag and running <pre>mvn install</pre>
+					You can build the platform by checking out the <a href="http://code.google.com/p/motech/source/list?name=motech-0.7">motech-0.7</a> tag and running <pre>mvn install</pre>
 					
 					You can include any platform module in your mvn build by placing the following in your pom:
 					
@@ -31,13 +31,13 @@ title: MOTECH - Mobile Technology for Community Health
 					<dependency>
 					  <groupId>org.motechproject</groupId>
 					  <artifactId>[module name]</artifactId>
-					  <version>0.6</version>
+					  <version>0.7</version>
 					</dependency>
 					{% endhighlight %}
 					
 					<h4>Installation Instructions</h4>
 					
-					We will be releasing a puppet script that can be run on Ubuntu to install and start pre-requisite services. The script will also pull down release 0.6 and install it in a tomcat container. If you want to manually install Motech you will need:
+					We will be releasing a puppet script that can be run on Ubuntu to install and start pre-requisite services. The script will also pull down release 0.7 and install it in a tomcat container. If you want to manually install Motech you will need:
 					
 					<ul>
 						<li>Tomcat</li>
@@ -49,7 +49,7 @@ title: MOTECH - Mobile Technology for Community Health
 					
 					<h4>Platform</h4>
 					
-					Grab the platform war from our nexus repository: <a href="http://nexus.motechproject.org/content/groups/all/org/motechproject/motech-platform-server/0.6/motech-platform-server-0.6.war">war</a>
+					Grab the platform war from our nexus repository: <a href="http://nexus.motechproject.org/content/groups/all/org/motechproject/motech-platform-server/0.7/motech-platform-server-0.7.war">war</a>
 					
 					<h4>Modules</h4>
 					<table border="1">
@@ -67,7 +67,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>Alerts</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-alerts-api/0.6/motech-alerts-api-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-alerts-api/0.7/motech-alerts-api-0.7.jar">jar</a></td>
 							<td>Collects alerts for users in an inbox-like container</td>
 						</tr>
 						
@@ -75,7 +75,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>Appointments</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-appointments/0.6/motech-appointments-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-appointments/0.7/motech-appointments-0.7.jar">jar</a></td>
 							<td>Provides appointment scheduling and reminding</td>
 						</tr>
 
@@ -83,7 +83,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>CMS Lite</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-cmslite/0.6/motech-cmslite-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-cmslite/0.7/motech-cmslite-0.7.jar">jar</a></td>
 							<td>Provides basic content storage and retrieval</td>
 						</tr>
 
@@ -91,7 +91,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>Decision Tree</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-decisiontree/0.6/motech-platform-decisiontree-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-decisiontree/0.7/motech-platform-decisiontree-0.7.jar">jar</a></td>
 							<td>Provides APIs for constructing an IVR decision tree</td>
 						</tr>
 
@@ -99,7 +99,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>IVR</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-ivr/0.6/motech-platform-ivr-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-ivr/0.7/motech-platform-ivr-0.7.jar">jar</a></td>
 							<td>Provides basic specification for integrating platform with an IVR service provider; Also, connects the platform IVR with an asterisk server using VoiceGlue VXML browser</td>
 						</tr>
 
@@ -107,7 +107,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>IVR Kookoo</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-ivr-kookoo/0.6/motech-ivr-kookoo-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-ivr-kookoo/0.7/motech-ivr-kookoo-0.7.jar">jar</a></td>
 							<td>Integrates the platform with <a href="http://www.kookoo.in/">Kookoo's</a> hosted IVR</td>
 						</tr>
 						
@@ -115,7 +115,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>IVR Voxeo</td>
 							<td>Alpha</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/voxeo/0.6/voxeo-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/voxeo/0.7/voxeo-0.7.jar">jar</a></td>
 							<td>Integrates the platform with <a href="http://www.voxeo.com/">Voxeo's</a> hosted IVR</td>
 						</tr>
 
@@ -123,7 +123,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>Message Campaign</td>
 							<td>Beta</td>
 							<td><a href="http://code.google.com/p/motech/wiki/MessageCampaignModule">Description</a> | <a href="http://code.google.com/p/motech/wiki/EventsConsumedAndEmittedByTheMessageCampaignModule">Events</a> | <a href="http://code.google.com/p/motech/wiki/MessageCampaignQuestions">Questions</a></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-message-campaign/0.6/motech-message-campaign-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-message-campaign/0.7/motech-message-campaign-0.7.jar">jar</a></td>
 							<td>Enrolls users in message campaigns with flexible content scheduling rules</td>
 						</tr>
 
@@ -131,7 +131,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>MRS (Medical Record System)</td>
 							<td>Alpha</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-mrs-api/0.6/motech-mrs-api-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-mrs-api/0.7/motech-mrs-api-0.7.jar">jar</a></td>
 							<td>Provides basic specification for integrating platform with a medical record system</td>
 						</tr>
 
@@ -139,7 +139,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>OpenMRS</td>
 							<td>Alpha</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-openmrs-api/0.6/motech-openmrs-api-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-openmrs-api/0.7/motech-openmrs-api-0.7.jar">jar</a></td>
 							<td>Integrates platform with OpenMRS system</td>
 						</tr>						
 						
@@ -147,7 +147,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>OpenMRS OMOD</td>
 							<td>Alpha</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-openmrs-omod/0.6/motech-openmrs-omod-api-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-openmrs-omod/0.7/motech-openmrs-omod-api-0.7.jar">jar</a></td>
 							<td>Provides OpenMRS specific OMOD implementation</td>
 						</tr>
 
@@ -155,7 +155,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>Outbox</td>
 							<td>Beta</td>
 							<td><a href="http://code.google.com/p/motech/wiki/OutboxModule">Description</a> | <a href="http://code.google.com/p/motech/wiki/EventsConsumedAndEmittedByTheOutboxModule">Events</a> | <a href="http://code.google.com/p/motech/wiki/OutboxQuestions">Questions</a></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-outbox/0.6/motech-outbox-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-outbox/0.7/motech-outbox-0.7.jar">jar</a></td>
 							<td>A voicemail like messaging system for end users</td>
 						</tr>
 						
@@ -163,7 +163,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>Pill Reminder</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-pillreminder/0.6/motech-pillreminder-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-pillreminder/0.7/motech-pillreminder-0.7.jar">jar</a></td>
 							<td>A flexible reminder system focused on medication </td>
 						</tr>
 
@@ -171,7 +171,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>Scheduler</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-scheduler/0.6/motech-platform-scheduler-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-platform-scheduler/0.7/motech-platform-scheduler-0.7.jar">jar</a></td>
 							<td>Provides APIs for scheduling and unscheduling reminder jobs</td>
 						</tr>
 
@@ -179,7 +179,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>Schedule Tracking</td>
 							<td>Alpha</td>
 							<td><a href="http://code.google.com/p/motech/wiki/ScheduleTrackingModule">Description</a> | <a href="http://code.google.com/p/motech/wiki/EventsConsumedAndEmittedByTheScheduleTrackingModule">Events</a> | <a href="http://code.google.com/p/motech/wiki/ScheduleTrackingQuestions">Questions</a></td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-scheduletracking-api/0.6/motech-scheduletracking-api-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-scheduletracking-api/0.7/motech-scheduletracking-api-0.7.jar">jar</a></td>
 							<td>Enrolls users for alerts based on complex scheduling rules</td>
 						</tr>
 
@@ -187,7 +187,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>SMS</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-sms-api/0.6/motech-sms-api-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-sms-api/0.7/motech-sms-api-0.7.jar">jar</a></td>
 							<td>Provides basic specification for integrating platform with an SMS provider to send/receive SMS messages</td>
 						</tr>
 
@@ -195,7 +195,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>SMS HTTP</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-sms-http/0.6/motech-sms-http-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-sms-http/0.7/motech-sms-http-0.7.jar">jar</a></td>
 							<td>Allows platform to integrate with an HTTP-based SMS gateway to send SMS messages</td>
 						</tr>
 						
@@ -203,7 +203,7 @@ title: MOTECH - Mobile Technology for Community Health
 							<td>SMS SMPP</td>
 							<td>Beta</td>
 							<td>In Progress</td>
-							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-sms-smpp/0.6/motech-sms-smpp-0.6.jar">jar</a></td>
+							<td><a href="http://nexus.motechproject.org/service/local/repositories/releases/content/org/motechproject/motech-sms-smpp/0.7/motech-sms-smpp-0.7.jar">jar</a></td>
 							<td>Allows platform to integrate with an SMPP-based SMS gateway to send/receive SMS messages</td>
 						</tr>
 					</tbody>
