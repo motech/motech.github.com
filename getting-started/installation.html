@@ -1,0 +1,61 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+  
+  {% include getting-started/navigation.incl %}
+
+  <div class="column five-sixths">
+
+    <h3>Installation</h3>
+
+    <p>This installation guide was based on an ubuntu lucid 64bit machine.  It assumes you are running on the same.  Motech will run on other operating systems but the commands required and external pckages will change.  The changes shouldn't be drastic but they aren't documented here.</p>
+    
+    <p>To get up and running with MOTECH you'll need to first install dependent software and systems, then check out and build the code and lastly deploy the artifacts.  This guide will walk you through all the required steps to go from clean machine to a functioning Motech installation.<p>
+
+    <h4>Dependent Software</h4>
+
+    <p>To develop Motech you'll need to install some third-party software.  These packages are available in most distrubtions package managers or are easily found online for download and installation.</p>
+
+    <ul>
+      <li>Git</li>
+      <li>Java</li>
+      <li>Maven 2</li>
+      <li>Curl</li>
+    </ul>
+
+    <p>To install these on a debian based system do the following:</p>
+
+    {% highlight bash %}
+    # Install required software 
+    # git-core provides git which is the source control software used in Motech
+    # python-software-properties provides add-apt-repository
+    # maven2 is the build system used within Motech
+    # curl is used by some of our unit/integration tests to set up CouchDB in known states.
+    sudo apt-get install git-core python-software-properties maven2 curl
+
+    # Add the partner repository and install sun java from it
+    sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
+    sudo apt-get update
+    sudo apt-get install sun-java6-jdk
+
+    # Remove Open JDK to prevent conflicts
+    sudo apt-get remove openjdk-6-jdk openjdk-6-jre openjdk-6-jre-headless openjdk-6-jre-lib
+    {% endhighlight %}
+
+    <h4>Dependent Systems</h4>
+
+    <p>Motech makes use of a number of third-party open source systems and they each need to be installed for Motech to function correclty.  We use Tomcat as our application container, ActiveMQ as our message queue, Quartz and MySQL for timers adn CouchDB as our persitence store.  Each of these packages can be downloaded from their respective sites:</p>
+
+    <ul>
+      <li><a href="http://tomcat.apache.org/download-70.cgi">Tomcat7</a></li>
+      <li><a href="http://activemq.apache.org/activemq-551-release.html">ActiveMQ</a><li>
+      <li><a href="http://couchdb.apache.org/downloads.html">CouchDB</a><li>
+      <li><a href="http://dev.mysql.com/downloads/mysql/5.5.html">MySQL</a></li>
+    </ul>
+  </div>
+
+</div><!-- end .column-container -->
+  

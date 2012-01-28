@@ -1,33 +1,34 @@
-			<header id="header">
-				<div class="inner-wrap clearfix">
-				
-					<h1 id="logo">
-						<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>
-					</h1>
-					
-					<nav class="dropdown">
-						<ul id="nav" class="clearfix">
-							<li><a href="/index.html">Home</a></li>
-							<li>Code
-                                <ul>
-                                        <li><a href="http://code.google.com/p/motech/source/checkout">Source</a></li>
-                                        <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
-                                        <li><a href="http://code.google.com/p/motech/issues/list">Issues</a></li>
-                                 </ul>
-                            </li>
-							<li><a href="/contribute.html">Contribute</a></li>
-							<li><a href="/releases.html">Releases</a>
-                              <ul>
-                                <li><a href="/releases/r0.7.html">Release 0.7</a></li>
-                                <li><a href="/releases/r0.6.html">Release 0.6</a></li>
-                                <li><a href="/releases/r0.5.html">Release 0.5</a></li>
-                                <li><a href="/releases/r0.4.html">Release 0.4</a></li>
-                                <li><a href="/releases/dr1.html">Developer Release 1</a></li>
-                              </ul>
-                            </li>
-							<li><a href="/contact.html">Contact</a></li>
-						</ul><!-- end #nav -->
-					</nav>
-								
-				</div><!-- end .inner-wrap -->
-			</header><!-- end header -->
+<header id="header">
+    <div class="inner-wrap clearfix">
+    
+        <h1 id="logo">
+            <a href="/index.html">MOTECH - Mobile Technology for Community Health</a>
+        </h1>
+        
+        <nav class="dropdown">
+            <ul id="nav" class="clearfix">
+                <li><a href="/index.html">Home</a></li>
+                <li>Code
+                    <ul>
+                            <li><a href="http://code.google.com/p/motech/source/checkout">Source</a></li>
+                            <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
+                            <li><a href="http://code.google.com/p/motech/issues/list">Issues</a></li>
+                     </ul>
+                </li>
+                <li><a href="/getting-started/index.html">Getting Started</a></li>
+                <li><a href="/contribute.html">Contribute</a></li>
+                <li><a href="/releases.html">Releases</a>
+                  <ul>
+                    <li><a href="/releases/r0.7.html">Release 0.7</a></li>
+                    <li><a href="/releases/r0.6.html">Release 0.6</a></li>
+                    <li><a href="/releases/r0.5.html">Release 0.5</a></li>
+                    <li><a href="/releases/r0.4.html">Release 0.4</a></li>
+                    <li><a href="/releases/dr1.html">Developer Release 1</a></li>
+                  </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul><!-- end #nav -->
+        </nav>
+                    
+    </div><!-- end .inner-wrap -->
+</header><!-- end header -->

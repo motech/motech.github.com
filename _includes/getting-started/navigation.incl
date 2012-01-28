@@ -1,0 +1,8 @@
+  <div class="column sixth">
+    <ul>
+      <li><h6><a href="/getting-started/">Overview</a></h6></li>
+      <li><h6><a href="/getting-started/installation.html">Installation</a></h6></li>
+      <li><h6><a href="/getting-started/source.html">Source</a></h6></li>
+      <li><h6><a href="/getting-started/devloping.html">Developing</a></h6></li>
+    </ul>
+  </div>
