@@ -15,7 +15,7 @@
                             <li><a href="http://code.google.com/p/motech/issues/list">Issues</a></li>
                      </ul>
                 </li>
-                <li><a href="/getting-started/index.html">Getting Started</a></li>
+<!--                <li><a href="/getting-started/index.html">Getting Started</a></li> -->
                 <li><a href="/contribute.html">Contribute</a></li>
                 <li><a href="/releases.html">Releases</a>
                   <ul>
