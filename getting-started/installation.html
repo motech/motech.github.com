@@ -11,7 +11,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h3>Installation</h3>
 
-    <p>This installation guide was based on an ubuntu lucid 64bit machine.  It assumes you are running on the same.  Motech will run on other operating systems but the commands required and external pckages will change.  The changes shouldn't be drastic but they aren't documented here.</p>
+    <p>This installation guide was based on an ubuntu lucid 64bit machine set up using <a href="http://vagrantup.com">vagrant</a>.  It assumes you are running on the same.  Motech will run on other operating systems but the commands required and external pckages will change.  The changes shouldn't be drastic but they aren't documented here.</p>
     
     <p>To get up and running with MOTECH you'll need to first install dependent software and systems, then check out and build the code and lastly deploy the artifacts.  This guide will walk you through all the required steps to go from clean machine to a functioning Motech installation.<p>
 
@@ -55,6 +55,21 @@ title: MOTECH - Mobile Technology for Community Health
       <li><a href="http://couchdb.apache.org/downloads.html">CouchDB</a><li>
       <li><a href="http://dev.mysql.com/downloads/mysql/5.5.html">MySQL</a></li>
     </ul>
+
+    <p>If you are running on a 64 bit linux system you can use the following script to download and install these systems for you.  The script places the systems in /opt and creates simple <a href="http://upstart.ubuntu.com/">upstart</a> scripts to start/stop the services.  It should be run as root.  Trust us, it's ok. :)
+
+    <script src="https://gist.github.com/1705702.js"> </script>
+  <h4>Code</h4>
+
+  <p>The code for motech is open souce and can be found on <a href="http://code.google.com/p/motech">Google Code</a>.  You'll need a working understand of <A href="http://git-scm.com/">git</a> to check it out and <a href="http://maven.apache.org/">maven</a> to compile it.  A more detailed description of the code architecture can be found in the <a href="/getting-started/index.html">Overview</a> while a description of the source tree can be found in the <a href="/getting-started/source.html">Source Overview</a> of this guide.</p>
+
+  <p>To simply check out and compile the code, make sure all dependent software is installed then enter these commands.</p>
+  {% highlight bash %}
+  git clone https://code.google.com/p/motech/
+  cd motech
+  mvn install
+  {% endhighlight %}
+
   </div>
 
 </div><!-- end .column-container -->

@@ -3074,6 +3074,16 @@ form .checkbox-replacer + label {
 ---------        MISC      ----------
 ---------------------------------- */
 
+ul.nav-tree ul {
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+.system-icon {
+	float: left;
+	width: 200px;
+}
+
 .alignleft {
 	float: left;
 }
