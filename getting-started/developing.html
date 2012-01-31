@@ -185,20 +185,13 @@ public class EventSubjects
     {% endhighlight %}
     
     <h4>AllGames.java</h4>
-    <p>This is the class that will provide access to our couch repository.  It's important that this class references the couch database we configured in our spring config.  Under the covers we use <a href="http://www.ektorp.org/">ektorp</a> to map java pojo's to couch documents and wee expose all the functionality that it provides so becoming familar with it will help you get the most out of couch db.  In here we could generate view methods that search by one or more fields.  We also could annotate methods with complete couch map reduce queries.  However since our demo doesn't need any of that we won't write them.  Instead we'll have a very simple class that lets us load a game by it's id.  We also get the "all" query for free, but we don't need that for our demo.</p>
+    <p>This is the class that will provide access to our couch repository.  It's important that this class references the couch database we configured in our spring config.  Under the covers we use <a href="http://www.ektorp.org/">ektorp</a> to map java pojo's to couch documents and we expose all the functionality that it provides so becoming familar with it will help you get the most out of couch db.  In here we could generate view methods that search by one or more fields.  We also could annotate methods with complete couch map reduce queries.  Instead we'll have a very simple class that can leverage all of the base methods.  We just need to set the type by extending the templetized MotechBaseRepository and passing our type to our super().</p>
 
     {% highlight java linenos=true %}
   public class AllGames extends MotechBaseRepository<Game> {
     @Autowired
     public AllGames(@Qualifier("pingPongDatabase") CouchDbConnector db) {
         super(Game.class, db);
-    }
-
-    // It's important to note that the field name you are searching by must match a field in the document
-    // so we will need a field named 'id'
-    @GenerateView
-    public List<Alert> findById(String id) {
-        return queryView("by_id", id);
     }
   }
     {% endhighlight %}
@@ -259,15 +252,21 @@ public class EventSubjects
 
     @MotechListener(subjects = { EventKeys.PONG_HIT }, type=MotechListenerType.NAMED_PARAMETERS)
     public void handlePongHit(@MotechParam(EventDataKeys.GAME_ID) String gameId) {
-      // We don't do anything in this handler except 'hit' the ball back to ping
+      // We don't do anything in this handler except verify the game exists and then 'hit' the ball back to ping
 
-      // Create our event
-      MotechEvent motechEvent = new MotechEvent(EventSubjects.PING_HIT); 
-      Map<String, Object> parameters = motechEvent.getParameters();
-      parameters.put(EventDataKeys.GAME_ID_KEY, gameId);
+      // Load the game by id
+      Game game = allGames.get(id);
 
-      // Publish it
-      eventRelay.sendEventMessage(motechEvent);
+      // if the game hasn't been deleted 'hit' the ball back
+      if (null != game) {
+        // Create our event
+        MotechEvent motechEvent = new MotechEvent(EventSubjects.PING_HIT); 
+        Map<String, Object> parameters = motechEvent.getParameters();
+        parameters.put(EventDataKeys.GAME_ID_KEY, gameId);
+
+        // Publish it
+        eventRelay.sendEventMessage(motechEvent);
+      }
     }
 
     @MotechListener(subjects = { EventKeys.PING_HIT }, type=MotechListenerType.NAMED_PARAMETERS)
@@ -284,9 +283,59 @@ public class EventSubjects
     {% endhighlight %}
 
     <h4>GameController.java</h4>
-    <p>The HTTP handlers</p>
+    <p>In our GameController file we're going to implement a very rudimentary REST interface.  For our purposes you'll start a Game by posting to the /ping-pong/games resource, you'll end a game by DELETEing a /ping-pong/games/{id}.  You will also be able to see all the Games by GETing /ping-pong/games.  This isn't meant to be a demo on REST, but rather show how to create HTTP handlers in motech and how to manipulate couch documents.</p>
 
     {% highlight java linenos=true %}
+public class GameController extends MultiActionController {
+
+  @Autowired
+  private AllGames allGames;
+
+  // Ideally we'd grab this by querying the OSGi context and asking for the eventRelay service.
+  // If you would like to help build out our OSGi implementation please contact us.
+  private EventRelay eventRelay = EventContext.getInstance().getEventRelay();
+
+  @RequestMapping(value="/games",method=RequestMethod.POST)
+  @ResponseBody
+  public Game start(HttpServletRequest request, HttpServletResponse response) {
+    // Let's create and save a new Game object
+    Game game = new Game();
+    allGames.add(game);
+
+    // Now publish an event to kickstart the game
+    MotechEvent motechEvent = new MotechEvent(EventSubjects.PING_HIT); 
+    Map<String, Object> parameters = motechEvent.getParameters();
+    parameters.put(EventDataKeys.GAME_ID_KEY, gameId);
+
+    // Publish it
+    eventRelay.sendEventMessage(motechEvent);
+
+    return game;
+  }
+
+  @RequestMapping(value="/games",method=RequestMethod.GET)
+  @ResponseBody
+  public List<Game> allGames(HttpServletRequest request, HttpServletResponse response) {
+    // Load all games from couch
+    ArrayList<Game> games = allGames.getAll();
+
+    return games;
+  }
+
+  @RequestMapping(value="/games/{id}",method=RequestMethod.DELETE)
+  @RequestBody
+  public String delete(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) {
+    // Load the game by id
+    Game game = allGames.get(id);
+
+    // This method should be idempotent so if it doesn't exist it doesn't matter
+    if (null != game) {
+      allGames.remove(game);
+    }
+
+    return "DELETED";
+  }
+}
     {% endhighlight %}
 
   </div>
