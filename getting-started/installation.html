@@ -47,7 +47,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h4>Dependent Systems</h4>
 
-    <p>Motech makes use of a number of third-party open source systems and they each need to be installed for Motech to function correclty.  We use Tomcat as our application container, ActiveMQ as our message queue, Quartz and MySQL for timers adn CouchDB as our persitence store.  Each of these packages can be downloaded from their respective sites:</p>
+    <p>Motech makes use of a number of third-party open source systems and they each need to be installed for Motech to function correclty.  We use Tomcat as our application container, ActiveMQ as our message queue, Quartz and MySQL for timers and CouchDB as our persitence store.  Each of these packages can be downloaded from their respective sites:</p>
 
     <ul>
       <li><a href="http://tomcat.apache.org/download-70.cgi">Tomcat7</a></li>
@@ -56,9 +56,32 @@ title: MOTECH - Mobile Technology for Community Health
       <li><a href="http://dev.mysql.com/downloads/mysql/5.5.html">MySQL</a></li>
     </ul>
 
-    <p>If you are running on a 64 bit linux system you can use the following script to download and install these systems for you.  The script places the systems in /opt and creates simple <a href="http://upstart.ubuntu.com/">upstart</a> scripts to start/stop the services.  It should be run as root.  Trust us, it's ok. :)
+    <p>If you are running on a 64 bit linux system you can use the following script to download and install tomcat7, ActiveMQ and CouchDB for you.  The script places the systems in /opt and creates simple <a href="http://upstart.ubuntu.com/">upstart</a> scripts to start/stop ActiveMQ and CouchDB.  It should be run as root.  Trust us, it's ok. :)
 
     <script src="https://gist.github.com/1705702.js"> </script>
+
+    <p>MySQL should be available and easily installable via your systems package manager.  MySQL 5.5 is not currently available in most package managers, but instructions for installing it are easily found online.</p>
+    
+    <p>Once the systems are installed you can start them like this:</p>
+
+    {% highlight bash %}
+    sudo start activemq
+    sudo start couchdb
+    sudo /opt/tomcat7/bin/startup.sh
+    {% endhighlight %}
+    
+    <p>ActiveMQ and CouchDB will log to /var/log/motech, tomcat will write it's logs to /opt/tomcat7/logs</p>
+
+    <p>To stop the services run these commands:</p>
+
+    {% highlight bash %}
+    sudo stop activemq
+    sudo stop couchdb
+    sudo /opt/tomcat7/bin/shutdown.sh
+    {% endhighlight %}
+
+    <p>Starting MySQl will vary based on the method used to install it.  Typically for ubuntu it is started like this <i>sudo /etc/init.d/mysql.server start</i></p>
+      
   <h4>Code</h4>
 
   <p>The code for motech is open souce and can be found on <a href="http://code.google.com/p/motech">Google Code</a>.  You'll need a working understand of <A href="http://git-scm.com/">git</a> to check it out and <a href="http://maven.apache.org/">maven</a> to compile it.  A more detailed description of the code architecture can be found in the <a href="/getting-started/index.html">Overview</a> while a description of the source tree can be found in the <a href="/getting-started/source.html">Source Overview</a> of this guide.</p>
