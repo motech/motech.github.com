@@ -13,7 +13,7 @@ title: MOTECH - Mobile Technology for Community Health
     
     <p>The goal of this getting started guide is to present you with a high level overview of the MOTECH system architecture and code along with a quick set of instuctions aimed at getting a functioning MOTECH up and running.
 
-    <h4>Architecture Overview</h4>
+    <h4><a name="overview">Architecture Overview</a></h4>
 
     <p>MOTECH can logically be broken into three different tiers: Core, Modules and Implementations.  The core layer wraps several well known open source systems and augments and exposes their features to the layers above it.  The main functions at the core layer are to wrap ActiveMQ and present an internal pub/sub like event interface to the module and implementation layers.  The core also provides a module loading environment (OSGi) an interface to the scheduler and access to CouchDB.<p>
     

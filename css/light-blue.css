@@ -1430,7 +1430,7 @@ header nav.dropdown {
 }
 
 .dropdown #nav > li > a {
-	padding-bottom: 37px;
+	padding-bottom: 15px;
 	margin-bottom: -2px;
 }
 
@@ -1456,7 +1456,7 @@ header .inner-wrap {
 	padding: 5px 0;
 	position: absolute;
 	text-transform: uppercase;
-	top: 49px;
+	top: 27px;
 	z-index: 110;
 	
 	-moz-border-radius: 0 0 3px 3px;
