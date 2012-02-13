@@ -3079,6 +3079,10 @@ ul.nav-tree ul {
 	margin-bottom: 0px;
 }
 
+ul.nav-tree a {
+	color: #565E66 !important;
+}
+
 .system-icon {
 	float: left;
 	width: 200px;

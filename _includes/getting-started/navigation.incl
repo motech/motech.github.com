@@ -2,10 +2,10 @@
     <ul class="nav-tree">
       <li><h6><a href="/getting-started/">Overview</a></h6></li>
         <ul>
-            <li>Architecture Overview</li>
-            <li>Modules</li>
-            <li>Stateless</li>
-            <li>Events</li>
+            <li><a href="/getting-started/index.html#overview">Architecture Overview</a></li>
+            <li><a href="/getting-started/index.html#modules">Modules</a></li>
+            <li><a href="/getting-started/index.html#stateless">Stateless</a></li>
+            <li><a href="/getting-started/index.html#events">Events</a></li>
         </ul>
       <li><h6><a href="/getting-started/installation.html">Installation</a></h6></li>
         <ul>

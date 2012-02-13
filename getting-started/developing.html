@@ -11,7 +11,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h3>Devloping</h3>
 
-    <p>To get a sense of what it is like to develop on motech we'll walk through the creation of a small module that plays ping pong.  This won't end in a working deployment but is rather meant to convey the style of development on motech.  Additionally generally good development practises are excluded from this demo so the core motech pieces are easier to spot.  In other words you won't see coding to an interface, factories, inversion of control or service methods wrapping database access just the basic pieces needed to develop on motech.</p>
+    <p>To get a sense of what it is like to develop on MOTECH we'll walk through the creation of a small module that plays ping pong.  This won't end in a working deployment but is rather meant to convey the style of development on MOTECH.  Additionally generally good development practises are excluded from this demo so the core MOTECH pieces are easier to spot.  In other words you won't see coding to an interface, factories, inversion of control or service methods wrapping database access just the basic pieces needed to develop on MOTECH.</p>
 
     <p>At the end of this tutorial it is expected that you should have a basic understanding of how to handle HTTP endpoints, subscribe and emit events and persist data in CouchDB.</p>
 
@@ -21,7 +21,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h4>Files</h4>
 
-    <p>For this module we'll create seperate files to handle the HTTP endpoints, event subscriptions, domain model, data access and constants.  This isn't required but it is typical of motech modules.</p>
+    <p>For this module we'll create seperate files to handle the HTTP endpoints, event subscriptions, domain model, data access and constants.  This isn't required but it is typical of MOTECH modules.</p>
     
     <dl>
         <dt>Activator.java</dt>
@@ -31,10 +31,10 @@ title: MOTECH - Mobile Technology for Community Health
         <dd>Spring Configuration</dd>
 
         <dt>EventDataKeys.java</dt>
-        <dd>It is considered good practice within motech to define all keys used in event datagrams.  Typically this file is defined in the package *.events.constants.</dd>
+        <dd>It is considered good practice within MOTECH to define all keys used in event datagrams.  Typically this file is defined in the package *.events.constants.</dd>
 
         <dt>EventSubjects.java</dt>
-        <dd>It is considered good practice within motech to define all subjects used in emitted events.  Typically this file is defined in the package *.events.constants.</dd>
+        <dd>It is considered good practice within MOTECH to define all subjects used in emitted events.  Typically this file is defined in the package *.events.constants.</dd>
     
         <dt>AllGames.java</dt>
         <dd>This is the class that will provide access to our couch repository</dd>
@@ -51,7 +51,7 @@ title: MOTECH - Mobile Technology for Community Health
 
   <h4>Activator.java</h4>
 
-  <p>The activator file contains information motech needs to load a module.  Currently this file is mostly boilerplate and can be copied and slightly modified to meet the needs of a new module.  The parts to pay attention to are the definition of the CONTET_CONFIG_LOCATION and the SERVLET_URL_MAPPING on lines 3 & 4.  Basicly CONTENT_CONFIG_LOCATION tells the module loader where to find the spring config and SERVLET_URL_MAPPING defines the sub-url to make your handlers available at.  If you needed to do extra initialisation you could, but rarely is that needed.  In all honesty we should abstract a lot of this boilerplate away.  That would be a great first code contribution (hint hint).</p>
+  <p>The activator file contains information MOTECH needs to load a module.  Currently this file is mostly boilerplate and can be copied and slightly modified to meet the needs of a new module.  The parts to pay attention to are the definition of the CONTET_CONFIG_LOCATION and the SERVLET_URL_MAPPING on lines 3 & 4.  Basicly CONTENT_CONFIG_LOCATION tells the module loader where to find the spring config and SERVLET_URL_MAPPING defines the sub-url to make your handlers available at.  If you needed to do extra initialisation you could, but rarely is that needed.  In all honesty we should abstract a lot of this boilerplate away.  That would be a great first code contribution (hint hint).</p>
 
   {% highlight java linenos=True %}
   public class Activator implements BundleActivator {
@@ -114,9 +114,9 @@ title: MOTECH - Mobile Technology for Community Health
 
   <h4>PingPong.xml</h4>
 
-  <p>In our spring config we need to load some core motech resources as well as instruct spring to find our own..  Spring can get a little verbose at times but hopefully the bulk of this file makes sense.</p>
+  <p>In our spring config we need to load some core MOTECH resources as well as instruct spring to find our own..  Spring can get a little verbose at times but hopefully the bulk of this file makes sense.</p>
   
-  <p>At the top of the file (lines 1 - 6) we're defining some of the spring namespaces we'll be using.  Line 8 is where we import some of the core motech components.</p>
+  <p>At the top of the file (lines 1 - 6) we're defining some of the spring namespaces we'll be using.  Line 8 is where we import some of the core MOTECH components.</p>
 
   <p>Following that we'll now define our own resources.  First at lines 10 - 13 we set up the connection to our couch database and then one lines 15 and 16 we instruct spring to scan our pacakge for annotation configuration.  That's it.</p>
 
@@ -143,7 +143,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h4>EventDataKeys.java</h4>
 
-    <p>The EventDataKeys file is a convention within motech.  It's become a well known place where modules can define the keys into the datagrams they publish along with accessors for the data.  Another excellent first contribution would be to move common helper methods to shared location. i.e. <i>getStringValue</i>.</p>
+    <p>The EventDataKeys file is a convention within MOTECH.  It's become a well known place where modules can define the keys into the datagrams they publish along with accessors for the data.  Another excellent first contribution would be to move common helper methods to shared location. i.e. <i>getStringValue</i>.</p>
 
     {% highlight java linenos=true %}
 public class EventDataKeys
@@ -171,7 +171,7 @@ public class EventDataKeys
 
     <h4>EventSubjects.java</h4>
 
-    <p>The EventSubjects file is a convention within motech.  It's become a well known place where modules can define the subjects they publish events on.  Subjects are hierachical and consumers can subscribe at any level in the hierachy.  Best practice for subjects is to use your modules package name as the base followed by a description of the event.  The detail of the subject should move from most general to most specific, so any unique identifiers should be last on the subject line.</p>
+    <p>The EventSubjects file is a convention within MOTECH.  It's become a well known place where modules can define the subjects they publish events on.  Subjects are hierachical and consumers can subscribe at any level in the hierachy.  Best practice for subjects is to use your modules package name as the base followed by a description of the event.  The detail of the subject should move from most general to most specific, so any unique identifiers should be last on the subject line.</p>
 
     {% highlight java linenos=true %}
 public class EventSubjects
@@ -239,9 +239,9 @@ public class EventSubjects
     {% endhighlight %}
 
     <h4>GameEvents.java</h4>
-    <p>First off, thank you for reading through all the above.  It's boring and repetetive and if you know how to make it better please read up on how to <a href="contribute.html">contribute</a>. Now that you've made it this far we are to the actual meat of a module, event handlers.  In this example we're subscribing to three subjects with three different handlers.  We have one handler that will receive notifications when pong hits, a second when ping hits and a third on every hit (so for each hit we'll have two handlers responding).  We're also using two different type of handler subscriptions.  One method allows you to request motech to unpack an element from the event and hand it to your handler.  The other method just passes the entire event to your handler.</p>
+    <p>First off, thank you for reading through all the above.  It's boring and repetetive and if you know how to make it better please read up on how to <a href="contribute.html">contribute</a>. Now that you've made it this far we are to the actual meat of a module, event handlers.  In this example we're subscribing to three subjects with three different handlers.  We have one handler that will receive notifications when pong hits, a second when ping hits and a third on every hit (so for each hit we'll have two handlers responding).  We're also using two different type of handler subscriptions.  One method allows you to request MOTECH to unpack an element from the event and hand it to your handler.  The other method just passes the entire event to your handler.</p>
 
-    <p>One interesting note about this demo. If we were running in a clustered setup, i.e. with multiple instances of motech running, then the handlers for ALL_HITS and the ping or pong hit would most likely be handled in parrelel by seperate servers.  Under the covers the motech event system knows how many handlers are registered for an event.  If there is only one it will call the handler but if there are multiple it will publish new events targets at specific handlers.  This allows for the load to be spread across multiple servers and it isolates each handler.  So a failure and rollback in one will not affect any others.  Additionally the fact that motech is aware of who is subscribing to events allows it to not publish events that there isn't a subscribed listener for.  This means events are relativly cheap so feel free to emit as many as you like.  If no one is listening they are basically a noop.</p>
+    <p>One interesting note about this demo. If we were running in a clustered setup, i.e. with multiple instances of MOTECH running, then the handlers for ALL_HITS and the ping or pong hit would most likely be handled in parrelel by seperate servers.  Under the covers the MOTECH event system knows how many handlers are registered for an event.  If there is only one it will call the handler but if there are multiple it will publish new events targets at specific handlers.  This allows for the load to be spread across multiple servers and it isolates each handler.  So a failure and rollback in one will not affect any others.  Additionally the fact that MOTECH is aware of who is subscribing to events allows it to not publish events that there isn't a subscribed listener for.  This means events are relativly cheap so feel free to emit as many as you like.  If no one is listening they are basically a noop.</p>
 
     {% highlight java linenos=true %}
   public class GameEvents {
@@ -283,7 +283,7 @@ public class EventSubjects
     {% endhighlight %}
 
     <h4>GameController.java</h4>
-    <p>In our GameController file we're going to implement a very rudimentary REST interface.  For our purposes you'll start a Game by posting to the /ping-pong/games resource, you'll end a game by DELETEing a /ping-pong/games/{id}.  You will also be able to see all the Games by GETing /ping-pong/games.  This isn't meant to be a demo on REST, but rather show how to create HTTP handlers in motech and how to manipulate couch documents.</p>
+    <p>In our GameController file we're going to implement a very rudimentary REST interface.  For our purposes you'll start a Game by posting to the /ping-pong/games resource, you'll end a game by DELETEing a /ping-pong/games/{id}.  You will also be able to see all the Games by GETing /ping-pong/games.  This isn't meant to be a demo on REST, but rather show how to create HTTP handlers in MOTECH and how to manipulate couch documents.</p>
 
     {% highlight java linenos=true %}
 public class GameController extends MultiActionController {
