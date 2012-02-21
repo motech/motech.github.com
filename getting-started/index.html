@@ -25,11 +25,13 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h4>Modules</h4>
 
-    <p>Modules within MOTECH are self-contained bits of functionality that are loaded into the server via the OSGi host.  Modules interact with the core platform through it's APIs and with other modules either through their service interfaces or by consuming their events.  Modules can expose a service interface of their own as well as emit their own events.  Modules may also register servlet controllers which allow them to respond to HTTP requests.
+    <p>Modules within MOTECH are self-contained bits of functionality that are loaded into the server via the OSGi host.  Modules interact with the core platform through it's APIs and with other modules either through their service interfaces or by consuming their events.  Modules can expose a service interface of their own as well as emit their own events.  Modules may also register servlet controllers which allow them to respond to HTTP requests.</p>
+
+    <p>See the <a href="/modules/index.html">Modules</a> page for the list of current and planed modules.</p>
 
     <h4>Stateless</h4>
 
-    <p>A core design principle of the MOTECH system is that the server should be stateless across requests to allow for horizontal scalability.  It is expected that code running within the MOTECH server should perform a single action per request and then return.  The module should never persist any state in memory and expect that state to be availble to later requests.</p>
+    <p>A core design principle of the MOTECH platform is that the server should be stateless across requests to allow for horizontal scalability.  It is expected that code running within the MOTECH server should perform a single action per request and then return.  The module should never persist any state in memory and expect that state to be availble to later requests.</p>
 
     <h4>Events</h4>
 
@@ -43,6 +45,10 @@ title: MOTECH - Mobile Technology for Community Health
     {% endhighlight %}
 
     <p>For more detailed explanation of the event system and how to integrate with it see the <a href="/getting-started/developing.html">Developing</a> section at the end of this getting started guide.</p>
+
+    <h4>Scheduled Events &amp; Timers</h4>
+
+    <p>To assist in the development of a stateless event based server the MOTECH platform provides access to a flexible scheduling system.  Using the open source Quartz engine applications written on MOTECH can easily schedule events for future consumption.  For more information see the <a href="/architecture/scheduler.html">Scheduler</a> section of the <!-- <a href="/architecture"> -->architecture<!--</a>--> guide.</p>
   </div>
 
 </div><!-- end .column-container -->

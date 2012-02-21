@@ -10,12 +10,16 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="#">Code</a>
                     <ul>
-                            <li><a href="http://code.google.com/p/motech/source/checkout">Source</a></li>
-                            <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
-                            <li><a href="http://code.google.com/p/motech/issues/list">Issues</a></li>
+                        <li><a href="http://code.google.com/p/motech/source/checkout">Source</a></li>
+                        <li><a href="http://code.google.com/p/motech/issues/list">Issues</a></li>
                      </ul>
                 </li>
-                <li><a href="/getting-started/index.html">Getting Started</a></li>
+                <li>Documentation
+                    <ul>
+                        <li><a href="/getting-started/index.html">Getting Started</a></li>
+                        <li><a href="/modules/index.html">Modules</a></li>
+                    </ul>        
+                </li>            
                 <li><a href="/contribute.html">Contribute</a></li>
                 <li><a href="/releases.html">Releases</a>
                   <ul>

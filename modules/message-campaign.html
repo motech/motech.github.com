@@ -1,0 +1,355 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+
+  
+  {% include modules/navigation.incl %}
+
+  <div class="column five-sixths">
+    <h3>Message Campaign Module</h3>
+
+    <h4>Description</h4>
+    <p>The MOTECH message campaign module is used to enroll users into messaging campaigns. A user may be a patient, worker, lab, facility, or other desired recipient of the information to be disseminated. A campaign is a course of informational messages that are sent to the target user on an assigned date or schedule. A user can be entered into a campaign at any point during its duration. Users may be removed or re-enrolled into campaigns. The languages and formats of the campaign messages can be specified (IVR, SMS, English, etc). Campaign messages follow a clearly defined schedule and are automatically triggered by the scheduling system.</p>
+
+
+    <h4>Information for implementation</h4>
+    <p>Campaigns are for the dissemination of information defined by their campaign messages. There are three key concerns for end users:</p>
+
+    <ul>
+      <li>Defining the campaign's characteristics</li>
+      <li>Starting or stopping a specific campaign for a user, or stopping all campaigns for a user</li>
+      <li>Providing the content for campaign messages</li>
+    </ul>
+
+
+    <h4>Defining the campaign's characteristics</h4>
+    <p>Specifying the characteristics of a campaign and its messages is typically accomplished using a JSON (JavaScript Object Notation) document. The messageCampaign.properties file specifies the location and name of the JSON message campaign file. Campaigns have a name and type in addition to other fields depending on the message type.</p>
+
+
+    <h4>Types</h4>
+    <p>Campaigns contain a field for type which determines the type of message that will apply to the campaign. All campaign messages that are part of a campaign must be of the same campaign type. The module contains four different campaign types: absolute, cron based, offset and repeating. All campaigns contain a field for the name of the campaign and its type, along with a list of its campaign messages.</p>
+
+    <h5>Absolute Campaign</h5>
+    <p>This type of campaign is specified as ABSOLUTE. Absolute campaign messages contain a field for the specific date in which to send the message. </p>
+
+    {% highlight javascript %}
+    {
+      "name" : "Absolute Dates Message Program",
+      "type" : "ABSOLUTE"
+      "messages" : [
+        {
+          "name" : "First",
+          "formats" : ["IVR", "SMS"],
+          "languages" : ["en"],
+          "messageKey" : "random-1",
+          "date" : "2013-06-15"
+        },
+        {
+          "name" : "Second",
+          "formats" : ["IVR"],
+          "languages" : ["en"],
+          "messageKey" : "random-2",
+          "date" : "2013-06-22"
+        },
+      ]
+    }
+    {% endhighlight %}
+
+    <h6>Campaign Fields:</h6>
+
+    <dl>
+      <dt>name</dt> <dd>The name of the campaign. Campaign requests use this parameter to associate a user with a given campaign.</dd>
+      <dt>type</dt> <dd>Specifies that this campaign is an absolute campaign.</dd>
+      <dt>messages</dt> <dd>an array of messages of type ABSOLUTE.</dd>
+    </dl>
+
+    <h6>Messages Fields:</h6>
+    <dl>
+      <dt>name</dt> <dd>The name of the campaign message.</dd>
+      <dt>formats</dt> <dd>The format(s) for the message, in this case, IVR and SMS.</dd>
+      <dt>languages</dt> <dd>The language(s) for the message, in this case, en (English).</dd>
+      <dt>messageKey</dt> <dd>A key uniquely identifying this message.</dd>
+      <dt>date</dt> <dd>The date for this absolute message to be sent on.</dd>
+    </dl> 
+
+    <h5>Offset Campaign</h5>
+    <p>This type of campaign is specified as OFFSET and also includes a field for max duration. There is a field for the maximum duration of the campaign. Each offset message contains an offset field. The offset determines how many days or weeks from the reference date that the job (message) will be scheduled. If no reference date is supplied, then the current date is used.</p>
+
+    {% highlight javascript %}
+    {
+      "name" : "Relative Dates Message Program",
+      "type" : "OFFSET"
+      "messages" : [
+        {
+          "name" : "week 1",
+          "formats" : ["IVR"],
+          "languages" : ["en"],
+          "messageKey" : "child-info-week-1",
+          "timeOffset" : "1 week"
+        },
+        {
+          "name" : "week 1A",
+          "formats" : ["SMS"],
+          "languages" : ["en"],
+          "messageKey" : "child-info-week-1a",
+          "timeOffset" : "1 week"
+        },
+        {
+          "name" : "week 1A",
+          "formats" : ["SMS"],
+          "languages" : ["en"],
+          "messageKey" : "child-info-week-1b",
+          "timeOffset" : "9 days"
+        },
+      ]
+    }
+    {% endhighlight %}
+
+    <h6>Campaign Fields:</h6>
+    <dl>
+      <dt>name</dt> <dd>The name of the campaign. Campaign requests use this parameter to associate a user with a given campaign.</dd>
+      <dt>type</dt> <dd>Specifies that this campaign is an offset campaign.</dd>
+      <dt>messages</dt> <dd>an array of messages of type OFFSET.</dd>
+    </dl>
+
+    <h6>Message Fields:</h6>
+    <dl>
+      <dt>name</dt> <dd>The name of the campaign message.
+            formats The format(s) for the message, in this case, IVR or SMS, depending on the message.</dd>
+      <dt>languages</dt> <dd>The language(s) for the message, in this case, en (English).</dd>
+      <dt>messageKey</dt> <dd>A key uniquely identifying this message.</dd>
+      <dt>date</dt> <dd>How long from the reference date to send the message.</dd>
+    </dl>
+
+    <h5>Repeating Campaign</h5>
+    <p>This type of campaign is specified as REPEATING and also includes the maximum duration for the messages to be repeated. There is a list of repeating messages with fields for the repeating message mode, repeat interval, week days applicable, deliver time and the calendar start of week. The repeat interval determines how many messages will be scheduled, based upon the max duration of the campaign. Week days determine which days of the week the messages will be sent. </p>
+
+    {% highlight javascript %}
+    {
+      "name" : "Re1ative Parameterized Dates Message Program",
+      "type" : "REPEATING",
+      "maxDuration" : "5 weeks",
+      "messages" : [
+        {
+          "name" : "week1y Message #1",
+          "formats" : ["IVR", "SMS"],
+          "1anguages" : ["en"],
+          "messagekey": "chi1d-info-week-{offset}-1",
+          "regeatInterval" : "1 week",
+          "deliverTime" : "10:30"
+        },
+        {
+          "name" : "week1y Message #2",
+          "formats" : ["SMS"],
+          "1anguages" : ["en"],
+          "messagekey": "chi1d-info-week-{offset}-2",
+          "regeatInterval" : "9 Days",
+          "deliverTime" : "10:30"
+        },
+        {
+          "name" : "week1y Message #3",
+          "formats" : ["SMS"],
+          "1anguages" : ["en"],
+          "messagekey": "chi1d-info-week-{offset}-3",
+          "regeatInterval" : "12 Days",
+          "deliverTime" : "10:30"
+        },
+        {
+          "name" : "week1y Message #4",
+          "formats" : ["SMS"],
+          "1anguages" : ["en"],
+          "messagekey": "chi1d-info-week-{offset}-{weekDay}",
+          "weekDaysApp1icab1e" : ["Monday", "wednesday", "Friday"],
+          "deliverTime" : "10:30"
+        },
+        {
+          "name" : "week1y Message #5",
+          "formats" : ["SMS"],
+          "1anguages" : ["en"],
+          "messagekey": "chi1d-info-ca1endar-week-{offset}-{weekDay}",
+          "calendarStartOfWeek" : "Sunday",
+          "weekDaysApp1icab1e" : ["Monday", "Wednesday", "Friday"],
+          "deliverTime" : "10:30"
+        }
+      ]
+    }
+    {% endhighlight %}
+
+    <h6>Campaign Fields:</h6>
+    <dl>
+      <dt>name</dt> <dd>The name of the campaign. Campaign requests use this parameter to associate a user with a given campaign.</dd>
+      type Specifies that this campaign is a repeating campaign.
+      <dt>maxDuration</dt> <dd>This determines how long the repeating campaign is valid for. Messages will not be scheduled beyond this point.</dd>
+      <dt>messages</dt> <dd>an array of messages of type REPEATING.</dd>
+    </dl>
+  
+    <h6>Messages Fields:</h6>
+    <dl>
+      <dt>name</dt> <dd>The name of the campaign message.</dd>
+      <dt>formats</dt> <dd>The format(s) for the message, in this case, SMS and/or IVR.</dd>
+      <dt>languages</dt> <dd>The language(s) for the message, in this case, en (English).</dd>
+      <dt>messageKey</dt> <dd>A key uniquely identifying this message.</dd>
+      <dt>repeatInterval</dt> <dd>An interval that determines how many times a message is sent, based upon the maxDuration.</dd>
+      <dt>deliverTime</dt> <dd>The time of day the message is delivered.</dd>
+      <dt>weekDaysApplicable</dt> <dd>The days of the week the message will be sent.</dd>
+      <dt>calendarStartOfWeek</dt> <dd>TODO</dd>
+    </dl>
+
+    <h5>Cron-based Campaign</h5>
+    <p>This type of campaign is specified as CRON. Each cron campaign message contains a cron expression. The cron expression determines the periodic schedule the messages will follow. </p>
+
+    {% highlight javascript %}
+    {
+      "name" : "Cron based Message Program",
+      "type" : "CRON",
+      "messages" : [
+        {
+          "name" : "First",
+          "formats" : ["IVR", "SMS"],
+          "languages" : ["en"],
+          "messageKey" : "cron-message",
+          "cron" : "0 11 11 11 11 ?"
+        }
+      ]
+    }
+    {% endhighlight %}
+
+    <h6>Campaign Fields:</h6>
+    <dl>
+      <dt>name</dt> <dd>The name of the campaign. Campaign requests use this parameter to associate a user with a given campaign.</dd>
+      <dt>type</dt> <dd>Specifies that this campaign is a cron-based campaign.</dd>
+      <dt>messages</dt> <dd>an array of messages of type CRON.</dd>
+    </dl>
+
+    <h6>Message Fields:</h6>
+    <dl>
+      <dt>name</dt> <dd>The name of the campaign message.</dd>
+      <dt>formats</dt> <dd>The format(s) for the message, in this case, IVR and SMS.</dd>
+      <dt>languages</dt> <dd>The language(s) for the message, in this case, en (English).</dd>
+      <dt>messageKey</dt> <dd>A key uniquely identifying this message.</dd>
+      <dt>cron</dt> <dd>A valid cron expression that specifies the scheduling of the messages.</dd>
+    </dl>
+
+    <h4>Enrolling a user into a campaign</h4> 
+    <p>The message-campaign module exposes a MessageCampaignService interface with three methods: startFor, stopFor and stopAll, each accepting a CampaignRequest object. The stopFor method also accepts a string corresponding to the key of the message to stop. The startFor method schedules the message or messages as jobs in the scheduler. The stopFor method unschedules a particular message that is part of the campaign found in the campaign request, for the external id found in the campaign request. The stopAll method unschedules all campaign messages from the campaign in the campaign request for the id in the campaign request.</p>
+
+    <p>A campaign request associates a user (patient, lab, etc) with a campaign name, reference date and reminder time. The campaign name determines which campaign will be retrieved from the JSON document or unscheduled. The reference date determines the calendar date that the campaign will begin for that user. If no reference date is supplied, then the current date upon enrollment is used in its place. The reminder time specifies what time of day in hours and minutes that the message will be sent.</p>
+
+    <img src="/assets/modules/messagecampaignservice.png"/>
+
+    <h4>Content</h4>
+    <p>The content for messages is provided through the CMSlite module. </p>
+
+    <h4>Example</h4>
+    <p>Below is an example of a JSON document that includes two campaigns, each with a number of campaign messages. Each campaign object has three fields: name, type and an array of messages. Each message contains fields determined by their type. Campaign requests associate the user with these campaigns. A reference to the campaign's name, such as "Absolute Dates Message Program" must be included in the CampaignRequest. This allows the system to schedule jobs for the user based on the associated campaign. In the below example, if a user is enrolled in "Absolute Dates Message Program", two separate jobs (messages) will be scheduled. In the "Relative Parameterized Dates Message Program", twelve jobs will be scheduled for the user. The number of repeating messages is determined by the repeat intervals compared with the maximum duration. In the example below, Repeating Message #2 would have four scheduled messages due to a maximum duration of five weeks and repeat intervals of nine days. </p>
+
+    {% highlight javascript %}
+    [
+      /* Absolute Campaign */
+      {
+        "name" : "Absolute Dates Message Program",
+        "type" : "ABSOLUTE",
+        "messages" : [         
+          {
+            "name" : "First Campaign Message",
+            "formats" : ["IVR", "SMS"],
+            "languages" : ["en"],
+            "messageKey" : "random-1",
+            "date" : "2013-06-15"
+          },
+          {
+            "name" : "Second Campaign Message",
+            "formats" : ["IVR"],
+            "languages" : ["en"],
+            "messageKey" : "random-2",
+            "date" : "2013-06-22"            
+          }
+        ]
+      },
+      /* Repeating Campaign */  
+      {
+        "name" : "Relative Parameterized Message Program",
+        "type" : "REPEATING",
+        "maxDuration" : "5 weeks",
+        "messages" : [
+          {
+            "name" : "Repeating Message #1",
+            "formats" : ["IVR", "SMS"],
+            "languages" : ["en"],
+            "messageKey" : "child-info-week-{Offset}-1",
+            "repeatInterval" : "1 Week"
+          },
+          {
+            "name" : "Repeating Message #2",
+            "formats" : ["SMS"],
+            "languages" : ["en"],
+            "messageKey" : "child-info-week-{Offset}-2",
+            "repeatInterval" : "9 Days"
+          },
+          {
+            "name" : "Repeating Message #3",
+            "formats" : ["SMS"],
+            "languages" : ["en"],
+            "messageKey" : "child-info-week-{Offset}-3",
+            "repeatInterval" : "12 Days"
+          }
+        ]
+      }
+    ]
+    {% endhighlight %}
+
+    <h3>Events consumed and emitted by the message campaign module</h3>
+
+    <h4>Consumed events:</h4>
+    <p>CampaignMessageHandler handles and consumes events with the key EventKeys.MESSAGE_CAMPAIGN_SEND_EVENT_SUBJECT</p>
+
+    {% highlight java %}
+    EventKeys.Message_CAMPAIGN_SEND_EVENT_SUBJECT (org.motechproject.server.messagecampaign.send-campaign-message)
+    Parameters/Payload (originating from a CampaignRequest):
+      EventKeys.CAMPAIGN_NAME_KEY (CampaignName)
+      EventKeys.MESSAGE_KEY (MessageKey)
+      EventKeys.SCHEDULE_JOB_ID_KEY (JobID)
+      EventKeys.EXTERNAL_ID_KEY (ExternalID)
+    {% endhighlight %}
+
+    <h4>Emitted events:</h4>
+    CampaignMessageHandler emits events with the key EventKeys.MESSAGE_CAMPAIGN_FIRED_EVENT_SUBJECT after handling EventKeys.MESSAGE_CAMPAIGN_SEND_EVENT_SUBJECT
+
+    {% highlight java %}
+    EventKeys.Message_MESSAGE_CAMPAIGN_FIRED_EVENT_SUBJECT (org.motechproject.server.messagecampaign.fired-campaign-message)
+    Parameters/Payload
+      EventKeys.CAMPAIGN_NAME_KEY (CampaignName) - used to find the campaign message, from the CAMPAIGN_SEND_EVENT_SUBJECT event
+      EventKeys.MESSAGE_KEY (MessageKey) - used from the CampaignRequest to find the message, from the CAMPAIGN_SEND_EVENT_SUBJECT event
+      EventKeys.SCHEDULE_JOB_ID_KEY (JobID) - from the CAMPAIGN_SEND_EVENT_SUBJECT event
+      EventKeys.EXTERNAL_ID_KEY (ExternalID) - user ID, from the CAMPAIGN_SEND_EVENT_SUBJECT event
+      EventKeys.MESSAGE_NAME_KEY (MessageName) - retrieved from the campaign message's name
+      EventKeys.MESSAGE_FORMATS (MessageFormats) - list retrieved from the campaign message's formats field
+      EventKeys.MESSAGE_LANGUAGES (MessageLanguages) - list retrieved from the campaign message's languages field
+    {% endhighlight %}
+
+    <h4>Additional information:</h4>
+
+    <p>The message key uniquely identifies campaign messages (even repeating messages have their own unique message key).
+        external ID is a user ID, identifying a patient, nurse, lab, facility, etc, from the campaign request.</p>
+
+    <p>The Job ID is a string constructed from EventKeys.BASE_SUBJECT, campaign name, external ID, and the message key, the latter three are from the campaign request</p>
+
+    <p>If the campaign name is Campaign1, externalID is 123 and the message key is MessageKey4, then the Job ID will be:
+        org.motechproject.server.messagecampaign.Campaign1.123.MessageKey4</p>
+
+    <p>Note that some characteristics of a campaign message (for example, repeatInterval from repeating messages) are not sent as part of an event payload.</p>
+
+    <p>Graphical representation of the event flow through the message campaign module:</p>
+
+    <img src="/assets/modules/campaignmessageflow.png"/>
+
+    <h4>Questions regarding the message campaign module:</h4>
+
+    <p>Why do offset campaigns have a field for maximum duration, but cron based do not? Offset campaigns are scheduled as a single RunOnceSchedulableJob (repeating campaigns schedule multiple RunOnceSchedulableJobs). Cron are repeating and scheduled as a CronSchedulableJob with a null end date. It seems that the current implementation of offset campaigns has no use for a maximum duration field and cron based may. Is this wrong?</p>
+  </div>
+ </div>
+
+
