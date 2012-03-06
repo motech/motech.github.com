@@ -2,11 +2,11 @@
     <ul class="nav-tree">
       <li><h6><a href="/getting-started/">Overview</a></h6></li>
         <ul>
-            <li><a href="/getting-started/index.html#overview">Architecture Overview</a></li>
-            <li><a href="/getting-started/index.html#modules">Modules</a></li>
-            <li><a href="/getting-started/index.html#stateless">Stateless</a></li>
-            <li><a href="/getting-started/index.html#events">Events</a></li>
-            <li><a href="/getting-started/index.html#scheduler">Scheduled Events & Timers</a></li>
+            <li>Architecture Overview</li>
+            <li>Modules</li>
+            <li>Stateless</li>
+            <li>Events</li>
+            <li>Scheduled Events &smp; Timers</li>
         </ul>
       <li><h6><a href="/getting-started/installation.html">Installation</a></h6></li>
         <ul>
@@ -21,5 +21,10 @@
             <li>Modules</li>
         </ul>
       <li><h6><a href="/getting-started/developing.html">Developing</a></h6></li>
+        <ul>
+            <li>CouchDB Storage</li>
+            <li>Ping Pong Demo</li>
+            <li>Schedule Tracking Demo</li>
+        </ul>      
     </ul>
   </div>

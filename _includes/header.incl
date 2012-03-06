@@ -20,7 +20,6 @@
                 <li><a href="#">Documentation</a>
                     <ul>
                         <li><a href="/getting-started/index.html">Getting Started</a></li>
-                        <li><a href="/architecture/index.html">Architecture</a></li>
                         <li><a href="/modules/index.html">Modules</a></li>
                     </ul>        
                 </li>

@@ -1,0 +1,71 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+  
+  {% include getting-started/navigation.incl %}
+
+  <div class="column five-sixths">
+
+		<h4>Schedule Tracking Demo</h4>
+
+		<p>Please note that we often tack the demo down for maintainance/upgrades.  Please <a href="contact.html">contact us</a> if it is not up and you would like to use it.</p>
+
+		<p>The schedule tracking demo uses Open MRS to monitor and fulfill a series of milestones that are part of a schedule.</p>
+
+		<p>OpenMRS for the demo:</p>
+		<a href="http://130.111.132.44:8080/openmrs">http://130.111.132.44:8080/openmrs</a>
+
+		(<a href="contact.html">Contact us</a> for login credentials for Open MRS)
+
+		<p>Link to the MoTeCH schedule tracking demo:</p>
+		<a href="http://130.111.132.44:8080/motech-platform-server/enroll/scheduleTracking">http://130.111.132.44:8080/motech-platform-server/enroll/scheduleTracking</a>
+
+		<p>In order to use the demo, you must register a patient into Motech with a valid phone number (no symbols, it should look like 2074503879)
+		This same patient ID must also be registered into OpenMRS. You may then enroll that patient in the schedule from the scheduleTracking page. If an enrolled patient is not found in BOTH the demo's Motech phone number database and in Open MRS, they will not be enrolled in the schedule.</p>
+
+		<p>In this demo, a milestone corresponds to an observation of a particular concept having been made on or after the initial date of enrollment into the Demo Schedule. The four milestones are:</p>
+
+
+		<ul>
+			<li>Demo Concept Question #1: <a href="http://130.111.132.44:8080/openmrs/dictionary/concept.htm?conceptId=6100">http://130.111.132.44:8080/openmrs/dictionary/concept.htm?conceptId=6100</a></li>
+			<li>Demo Concept Question #2: <a href="http://130.111.132.44:8080/openmrs/dictionary/concept.htm?conceptId=6101">http://130.111.132.44:8080/openmrs/dictionary/concept.htm?conceptId=6101</a></li>
+			<li>Demo Concept Question #3: <a href="http://130.111.132.44:8080/openmrs/dictionary/concept.htm?conceptId=6103">http://130.111.132.44:8080/openmrs/dictionary/concept.htm?conceptId=6103</a></li>
+			<li>Demo Concept Question #4: <a href="http://130.111.132.44:8080/openmrs/dictionary/concept.htm?conceptId=6102">http://130.111.132.44:8080/openmrs/dictionary/concept.htm?conceptId=6102</a></li>
+		</ul>
+
+		<p>Milestones have "windows" which represent a period of time. For example, today through five days from now represents a five day window. In the demo, each milestone has the same window periods. 0-1 minutes is the "early" window and no messages or alerts are raised.</p>
+
+		<p>At 1 minute in, a due message is raised and a phone call as well as text message are placed to the patient indicating that they are due for that particular Concept Question.
+		</p>
+
+		<p>At 3 minutes, they enter the late window, and a late message is dispatched in the same manner. They receive a second late message one minute later at the 4 minute mark. The late window lasts until the 6th minute.</p>
+
+		<p>After this, no more late messages are sent and they enter the "max" window. They may still complete the milestone during this period. If they go beyond 15 minutes from the start of a milestone without fulfilling it, they are defaulted and their enrollment in the schedule is no longer active.</p>
+
+		<p>If a patient fulfills a milestone before they have defaulted, they will move on to the next milestone (unless there are no more, then the enrollment is completed) with new messages scheduled following the same format outlined above.</p>
+
+		<p>A patient may only have one active enrollment in the schedule at any given time, but may unenroll and start a new enrollment, or enroll after theirs is completed or defaulted.</p>
+
+		<h5>Registering a patient in Open MRS by Motech ID:</h5>
+
+		<ul>
+			<li>Login to OpenMRS and click "Manage Patients" under the Patients category</li>
+			<li>Click "Create a New Patient" under the Patient heading</li>
+			<li>After you fill out the information and create the person, make sure the patient looks as follows:</li>
+		</ul>
+
+		<img src="/assets/getting-started/patientidentifier.png"/>
+
+		<p>Where YourIdentifierHere is the unique Motech ID you registered in the demo with your phone number.</p>
+
+		<p>After you save patient, you may add encounters and observations to your patient normally.</p>
+
+		<p>When adding the observation, it will only considered to be fulfilled if the Date/Time Answer field is on or after the day you started the enrollment in the demo schedule.</p>
+
+		<img src="/assets/getting-started/exampleobservation.png"/>
+
+  </div>
+</div>
