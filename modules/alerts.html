@@ -1,0 +1,122 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+
+  
+  {% include modules/navigation.incl %}
+
+  <div class="column five-sixths">
+    <h3>Alerts Module</h3> 
+
+    <h4>Description</h4> 
+
+    <p>Alerts can be thought of as notifications which should be displayed to a MOTECH user based on some criteria. Alerts raised within this module are not actually published or communicated to the end user.  Instead the Alerts Module is a data container and service for storing, tracking, and responding to alerts.</p>
+
+    <h4>Information for implementation</h4> 
+
+    <p>The alert module presents implementers with the following functionality:</p>
+
+    <ul>
+        <li>Creation of alerts targeting a specific entity (user)</li>
+        <li>Setting alert type, status and priority</li>
+        <li>Search for alerts</li>
+        <li>Associate custom data with an alert</li>
+        <li>Acknowledge alerts as read or closed</li>
+    </ul> 
+
+    <p>The main entry point into the Alert module is through the AlertService.  Currently this is injected into your code via spring IOC.  In the future this module should expose a service interface through an OSGi container.</p>
+
+    <h4>Configuration</h4>
+
+    <p>No extra configuration is required by the alerts module.</p>
+
+    <h4>Creating an Alert</h4> 
+
+    {% highlight java %}
+    @Autowired
+    private AlertServiceImpl alertService;
+
+    Map<String, String> data = new HashMap<String, String>();
+    Alert alert = alertService.create("entity_id", "name", "description", AlertType.HIGH, AlertStatus.NEW, 0, data);
+    {% endhighlight %}
+
+    <h4>Finding an Alert</h4> 
+
+    <h5>By ID</h5>
+    {% highlight java %}
+    @Autowired
+    private AlertServiceImpl alertService;
+
+    String alertId; // Must be set to a valid alert id
+
+    Alert alert = alertService.get(alertId);
+    {% endhighlight %}
+
+    <h5>By Criteria</h5>
+    {% highlight java %}
+    @Autowired
+    private AlertServiceImpl alertService;
+
+    AlertCriteria criteria = new AlertCriteria().byStatus(AlertStatus.NEW).byType(AlertType.LOW).byExternalId("entity_id").byPriority(2);
+    List<Alert> alerts = alertService.search(criteria);
+    {% endhighlight %}
+
+    <p>You can search for events using the following criteria.  Precendence is based on the order they are constructed:</p>
+
+    <ul>
+      <li>byExternalId</li>
+      <li>byStatus</li>
+      <li>byType</li>
+      <li>byPriority</li>
+      <li>byDateRange</li>
+      <li>fromDate</li>
+      <li>toDate</li>
+    </ul> 
+
+    <h5>Marking an Alert Closed</h5> 
+
+    <p>Through the AlertService</p>
+    {% highlight java %}
+    @Autowired
+    private AlertServiceImpl alertService;
+
+    String alertId; // Must be set to a valid alert id
+
+    alertService.changeStatus(alertId, newStatus);
+    {% endhighlight %}
+
+    <p>Through an Alert pojo and the Alerts repository</p>
+    {% highlight java %}
+    @Autowired
+    private AllAlerts allAlerts;
+
+    Alert alert; // Must be loaded by you
+
+    alert.setStatus(status);
+    allAlerts.update(alert);
+    {% endhighlight %}
+
+    <h3>Events consumed and emitted by the outbox module</h3>
+
+    <h4>Consumed events:</h4>
+
+    <p>The Alert module does not currently consume any events</p>
+
+    <h4>Emitted events:</h4>
+
+    <p>The Alert module does not currently emit any events</p>
+
+    <h3>Questions regarding the outbox module:</h3>
+
+    <p>Why is AlertType CRITICAL, HIGH, MEDIUM &nbsp; LOW aren't those priorities?</p>
+    <p>What does priority mean?  It's just an int?</p>
+    <p>Alert module should publish events on alert creation, modification and deletion.</p>
+    <p>Alert module should be an OSGi module.  The alertService should be loaded through the OSGi container</p>
+    <p>Alert module should be able to raise alerts by listening for certain events and mapping them to it's internal schema</p>
+    Hierachical entity ids. i.e. clinic
+
+  </div>
+ </div>
