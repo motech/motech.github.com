@@ -16,15 +16,79 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h4>Information for implementation</h4> 
 
+    <p>The Appointments module provides implementers with the following functionality:</p>
+
+    <ul>
+      <li>Create a calander of appointments and associate it with an entity</li>
+      <li>Remove a calander of appointments</li>
+      <li>Add visits to an existing calendar</li>
+      <li>Remove visits from an existing calendar</li>
+      <li>Confirm an appointment</li>
+      <li>Reschedule an appointment</li>
+      <li>Mark an appointment as attended</li>
+      <li>Mark and appointment as missed</li>
+      <li>Track visits and remind users to schedule a firm date for an appointment</li>
+      <li>Track firm appointments and remind users about them</li>
+    </ul>
+
+<!--
+    Create a Caledar
+
+    Create a Visit
+
+    Confirm a Visit
+
+    Create a Reminder Schedule for a visit
+
+    Schedule a Firm date for an Appointment
+
+    Reschedule an Appointment
+
+    Cancel an Appointment
+-->
+
     <h4>Configuration</h4>
+
+    <p>This module does not require any configuration</p>
 
     <h3>Events consumed and emitted by the outbox module</h3>
 
     <h4>Consumed events:</h4>
 
+    <p>This module does not consume any events.</p>
+
     <h4>Emitted events:</h4>
+
+    <p>When an entity should be reminded for a visit, the following event is emitted:</p>
+
+    {% highlight java %}
+    EventKeys.VISIT_REMINDER_EVENT_SUBJECT (org.motechproject.appointments.api.Visit.Reminder)
+    This event is emitted by the scheduler. 
+    Parameters/Payload:
+      EXTERNAL_ID_KEY (external.id) - String
+      VISIT_NAME (VisitName) - String
+      JOB_ID_KEY (jobId) - String
+    {% endhighlight %}
+
+    <p>When an entity should be reminded for an appointment, the following event is emitted:</p>
+
+    {% highlight java %}
+    EventKeys.APPOINTMENT_REMINDER_EVENT_SUBJECT (org.motechproject.appointments.api.Appointment.Reminder)
+    This event is emitted by the scheduler. 
+    Parameters/Payload:
+      EXTERNAL_ID_KEY (external.id) - String
+      VISIT_NAME (VisitName) - String
+      JOB_ID_KEY (jobId) - String
+    {% endhighlight %}
 
     <h3>Questions</h3>
 
+    <ul>
+      <li>I think the terminology is reversed.  I should create an Appointment, a Visit is when I actually attend</li>
+      <li>Why are there so many *Request classes?  I should be able to understand how to use the module by only looking at the Service class</li>
+      <li>Why is there an API on the Visit to create an Appointment?</li>
+      <li>Why do I mark a Visit as missed?  You don't miss a visit, you miss an Appointment</li>
+      <li>Why is the call to confirm an Appoinment on the Visit class?</li>
+    </ul>
   </div>
  </div>
