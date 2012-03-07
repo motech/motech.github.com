@@ -31,23 +31,46 @@ title: MOTECH - Mobile Technology for Community Health
       <li>Track firm appointments and remind users about them</li>
     </ul>
 
-<!--
-    Create a Caledar
+    <h3>Common Actions</h3>
+    <p>In all of the example code snippets below it is the implementers responsibility to provide an id for the user and to make sure all service classes are properly configured via spring.  In the future the mechanism for accessing the service classes will instead be through an OSGi service registry.</p>
 
-    Create a Visit
 
-    Confirm a Visit
+    <h4>Create a Visit</h4>
+    {% highlight java %}
+    CreateVisitRequest baseline = new CreateVisitRequest().setVisitName("baseline")
+                                                          .setAppointmentDueDate(now.plusWeeks(1));
+    {% endhighlight %}
 
-    Create a Reminder Schedule for a visit
+    <h4>Create a Visit with a Reminder Schedule</h4>
+    {% highlight java %}
+    ReminderConfiguration reminderConfiguration = new ReminderConfiguration().setRemindFrom(10)
+                                                                             .setIntervalCount(1)
+                                                                             .setIntervalUnit(ReminderConfiguration.IntervalUnit.HOURS)
+                                                                             .setRepeatCount(20);
 
-    Schedule a Firm date for an Appointment
+    CreateVisitRequest baseline = new CreateVisitRequest().setVisitName("baseline")
+                                                          .setAppointmentDueDate(now.plusWeeks(1))
+                                                          .setAppointmentReminderConfiguration(reminderConfiguration;
+    {% endhighlight %}
 
-    Reschedule an Appointment
+    <h4>Create a Caledar</h4>
+    {% highlight java %}
+    CreateVisitRequest baseline = new CreateVisitRequest().setVisitName("baseline")
+                                                          .setAppointmentDueDate(now.plusWeeks(1));
 
-    Cancel an Appointment
--->
+    CreateVisitRequest week2CreateVisit = new CreateVisitRequest().setVisitName("week2")
+                                                                  .setAppointmentDueDate(now.plusWeeks(2))
+                                                                  .setAppointmentReminderConfiguration(new ReminderConfiguration());
 
-    <h4>Configuration</h4>
+    AppointmentCalendarRequest calendarRequest = new AppointmentCalendarRequest().setExternalId(externalId)
+                                                                                 .addVisitRequest(baseline)
+                                                                                 .addVisitRequest(week2CreateVisit)
+                                                                                 .addVisitRequest(week4CreateVisit);
+
+    appointmentService.addCalendar(calendarRequest);
+    {% endhighlight %}
+
+    <h3>Configuration</h3>
 
     <p>This module does not require any configuration</p>
 
@@ -89,6 +112,7 @@ title: MOTECH - Mobile Technology for Community Health
       <li>Why is there an API on the Visit to create an Appointment?</li>
       <li>Why do I mark a Visit as missed?  You don't miss a visit, you miss an Appointment</li>
       <li>Why is the call to confirm an Appoinment on the Visit class?</li>
+      <li>What is the Remind From field in reminder config?  API name isn't clear</li>
     </ul>
   </div>
  </div>
