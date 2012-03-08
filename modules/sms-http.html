@@ -17,12 +17,12 @@ title: MOTECH - Mobile Technology for Community Health
 <p>The SMS-HTTP module should be deployed alongside the SMS-API module. An implementation should use the SMS service provided by the SMS-API module in order to send their messages. These message events are handled by the HTTP module. The HTTP module uses the Apache Commons HTTP Client to generate the HTTP requests. The implementer never directly calls this module. Templates must be specified for custom query parameters and the URI of the SMS provider. See configuration below.</p>
     <h4>Configuration</h4>
 <p>An implementer must configure a sms-http-template.json file like the one found in the test resources folder. This file is responsible for providing the template information the module needs in order to generate the HTTP requests. An example template is provided below:</p>
-    <img src="/assets/modules/exampletemplate1.png"/>
+    <img src="/assets/modules/exampletemplate1.PNG"/>
 <p>$recipients and $message act as placeholders that are dynamically filled in when the message is generated.</p>
 <p>queryParameters are appended to the request urlPath</p>
 <p>The request field in the templates is used to generate the HTTP request. The response field is used to check the HTTP response. If the actual response does not contain the text found in the response field from the json template, an SmsDeliveryFailureException is thrown. Otherwise the message is considered sent.
 </p>
-<img src="/assets/modules/exampletemplate2.png"/>
+<img src="/assets/modules/exampletemplate2.PNG"/>
 <p>The above template is similar to the kookoo template. However, the URL differs, there are additional query parameters, and each recipient phone number is separated by "+" in the request string.</p>
 <h3>Events consumed and emitted by the SMS-HTTP module</h3>
 
