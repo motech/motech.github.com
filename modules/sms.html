@@ -8,21 +8,29 @@ title: MOTECH - Mobile Technology for Community Health
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
-    <h3> Module</h3> 
+    <h3>SMS-API Module</h3> 
 
     <h4>Description</h4> 
-
+<p>The SMS-api module provides implementers with an event driven SMS framework. The SMS module alone is not enough to send SMS messages; an accompanying listener must also be included or implemented.</p>
     <h4>Information for implementation</h4> 
-
+<p>The SMS-api provides a single service interface for raising "send SMS" events in the system. The key concern is to have an appropriate event handler for the send SMS event. The SMS-api will split a single message into multiple messages based on a maximum character count of 160. Each split message will have its own send SMS event raised in the system.</p>
     <h4>Configuration</h4>
 
     <h3>Events consumed and emitted by the SMS module</h3>
 
-    <h4>Consumed events:</h4>
+<h4>Emitted events:</h4><br />
+<em>Subject</em>: EventSubjects.SEND_SMS (&quot;SendSMS&quot;)<br />
+<em>Payload:</em><br />
+EventDataKeys.RECIPIENTS (&quot;number&quot;) mapped to a List&lt;String&gt;<br />
+EventDataKeys.MESSAGE (&quot;message&quot;) mapped to a String<br />
+EventDataKeys.DELIVERY_TIME (&quot;delivery_time&quot;) mapped to a DateTime<br />
+<br />
 
-    <h4>Emitted events:</h4>
 
-    <h3>Questions</h3>
+    <h3>Sms Interface</h3>
+<p>The SMS interface provides four methods, one for sending a single message to a single recipient, one for sending a single message to a list of recipients, one for sending a single message to a single recipient at a specified delivery time, and one for sending a single message to a list of recipients at a specified delivery time. An implementer should access this interface by using Spring dependency injection.</p>
+<img src="/assets/modules/smsinterface.png"/>
+<p>Two modules consume the SEND_SMS event: SMS-HTTP and SMS-SMPP. An implementer may also consume this event and send the SMS message through a different format.</p>
 
   </div>
  </div>
