@@ -5,8 +5,10 @@
       <li><h6><a href="/modules/cms-lite.html">CMS Lite</a></h6></li>
       <li><h6><a href="/modules/decision-tree.html">Decision Tree</a></h6></li>
       <li><h6><a href="/modules/ivr.html">IVR</a></h6></li>
+<!--
       <li><h6><a href="/modules/ivr-kookoo.html">IVR Kookoo</a></h6></li>
       <li><h6><a href="/modules/ivr-voxeo.html">IVR Voxeo</a></h6></li>
+-->
       <li><h6><a href="/modules/message-campaign.html">Message Campaign</a></h6></li>
       <li><h6><a href="/modules/mrs.html">MRS (Medical Record System)</a></h6></li>
       <li><h6><a href="/modules/openmrs.html">OpenMRS</a></h6></li>
@@ -14,8 +16,10 @@
       <li><h6><a href="/modules/pill-reminder.html">Pill Reminder</a></h6></li>
       <li><h6><a href="/modules/schedule-tracking.html">Schedule Tracking</a></h6></li>
       <li><h6><a href="/modules/sms.html">SMS</a></h6></li>
+<!--
       <li><h6><a href="/modules/sms-http.html">SMS HTTP</a></h6></li>
       <li><h6><a href="/modules/sms-smpp.html">SMS SMPP</a></h6></li>
+-->
     </ul>
   </div>
 
