@@ -11,18 +11,61 @@ title: MOTECH - Mobile Technology for Community Health
     <h3> Module</h3> 
 
     <h4>Description</h4> 
-
+    <p>
+      The MoTeCH OpenMRS API module is a concrete implementation of the MoTeCH MRS API module for the OpenMRS project (http://www.openmrs.org). Implementers should include this module if they 
+      intend to use the OpenMRS as their primary medical record system. This module uses the OpenMRS client API (openmrs-api.jar, an artifact provided by the OpenMRS project) to communicate with an OpenMRS installation  
+    </p>
     <h4>Information for implementation</h4> 
-
+    <p>
+      OpenMRS requires a client be authenticated and a session to be open before they can interact with their API. The MoTeCH OpenMRS API module  provides two convenient Java annotations to make <br />
+      this a seamless process. Implementers can annotate the Java methods that interact with the MoTeCH MRS API, and MoTeCH will handle this automatically through aspect oriented programming (AOP).<br />
+      <br />
+      The two annotations are: <br />
+      LoginAsAdmin - Sets the current user to the admin using the credentials defined in the openmrs.properties file.<br />
+      ApiSession - Opens, starts and closes an OpenMRS session. <br />
+      <br />
+      Example usage:<br />
+      @LoginAsAdmin<br />
+      @ApiSession<br />
+      public boolean hasConcept(String patientId, String conceptName) {<br />
+      &nbsp;&nbsp;List<MRSObservation> observationList = <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;observationAdapter.findObservation(patientId, conceptName);<br />
+      &nbsp;&nbsp;…<br />
+      }    
+    </p>
+    
     <h4>Configuration</h4>
-
-    <h3>Events consumed and emitted by the outbox module</h3>
+    <p>
+      Implementers should be aware of the following configuration requirements when working with the MoTeCH OpenMRS API module:<br />
+      <br />
+      openmrs.properties file<br />
+      Implementers will need to include an openmrs.properties file in their classpath. The openmrs.properties file contains the database credentials and admin user information for the OpenMRS installation.<br />
+      <br />
+      Example openmrs.properties (taken from motech-openmrs-api/src/test/resources):<br />
+      openmrs.host=localhost<br />
+      openmrs.database=openmrs_api_test<br />
+      openmrs.db.username=openmrs<br />
+      openmrs.db.password=password<br />
+      openmrs.admin.username=admin<br />
+      openmrs.admin.password=P@ssw0rd
+    </p>
+    
+    <h3>Events consumed and emitted by the OpenMRS module</h3>
 
     <h4>Consumed events:</h4>
-
+    <p>
+      No events consumed by OpenMRS API module
+    </p>
     <h4>Emitted events:</h4>
-
+    <p>
+      No events emitted by OpenMRS API module
+    </p>
+    
     <h3>Questions</h3>
-
+    <p>
+      Should MoTeCH OpenMRS API module  use the REST web services for OpenMRS?  MoTeCH currently uses the openmrs-api.jar, which communicates directly with the OpenMRS database. 
+      Using the web services would eliminate some of the configuration required to use the openmrs-api.jar. In addition, it may make it easier to communicate between an OpenMRS and MoTeCH installation 
+      that reside on separate hosts.
+    </p>
   </div>
  </div>

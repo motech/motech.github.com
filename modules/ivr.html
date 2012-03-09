@@ -8,21 +8,35 @@ title: MOTECH - Mobile Technology for Community Health
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
-    <h3> Module</h3> 
+    <h3>IVR Platform Module</h3> 
 
     <h4>Description</h4> 
-
+<p>The IVR module acts as a basic framework for implementing IVR functionality in the platform. The module provides one implementation of an IVR service that connects to an Asterick server using VoiceGlue VXML browser.
+</p>
     <h4>Information for implementation</h4> 
+<p>The IVR module provides a common interface that IVR modules should implement, IVRService.
+IVRService has one method, initiateCall, which accepts a CallRequest object. CallRequests represent the information regarding a call and events associated with the results of that call.</p>
+    
+	<img src="/assets/modules/IVRService.png"/>
 
-    <h4>Configuration</h4>
 
-    <h3>Events consumed and emitted by the outbox module</h3>
+<h4>A CallRequest has:</h4>
+<ul>
+<li>phone (String) - The phone number to call</li>
+<li>timeOut (int) - The time out value for the call</li>
+<li>callBackUrl (String) - The URL for VXML content</li>
+<li>payload (Map<String,String>) - A map for adding additional data to the call, this is where your unique identifier would be placed.</li>
+<li>onSuccessEvent (MotechEvent) - The event fired when the call is successful.</li>
+<li>onBusyEvent (MotechEvent) - The event fired when the call is busy.</li>
+<li>onNoAnswerEvent (MotechEvent) - The event fired when the call is not answered.</li>
+<li>onFailureEvent (MotechEvent) - The event fired when the call failed for some reason.</li>
+</ul>
 
-    <h4>Consumed events:</h4>
+<h4>Asterisk implementations:</h4>
 
-    <h4>Emitted events:</h4>
-
-    <h3>Questions</h3>
-
+<p>IVRServiceAsteriskImpl is the bean to wire IVRService with if you want to use the Asterisk server.
+</p>
+<p>MotechAsteriskCallBackImpl provides CallDetailRecord keeping and events for the various stages and results of calls.
+</p>
   </div>
  </div>
