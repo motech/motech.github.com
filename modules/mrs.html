@@ -11,17 +11,36 @@ title: MOTECH - Mobile Technology for Community Health
     <h3> Module</h3> 
 
     <h4>Description</h4> 
+    <p>
+      The MRS API module provides a generic, lightweight API for interacting with medical record systems. Out-of-the-box, the module has several service interfaces that 
+      clients can use to interact with medical record systems. In addition, the module contains a well defined data model for storing and accessing patient information.    
+    </p>
 
     <h4>Information for implementation</h4> 
+    <p>
+      Implementers should use the MRS API in conjunction with a concrete MRS implementation. The MoTeCH platform provides an OpenMRS implementation (see OpenMRS API module) that can be used by implementers.
+      <br /><br />
+      The terminology within the MRS API data model is similar to the OpenMRS project. Implementers should be familiar with the following terms:<br />
+      MRSPerson - An individual in the MRS, e.g. a patient, provider of care, or user of the system. A person includes first name, last name, address, date of birth, and gender.<br />
+      MRSPatient - A person who is registered as a patient in the MRS<br />
+      MRSEncounter - When a patient visits a hospital or health clinic, or more generally, any interaction between a patient and health care worker. An encounter includes a date, a patient and number of observations.<br />
+      MRSObservation - Something measured or observed during an encounter. Examples include: weight, temperature, and pulse.<br />
+      MRSFacility - A physical place where an encounter can occur, e.g. hospital or health clinic.<br />
+    </p>
 
     <h4>Configuration</h4>
 
     <h3>Events consumed and emitted by the MRS module</h3>
 
     <h4>Consumed events:</h4>
-
+    <p>
+      No events are consumed by the MRS module
+    </p>
     <h4>Emitted events:</h4>
-
+    <p>
+      No events are emitted by MRS module
+    </p>
+    
     <h3>Questions</h3>
 
   </div>
