@@ -350,6 +350,12 @@ small {
 	font-size: 10px;
 }
 
+smallwhite {
+	color: #ffffff;
+	font-size: 10px;
+}
+
+
 ins {
 	background-color: #f4f7fa;
 }

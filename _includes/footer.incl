@@ -14,8 +14,8 @@
 				<!-- Set margin-top on logo to negative half of image height (to center it vertically) in CSS (.footer-logo) -->
 				<a href="index.html"></a>
 				
-				<small class="copyright">&copy;2012&nbsp;&nbsp;&middot;&nbsp;&nbsp;Grameen Foundation USA</small> | 
-				<small class="copyright">Some icons from <a href="http://thenounproject.com/">The Noun Project</a></small>
+				<smallwhite>&copy;2012&nbsp;&nbsp;&middot;&nbsp;&nbsp;Grameen Foundation USA</smallwhie> | 
+				<smallwhite>Some icons from <a href="http://thenounproject.com/">The Noun Project</a></smallwhite>
 			
 			</div>
 		</footer><!-- end footer -->
