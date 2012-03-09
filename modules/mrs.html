@@ -20,12 +20,18 @@ title: MOTECH - Mobile Technology for Community Health
     <p>
       Implementers should use the MRS API in conjunction with a concrete MRS implementation. The MoTeCH platform provides an OpenMRS implementation (see OpenMRS API module) that can be used by implementers.
       <br /><br />
-      The terminology within the MRS API data model is similar to the OpenMRS project. Implementers should be familiar with the following terms:<br />
+      The terminology within the MRS API data model is similar to the OpenMRS project. Implementers should be familiar with the following classes:<br />
       MRSPerson - An individual in the MRS, e.g. a patient, provider of care, or user of the system. A person includes first name, last name, address, date of birth, and gender.<br />
       MRSPatient - A person who is registered as a patient in the MRS<br />
       MRSEncounter - When a patient visits a hospital or health clinic, or more generally, any interaction between a patient and health care worker. An encounter includes a date, a patient and number of observations.<br />
       MRSObservation - Something measured or observed during an encounter. Examples include: weight, temperature, and pulse.<br />
       MRSFacility - A physical place where an encounter can occur, e.g. hospital or health clinic.<br />
+    </p>
+    
+    <h4>Service Interfaces</h4>
+    <p>
+      Implementers should use the service interfaces (the org.motechproject.mrs.services package) for interacting with the MRS. The service interfaces contain methods for creating and retrieving 
+      the various data model classes. For example, MRSEncounterAdapter is a service class for creating and retrieving MRSEncounter objects.    
     </p>
 
     <h4>Configuration</h4>
