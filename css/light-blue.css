@@ -671,6 +671,7 @@ body:before {
 /*	background: #7ca9d6 url(../images/light-blue/header-texture.png) repeat 0 0; */
 	border-bottom: 2px solid #506275;
 	background-color: black;
+/*	
 	background: url(../images/light-blue/header-texture.png) repeat 0 0, -ms-linear-gradient(
     	top,
     	#6e96bf 0%,
@@ -703,6 +704,7 @@ body:before {
     	#6e96bf 0%,
     	#7ca9d6 100%
 	);
+*/
 }
 
 #action{
