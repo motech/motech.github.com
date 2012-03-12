@@ -11,7 +11,7 @@ title: MOTECH - Mobile Technology for Community Health
     <h3>Schedule Tracking Module</h3>
 
     <h3>Description</h3>
-    <p>The schedule tracking module allows a client to be enrolled in a clearly defined schedule consisting of specified milestones. Milestones represent windows of time that a certain criteria, treatment, course, etc should be fulfilled before moving on to the next milestone. Alerts are sent to the enrolled clients when they are due, late or past on the period of fulfillment. Clients may be enrolled in unlimited schedules, but can only be active in one enrollment for given schedule.</p>
+    <p>The schedule tracking module allows a client to be enrolled in a clearly defined schedule consisting of specified milestones. Milestones represent windows of time that a certain criteria, treatment, course, etc should be fulfilled before moving on to the next milestone. Alerts are sent to the enrolled clients when they are due, late or past on the period of fulfillment. Clients may be enrolled in unlimited schedules, but can only be active in one enrollment for a given schedule.</p>
 
     <h3>Information for implementation</h3>
 
@@ -29,9 +29,11 @@ title: MOTECH - Mobile Technology for Community Health
     <p>Specifying the characteristics of a schedule and its milestones is typically accomplished using a JSON (JavaScript Object Notation) document. The schedule_tracking.properties file specifies the directory to scan for schedule definitions. Any json file in the directory will be treated as a schedule definition. Multiple schedules can be defined, each in their own file. Schedules have a name and list of milestones. A milestone has a name, four standard windows, data (not currently used) and alerts. The window durations can be customized. Below is an example of a JSON schedule definition.</p>
 
     <h3>Sample Schedule Definition</h3>
-    <p>Below is an example JSON definition file for a single schedule. The schedule has a name, IPTI Schedule. There are two distinct milestones specified within the schedule. The first, IPTI 1, will spend its first 13 weeks in waiting status called the "earliest" window. 1 week will be spent in in due status. (14 weeks is relative to start of milestone). 2 months after the start of IPTI 1, the late window elapses. The max window has no duration (see Specifying Times for more details). Due to no maximum period being defined, as soon as the late period is entered, the enrollment's status will be set to defaulted. Note that  in the case of windows, the values specify when the window should end with respect to the start of the milestone. While the milestone is in due, one alert per day will be sent to the client at the preferred time they were enrolled with. Once in the late window, one alert per week is sent except for the first week. If no preferred time is passed, the alert will be raised exactly as per its offset from the reference date and time.</p>
+    <p>Below is an example JSON definition file for a single schedule. The schedule has a name, IPTI Schedule. There are two distinct milestones specified within the schedule.</p>
+	<p>The first, IPTI 1, will spend its first 13 weeks in waiting status called the "earliest" window. 1 week will be spent in in due status. (14 weeks is relative to start of milestone). 2 months after the start of IPTI 1, the late window elapses. The max window has no duration (see Specifying Times for more details). Due to no maximum period being defined, as soon as the late period is entered, the enrollment's status will be set to defaulted. Note that  in the case of windows, the values specify when the window should end with respect to the start of the milestone.</p>
+	<p>While the milestone is in due, one alert per day will be sent to the client at the preferred time they were enrolled with. Once in the late window, one alert per week is sent except for the first week. If no preferred time is passed, the alert will be raised exactly as per its offset from the reference date and time.</p>
 
-    <p>Both milestones define data that is included in the alert event payload.</p>
+    <p>Both milestones define data that is included in the alert event payload. The client may pass any data they wish to receive when the event will be raised.</p>
 
     {% highlight javascript %}
 {
@@ -125,6 +127,7 @@ title: MOTECH - Mobile Technology for Community Health
 	<dt>window name</dt>
 	<dt>reference date and time</dt>
 	<dt>start dates for each of the four windows</dt>
+	<dt>custom data</dt>
 	</dl>
 
     <h3>Fulfilling milestones</h3>
