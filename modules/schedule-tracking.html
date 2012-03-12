@@ -29,7 +29,7 @@ title: MOTECH - Mobile Technology for Community Health
     <p>Specifying the characteristics of a schedule and its milestones is typically accomplished using a JSON (JavaScript Object Notation) document. The schedule_tracking.properties file specifies the directory to scan for schedule definitions. Any json file in the directory will be treated as a schedule definition. Multiple schedules can be defined, each in their own file. Schedules have a name and list of milestones. A milestone has a name, four standard windows, data (not currently used) and alerts. The window durations can be customized. Below is an example of a JSON schedule definition.</p>
 
     <h3>Sample Schedule Definition</h3>
-    <p>Below is an example JSON definition file for a single schedule. The schedule has a name, IPTI Schedule. There are two distinct milestones specified within the schedule. The first, IPTI 1, will spend its first 13 weeks in waiting status called the "earliest" window. 1 week will be spent in in due status. (14 weeks is relative to start of milestone) Due to no maximum period being defined, as soon as the late period is entered, the enrollment's status will be set to defaulted. While the milestone is in due, one alert per day will be sent to the client at the preferred time they were enrolled with. Once in the late window, one alert per week is sent except for the first week. If no preferred time is passed, the alert will be raised exactly as per its offset from the reference date and time.</p>
+    <p>Below is an example JSON definition file for a single schedule. The schedule has a name, IPTI Schedule. There are two distinct milestones specified within the schedule. The first, IPTI 1, will spend its first 13 weeks in waiting status called the "earliest" window. 1 week will be spent in in due status. (14 weeks is relative to start of milestone). 2 months after the start of IPTI 1, the late window elapses. The max window has no duration (see Specifying Times for more details). Due to no maximum period being defined, as soon as the late period is entered, the enrollment's status will be set to defaulted. Note that  in the case of windows, the values specify when the window should end with respect to the start of the milestone. While the milestone is in due, one alert per day will be sent to the client at the preferred time they were enrolled with. Once in the late window, one alert per week is sent except for the first week. If no preferred time is passed, the alert will be raised exactly as per its offset from the reference date and time.</p>
 
     <p>Both milestones define data that is included in the alert event payload.</p>
 
@@ -82,19 +82,18 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h3>Specifying Times</h3>
 
-    <p>Time values in the schedule definition are speciied in the following format.
-			number unit
-		where, number is any number
-		unit is any of year, month, week, day or hour. Plural form of the word can also be used. Note that durations involving year and month might not remain consistent. A month might have 28, 30 or 31 days, and a year may have 366 days. The actual duration will depend on the reference date around which the windows are defined.   		
-		e.g: 1 Day, 4 Weeks
+    <p>Time values in the schedule definition are speciied in the following format.</p>
+	<p>number unit</p>
+	<p>where, number is any number</p>
+	<p>unit is any of year, month, week, day or hour. Plural form of the word can also be used. Note that durations involving year and month might not remain consistent. A month might have 28, 30 or 31 days, and a year may have 366 days. The actual duration will depend on the reference date around which the windows are defined.</p>   		
+	<p>e.g: 1 Day, 4 Weeks</p>
 		
-		Multiple time values can be combined together (as an array in the json) to result in a period which is a sum of all the values.
-		e.g: ["2 Weeks", "3 Days"] reprents a period equivalent to 17 days,
+	<p>Multiple time values can be combined together (as an array in the json) to result in a period which is a sum of all the values.</p>
+	<p>e.g: ["2 Weeks", "3 Days"] reprents a period equivalent to 17 days.</p>
 			 
-		An empty string normally means a zero duration. However, in the case a window is defined with an empty duration it DOES NOT mean the window has a zero offset from the start of the milestone. It simply means the window does not have a duration.
+	<p>An empty string normally means a zero duration. However, in the case a window is defined with an empty duration it DOES NOT mean the window has a zero offset from the start of the milestone. It simply means the window does not have a duration.</p>
 		
-		Alert times can also be specified in a similar way. However, variable duration units such as month and year cannot be used. This is because our scheduling logic is very much rooted to fixed interval repeats. The behaviour in the case variable duration units are used for alerts is undefined. 
-	</p>
+	<p>Alert times can also be specified in a similar way. However, variable duration units such as month and year cannot be used. This is because our scheduling logic is very much rooted to fixed interval repeats. The behaviour in the case variable duration units are used for alerts is undefined.</p>
 
     <h3>Enrolling a user in a campaign</h3>
 
@@ -115,17 +114,18 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h3>Events</h3>
 
-    {% highlight java %}
+	{% highlight java %}
     EventSubjects.MILESTONE_ALERT
-    This event is emitted when an alert needs to be sent out and handled.
-    Parameters/Payload:
-	  external id 	
-      schedule name 
-	  window name
-	  reference date and time
-	  start dates for each of the four windows
-    {% endhighlight %}
-
+	{% endhighlight %}
+	
+    <p>This event is emitted when to indicate that an alert is being raised. The client may handle this event and act accordingly. The parameters passed with the event are as follows.</p>
+	<dl>
+	<dt>external id</dt> 	
+    <dt>schedule name</dt> 
+	<dt>window name</dt>
+	<dt>reference date and time</dt>
+	<dt>start dates for each of the four windows</dt>
+	</dl>
 
     <h3>Fulfilling milestones</h3>
 
@@ -141,21 +141,38 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h3>Querying API</h3>
 
-    <p>The module provides a search() method for querying enrollments. This allows the client to find enrollments using various critera (e.g all active enrollments, enrollments due in the next week etc). search() takes an EnrollmentQuery. The query can be built by adding search clauses such as enrollment status, current window etc. The clauses together will define a specific seatch criteria.
-		
-		Examples:		
-		scheduleTrackingService.search(new EnrollmentsQuery().havingState("active"))
+    <p>The module provides a search() method for querying enrollments. This allows the client to find enrollments using various critera (e.g all active enrollments, enrollments due in the next week etc). search() takes an EnrollmentQuery. The query can be built by adding search clauses such as enrollment status, current window etc. The clauses together will define a specific seatch criteria.</p>
 
-		will find all active enrollments		
+<p>Examples:		
+
+{% highlight java %}
+scheduleTrackingService.search(new EnrollmentsQuery().havingState("active"))
+{% endhighlight %}
+
+will find all active enrollments</p>		
 				
-		scheduleTrackingService.search(
-			new EnrollmentsQuery()
-				.havingSchedule("IPTI Schedule")
-				.havingState("active")
-				.havingWindowStartingDuring(WindowName.due, weeksAgo(1), now))
+{% highlight java %}
+scheduleTrackingService.search(
+	new EnrollmentsQuery()
+		.havingSchedule("IPTI Schedule")
+		.havingState("active")
+		.havingWindowStartingDuring(WindowName.due, weeksAgo(1), now))
+{% endhighlight %}
 				
-		will find active enrollments enrolled into IPTI Schedule that will enter the due window any time in the next one week.
-	</p>
+will find active enrollments enrolled into IPTI Schedule that will enter the due window any time in the next one week.
+</p>
+
+<p>
+The return value is a list of EnrollmentRecords. An EnrollmentRecord represents an enrollment in the system. It has the following fields.
+	<dl>
+	<dt>external id</dt> 	
+    <dt>schedule name</dt> 
+	<dt>reference date and time</dt>
+	<dt>enrollment date and time</dt>
+	<dt>start dates for each of the four windows</dt>
+	<dt>preferred alert time</dt>
+	</dl>
+</p>
 
   </div>
 </div>
