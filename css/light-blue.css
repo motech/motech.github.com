@@ -179,6 +179,7 @@ p {
 a {
 	color: #5684b2;
 	cursor: pointer;
+		font-size: inherit;
 	text-decoration: none;
 }
 
