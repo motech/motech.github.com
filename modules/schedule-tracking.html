@@ -87,7 +87,7 @@ title: MOTECH - Mobile Technology for Community Health
     <p>Time values in the schedule definition are speciied in the following format.</p>
 	<p>number unit</p>
 	<p>where, number is any number</p>
-	<p>unit is any of year, month, week, day or hour. Plural form of the word can also be used. Note that durations involving year and month might not remain consistent. A month might have 28, 30 or 31 days, and a year may have 366 days. The actual duration will depend on the reference date around which the windows are defined.</p>   		
+	<p>unit is any of year, month, week, day, hour, minute or second. Plural form of the word can also be used. Note that durations involving year and month might not remain consistent. A month might have 28, 30 or 31 days, and a year may have 366 days. The actual duration will depend on the reference date around which the windows are defined.</p>   		
 	<p>e.g: 1 Day, 4 Weeks</p>
 		
 	<p>Multiple time values can be combined together (as an array in the json) to result in a period which is a sum of all the values.</p>
@@ -96,6 +96,8 @@ title: MOTECH - Mobile Technology for Community Health
 	<p>An empty string normally means a zero duration. However, in the case a window is defined with an empty duration it DOES NOT mean the window has a zero offset from the start of the milestone. It simply means the window does not have a duration.</p>
 		
 	<p>Alert times can also be specified in a similar way. However, variable duration units such as month and year cannot be used. This is because our scheduling logic is very much rooted to fixed interval repeats. The behaviour in the case variable duration units are used for alerts is undefined.</p>
+	
+	<p>Support for minute and second units has been added so that you can create short lived schedules handy for testing.</p>
 
     <h3>Enrolling a user in a campaign</h3>
 
