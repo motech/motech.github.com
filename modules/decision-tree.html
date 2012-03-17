@@ -12,17 +12,137 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h4>Description</h4> 
 
+    <p>The Decision Tree exposes APIs and a data format that allows for the expression of content trees.  A content tree can then be played for a user through multiple IVR, SMS or HTTP interfaces.  The content tree can provide users with audio dialogs, interface with data stored by other modules in MOTECH and record user respones as well as the path traveled through the tree.</p>
+
     <h4>Information for implementation</h4> 
+
+    <h5>Defining a tree</h5>
+
+    <p>Trees can be defined either through code or configuration.  To define a tree in code you will need to use the builder interface to define a tree, nodes and transitions.  Additionally you'll need define metadata such as prompts for nodes and destinations for transitions.
+
+    <h6>In Code</h6>
+    {% highlight java %}
+    Tree tree = new Tree()
+      .setRootNode(new Node()
+              .setPrompts(new TextToSpeechPrompt().setMessage("if you feel sick select 1, if not select 2"))
+              .setTransitions(new Object[][]{
+                      {"1", new Transition().setName("pressed1")
+                              .setDestinationNode(new Node()
+                                      .setPrompts(new TextToSpeechPrompt().setMessage("if you have a fever select 1, if not select 3"))
+                                      .setTransitions(new Object[][]{
+                                              {"1", new Transition().setName("pressed1").setDestinationNode(
+                                                      new Node().setPrompts(new TextToSpeechPrompt().setMessage("come to the hospital now"))
+                                              )},
+                                              {"3", new Transition().setName("pressed3").setDestinationNode(
+                                                      new Node().setPrompts(new TextToSpeechPrompt().setMessage("be patient, we will call you"))
+                                              )}
+                                      })
+                              )},
+                      {"2", new Transition().setName("pressed2")
+                              .setDestinationNode(new Node().setPrompts(new TextToSpeechPrompt().setMessage("Check with us again")))}
+              }));
+
+    tree.setName("Illness Tree");
+
+    // Save the tree to the db
+    treeDao.add(tree);
+    {% endhighlight %}
+
+    <h6>In Config</h6>
+
+    {% highlight javascript %}
+    {
+      name: "Illness Tree",
+      rootNode: {
+        prompts: [
+          {
+            name: "text",
+            message: "if you feel sick select 1, if not select 2"
+          }
+        ],
+        transitions: [
+          {
+            "1", {
+                    name: "pressed1",
+                    destinationNode: {
+                      prompts: [
+                        {
+                          name: "text",
+                          message: "if you have a fever select 1, if not select 3"
+                        }
+                      ],
+                      transitions: [
+                        {
+                          "1", {
+                                  name: "pressed1",
+                                  destinationNode: {
+                                    prompts: [ 
+                                      {
+                                        name: "test",
+                                        message: "come to the hospital now"
+                                      }
+                                    ]
+                                  }
+                               }
+                          "3", {
+                                  name: "pressed3",
+                                  destinationNode: {
+                                    prompts: [ 
+                                      {
+                                        name: "test",
+                                        message: "be patient, we will call you"
+                                      }
+                                    ]
+                                  }
+                                }
+                        }
+                      ]
+                    }
+            }
+            "2", {
+                    name: "pressed2",
+                    destinationNode: {
+                      prompts: [
+                        {
+                          name: "test",
+                          message: "Check with us again"
+                        }
+                      ]
+                  }
+              }
+          }
+        ]
+      }
+    }
+    {% endhighlight %}
+
+    <p>Within a tree it is possible to specify events that will be raised before and after a node is executed or when a transition is selected.  The system will automatically raise these events allow custom modules to track and interact with a trees execution.</p>
+
+    <h5>Executing a tree</h5>
+
+    <p>A VXML representation of the tree can be accessed by having your IVR system access your motech system at /tree?tNm={Tree Name}.</p>
 
     <h4>Configuration</h4>
 
-    <h3>Events consumed and emitted by the decision-tree module</h3>
+    <p>This module requires no special configuration beyond the definition of your trees.</p>
 
-    <h4>Consumed events:</h4>
+    <h4>Events consumed and emitted by the decision-tree module</h4>
 
-    <h4>Emitted events:</h4>
+    <h5>Consumed events:</h5>
+
+    <p>This module does not consume any events.</p>
+
+    <h5>Emitted events:</h5>
+
+    <p>This module emits custom events defined within trees.</p>
 
     <h3>Questions</h3>
 
+    <p>The builder interface is ok, but the json interface is really difficult to follow, let alone enter.  We need an editor and/or a simpler format.</p>
+    <p>patientId should be removed from the VxmlController since it isn't used.</p>
+    <p>parameter names in the VxmlController should be more descriptive.</p>
+    <p>BeforeActions and AfterActions should be cleaned up.  It looks like they do not accept custom data.  Also the name should be changed from Actions to Events.</p>
+    <p>Should I be able to register a sync. callback with a node or transition to allow real time validations?</p>
+    <p>The module should raise an event when a tree is started and when it is completed.  It should also raise an event for each node and transition activated during the execution of a tree.</p>
   </div>
  </div>
