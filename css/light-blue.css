@@ -47,6 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+header-up-right {
+	position:absolute;
+	right:0px;
+	width: 210px;
+		text-transform: none;
+}
+
 /* ----------------------------------
 ---------     TYPOGRAPHY   ----------
 ---------------------------------- */
