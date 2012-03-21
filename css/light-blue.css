@@ -3156,6 +3156,10 @@ img.icon {
 	margin-right: 10px;
 }
 
+IMG.middle { 
+	vertical-align: middle 
+}
+
 hr {
 	background-color: #dbdee0;
 	border: 0;
