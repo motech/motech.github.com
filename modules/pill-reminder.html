@@ -8,23 +8,67 @@ title: MOTECH - Mobile Technology for Community Health
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
-    <h3> Module</h3> 
+    <h3>Pill Reminder Module (Documentation In Progress)</h3> 
 
     <h4>Description</h4> 
 
-    <p>The Pill Reminder Module provides repeated reminders about pills to users during defined pill windows that allows them to report on their compliance with the pill regimen.</p>
+    <p>The Pill Reminder Module provides repeated reminders about pill regimens to users.  Users are enrolled in a regimen and then reminded to take the appropiate medicines at the appropiate times of the day.  User responses are tracked and adherence to the prescribed reginem can be calculated.</p>
     
     <h4>Information for implementation</h4> 
 
+    <p>The Pill Reminder module provides implementers with the following functionality:</p>
+
+    <ul>
+      <li>Enroll users in a custom pill regimen</li>
+      <li>Custom per-user reminders for specific medicines at during defined time windows</li>
+      <li>Track users adherence to a pill regimen</li>
+    </ul>
+
+    <h4>Common Actions</h4>
+    <p>In all of the example code snippets below it is the implementers responsibility to provide an id for the user and to make sure all service classes are properly configured via spring.  In the future the mechanism for accessing the service classes will instead be through an OSGi service registry.</p>
+
+    <h5>Enroll a User in a Regimen</h5>
+    {% highlight java %}
+    LocalDate startDate = DateUtil.today();
+    LocalDate endDate = startDate.plusDays(2);
+
+    // The user is expected to take two different medicices with overlapping but different time windows
+    MedicineRequest medicineRequest1 = new MedicineRequest("m1", startDate, endDate);
+    MedicineRequest medicineRequest2 = new MedicineRequest("m2", startDate.plusDays(1), startDate.plusDays(4));
+    List<MedicineRequest> medicineRequests = asList(medicineRequest1, medicineRequest2);
+
+    // The user must take the medicine at 9:05
+    DosageRequest dosageRequest = new DosageRequest(9, 5, medicineRequests);
+
+    // The user has 5 hours to take their medicine.  The system will remind them every 20 minutes with a 5 minute overtime buffer.
+    // The pill is only taken once a day.  (Only one dosage request)
+    DailyPillRegimenRequest dailyPillRegimenRequest = new DailyPillRegimenRequest(userId, 5, 20, 5, asList(dosageRequest));
+
+    pillReminderService.createNew(dailyPillRegimenRequest);
+    {% endhighlight %}
+
+    <h5>Respond to a Reminder Event</h5>
+
+    <h5>Get Adherence Data</h5>
+
     <h4>Configuration</h4>
 
-    <h3>Events consumed and emitted by the Pill-Reminder module</h3>
+    <p>This module does not require any custom configuration</p>
 
-    <h4>Consumed events:</h4>
+    <h4>Events consumed and emitted by the Pill-Reminder module</h4>
 
-    <h4>Emitted events:</h4>
+    <h5>Consumed events:</h5>
 
-    <h3>Questions</h3>
+    EventKeys.PILLREMINDER_REMINDER_EVENT_SUBJECT_SCHEDULER
+
+    <h5>Emitted events:</h5>
+
+    EventKeys.PILLREMINDER_REMINDER_EVENT_SUBJECT
+
+    <h4>Questions</h4>
+
+    <p>Is terminology correct?  DosageRequest seems to be used to create the time window.  I would have thought that was for pill size or amounts.</p>
+    <p>The API for reporting a dosage as taken doesn't seem clear to me.  Apparently I just set the time when I know the status of a dosage, but never the status?</p>
 
   </div>
  </div>
