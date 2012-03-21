@@ -1,10 +1,10 @@
 <header id="header">
     <div class="inner-wrap clearfix">
-    
+
         <h1 id="logo">
             <a href="/index.html">MOTECH - Mobile Technology for Community Health</a>
         </h1>
-        
+      <header-up-right>A Grameen Foundation Initiative</header-up-right>      
         <nav class="dropdown">
             <ul id="nav" class="clearfix">
                 <li><a href="/index.html">Home</a></li>
