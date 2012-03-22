@@ -103,6 +103,43 @@ title: MOTECH - Mobile Technology for Community Health
       JOB_ID_KEY (jobId) - String
     {% endhighlight %}
 
+    <h3>Querying API</h3>
+
+    <p>The module provides a search() method for querying visits. This allows the client to find vists using various critera (e.g all visits of an entity, appointments due in the next week etc). search() takes a VisitsQuery. The query can be built by adding search clauses such as due date, external id and visit date. The clauses together will define a specific seatch criteria.</p>
+
+<p>Examples:		
+
+{% highlight java %}
+appointmentService.search(new VisitsQuery())
+{% endhighlight %}
+
+will find all appointments in the system.</p>		
+				
+{% highlight java %}
+appointmentService.search(
+	new VisitsQuery()
+		.havingExternalId("foo")
+		.unvisited())
+{% endhighlight %}
+				
+will find all appointments of entity "abc" that have not yet been visited.
+</p>
+
+<p>
+The return value is a list of VisitResponses. A  VisitResponse represents a visit record in the system. It has the following fields.
+	<dl>
+		<dt>name                       </dt>
+		<dt>externalId                 </dt>
+		<dt>typeOfVisit                </dt>
+		<dt>visitDate                </dt>
+		<dt>missed                    </dt>
+		<dt>visitData</dt>
+		<dt>originalAppointmentDueDate</dt>
+		<dt>appointmentDueDate       </dt>
+		<dt>appointmentConfirmDate       </dt>
+	</dl>
+</p>
+
     <h3>Questions</h3>
 
     <ul>
