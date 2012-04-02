@@ -99,9 +99,9 @@ title: MOTECH - Mobile Technology for Community Health
 	
 	<p>Support for minute and second units has been added so that you can create short lived schedules handy for testing.</p>
 
-    <h3>Enrolling a user in a campaign</h3>
+    <h3>Enrolling a user in a schedule</h3>
 
-    <p>The schedule tracking module exposes a ScheduleTrackingService with one method, enroll. To enroll a user in a schedule, an EnrollRequest must be passed to the enroll method in the service. EnrollRequests consist of the following information:</p>
+    <p>The schedule tracking module exposes a class ScheduleTrackingService. To enroll a user into a schedule, an EnrollRequest must be passed to the enroll method in the ScheduleTrackingService. EnrollRequest has the following information:</p>
 
     <dl>
       <dt>externalId (String)</dt>  <dd>A unique ID of the client.</dd>
@@ -112,6 +112,7 @@ title: MOTECH - Mobile Technology for Community Health
       <dt>enrollmentDate (LocalDate)</dt>  <dd>The date when the user is being enrolled into the schedule.</dd>
       <dt>enrollmentTime (Time)</dt>  <dd>optional time component can be specified for fine grained scheduling (defaults to midnight).</dd>
       <dt>preferredAlertTime (Time)</dt>  <dd>The time of day, in hours and minutes, the user should be sent alerts.</dd>
+      <dt>metadata (Map&lt;String, String&gt;)</dt>  <dd>Additional information can be stored in metadata as property => value pair. eg: facility_id => 1234</dd>
     </dl>
 
     <p>When enroll is invoked, the service determines whether that client is already enrolled and active in the schedule. If they are, the service overwrites the previous enrollment with the new one. An enrollment record for the user is created and added to the database. Jobs are scheduled for the current milestone, one per alert definition, to fire accordingly. Another job called a defaultment job is scheduled on the day the milestone would be defaulted to capture that state.</p>
@@ -140,9 +141,27 @@ title: MOTECH - Mobile Technology for Community Health
 
     <p>For any milestone in an enrollment, if the milestone has not been fulfilled by the last day of the milestone then the enrollment will be marked as defaulted. The last day of the milestone is the day when all four windows of the milestone elapse. A defaulted enrollment will not raise any more alerts. It also cannot move to an active state (the default state of an enrollment that raised alerts).</p>
 
-    <h3>Un-enrolling a user from a campaign</h3>
+    <h3>Un-enrolling a user from a schedule</h3>
 
     <p>Removes a user from an active enrollment. Only active enrollments can be removed. The enrollment will be marked as Unenrolled. Defaulted or Completed enrollments are preserved in the database for record keeping.</p>
+	
+	<h3>Updating an active enrollment</h3>
+
+    <p>Updates an active enrollment. Currently we support updating  only metadata field of an active enrollment. Metadata property => value pair can be updated/inserted but cannot be deleted from an existing enrollment.</p>
+	
+	<p> Example:<br/>
+	Consider an active enrollment with external id : &quot;foo&quot; and schedule name : &quot;some_schedule&quot; and metadata value pairs : {foo1: bar1; foo2: bar2}
+	
+	{% highlight java %}
+	HashMap<String, String> toBeUpdatedMetadata = new HashMap<String, String>();
+    toBeUpdatedMetadata.put("foo2", "val2");
+    toBeUpdatedMetadata.put("foo3", "val3");
+    UpdateCriteria updateCriteria = new UpdateCriteria().Metadata(toBeUpdatedMetadata);
+    scheduleTrackingService.updateEnrollment("foo", "some_schedule", updateCriteria);
+	{% endhighlight %}
+	
+	  will update the metadata of the enrollment as {foo1:bar1; foo2: val2; foo3: val3}
+	  </p>
 
     <h3>Querying API</h3>
 
