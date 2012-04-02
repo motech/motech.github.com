@@ -152,13 +152,13 @@ title: MOTECH - Mobile Technology for Community Health
 	<p> Example:<br/>
 	Consider an active enrollment with external id : &quot;foo&quot; and schedule name : &quot;some_schedule&quot; and metadata value pairs : {foo1: bar1; foo2: bar2}
 	
-	{% highlight java %}
-	HashMap<String, String> toBeUpdatedMetadata = new HashMap<String, String>();
-    toBeUpdatedMetadata.put("foo2", "val2");
-    toBeUpdatedMetadata.put("foo3", "val3");
-    UpdateCriteria updateCriteria = new UpdateCriteria().Metadata(toBeUpdatedMetadata);
-    scheduleTrackingService.updateEnrollment("foo", "some_schedule", updateCriteria);
-	{% endhighlight %}
+{% highlight java %}
+HashMap<String, String> toBeUpdatedMetadata = new HashMap<String, String>();
+toBeUpdatedMetadata.put("foo2", "val2");
+toBeUpdatedMetadata.put("foo3", "val3");
+UpdateCriteria updateCriteria = new UpdateCriteria().Metadata(toBeUpdatedMetadata);
+scheduleTrackingService.updateEnrollment("foo", "some_schedule", updateCriteria);
+{% endhighlight %}
 	
 	  will update the metadata of the enrollment as {foo1:bar1; foo2: val2; foo3: val3}
 	  </p>
