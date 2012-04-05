@@ -35,6 +35,7 @@
                 </li>
                 <li><a href="/releases.html">Releases</a>
                   <ul>
+                    <li><a href="/releases/r0.9.html">Release 0.9</a></li>
                     <li><a href="/releases/r0.8.html">Release 0.8</a></li>
                     <li><a href="/releases/r0.7.html">Release 0.7</a></li>
                     <li><a href="/releases/r0.6.html">Release 0.6</a></li>
