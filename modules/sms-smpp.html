@@ -11,18 +11,57 @@ title: MOTECH - Mobile Technology for Community Health
     <h3> Module</h3> 
 
     <h4>Description</h4> 
+<p>The SMS-SMPP module is an SMS implementation that handles send SMS events that were raised by the SMS-API module. Its purpose is to send SMS messages over SMPP to a specified SMS provider that is responsible for dispatching the message.</p>
 
     <h4>Information for implementation</h4> 
+<p>The SMS-SMPP module should be deployed alongside the SMS-API module. An implementation should use the SMS service provided by the SMS-API module in order to send their messages. These message events are handled by the SMPP module. The SMPP module sends the message over SMPP (Short Message Peer-to-Peer). The implementer never directly calls this module.</p>
 
     <h4>Configuration</h4>
+<p>An implementer must configure an smpp.properties file like the one found in the test resources folder. This file describes the SMPP server along with authentication details. An example template is provided below:</p>
+
+{% highlight java %}
+host=your.smpp.server
+port=2775
+system_id=pavel
+password=wpsd	
+{% endhighlight %}
+
+<p>This means the smpp server runs on the host your.smpp.server over port 2775. A user 'pavel' with password 'wpsd' is registered on the server.</p>
 
     <h3>Events consumed and emitted by the SMS-SMPP module</h3>
 
     <h4>Consumed events:</h4>
+{% highlight java %}
+Subject: EventSubjects.SEND_SMS ("SendSMS")
+Payload:
+EventDataKeys.RECIPIENTS ("number") mapped to a List<String>
+EventDataKeys.MESSAGE ("message") mapped to a String
+EventDataKeys.DELIVERY_TIME ("delivery_time") mapped to a DateTime
+{% endhighlight %}
+This event will be emitted by the sms-api module. The SMPP module will send an sms to all the recipients with given message, both being defined in the payload of the event. In addition a delivery time can also be specified in which case the message will be scheduled to be sent out at the specified time.
 
     <h4>Emitted events:</h4>
+{% highlight java %}
+Subject: EventSubjects.SMS_FAILURE_NOTIFICATION
+Payload:
+EventDataKeys.RECIPIENT ("number") mapped to a String
+EventDataKeys.MESSAGE ("message") mapped to a String
+{% endhighlight %}
+This event will be emitted by the module in the case the delivery of a message has failed. If the original send request had multiple recipients and the delivery fails for each one of them then individual events will be raised for each of the recipient.
 
-    <h3>Questions</h3>
 
+{% highlight java %}
+Subject: EventSubjects.INBOUND_SMS
+Payload:
+EventDataKeys.SENDER ("number") mapped to a String
+EventDataKeys.INBOUND_MESSAGE ("message") mapped to a String
+EventDataKeys.TIMESTAMP ("date") mapped to DateTime
+{% endhighlight %}
+This event is emitted for an inbound sms. The payload contains the sender's number, the message text and the timestamp when the sender sent the message.
+
+	<h4>Testing</h4>
+<p>Several free SMSC simulators are available which can be used to test the module. We have included one of them (from Seleinum software) under motech/tools with a suitable configuration for testing out the module. We also recommend the one available from Logica.</p>
+<p><a href="http://seleniumsoftware.com/user-guide.htm">Selenium software</a></p>
+<p><a href="http://opensmpp.logica.com/CommonPart/Download/download2.html">Logica</a></p>
   </div>
  </div>
