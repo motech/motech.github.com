@@ -4,7 +4,7 @@ title: MOTECH - Mobile Technology for Community Health
 ---
 
 <div class="column-container clearfix">
-  
+
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
@@ -84,20 +84,90 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h3>Specifying Times</h3>
 
-    <p>Time values in the schedule definition are speciied in the following format.</p>
+    <p>Time values in the schedule definition are specified in the following format.</p>
 	<p>number unit</p>
 	<p>where, number is any number</p>
-	<p>unit is any of year, month, week, day, hour, minute or second. Plural form of the word can also be used. Note that durations involving year and month might not remain consistent. A month might have 28, 30 or 31 days, and a year may have 366 days. The actual duration will depend on the reference date around which the windows are defined.</p>   		
+	<p>unit is any of year, month, week, day, hour, minute or second. Plural form of the word can also be used. Note that durations involving year and month might not remain consistent. A month might have 28, 30 or 31 days, and a year may have 366 days. The actual duration will depend on the reference date around which the windows are defined.</p>
 	<p>e.g: 1 Day, 4 Weeks</p>
-		
+
 	<p>Multiple time values can be combined together (as an array in the json) to result in a period which is a sum of all the values.</p>
 	<p>e.g: ["2 Weeks", "3 Days"] reprents a period equivalent to 17 days.</p>
-			 
+
 	<p>An empty string normally means a zero duration. However, in the case a window is defined with an empty duration it DOES NOT mean the window has a zero offset from the start of the milestone. It simply means the window does not have a duration.</p>
-		
+
 	<p>Alert times can also be specified in a similar way. However, variable duration units such as month and year cannot be used. This is because our scheduling logic is very much rooted to fixed interval repeats. The behaviour in the case variable duration units are used for alerts is undefined.</p>
-	
+
 	<p>Support for minute and second units has been added so that you can create short lived schedules handy for testing.</p>
+
+    <h3>Absolute Window Schedule</h3>
+    <p>An absolute window schedule is one, where all the alerts are raised based on the starting of the schedule and not with respect to the milestone windows. An example alert configuration of absolute window schedule is given below. The alert configuration for late window of milestone1 is given 2 weeks, 4 hours and it is with respect to the start of schedule and not with the "late" window start date.</p>
+
+        {% highlight javascript %}
+        {
+            "name":"Absolute Schedule",
+            "absolute": true,
+            "milestones":[
+                {
+                    "name":"milestone1",
+                    "scheduleWindows":{
+                        "earliest":["1 Week"],
+                        "due":["2 Weeks"],
+                        "late":["3 Weeks"],
+                        "max":[""]
+                    },
+                    "data":{
+                        "Foo":"Bar"
+                    },
+                    "alerts":[
+                        {
+                            "window":"earliest",
+                            "offset":["0 Weeks"],
+                            "interval":["1 Day"],
+                            "count":"7"
+                        },
+                        {
+                            "window":"late",
+                            "offset":["2 Week", "4 hours"],
+                            "interval":["1 Week"],
+                            "count":"51"
+                        }
+                    ]
+                },
+                {
+                    "name":"milestone2",
+                    "scheduleWindows":{
+                        "earliest":["5 Weeks"],
+                        "due":["6 Weeks"],
+                        "late":["7 Weeks"],
+                        "max":["8 Weeks"]
+                    },
+                    "data":{
+                        "doo":"Bar"
+                    },
+                    "alerts":[
+                        {
+                            "window":"earliest",
+                            "offset":["4 Weeks"],
+                            "interval":["1 Day"],
+                            "count":"7"
+                        },
+                        {
+                            "window":"max",
+                            "offset":["7 Weeks", "1 Day"],
+                            "interval":["1 Day"],
+                            "count":"7"
+                        }
+
+                    ]
+                }
+            ]
+        }
+
+        {% endhighlight %}
+        <p>Also, in order to configure an absolute window alert, the following should be mentioned in the schedule.</p>
+        {% highlight %}
+         "absolute": true
+         {% endhighlight %}
 
     <h3>Enrolling a user in a schedule</h3>
 
@@ -122,11 +192,11 @@ title: MOTECH - Mobile Technology for Community Health
 	{% highlight java %}
     EventSubjects.MILESTONE_ALERT
 	{% endhighlight %}
-	
+
     <p>This event is emitted when to indicate that an alert is being raised. The client may handle this event and act accordingly. The parameters passed with the event are as follows.</p>
 	<dl>
-	<dt>external id</dt> 	
-    <dt>schedule name</dt> 
+	<dt>external id</dt>
+    <dt>schedule name</dt>
 	<dt>window name</dt>
 	<dt>reference date and time</dt>
 	<dt>start dates for each of the four windows</dt>
@@ -144,14 +214,14 @@ title: MOTECH - Mobile Technology for Community Health
     <h3>Un-enrolling a user from a schedule</h3>
 
     <p>Removes a user from an active enrollment. Only active enrollments can be removed. The enrollment will be marked as Unenrolled. Defaulted or Completed enrollments are preserved in the database for record keeping.</p>
-	
+
 	<h3>Updating an active enrollment</h3>
 
     <p>Updates an active enrollment. Currently we support updating  only metadata field of an active enrollment. Metadata property => value pair can be updated/inserted but cannot be deleted from an existing enrollment.</p>
-	
+
 	<p> Example:<br/>
 	Consider an active enrollment with external id : &quot;foo&quot; and schedule name : &quot;some_schedule&quot; and metadata value pairs : {foo1: bar1; foo2: bar2}
-	
+
 	{% highlight java %}
 		HashMap<String, String> toBeUpdatedMetadata = new HashMap<String, String>();
         toBeUpdatedMetadata.put("foo2", "val2");
@@ -159,7 +229,7 @@ title: MOTECH - Mobile Technology for Community Health
         UpdateCriteria updateCriteria = new UpdateCriteria().Metadata(toBeUpdatedMetadata);
         scheduleTrackingService.updateEnrollment("foo", "some_schedule", updateCriteria);
 	{% endhighlight %}
-	
+
 	  will update the metadata of the enrollment as {foo1:bar1; foo2: val2; foo3: val3}
 	  </p>
 
@@ -167,14 +237,14 @@ title: MOTECH - Mobile Technology for Community Health
 
     <p>The module provides a search() method for querying enrollments. This allows the client to find enrollments using various critera (e.g all active enrollments, enrollments due in the next week etc). search() takes an EnrollmentQuery. The query can be built by adding search clauses such as enrollment status, current window etc. The clauses together will define a specific seatch criteria.</p>
 
-<p>Examples:		
+<p>Examples:
 
 {% highlight java %}
 scheduleTrackingService.search(new EnrollmentsQuery().havingState("active"))
 {% endhighlight %}
 
-will find all active enrollments</p>		
-				
+will find all active enrollments</p>
+
 {% highlight java %}
 scheduleTrackingService.search(
 	new EnrollmentsQuery()
@@ -182,15 +252,15 @@ scheduleTrackingService.search(
 		.havingState("active")
 		.havingWindowStartingDuring(WindowName.due, weeksAgo(1), now))
 {% endhighlight %}
-				
+
 will find active enrollments enrolled into IPTI Schedule that will enter the due window any time in the next one week.
 </p>
 
 <p>
 The return value is a list of EnrollmentRecords. An EnrollmentRecord represents an enrollment in the system. It has the following fields.
 	<dl>
-	<dt>external id</dt> 	
-    <dt>schedule name</dt> 
+	<dt>external id</dt>
+    <dt>schedule name</dt>
 	<dt>reference date and time</dt>
 	<dt>enrollment date and time</dt>
 	<dt>start dates for each of the four windows</dt>
