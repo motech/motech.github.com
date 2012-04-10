@@ -60,7 +60,8 @@ UpdateCriteria updateCriteria = new UpdateCriteria().status(AlertStatus.READ)
 Alert alert = alertService.search(new AlertCriteria().byExternalId("123")).get(0);										
 alertService.update(alert.getId(), updateCriteria);
 {% endhighlight %}
-	Now after the update by executing the above code, the alert object will have the values : { externalId : "123"}, status : AlertStatus.READ, name : "alert1", description : "newDescription", data : { {key1 : val1}, {key2, val2} } , priority : 2 } 
+	
+	<p>The above code updates the alert object as : { externalId : "123", status : AlertStatus.READ, name : "alert1", description : "newDescription", data : { {key1 : val1}, {key2, val2} } , priority : 2 } </p>
 
 	<h4>Finding an Alert</h4> 
 
