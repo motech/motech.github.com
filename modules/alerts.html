@@ -87,13 +87,14 @@ alertService.update(alert.getId(), updateCriteria);
     {% highlight java %}
     @Autowired
     private AlertServiceImpl alertService;
-	DateTime fromDate = DateUtil.newDateTime(new LocalDate(2010, 10, 10), 0, 0, 0);
+	
+    DateTime fromDate = DateUtil.newDateTime(new LocalDate(2010, 10, 10), 0, 0, 0);
     DateTime toDate = DateUtil.newDateTime(new LocalDate(2010, 10, 20), 0, 0, 0);
     AlertCriteria criteria = new AlertCriteria().byDateRange(fromDate, toDate);
     List<Alert> alerts = alertService.search(criteria);
     {% endhighlight %}
 	
-		will return all alerts in the time range 10th Oct, 2010 to 20th Oct, 2010 (start and end time inclusive)
+	<p>	will return all alerts in the time range 10th Oct, 2010 to 20th Oct, 2010 (start and end time inclusive)</p>
 
     <p>You can search for events using the following criteria.  Precendence is based on the order they are constructed:</p>
 
