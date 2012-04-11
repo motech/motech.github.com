@@ -4,25 +4,48 @@ title: MOTECH - Mobile Technology for Community Health
 ---
 
 <div class="column-container clearfix">
-
+<link rel="stylesheet" type="text/css" media="screen" href="/css/custom.css" />		
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
     <h3> Module</h3> 
 
     <h4>Description</h4> 
-
-    <h4>Information for implementation</h4> 
+	<p>IVR Kookoo is an implementation specific module that provides IVR service by utilizing Kookoo's Service (kookoo.in). <a href="http://kookoo.in">Kookoo</a> is India based Telephony service provider which has REST based APIs for call and SMS. The Kookoo module supports decision tree based IVR for both incoming and outgoing phone calls and stores that information in a CouchDB repository. Events are published to log call detail record. Listeners may subscribe to close call events and handle them in an implementation specific fashion.</p>
+ 
+	<h4>Information for implementation</h4> 
+	<p>Kookoo IVR Module supports following extensible components for implementing IVR flow
+		<ul>
+			<li>Implement <code>CallFlowController</code> to define highlevel call flow</li>
+			<li>Decision tree based IVR flow (see <code>org.motechproject.decisiontree.model.Tree</code>)</li>
+			<li>Call log detail record by message</li>
+		</ul>
+	</p>
 
     <h4>Configuration</h4>
+	<p>
+	<code>ivr.properties</code> Configuration file for Kookoo and IVR specific parameters.
+	
+	<table class="configbox">
+		<tr><td><code>	kookoo.outbound.url</code></td><td>http://kookoo.in/outbound.php</td></tr>
+		<tr><td><code>kookoo.api.key</code></td><td>get api key from kookoo.in</td></tr>
+		<tr><td><code>max.number.of.attempts</code></td><td>Number of attempts for login</td></tr>
+		<tr><td><code>application.url</code></td><td>Default url for IVR Controller http://{host}:{port}/{appcontext}/ivr/reply</td></tr>
+		<tr><td class="last"><code>content.location.url</code></td ><td class="last">Location to server wav files can be static web location or you can use motech cms lite module for wav files</td></tr>
+	</table>
+	</p>
 
     <h3>Events consumed and emitted by the ivr-kookoo module</h3>
 
     <h4>Consumed events:</h4>
 
     <h4>Emitted events:</h4>
+		<h5>End of call event</h5> 
+		
+		<p>This event will be posted when call is either hangedup or disconnected. This will point to the call detail record having all IVR events and call metrics.</p>
 
-    <h3>Questions</h3>
+    <h3>Interaction</h3>
+	<img class="five-sixths" src="/images/kookoo-interaction.png">
 
   </div>
  </div>
