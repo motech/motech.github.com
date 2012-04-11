@@ -25,6 +25,7 @@ title: MOTECH - Mobile Technology for Community Health
         <li>Search for alerts</li>
         <li>Associate custom data with an alert</li>
         <li>Acknowledge alerts as read or closed</li>
+        <li>Update an existing alert</li>
     </ul> 
 
     <p>The main entry point into the Alert module is through the AlertService.  Currently this is injected into your code via spring IOC.  In the future this module should expose a service interface through an OSGi container.</p>
@@ -43,7 +44,26 @@ title: MOTECH - Mobile Technology for Community Health
     Alert alert = alertService.create("entity_id", "name", "description", AlertType.HIGH, AlertStatus.NEW, 0, data);
     {% endhighlight %}
 
-    <h4>Finding an Alert</h4> 
+    <h4>Updating an Alert</h4> 
+	<p>Updates an existing alert based on the update criteria. Update criteria supports update for the fields status, name, description, data and priority.</p>
+   
+   <p> Example:<br/>
+	Consider an alert with field values { externalId : "123", status : AlertStatus.NEW, name : "test", description : "oldDescription", data : { {key1 : bar1} , {key3 : bar3} } , priority : 1 } </p>
+    {% highlight java %}
+    HashMap<String, String> newData = new HashMap<String, String>();
+    newData.put("key1", "val1");
+    newData.put("key2", "val2");
+		
+    UpdateCriteria updateCriteria = new UpdateCriteria().status(AlertStatus.READ)
+                                            .name("alert1").description("newDescription")
+                                            .priority(2).data(newData);
+    Alert alert = alertService.search(new AlertCriteria().byExternalId("123")).get(0);										
+    alertService.update(alert.getId(), updateCriteria);
+    {% endhighlight %}
+<br/>	
+	<p>The above code updates the alert object as : { externalId : "123", status : AlertStatus.READ, name : "alert1", description : "newDescription", data : { {key1 : val1}, {key2 : val2} , {key3 : bar3} }, priority : 2 } </p>
+
+	<h4>Finding an Alert</h4> 
 
     <h5>By ID</h5>
     {% highlight java %}
@@ -64,6 +84,19 @@ title: MOTECH - Mobile Technology for Community Health
     List<Alert> alerts = alertService.search(criteria);
     {% endhighlight %}
 
+    <h5>By DateRange</h5>
+    {% highlight java %}
+    @Autowired
+    private AlertServiceImpl alertService;
+	
+    DateTime fromDate = DateUtil.newDateTime(new LocalDate(2010, 10, 10), 0, 0, 0);
+    DateTime toDate = DateUtil.newDateTime(new LocalDate(2010, 10, 20), 0, 0, 0);
+    AlertCriteria criteria = new AlertCriteria().byDateRange(fromDate, toDate);
+    List<Alert> alerts = alertService.search(criteria);
+    {% endhighlight %}
+	
+	<p>	will return all alerts in the time range 10th Oct, 2010 to 20th Oct, 2010 (start and end time inclusive)</p>
+
     <p>You can search for events using the following criteria.  Precendence is based on the order they are constructed:</p>
 
     <ul>
@@ -71,9 +104,7 @@ title: MOTECH - Mobile Technology for Community Health
       <li>byStatus</li>
       <li>byType</li>
       <li>byPriority</li>
-      <li>byDateRange</li>
-      <li>fromDate</li>
-      <li>toDate</li>
+      <li>byDateRange (start and end time inclusive)</li>
     </ul> 
 
     <h5>Marking an Alert Closed</h5> 
