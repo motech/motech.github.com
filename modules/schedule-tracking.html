@@ -24,15 +24,23 @@ title: MOTECH - Mobile Technology for Community Health
     </ul>
 
     <p>Enrollments are stored in CouchDB.</p>
-
+    <h3>Life cycle of a Milestone</h3>
+    <p>
+      <ul>
+        <li>A milestone is started when the previous milestone gets fulfilled or the start of the schedule(in the case of first milestone).</li>
+        <li>Once started, the milestone will be in earliest , due , late or max windows as per the schedule configuration. This forms the lifetime of the milestone.</li>
+        <li>A milestone can be fulfilled within its lifetime.</li>
+        <li>If the milestone is not fulfilled before the expiration of its lifetime, the enrollment will be defaulted and all the alerts previously configured will not be raised.</li>
+      </ul>
+    </p>
     <h3>Specifying a schedule and its milestones</h3>
     <p>Specifying the characteristics of a schedule and its milestones is typically accomplished using a JSON (JavaScript Object Notation) document. The schedule_tracking.properties file specifies the directory to scan for schedule definitions. Any json file in the directory will be treated as a schedule definition. Multiple schedules can be defined, each in their own file. Schedules have a name and list of milestones. A milestone has a name, four standard windows, data (not currently used) and alerts. The window durations can be customized. Below is an example of a JSON schedule definition.</p>
 
     <h3>Sample Schedule Definition</h3>
     <p>Below is an example JSON definition file for a single schedule. The schedule has a name, IPTI Schedule. There are two distinct milestones specified within the schedule.</p>
-	<p>The first, IPTI 1, will spend its first 13 weeks in waiting status called the "earliest" window. 1 week will be spent in in due status. (14 weeks is relative to start of milestone). 2 months after the start of IPTI 1, the late window elapses. The max window has no duration (see Specifying Times for more details). Due to no maximum period being defined, as soon as the late period is entered, the enrollment's status will be set to defaulted. Note that  in the case of windows, the values specify when the window should end with respect to the start of the milestone.</p>
+	<p>The first, IPTI 1, will spend its first 13 weeks in waiting status called the "earliest" window. 1 week will be spent in in due status. (14 weeks is relative to start of milestone). 2 months after the start of IPTI 1, the late window elapses. The max window has no duration (see Specifying Times for more details). Due to no maximum period being defined, as soon as the late period is entered, the enrollment's status will be set to defaulted. Note that in the case of windows, the values specify when the window should end with respect to the start of the milestone.</p>
 	<p>While the milestone is in due, one alert per day will be sent to the client at the preferred time they were enrolled with. Once in the late window, one alert per week is sent except for the first week. If no preferred time is passed, the alert will be raised exactly as per its offset from the reference date and time.</p>
-
+<p> Also, the second milestone named "IPTI 2" will spend 1 week in waiting status called the "earliest" window, 1 week will be spent in due status. (2 weeks is relative to start of milestone). Note that, the start of second milestone is the time when the first milestone got fulfilled. All the window configurations in the second milestone are made with respect to the start of the second milestone.</p>
     <p>Both milestones define data that is included in the alert event payload. The client may pass any data they wish to receive when the event will be raised.</p>
 
     {% highlight javascript %}
@@ -100,7 +108,7 @@ title: MOTECH - Mobile Technology for Community Health
 	<p>Support for minute and second units has been added so that you can create short lived schedules handy for testing.</p>
 
     <h3>Absolute Window Schedule</h3>
-    <p>An absolute window schedule is one, where all the alerts are raised based on the starting of the schedule and not with respect to the milestone windows. An example alert configuration of absolute window schedule is given below. The alert configuration for late window of milestone1 is given 2 weeks, 4 hours and it is with respect to the start of schedule and not with the "late" window start date.</p>
+    <p>An absolute window schedule is one, where all the milestones and alerts are configured based on the starting of the schedule and not with respect to the milestone windows. Am example milestone and alert configuration for an absolute window schedule is given below. The milestone named "milestone2" has its earliest window configured as 5 weeks, which is from the start of the schedule and not from the time when the first milestone named "milestone1" is fulfilled. Similarly, the alert configuration for late window of milestone1 is given 2 weeks, 4 hours and it is with respect to the start of schedule and not with the "late" window start date.</p>
 
         {% highlight javascript %}
         {
