@@ -99,13 +99,75 @@ title: MOTECH - Mobile Technology for Community Health
 	<p>e.g : 1 Day, 4 Weeks</p>
 
 	<p>Multiple time values can be combined together (as an array in the json) to result in a period which is a sum of all the values.</p>
-	<p>e.g: ["2 Weeks", "3 Days"] reprents a period equivalent to 17 days.</p>
+	<p>e.g: ["2 Weeks", "3 Days"] represents a period equivalent to 17 days.</p>
 
 	<p>An empty string normally means a zero duration. However, in the case a window is defined with an empty duration it DOES NOT mean the window has a zero offset from the start of the milestone. It simply means the window does not have a duration.</p>
 
-	<p>Alert times can also be specified in a similar way. However, variable duration units such as month and year cannot be used. This is because our scheduling logic is very much rooted to fixed interval repeats. The behaviour in the case variable duration units are used for alerts is undefined.</p>
+	<p>Alert times can also be specified in a similar way. However, variable duration units such as month and year cannot be used. This is because our scheduling logic is very much rooted to fixed interval repeats. The behaviour in the case, where variable duration units are used for alerts, is undefined.</p>
 
 	<p>Support for minute and second units has been added so that you can create short lived schedules handy for testing.</p>
+
+	<p>NOTE: All the intervals are left closed right open. For example,</p>
+	  {%highlight javascript%}
+    "alerts":[
+        {
+            "window":"earliest",
+            "offset":["3 Days"],
+            "interval":["1 Day"],
+            "count":"7"
+        }]
+
+     {%endhighlight%}
+    <p>For the above alert configuration, if the "earliest" window duration is "1 Week", then, alerts will be raised on 3rd,4th,5th,6th days. No alerts will be raised on the 7th day.</p>
+    <h3>Alerts</h3>
+    <p>
+      The schedule tracking module can be configured to raise alerts during each window. Consider the following alerts section of a schedule configuration.
+    </p>
+      {%highlight javascript%}
+        "alerts":[
+            {
+                "window":"earliest",
+                "offset":["0 Weeks"],
+                "interval":["1 Day"],
+                "count":"7"
+            },
+            {
+                "window":"late",
+                "offset":["2 Week", "4 hours"],
+                "interval":["1 Week"],
+                "count":"51"
+            }
+        ]
+      {%endhighlight%}
+      <p>
+        The module will now, raise alerts during the earliest and the late windows of the milestone.
+      </p>
+      <p>
+        The "offset" specifies a time lapse from the alert reference time, from which the alerts will be raised.
+      </p>
+      <p>
+        The Alert Reference time is computed as follows.
+      </p>
+
+      <p><u>In the case of an absolute schedule</u></p>
+      <ul>
+        <li>The alert reference time is the start of the schedule. All the offset for all the alerts are specified from the start of schedule.</li>
+      </ul>
+      <p><u>In the case of a normal schedule</u></p>
+      <ul>
+        <li>
+          If there is a last milestone which got fulfilled, then, that last milestone's fulfillment date will be taken.
+        </li>
+        <li>
+          In cases, where there is no last milestone's fulfillment date, then, the date at which the Enrollment is created in the system is taken.
+        </li>
+      </ul>
+
+      <p>The "interval" is the time interval between two consecutive alerts.</p>
+
+      <p>The "count" is the total number of alerts that should be raised. The module will not raise any more alerts if the window has elapsed, even though the count has not been satisfied.</p>
+
+      <p>NOTE: For normal schedules, the schedule start date does not affect the scheduling of alerts. There might arise a case when the schedule started in the past, but the entity is enrolled into the system sometime later. Alerts are always scheduled with respect to enrollment creation date and not the schedule date.</p>
 
     <h3>Absolute Window Schedule</h3>
     <p>An absolute window schedule is one, where all the milestones and alerts are configured based on the starting of the schedule and not with respect to the milestone windows. Am example milestone and alert configuration for an absolute window schedule is given below. The milestone named "milestone2" has its earliest window configured as 5 weeks, which is from the start of the schedule and not from the time when the first milestone named "milestone1" is fulfilled. Similarly, the alert configuration for late window of milestone1 is given 2 weeks, 4 hours and it is with respect to the start of schedule and not with the "late" window start date.</p>
@@ -229,7 +291,7 @@ title: MOTECH - Mobile Technology for Community Health
 
 	<p> Example:<br/>
 	Consider an active enrollment with external id : &quot;foo&quot; and schedule name : &quot;some_schedule&quot; and metadata value pairs : {foo1: bar1; foo2: bar2}
-	
+
 {% highlight java %}
 HashMap<String, String> toBeUpdatedMetadata = new HashMap<String, String>();
 toBeUpdatedMetadata.put("foo2", "val2");
