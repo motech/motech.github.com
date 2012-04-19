@@ -159,7 +159,7 @@ title: MOTECH - Mobile Technology for Community Health
           If there is a last milestone which got fulfilled, then, that last milestone's fulfillment date will be taken.
         </li>
         <li>
-          In cases, where there is no last milestone's fulfillment date, then, the date at which the Enrollment is created in the system is taken.
+          In cases, where there is no last milestone's fulfillment date, then, the enrollment date is taken.
         </li>
       </ul>
 
@@ -167,8 +167,38 @@ title: MOTECH - Mobile Technology for Community Health
 
       <p>The "count" is the total number of alerts that should be raised. The module will not raise any more alerts if the window has elapsed, even though the count has not been satisfied.</p>
 
-      <p>NOTE: For normal schedules, the schedule start date does not affect the scheduling of alerts. There might arise a case when the schedule started in the past, but the entity is enrolled into the system sometime later. Alerts are always scheduled with respect to enrollment creation date and not the schedule date.</p>
-
+      <h4>Floating Alerts</h4>
+      <p>
+        Alerts can be configured as floating by providing the below parameter in the alert configuration.
+       <p>
+        {%highlight javascript%}
+        "floating":"true"
+        {%endhighlight%}
+       </p>
+        <p>
+          A floating alert is one, in which, the alert times are not very strict, and they can be raised as long as the window is not elapsed.
+        Here, the alert reference time will be the enrollment date. Therefore, the alerts will be scheduled from the time of enrollment till the end of the window.
+        An example usage of this type of alert is as follows.
+        Consider a case, where the alert configuration is as follows.
+        </p>
+          {%highlight javascript%}
+            "alerts":[
+                {
+                    "window":"earliest",
+                    "offset":["1 Day"],
+                    "interval":["1 Day"],
+                    "count":"1"
+                }
+            ]
+          {%endhighlight%}
+          <p>
+          <p>
+            For the above normal alert configuration, if the earliest window duration is 1 week and the enrollment happens in the middle of the week, say day 4,
+            then all the alerts would have elapsed at the time of enrollment itself.
+            But, if the alerts are floating, then even though the enrollment happens in the middle of the week, say day 4, alerts will still be raised,starting from day 5(considering offset is 1 day), as the window has not elapsed yet.
+          </p>
+        <p>NOTE: By default, the floating value is false.</p>
+      </p>
     <h3>Absolute Window Schedule</h3>
     <p>An absolute window schedule is one, where all the milestones and alerts are configured based on the starting of the schedule and not with respect to the milestone windows. Am example milestone and alert configuration for an absolute window schedule is given below. The milestone named "milestone2" has its earliest window configured as 5 weeks, which is from the start of the schedule and not from the time when the first milestone named "milestone1" is fulfilled. Similarly, the alert configuration for late window of milestone1 is given 2 weeks, 4 hours and it is with respect to the start of schedule and not with the "late" window start date.</p>
 
