@@ -29,7 +29,7 @@ title: MOTECH - Mobile Technology for Community Health
       <ul>
         <li>A milestone is started when the previous milestone gets fulfilled or the start of the schedule(in the case of first milestone).</li>
         <li>Once started, the milestone will be in earliest , due , late or max windows as per the schedule configuration. This forms the lifetime of the milestone.</li>
-        <li>A milestone can be fulfilled within its lifetime.</li>
+        <li>A milestone can be defaulted within its lifetime.</li>
         <li>If the milestone is not fulfilled before the expiration of its lifetime, the enrollment will be defaulted and all the alerts previously configured will not be raised.</li>
       </ul>
     </p>
@@ -305,7 +305,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h3>Fulfilling milestones</h3>
 
-    <p>Fulfills the current milestone the user is in the enrollment. After fulfillment of a milestone, the user moves to the next milestone in the schedule. If no more milestones remain the schedule, the enrollment is marked as complete.</p>
+    <p>Fulfills the current milestone the user is in the enrollment. After fulfillment of a milestone, the user moves to the next milestone in the schedule. If no more milestones remain the schedule, the enrollment is marked as complete. This fulfillment date and time is mandatory while fulfilling a milestone. This fulfillment date and time will be used to make this fulfillment process idempotent. For example, invoking fulfill current milestone more than once with the same fulfillment date and time will not make multiple fulfillments.</p>
 
     <h3>Defaulted enrollments</h3>
 
