@@ -104,9 +104,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">org.motechproject.scheduletracking.api.service.ScheduleTrackingService Interface Reference<div class="ingroups"><a class="el" href="group__sts.html">Schedule Tracking Service</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Schedule Tracking Service interface Provides methods to enroll an external id into a schedule, fulfill milestones in a schedule and uneroll an external id from a schedule.  
- <a href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for org.motechproject.scheduletracking.api.service.ScheduleTrackingService:</div>
 <div class="dyncontent">
@@ -122,23 +119,15 @@ Inheritance diagram for org.motechproject.scheduletracking.api.service.ScheduleT
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a34ee1e79a36654559388d8786efa70fd"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a34ee1e79a36654559388d8786efa70fd">enroll</a> (<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_request.html">EnrollmentRequest</a> enrollmentRequest)</td></tr>
-<tr class="memdesc:a34ee1e79a36654559388d8786efa70fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enrolls a user with external id into a schedule using the details in the <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_request.html" title="This is the request document to create an enrollment.">EnrollmentRequest</a> and schedules alerts.  <a href="#a34ee1e79a36654559388d8786efa70fd"></a><br/></td></tr>
 <tr class="memitem:acf86fd9734c8d4015e79985dd6eec6af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#acf86fd9734c8d4015e79985dd6eec6af">fulfillCurrentMilestone</a> (String externalId, String scheduleName)</td></tr>
-<tr class="memdesc:acf86fd9734c8d4015e79985dd6eec6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fulfills the current milestone(with now as the fulfillment date time) of the enrollment which belongs to the given externalId and schedule name.  <a href="#acf86fd9734c8d4015e79985dd6eec6af"></a><br/></td></tr>
 <tr class="memitem:a6271dbc35a2ba31791339440486a256a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a6271dbc35a2ba31791339440486a256a">fulfillCurrentMilestone</a> (String externalId, String scheduleName, LocalDate fulfillmentDate)</td></tr>
-<tr class="memdesc:a6271dbc35a2ba31791339440486a256a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fulfills the current milestone of the enrollment(with fulfillmentDate as the the given date and time as midnight) which belongs to the given externalId and schedule name.  <a href="#a6271dbc35a2ba31791339440486a256a"></a><br/></td></tr>
 <tr class="memitem:a7b881d3f3a90a01ffdde8a9db3bf8ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a7b881d3f3a90a01ffdde8a9db3bf8ea6">fulfillCurrentMilestone</a> (String externalId, String scheduleName, LocalDate fulfillmentDate, <a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a> fulfillmentTime)</td></tr>
-<tr class="memdesc:a7b881d3f3a90a01ffdde8a9db3bf8ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fulfills the current milestone of the enrollment(with fulfillmentDate and time as the the given date and time) which belongs to the given externalId and schedule name *.  <a href="#a7b881d3f3a90a01ffdde8a9db3bf8ea6"></a><br/></td></tr>
 <tr class="memitem:a5df19172fbe1afc126750f0c20cb6183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a5df19172fbe1afc126750f0c20cb6183">unenroll</a> (String externalId, List&lt; String &gt; scheduleNames)</td></tr>
-<tr class="memdesc:a5df19172fbe1afc126750f0c20cb6183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unenrolls / Removes all the scheduled jobs of enrollments which belongs to the given externalId and schedule names.  <a href="#a5df19172fbe1afc126750f0c20cb6183"></a><br/></td></tr>
 <tr class="memitem:a4216df0804b733f1a16ffea45345fecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html">EnrollmentRecord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a4216df0804b733f1a16ffea45345fecc">getEnrollment</a> (String externalId, String scheduleName)</td></tr>
-<tr class="memdesc:a4216df0804b733f1a16ffea45345fecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried for enrollments I...">EnrollmentRecord</a> corresponds to the given externalId and schedule name.  <a href="#a4216df0804b733f1a16ffea45345fecc"></a><br/></td></tr>
 <tr class="memitem:a73afeb00c8978394d631b6fc1b586190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a73afeb00c8978394d631b6fc1b586190">updateEnrollment</a> (String externalId, String scheduleName, <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1contract_1_1_update_criteria.html">UpdateCriteria</a> updateCriteria)</td></tr>
-<tr class="memdesc:a73afeb00c8978394d631b6fc1b586190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an active Enrollment which has the given external id and schedule name.  <a href="#a73afeb00c8978394d631b6fc1b586190"></a><br/></td></tr>
 <tr class="memitem:a78c90be5135cf509e1d512e9b46feb3e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html">EnrollmentRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a78c90be5135cf509e1d512e9b46feb3e">search</a> (<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollments_query.html">EnrollmentsQuery</a> query)</td></tr>
-<tr class="memdesc:a78c90be5135cf509e1d512e9b46feb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches and returns the Enrollment Records as per the criteria in the given <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollments_query.html" title="This is the Query builder for retrieving enrollments Provides methods for different query criteria Th...">EnrollmentsQuery</a>.  <a href="#a78c90be5135cf509e1d512e9b46feb3e"></a><br/></td></tr>
 <tr class="memitem:a39fa713558bbd8c9fa134e01c355a7ca"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html">EnrollmentRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a39fa713558bbd8c9fa134e01c355a7ca">searchWithWindowDates</a> (<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollments_query.html">EnrollmentsQuery</a> query)</td></tr>
-<tr class="memdesc:a39fa713558bbd8c9fa134e01c355a7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches and returns the Enrollment Records(with all window start dates populated in them) as per the criteria in the given <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollments_query.html" title="This is the Query builder for retrieving enrollments Provides methods for different query criteria Th...">EnrollmentsQuery</a>.  <a href="#a39fa713558bbd8c9fa134e01c355a7ca"></a><br/></td></tr>
+<tr class="memitem:a38a58ac35581e4342631a3f23f812bfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html">MilestoneAlerts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a38a58ac35581e4342631a3f23f812bfa">getAlertTimings</a> (<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_request.html">EnrollmentRequest</a> enrollmentRequest)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Schedule Tracking Service interface Provides methods to enroll an external id into a schedule, fulfill milestones in a schedule and uneroll an external id from a schedule. </p>
@@ -305,6 +294,34 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1impl_1_1_schedule_tracking_service_impl.html#aea54a3656fb16d65be8f5f015587012b">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38a58ac35581e4342631a3f23f812bfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html">MilestoneAlerts</a> <a class="el" href="interfaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_schedule_tracking_service.html#a38a58ac35581e4342631a3f23f812bfa">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.getAlertTimings</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_request.html">EnrollmentRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollmentRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gives the alert timings of all the windows in the milestone without actually scheduling the alert jobs. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enrollmentRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html" title="This contains the alert timings of all the windows of a milestone.">MilestoneAlerts</a> : contains the alert timings for all the windows of the milestone </dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1impl_1_1_schedule_tracking_service_impl.html#aef2de71382dd41c62bfbee0e12998417">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
 
 </div>
 </div>

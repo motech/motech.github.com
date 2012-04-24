@@ -104,9 +104,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This class acts as a registry for all scheduled event listeners.  
- <a href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html#details">More...</a></p>
-
 <p><a href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -114,15 +111,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a7aacffbae71c79c09dda178ceb7a57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html#a7a7aacffbae71c79c09dda178ceb7a57">EventListenerRegistry</a> ()</td></tr>
 <tr class="memitem:ada504031bd9cef2ef938eff3922782eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html#ada504031bd9cef2ef938eff3922782eb">EventListenerRegistry</a> (<a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html">MetricsAgent</a> metricsAgent)</td></tr>
 <tr class="memitem:af72c3f420b1bfabe3348f5b9eb969e04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html#af72c3f420b1bfabe3348f5b9eb969e04">registerListener</a> (<a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener.html">org.motechproject.server.event.EventListener</a> listener, List&lt; String &gt; subjects)</td></tr>
-<tr class="memdesc:af72c3f420b1bfabe3348f5b9eb969e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an event listener to be notified when events of a given type are received via the Server JMS Event Queue.  <a href="#af72c3f420b1bfabe3348f5b9eb969e04"></a><br/></td></tr>
 <tr class="memitem:a877b0cb9053592d1e7f935be3f5c37db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html#a877b0cb9053592d1e7f935be3f5c37db">registerListener</a> (<a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener.html">org.motechproject.server.event.EventListener</a> listener, String subject)</td></tr>
 <tr class="memitem:a4bd22e36b029b78a0631f0a738329055"><td class="memItemLeft" align="right" valign="top">Set<br class="typebreak"/>
 &lt; <a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener.html">org.motechproject.server.event.EventListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html#a4bd22e36b029b78a0631f0a738329055">getListeners</a> (String subject)</td></tr>
-<tr class="memdesc:a4bd22e36b029b78a0631f0a738329055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of event listeners for a given event type.  <a href="#a4bd22e36b029b78a0631f0a738329055"></a><br/></td></tr>
 <tr class="memitem:a9edaf620517c4fdc197c5cfac4e0c403"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html#a9edaf620517c4fdc197c5cfac4e0c403">hasListener</a> (String subject)</td></tr>
-<tr class="memdesc:a9edaf620517c4fdc197c5cfac4e0c403"><td class="mdescLeft">&#160;</td><td class="mdescRight">See if a particular subject has any listeners.  <a href="#a9edaf620517c4fdc197c5cfac4e0c403"></a><br/></td></tr>
 <tr class="memitem:a2de7fde35d48cb989264703def7c7bc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html#a2de7fde35d48cb989264703def7c7bc4">getListenerCount</a> (String subject)</td></tr>
-<tr class="memdesc:a2de7fde35d48cb989264703def7c7bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the count of listeners for a particular subject.  <a href="#a2de7fde35d48cb989264703def7c7bc4"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This class acts as a registry for all scheduled event listeners. </p>

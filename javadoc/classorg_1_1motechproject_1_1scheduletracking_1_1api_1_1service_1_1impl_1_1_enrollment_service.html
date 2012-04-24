@@ -116,6 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a264b74be9e50b5925344e40ac444cf4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1impl_1_1_enrollment_service.html#a264b74be9e50b5925344e40ac444cf4d">unenroll</a> (<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> enrollment)</td></tr>
 <tr class="memitem:aa5de6418f1a58c5399d838c714e52c35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_window_name.html">WindowName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1impl_1_1_enrollment_service.html#aa5de6418f1a58c5399d838c714e52c35">getCurrentWindowAsOf</a> (<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> enrollment, DateTime asOf)</td></tr>
 <tr class="memitem:a0ce155eed617cff265db19fa7321db10"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1impl_1_1_enrollment_service.html#a0ce155eed617cff265db19fa7321db10">getEndOfWindowForCurrentMilestone</a> (<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> enrollment, <a class="el" href="enumorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_window_name.html">WindowName</a> windowName)</td></tr>
+<tr class="memitem:ab177f6d02e195991739df44bc58cb830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html">MilestoneAlerts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1impl_1_1_enrollment_service.html#ab177f6d02e195991739df44bc58cb830">getAlertTimings</a> (String externalId, String scheduleName, String milestoneName, DateTime referenceDateTime, DateTime enrollmentDateTime, <a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a> preferredAlertTime)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa12c1a67e2de9bdb418d78b96a2bfd0f"></a>
@@ -230,6 +231,57 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">DateTime&#160;</td>
           <td class="paramname"><em>fulfillmentDateTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab177f6d02e195991739df44bc58cb830"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html">MilestoneAlerts</a> <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1impl_1_1_enrollment_service.html#ab177f6d02e195991739df44bc58cb830">org.motechproject.scheduletracking.api.service.impl.EnrollmentService.getAlertTimings</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>scheduleName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>milestoneName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>referenceDateTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>enrollmentDateTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a>&#160;</td>
+          <td class="paramname"><em>preferredAlertTime</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

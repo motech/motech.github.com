@@ -22,6 +22,7 @@ var searchData=
   ['metricsagentbackend',['MetricsAgentBackend',['../interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent_backend.html',1,'org::motechproject::metrics']]],
   ['milestone',['Milestone',['../classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_milestone.html',1,'org::motechproject::scheduletracking::api::domain']]],
   ['milestonealert',['MilestoneAlert',['../classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_milestone_alert.html',1,'org::motechproject::scheduletracking::api::domain']]],
+  ['milestonealerts',['MilestoneAlerts',['../classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html',1,'org::motechproject::scheduletracking::api::service']]],
   ['milestonecriterion',['MilestoneCriterion',['../classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1search_1_1_milestone_criterion.html',1,'org::motechproject::scheduletracking::api::domain::search']]],
   ['milestoneevent',['MilestoneEvent',['../classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1events_1_1_milestone_event.html',1,'org::motechproject::scheduletracking::api::events']]],
   ['milestonefulfillment',['MilestoneFulfillment',['../classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_milestone_fulfillment.html',1,'org::motechproject::scheduletracking::api::domain']]],
