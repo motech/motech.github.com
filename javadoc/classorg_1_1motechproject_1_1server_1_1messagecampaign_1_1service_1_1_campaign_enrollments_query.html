@@ -90,6 +90,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#a8a3a1373443af739bfffa9cc15b3711a">getCriteria</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#a83d7b65d0391f87fe6157a196a6a3ab0">getPrimaryCriterion</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#a4764d216596aa7610a702c11c3332ae1">getSecondaryCriteria</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html">CampaignEnrollmentsQuery</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#a55576e7a80c46aba6578006afd05937c">havingState</a> (CampaignEnrollmentStatus campaignEnrollmentStatus)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html">CampaignEnrollmentsQuery</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#a98d767244555d074a4036cb396d11a5c">withExternalId</a> (String externalId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html">CampaignEnrollmentsQuery</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#abe2349ea88cc393b7fe21d4e8449c749">withCampaignName</a> (String campaignName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#a8a3a1373443af739bfffa9cc15b3711a">getCriteria</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#a83d7b65d0391f87fe6157a196a6a3ab0">getPrimaryCriterion</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html#a4764d216596aa7610a702c11c3332ae1">getSecondaryCriteria</a> ()</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>This is the Query <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1builder.html">builder</a> for retrieving campaign enrollments Provides methods for different query criteria The order of criteria matters, as the first criterion is used to fetch the result from database and the other criterion are used to filter the results fetched by the first criterion(in memory). </p>
@@ -111,6 +117,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This gives all the criterion which are present in the built query. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>List&lt;Criterion&gt; </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8a3a1373443af739bfffa9cc15b3711a"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::service::CampaignEnrollmentsQuery::getCriteria" ref="a8a3a1373443af739bfffa9cc15b3711a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a>&gt; org.motechproject.server.messagecampaign.service.CampaignEnrollmentsQuery.getCriteria </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives all the criterion which are present in the built query. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>List&lt;Criterion&gt; </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a83d7b65d0391f87fe6157a196a6a3ab0"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::service::CampaignEnrollmentsQuery::getPrimaryCriterion" ref="a83d7b65d0391f87fe6157a196a6a3ab0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a> org.motechproject.server.messagecampaign.service.CampaignEnrollmentsQuery.getPrimaryCriterion </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives the primary criterion in the built query, which is used to fetch the results from database. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Criterion </dd></dl>
 
 </div>
 </div>
@@ -154,6 +200,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a4764d216596aa7610a702c11c3332ae1"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::service::CampaignEnrollmentsQuery::getSecondaryCriteria" ref="a4764d216596aa7610a702c11c3332ae1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1search_1_1_criterion.html">Criterion</a>&gt; org.motechproject.server.messagecampaign.service.CampaignEnrollmentsQuery.getSecondaryCriteria </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives all the criterion other than primary criterion in the built query, which are used to filter the results of the primary criterion. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>List&lt;Criterion&gt; </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a55576e7a80c46aba6578006afd05937c"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::service::CampaignEnrollmentsQuery::havingState" ref="a55576e7a80c46aba6578006afd05937c" args="(CampaignEnrollmentStatus campaignEnrollmentStatus)" -->
 <div class="memitem">
 <div class="memproto">
@@ -174,6 +240,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>campaignEnrollmentStatus</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a55576e7a80c46aba6578006afd05937c"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::service::CampaignEnrollmentsQuery::havingState" ref="a55576e7a80c46aba6578006afd05937c" args="(CampaignEnrollmentStatus campaignEnrollmentStatus)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html">CampaignEnrollmentsQuery</a> org.motechproject.server.messagecampaign.service.CampaignEnrollmentsQuery.havingState </td>
+          <td>(</td>
+          <td class="paramtype">CampaignEnrollmentStatus&nbsp;</td>
+          <td class="paramname"> <em>campaignEnrollmentStatus</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This provides the method for the Status Criterion using which campaign enrollments are filtered based on their status. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>campaignEnrollmentStatus</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe2349ea88cc393b7fe21d4e8449c749"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::service::CampaignEnrollmentsQuery::withCampaignName" ref="abe2349ea88cc393b7fe21d4e8449c749" args="(String campaignName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html">CampaignEnrollmentsQuery</a> org.motechproject.server.messagecampaign.service.CampaignEnrollmentsQuery.withCampaignName </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>campaignName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This provides the method for the CampaignName Criterion using which campaign enrollments belongs to a particular campaign are filtered. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>campaignName</em>&nbsp;</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -235,8 +355,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/service/<a class="el" href="_campaign_enrollments_query_8java.html">CampaignEnrollmentsQuery.java</a></li>
+<a class="anchor" id="a98d767244555d074a4036cb396d11a5c"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::service::CampaignEnrollmentsQuery::withExternalId" ref="a98d767244555d074a4036cb396d11a5c" args="(String externalId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollments_query.html">CampaignEnrollmentsQuery</a> org.motechproject.server.messagecampaign.service.CampaignEnrollmentsQuery.withExternalId </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This provides the method for the ExternalId Criterion using which campaign enrollments for an ExternalId are filtered. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>externalId</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/service/<a class="el" href="motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagecampaign_2service_219cd704ab84c456f08c7fe7d2f3b7941.html">CampaignEnrollmentsQuery.java</a></li>
+<li>target/checkout/motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/service/<a class="el" href="target_2checkout_2motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagec6f14ae0e6d0c297e4f2d61df243cc485.html">CampaignEnrollmentsQuery.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

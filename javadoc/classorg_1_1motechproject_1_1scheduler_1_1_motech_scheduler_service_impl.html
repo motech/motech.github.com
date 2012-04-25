@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.scheduler.MotechSchedulerServiceImpl Class Reference</h1><!-- doxytag: class="org::motechproject::scheduler::MotechSchedulerServiceImpl" --><!-- doxytag: inherits="org::motechproject::MotechObject,org::motechproject::scheduler::MotechSchedulerService" -->
+<h1>org.motechproject.scheduler.MotechSchedulerServiceImpl Class Reference</h1><!-- doxytag: class="org::motechproject::scheduler::MotechSchedulerServiceImpl" --><!-- doxytag: inherits="org::motechproject::MotechObject,org::motechproject::scheduler::MotechSchedulerService,org::motechproject::MotechObject,org::motechproject::scheduler::MotechSchedulerService" -->
 <p>Motech Scheduler Service implementation.  
 <a href="#_details">More...</a></p>
 <div class="dynheader">
@@ -85,6 +85,8 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
   <map id="org.motechproject.scheduler.MotechSchedulerServiceImpl_map" name="org.motechproject.scheduler.MotechSchedulerServiceImpl_map">
 <area href="classorg_1_1motechproject_1_1_motech_object.html" alt="org.motechproject.MotechObject" shape="rect" coords="0,0,344,24"/>
 <area href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html" alt="org.motechproject.scheduler.MotechSchedulerService" shape="rect" coords="354,0,698,24"/>
+<area href="classorg_1_1motechproject_1_1_motech_object.html" alt="org.motechproject.MotechObject" shape="rect" coords="708,0,1052,24"/>
+<area href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html" alt="org.motechproject.scheduler.MotechSchedulerService" shape="rect" coords="1062,0,1406,24"/>
 </map>
  </div>
 </div>
@@ -107,10 +109,25 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#ae5c4afcdc75edc4dc3c6c92487413288">safeUnscheduleJob</a> (String subject, String externalId)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a1ed2f66fbe1d849d25027b70b047ee1a">safeUnscheduleAllJobs</a> (String jobIdPrefix)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a1f9b23e56a1eab01d4b4f7b35441afd9">unscheduleAllJobs</a> (String jobIdPrefix)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#aba45596535750705cd3b3065fdab0d3b">MotechSchedulerServiceImpl</a> (SchedulerFactoryBean schedulerFactoryBean)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a2bc138c375017cab86f94c5c40a72993">scheduleJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_cron_schedulable_job.html">CronSchedulableJob</a> cronSchedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a8b519bd500582458633099e7f7946c94">safeScheduleJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_cron_schedulable_job.html">CronSchedulableJob</a> cronSchedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a4e124d2fad0c7bff42d3a46076b68e80">updateScheduledJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> motechEvent)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a2d64b8a023a5e2b355cbc02625a9790d">rescheduleJob</a> (String subject, String externalId, String cronExpression)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a502d7a915332932db38f539b16b87561">scheduleRepeatingJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_repeating_schedulable_job.html">RepeatingSchedulableJob</a> repeatingSchedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a730c388b8fb204234ec2b3e22cc47bd6">safeScheduleRepeatingJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_repeating_schedulable_job.html">RepeatingSchedulableJob</a> repeatingSchedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a854573f067140c80d64d712c6b6ed813">scheduleRunOnceJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_run_once_schedulable_job.html">RunOnceSchedulableJob</a> schedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a128a1bff8041d0a5788667af1aa146d9">safeScheduleRunOnceJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_run_once_schedulable_job.html">RunOnceSchedulableJob</a> schedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#aa81d07cf8d65a0dc6e7e7cfded638ff6">unscheduleRepeatingJob</a> (String subject, String externalId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a3d3fb3077862e24795d4734f05aa4de2">safeUnscheduleRepeatingJob</a> (String subject, String externalId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#aa33f70f3c8e9fbd0c1078cae58e4c9de">unscheduleJob</a> (String subject, String externalId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#ae5c4afcdc75edc4dc3c6c92487413288">safeUnscheduleJob</a> (String subject, String externalId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a1ed2f66fbe1d849d25027b70b047ee1a">safeUnscheduleAllJobs</a> (String jobIdPrefix)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a1f9b23e56a1eab01d4b4f7b35441afd9">unscheduleAllJobs</a> (String jobIdPrefix)</td></tr>
 <tr><td colspan="2"><h2>Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static final String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a82dc421fa867f358bdd267192b45f580">JOB_GROUP_NAME</a> = &quot;default&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static final String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a61731e7dfc2f98518d0501885f16c6ee">JOB_GROUP_NAME</a> = &quot;default&quot;</td></tr>
 <tr><td colspan="2"><h2>Package Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">final int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#ac7f2fb957986995585b0ac7556886132">MAX_REPEAT_COUNT</a> = 999999</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">final int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a745efd327ee91cf35aa092fab5c14e09">MAX_REPEAT_COUNT</a> = 999999</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Motech Scheduler Service implementation. </p>
@@ -134,7 +151,71 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 
 </div>
 </div>
+<a class="anchor" id="aba45596535750705cd3b3065fdab0d3b"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::MotechSchedulerServiceImpl" ref="aba45596535750705cd3b3065fdab0d3b" args="(SchedulerFactoryBean schedulerFactoryBean)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.scheduler.MotechSchedulerServiceImpl.MotechSchedulerServiceImpl </td>
+          <td>(</td>
+          <td class="paramtype">SchedulerFactoryBean&nbsp;</td>
+          <td class="paramname"> <em>schedulerFactoryBean</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a2d64b8a023a5e2b355cbc02625a9790d"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::rescheduleJob" ref="a2d64b8a023a5e2b355cbc02625a9790d" args="(String subject, String externalId, String cronExpression)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.rescheduleJob </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>cronExpression</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reschedules a job with the given job ID to be fired according to the given Cron Expression. </p>
+<p>Previous version of the configured Motech Scheduled Even that will be created when the job is fired remains us it was </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>subject</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>externalId</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cronExpression</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#ada5291efccd3cb4482af09e50b29c0e4">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2d64b8a023a5e2b355cbc02625a9790d"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::rescheduleJob" ref="a2d64b8a023a5e2b355cbc02625a9790d" args="(String subject, String externalId, String cronExpression)" -->
 <div class="memitem">
 <div class="memproto">
@@ -209,6 +290,62 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 
 </div>
 </div>
+<a class="anchor" id="a8b519bd500582458633099e7f7946c94"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::safeScheduleJob" ref="a8b519bd500582458633099e7f7946c94" args="(CronSchedulableJob cronSchedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.safeScheduleJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_cron_schedulable_job.html">CronSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>cronSchedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Same as scheduleJob, except that it would update existing job if one exists instead of creating a new one. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cronSchedulableJob</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#afaf4b6193ad5ba66eea7b40a9150c4bc">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a730c388b8fb204234ec2b3e22cc47bd6"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::safeScheduleRepeatingJob" ref="a730c388b8fb204234ec2b3e22cc47bd6" args="(RepeatingSchedulableJob repeatingSchedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.safeScheduleRepeatingJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_repeating_schedulable_job.html">RepeatingSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>repeatingSchedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Same as scheduleRepeatingJob, except that it would update existing job if one exists instead of creating a new one. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>repeatingSchedulableJob</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#a5afecae0e967c4d940aa4bb870312e68">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a730c388b8fb204234ec2b3e22cc47bd6"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::safeScheduleRepeatingJob" ref="a730c388b8fb204234ec2b3e22cc47bd6" args="(RepeatingSchedulableJob repeatingSchedulableJob)" -->
 <div class="memitem">
 <div class="memproto">
@@ -265,6 +402,34 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 
 </div>
 </div>
+<a class="anchor" id="a128a1bff8041d0a5788667af1aa146d9"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::safeScheduleRunOnceJob" ref="a128a1bff8041d0a5788667af1aa146d9" args="(RunOnceSchedulableJob schedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.safeScheduleRunOnceJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_run_once_schedulable_job.html">RunOnceSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>schedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Same as scheduleRunOnceJob, except that it would update existing job if one exists instead of creating a new one. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>schedulableJob</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#a971d0512b4f0de6879c74b766df240be">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1ed2f66fbe1d849d25027b70b047ee1a"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::safeUnscheduleAllJobs" ref="a1ed2f66fbe1d849d25027b70b047ee1a" args="(String jobIdPrefix)" -->
 <div class="memitem">
 <div class="memproto">
@@ -282,6 +447,64 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 <div class="memdoc">
 
 <p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#a2f69bfed7fee03488f391004ecb931ae">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ed2f66fbe1d849d25027b70b047ee1a"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::safeUnscheduleAllJobs" ref="a1ed2f66fbe1d849d25027b70b047ee1a" args="(String jobIdPrefix)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.safeUnscheduleAllJobs </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>jobIdPrefix</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#a2f69bfed7fee03488f391004ecb931ae">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5c4afcdc75edc4dc3c6c92487413288"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::safeUnscheduleJob" ref="ae5c4afcdc75edc4dc3c6c92487413288" args="(String subject, String externalId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.safeUnscheduleJob </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Same as unscheduleJob except that it would not throw an exception if the job doesn't exist. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>subject</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>externalId</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#afc755cd33c249a2c0babadbc80564b4f">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
 
 </div>
 </div>
@@ -361,6 +584,74 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 
 </div>
 </div>
+<a class="anchor" id="a3d3fb3077862e24795d4734f05aa4de2"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::safeUnscheduleRepeatingJob" ref="a3d3fb3077862e24795d4734f05aa4de2" args="(String subject, String externalId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.safeUnscheduleRepeatingJob </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Same as unscheduleRepeatingJob except that it would not throw an exception if the job doesn't exist. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>subject</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>externalId</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#aa73b34cba880e7edb9cb050e8eabb6e4">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bc138c375017cab86f94c5c40a72993"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::scheduleJob" ref="a2bc138c375017cab86f94c5c40a72993" args="(CronSchedulableJob cronSchedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.scheduleJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_cron_schedulable_job.html">CronSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>cronSchedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedules the given schedulable job. </p>
+<p>The Job ID by which the job will be referencing in the future should be provided in an Instance of MotechEvent in SchedulableJob (see MotechEvent.jobId)</p>
+<p>If a job with the same job ID as the given exists, this job will be unscheduled and the given schedulable job will be scheduled</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cronSchedulableJob</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#aaf76dd39575ab84850ef1e7b1ec96a75">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2bc138c375017cab86f94c5c40a72993"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::scheduleJob" ref="a2bc138c375017cab86f94c5c40a72993" args="(CronSchedulableJob cronSchedulableJob)" -->
 <div class="memitem">
 <div class="memproto">
@@ -421,6 +712,56 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 
 </div>
 </div>
+<a class="anchor" id="a502d7a915332932db38f539b16b87561"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::scheduleRepeatingJob" ref="a502d7a915332932db38f539b16b87561" args="(RepeatingSchedulableJob repeatingSchedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.scheduleRepeatingJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_repeating_schedulable_job.html">RepeatingSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>repeatingSchedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedules the given schedulable job. </p>
+<p>The Job ID by which the job will be referencing in the future should be provided in an Instance of MotechEvent in SchedulableJob (see MotechEvent.jobId)</p>
+<p>If a job with the same job ID as the given exists, this job will be unscheduled and the given schedulable job will be scheduled</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>repeatingSchedulableJob</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#afb841515370cdfc9cd6075a7c9f22385">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a854573f067140c80d64d712c6b6ed813"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::scheduleRunOnceJob" ref="a854573f067140c80d64d712c6b6ed813" args="(RunOnceSchedulableJob schedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.scheduleRunOnceJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_run_once_schedulable_job.html">RunOnceSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>schedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#ab9a2f3dd6f828daee540c6c27669ad71">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a854573f067140c80d64d712c6b6ed813"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::scheduleRunOnceJob" ref="a854573f067140c80d64d712c6b6ed813" args="(RunOnceSchedulableJob schedulableJob)" -->
 <div class="memitem">
 <div class="memproto">
@@ -458,6 +799,64 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 <div class="memdoc">
 
 <p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#a7dcb26e4b1e29ac08d64c945dd357dbd">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f9b23e56a1eab01d4b4f7b35441afd9"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::unscheduleAllJobs" ref="a1f9b23e56a1eab01d4b4f7b35441afd9" args="(String jobIdPrefix)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.unscheduleAllJobs </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>jobIdPrefix</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#a7dcb26e4b1e29ac08d64c945dd357dbd">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa33f70f3c8e9fbd0c1078cae58e4c9de"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::unscheduleJob" ref="aa33f70f3c8e9fbd0c1078cae58e4c9de" args="(String subject, String externalId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.unscheduleJob </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Unschedules a job with the given job ID. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>subject</em>&nbsp;</td><td>: String representing <a class="el" href="namespaceorg_1_1motechproject_1_1scheduler_1_1domain.html">domain</a> operation eg. "pill-reminder", "outbox-call" or motechEvent.getSubject() </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>externalId</em>&nbsp;</td><td>: <a class="el" href="namespaceorg_1_1motechproject_1_1scheduler_1_1domain.html">domain</a> specific id as String. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#a3dda405e95fdc93d97d9ec5aa39ef0f0">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
 
 </div>
 </div>
@@ -528,6 +927,63 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 
 </div>
 </div>
+<a class="anchor" id="aa81d07cf8d65a0dc6e7e7cfded638ff6"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::unscheduleRepeatingJob" ref="aa81d07cf8d65a0dc6e7e7cfded638ff6" args="(String subject, String externalId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.unscheduleRepeatingJob </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#aa0c900231a40eda9ae8253e5464668ac">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e124d2fad0c7bff42d3a46076b68e80"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::updateScheduledJob" ref="a4e124d2fad0c7bff42d3a46076b68e80" args="(MotechEvent motechEvent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.scheduler.MotechSchedulerServiceImpl.updateScheduledJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a>&nbsp;</td>
+          <td class="paramname"> <em>motechEvent</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Updates MotechEvent data of the job defined by jobIb in the given instance of that class. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>motechEvent</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html#adb4490786dc2777c94c2bdfdee0ab74a">org.motechproject.scheduler.MotechSchedulerService</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4e124d2fad0c7bff42d3a46076b68e80"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::updateScheduledJob" ref="a4e124d2fad0c7bff42d3a46076b68e80" args="(MotechEvent motechEvent)" -->
 <div class="memitem">
 <div class="memproto">
@@ -557,12 +1013,12 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a82dc421fa867f358bdd267192b45f580"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::JOB_GROUP_NAME" ref="a82dc421fa867f358bdd267192b45f580" args="" -->
+<a class="anchor" id="a61731e7dfc2f98518d0501885f16c6ee"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::JOB_GROUP_NAME" ref="a61731e7dfc2f98518d0501885f16c6ee" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a82dc421fa867f358bdd267192b45f580">org.motechproject.scheduler.MotechSchedulerServiceImpl.JOB_GROUP_NAME</a> = &quot;default&quot;<code> [static]</code></td>
+          <td class="memname">static final String <a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a61731e7dfc2f98518d0501885f16c6ee">org::motechproject::scheduler.MotechSchedulerServiceImpl::JOB_GROUP_NAME</a> = &quot;default&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -570,12 +1026,12 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 
 </div>
 </div>
-<a class="anchor" id="ac7f2fb957986995585b0ac7556886132"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::MAX_REPEAT_COUNT" ref="ac7f2fb957986995585b0ac7556886132" args="" -->
+<a class="anchor" id="a745efd327ee91cf35aa092fab5c14e09"></a><!-- doxytag: member="org::motechproject::scheduler::MotechSchedulerServiceImpl::MAX_REPEAT_COUNT" ref="a745efd327ee91cf35aa092fab5c14e09" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final int <a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#ac7f2fb957986995585b0ac7556886132">org.motechproject.scheduler.MotechSchedulerServiceImpl.MAX_REPEAT_COUNT</a> = 999999<code> [package]</code></td>
+          <td class="memname">final int <a class="el" href="classorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service_impl.html#a745efd327ee91cf35aa092fab5c14e09">org::motechproject::scheduler.MotechSchedulerServiceImpl::MAX_REPEAT_COUNT</a> = 999999<code> [package]</code></td>
         </tr>
       </table>
 </div>
@@ -583,8 +1039,9 @@ Inheritance diagram for org.motechproject.scheduler.MotechSchedulerServiceImpl:<
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-platform-scheduler/src/main/java/org/motechproject/scheduler/<a class="el" href="_motech_scheduler_service_impl_8java.html">MotechSchedulerServiceImpl.java</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-platform-scheduler/src/main/java/org/motechproject/scheduler/<a class="el" href="motech-platform-scheduler_2src_2main_2java_2org_2motechproject_2scheduler_2_motech_scheduler_service_impl_8java.html">MotechSchedulerServiceImpl.java</a></li>
+<li>target/checkout/motech-platform-scheduler/src/main/java/org/motechproject/scheduler/<a class="el" href="target_2checkout_2motech-platform-scheduler_2src_2main_2java_2org_2motechproject_2scheduler_2_mo9bc6c11a3a06ee18f3e73384e5913692.html">MotechSchedulerServiceImpl.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

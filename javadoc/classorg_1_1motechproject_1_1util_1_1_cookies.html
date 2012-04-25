@@ -83,10 +83,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#af1dbd120503488b2c53e666c6f44a304">getValue</a> (String cookieName)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#af00f031ec650a050f7ecc4ba39c18e03">hasCookie</a> (String key)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#a45dd9f56fd2f4a154c42c2159a4d6c2b">toString</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#a76772992a10d2c1ed82d8c645de21d7f">Cookies</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#ac3fdd67ec76d4cf4d4e229eeb4679f14">add</a> (String name, String value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#af1dbd120503488b2c53e666c6f44a304">getValue</a> (String cookieName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#af00f031ec650a050f7ecc4ba39c18e03">hasCookie</a> (String key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#a45dd9f56fd2f4a154c42c2159a4d6c2b">toString</a> ()</td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html">Cookies</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#a9dbedb6237763d3da13fd995c664cf7a">forReading</a> (HttpServletRequest request)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html">Cookies</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html#a9dbedb6237763d3da13fd995c664cf7a">forReading</a> (HttpServletRequest request)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a76772992a10d2c1ed82d8c645de21d7f"></a><!-- doxytag: member="org::motechproject::util::Cookies::Cookies" ref="a76772992a10d2c1ed82d8c645de21d7f" args="(HttpServletRequest request, HttpServletResponse response)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.util.Cookies.Cookies </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&nbsp;</td>
+          <td class="paramname"> <em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HttpServletResponse&nbsp;</td>
+          <td class="paramname"> <em>response</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a76772992a10d2c1ed82d8c645de21d7f"></a><!-- doxytag: member="org::motechproject::util::Cookies::Cookies" ref="a76772992a10d2c1ed82d8c645de21d7f" args="(HttpServletRequest request, HttpServletResponse response)" -->
 <div class="memitem">
 <div class="memproto">
@@ -142,6 +175,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="ac3fdd67ec76d4cf4d4e229eeb4679f14"></a><!-- doxytag: member="org::motechproject::util::Cookies::add" ref="ac3fdd67ec76d4cf4d4e229eeb4679f14" args="(String name, String value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.util.Cookies.add </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9dbedb6237763d3da13fd995c664cf7a"></a><!-- doxytag: member="org::motechproject::util::Cookies::forReading" ref="a9dbedb6237763d3da13fd995c664cf7a" args="(HttpServletRequest request)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classorg_1_1motechproject_1_1util_1_1_cookies.html">Cookies</a> org.motechproject.util.Cookies.forReading </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a9dbedb6237763d3da13fd995c664cf7a"></a><!-- doxytag: member="org::motechproject::util::Cookies::forReading" ref="a9dbedb6237763d3da13fd995c664cf7a" args="(HttpServletRequest request)" -->
 <div class="memitem">
 <div class="memproto">
@@ -169,6 +247,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           <td>(</td>
           <td class="paramtype">String&nbsp;</td>
           <td class="paramname"> <em>cookieName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af1dbd120503488b2c53e666c6f44a304"></a><!-- doxytag: member="org::motechproject::util::Cookies::getValue" ref="af1dbd120503488b2c53e666c6f44a304" args="(String cookieName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.util.Cookies.getValue </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>cookieName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af00f031ec650a050f7ecc4ba39c18e03"></a><!-- doxytag: member="org::motechproject::util::Cookies::hasCookie" ref="af00f031ec650a050f7ecc4ba39c18e03" args="(String key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.util.Cookies.hasCookie </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>key</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -213,8 +327,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-platform-common/src/main/java/org/motechproject/util/<a class="el" href="_cookies_8java.html">Cookies.java</a></li>
+<a class="anchor" id="a45dd9f56fd2f4a154c42c2159a4d6c2b"></a><!-- doxytag: member="org::motechproject::util::Cookies::toString" ref="a45dd9f56fd2f4a154c42c2159a4d6c2b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.util.Cookies.toString </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-platform-common/src/main/java/org/motechproject/util/<a class="el" href="motech-platform-common_2src_2main_2java_2org_2motechproject_2util_2_cookies_8java.html">Cookies.java</a></li>
+<li>target/checkout/motech-platform-common/src/main/java/org/motechproject/util/<a class="el" href="target_2checkout_2motech-platform-common_2src_2main_2java_2org_2motechproject_2util_2_cookies_8java.html">Cookies.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

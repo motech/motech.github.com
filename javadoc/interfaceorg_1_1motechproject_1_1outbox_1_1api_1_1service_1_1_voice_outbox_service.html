@@ -87,6 +87,7 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
   <img src="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.gif" usemap="#org.motechproject.outbox.api.service.VoiceOutboxService_map" alt=""/>
   <map id="org.motechproject.outbox.api.service.VoiceOutboxService_map" name="org.motechproject.outbox.api.service.VoiceOutboxService_map">
 <area href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html" alt="org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl" shape="rect" coords="0,56,391,80"/>
+<area href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html" alt="org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl" shape="rect" coords="401,56,792,80"/>
 </map>
  </div>
 </div>
@@ -94,6 +95,20 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 <p><a href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#ae4b09be5dcd4ef560e59e650a0ad2d2a">addMessage</a> (<a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a> outboundVoiceMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#ad126daa738c693e8e66f3576ee4afe9a">getNextPendingMessage</a> (String partyId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a28fb61542538b93dd615aa7f841d3827">getNextSavedMessage</a> (String partyId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a902b67d128acbc5cc50de4e746ab95cd">getMessageById</a> (String outboundVoiceMessageId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a6dd2105f8f2f1b9658635df16ea8fe68">removeMessage</a> (String outboundVoiceMessageId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#ac65706b5dac4566647d53bb2a768750c">setMessageStatus</a> (String outboundVoiceMessageId, OutboundVoiceMessageStatus status)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a4d23ab451397f1b3d451d191fa1e8db5">saveMessage</a> (String outboundVoiceMessageId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a4c4ed4d6ed235a017a27dc3b24c147fe">getNumberPendingMessages</a> (String partyId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a58d97dcfbd7ac732e7fe57972df073ed">getNumberPendingMessages</a> (String partyId, String voiceMessageTypeName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a1d8ac22212fdac915eae80d733ba099f">setNumDayskeepSavedMessages</a> (int numDayskeepSavedMessages)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#aff5b83ca1e88d4a674e123019d7c5492">getNumDayskeepSavedMessages</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a21bfb059358955df42f2c3b46b664ee6">setMaxNumberOfPendingMessages</a> (int maxNumberOfPendingMessages)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a8f7977e9e6cec7c13b0006e260166c16">getMaxNumberOfPendingMessages</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a973a5b75410f5b99fd0e8f08572d23c1">nextMessage</a> (String lastMessageId, String partyId)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#ae4b09be5dcd4ef560e59e650a0ad2d2a">addMessage</a> (<a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a> outboundVoiceMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#ad126daa738c693e8e66f3576ee4afe9a">getNextPendingMessage</a> (String partyId)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1_voice_outbox_service.html#a28fb61542538b93dd615aa7f841d3827">getNextSavedMessage</a> (String partyId)</td></tr>
@@ -138,7 +153,35 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#aa9100a8329285f6b82b43931fc9a333f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#aa9100a8329285f6b82b43931fc9a333f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#aa9100a8329285f6b82b43931fc9a333f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4b09be5dcd4ef560e59e650a0ad2d2a"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::addMessage" ref="ae4b09be5dcd4ef560e59e650a0ad2d2a" args="(OutboundVoiceMessage outboundVoiceMessage)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.outbox.api.service.VoiceOutboxService.addMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a>&nbsp;</td>
+          <td class="paramname"> <em>outboundVoiceMessage</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds the given outbound voice message to the parties' voice outbox.A party determines by party ID in the given outbound voice message. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>outboundVoiceMessage</em>&nbsp;</td><td>- outbound voice message to be added to the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#aa9100a8329285f6b82b43931fc9a333f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#aa9100a8329285f6b82b43931fc9a333f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -158,7 +201,27 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>max number of pending messages </dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ab23ab120a5b4c49e85dee06fe1de2a82">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ab23ab120a5b4c49e85dee06fe1de2a82">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ab23ab120a5b4c49e85dee06fe1de2a82">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f7977e9e6cec7c13b0006e260166c16"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::getMaxNumberOfPendingMessages" ref="a8f7977e9e6cec7c13b0006e260166c16" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.outbox.api.service.VoiceOutboxService.getMaxNumberOfPendingMessages </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>max number of pending messages </dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ab23ab120a5b4c49e85dee06fe1de2a82">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ab23ab120a5b4c49e85dee06fe1de2a82">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -187,7 +250,36 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>OutboundVoiceMessage </dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a24186e5a78e104071acebb54e96de863">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a24186e5a78e104071acebb54e96de863">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a24186e5a78e104071acebb54e96de863">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a902b67d128acbc5cc50de4e746ab95cd"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::getMessageById" ref="a902b67d128acbc5cc50de4e746ab95cd" args="(String outboundVoiceMessageId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a> org.motechproject.outbox.api.service.VoiceOutboxService.getMessageById </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>outboundVoiceMessageId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the outbound voice messages with the given message ID stored in the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>outboundVoiceMessageId</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>OutboundVoiceMessage </dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a24186e5a78e104071acebb54e96de863">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a24186e5a78e104071acebb54e96de863">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -217,7 +309,37 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>OutboundVoiceMessage </dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a423fe9c8a14cb58d544e362d0cf5f5b5">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a423fe9c8a14cb58d544e362d0cf5f5b5">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a423fe9c8a14cb58d544e362d0cf5f5b5">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad126daa738c693e8e66f3576ee4afe9a"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::getNextPendingMessage" ref="ad126daa738c693e8e66f3576ee4afe9a" args="(String partyId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a> org.motechproject.outbox.api.service.VoiceOutboxService.getNextPendingMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>partyId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the next pending message from the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> of the party identified by the given party ID, or NULL if there is no more pending messages in the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a>. </p>
+<p>A next pending message is a not expired message with the status "Pending" that belongs to this party, the oldest creation time and the highest priority among other pending messages in the party <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a>.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>partyId</em>&nbsp;</td><td>- unique identifier of the party from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>OutboundVoiceMessage </dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a423fe9c8a14cb58d544e362d0cf5f5b5">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a423fe9c8a14cb58d544e362d0cf5f5b5">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -246,7 +368,36 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>OutboundVoiceMessage </dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ae429228c4530b9a956035fab0b44ce62">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ae429228c4530b9a956035fab0b44ce62">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ae429228c4530b9a956035fab0b44ce62">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a28fb61542538b93dd615aa7f841d3827"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::getNextSavedMessage" ref="a28fb61542538b93dd615aa7f841d3827" args="(String partyId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a> org.motechproject.outbox.api.service.VoiceOutboxService.getNextSavedMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>partyId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the next saved message from the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> of the party identified by the given party ID, or NULL if there is no more saved messages in the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>partyId</em>&nbsp;</td><td>- unique identifier of the party from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>OutboundVoiceMessage </dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ae429228c4530b9a956035fab0b44ce62">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#ae429228c4530b9a956035fab0b44ce62">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -285,7 +436,7 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a700e0ce8f49324ce97cd3c4fd7af7571">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a700e0ce8f49324ce97cd3c4fd7af7571">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a700e0ce8f49324ce97cd3c4fd7af7571">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -314,7 +465,75 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a89dd42894e3e54fb22f7865ea80e348d">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a89dd42894e3e54fb22f7865ea80e348d">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a89dd42894e3e54fb22f7865ea80e348d">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58d97dcfbd7ac732e7fe57972df073ed"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::getNumberPendingMessages" ref="a58d97dcfbd7ac732e7fe57972df073ed" args="(String partyId, String voiceMessageTypeName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.outbox.api.service.VoiceOutboxService.getNumberPendingMessages </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>partyId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>voiceMessageTypeName</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns number of pending messages in the voice <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> of the party with the given party ID and the voice message type name. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>partyId</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>voiceMessageTypeName</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a700e0ce8f49324ce97cd3c4fd7af7571">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a700e0ce8f49324ce97cd3c4fd7af7571">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c4ed4d6ed235a017a27dc3b24c147fe"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::getNumberPendingMessages" ref="a4c4ed4d6ed235a017a27dc3b24c147fe" args="(String partyId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.outbox.api.service.VoiceOutboxService.getNumberPendingMessages </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>partyId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns number of pending messages in the voice <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> of the party with the given party ID. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>partyId</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a89dd42894e3e54fb22f7865ea80e348d">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a89dd42894e3e54fb22f7865ea80e348d">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -336,7 +555,29 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 <p>Returns number of days for which a messages saved by the patient will be kept in <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> as SAVED messages. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a4e8dc8c2922fa54c8efc64f3c34d691e">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a4e8dc8c2922fa54c8efc64f3c34d691e">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a4e8dc8c2922fa54c8efc64f3c34d691e">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff5b83ca1e88d4a674e123019d7c5492"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::getNumDayskeepSavedMessages" ref="aff5b83ca1e88d4a674e123019d7c5492" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.outbox.api.service.VoiceOutboxService.getNumDayskeepSavedMessages </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns number of days for which a messages saved by the patient will be kept in <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> as SAVED messages. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a4e8dc8c2922fa54c8efc64f3c34d691e">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a4e8dc8c2922fa54c8efc64f3c34d691e">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -365,7 +606,36 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a1812bdd9580c9f5b2dd6a75f7843fb49">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a1812bdd9580c9f5b2dd6a75f7843fb49">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a1812bdd9580c9f5b2dd6a75f7843fb49">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a973a5b75410f5b99fd0e8f08572d23c1"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::nextMessage" ref="a973a5b75410f5b99fd0e8f08572d23c1" args="(String lastMessageId, String partyId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1domain_1_1_outbound_voice_message.html">OutboundVoiceMessage</a> org.motechproject.outbox.api.service.VoiceOutboxService.nextMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>lastMessageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>partyId</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a1812bdd9580c9f5b2dd6a75f7843fb49">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a1812bdd9580c9f5b2dd6a75f7843fb49">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -393,7 +663,35 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a2c512fed8a4c870d30cb0e6b0f50de9a">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a2c512fed8a4c870d30cb0e6b0f50de9a">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a2c512fed8a4c870d30cb0e6b0f50de9a">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6dd2105f8f2f1b9658635df16ea8fe68"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::removeMessage" ref="a6dd2105f8f2f1b9658635df16ea8fe68" args="(String outboundVoiceMessageId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.outbox.api.service.VoiceOutboxService.removeMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>outboundVoiceMessageId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Removes the messages with the given message ID from the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>outboundVoiceMessageId</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a2c512fed8a4c870d30cb0e6b0f50de9a">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a2c512fed8a4c870d30cb0e6b0f50de9a">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -421,7 +719,35 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a13883552899c5e4538afdffad345a836">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a13883552899c5e4538afdffad345a836">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a13883552899c5e4538afdffad345a836">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d23ab451397f1b3d451d191fa1e8db5"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::saveMessage" ref="a4d23ab451397f1b3d451d191fa1e8db5" args="(String outboundVoiceMessageId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.outbox.api.service.VoiceOutboxService.saveMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>outboundVoiceMessageId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Saves the message with given id in the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> for period (number of days) specified in the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> configuration Sets to the message status: SAVED and expiration date: current date + number of days in the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> configuration. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>outboundVoiceMessageId</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a13883552899c5e4538afdffad345a836">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a13883552899c5e4538afdffad345a836">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -449,7 +775,35 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a506ccc6426d2e32841e4fc54779e0272">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a506ccc6426d2e32841e4fc54779e0272">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a506ccc6426d2e32841e4fc54779e0272">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21bfb059358955df42f2c3b46b664ee6"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::setMaxNumberOfPendingMessages" ref="a21bfb059358955df42f2c3b46b664ee6" args="(int maxNumberOfPendingMessages)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.outbox.api.service.VoiceOutboxService.setMaxNumberOfPendingMessages </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>maxNumberOfPendingMessages</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets max number of pending messages after which the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> will send an <a class="el" href="namespaceorg_1_1motechproject_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>maxNumberOfPendingMessages</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a506ccc6426d2e32841e4fc54779e0272">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a506ccc6426d2e32841e4fc54779e0272">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -487,7 +841,45 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a77dbda565d4cf4d44158002153e4dbb9">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a77dbda565d4cf4d44158002153e4dbb9">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a77dbda565d4cf4d44158002153e4dbb9">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac65706b5dac4566647d53bb2a768750c"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::setMessageStatus" ref="ac65706b5dac4566647d53bb2a768750c" args="(String outboundVoiceMessageId, OutboundVoiceMessageStatus status)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.outbox.api.service.VoiceOutboxService.setMessageStatus </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>outboundVoiceMessageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutboundVoiceMessageStatus&nbsp;</td>
+          <td class="paramname"> <em>status</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets the given status to the message with the given message ID in the <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>outboundVoiceMessageId</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>status</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a77dbda565d4cf4d44158002153e4dbb9">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#a77dbda565d4cf4d44158002153e4dbb9">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -515,12 +907,41 @@ Inheritance diagram for org.motechproject.outbox.api.service.VoiceOutboxService:
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#accca2b8a37e0b3b57953a174534aab9f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#accca2b8a37e0b3b57953a174534aab9f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#accca2b8a37e0b3b57953a174534aab9f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this interface was generated from the following file:<ul>
-<li>motech-outbox-api/src/main/java/org/motechproject/outbox/api/service/<a class="el" href="_voice_outbox_service_8java.html">VoiceOutboxService.java</a></li>
+<a class="anchor" id="a1d8ac22212fdac915eae80d733ba099f"></a><!-- doxytag: member="org::motechproject::outbox::api::service::VoiceOutboxService::setNumDayskeepSavedMessages" ref="a1d8ac22212fdac915eae80d733ba099f" args="(int numDayskeepSavedMessages)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.outbox.api.service.VoiceOutboxService.setNumDayskeepSavedMessages </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numDayskeepSavedMessages</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets the number of days for which a messages saved by the patient will be kept in <a class="el" href="namespaceorg_1_1motechproject_1_1outbox.html">outbox</a> as SAVED messages. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>numDayskeepSavedMessages</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#accca2b8a37e0b3b57953a174534aab9f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1outbox_1_1api_1_1service_1_1impl_1_1_voice_outbox_service_impl.html#accca2b8a37e0b3b57953a174534aab9f">org.motechproject.outbox.api.service.impl.VoiceOutboxServiceImpl</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following files:<ul>
+<li>motech-outbox-api/src/main/java/org/motechproject/outbox/api/service/<a class="el" href="motech-outbox-api_2src_2main_2java_2org_2motechproject_2outbox_2api_2service_2_voice_outbox_service_8java.html">VoiceOutboxService.java</a></li>
+<li>target/checkout/motech-outbox-api/src/main/java/org/motechproject/outbox/api/service/<a class="el" href="target_2checkout_2motech-outbox-api_2src_2main_2java_2org_2motechproject_2outbox_2api_2service_2_voice_outbox_service_8java.html">VoiceOutboxService.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

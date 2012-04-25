@@ -81,6 +81,7 @@ Inheritance diagram for org.motechproject.mrs.services.MRSObservationAdapter:</d
   <img src="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_observation_adapter.gif" usemap="#org.motechproject.mrs.services.MRSObservationAdapter_map" alt=""/>
   <map id="org.motechproject.mrs.services.MRSObservationAdapter_map" name="org.motechproject.mrs.services.MRSObservationAdapter_map">
 <area href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html" alt="org.motechproject.openmrs.services.OpenMRSObservationAdapter" shape="rect" coords="0,56,394,80"/>
+<area href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html" alt="org.motechproject.openmrs.services.OpenMRSObservationAdapter" shape="rect" coords="404,56,798,80"/>
 </map>
  </div>
 </div>
@@ -90,7 +91,10 @@ Inheritance diagram for org.motechproject.mrs.services.MRSObservationAdapter:</d
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">MRSObservation&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_observation_adapter.html#a11bb0ceacaf980ce6ae7d68633db01ff">findObservation</a> (String patientMotechId, String conceptName)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; MRSObservation &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_observation_adapter.html#af7f93b3a4de7468ee45259e2e3f08065">findObservations</a> (String patientMotechId, String conceptName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">MRSObservation&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_observation_adapter.html#a11bb0ceacaf980ce6ae7d68633db01ff">findObservation</a> (String patientMotechId, String conceptName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; MRSObservation &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_observation_adapter.html#af7f93b3a4de7468ee45259e2e3f08065">findObservations</a> (String patientMotechId, String conceptName)</td></tr>
 <tr><td colspan="2"><h2>Package Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_observation_adapter.html#a3a9ed5b74e1957363a43fd6683ddc5cd">voidObservation</a> (MRSObservation mrsObservation, String reason, String mrsUserMotechId)  throws ObservationNotFoundException</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_observation_adapter.html#a3a9ed5b74e1957363a43fd6683ddc5cd">voidObservation</a> (MRSObservation mrsObservation, String reason, String mrsUserMotechId)  throws ObservationNotFoundException</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
@@ -130,7 +134,47 @@ Inheritance diagram for org.motechproject.mrs.services.MRSObservationAdapter:</d
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>MRSObservation if present. </dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11bb0ceacaf980ce6ae7d68633db01ff"></a><!-- doxytag: member="org::motechproject::mrs::services::MRSObservationAdapter::findObservation" ref="a11bb0ceacaf980ce6ae7d68633db01ff" args="(String patientMotechId, String conceptName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MRSObservation org.motechproject.mrs.services.MRSObservationAdapter.findObservation </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>patientMotechId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>conceptName</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the Latest MRSObservation of the MRS patient, given the concept name. </p>
+<p>(e.g. WEIGHT)</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>patientMotechId</em>&nbsp;</td><td>MOTECH Id of the patient </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>conceptName</em>&nbsp;</td><td>Concept Name of the MRSObservation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>MRSObservation if present. </dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
 
 </div>
 </div>
@@ -159,7 +203,36 @@ Inheritance diagram for org.motechproject.mrs.services.MRSObservationAdapter:</d
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7f93b3a4de7468ee45259e2e3f08065"></a><!-- doxytag: member="org::motechproject::mrs::services::MRSObservationAdapter::findObservations" ref="af7f93b3a4de7468ee45259e2e3f08065" args="(String patientMotechId, String conceptName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;MRSObservation&gt; org.motechproject.mrs.services.MRSObservationAdapter.findObservations </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>patientMotechId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>conceptName</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
 
 </div>
 </div>
@@ -210,12 +283,64 @@ Inheritance diagram for org.motechproject.mrs.services.MRSObservationAdapter:</d
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this interface was generated from the following file:<ul>
-<li>motech-mrs-api/src/main/java/org/motechproject/mrs/services/<a class="el" href="_m_r_s_observation_adapter_8java.html">MRSObservationAdapter.java</a></li>
+<a class="anchor" id="a3a9ed5b74e1957363a43fd6683ddc5cd"></a><!-- doxytag: member="org::motechproject::mrs::services::MRSObservationAdapter::voidObservation" ref="a3a9ed5b74e1957363a43fd6683ddc5cd" args="(MRSObservation mrsObservation, String reason, String mrsUserMotechId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.mrs.services.MRSObservationAdapter.voidObservation </td>
+          <td>(</td>
+          <td class="paramtype">MRSObservation&nbsp;</td>
+          <td class="paramname"> <em>mrsObservation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>mrsUserMotechId</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td>  throws <a class="el" href="classorg_1_1motechproject_1_1mrs_1_1exception_1_1_observation_not_found_exception.html">ObservationNotFoundException</a><code> [package]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Voids an observation for the MOTECH user, with the given reason. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mrsObservation</em>&nbsp;</td><td>MRSObservation to be voided </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>reason</em>&nbsp;</td><td>Reason for voiding the MRSObservation </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mrsUserMotechId</em>&nbsp;</td><td>MOTECH ID of the user who's MRSObservation needs to be voided </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Exceptions:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ObservationNotFoundException</em>&nbsp;</td><td>Exception when the expected Observation does not exist </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_observation_adapter.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following files:<ul>
+<li>motech-mrs-api/src/main/java/org/motechproject/mrs/services/<a class="el" href="motech-mrs-api_2src_2main_2java_2org_2motechproject_2mrs_2services_2_m_r_s_observation_adapter_8java.html">MRSObservationAdapter.java</a></li>
+<li>target/checkout/motech-mrs-api/src/main/java/org/motechproject/mrs/services/<a class="el" href="target_2checkout_2motech-mrs-api_2src_2main_2java_2org_2motechproject_2mrs_2services_2_m_r_s_observation_adapter_8java.html">MRSObservationAdapter.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.openmrs.services.OpenMRSPatientAdapter Class Reference</h1><!-- doxytag: class="org::motechproject::openmrs::services::OpenMRSPatientAdapter" --><!-- doxytag: inherits="org::motechproject::mrs::services::MRSPatientAdapter" -->
+<h1>org.motechproject.openmrs.services.OpenMRSPatientAdapter Class Reference</h1><!-- doxytag: class="org::motechproject::openmrs::services::OpenMRSPatientAdapter" --><!-- doxytag: inherits="org::motechproject::mrs::services::MRSPatientAdapter,org::motechproject::mrs::services::MRSPatientAdapter" -->
 <p>Manages Patients in OpenMRS.  
 <a href="#_details">More...</a></p>
 <div class="dynheader">
@@ -84,6 +84,7 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
   <img src="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.gif" usemap="#org.motechproject.openmrs.services.OpenMRSPatientAdapter_map" alt=""/>
   <map id="org.motechproject.openmrs.services.OpenMRSPatientAdapter_map" name="org.motechproject.openmrs.services.OpenMRSPatientAdapter_map">
 <area href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html" alt="org.motechproject.mrs.services.MRSPatientAdapter" shape="rect" coords="0,0,363,24"/>
+<area href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html" alt="org.motechproject.mrs.services.MRSPatientAdapter" shape="rect" coords="373,0,736,24"/>
 </map>
  </div>
 </div>
@@ -98,23 +99,93 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#af6e34e60035b35734f15b4d47ef8020a">updatePatient</a> (<a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> patient)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a32aa8190d00a5b9d77d3196218f8f779">search</a> (String name, String motechId)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a4626d19ad254e5974561931b91e46f62">deceasePatient</a> (String motechId, String conceptName, Date dateOfDeath, String comment)  throws PatientNotFoundException </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a6f02343737cfbd2690015300bbb2a9ee">getPatient</a> (String patientId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Integer&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a342f0d474ff5819898164377c60677ca">getAgeOfPatientByMotechId</a> (String motechId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a65456598b116c5edfddd98e86d7be13e">getPatientByMotechId</a> (String motechId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a4c51938b4112eb144a4788b413513ac8">savePatient</a> (<a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> patient)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#af6e34e60035b35734f15b4d47ef8020a">updatePatient</a> (<a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> patient)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a32aa8190d00a5b9d77d3196218f8f779">search</a> (String name, String motechId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a4626d19ad254e5974561931b91e46f62">deceasePatient</a> (String motechId, String conceptName, Date dateOfDeath, String comment)  throws PatientNotFoundException </td></tr>
 <tr><td colspan="2"><h2>Package Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#aea6ee006246a040fd4899a0ebd058363">updatePatient</a> (<a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> fromMRSPatient, Patient openMrsPatient)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">PatientIdentifierType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a8856e8ccc5093b884811dc306fc5afd3">getPatientIdentifierType</a> (<a class="el" href="namespaceorg_1_1motechproject_1_1openmrs.html#a45364c3743776255e6b3f9febaa082c4">IdentifierType</a> identifierType)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a2a485686e3eabff52ef098933035ecb5">getMrsPatient</a> (org.openmrs.Patient patient)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">org.openmrs.Patient&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#ab2a2a7457454ba8ebf50d288b2c77f3a">getOpenMrsPatient</a> (String patientId)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">Patient&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a98629a72a8cadb27227541fa27945f52">getOpenmrsPatientByMotechId</a> (String motechId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#aea6ee006246a040fd4899a0ebd058363">updatePatient</a> (<a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> fromMRSPatient, Patient openMrsPatient)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">PatientIdentifierType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a8856e8ccc5093b884811dc306fc5afd3">getPatientIdentifierType</a> (<a class="el" href="namespaceorg_1_1motechproject_1_1openmrs.html#a45364c3743776255e6b3f9febaa082c4">IdentifierType</a> identifierType)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a2a485686e3eabff52ef098933035ecb5">getMrsPatient</a> (org.openmrs.Patient patient)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">org.openmrs.Patient&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#ab2a2a7457454ba8ebf50d288b2c77f3a">getOpenMrsPatient</a> (String patientId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Patient&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a98629a72a8cadb27227541fa27945f52">getOpenmrsPatientByMotechId</a> (String motechId)</td></tr>
 <tr><td colspan="2"><h2>Package Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">PatientService&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a0b2270e475ebc9a6e6c4677bd7c4d96c">patientService</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">PersonService&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a0b5423ee90ebdc725fd56511b86e6a95">personService</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_facility_adapter.html">OpenMRSFacilityAdapter</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#aed6cef8d1c0708a079497ff74a3f6799">facilityAdapter</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_person_adapter.html">OpenMRSPersonAdapter</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#ae5d4461edeeb5a6931d549fbc6f699fc">personAdapter</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1helper_1_1_patient_helper.html">PatientHelper</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a43beb91bd948e399626558f470e94be6">patientHelper</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_concept_adapter.html">OpenMRSConceptAdapter</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#af4612eff3068feb8eded4df3f6ece32f">openMrsConceptAdapter</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">PatientService&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#ab056188358f75f4fdcfcd87bb31e77ed">patientService</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">PersonService&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#ac888fb27e08a51901b8c936e021b1989">personService</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_facility_adapter.html">OpenMRSFacilityAdapter</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a1c8aca466c73cfd4d236abdaea7dc88f">facilityAdapter</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_person_adapter.html">OpenMRSPersonAdapter</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a35008af6e0c508d33a4f8ec7f4186e10">personAdapter</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1helper_1_1_patient_helper.html">PatientHelper</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#abd53e3045edcb570383db6a929a56101">patientHelper</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_concept_adapter.html">OpenMRSConceptAdapter</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a192183a9882f3411a535987c87819a7f">openMrsConceptAdapter</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Manages Patients in OpenMRS. </p>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a4626d19ad254e5974561931b91e46f62"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::deceasePatient" ref="a4626d19ad254e5974561931b91e46f62" args="(String motechId, String conceptName, Date dateOfDeath, String comment)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.openmrs.services.OpenMRSPatientAdapter.deceasePatient </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>motechId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>conceptName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Date&nbsp;</td>
+          <td class="paramname"> <em>dateOfDeath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>comment</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td>  throws <a class="el" href="classorg_1_1motechproject_1_1mrs_1_1exception_1_1_patient_not_found_exception.html">PatientNotFoundException</a> </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Marks a patient as dead with the given date of death and comment. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>motechId</em>&nbsp;</td><td>Deceased patient's MOTECH id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>conceptName</em>&nbsp;</td><td>Concept name for tracking deceased patients </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>dateOfDeath</em>&nbsp;</td><td>Patient's date of death </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>comment</em>&nbsp;</td><td>Additional information for the cause of death </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Exceptions:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>PatientNotFoundException</em>&nbsp;</td><td>Throws this exception if patient with the given MOTECH id does not exists </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html#acd88b6a84cd6405c00c68dee43d93f4e">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4626d19ad254e5974561931b91e46f62"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::deceasePatient" ref="a4626d19ad254e5974561931b91e46f62" args="(String motechId, String conceptName, Date dateOfDeath, String comment)" -->
 <div class="memitem">
 <div class="memproto">
@@ -202,6 +273,35 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
+<a class="anchor" id="a342f0d474ff5819898164377c60677ca"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getAgeOfPatientByMotechId" ref="a342f0d474ff5819898164377c60677ca" args="(String motechId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Integer org.motechproject.openmrs.services.OpenMRSPatientAdapter.getAgeOfPatientByMotechId </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>motechId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets the patient's age. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>motechId</em>&nbsp;</td><td>Motech id of the patient </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The age of the patient if found, else null </dd></dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html#a56f03adae16cb0fbbe53f72040d18bdb">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2a485686e3eabff52ef098933035ecb5"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getMrsPatient" ref="a2a485686e3eabff52ef098933035ecb5" args="(org.openmrs.Patient patient)" -->
 <div class="memitem">
 <div class="memproto">
@@ -211,6 +311,42 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
           <td>(</td>
           <td class="paramtype">org.openmrs.Patient&nbsp;</td>
           <td class="paramname"> <em>patient</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [package]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a485686e3eabff52ef098933035ecb5"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getMrsPatient" ref="a2a485686e3eabff52ef098933035ecb5" args="(org.openmrs.Patient patient)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> org.motechproject.openmrs.services.OpenMRSPatientAdapter.getMrsPatient </td>
+          <td>(</td>
+          <td class="paramtype">org.openmrs.Patient&nbsp;</td>
+          <td class="paramname"> <em>patient</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [package]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2a2a7457454ba8ebf50d288b2c77f3a"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getOpenMrsPatient" ref="ab2a2a7457454ba8ebf50d288b2c77f3a" args="(String patientId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.openmrs.Patient org.motechproject.openmrs.services.OpenMRSPatientAdapter.getOpenMrsPatient </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>patientId</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td><code> [package]</code></td>
         </tr>
@@ -253,6 +389,53 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a98629a72a8cadb27227541fa27945f52"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getOpenmrsPatientByMotechId" ref="a98629a72a8cadb27227541fa27945f52" args="(String motechId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Patient org.motechproject.openmrs.services.OpenMRSPatientAdapter.getOpenmrsPatientByMotechId </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>motechId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [package]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f02343737cfbd2690015300bbb2a9ee"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getPatient" ref="a6f02343737cfbd2690015300bbb2a9ee" args="(String patientId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> org.motechproject.openmrs.services.OpenMRSPatientAdapter.getPatient </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>patientId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Finds a patient by patient id. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>patientId</em>&nbsp;</td><td>Value to be used to find a patient </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Patient object if found, else null </dd></dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html#a9f62ec8897799be82b396767480c5df6">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
 
 </div>
 </div>
@@ -314,6 +497,53 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
+<a class="anchor" id="a65456598b116c5edfddd98e86d7be13e"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getPatientByMotechId" ref="a65456598b116c5edfddd98e86d7be13e" args="(String motechId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> org.motechproject.openmrs.services.OpenMRSPatientAdapter.getPatientByMotechId </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>motechId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Finds a patient by motech id. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>motechId</em>&nbsp;</td><td>Value to be used to find a patient </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Patient object if found, else null </dd></dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html#ae883291656864496e9f316432c6b8855">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8856e8ccc5093b884811dc306fc5afd3"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getPatientIdentifierType" ref="a8856e8ccc5093b884811dc306fc5afd3" args="(IdentifierType identifierType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PatientIdentifierType org.motechproject.openmrs.services.OpenMRSPatientAdapter.getPatientIdentifierType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceorg_1_1motechproject_1_1openmrs.html#a45364c3743776255e6b3f9febaa082c4">IdentifierType</a>&nbsp;</td>
+          <td class="paramname"> <em>identifierType</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [package]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8856e8ccc5093b884811dc306fc5afd3"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::getPatientIdentifierType" ref="a8856e8ccc5093b884811dc306fc5afd3" args="(IdentifierType identifierType)" -->
 <div class="memitem">
 <div class="memproto">
@@ -358,6 +588,74 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 <dl class="return"><dt><b>Returns:</b></dt><dd>saved instance of Patient </dd></dl>
 
 <p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html#ad026eba203ac9069491467fa11e201ef">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c51938b4112eb144a4788b413513ac8"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::savePatient" ref="a4c51938b4112eb144a4788b413513ac8" args="(MRSPatient patient)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> org.motechproject.openmrs.services.OpenMRSPatientAdapter.savePatient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td>
+          <td class="paramname"> <em>patient</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Saves a patient to the OpenMRS system. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>patient</em>&nbsp;</td><td>Object to be saved </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>saved instance of Patient </dd></dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html#ad026eba203ac9069491467fa11e201ef">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32aa8190d00a5b9d77d3196218f8f779"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::search" ref="a32aa8190d00a5b9d77d3196218f8f779" args="(String name, String motechId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&gt; org.motechproject.openmrs.services.OpenMRSPatientAdapter.search </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>motechId</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Searches for patients in the MRS system by patient's name and/or MOTECH id. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Name of the patient to be searched for (Optional : can be null) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>motechId</em>&nbsp;</td><td>Motech id of the patient to be searched for (Optional : can be null) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Matched patients for the given search criteria [if both parameters are null, will return all the patients] </dd></dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html#a9dec76120c16016a7fb1edbcd6700cdd">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
 
 </div>
 </div>
@@ -456,13 +754,69 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
+<a class="anchor" id="aea6ee006246a040fd4899a0ebd058363"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::updatePatient" ref="aea6ee006246a040fd4899a0ebd058363" args="(MRSPatient fromMRSPatient, Patient openMrsPatient)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> org.motechproject.openmrs.services.OpenMRSPatientAdapter.updatePatient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td>
+          <td class="paramname"> <em>fromMRSPatient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Patient&nbsp;</td>
+          <td class="paramname"> <em>openMrsPatient</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [package]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af6e34e60035b35734f15b4d47ef8020a"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::updatePatient" ref="af6e34e60035b35734f15b4d47ef8020a" args="(MRSPatient patient)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a> org.motechproject.openmrs.services.OpenMRSPatientAdapter.updatePatient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1model_1_1_m_r_s_patient.html">MRSPatient</a>&nbsp;</td>
+          <td class="paramname"> <em>patient</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Finds a patient by Motech id and updates the patient's details in the MRS system. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>patient</em>&nbsp;</td><td>Patient instance with updated values (MOTECH identifier cannot be changed) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The updated Patient object if found, else null </dd></dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1mrs_1_1services_1_1_m_r_s_patient_adapter.html#ad6f0d58096ce69344e494bbfa98abcba">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="aed6cef8d1c0708a079497ff74a3f6799"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::facilityAdapter" ref="aed6cef8d1c0708a079497ff74a3f6799" args="" -->
+<a class="anchor" id="a1c8aca466c73cfd4d236abdaea7dc88f"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::facilityAdapter" ref="a1c8aca466c73cfd4d236abdaea7dc88f" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_facility_adapter.html">OpenMRSFacilityAdapter</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#aed6cef8d1c0708a079497ff74a3f6799">org.motechproject.openmrs.services.OpenMRSPatientAdapter.facilityAdapter</a><code> [package]</code></td>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_facility_adapter.html">OpenMRSFacilityAdapter</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a1c8aca466c73cfd4d236abdaea7dc88f">org::motechproject::openmrs::services.OpenMRSPatientAdapter::facilityAdapter</a><code> [package]</code></td>
         </tr>
       </table>
 </div>
@@ -470,12 +824,12 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
-<a class="anchor" id="af4612eff3068feb8eded4df3f6ece32f"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::openMrsConceptAdapter" ref="af4612eff3068feb8eded4df3f6ece32f" args="" -->
+<a class="anchor" id="a192183a9882f3411a535987c87819a7f"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::openMrsConceptAdapter" ref="a192183a9882f3411a535987c87819a7f" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_concept_adapter.html">OpenMRSConceptAdapter</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#af4612eff3068feb8eded4df3f6ece32f">org.motechproject.openmrs.services.OpenMRSPatientAdapter.openMrsConceptAdapter</a><code> [package]</code></td>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_concept_adapter.html">OpenMRSConceptAdapter</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a192183a9882f3411a535987c87819a7f">org::motechproject::openmrs::services.OpenMRSPatientAdapter::openMrsConceptAdapter</a><code> [package]</code></td>
         </tr>
       </table>
 </div>
@@ -483,12 +837,12 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
-<a class="anchor" id="a43beb91bd948e399626558f470e94be6"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::patientHelper" ref="a43beb91bd948e399626558f470e94be6" args="" -->
+<a class="anchor" id="abd53e3045edcb570383db6a929a56101"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::patientHelper" ref="abd53e3045edcb570383db6a929a56101" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1helper_1_1_patient_helper.html">PatientHelper</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a43beb91bd948e399626558f470e94be6">org.motechproject.openmrs.services.OpenMRSPatientAdapter.patientHelper</a><code> [package]</code></td>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1helper_1_1_patient_helper.html">PatientHelper</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#abd53e3045edcb570383db6a929a56101">org::motechproject::openmrs::services.OpenMRSPatientAdapter::patientHelper</a><code> [package]</code></td>
         </tr>
       </table>
 </div>
@@ -496,12 +850,12 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
-<a class="anchor" id="a0b2270e475ebc9a6e6c4677bd7c4d96c"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::patientService" ref="a0b2270e475ebc9a6e6c4677bd7c4d96c" args="" -->
+<a class="anchor" id="ab056188358f75f4fdcfcd87bb31e77ed"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::patientService" ref="ab056188358f75f4fdcfcd87bb31e77ed" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PatientService <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a0b2270e475ebc9a6e6c4677bd7c4d96c">org.motechproject.openmrs.services.OpenMRSPatientAdapter.patientService</a><code> [package]</code></td>
+          <td class="memname">PatientService <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#ab056188358f75f4fdcfcd87bb31e77ed">org::motechproject::openmrs::services.OpenMRSPatientAdapter::patientService</a><code> [package]</code></td>
         </tr>
       </table>
 </div>
@@ -509,12 +863,12 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
-<a class="anchor" id="ae5d4461edeeb5a6931d549fbc6f699fc"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::personAdapter" ref="ae5d4461edeeb5a6931d549fbc6f699fc" args="" -->
+<a class="anchor" id="a35008af6e0c508d33a4f8ec7f4186e10"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::personAdapter" ref="a35008af6e0c508d33a4f8ec7f4186e10" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_person_adapter.html">OpenMRSPersonAdapter</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#ae5d4461edeeb5a6931d549fbc6f699fc">org.motechproject.openmrs.services.OpenMRSPatientAdapter.personAdapter</a><code> [package]</code></td>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_person_adapter.html">OpenMRSPersonAdapter</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a35008af6e0c508d33a4f8ec7f4186e10">org::motechproject::openmrs::services.OpenMRSPatientAdapter::personAdapter</a><code> [package]</code></td>
         </tr>
       </table>
 </div>
@@ -522,12 +876,12 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
-<a class="anchor" id="a0b5423ee90ebdc725fd56511b86e6a95"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::personService" ref="a0b5423ee90ebdc725fd56511b86e6a95" args="" -->
+<a class="anchor" id="ac888fb27e08a51901b8c936e021b1989"></a><!-- doxytag: member="org::motechproject::openmrs::services::OpenMRSPatientAdapter::personService" ref="ac888fb27e08a51901b8c936e021b1989" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PersonService <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#a0b5423ee90ebdc725fd56511b86e6a95">org.motechproject.openmrs.services.OpenMRSPatientAdapter.personService</a><code> [package]</code></td>
+          <td class="memname">PersonService <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1services_1_1_open_m_r_s_patient_adapter.html#ac888fb27e08a51901b8c936e021b1989">org::motechproject::openmrs::services.OpenMRSPatientAdapter::personService</a><code> [package]</code></td>
         </tr>
       </table>
 </div>
@@ -535,8 +889,9 @@ Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-openmrs-api/src/main/java/org/motechproject/openmrs/services/<a class="el" href="_open_m_r_s_patient_adapter_8java.html">OpenMRSPatientAdapter.java</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-openmrs-api/src/main/java/org/motechproject/openmrs/services/<a class="el" href="motech-openmrs-api_2src_2main_2java_2org_2motechproject_2openmrs_2services_2_open_m_r_s_patient_adapter_8java.html">OpenMRSPatientAdapter.java</a></li>
+<li>target/checkout/motech-openmrs-api/src/main/java/org/motechproject/openmrs/services/<a class="el" href="target_2checkout_2motech-openmrs-api_2src_2main_2java_2org_2motechproject_2openmrs_2services_2_open_m_r_s_patient_adapter_8java.html">OpenMRSPatientAdapter.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

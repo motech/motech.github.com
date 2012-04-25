@@ -80,9 +80,16 @@ Inheritance diagram for org.motechproject.server.event.EventListener:</div>
  <div class="center">
   <img src="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener.gif" usemap="#org.motechproject.server.event.EventListener_map" alt=""/>
   <map id="org.motechproject.server.event.EventListener_map" name="org.motechproject.server.event.EventListener_map">
-<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerAbstractProxy" shape="rect" coords="252,56,746,80"/>
-<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_named_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy" shape="rect" coords="0,112,494,136"/>
-<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_ordered_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerOrderedParametersProxy" shape="rect" coords="504,112,998,136"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerAbstractProxy" shape="rect" coords="0,56,494,80"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerAbstractProxy" shape="rect" coords="1008,56,1502,80"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_named_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy" shape="rect" coords="504,112,998,136"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_named_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy" shape="rect" coords="504,168,998,192"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_ordered_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerOrderedParametersProxy" shape="rect" coords="504,224,998,248"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_ordered_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerOrderedParametersProxy" shape="rect" coords="504,280,998,304"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_named_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy" shape="rect" coords="1512,112,2006,136"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_named_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy" shape="rect" coords="1512,168,2006,192"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_ordered_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerOrderedParametersProxy" shape="rect" coords="1512,224,2006,248"/>
+<area href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_ordered_parameters_proxy.html" alt="org.motechproject.server.event.annotations.MotechListenerOrderedParametersProxy" shape="rect" coords="1512,280,2006,304"/>
 </map>
  </div>
 </div>
@@ -90,6 +97,8 @@ Inheritance diagram for org.motechproject.server.event.EventListener:</div>
 <p><a href="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener.html#a9c9627ce24101a9ed755180065f85f8d">handle</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> event)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener.html#abbcb06d36379854bd31497a794c1d5d7">getIdentifier</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener.html#a9c9627ce24101a9ed755180065f85f8d">handle</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> event)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1event_1_1_event_listener.html#abbcb06d36379854bd31497a794c1d5d7">getIdentifier</a> ()</td></tr>
 </table>
@@ -113,7 +122,30 @@ Inheritance diagram for org.motechproject.server.event.EventListener:</div>
 <p>This identifier is used when messages are destine for this specific listener type</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Unique listener identifier/key </dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#a6479ca6ce30e8e5bff432eea952eebe8">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#a6479ca6ce30e8e5bff432eea952eebe8">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#a6479ca6ce30e8e5bff432eea952eebe8">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbcb06d36379854bd31497a794c1d5d7"></a><!-- doxytag: member="org::motechproject::server::event::EventListener::getIdentifier" ref="abbcb06d36379854bd31497a794c1d5d7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.event.EventListener.getIdentifier </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Retrieve a unique identifier/key for the given listener class. </p>
+<p>This identifier is used when messages are destine for this specific listener type</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Unique listener identifier/key </dd></dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#a6479ca6ce30e8e5bff432eea952eebe8">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#a6479ca6ce30e8e5bff432eea952eebe8">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
 
 </div>
 </div>
@@ -141,12 +173,41 @@ Inheritance diagram for org.motechproject.server.event.EventListener:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#acd30b4c9c5173ad999f5fb43059ded53">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#acd30b4c9c5173ad999f5fb43059ded53">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#acd30b4c9c5173ad999f5fb43059ded53">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this interface was generated from the following file:<ul>
-<li>motech-platform-server-api/src/main/java/org/motechproject/server/event/<a class="el" href="_event_listener_8java.html">EventListener.java</a></li>
+<a class="anchor" id="a9c9627ce24101a9ed755180065f85f8d"></a><!-- doxytag: member="org::motechproject::server::event::EventListener::handle" ref="a9c9627ce24101a9ed755180065f85f8d" args="(MotechEvent event)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.event.EventListener.handle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a>&nbsp;</td>
+          <td class="paramname"> <em>event</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Handle an particular <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> that has been received. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a></em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#acd30b4c9c5173ad999f5fb43059ded53">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1annotations_1_1_motech_listener_abstract_proxy.html#acd30b4c9c5173ad999f5fb43059ded53">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following files:<ul>
+<li>motech-platform-server-api/src/main/java/org/motechproject/server/event/<a class="el" href="motech-platform-server-api_2src_2main_2java_2org_2motechproject_2server_2event_2_event_listener_8java.html">EventListener.java</a></li>
+<li>target/checkout/motech-platform-server-api/src/main/java/org/motechproject/server/event/<a class="el" href="target_2checkout_2motech-platform-server-api_2src_2main_2java_2org_2motechproject_2server_2event_2_event_listener_8java.html">EventListener.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.mrs.security.MRSSecurityUser Class Reference</h1><!-- doxytag: class="org::motechproject::mrs::security::MRSSecurityUser" --><!-- doxytag: inherits="org::springframework::security::core::userdetails::UserDetails" -->
+<h1>org.motechproject.mrs.security.MRSSecurityUser Class Reference</h1><!-- doxytag: class="org::motechproject::mrs::security::MRSSecurityUser" --><!-- doxytag: inherits="org::springframework::security::core::userdetails::UserDetails,org::springframework::security::core::userdetails::UserDetails" -->
 <p>Hold authentication Details of the user.  
 <a href="#_details">More...</a></p>
 <div class="dynheader">
@@ -84,6 +84,7 @@ Inheritance diagram for org.motechproject.mrs.security.MRSSecurityUser:</div>
   <img src="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.gif" usemap="#org.motechproject.mrs.security.MRSSecurityUser_map" alt=""/>
   <map id="org.motechproject.mrs.security.MRSSecurityUser_map" name="org.motechproject.mrs.security.MRSSecurityUser_map">
 <area href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_security_user.html" alt="org.motechproject.openmrs.security.OpenMRSSecurityUser" shape="rect" coords="0,56,350,80"/>
+<area href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_security_user.html" alt="org.motechproject.openmrs.security.OpenMRSSecurityUser" shape="rect" coords="360,56,710,80"/>
 </map>
  </div>
 </div>
@@ -99,10 +100,54 @@ Inheritance diagram for org.motechproject.mrs.security.MRSSecurityUser:</div>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a723daafeaf294fdf5f7702bfa258bd26">isAccountNonLocked</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a8830179d1ab3ee9a7ed234423da5f797">isCredentialsNonExpired</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a0ba56026300aaaf4adeaacbce7f4f378">isEnabled</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a38af04bd3e09567cd9e94b35e8f583f9">MRSSecurityUser</a> (String userName, List&lt; GrantedAuthority &gt; authorities)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Collection&lt; GrantedAuthority &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#afa3fc582156006ec6c4422e040cad8cc">getAuthorities</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a6c157d83a7219a849ad7a7abac53efe8">getPassword</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#abff48095cb65544ea9e21e1e775f69cb">getUsername</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a311bd5659eebf54afde1ba809b025666">isAccountNonExpired</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a723daafeaf294fdf5f7702bfa258bd26">isAccountNonLocked</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a8830179d1ab3ee9a7ed234423da5f797">isCredentialsNonExpired</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html#a0ba56026300aaaf4adeaacbce7f4f378">isEnabled</a> ()</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Hold authentication Details of the user. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a38af04bd3e09567cd9e94b35e8f583f9"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::MRSSecurityUser" ref="a38af04bd3e09567cd9e94b35e8f583f9" args="(String userName, List&lt; GrantedAuthority &gt; authorities)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.mrs.security.MRSSecurityUser.MRSSecurityUser </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>userName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; GrantedAuthority &gt;&nbsp;</td>
+          <td class="paramname"> <em>authorities</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates a new Security User. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>userName</em>&nbsp;</td><td>Login ID of the User </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>authorities</em>&nbsp;</td><td>List of permissions given to the user. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a38af04bd3e09567cd9e94b35e8f583f9"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::MRSSecurityUser" ref="a38af04bd3e09567cd9e94b35e8f583f9" args="(String userName, List&lt; GrantedAuthority &gt; authorities)" -->
 <div class="memitem">
 <div class="memproto">
@@ -157,6 +202,23 @@ Inheritance diagram for org.motechproject.mrs.security.MRSSecurityUser:</div>
 
 </div>
 </div>
+<a class="anchor" id="afa3fc582156006ec6c4422e040cad8cc"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::getAuthorities" ref="afa3fc582156006ec6c4422e040cad8cc" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;GrantedAuthority&gt; org.motechproject.mrs.security.MRSSecurityUser.getAuthorities </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6c157d83a7219a849ad7a7abac53efe8"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::getPassword" ref="a6c157d83a7219a849ad7a7abac53efe8" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +234,26 @@ Inheritance diagram for org.motechproject.mrs.security.MRSSecurityUser:</div>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_security_user.html#a5db6702c049efe34e93a723c96888481">org.motechproject.openmrs.security.OpenMRSSecurityUser</a>.</p>
+<p>Reimplemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_security_user.html#a5db6702c049efe34e93a723c96888481">org.motechproject.openmrs.security.OpenMRSSecurityUser</a>, and <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_security_user.html#a5db6702c049efe34e93a723c96888481">org.motechproject.openmrs.security.OpenMRSSecurityUser</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c157d83a7219a849ad7a7abac53efe8"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::getPassword" ref="a6c157d83a7219a849ad7a7abac53efe8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.mrs.security.MRSSecurityUser.getPassword </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_security_user.html#a5db6702c049efe34e93a723c96888481">org.motechproject.openmrs.security.OpenMRSSecurityUser</a>, and <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_security_user.html#a5db6702c049efe34e93a723c96888481">org.motechproject.openmrs.security.OpenMRSSecurityUser</a>.</p>
 
 </div>
 </div>
@@ -182,6 +263,40 @@ Inheritance diagram for org.motechproject.mrs.security.MRSSecurityUser:</div>
       <table class="memname">
         <tr>
           <td class="memname">String org.motechproject.mrs.security.MRSSecurityUser.getUsername </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abff48095cb65544ea9e21e1e775f69cb"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::getUsername" ref="abff48095cb65544ea9e21e1e775f69cb" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.mrs.security.MRSSecurityUser.getUsername </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a311bd5659eebf54afde1ba809b025666"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::isAccountNonExpired" ref="a311bd5659eebf54afde1ba809b025666" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.mrs.security.MRSSecurityUser.isAccountNonExpired </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -227,6 +342,40 @@ Inheritance diagram for org.motechproject.mrs.security.MRSSecurityUser:</div>
 
 </div>
 </div>
+<a class="anchor" id="a723daafeaf294fdf5f7702bfa258bd26"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::isAccountNonLocked" ref="a723daafeaf294fdf5f7702bfa258bd26" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.mrs.security.MRSSecurityUser.isAccountNonLocked </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8830179d1ab3ee9a7ed234423da5f797"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::isCredentialsNonExpired" ref="a8830179d1ab3ee9a7ed234423da5f797" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.mrs.security.MRSSecurityUser.isCredentialsNonExpired </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8830179d1ab3ee9a7ed234423da5f797"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::isCredentialsNonExpired" ref="a8830179d1ab3ee9a7ed234423da5f797" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -261,8 +410,26 @@ Inheritance diagram for org.motechproject.mrs.security.MRSSecurityUser:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-mrs-api/src/main/java/org/motechproject/mrs/security/<a class="el" href="_m_r_s_security_user_8java.html">MRSSecurityUser.java</a></li>
+<a class="anchor" id="a0ba56026300aaaf4adeaacbce7f4f378"></a><!-- doxytag: member="org::motechproject::mrs::security::MRSSecurityUser::isEnabled" ref="a0ba56026300aaaf4adeaacbce7f4f378" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.mrs.security.MRSSecurityUser.isEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-mrs-api/src/main/java/org/motechproject/mrs/security/<a class="el" href="motech-mrs-api_2src_2main_2java_2org_2motechproject_2mrs_2security_2_m_r_s_security_user_8java.html">MRSSecurityUser.java</a></li>
+<li>target/checkout/motech-mrs-api/src/main/java/org/motechproject/mrs/security/<a class="el" href="target_2checkout_2motech-mrs-api_2src_2main_2java_2org_2motechproject_2mrs_2security_2_m_r_s_security_user_8java.html">MRSSecurityUser.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

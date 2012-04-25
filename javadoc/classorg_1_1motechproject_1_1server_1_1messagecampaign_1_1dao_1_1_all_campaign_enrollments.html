@@ -74,8 +74,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments Class Reference</h1><!-- doxytag: class="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments" --><!-- doxytag: inherits="org::motechproject::dao::MotechBaseRepository" -->
-<p>Inherits org::motechproject::dao::MotechBaseRepository&lt; CampaignEnrollment &gt;.</p>
+<h1>org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments Class Reference</h1><!-- doxytag: class="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments" --><!-- doxytag: inherits="org::motechproject::dao::MotechBaseRepository,org::motechproject::dao::MotechBaseRepository" -->
+<p>Inherits org::motechproject::dao::MotechBaseRepository&lt; CampaignEnrollment &gt;, and org::motechproject::dao::MotechBaseRepository&lt; CampaignEnrollment &gt;.</p>
 
 <p><a href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
@@ -85,10 +85,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#a0de76d1aa4bca1ee39cf222b35c3aaf9">findByStatus</a> (CampaignEnrollmentStatus status)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#ad08b2b69713c05836e8efa5b2845875e">findByExternalId</a> (String externalId)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#a25554e1feba0534f920a6749712b5f5a">findByCampaignName</a> (String campaignName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#a56dee5f098e737f5241f283f7a65d113">findByExternalIdAndCampaignName</a> (String externalId, String campaignName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#adddedf83e15ee50fb03350e4f465f020">saveOrUpdate</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a> enrollment)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#a0de76d1aa4bca1ee39cf222b35c3aaf9">findByStatus</a> (CampaignEnrollmentStatus status)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#ad08b2b69713c05836e8efa5b2845875e">findByExternalId</a> (String externalId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#a25554e1feba0534f920a6749712b5f5a">findByCampaignName</a> (String campaignName)</td></tr>
 <tr><td colspan="2"><h2>Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#add7ae8a1c9f9d6872d13f9ac6a1f58f2">AllCampaignEnrollments</a> (@Qualifier(&quot;messageCampaignDBConnector&quot;) CouchDbConnector db)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1dao_1_1_all_campaign_enrollments.html#add7ae8a1c9f9d6872d13f9ac6a1f58f2">AllCampaignEnrollments</a> (@Qualifier(&quot;messageCampaignDBConnector&quot;) CouchDbConnector db)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="add7ae8a1c9f9d6872d13f9ac6a1f58f2"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments::AllCampaignEnrollments" ref="add7ae8a1c9f9d6872d13f9ac6a1f58f2" args="(@Qualifier(&quot;messageCampaignDBConnector&quot;) CouchDbConnector db)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.AllCampaignEnrollments </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;messageCampaignDBConnector&quot;) CouchDbConnector&nbsp;</td>
+          <td class="paramname"> <em>db</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="add7ae8a1c9f9d6872d13f9ac6a1f58f2"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments::AllCampaignEnrollments" ref="add7ae8a1c9f9d6872d13f9ac6a1f58f2" args="(@Qualifier(&quot;messageCampaignDBConnector&quot;) CouchDbConnector db)" -->
 <div class="memitem">
 <div class="memproto">
@@ -117,6 +141,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           <td>(</td>
           <td class="paramtype">String&nbsp;</td>
           <td class="paramname"> <em>campaignName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25554e1feba0534f920a6749712b5f5a"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments::findByCampaignName" ref="a25554e1feba0534f920a6749712b5f5a" args="(String campaignName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a>&gt; org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.findByCampaignName </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>campaignName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad08b2b69713c05836e8efa5b2845875e"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments::findByExternalId" ref="ad08b2b69713c05836e8efa5b2845875e" args="(String externalId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a>&gt; org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.findByExternalId </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -171,6 +231,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a56dee5f098e737f5241f283f7a65d113"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments::findByExternalIdAndCampaignName" ref="a56dee5f098e737f5241f283f7a65d113" args="(String externalId, String campaignName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a> org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.findByExternalIdAndCampaignName </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>campaignName</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0de76d1aa4bca1ee39cf222b35c3aaf9"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments::findByStatus" ref="a0de76d1aa4bca1ee39cf222b35c3aaf9" args="(CampaignEnrollmentStatus status)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a>&gt; org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.findByStatus </td>
+          <td>(</td>
+          <td class="paramtype">CampaignEnrollmentStatus&nbsp;</td>
+          <td class="paramname"> <em>status</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a0de76d1aa4bca1ee39cf222b35c3aaf9"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments::findByStatus" ref="a0de76d1aa4bca1ee39cf222b35c3aaf9" args="(CampaignEnrollmentStatus status)" -->
 <div class="memitem">
 <div class="memproto">
@@ -207,8 +312,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/dao/<a class="el" href="_all_campaign_enrollments_8java.html">AllCampaignEnrollments.java</a></li>
+<a class="anchor" id="adddedf83e15ee50fb03350e4f465f020"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::dao::AllCampaignEnrollments::saveOrUpdate" ref="adddedf83e15ee50fb03350e4f465f020" args="(CampaignEnrollment enrollment)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.saveOrUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_campaign_enrollment.html">CampaignEnrollment</a>&nbsp;</td>
+          <td class="paramname"> <em>enrollment</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/dao/<a class="el" href="motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagecampaign_2dao_2_all_campaign_enrollments_8java.html">AllCampaignEnrollments.java</a></li>
+<li>target/checkout/motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/dao/<a class="el" href="target_2checkout_2motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagec209362c7cfb7a0cfcaa0d0826381dbbf.html">AllCampaignEnrollments.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

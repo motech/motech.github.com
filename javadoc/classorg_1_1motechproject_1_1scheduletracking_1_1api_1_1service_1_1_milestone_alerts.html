@@ -87,10 +87,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#a2e67476d35fe193473605ef0513ad2f1">getDueWindowAlertTimings</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#afd52e96bd7259ff3b9e1e6356091c0b0">getLateWindowAlertTimings</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#abb5173d71ecf70b5d1078f199822943a">getMaxWindowAlertTimings</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#a8de9d78f1b230cdc2f92074dbb972416">MilestoneAlerts</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Map&lt; String, List&lt; DateTime &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#a94756a6cd375faf566fc6f03b80042f0">getAlertTimings</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#ab8b7d7bb08d75fa61c8d4d82f74c8e52">getEarliestWindowAlertTimings</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#a2e67476d35fe193473605ef0513ad2f1">getDueWindowAlertTimings</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#afd52e96bd7259ff3b9e1e6356091c0b0">getLateWindowAlertTimings</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html#abb5173d71ecf70b5d1078f199822943a">getMaxWindowAlertTimings</a> ()</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>This contains the alert timings of all the windows of a milestone. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8de9d78f1b230cdc2f92074dbb972416"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::MilestoneAlerts::MilestoneAlerts" ref="a8de9d78f1b230cdc2f92074dbb972416" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.scheduletracking.api.service.MilestoneAlerts.MilestoneAlerts </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor to create <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_milestone_alerts.html" title="This contains the alert timings of all the windows of a milestone.">MilestoneAlerts</a>. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8de9d78f1b230cdc2f92074dbb972416"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::MilestoneAlerts::MilestoneAlerts" ref="a8de9d78f1b230cdc2f92074dbb972416" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -129,6 +154,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Gives the alert timings for all the windows. </p>
 <p>Note : To get the alert timings of a particular window, use the corresponding getWindowAlertTimings method</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>a map of window names to the list of their alert timings </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a94756a6cd375faf566fc6f03b80042f0"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::MilestoneAlerts::getAlertTimings" ref="a94756a6cd375faf566fc6f03b80042f0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, List&lt;DateTime&gt; &gt; org.motechproject.scheduletracking.api.service.MilestoneAlerts.getAlertTimings </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gives the alert timings for all the windows. </p>
+<p>Note : To get the alert timings of a particular window, use the corresponding getWindowAlertTimings method</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>a map of window names to the list of their alert timings </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2e67476d35fe193473605ef0513ad2f1"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::MilestoneAlerts::getDueWindowAlertTimings" ref="a2e67476d35fe193473605ef0513ad2f1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;DateTime&gt; org.motechproject.scheduletracking.api.service.MilestoneAlerts.getDueWindowAlertTimings </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gives the alert timings of due window of the milestone. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>List&lt;DateTime&gt; : represents the alert timings of due window </dd></dl>
 
 </div>
 </div>
@@ -172,6 +238,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="ab8b7d7bb08d75fa61c8d4d82f74c8e52"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::MilestoneAlerts::getEarliestWindowAlertTimings" ref="ab8b7d7bb08d75fa61c8d4d82f74c8e52" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;DateTime&gt; org.motechproject.scheduletracking.api.service.MilestoneAlerts.getEarliestWindowAlertTimings </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gives the alert timings of earliest window of the milestone. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>List&lt;DateTime&gt; : represents the alert timings of earliest window </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afd52e96bd7259ff3b9e1e6356091c0b0"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::MilestoneAlerts::getLateWindowAlertTimings" ref="afd52e96bd7259ff3b9e1e6356091c0b0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;DateTime&gt; org.motechproject.scheduletracking.api.service.MilestoneAlerts.getLateWindowAlertTimings </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gives the alert timings of late window of the milestone. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>List&lt;DateTime&gt; : represents the alert timings of late window </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="afd52e96bd7259ff3b9e1e6356091c0b0"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::MilestoneAlerts::getLateWindowAlertTimings" ref="afd52e96bd7259ff3b9e1e6356091c0b0" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -212,8 +318,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/service/<a class="el" href="_milestone_alerts_8java.html">MilestoneAlerts.java</a></li>
+<a class="anchor" id="abb5173d71ecf70b5d1078f199822943a"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::MilestoneAlerts::getMaxWindowAlertTimings" ref="abb5173d71ecf70b5d1078f199822943a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;DateTime&gt; org.motechproject.scheduletracking.api.service.MilestoneAlerts.getMaxWindowAlertTimings </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gives the alert timings of max window of the milestone. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>List&lt;DateTime&gt; : represents the alert timings of max window </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/service/<a class="el" href="motech-scheduletracking-api_2src_2main_2java_2org_2motechproject_2scheduletracking_2api_2service_2_milestone_alerts_8java.html">MilestoneAlerts.java</a></li>
+<li>target/checkout/motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/service/<a class="el" href="target_2checkout_2motech-scheduletracking-api_2src_2main_2java_2org_2motechproject_2scheduletracf677051f1731a0c9d1268ab078bc46f2.html">MilestoneAlerts.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

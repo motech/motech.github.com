@@ -74,17 +74,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.decisiontree.repository.AllTrees Class Reference</h1><!-- doxytag: class="org::motechproject::decisiontree::repository::AllTrees" --><!-- doxytag: inherits="org::motechproject::dao::MotechBaseRepository" -->
-<p>Inherits org::motechproject::dao::MotechBaseRepository&lt; Tree &gt;.</p>
+<h1>org.motechproject.decisiontree.repository.AllTrees Class Reference</h1><!-- doxytag: class="org::motechproject::decisiontree::repository::AllTrees" --><!-- doxytag: inherits="org::motechproject::dao::MotechBaseRepository,org::motechproject::dao::MotechBaseRepository" -->
+<p>Inherits org::motechproject::dao::MotechBaseRepository&lt; Tree &gt;, and org::motechproject::dao::MotechBaseRepository&lt; Tree &gt;.</p>
 
 <p><a href="classorg_1_1motechproject_1_1decisiontree_1_1repository_1_1_all_trees-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1model_1_1_tree.html">Tree</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1repository_1_1_all_trees.html#aead27c47217aae3e5c0945c6a8ff7307">findByName</a> (String name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1model_1_1_tree.html">Tree</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1repository_1_1_all_trees.html#aead27c47217aae3e5c0945c6a8ff7307">findByName</a> (String name)</td></tr>
 <tr><td colspan="2"><h2>Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1repository_1_1_all_trees.html#ae514d28300243ae4e760fa3e5474f130">AllTrees</a> (@Qualifier(&quot;treesDatabase&quot;) CouchDbConnector db)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1repository_1_1_all_trees.html#ae514d28300243ae4e760fa3e5474f130">AllTrees</a> (@Qualifier(&quot;treesDatabase&quot;) CouchDbConnector db)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae514d28300243ae4e760fa3e5474f130"></a><!-- doxytag: member="org::motechproject::decisiontree::repository::AllTrees::AllTrees" ref="ae514d28300243ae4e760fa3e5474f130" args="(@Qualifier(&quot;treesDatabase&quot;) CouchDbConnector db)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.decisiontree.repository.AllTrees.AllTrees </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;treesDatabase&quot;) CouchDbConnector&nbsp;</td>
+          <td class="paramname"> <em>db</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae514d28300243ae4e760fa3e5474f130"></a><!-- doxytag: member="org::motechproject::decisiontree::repository::AllTrees::AllTrees" ref="ae514d28300243ae4e760fa3e5474f130" args="(@Qualifier(&quot;treesDatabase&quot;) CouchDbConnector db)" -->
 <div class="memitem">
 <div class="memproto">
@@ -122,8 +142,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-platform-decisiontree-common/src/main/java/org/motechproject/decisiontree/repository/<a class="el" href="_all_trees_8java.html">AllTrees.java</a></li>
+<a class="anchor" id="aead27c47217aae3e5c0945c6a8ff7307"></a><!-- doxytag: member="org::motechproject::decisiontree::repository::AllTrees::findByName" ref="aead27c47217aae3e5c0945c6a8ff7307" args="(String name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1model_1_1_tree.html">Tree</a>&gt; org.motechproject.decisiontree.repository.AllTrees.findByName </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-platform-decisiontree-common/src/main/java/org/motechproject/decisiontree/repository/<a class="el" href="motech-platform-decisiontree-common_2src_2main_2java_2org_2motechproject_2decisiontree_2repository_2_all_trees_8java.html">AllTrees.java</a></li>
+<li>target/checkout/motech-platform-decisiontree-common/src/main/java/org/motechproject/decisiontree/repository/<a class="el" href="target_2checkout_2motech-platform-decisiontree-common_2src_2main_2java_2org_2motechproject_2deci529ee629f4e03f675c684dc412740e65.html">AllTrees.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
