@@ -83,11 +83,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1ruleengine_1_1_knowledge_base_manager.html#a148039d3d984a2a5f36f8c9bccb893f3">addOrUpdateRule</a> (String ruleId, String bundleSymbolicName, InputStream inputStream, ClassLoader...cl)  throws IOException </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">KnowledgeBase&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1ruleengine_1_1_knowledge_base_manager.html#ab5e0042a36c6a673499fe13597c074d3">getKnowledgeBase</a> (String ruleId)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1ruleengine_1_1_knowledge_base_manager.html#a07bea384c9692efe18a213fdb20ad060">setAllRules</a> (<a class="el" href="classorg_1_1motechproject_1_1dao_1_1_all_rules.html">AllRules</a> allRules)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1ruleengine_1_1_knowledge_base_manager.html#a3672c6f08efd2a4ffa757d8d4e3e6b71">addOrUpdateRule</a> (File ruleFile, ClassLoader...cl)  throws IOException </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1ruleengine_1_1_knowledge_base_manager.html#a152db6a319ff57cde6e2feca03877e5d">addOrUpdateRule</a> (File ruleFile, String bundleSymbolicName, ClassLoader...cl)  throws IOException </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1ruleengine_1_1_knowledge_base_manager.html#a148039d3d984a2a5f36f8c9bccb893f3">addOrUpdateRule</a> (String ruleId, String bundleSymbolicName, InputStream inputStream, ClassLoader...cl)  throws IOException </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">KnowledgeBase&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1ruleengine_1_1_knowledge_base_manager.html#ab5e0042a36c6a673499fe13597c074d3">getKnowledgeBase</a> (String ruleId)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1ruleengine_1_1_knowledge_base_manager.html#a07bea384c9692efe18a213fdb20ad060">setAllRules</a> (<a class="el" href="classorg_1_1motechproject_1_1dao_1_1_all_rules.html">AllRules</a> allRules)</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a148039d3d984a2a5f36f8c9bccb893f3"></a><!-- doxytag: member="org::motechproject::server::ruleengine::KnowledgeBaseManager::addOrUpdateRule" ref="a148039d3d984a2a5f36f8c9bccb893f3" args="(String ruleId, String bundleSymbolicName, InputStream inputStream, ClassLoader...cl)" -->
@@ -231,174 +226,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="a148039d3d984a2a5f36f8c9bccb893f3"></a><!-- doxytag: member="org::motechproject::server::ruleengine::KnowledgeBaseManager::addOrUpdateRule" ref="a148039d3d984a2a5f36f8c9bccb893f3" args="(String ruleId, String bundleSymbolicName, InputStream inputStream, ClassLoader...cl)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.server.ruleengine.KnowledgeBaseManager.addOrUpdateRule </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>ruleId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>bundleSymbolicName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputStream&nbsp;</td>
-          <td class="paramname"> <em>inputStream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ClassLoader...&nbsp;</td>
-          <td class="paramname"> <em>cl</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td>  throws IOException </td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Add or update a rule in the repository and update the in-memory knowledgeBaseLookup. </p>
-<p>TODO: this might need re-work if we want to support changing rules on the fly.</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>ruleId</em>&nbsp;</td><td></td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>bundleSymbolicName</em>&nbsp;</td><td></td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>inputStream</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl><dt><b>Exceptions:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>IOException</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a152db6a319ff57cde6e2feca03877e5d"></a><!-- doxytag: member="org::motechproject::server::ruleengine::KnowledgeBaseManager::addOrUpdateRule" ref="a152db6a319ff57cde6e2feca03877e5d" args="(File ruleFile, String bundleSymbolicName, ClassLoader...cl)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.server.ruleengine.KnowledgeBaseManager.addOrUpdateRule </td>
-          <td>(</td>
-          <td class="paramtype">File&nbsp;</td>
-          <td class="paramname"> <em>ruleFile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>bundleSymbolicName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ClassLoader...&nbsp;</td>
-          <td class="paramname"> <em>cl</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td>  throws IOException </td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>ruleFile</em>&nbsp;</td><td></td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>bundleSymbolicName</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl><dt><b>Exceptions:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>IOException</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a3672c6f08efd2a4ffa757d8d4e3e6b71"></a><!-- doxytag: member="org::motechproject::server::ruleengine::KnowledgeBaseManager::addOrUpdateRule" ref="a3672c6f08efd2a4ffa757d8d4e3e6b71" args="(File ruleFile, ClassLoader...cl)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.server.ruleengine.KnowledgeBaseManager.addOrUpdateRule </td>
-          <td>(</td>
-          <td class="paramtype">File&nbsp;</td>
-          <td class="paramname"> <em>ruleFile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ClassLoader...&nbsp;</td>
-          <td class="paramname"> <em>cl</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td>  throws IOException </td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>ruleFile</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl><dt><b>Exceptions:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>IOException</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ab5e0042a36c6a673499fe13597c074d3"></a><!-- doxytag: member="org::motechproject::server::ruleengine::KnowledgeBaseManager::getKnowledgeBase" ref="ab5e0042a36c6a673499fe13597c074d3" args="(String ruleId)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">KnowledgeBase org.motechproject.server.ruleengine.KnowledgeBaseManager.getKnowledgeBase </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>ruleId</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get a KnowledgeBase instance by a rule id. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>ruleId</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ab5e0042a36c6a673499fe13597c074d3"></a><!-- doxytag: member="org::motechproject::server::ruleengine::KnowledgeBaseManager::getKnowledgeBase" ref="ab5e0042a36c6a673499fe13597c074d3" args="(String ruleId)" -->
 <div class="memitem">
 <div class="memproto">
@@ -444,27 +271,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<a class="anchor" id="a07bea384c9692efe18a213fdb20ad060"></a><!-- doxytag: member="org::motechproject::server::ruleengine::KnowledgeBaseManager::setAllRules" ref="a07bea384c9692efe18a213fdb20ad060" args="(AllRules allRules)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.server.ruleengine.KnowledgeBaseManager.setAllRules </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1dao_1_1_all_rules.html">AllRules</a>&nbsp;</td>
-          <td class="paramname"> <em>allRules</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>motech-platform-server-api/src/main/java/org/motechproject/server/ruleengine/<a class="el" href="motech-platform-server-api_2src_2main_2java_2org_2motechproject_2server_2ruleengine_2_knowledge_base_manager_8java.html">KnowledgeBaseManager.java</a></li>
-<li>target/checkout/motech-platform-server-api/src/main/java/org/motechproject/server/ruleengine/<a class="el" href="target_2checkout_2motech-platform-server-api_2src_2main_2java_2org_2motechproject_2server_2rulee32a2acaabbcbd0e8b158d670d13d2f6a.html">KnowledgeBaseManager.java</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>motech-platform-server-api/src/main/java/org/motechproject/server/ruleengine/<a class="el" href="_knowledge_base_manager_8java.html">KnowledgeBaseManager.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
