@@ -84,7 +84,6 @@ Inheritance diagram for org.motechproject.metrics.MetricsAgent:</div>
   <img src="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.gif" usemap="#org.motechproject.metrics.MetricsAgent_map" alt=""/>
   <map id="org.motechproject.metrics.MetricsAgent_map" name="org.motechproject.metrics.MetricsAgent_map">
 <area href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html" alt="org.motechproject.metrics.impl.MultipleMetricsAgentImpl" shape="rect" coords="0,56,329,80"/>
-<area href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html" alt="org.motechproject.metrics.impl.MultipleMetricsAgentImpl" shape="rect" coords="339,56,668,80"/>
 </map>
  </div>
 </div>
@@ -92,10 +91,6 @@ Inheritance diagram for org.motechproject.metrics.MetricsAgent:</div>
 <p><a href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html#acf8bb4eb90784b338dde30a6594f8d7f">logEvent</a> (String metric, Map&lt; String, String &gt; parameters)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html#ac7cf41863d678963a986047ebfd5dc43">logEvent</a> (String metric)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html#aca98b464876ef495aa57a29232bdab05">startTimer</a> (String metric)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html#a6cc80ef404643e07dd11b70c6de84f2e">stopTimer</a> (String metric)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html#acf8bb4eb90784b338dde30a6594f8d7f">logEvent</a> (String metric, Map&lt; String, String &gt; parameters)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html#ac7cf41863d678963a986047ebfd5dc43">logEvent</a> (String metric)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html#aca98b464876ef495aa57a29232bdab05">startTimer</a> (String metric)</td></tr>
@@ -128,7 +123,7 @@ Inheritance diagram for org.motechproject.metrics.MetricsAgent:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#ac7a3804d27f8684e8431844aa6ae0e95">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#ac7a3804d27f8684e8431844aa6ae0e95">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#ac7a3804d27f8684e8431844aa6ae0e95">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
 
 </div>
 </div>
@@ -167,74 +162,7 @@ Inheritance diagram for org.motechproject.metrics.MetricsAgent:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#adafb7368fd998167a2419697e17acc46">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#adafb7368fd998167a2419697e17acc46">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac7cf41863d678963a986047ebfd5dc43"></a><!-- doxytag: member="org::motechproject::metrics::MetricsAgent::logEvent" ref="ac7cf41863d678963a986047ebfd5dc43" args="(String metric)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.metrics.MetricsAgent.logEvent </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>metric</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reports an occurrence of metric, incrementing it's count. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>metric</em>&nbsp;</td><td>The metric being recorded </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#ac7a3804d27f8684e8431844aa6ae0e95">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#ac7a3804d27f8684e8431844aa6ae0e95">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acf8bb4eb90784b338dde30a6594f8d7f"></a><!-- doxytag: member="org::motechproject::metrics::MetricsAgent::logEvent" ref="acf8bb4eb90784b338dde30a6594f8d7f" args="(String metric, Map&lt; String, String &gt; parameters)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.metrics.MetricsAgent.logEvent </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>metric</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, String &gt;&nbsp;</td>
-          <td class="paramname"> <em>parameters</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reports an occurrence of metric, incrementing it's count. </p>
-<p>Not all implementations may make use of parameters</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>metric</em>&nbsp;</td><td>The metric being recorded </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>parameters</em>&nbsp;</td><td>Optional parameters related to the <a class="el" href="namespaceorg_1_1motechproject_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#adafb7368fd998167a2419697e17acc46">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#adafb7368fd998167a2419697e17acc46">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#adafb7368fd998167a2419697e17acc46">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
 
 </div>
 </div>
@@ -263,36 +191,7 @@ Inheritance diagram for org.motechproject.metrics.MetricsAgent:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a8d565d978ccc16d2479651a8f04304ea">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a8d565d978ccc16d2479651a8f04304ea">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aca98b464876ef495aa57a29232bdab05"></a><!-- doxytag: member="org::motechproject::metrics::MetricsAgent::startTimer" ref="aca98b464876ef495aa57a29232bdab05" args="(String metric)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.metrics.MetricsAgent.startTimer </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>metric</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Starts a timer for metric. </p>
-<p>Later calls to startTimer without a corresponding call to endTimer for the same metric are ignored</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>metric</em>&nbsp;</td><td>The metric being timed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a8d565d978ccc16d2479651a8f04304ea">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a8d565d978ccc16d2479651a8f04304ea">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a8d565d978ccc16d2479651a8f04304ea">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
 
 </div>
 </div>
@@ -321,42 +220,12 @@ Inheritance diagram for org.motechproject.metrics.MetricsAgent:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a121fed90453c22487ea803e2179d2b12">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a121fed90453c22487ea803e2179d2b12">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a121fed90453c22487ea803e2179d2b12">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6cc80ef404643e07dd11b70c6de84f2e"></a><!-- doxytag: member="org::motechproject::metrics::MetricsAgent::stopTimer" ref="a6cc80ef404643e07dd11b70c6de84f2e" args="(String metric)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.metrics.MetricsAgent.stopTimer </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>metric</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Ends the timer for metric and records it. </p>
-<p>No action is taken if a start timer was not recorded for metric</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>metric</em>&nbsp;</td><td>The metric being timed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a121fed90453c22487ea803e2179d2b12">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1metrics_1_1impl_1_1_multiple_metrics_agent_impl.html#a121fed90453c22487ea803e2179d2b12">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this interface was generated from the following files:<ul>
-<li>motech-platform-common/src/main/java/org/motechproject/metrics/<a class="el" href="motech-platform-common_2src_2main_2java_2org_2motechproject_2metrics_2_metrics_agent_8java.html">MetricsAgent.java</a></li>
-<li>target/checkout/motech-platform-common/src/main/java/org/motechproject/metrics/<a class="el" href="target_2checkout_2motech-platform-common_2src_2main_2java_2org_2motechproject_2metrics_2_metrics_agent_8java.html">MetricsAgent.java</a></li>
+<hr/>The documentation for this interface was generated from the following file:<ul>
+<li>motech-platform-common/src/main/java/org/motechproject/metrics/<a class="el" href="_metrics_agent_8java.html">MetricsAgent.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

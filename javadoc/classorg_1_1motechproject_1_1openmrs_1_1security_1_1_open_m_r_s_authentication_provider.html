@@ -74,14 +74,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.openmrs.security.OpenMRSAuthenticationProvider Class Reference</h1><!-- doxytag: class="org::motechproject::openmrs::security::OpenMRSAuthenticationProvider" --><!-- doxytag: inherits="org::motechproject::mrs::security::MRSAuthenticationProvider,org::motechproject::mrs::security::MRSAuthenticationProvider" --><div class="dynheader">
+<h1>org.motechproject.openmrs.security.OpenMRSAuthenticationProvider Class Reference</h1><!-- doxytag: class="org::motechproject::openmrs::security::OpenMRSAuthenticationProvider" --><!-- doxytag: inherits="org::motechproject::mrs::security::MRSAuthenticationProvider" --><div class="dynheader">
 Inheritance diagram for org.motechproject.openmrs.security.OpenMRSAuthenticationProvider:</div>
 <div class="dynsection">
  <div class="center">
   <img src="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_authentication_provider.gif" usemap="#org.motechproject.openmrs.security.OpenMRSAuthenticationProvider_map" alt=""/>
   <map id="org.motechproject.openmrs.security.OpenMRSAuthenticationProvider_map" name="org.motechproject.openmrs.security.OpenMRSAuthenticationProvider_map">
 <area href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_authentication_provider.html" alt="org.motechproject.mrs.security.MRSAuthenticationProvider" shape="rect" coords="0,0,406,24"/>
-<area href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_authentication_provider.html" alt="org.motechproject.mrs.security.MRSAuthenticationProvider" shape="rect" coords="416,0,822,24"/>
 </map>
  </div>
 </div>
@@ -89,7 +88,6 @@ Inheritance diagram for org.motechproject.openmrs.security.OpenMRSAuthentication
 <p><a href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_authentication_provider-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html">MRSSecurityUser</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_authentication_provider.html#aab4989dd718189dc526d3248cfe007d7">retrieveUser</a> (String userName, UsernamePasswordAuthenticationToken authentication)  throws InvalidCredentialsException </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html">MRSSecurityUser</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1security_1_1_open_m_r_s_authentication_provider.html#aab4989dd718189dc526d3248cfe007d7">retrieveUser</a> (String userName, UsernamePasswordAuthenticationToken authentication)  throws InvalidCredentialsException </td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
@@ -138,54 +136,8 @@ Inheritance diagram for org.motechproject.openmrs.security.OpenMRSAuthentication
 
 </div>
 </div>
-<a class="anchor" id="aab4989dd718189dc526d3248cfe007d7"></a><!-- doxytag: member="org::motechproject::openmrs::security::OpenMRSAuthenticationProvider::retrieveUser" ref="aab4989dd718189dc526d3248cfe007d7" args="(String userName, UsernamePasswordAuthenticationToken authentication)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_security_user.html">MRSSecurityUser</a> org.motechproject.openmrs.security.OpenMRSAuthenticationProvider.retrieveUser </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>userName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UsernamePasswordAuthenticationToken&nbsp;</td>
-          <td class="paramname"> <em>authentication</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td>  throws <a class="el" href="classorg_1_1motechproject_1_1mrs_1_1exception_1_1_invalid_credentials_exception.html">InvalidCredentialsException</a> <code> [protected, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Retrieves User details on successful authentication. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>userName</em>&nbsp;</td><td>Login username </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>authentication</em>&nbsp;</td><td>Login credentials </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Security Details of the user </dd></dl>
-<dl><dt><b>Exceptions:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>InvalidCredentialsException</em>&nbsp;</td><td>thrown when Credentials are invalid </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classorg_1_1motechproject_1_1mrs_1_1security_1_1_m_r_s_authentication_provider.html#ab02616b6e5e16aa81f006a127bc7d058">org.motechproject.mrs.security.MRSAuthenticationProvider</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>motech-openmrs-api/src/main/java/org/motechproject/openmrs/security/<a class="el" href="motech-openmrs-api_2src_2main_2java_2org_2motechproject_2openmrs_2security_2_open_m_r_s_authentication_provider_8java.html">OpenMRSAuthenticationProvider.java</a></li>
-<li>target/checkout/motech-openmrs-api/src/main/java/org/motechproject/openmrs/security/<a class="el" href="target_2checkout_2motech-openmrs-api_2src_2main_2java_2org_2motechproject_2openmrs_2security_2_o7151b8c6e943f4fc2cc7f6a77e9066df.html">OpenMRSAuthenticationProvider.java</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>motech-openmrs-api/src/main/java/org/motechproject/openmrs/security/<a class="el" href="_open_m_r_s_authentication_provider_8java.html">OpenMRSAuthenticationProvider.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

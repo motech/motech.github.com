@@ -84,7 +84,6 @@ Inheritance diagram for org.motechproject.server.alerts.contract.AlertService:</
   <img src="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.gif" usemap="#org.motechproject.server.alerts.contract.AlertService_map" alt=""/>
   <map id="org.motechproject.server.alerts.contract.AlertService_map" name="org.motechproject.server.alerts.contract.AlertService_map">
 <area href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html" alt="org.motechproject.server.alerts.service.AlertServiceImpl" shape="rect" coords="0,56,333,80"/>
-<area href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html" alt="org.motechproject.server.alerts.service.AlertServiceImpl" shape="rect" coords="343,56,676,80"/>
 </map>
  </div>
 </div>
@@ -95,11 +94,7 @@ Inheritance diagram for org.motechproject.server.alerts.contract.AlertService:</
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1domain_1_1_alert.html">Alert</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.html#a9cea73006fda8dfd62af80ba8c0118b4">search</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_criteria.html">AlertCriteria</a> alertCriteria)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1domain_1_1_alert.html">Alert</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.html#a92df44728ccb4a0c9b37d5d09e497dd8">get</a> (String id)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.html#a6da86f6a041eb458402f9fef30ab5a18">update</a> (String alertId, <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_update_criteria.html">UpdateCriteria</a> updateCriteria)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1domain_1_1_alert.html">Alert</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.html#a9cea73006fda8dfd62af80ba8c0118b4">search</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_criteria.html">AlertCriteria</a> alertCriteria)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1domain_1_1_alert.html">Alert</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.html#a92df44728ccb4a0c9b37d5d09e497dd8">get</a> (String id)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.html#a6da86f6a041eb458402f9fef30ab5a18">update</a> (String alertId, <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_update_criteria.html">UpdateCriteria</a> updateCriteria)</td></tr>
 <tr><td colspan="2"><h2>Package Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.html#aad79debc44d5d6a123dcb851609ccc8c">create</a> (String entityId, String name, String description, AlertType type, AlertStatus status, int priority, Map&lt; String, String &gt; data)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_service.html#aad79debc44d5d6a123dcb851609ccc8c">create</a> (String entityId, String name, String description, AlertType type, AlertStatus status, int priority, Map&lt; String, String &gt; data)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
@@ -176,77 +171,6 @@ Inheritance diagram for org.motechproject.server.alerts.contract.AlertService:</
 
 </div>
 </div>
-<a class="anchor" id="aad79debc44d5d6a123dcb851609ccc8c"></a><!-- doxytag: member="org::motechproject::server::alerts::contract::AlertService::create" ref="aad79debc44d5d6a123dcb851609ccc8c" args="(String entityId, String name, String description, AlertType type, AlertStatus status, int priority, Map&lt; String, String &gt; data)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.server.alerts.contract.AlertService.create </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>entityId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>description</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AlertType&nbsp;</td>
-          <td class="paramname"> <em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AlertStatus&nbsp;</td>
-          <td class="paramname"> <em>status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&nbsp;</td>
-          <td class="paramname"> <em>priority</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, String &gt;&nbsp;</td>
-          <td class="paramname"> <em>data</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td><code> [package]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Creates an alert. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>entityId</em>&nbsp;</td><td>External id for alert </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>Name of the alert </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>description</em>&nbsp;</td><td>Description of alert </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>Alert type like critical, high, medium and low </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>status</em>&nbsp;</td><td>Status of the alert like new, read and closed </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>priority</em>&nbsp;</td><td>priority of the alert specified by integer values </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>Extra information of the alert stored as property =&gt; value pairs </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a92df44728ccb4a0c9b37d5d09e497dd8"></a><!-- doxytag: member="org::motechproject::server::alerts::contract::AlertService::get" ref="a92df44728ccb4a0c9b37d5d09e497dd8" args="(String id)" -->
 <div class="memitem">
 <div class="memproto">
@@ -272,36 +196,7 @@ Inheritance diagram for org.motechproject.server.alerts.contract.AlertService:</
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Alert object with the given id if found </dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a69ba5292f1a62efe5e13afafcd276df7">org.motechproject.server.alerts.service.AlertServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a69ba5292f1a62efe5e13afafcd276df7">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a92df44728ccb4a0c9b37d5d09e497dd8"></a><!-- doxytag: member="org::motechproject::server::alerts::contract::AlertService::get" ref="a92df44728ccb4a0c9b37d5d09e497dd8" args="(String id)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1domain_1_1_alert.html">Alert</a> org.motechproject.server.alerts.contract.AlertService.get </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>id</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Fetches an alert by id. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>Id of the alert </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Alert object with the given id if found </dd></dl>
-
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a69ba5292f1a62efe5e13afafcd276df7">org.motechproject.server.alerts.service.AlertServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a69ba5292f1a62efe5e13afafcd276df7">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a69ba5292f1a62efe5e13afafcd276df7">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -330,36 +225,7 @@ Inheritance diagram for org.motechproject.server.alerts.contract.AlertService:</
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>List of matched <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1alerts.html">alerts</a> for the given search criteria. </dd></dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#af64614c8f8ba576d0f9cb7378187fbba">org.motechproject.server.alerts.service.AlertServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#af64614c8f8ba576d0f9cb7378187fbba">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9cea73006fda8dfd62af80ba8c0118b4"></a><!-- doxytag: member="org::motechproject::server::alerts::contract::AlertService::search" ref="a9cea73006fda8dfd62af80ba8c0118b4" args="(AlertCriteria alertCriteria)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1domain_1_1_alert.html">Alert</a>&gt; org.motechproject.server.alerts.contract.AlertService.search </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_alert_criteria.html">AlertCriteria</a>&nbsp;</td>
-          <td class="paramname"> <em>alertCriteria</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Searches for <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1alerts.html">alerts</a> by the given criteria. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>alertCriteria</em>&nbsp;</td><td>Criteria which is to be used to search for <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1alerts.html">alerts</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>List of matched <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1alerts.html">alerts</a> for the given search criteria. </dd></dl>
-
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#af64614c8f8ba576d0f9cb7378187fbba">org.motechproject.server.alerts.service.AlertServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#af64614c8f8ba576d0f9cb7378187fbba">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#af64614c8f8ba576d0f9cb7378187fbba">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
 
 </div>
 </div>
@@ -397,51 +263,12 @@ Inheritance diagram for org.motechproject.server.alerts.contract.AlertService:</
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a32dcc489bca9443d25d51eb20eb0e51f">org.motechproject.server.alerts.service.AlertServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a32dcc489bca9443d25d51eb20eb0e51f">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
+<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a32dcc489bca9443d25d51eb20eb0e51f">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6da86f6a041eb458402f9fef30ab5a18"></a><!-- doxytag: member="org::motechproject::server::alerts::contract::AlertService::update" ref="a6da86f6a041eb458402f9fef30ab5a18" args="(String alertId, UpdateCriteria updateCriteria)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void org.motechproject.server.alerts.contract.AlertService.update </td>
-          <td>(</td>
-          <td class="paramtype">String&nbsp;</td>
-          <td class="paramname"> <em>alertId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1contract_1_1_update_criteria.html">UpdateCriteria</a>&nbsp;</td>
-          <td class="paramname"> <em>updateCriteria</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Updates an alert by alert id. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>alertId</em>&nbsp;</td><td>Id of the alert to be updated </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>updateCriteria</em>&nbsp;</td><td>criteria which specifies the fields to be updated and their new values </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a32dcc489bca9443d25d51eb20eb0e51f">org.motechproject.server.alerts.service.AlertServiceImpl</a>, and <a class="el" href="classorg_1_1motechproject_1_1server_1_1alerts_1_1service_1_1_alert_service_impl.html#a32dcc489bca9443d25d51eb20eb0e51f">org.motechproject.server.alerts.service.AlertServiceImpl</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this interface was generated from the following files:<ul>
-<li>motech-alerts-api/src/main/java/org/motechproject/server/alerts/contract/<a class="el" href="motech-alerts-api_2src_2main_2java_2org_2motechproject_2server_2alerts_2contract_2_alert_service_8java.html">AlertService.java</a></li>
-<li>target/checkout/motech-alerts-api/src/main/java/org/motechproject/server/alerts/contract/<a class="el" href="target_2checkout_2motech-alerts-api_2src_2main_2java_2org_2motechproject_2server_2alerts_2contract_2_alert_service_8java.html">AlertService.java</a></li>
+<hr/>The documentation for this interface was generated from the following file:<ul>
+<li>motech-alerts-api/src/main/java/org/motechproject/server/alerts/contract/<a class="el" href="_alert_service_8java.html">AlertService.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
