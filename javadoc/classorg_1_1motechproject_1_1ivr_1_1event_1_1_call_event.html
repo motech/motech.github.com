@@ -89,7 +89,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event_custom_data.html">CallEventCustomData</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#ab36e89f65797b3b4642e96562723ef81">getData</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a27c96ded2d08c8d1b775c8c7e6e44f50">setData</a> (<a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event_custom_data.html">CallEventCustomData</a> callEventCustomData)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#aadd76bf2062ad843b72b0b406f3146af">appendData</a> (String key, String value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a8854596df1ab8e649b94117fc2445274">CallEvent</a> (String name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a4a441409ee1c748b14da3d13eeeca4bf">getName</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a5c12e3d9159b293cb47193f06a43f233">setName</a> (String name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a1a063794e89571af0f5d1f815968904d">getTimeStamp</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a906c1a52afd4cbbb4cef058e495f2cd0">setTimeStamp</a> (DateTime timeStamp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event_custom_data.html">CallEventCustomData</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#ab36e89f65797b3b4642e96562723ef81">getData</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a27c96ded2d08c8d1b775c8c7e6e44f50">setData</a> (<a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event_custom_data.html">CallEventCustomData</a> callEventCustomData)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#aadd76bf2062ad843b72b0b406f3146af">appendData</a> (String key, String value)</td></tr>
 <tr><td colspan="2"><h2>Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html">CallEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a2761c9a909d5f09509b5fd8c9afc99ab">newDialEvent</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html">CallEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html#a2761c9a909d5f09509b5fd8c9afc99ab">newDialEvent</a> ()</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
@@ -114,7 +123,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a8854596df1ab8e649b94117fc2445274"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::CallEvent" ref="a8854596df1ab8e649b94117fc2445274" args="(String name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.ivr.event.CallEvent.CallEvent </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aadd76bf2062ad843b72b0b406f3146af"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::appendData" ref="aadd76bf2062ad843b72b0b406f3146af" args="(String key, String value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.ivr.event.CallEvent.appendData </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add key value pair to additional data in call <a class="el" href="namespaceorg_1_1motechproject_1_1ivr_1_1event.html">event</a>. </p>
+<p>It can be used to store information related to IVR <a class="el" href="namespaceorg_1_1motechproject_1_1ivr_1_1event.html">event</a> like audio played etc. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>key</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aadd76bf2062ad843b72b0b406f3146af"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::appendData" ref="aadd76bf2062ad843b72b0b406f3146af" args="(String key, String value)" -->
 <div class="memitem">
 <div class="memproto">
@@ -172,6 +236,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="ab36e89f65797b3b4642e96562723ef81"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::getData" ref="ab36e89f65797b3b4642e96562723ef81" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event_custom_data.html">CallEventCustomData</a> org.motechproject.ivr.event.CallEvent.getData </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get additional data for call <a class="el" href="namespaceorg_1_1motechproject_1_1ivr_1_1event.html">event</a> such as audio played etc. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Data map with key value pair </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a441409ee1c748b14da3d13eeeca4bf"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::getName" ref="a4a441409ee1c748b14da3d13eeeca4bf" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.ivr.event.CallEvent.getName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4a441409ee1c748b14da3d13eeeca4bf"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::getName" ref="a4a441409ee1c748b14da3d13eeeca4bf" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -203,6 +304,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a063794e89571af0f5d1f815968904d"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::getTimeStamp" ref="a1a063794e89571af0f5d1f815968904d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime org.motechproject.ivr.event.CallEvent.getTimeStamp </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2761c9a909d5f09509b5fd8c9afc99ab"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::newDialEvent" ref="a2761c9a909d5f09509b5fd8c9afc99ab" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event.html">CallEvent</a> org.motechproject.ivr.event.CallEvent.newDialEvent </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Factory method to create new dial <a class="el" href="namespaceorg_1_1motechproject_1_1ivr_1_1event.html">event</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Dial <a class="el" href="namespaceorg_1_1motechproject_1_1ivr_1_1event.html">event</a> </dd></dl>
 
 </div>
 </div>
@@ -252,6 +390,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a27c96ded2d08c8d1b775c8c7e6e44f50"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::setData" ref="a27c96ded2d08c8d1b775c8c7e6e44f50" args="(CallEventCustomData callEventCustomData)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.ivr.event.CallEvent.setData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1event_1_1_call_event_custom_data.html">CallEventCustomData</a>&nbsp;</td>
+          <td class="paramname"> <em>callEventCustomData</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set additional data for call <a class="el" href="namespaceorg_1_1motechproject_1_1ivr_1_1event.html">event</a> such as audio played etc. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>callEventCustomData</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5c12e3d9159b293cb47193f06a43f233"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::setName" ref="a5c12e3d9159b293cb47193f06a43f233" args="(String name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.ivr.event.CallEvent.setName </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5c12e3d9159b293cb47193f06a43f233"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::setName" ref="a5c12e3d9159b293cb47193f06a43f233" args="(String name)" -->
 <div class="memitem">
 <div class="memproto">
@@ -288,8 +470,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-platform-ivr/src/main/java/org/motechproject/ivr/event/<a class="el" href="_call_event_8java.html">CallEvent.java</a></li>
+<a class="anchor" id="a906c1a52afd4cbbb4cef058e495f2cd0"></a><!-- doxytag: member="org::motechproject::ivr::event::CallEvent::setTimeStamp" ref="a906c1a52afd4cbbb4cef058e495f2cd0" args="(DateTime timeStamp)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.ivr.event.CallEvent.setTimeStamp </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>timeStamp</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-platform-ivr/src/main/java/org/motechproject/ivr/event/<a class="el" href="motech-platform-ivr_2src_2main_2java_2org_2motechproject_2ivr_2event_2_call_event_8java.html">CallEvent.java</a></li>
+<li>target/checkout/motech-platform-ivr/src/main/java/org/motechproject/ivr/event/<a class="el" href="target_2checkout_2motech-platform-ivr_2src_2main_2java_2org_2motechproject_2ivr_2event_2_call_event_8java.html">CallEvent.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

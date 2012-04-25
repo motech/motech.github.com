@@ -74,8 +74,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.server.messagecampaign.domain.campaign.CronBasedCampaign Class Reference</h1><!-- doxytag: class="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign" --><!-- doxytag: inherits="org::motechproject::server::messagecampaign::domain::campaign::Campaign" -->
-<p>Inherits org::motechproject::server::messagecampaign::domain::campaign::Campaign&lt; CronBasedCampaignMessage &gt;.</p>
+<h1>org.motechproject.server.messagecampaign.domain.campaign.CronBasedCampaign Class Reference</h1><!-- doxytag: class="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign" --><!-- doxytag: inherits="org::motechproject::server::messagecampaign::domain::campaign::Campaign,org::motechproject::server::messagecampaign::domain::campaign::Campaign" -->
+<p>Inherits org::motechproject::server::messagecampaign::domain::campaign::Campaign&lt; CronBasedCampaignMessage &gt;, and org::motechproject::server::messagecampaign::domain::campaign::Campaign&lt; CronBasedCampaignMessage &gt;.</p>
 
 <p><a href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
@@ -85,8 +85,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign.html#a3f017c055c5334e66890e91fd0b1af59">setMessages</a> (List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_cron_based_campaign_message.html">CronBasedCampaignMessage</a> &gt; messages)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign.html#a5e5c0cf4cc48d5797e5c9f3538cf6de9">maxDuration</a> (String maxDuration)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign.html#a3a57b0ec56fe0e06f9ea95da2da70d6c">maxDuration</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_cron_based_campaign_message.html">CronBasedCampaignMessage</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign.html#a8fe8137f75c47211211c3e9842fe2dd7">messages</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">MessageCampaignScheduler&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign.html#af6c3f61db73fb72ffe606fc276c87e71">getScheduler</a> (<a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html">MotechSchedulerService</a> schedulerService, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollment_service.html">CampaignEnrollmentService</a> campaignEnrollmentService, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1contract_1_1_campaign_request.html">CampaignRequest</a> enrollRequest)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign.html#a3f017c055c5334e66890e91fd0b1af59">setMessages</a> (List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_cron_based_campaign_message.html">CronBasedCampaignMessage</a> &gt; messages)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign.html#a5e5c0cf4cc48d5797e5c9f3538cf6de9">maxDuration</a> (String maxDuration)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_cron_based_campaign.html#a3a57b0ec56fe0e06f9ea95da2da70d6c">maxDuration</a> ()</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="af6c3f61db73fb72ffe606fc276c87e71"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign::getScheduler" ref="af6c3f61db73fb72ffe606fc276c87e71" args="(MotechSchedulerService schedulerService, CampaignEnrollmentService campaignEnrollmentService, CampaignRequest enrollRequest)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MessageCampaignScheduler org.motechproject.server.messagecampaign.domain.campaign.CronBasedCampaign.getScheduler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html">MotechSchedulerService</a>&nbsp;</td>
+          <td class="paramname"> <em>schedulerService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollment_service.html">CampaignEnrollmentService</a>&nbsp;</td>
+          <td class="paramname"> <em>campaignEnrollmentService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1contract_1_1_campaign_request.html">CampaignRequest</a>&nbsp;</td>
+          <td class="paramname"> <em>enrollRequest</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af6c3f61db73fb72ffe606fc276c87e71"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign::getScheduler" ref="af6c3f61db73fb72ffe606fc276c87e71" args="(MotechSchedulerService schedulerService, CampaignEnrollmentService campaignEnrollmentService, CampaignRequest enrollRequest)" -->
 <div class="memitem">
 <div class="memproto">
@@ -155,6 +193,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a3a57b0ec56fe0e06f9ea95da2da70d6c"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign::maxDuration" ref="a3a57b0ec56fe0e06f9ea95da2da70d6c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.campaign.CronBasedCampaign.maxDuration </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e5c0cf4cc48d5797e5c9f3538cf6de9"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign::maxDuration" ref="a5e5c0cf4cc48d5797e5c9f3538cf6de9" args="(String maxDuration)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.campaign.CronBasedCampaign.maxDuration </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>maxDuration</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8fe8137f75c47211211c3e9842fe2dd7"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign::messages" ref="a8fe8137f75c47211211c3e9842fe2dd7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_cron_based_campaign_message.html">CronBasedCampaignMessage</a>&gt; org.motechproject.server.messagecampaign.domain.campaign.CronBasedCampaign.messages </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8fe8137f75c47211211c3e9842fe2dd7"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign::messages" ref="a8fe8137f75c47211211c3e9842fe2dd7" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -190,8 +280,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/domain/campaign/<a class="el" href="_cron_based_campaign_8java.html">CronBasedCampaign.java</a></li>
+<a class="anchor" id="a3f017c055c5334e66890e91fd0b1af59"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::campaign::CronBasedCampaign::setMessages" ref="a3f017c055c5334e66890e91fd0b1af59" args="(List&lt; CronBasedCampaignMessage &gt; messages)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.campaign.CronBasedCampaign.setMessages </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_cron_based_campaign_message.html">CronBasedCampaignMessage</a> &gt;&nbsp;</td>
+          <td class="paramname"> <em>messages</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/domain/campaign/<a class="el" href="motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagecampaign_2domain_2cc288d6652f2dd1b28589db995d7d45e4.html">CronBasedCampaign.java</a></li>
+<li>target/checkout/motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/domain/campaign/<a class="el" href="target_2checkout_2motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagec3e0312626e2a5e103bc98fb309c3c693.html">CronBasedCampaign.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

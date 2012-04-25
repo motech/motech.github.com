@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.server.osgi.Log4JBundleLoader Class Reference</h1><!-- doxytag: class="org::motechproject::server::osgi::Log4JBundleLoader" --><!-- doxytag: inherits="org::motechproject::server::osgi::BundleLoader" -->
+<h1>org.motechproject.server.osgi.Log4JBundleLoader Class Reference</h1><!-- doxytag: class="org::motechproject::server::osgi::Log4JBundleLoader" --><!-- doxytag: inherits="org::motechproject::server::osgi::BundleLoader,org::motechproject::server::osgi::BundleLoader" -->
 <p>Custom log4j configuration loader.  
 <a href="#_details">More...</a></p>
 <div class="dynheader">
@@ -84,6 +84,7 @@ Inheritance diagram for org.motechproject.server.osgi.Log4JBundleLoader:</div>
   <img src="classorg_1_1motechproject_1_1server_1_1osgi_1_1_log4_j_bundle_loader.gif" usemap="#org.motechproject.server.osgi.Log4JBundleLoader_map" alt=""/>
   <map id="org.motechproject.server.osgi.Log4JBundleLoader_map" name="org.motechproject.server.osgi.Log4JBundleLoader_map">
 <area href="interfaceorg_1_1motechproject_1_1server_1_1osgi_1_1_bundle_loader.html" alt="org.motechproject.server.osgi.BundleLoader" shape="rect" coords="0,0,300,24"/>
+<area href="interfaceorg_1_1motechproject_1_1server_1_1osgi_1_1_bundle_loader.html" alt="org.motechproject.server.osgi.BundleLoader" shape="rect" coords="310,0,610,24"/>
 </map>
  </div>
 </div>
@@ -93,12 +94,46 @@ Inheritance diagram for org.motechproject.server.osgi.Log4JBundleLoader:</div>
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1osgi_1_1_log4_j_bundle_loader.html#ac35cd6518f1e56ebb809d7af6c84ce1a">loadBundle</a> (Bundle bundle)  throws Exception </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1osgi_1_1_log4_j_bundle_loader.html#a4d30e850a864cde425cd0965b39bcf71">setLog4jConf</a> (String log4jConf)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1osgi_1_1_log4_j_bundle_loader.html#ac35cd6518f1e56ebb809d7af6c84ce1a">loadBundle</a> (Bundle bundle)  throws Exception </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1osgi_1_1_log4_j_bundle_loader.html#a4d30e850a864cde425cd0965b39bcf71">setLog4jConf</a> (String log4jConf)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Custom log4j configuration loader. </p>
 <p>Merge bundle specific configurations to the existing if a bundle contains log4j.xml</p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Ricky Wang </dd></dl>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ac35cd6518f1e56ebb809d7af6c84ce1a"></a><!-- doxytag: member="org::motechproject::server::osgi::Log4JBundleLoader::loadBundle" ref="ac35cd6518f1e56ebb809d7af6c84ce1a" args="(Bundle bundle)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.osgi.Log4JBundleLoader.loadBundle </td>
+          <td>(</td>
+          <td class="paramtype">Bundle&nbsp;</td>
+          <td class="paramname"> <em>bundle</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>  throws Exception </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bundle</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Exceptions:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Exception</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1server_1_1osgi_1_1_bundle_loader.html#aa8e665376581d423fd3f20497a612190">org.motechproject.server.osgi.BundleLoader</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac35cd6518f1e56ebb809d7af6c84ce1a"></a><!-- doxytag: member="org::motechproject::server::osgi::Log4JBundleLoader::loadBundle" ref="ac35cd6518f1e56ebb809d7af6c84ce1a" args="(Bundle bundle)" -->
 <div class="memitem">
 <div class="memproto">
@@ -149,8 +184,27 @@ Inheritance diagram for org.motechproject.server.osgi.Log4JBundleLoader:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-platform-server-api/src/main/java/org/motechproject/server/osgi/<a class="el" href="_log4_j_bundle_loader_8java.html">Log4JBundleLoader.java</a></li>
+<a class="anchor" id="a4d30e850a864cde425cd0965b39bcf71"></a><!-- doxytag: member="org::motechproject::server::osgi::Log4JBundleLoader::setLog4jConf" ref="a4d30e850a864cde425cd0965b39bcf71" args="(String log4jConf)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.osgi.Log4JBundleLoader.setLog4jConf </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>log4jConf</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-platform-server-api/src/main/java/org/motechproject/server/osgi/<a class="el" href="motech-platform-server-api_2src_2main_2java_2org_2motechproject_2server_2osgi_2_log4_j_bundle_loader_8java.html">Log4JBundleLoader.java</a></li>
+<li>target/checkout/motech-platform-server-api/src/main/java/org/motechproject/server/osgi/<a class="el" href="target_2checkout_2motech-platform-server-api_2src_2main_2java_2org_2motechproject_2server_2osgi_2_log4_j_bundle_loader_8java.html">Log4JBundleLoader.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

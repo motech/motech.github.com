@@ -74,8 +74,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.cmslite.api.repository.BaseContentRepository&lt; T extends Content &gt; Class Reference</h1><!-- doxytag: class="org::motechproject::cmslite::api::repository::BaseContentRepository&lt; T extends Content &gt;" --><!-- doxytag: inherits="org::motechproject::dao::MotechBaseRepository" -->
-<p>Inherits org::motechproject::dao::MotechBaseRepository&lt; T &gt;.</p>
+<h1>org.motechproject.cmslite.api.repository.BaseContentRepository&lt; T extends Content &gt; Class Reference</h1><!-- doxytag: class="org::motechproject::cmslite::api::repository::BaseContentRepository&lt; T extends Content &gt;" --><!-- doxytag: inherits="org::motechproject::dao::MotechBaseRepository,org::motechproject::dao::MotechBaseRepository" -->
+<p>Inherits org::motechproject::dao::MotechBaseRepository&lt; T &gt;, and org::motechproject::dao::MotechBaseRepository&lt; T &gt;.</p>
 
 <p><a href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
@@ -83,10 +83,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">abstract T&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4.html#afdb86ee17290d8922c56acc0bcdce315">getContent</a> (String language, String name)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">abstract void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4.html#a0a3948a589b32473757187b596901fb7">addContent</a> (T content)  throws CMSLiteException</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">abstract boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4.html#a77660760e0be557865d4161778cf6622">isContentAvailable</a> (String language, String name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">abstract T&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4.html#afdb86ee17290d8922c56acc0bcdce315">getContent</a> (String language, String name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">abstract void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4.html#a0a3948a589b32473757187b596901fb7">addContent</a> (T content)  throws CMSLiteException</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">abstract boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4.html#a77660760e0be557865d4161778cf6622">isContentAvailable</a> (String language, String name)</td></tr>
 <tr><td colspan="2"><h2>Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4.html#a51d5734f9d677b664a3ef6c92a61dde5">BaseContentRepository</a> (Class&lt; T &gt; type, CouchDbConnector db)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1repository_1_1_base_content_repository_3_01_t_01extends_01_content_01_4.html#a51d5734f9d677b664a3ef6c92a61dde5">BaseContentRepository</a> (Class&lt; T &gt; type, CouchDbConnector db)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a51d5734f9d677b664a3ef6c92a61dde5"></a><!-- doxytag: member="org::motechproject::cmslite::api::repository::BaseContentRepository&lt; T extends Content &gt;::BaseContentRepository" ref="a51d5734f9d677b664a3ef6c92a61dde5" args="(Class&lt; T &gt; type, CouchDbConnector db)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.cmslite.api.repository.BaseContentRepository&lt; T extends <a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1model_1_1_content.html">Content</a> &gt;.BaseContentRepository </td>
+          <td>(</td>
+          <td class="paramtype">Class&lt; T &gt;&nbsp;</td>
+          <td class="paramname"> <em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CouchDbConnector&nbsp;</td>
+          <td class="paramname"> <em>db</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a51d5734f9d677b664a3ef6c92a61dde5"></a><!-- doxytag: member="org::motechproject::cmslite::api::repository::BaseContentRepository&lt; T extends Content &gt;::BaseContentRepository" ref="a51d5734f9d677b664a3ef6c92a61dde5" args="(Class&lt; T &gt; type, CouchDbConnector db)" -->
 <div class="memitem">
 <div class="memproto">
@@ -126,6 +157,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           <td class="paramname"> <em>content</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td>  throws <a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1model_1_1_c_m_s_lite_exception.html">CMSLiteException</a><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a3948a589b32473757187b596901fb7"></a><!-- doxytag: member="org::motechproject::cmslite::api::repository::BaseContentRepository&lt; T extends Content &gt;::addContent" ref="a0a3948a589b32473757187b596901fb7" args="(T content)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void org.motechproject.cmslite.api.repository.BaseContentRepository&lt; T extends <a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1model_1_1_content.html">Content</a> &gt;.addContent </td>
+          <td>(</td>
+          <td class="paramtype">T&nbsp;</td>
+          <td class="paramname"> <em>content</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>  throws <a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1model_1_1_c_m_s_lite_exception.html">CMSLiteException</a><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afdb86ee17290d8922c56acc0bcdce315"></a><!-- doxytag: member="org::motechproject::cmslite::api::repository::BaseContentRepository&lt; T extends Content &gt;::getContent" ref="afdb86ee17290d8922c56acc0bcdce315" args="(String language, String name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract T org.motechproject.cmslite.api.repository.BaseContentRepository&lt; T extends <a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1model_1_1_content.html">Content</a> &gt;.getContent </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>language</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -187,8 +263,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-cmslite-api/src/main/java/org/motechproject/cmslite/api/repository/<a class="el" href="_base_content_repository_8java.html">BaseContentRepository.java</a></li>
+<a class="anchor" id="a77660760e0be557865d4161778cf6622"></a><!-- doxytag: member="org::motechproject::cmslite::api::repository::BaseContentRepository&lt; T extends Content &gt;::isContentAvailable" ref="a77660760e0be557865d4161778cf6622" args="(String language, String name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract boolean org.motechproject.cmslite.api.repository.BaseContentRepository&lt; T extends <a class="el" href="classorg_1_1motechproject_1_1cmslite_1_1api_1_1model_1_1_content.html">Content</a> &gt;.isContentAvailable </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>language</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-cmslite-api/src/main/java/org/motechproject/cmslite/api/repository/<a class="el" href="motech-cmslite-api_2src_2main_2java_2org_2motechproject_2cmslite_2api_2repository_2_base_content_repository_8java.html">BaseContentRepository.java</a></li>
+<li>target/checkout/motech-cmslite-api/src/main/java/org/motechproject/cmslite/api/repository/<a class="el" href="target_2checkout_2motech-cmslite-api_2src_2main_2java_2org_2motechproject_2cmslite_2api_2reposit7a43aa0c9ab39b8e3c8e844b2865784a.html">BaseContentRepository.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

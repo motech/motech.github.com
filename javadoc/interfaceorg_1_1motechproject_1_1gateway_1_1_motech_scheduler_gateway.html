@@ -85,6 +85,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_motech_scheduler_gateway.html#a8b59770181c3a915d0ebd53b924a4dc6">scheduleRepeatingJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_repeating_schedulable_job.html">RepeatingSchedulableJob</a> schedulableJob)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_motech_scheduler_gateway.html#a9db990af873655c344d7fc2c24f8d225">scheduleRunOnceJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_run_once_schedulable_job.html">RunOnceSchedulableJob</a> schedulableJob)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_motech_scheduler_gateway.html#aee498e740e2ecdd72f62ee9636b87212">unscheduleJob</a> (String jobId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_motech_scheduler_gateway.html#a99245da79a59471a724203f161f59b2a">scheduleJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_cron_schedulable_job.html">CronSchedulableJob</a> cronSchedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_motech_scheduler_gateway.html#a8b59770181c3a915d0ebd53b924a4dc6">scheduleRepeatingJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_repeating_schedulable_job.html">RepeatingSchedulableJob</a> schedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_motech_scheduler_gateway.html#a9db990af873655c344d7fc2c24f8d225">scheduleRunOnceJob</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_run_once_schedulable_job.html">RunOnceSchedulableJob</a> schedulableJob)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_motech_scheduler_gateway.html#aee498e740e2ecdd72f62ee9636b87212">unscheduleJob</a> (String jobId)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Motech Scheduler Gateway provides access to Motech Scheduler. </p>
@@ -94,6 +98,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>For example of use see SchedulerGatewayIT (motech-platform-core)</p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Igor (<a href="mailto:iopushnyev@2paths.com">iopushnyev@2paths.com</a>) Date: 23/02/11 </dd></dl>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a99245da79a59471a724203f161f59b2a"></a><!-- doxytag: member="org::motechproject::gateway::MotechSchedulerGateway::scheduleJob" ref="a99245da79a59471a724203f161f59b2a" args="(CronSchedulableJob cronSchedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.gateway.MotechSchedulerGateway.scheduleJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_cron_schedulable_job.html">CronSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>cronSchedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given SchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cronSchedulableJob</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a99245da79a59471a724203f161f59b2a"></a><!-- doxytag: member="org::motechproject::gateway::MotechSchedulerGateway::scheduleJob" ref="a99245da79a59471a724203f161f59b2a" args="(CronSchedulableJob cronSchedulableJob)" -->
 <div class="memitem">
 <div class="memproto">
@@ -138,6 +169,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="memdoc">
 
 <p>Sends a message with the given SchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>schedulableJob</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8b59770181c3a915d0ebd53b924a4dc6"></a><!-- doxytag: member="org::motechproject::gateway::MotechSchedulerGateway::scheduleRepeatingJob" ref="a8b59770181c3a915d0ebd53b924a4dc6" args="(RepeatingSchedulableJob schedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.gateway.MotechSchedulerGateway.scheduleRepeatingJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_repeating_schedulable_job.html">RepeatingSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>schedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given SchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>schedulableJob</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9db990af873655c344d7fc2c24f8d225"></a><!-- doxytag: member="org::motechproject::gateway::MotechSchedulerGateway::scheduleRunOnceJob" ref="a9db990af873655c344d7fc2c24f8d225" args="(RunOnceSchedulableJob schedulableJob)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.gateway.MotechSchedulerGateway.scheduleRunOnceJob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_run_once_schedulable_job.html">RunOnceSchedulableJob</a>&nbsp;</td>
+          <td class="paramname"> <em>schedulableJob</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given RunOnceSchedulableJob payload. </p>
 <p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -202,8 +287,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this interface was generated from the following file:<ul>
-<li>motech-platform-common/src/main/java/org/motechproject/gateway/<a class="el" href="_motech_scheduler_gateway_8java.html">MotechSchedulerGateway.java</a></li>
+<a class="anchor" id="aee498e740e2ecdd72f62ee9636b87212"></a><!-- doxytag: member="org::motechproject::gateway::MotechSchedulerGateway::unscheduleJob" ref="aee498e740e2ecdd72f62ee9636b87212" args="(String jobId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.gateway.MotechSchedulerGateway.unscheduleJob </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>jobId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given jobID (String) payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>jobId</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following files:<ul>
+<li>motech-platform-common/src/main/java/org/motechproject/gateway/<a class="el" href="motech-platform-common_2src_2main_2java_2org_2motechproject_2gateway_2_motech_scheduler_gateway_8java.html">MotechSchedulerGateway.java</a></li>
+<li>target/checkout/motech-platform-common/src/main/java/org/motechproject/gateway/<a class="el" href="target_2checkout_2motech-platform-common_2src_2main_2java_2org_2motechproject_2gateway_2_motech_scheduler_gateway_8java.html">MotechSchedulerGateway.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

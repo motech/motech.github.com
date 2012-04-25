@@ -74,11 +74,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.model.MotechEvent Class Reference</h1><!-- doxytag: class="org::motechproject::model::MotechEvent" --><!-- doxytag: inherits="java::io::Serializable" -->
+<h1>org.motechproject.model.MotechEvent Class Reference</h1><!-- doxytag: class="org::motechproject::model::MotechEvent" --><!-- doxytag: inherits="java::io::Serializable,java::io::Serializable" -->
 <p>Motech Scheduled Event data carrier class, Instance of this class with <a class="el" href="namespaceorg_1_1motechproject_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> specific data will be send by Motech Scheduler when a scheduled <a class="el" href="namespaceorg_1_1motechproject_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> is fired This class is immutable.  
 <a href="#_details">More...</a></p>
 
-<p>Inherits java::io::Serializable.</p>
+<p>Inherits java::io::Serializable, and java::io::Serializable.</p>
 
 <p><a href="classorg_1_1motechproject_1_1model_1_1_motech_event-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
@@ -95,13 +95,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a2155f94fe552eb1ade751356fd750d3b">equals</a> (Object o)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a836ea9169e4ef1995e14bf4946e515f0">hashCode</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a7e1a61739259ab9fc69c3e7eae8ff466">toString</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a39c28e7ca3da07edca92ca2cc6d1215c">MotechEvent</a> (String subject)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#aece0c92a6c45ff213d7093d65e9dc0e5">MotechEvent</a> (String subject, Map&lt; String, Object &gt; parameters)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a5de91bb01b57791c7ceb14c847353512">getSubject</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#aeedef990d5b2e9b581c07a56085db564">getParameters</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Date&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a3c5b6b7d427c0b7eba02422f5de6008e">getEndTime</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#ab127feaf6a791a1aeca1312b51e758d1">setEndTime</a> (Date endDate)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#aae0d0cb7544f43aba9a5e7167ed48320">isLastEvent</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#ac53f1b6e12fa106638f62e24d5219cd6">setLastEvent</a> (boolean lastEvent)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a48246f28a943fb8a76e3c2166bb0171d">copy</a> (String subject, Map&lt; String, Object &gt; parameters)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a2155f94fe552eb1ade751356fd750d3b">equals</a> (Object o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a836ea9169e4ef1995e14bf4946e515f0">hashCode</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a7e1a61739259ab9fc69c3e7eae8ff466">toString</a> ()</td></tr>
 <tr><td colspan="2"><h2>Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static final String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a44925e488a85755a7c75d7444aaff2e0">EVENT_TYPE_KEY_NAME</a> = &quot;eventType&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static final String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a6abe24ae8a51482ad6e1b39e1fa0b4c4">EVENT_TYPE_KEY_NAME</a> = &quot;eventType&quot;</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Motech Scheduled Event data carrier class, Instance of this class with <a class="el" href="namespaceorg_1_1motechproject_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> specific data will be send by Motech Scheduler when a scheduled <a class="el" href="namespaceorg_1_1motechproject_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> is fired </p>
 <p>This class is immutable. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a39c28e7ca3da07edca92ca2cc6d1215c"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::MotechEvent" ref="a39c28e7ca3da07edca92ca2cc6d1215c" args="(String subject)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.model.MotechEvent.MotechEvent </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>subject</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor with subject only (parameters can be added interactively). </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>subject</em>&nbsp;</td><td>- <a class="el" href="namespaceorg_1_1motechproject_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> destination </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Exceptions:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>IllegalArgumentException</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aece0c92a6c45ff213d7093d65e9dc0e5"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::MotechEvent" ref="aece0c92a6c45ff213d7093d65e9dc0e5" args="(String subject, Map&lt; String, Object &gt; parameters)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.model.MotechEvent.MotechEvent </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Map&lt; String, Object &gt;&nbsp;</td>
+          <td class="paramname"> <em>parameters</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>subject</em>&nbsp;</td><td>- <a class="el" href="namespaceorg_1_1motechproject_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> type: Pill Reminder, Appointment Reminder ... </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>parameters</em>&nbsp;</td><td>- a Map&lt;String, Object&gt; of additional parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Exceptions:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>IllegalArgumentException</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a39c28e7ca3da07edca92ca2cc6d1215c"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::MotechEvent" ref="a39c28e7ca3da07edca92ca2cc6d1215c" args="(String subject)" -->
 <div class="memitem">
 <div class="memproto">
@@ -204,6 +290,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a48246f28a943fb8a76e3c2166bb0171d"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::copy" ref="a48246f28a943fb8a76e3c2166bb0171d" args="(String subject, Map&lt; String, Object &gt; parameters)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> org.motechproject.model.MotechEvent.copy </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Map&lt; String, Object &gt;&nbsp;</td>
+          <td class="paramname"> <em>parameters</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a2155f94fe552eb1ade751356fd750d3b"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::equals" ref="a2155f94fe552eb1ade751356fd750d3b" args="(Object o)" -->
 <div class="memitem">
 <div class="memproto">
@@ -213,6 +326,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           <td>(</td>
           <td class="paramtype">Object&nbsp;</td>
           <td class="paramname"> <em>o</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2155f94fe552eb1ade751356fd750d3b"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::equals" ref="a2155f94fe552eb1ade751356fd750d3b" args="(Object o)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.model.MotechEvent.equals </td>
+          <td>(</td>
+          <td class="paramtype">Object&nbsp;</td>
+          <td class="paramname"> <em>o</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c5b6b7d427c0b7eba02422f5de6008e"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::getEndTime" ref="a3c5b6b7d427c0b7eba02422f5de6008e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Date org.motechproject.model.MotechEvent.getEndTime </td>
+          <td>(</td>
+          <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -259,6 +407,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="aeedef990d5b2e9b581c07a56085db564"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::getParameters" ref="aeedef990d5b2e9b581c07a56085db564" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, Object&gt; org.motechproject.model.MotechEvent.getParameters </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets empty HashMap if parameters=null. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5de91bb01b57791c7ceb14c847353512"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::getSubject" ref="a5de91bb01b57791c7ceb14c847353512" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.model.MotechEvent.getSubject </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5de91bb01b57791c7ceb14c847353512"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::getSubject" ref="a5de91bb01b57791c7ceb14c847353512" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -282,6 +467,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <table class="memname">
         <tr>
           <td class="memname">int org.motechproject.model.MotechEvent.hashCode </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a836ea9169e4ef1995e14bf4946e515f0"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::hashCode" ref="a836ea9169e4ef1995e14bf4946e515f0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.model.MotechEvent.hashCode </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae0d0cb7544f43aba9a5e7167ed48320"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::isLastEvent" ref="aae0d0cb7544f43aba9a5e7167ed48320" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.model.MotechEvent.isLastEvent </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -328,6 +547,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="ab127feaf6a791a1aeca1312b51e758d1"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::setEndTime" ref="ab127feaf6a791a1aeca1312b51e758d1" args="(Date endDate)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> org.motechproject.model.MotechEvent.setEndTime </td>
+          <td>(</td>
+          <td class="paramtype">Date&nbsp;</td>
+          <td class="paramname"> <em>endDate</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac53f1b6e12fa106638f62e24d5219cd6"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::setLastEvent" ref="ac53f1b6e12fa106638f62e24d5219cd6" args="(boolean lastEvent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> org.motechproject.model.MotechEvent.setLastEvent </td>
+          <td>(</td>
+          <td class="paramtype">boolean&nbsp;</td>
+          <td class="paramname"> <em>lastEvent</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac53f1b6e12fa106638f62e24d5219cd6"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::setLastEvent" ref="ac53f1b6e12fa106638f62e24d5219cd6" args="(boolean lastEvent)" -->
 <div class="memitem">
 <div class="memproto">
@@ -363,13 +618,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a44925e488a85755a7c75d7444aaff2e0"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::EVENT_TYPE_KEY_NAME" ref="a44925e488a85755a7c75d7444aaff2e0" args="" -->
+<a class="anchor" id="a7e1a61739259ab9fc69c3e7eae8ff466"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::toString" ref="a7e1a61739259ab9fc69c3e7eae8ff466" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a44925e488a85755a7c75d7444aaff2e0">org.motechproject.model.MotechEvent.EVENT_TYPE_KEY_NAME</a> = &quot;eventType&quot;<code> [static]</code></td>
+          <td class="memname">String org.motechproject.model.MotechEvent.toString </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -377,8 +635,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-platform-common/src/main/java/org/motechproject/model/<a class="el" href="_motech_event_8java.html">MotechEvent.java</a></li>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a6abe24ae8a51482ad6e1b39e1fa0b4c4"></a><!-- doxytag: member="org::motechproject::model::MotechEvent::EVENT_TYPE_KEY_NAME" ref="a6abe24ae8a51482ad6e1b39e1fa0b4c4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final String <a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html#a6abe24ae8a51482ad6e1b39e1fa0b4c4">org::motechproject::model.MotechEvent::EVENT_TYPE_KEY_NAME</a> = &quot;eventType&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-platform-common/src/main/java/org/motechproject/model/<a class="el" href="motech-platform-common_2src_2main_2java_2org_2motechproject_2model_2_motech_event_8java.html">MotechEvent.java</a></li>
+<li>target/checkout/motech-platform-common/src/main/java/org/motechproject/model/<a class="el" href="target_2checkout_2motech-platform-common_2src_2main_2java_2org_2motechproject_2model_2_motech_event_8java.html">MotechEvent.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

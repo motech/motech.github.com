@@ -74,13 +74,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage Class Reference</h1><!-- doxytag: class="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage" --><!-- doxytag: inherits="org::motechproject::server::messagecampaign::domain::message::CampaignMessage" --><div class="dynheader">
+<h1>org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage Class Reference</h1><!-- doxytag: class="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage" --><!-- doxytag: inherits="org::motechproject::server::messagecampaign::domain::message::CampaignMessage,org::motechproject::server::messagecampaign::domain::message::CampaignMessage" --><div class="dynheader">
 Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage:</div>
 <div class="dynsection">
  <div class="center">
   <img src="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.gif" usemap="#org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage_map" alt=""/>
   <map id="org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage_map" name="org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage_map">
 <area href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_campaign_message.html" alt="org.motechproject.server.messagecampaign.domain.message.CampaignMessage" shape="rect" coords="0,0,526,24"/>
+<area href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_campaign_message.html" alt="org.motechproject.server.messagecampaign.domain.message.CampaignMessage" shape="rect" coords="536,0,1062,24"/>
 </map>
  </div>
 </div>
@@ -108,11 +109,118 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#aaf7b76e18ffa672bcfea687d27689dce">durationInDaysToAdd</a> (<a class="el" href="classorg_1_1motechproject_1_1valueobjects_1_1_wall_time.html">WallTime</a> duration, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1contract_1_1_campaign_request.html">CampaignRequest</a> campaignRequest)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">DayOfWeek&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#af30442911b1880aba708efbd817d50d1">applicableWeekDayInNext24Hours</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a48288458d19d9e0a0a81bbb4142a3a6f">hasEnded</a> (Date endTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a8167719e76744199c2cdac0042cab93f">RepeatingCampaignMessage</a> (String repeatInterval, String deliverTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#ab69123bada2c211f3898e2ec7bc3f555">RepeatingCampaignMessage</a> (List&lt; String &gt; weekDaysApplicable, String deliverTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a5b725da80b446cb3ac9d6420060c577e">RepeatingCampaignMessage</a> (String calendarStartOfWeek, List&lt; String &gt; weekDaysApplicable, String deliverTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a422ab35e3b2d6118c18a384fd00c0907">repeatIntervalForSchedule</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a0e40a4a8f28e8da52db143f4841d44ff">repeatIntervalInDaysForOffset</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a851ce7e4b53d1795bf472df27e9ffe44">repeatInterval</a> (String repeatInterval)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a507c399efec9369433d8bf473ce82e9c">repeatInterval</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; DayOfWeek &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a5fe8acf21668c7eea6c419b4863e345e">weekDaysApplicable</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a6d505b1d2e3c5fde2fe8cbb23b8b53c0">calendarStartOfWeek</a> (String calendarStartOfWeek)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#ab0cf03ea1d9cf7b2b8935e89e5b506f0">calendarStartOfWeek</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DayOfWeek&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#ad6d672ef1736778211d1b94335d0641b">calendarStartDayOfWeek</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#aba83197d70f146d337352538de6eba94">isApplicable</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html">RepeatingCampaignMessage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a4bf255ce72e0b04ba90d4c615689f130">mode</a> (<a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message.html#a61da50782c67241661b26c27d02791d6">RepeatingMessageMode</a> repeatingMessageMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message.html#a61da50782c67241661b26c27d02791d6">RepeatingMessageMode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a159495488ae6280b52fd2bdbfa0081a8">mode</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html">RepeatingCampaignMessage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#abd962fb2c3f5fbdca883e02366ae3a45">deliverTime</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a> deliverTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#ab2226917e9c067cb945b88943f82266f">deliverTime</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Integer&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#ab059f9f83b004e92d1c176ab9c874976">currentOffset</a> (Date startTime, Integer startIntervalOffset)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#aaf7b76e18ffa672bcfea687d27689dce">durationInDaysToAdd</a> (<a class="el" href="classorg_1_1motechproject_1_1valueobjects_1_1_wall_time.html">WallTime</a> duration, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1contract_1_1_campaign_request.html">CampaignRequest</a> campaignRequest)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DayOfWeek&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#af30442911b1880aba708efbd817d50d1">applicableWeekDayInNext24Hours</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a48288458d19d9e0a0a81bbb4142a3a6f">hasEnded</a> (Date endTime)</td></tr>
 <tr><td colspan="2"><h2>Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static final int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a0fabf7dd88d29d8ce2f721e89c437d68">DAILY_REPEAT_INTERVAL</a> = 1</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static final int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a1406dfed38aa3560e878f79f892319b2">WEEKLY_REPEAT_INTERVAL</a> = 7</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static final int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a2c1562ce22765d62eee8aab4dae7c270">DAILY_REPEAT_INTERVAL</a> = 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static final int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a379e010a511d01c87907ddb7f2f2fbd8">WEEKLY_REPEAT_INTERVAL</a> = 7</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8167719e76744199c2cdac0042cab93f"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::RepeatingCampaignMessage" ref="a8167719e76744199c2cdac0042cab93f" args="(String repeatInterval, String deliverTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>repeatInterval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>deliverTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab69123bada2c211f3898e2ec7bc3f555"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::RepeatingCampaignMessage" ref="ab69123bada2c211f3898e2ec7bc3f555" args="(List&lt; String &gt; weekDaysApplicable, String deliverTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&nbsp;</td>
+          <td class="paramname"> <em>weekDaysApplicable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>deliverTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b725da80b446cb3ac9d6420060c577e"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::RepeatingCampaignMessage" ref="a5b725da80b446cb3ac9d6420060c577e" args="(String calendarStartOfWeek, List&lt; String &gt; weekDaysApplicable, String deliverTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>calendarStartOfWeek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&nbsp;</td>
+          <td class="paramname"> <em>weekDaysApplicable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>deliverTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8167719e76744199c2cdac0042cab93f"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::RepeatingCampaignMessage" ref="a8167719e76744199c2cdac0042cab93f" args="(String repeatInterval, String deliverTime)" -->
 <div class="memitem">
 <div class="memproto">
@@ -218,6 +326,23 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
 
 </div>
 </div>
+<a class="anchor" id="af30442911b1880aba708efbd817d50d1"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::applicableWeekDayInNext24Hours" ref="af30442911b1880aba708efbd817d50d1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DayOfWeek org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.applicableWeekDayInNext24Hours </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad6d672ef1736778211d1b94335d0641b"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::calendarStartDayOfWeek" ref="ad6d672ef1736778211d1b94335d0641b" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -226,6 +351,58 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
           <td class="memname">DayOfWeek org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartDayOfWeek </td>
           <td>(</td>
           <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6d672ef1736778211d1b94335d0641b"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::calendarStartDayOfWeek" ref="ad6d672ef1736778211d1b94335d0641b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DayOfWeek org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartDayOfWeek </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0cf03ea1d9cf7b2b8935e89e5b506f0"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::calendarStartOfWeek" ref="ab0cf03ea1d9cf7b2b8935e89e5b506f0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartOfWeek </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d505b1d2e3c5fde2fe8cbb23b8b53c0"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::calendarStartOfWeek" ref="a6d505b1d2e3c5fde2fe8cbb23b8b53c0" args="(String calendarStartOfWeek)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartOfWeek </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>calendarStartOfWeek</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -297,6 +474,68 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
 
 </div>
 </div>
+<a class="anchor" id="ab059f9f83b004e92d1c176ab9c874976"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::currentOffset" ref="ab059f9f83b004e92d1c176ab9c874976" args="(Date startTime, Integer startIntervalOffset)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Integer org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.currentOffset </td>
+          <td>(</td>
+          <td class="paramtype">Date&nbsp;</td>
+          <td class="paramname"> <em>startTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integer&nbsp;</td>
+          <td class="paramname"> <em>startIntervalOffset</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2226917e9c067cb945b88943f82266f"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::deliverTime" ref="ab2226917e9c067cb945b88943f82266f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a> org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.deliverTime </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abd962fb2c3f5fbdca883e02366ae3a45"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::deliverTime" ref="abd962fb2c3f5fbdca883e02366ae3a45" args="(Time deliverTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html">RepeatingCampaignMessage</a> org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.deliverTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a>&nbsp;</td>
+          <td class="paramname"> <em>deliverTime</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab2226917e9c067cb945b88943f82266f"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::deliverTime" ref="ab2226917e9c067cb945b88943f82266f" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -359,6 +598,51 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
 
 </div>
 </div>
+<a class="anchor" id="aaf7b76e18ffa672bcfea687d27689dce"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::durationInDaysToAdd" ref="aaf7b76e18ffa672bcfea687d27689dce" args="(WallTime duration, CampaignRequest campaignRequest)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.durationInDaysToAdd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1valueobjects_1_1_wall_time.html">WallTime</a>&nbsp;</td>
+          <td class="paramname"> <em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1contract_1_1_campaign_request.html">CampaignRequest</a>&nbsp;</td>
+          <td class="paramname"> <em>campaignRequest</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48288458d19d9e0a0a81bbb4142a3a6f"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::hasEnded" ref="a48288458d19d9e0a0a81bbb4142a3a6f" args="(Date endTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.hasEnded </td>
+          <td>(</td>
+          <td class="paramtype">Date&nbsp;</td>
+          <td class="paramname"> <em>endTime</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a48288458d19d9e0a0a81bbb4142a3a6f"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::hasEnded" ref="a48288458d19d9e0a0a81bbb4142a3a6f" args="(Date endTime)" -->
 <div class="memitem">
 <div class="memproto">
@@ -385,6 +669,58 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
           <td class="memname">boolean org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.isApplicable </td>
           <td>(</td>
           <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba83197d70f146d337352538de6eba94"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::isApplicable" ref="aba83197d70f146d337352538de6eba94" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.isApplicable </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a159495488ae6280b52fd2bdbfa0081a8"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::mode" ref="a159495488ae6280b52fd2bdbfa0081a8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message.html#a61da50782c67241661b26c27d02791d6">RepeatingMessageMode</a> org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.mode </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bf255ce72e0b04ba90d4c615689f130"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::mode" ref="a4bf255ce72e0b04ba90d4c615689f130" args="(RepeatingMessageMode repeatingMessageMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html">RepeatingCampaignMessage</a> org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message.html#a61da50782c67241661b26c27d02791d6">RepeatingMessageMode</a>&nbsp;</td>
+          <td class="paramname"> <em>repeatingMessageMode</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -464,12 +800,81 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
 
 </div>
 </div>
+<a class="anchor" id="a507c399efec9369433d8bf473ce82e9c"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::repeatInterval" ref="a507c399efec9369433d8bf473ce82e9c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatInterval </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a851ce7e4b53d1795bf472df27e9ffe44"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::repeatInterval" ref="a851ce7e4b53d1795bf472df27e9ffe44" args="(String repeatInterval)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatInterval </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>repeatInterval</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a422ab35e3b2d6118c18a384fd00c0907"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::repeatIntervalForSchedule" ref="a422ab35e3b2d6118c18a384fd00c0907" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatIntervalForSchedule </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a422ab35e3b2d6118c18a384fd00c0907"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::repeatIntervalForSchedule" ref="a422ab35e3b2d6118c18a384fd00c0907" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatIntervalForSchedule </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e40a4a8f28e8da52db143f4841d44ff"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::repeatIntervalInDaysForOffset" ref="a0e40a4a8f28e8da52db143f4841d44ff" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatIntervalInDaysForOffset </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -515,13 +920,30 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
 
 </div>
 </div>
+<a class="anchor" id="a5fe8acf21668c7eea6c419b4863e345e"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::weekDaysApplicable" ref="a5fe8acf21668c7eea6c419b4863e345e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;DayOfWeek&gt; org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.weekDaysApplicable </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a0fabf7dd88d29d8ce2f721e89c437d68"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::DAILY_REPEAT_INTERVAL" ref="a0fabf7dd88d29d8ce2f721e89c437d68" args="" -->
+<a class="anchor" id="a2c1562ce22765d62eee8aab4dae7c270"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::DAILY_REPEAT_INTERVAL" ref="a2c1562ce22765d62eee8aab4dae7c270" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final int <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a0fabf7dd88d29d8ce2f721e89c437d68">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.DAILY_REPEAT_INTERVAL</a> = 1<code> [static]</code></td>
+          <td class="memname">static final int <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a2c1562ce22765d62eee8aab4dae7c270">org::motechproject::server::messagecampaign::domain::message.RepeatingCampaignMessage::DAILY_REPEAT_INTERVAL</a> = 1<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -529,12 +951,12 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
 
 </div>
 </div>
-<a class="anchor" id="a1406dfed38aa3560e878f79f892319b2"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::WEEKLY_REPEAT_INTERVAL" ref="a1406dfed38aa3560e878f79f892319b2" args="" -->
+<a class="anchor" id="a379e010a511d01c87907ddb7f2f2fbd8"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::domain::message::RepeatingCampaignMessage::WEEKLY_REPEAT_INTERVAL" ref="a379e010a511d01c87907ddb7f2f2fbd8" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final int <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a1406dfed38aa3560e878f79f892319b2">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.WEEKLY_REPEAT_INTERVAL</a> = 7<code> [static]</code></td>
+          <td class="memname">static final int <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_repeating_campaign_message.html#a379e010a511d01c87907ddb7f2f2fbd8">org::motechproject::server::messagecampaign::domain::message.RepeatingCampaignMessage::WEEKLY_REPEAT_INTERVAL</a> = 7<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -542,8 +964,9 @@ Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/domain/message/<a class="el" href="_repeating_campaign_message_8java.html">RepeatingCampaignMessage.java</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/domain/message/<a class="el" href="motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagecampaign_2domain_2mdecb3b088ca47633b98181ea6d7d6559.html">RepeatingCampaignMessage.java</a></li>
+<li>target/checkout/motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/domain/message/<a class="el" href="target_2checkout_2motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagec34b12e7ca99f5fb0a15d310153c4e7fc.html">RepeatingCampaignMessage.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

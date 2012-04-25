@@ -95,10 +95,113 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#aa3fc4c49e81ebb507c220e18c72880c1">getStartOfLateWindow</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a03f15262de08ab368c2a49bd34962c33">getStartOfMaxWindow</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a41d112da80f40531d98d430d14b3c41a">getCurrentMilestoneName</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#af2c3f85180d8f5f07e7cb83451218eaf">EnrollmentRecord</a> (String externalId, String scheduleName, String currentMilestoneName, <a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a> preferredAlertTime, DateTime referenceDateTime, DateTime enrollmentDateTime, DateTime earliestStart, DateTime dueStart, DateTime lateStart, DateTime maxStart)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a6c1e253639cfe2d10f1d555f4bc24a18">getExternalId</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a0859176019c5de743307f03608157df8">getScheduleName</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a8e6f5bfc898a55a5ccd8a2ee5b7af027">getPreferredAlertTime</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a35ed73a8728161838418720041f29e35">getReferenceDateTime</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a9cb7307eab518fc754c749b1ae577929">getEnrollmentDateTime</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a13f4f1c4d159c03082e4b4721227023e">getStartOfEarliestWindow</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#ad280dee91f912659ba8a3a7df9f7a428">getStartOfDueWindow</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#aa3fc4c49e81ebb507c220e18c72880c1">getStartOfLateWindow</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a03f15262de08ab368c2a49bd34962c33">getStartOfMaxWindow</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html#a41d112da80f40531d98d430d14b3c41a">getCurrentMilestoneName</a> ()</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>This is the record which will be returned when schedule tracking <a class="el" href="namespaceorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service.html">service</a> is queried for enrollments It holds the details of an enrollment. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af2c3f85180d8f5f07e7cb83451218eaf"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::EnrollmentRecord" ref="af2c3f85180d8f5f07e7cb83451218eaf" args="(String externalId, String scheduleName, String currentMilestoneName, Time preferredAlertTime, DateTime referenceDateTime, DateTime enrollmentDateTime, DateTime earliestStart, DateTime dueStart, DateTime lateStart, DateTime maxStart)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.scheduletracking.api.service.EnrollmentRecord.EnrollmentRecord </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>scheduleName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>currentMilestoneName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a>&nbsp;</td>
+          <td class="paramname"> <em>preferredAlertTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>referenceDateTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>enrollmentDateTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>earliestStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>dueStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>lateStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>maxStart</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This is the constructor which is used to create an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>externalId</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>scheduleName</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>currentMilestoneName</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>preferredAlertTime</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>referenceDateTime</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>enrollmentDateTime</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>earliestStart</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>dueStart</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lateStart</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>maxStart</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="af2c3f85180d8f5f07e7cb83451218eaf"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::EnrollmentRecord" ref="af2c3f85180d8f5f07e7cb83451218eaf" args="(String externalId, String scheduleName, String currentMilestoneName, Time preferredAlertTime, DateTime referenceDateTime, DateTime enrollmentDateTime, DateTime earliestStart, DateTime dueStart, DateTime lateStart, DateTime maxStart)" -->
 <div class="memitem">
 <div class="memproto">
@@ -212,6 +315,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a41d112da80f40531d98d430d14b3c41a"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getCurrentMilestoneName" ref="a41d112da80f40531d98d430d14b3c41a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.scheduletracking.api.service.EnrollmentRecord.getCurrentMilestoneName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the current milestone name of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>String </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a9cb7307eab518fc754c749b1ae577929"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getEnrollmentDateTime" ref="a9cb7307eab518fc754c749b1ae577929" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -229,6 +352,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This returns the enrollment datetime of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>DateTime </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9cb7307eab518fc754c749b1ae577929"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getEnrollmentDateTime" ref="a9cb7307eab518fc754c749b1ae577929" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime org.motechproject.scheduletracking.api.service.EnrollmentRecord.getEnrollmentDateTime </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the enrollment datetime of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>DateTime </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6c1e253639cfe2d10f1d555f4bc24a18"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getExternalId" ref="a6c1e253639cfe2d10f1d555f4bc24a18" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.scheduletracking.api.service.EnrollmentRecord.getExternalId </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the External Id of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>String </dd></dl>
 
 </div>
 </div>
@@ -272,6 +435,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a8e6f5bfc898a55a5ccd8a2ee5b7af027"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getPreferredAlertTime" ref="a8e6f5bfc898a55a5ccd8a2ee5b7af027" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_time.html">Time</a> org.motechproject.scheduletracking.api.service.EnrollmentRecord.getPreferredAlertTime </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the preferred alert time of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Time </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a35ed73a8728161838418720041f29e35"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getReferenceDateTime" ref="a35ed73a8728161838418720041f29e35" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime org.motechproject.scheduletracking.api.service.EnrollmentRecord.getReferenceDateTime </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the reference datetime of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>DateTime </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a35ed73a8728161838418720041f29e35"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getReferenceDateTime" ref="a35ed73a8728161838418720041f29e35" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -312,6 +515,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a0859176019c5de743307f03608157df8"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getScheduleName" ref="a0859176019c5de743307f03608157df8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.scheduletracking.api.service.EnrollmentRecord.getScheduleName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the Schedule Name of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>String </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad280dee91f912659ba8a3a7df9f7a428"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getStartOfDueWindow" ref="ad280dee91f912659ba8a3a7df9f7a428" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -328,6 +551,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="memdoc">
 
 <p>This returns the due window start datetime of current milestone of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>DateTime </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad280dee91f912659ba8a3a7df9f7a428"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getStartOfDueWindow" ref="ad280dee91f912659ba8a3a7df9f7a428" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime org.motechproject.scheduletracking.api.service.EnrollmentRecord.getStartOfDueWindow </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the due window start datetime of current milestone of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>DateTime </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a13f4f1c4d159c03082e4b4721227023e"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getStartOfEarliestWindow" ref="a13f4f1c4d159c03082e4b4721227023e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime org.motechproject.scheduletracking.api.service.EnrollmentRecord.getStartOfEarliestWindow </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the earliest window start datetime of current milestone of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>DateTime </dd></dl>
 
 </div>
@@ -372,6 +635,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="aa3fc4c49e81ebb507c220e18c72880c1"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getStartOfLateWindow" ref="aa3fc4c49e81ebb507c220e18c72880c1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime org.motechproject.scheduletracking.api.service.EnrollmentRecord.getStartOfLateWindow </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the late window start datetime of current milestone of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>DateTime </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a03f15262de08ab368c2a49bd34962c33"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getStartOfMaxWindow" ref="a03f15262de08ab368c2a49bd34962c33" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -392,8 +675,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/service/<a class="el" href="_enrollment_record_8java.html">EnrollmentRecord.java</a></li>
+<a class="anchor" id="a03f15262de08ab368c2a49bd34962c33"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::service::EnrollmentRecord::getStartOfMaxWindow" ref="a03f15262de08ab368c2a49bd34962c33" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime org.motechproject.scheduletracking.api.service.EnrollmentRecord.getStartOfMaxWindow </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This returns the max window start datetime of current milestone of an <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1service_1_1_enrollment_record.html" title="This is the record which will be returned when schedule tracking service is queried...">EnrollmentRecord</a>. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>DateTime </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/service/<a class="el" href="motech-scheduletracking-api_2src_2main_2java_2org_2motechproject_2scheduletracking_2api_2service_2_enrollment_record_8java.html">EnrollmentRecord.java</a></li>
+<li>target/checkout/motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/service/<a class="el" href="target_2checkout_2motech-scheduletracking-api_2src_2main_2java_2org_2motechproject_2scheduletrac8aad22edb5aea2b52075e328294e83ce.html">EnrollmentRecord.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

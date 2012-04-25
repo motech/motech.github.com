@@ -85,6 +85,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1ivr_1_1kookoo_1_1extensions_1_1_call_flow_controller.html#a0dda697a50edeac4023ac4931483b45b">decisionTreeName</a> (<a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a> kooKooIVRContext)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1model_1_1_tree.html">Tree</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1ivr_1_1kookoo_1_1extensions_1_1_call_flow_controller.html#a9a805bc3feb6a0038612294754cd206f">getTree</a> (String treeName, <a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a> kooKooIVRContext)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1ivr_1_1kookoo_1_1extensions_1_1_call_flow_controller.html#a9386c96c8bd4fd20e497b0e9230512f6">treeComplete</a> (String treeName, <a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a> kooKooIVRContext)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1ivr_1_1kookoo_1_1extensions_1_1_call_flow_controller.html#a7d883f7481f1618d27b7df92522bb7fb">urlFor</a> (<a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a> kooKooIVRContext)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1ivr_1_1kookoo_1_1extensions_1_1_call_flow_controller.html#a0dda697a50edeac4023ac4931483b45b">decisionTreeName</a> (<a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a> kooKooIVRContext)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1model_1_1_tree.html">Tree</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1ivr_1_1kookoo_1_1extensions_1_1_call_flow_controller.html#a9a805bc3feb6a0038612294754cd206f">getTree</a> (String treeName, <a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a> kooKooIVRContext)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceorg_1_1motechproject_1_1ivr_1_1kookoo_1_1extensions_1_1_call_flow_controller.html#a9386c96c8bd4fd20e497b0e9230512f6">treeComplete</a> (String treeName, <a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a> kooKooIVRContext)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Call flow <a class="el" href="namespaceorg_1_1motechproject_1_1ivr_1_1kookoo_1_1controller.html">controller</a> exposes handlers for implementing IVR flows. </p>
@@ -114,6 +118,71 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0dda697a50edeac4023ac4931483b45b"></a><!-- doxytag: member="org::motechproject::ivr::kookoo::extensions::CallFlowController::decisionTreeName" ref="a0dda697a50edeac4023ac4931483b45b" args="(KooKooIVRContext kooKooIVRContext)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.ivr.kookoo.extensions.CallFlowController.decisionTreeName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a>&nbsp;</td>
+          <td class="paramname"> <em>kooKooIVRContext</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get Next decision tree to serve base on current call status. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kooKooIVRContext</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a805bc3feb6a0038612294754cd206f"></a><!-- doxytag: member="org::motechproject::ivr::kookoo::extensions::CallFlowController::getTree" ref="a9a805bc3feb6a0038612294754cd206f" args="(String treeName, KooKooIVRContext kooKooIVRContext)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1decisiontree_1_1model_1_1_tree.html">Tree</a> org.motechproject.ivr.kookoo.extensions.CallFlowController.getTree </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>treeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a>&nbsp;</td>
+          <td class="paramname"> <em>kooKooIVRContext</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Lookup tree for given tree name. </p>
+<p>Generally from a registry. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>treeName</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>kooKooIVRContext</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Tree to serve </dd></dl>
 
 </div>
 </div>
@@ -191,6 +260,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a9386c96c8bd4fd20e497b0e9230512f6"></a><!-- doxytag: member="org::motechproject::ivr::kookoo::extensions::CallFlowController::treeComplete" ref="a9386c96c8bd4fd20e497b0e9230512f6" args="(String treeName, KooKooIVRContext kooKooIVRContext)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.ivr.kookoo.extensions.CallFlowController.treeComplete </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>treeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a>&nbsp;</td>
+          <td class="paramname"> <em>kooKooIVRContext</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Mark tree as completed so that next call <a class="el" href="namespaceorg_1_1motechproject_1_1ivr_1_1event.html">event</a> will determine next tree. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>treeName</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>kooKooIVRContext</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a7d883f7481f1618d27b7df92522bb7fb"></a><!-- doxytag: member="org::motechproject::ivr::kookoo::extensions::CallFlowController::urlFor" ref="a7d883f7481f1618d27b7df92522bb7fb" args="(KooKooIVRContext kooKooIVRContext)" -->
 <div class="memitem">
 <div class="memproto">
@@ -218,8 +323,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this interface was generated from the following file:<ul>
-<li>motech-ivr-kookoo/src/main/java/org/motechproject/ivr/kookoo/extensions/<a class="el" href="_call_flow_controller_8java.html">CallFlowController.java</a></li>
+<a class="anchor" id="a7d883f7481f1618d27b7df92522bb7fb"></a><!-- doxytag: member="org::motechproject::ivr::kookoo::extensions::CallFlowController::urlFor" ref="a7d883f7481f1618d27b7df92522bb7fb" args="(KooKooIVRContext kooKooIVRContext)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.ivr.kookoo.extensions.CallFlowController.urlFor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1ivr_1_1kookoo_1_1_koo_koo_i_v_r_context.html">KooKooIVRContext</a>&nbsp;</td>
+          <td class="paramname"> <em>kooKooIVRContext</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Extension point for determining next URL for handling IVR Event in the call flow. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>kooKooIVRContext</em>&nbsp;</td><td><a class="el" href="namespaceorg_1_1motechproject_1_1context.html">context</a> information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following files:<ul>
+<li>motech-ivr-kookoo/src/main/java/org/motechproject/ivr/kookoo/extensions/<a class="el" href="motech-ivr-kookoo_2src_2main_2java_2org_2motechproject_2ivr_2kookoo_2extensions_2_call_flow_controller_8java.html">CallFlowController.java</a></li>
+<li>target/checkout/motech-ivr-kookoo/src/main/java/org/motechproject/ivr/kookoo/extensions/<a class="el" href="target_2checkout_2motech-ivr-kookoo_2src_2main_2java_2org_2motechproject_2ivr_2kookoo_2extensions_2_call_flow_controller_8java.html">CallFlowController.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

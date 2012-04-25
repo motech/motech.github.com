@@ -74,13 +74,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.server.pillreminder.api.domain.PillRegimen Class Reference</h1><!-- doxytag: class="org::motechproject::server::pillreminder::api::domain::PillRegimen" --><!-- doxytag: inherits="org::motechproject::model::MotechBaseDataObject" --><div class="dynheader">
+<h1>org.motechproject.server.pillreminder.api.domain.PillRegimen Class Reference</h1><!-- doxytag: class="org::motechproject::server::pillreminder::api::domain::PillRegimen" --><!-- doxytag: inherits="org::motechproject::model::MotechBaseDataObject,org::motechproject::model::MotechBaseDataObject" --><div class="dynheader">
 Inheritance diagram for org.motechproject.server.pillreminder.api.domain.PillRegimen:</div>
 <div class="dynsection">
  <div class="center">
   <img src="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.gif" usemap="#org.motechproject.server.pillreminder.api.domain.PillRegimen_map" alt=""/>
   <map id="org.motechproject.server.pillreminder.api.domain.PillRegimen_map" name="org.motechproject.server.pillreminder.api.domain.PillRegimen_map">
 <area href="classorg_1_1motechproject_1_1model_1_1_motech_base_data_object.html" alt="org.motechproject.model.MotechBaseDataObject" shape="rect" coords="0,0,359,24"/>
+<area href="classorg_1_1motechproject_1_1model_1_1_motech_base_data_object.html" alt="org.motechproject.model.MotechBaseDataObject" shape="rect" coords="369,0,728,24"/>
 </map>
  </div>
 </div>
@@ -101,8 +102,71 @@ Inheritance diagram for org.motechproject.server.pillreminder.api.domain.PillReg
 <tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#ac09e0d8ed84fb4d91068dc7562667265">isFirstReminderFor</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> dosage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#ac42c7803e8ab16bda85cb94339530fea">numberOfTimesPillRemindersSentFor</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> dosage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#a730a11cceb6b6b4f304052b92c2807bd">timesPillRemainderWillBeSent</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#af06e7849e9d2332a92eda6558f6e5967">PillRegimen</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#ad559c948c94cfd9cae78c1e98f0fcc88">PillRegimen</a> (String externalId, Set&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> &gt; dosages, <a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_daily_schedule_details.html">DailyScheduleDetails</a> scheduleDetails)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#a6a1e3840654b42cd8839dd00ba25d314">getExternalId</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#aac1e581ecb72e8111107d55290410ab1">setExternalId</a> (String externalId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Set&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#a6ded36218127056a85854c9b24881341">getDosages</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#a5bdb21ffdd48ad002dafb910e554a727">setDosages</a> (Set&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> &gt; dosages)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_daily_schedule_details.html">DailyScheduleDetails</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#a4d3edb4e6d1a6698033dc7418b134a0b">getScheduleDetails</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#aac9d99ff5ae046755250e739d53af134">setScheduleDetails</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_daily_schedule_details.html">DailyScheduleDetails</a> scheduleDetails)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#a50480adc0d3bebfa5af239a417fbae3b">validate</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#a611674c4faed11a873103a4f9afef185">getDosage</a> (String dosageId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boolean&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#ac09e0d8ed84fb4d91068dc7562667265">isFirstReminderFor</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> dosage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#ac42c7803e8ab16bda85cb94339530fea">numberOfTimesPillRemindersSentFor</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> dosage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_pill_regimen.html#a730a11cceb6b6b4f304052b92c2807bd">timesPillRemainderWillBeSent</a> ()</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af06e7849e9d2332a92eda6558f6e5967"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::PillRegimen" ref="af06e7849e9d2332a92eda6558f6e5967" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.pillreminder.api.domain.PillRegimen.PillRegimen </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad559c948c94cfd9cae78c1e98f0fcc88"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::PillRegimen" ref="ad559c948c94cfd9cae78c1e98f0fcc88" args="(String externalId, Set&lt; Dosage &gt; dosages, DailyScheduleDetails scheduleDetails)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.pillreminder.api.domain.PillRegimen.PillRegimen </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Set&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> &gt;&nbsp;</td>
+          <td class="paramname"> <em>dosages</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_daily_schedule_details.html">DailyScheduleDetails</a>&nbsp;</td>
+          <td class="paramname"> <em>scheduleDetails</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af06e7849e9d2332a92eda6558f6e5967"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::PillRegimen" ref="af06e7849e9d2332a92eda6558f6e5967" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -172,12 +236,64 @@ Inheritance diagram for org.motechproject.server.pillreminder.api.domain.PillReg
 
 </div>
 </div>
+<a class="anchor" id="a611674c4faed11a873103a4f9afef185"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::getDosage" ref="a611674c4faed11a873103a4f9afef185" args="(String dosageId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> org.motechproject.server.pillreminder.api.domain.PillRegimen.getDosage </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>dosageId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6ded36218127056a85854c9b24881341"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::getDosages" ref="a6ded36218127056a85854c9b24881341" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Set&lt;<a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a>&gt; org.motechproject.server.pillreminder.api.domain.PillRegimen.getDosages </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ded36218127056a85854c9b24881341"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::getDosages" ref="a6ded36218127056a85854c9b24881341" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Set&lt;<a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a>&gt; org.motechproject.server.pillreminder.api.domain.PillRegimen.getDosages </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a1e3840654b42cd8839dd00ba25d314"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::getExternalId" ref="a6a1e3840654b42cd8839dd00ba25d314" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.pillreminder.api.domain.PillRegimen.getExternalId </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -223,12 +339,65 @@ Inheritance diagram for org.motechproject.server.pillreminder.api.domain.PillReg
 
 </div>
 </div>
+<a class="anchor" id="a4d3edb4e6d1a6698033dc7418b134a0b"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::getScheduleDetails" ref="a4d3edb4e6d1a6698033dc7418b134a0b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_daily_schedule_details.html">DailyScheduleDetails</a> org.motechproject.server.pillreminder.api.domain.PillRegimen.getScheduleDetails </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac09e0d8ed84fb4d91068dc7562667265"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::isFirstReminderFor" ref="ac09e0d8ed84fb4d91068dc7562667265" args="(Dosage dosage)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">boolean org.motechproject.server.pillreminder.api.domain.PillRegimen.isFirstReminderFor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a>&nbsp;</td>
+          <td class="paramname"> <em>dosage</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac09e0d8ed84fb4d91068dc7562667265"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::isFirstReminderFor" ref="ac09e0d8ed84fb4d91068dc7562667265" args="(Dosage dosage)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.server.pillreminder.api.domain.PillRegimen.isFirstReminderFor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a>&nbsp;</td>
+          <td class="paramname"> <em>dosage</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac42c7803e8ab16bda85cb94339530fea"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::numberOfTimesPillRemindersSentFor" ref="ac42c7803e8ab16bda85cb94339530fea" args="(Dosage dosage)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.server.pillreminder.api.domain.PillRegimen.numberOfTimesPillRemindersSentFor </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a>&nbsp;</td>
           <td class="paramname"> <em>dosage</em></td>
@@ -277,6 +446,24 @@ Inheritance diagram for org.motechproject.server.pillreminder.api.domain.PillReg
 
 </div>
 </div>
+<a class="anchor" id="a5bdb21ffdd48ad002dafb910e554a727"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::setDosages" ref="a5bdb21ffdd48ad002dafb910e554a727" args="(Set&lt; Dosage &gt; dosages)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.pillreminder.api.domain.PillRegimen.setDosages </td>
+          <td>(</td>
+          <td class="paramtype">Set&lt; <a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_dosage.html">Dosage</a> &gt;&nbsp;</td>
+          <td class="paramname"> <em>dosages</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aac1e581ecb72e8111107d55290410ab1"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::setExternalId" ref="aac1e581ecb72e8111107d55290410ab1" args="(String externalId)" -->
 <div class="memitem">
 <div class="memproto">
@@ -286,6 +473,42 @@ Inheritance diagram for org.motechproject.server.pillreminder.api.domain.PillReg
           <td>(</td>
           <td class="paramtype">String&nbsp;</td>
           <td class="paramname"> <em>externalId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac1e581ecb72e8111107d55290410ab1"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::setExternalId" ref="aac1e581ecb72e8111107d55290410ab1" args="(String externalId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.pillreminder.api.domain.PillRegimen.setExternalId </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac9d99ff5ae046755250e739d53af134"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::setScheduleDetails" ref="aac9d99ff5ae046755250e739d53af134" args="(DailyScheduleDetails scheduleDetails)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.pillreminder.api.domain.PillRegimen.setScheduleDetails </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1pillreminder_1_1api_1_1domain_1_1_daily_schedule_details.html">DailyScheduleDetails</a>&nbsp;</td>
+          <td class="paramname"> <em>scheduleDetails</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -330,6 +553,23 @@ Inheritance diagram for org.motechproject.server.pillreminder.api.domain.PillReg
 
 </div>
 </div>
+<a class="anchor" id="a730a11cceb6b6b4f304052b92c2807bd"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::timesPillRemainderWillBeSent" ref="a730a11cceb6b6b4f304052b92c2807bd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int org.motechproject.server.pillreminder.api.domain.PillRegimen.timesPillRemainderWillBeSent </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a50480adc0d3bebfa5af239a417fbae3b"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::validate" ref="a50480adc0d3bebfa5af239a417fbae3b" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -347,8 +587,26 @@ Inheritance diagram for org.motechproject.server.pillreminder.api.domain.PillReg
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-pillreminder-api/src/main/java/org/motechproject/server/pillreminder/api/domain/<a class="el" href="_pill_regimen_8java.html">PillRegimen.java</a></li>
+<a class="anchor" id="a50480adc0d3bebfa5af239a417fbae3b"></a><!-- doxytag: member="org::motechproject::server::pillreminder::api::domain::PillRegimen::validate" ref="a50480adc0d3bebfa5af239a417fbae3b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.pillreminder.api.domain.PillRegimen.validate </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-pillreminder-api/src/main/java/org/motechproject/server/pillreminder/api/domain/<a class="el" href="motech-pillreminder-api_2src_2main_2java_2org_2motechproject_2server_2pillreminder_2api_2domain_2_pill_regimen_8java.html">PillRegimen.java</a></li>
+<li>target/checkout/motech-pillreminder-api/src/main/java/org/motechproject/server/pillreminder/api/domain/<a class="el" href="target_2checkout_2motech-pillreminder-api_2src_2main_2java_2org_2motechproject_2server_2pillremi04076603a217de1efea8b8ae3cb934a9.html">PillRegimen.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

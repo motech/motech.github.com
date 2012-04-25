@@ -74,8 +74,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.scheduletracking.api.repository.AllEnrollments Class Reference</h1><!-- doxytag: class="org::motechproject::scheduletracking::api::repository::AllEnrollments" --><!-- doxytag: inherits="org::motechproject::dao::MotechBaseRepository" -->
-<p>Inherits org::motechproject::dao::MotechBaseRepository&lt; Enrollment &gt;.</p>
+<h1>org.motechproject.scheduletracking.api.repository.AllEnrollments Class Reference</h1><!-- doxytag: class="org::motechproject::scheduletracking::api::repository::AllEnrollments" --><!-- doxytag: inherits="org::motechproject::dao::MotechBaseRepository,org::motechproject::dao::MotechBaseRepository" -->
+<p>Inherits org::motechproject::dao::MotechBaseRepository&lt; Enrollment &gt;, and org::motechproject::dao::MotechBaseRepository&lt; Enrollment &gt;.</p>
 
 <p><a href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
@@ -89,8 +89,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#a4344804eff173c90d8543f506cc6bdb2">findByStatus</a> (EnrollmentStatus status)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#a2affcdb52980479edd2bf333c7b4f621">completedDuring</a> (DateTime start, DateTime end)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#ac333e814918ee4f7a6043e55a43f1faa">getAll</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#abfcec52c09d480110756cfff19c038b1">AllEnrollments</a> (@Qualifier(&quot;scheduleTrackingDbConnector&quot;) CouchDbConnector db)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#a9a90999bcaa7b33fbd892959e4dc27a5">getActiveEnrollment</a> (String externalId, String scheduleName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#a979ec6c748d71636696152e972b9f8fe">findByMetadataProperty</a> (String property, String value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#a28dcdaaa25b7067daa2d7137a330f466">findByExternalId</a> (String externalId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#aa01257ba0262b426b3cb15a92a500995">findBySchedule</a> (List&lt; String &gt; scheduleName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#a7744a614932cc2e2fecbcf2a509ebe6b">findByCurrentMilestone</a> (String milestoneName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#a4344804eff173c90d8543f506cc6bdb2">findByStatus</a> (EnrollmentStatus status)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#a2affcdb52980479edd2bf333c7b4f621">completedDuring</a> (DateTime start, DateTime end)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1repository_1_1_all_enrollments.html#ac333e814918ee4f7a6043e55a43f1faa">getAll</a> ()</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abfcec52c09d480110756cfff19c038b1"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::AllEnrollments" ref="abfcec52c09d480110756cfff19c038b1" args="(@Qualifier(&quot;scheduleTrackingDbConnector&quot;) CouchDbConnector db)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.scheduletracking.api.repository.AllEnrollments.AllEnrollments </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;scheduleTrackingDbConnector&quot;) CouchDbConnector&nbsp;</td>
+          <td class="paramname"> <em>db</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="abfcec52c09d480110756cfff19c038b1"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::AllEnrollments" ref="abfcec52c09d480110756cfff19c038b1" args="(@Qualifier(&quot;scheduleTrackingDbConnector&quot;) CouchDbConnector db)" -->
 <div class="memitem">
 <div class="memproto">
@@ -137,6 +164,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a2affcdb52980479edd2bf333c7b4f621"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::completedDuring" ref="a2affcdb52980479edd2bf333c7b4f621" args="(DateTime start, DateTime end)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a>&gt; org.motechproject.scheduletracking.api.repository.AllEnrollments.completedDuring </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&nbsp;</td>
+          <td class="paramname"> <em>end</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7744a614932cc2e2fecbcf2a509ebe6b"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::findByCurrentMilestone" ref="a7744a614932cc2e2fecbcf2a509ebe6b" args="(String milestoneName)" -->
 <div class="memitem">
 <div class="memproto">
@@ -146,6 +200,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           <td>(</td>
           <td class="paramtype">String&nbsp;</td>
           <td class="paramname"> <em>milestoneName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7744a614932cc2e2fecbcf2a509ebe6b"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::findByCurrentMilestone" ref="a7744a614932cc2e2fecbcf2a509ebe6b" args="(String milestoneName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a>&gt; org.motechproject.scheduletracking.api.repository.AllEnrollments.findByCurrentMilestone </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>milestoneName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a28dcdaaa25b7067daa2d7137a330f466"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::findByExternalId" ref="a28dcdaaa25b7067daa2d7137a330f466" args="(String externalId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a>&gt; org.motechproject.scheduletracking.api.repository.AllEnrollments.findByExternalId </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -200,6 +290,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a979ec6c748d71636696152e972b9f8fe"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::findByMetadataProperty" ref="a979ec6c748d71636696152e972b9f8fe" args="(String property, String value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a>&gt; org.motechproject.scheduletracking.api.repository.AllEnrollments.findByMetadataProperty </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa01257ba0262b426b3cb15a92a500995"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::findBySchedule" ref="aa01257ba0262b426b3cb15a92a500995" args="(List&lt; String &gt; scheduleName)" -->
 <div class="memitem">
 <div class="memproto">
@@ -209,6 +326,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           <td>(</td>
           <td class="paramtype">List&lt; String &gt;&nbsp;</td>
           <td class="paramname"> <em>scheduleName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa01257ba0262b426b3cb15a92a500995"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::findBySchedule" ref="aa01257ba0262b426b3cb15a92a500995" args="(List&lt; String &gt; scheduleName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a>&gt; org.motechproject.scheduletracking.api.repository.AllEnrollments.findBySchedule </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&nbsp;</td>
+          <td class="paramname"> <em>scheduleName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4344804eff173c90d8543f506cc6bdb2"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::findByStatus" ref="a4344804eff173c90d8543f506cc6bdb2" args="(EnrollmentStatus status)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a>&gt; org.motechproject.scheduletracking.api.repository.AllEnrollments.findByStatus </td>
+          <td>(</td>
+          <td class="paramtype">EnrollmentStatus&nbsp;</td>
+          <td class="paramname"> <em>status</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -263,6 +416,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a9a90999bcaa7b33fbd892959e4dc27a5"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::getActiveEnrollment" ref="a9a90999bcaa7b33fbd892959e4dc27a5" args="(String externalId, String scheduleName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a> org.motechproject.scheduletracking.api.repository.AllEnrollments.getActiveEnrollment </td>
+          <td>(</td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&nbsp;</td>
+          <td class="paramname"> <em>scheduleName</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac333e814918ee4f7a6043e55a43f1faa"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::getAll" ref="ac333e814918ee4f7a6043e55a43f1faa" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -280,8 +460,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/repository/<a class="el" href="_all_enrollments_8java.html">AllEnrollments.java</a></li>
+<a class="anchor" id="ac333e814918ee4f7a6043e55a43f1faa"></a><!-- doxytag: member="org::motechproject::scheduletracking::api::repository::AllEnrollments::getAll" ref="ac333e814918ee4f7a6043e55a43f1faa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classorg_1_1motechproject_1_1scheduletracking_1_1api_1_1domain_1_1_enrollment.html">Enrollment</a>&gt; org.motechproject.scheduletracking.api.repository.AllEnrollments.getAll </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/repository/<a class="el" href="motech-scheduletracking-api_2src_2main_2java_2org_2motechproject_2scheduletracking_2api_2repository_2_all_enrollments_8java.html">AllEnrollments.java</a></li>
+<li>target/checkout/motech-scheduletracking-api/src/main/java/org/motechproject/scheduletracking/api/repository/<a class="el" href="target_2checkout_2motech-scheduletracking-api_2src_2main_2java_2org_2motechproject_2scheduletrac7b7933ee51396bd66ee848afeed13f86.html">AllEnrollments.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.server.event.ServerEventRelay Class Reference</h1><!-- doxytag: class="org::motechproject::server::event::ServerEventRelay" --><!-- doxytag: inherits="org::motechproject::event::EventRelay" -->
+<h1>org.motechproject.server.event.ServerEventRelay Class Reference</h1><!-- doxytag: class="org::motechproject::server::event::ServerEventRelay" --><!-- doxytag: inherits="org::motechproject::event::EventRelay,org::motechproject::event::EventRelay" -->
 <p>This class handled incoming scheduled events and relays those events to the appropriate <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> listeners.  
 <a href="#_details">More...</a></p>
 <div class="dynheader">
@@ -84,6 +84,7 @@ Inheritance diagram for org.motechproject.server.event.ServerEventRelay:</div>
   <img src="classorg_1_1motechproject_1_1server_1_1event_1_1_server_event_relay.gif" usemap="#org.motechproject.server.event.ServerEventRelay_map" alt=""/>
   <map id="org.motechproject.server.event.ServerEventRelay_map" name="org.motechproject.server.event.ServerEventRelay_map">
 <area href="interfaceorg_1_1motechproject_1_1event_1_1_event_relay.html" alt="org.motechproject.event.EventRelay" shape="rect" coords="0,0,297,24"/>
+<area href="interfaceorg_1_1motechproject_1_1event_1_1_event_relay.html" alt="org.motechproject.event.EventRelay" shape="rect" coords="307,0,604,24"/>
 </map>
  </div>
 </div>
@@ -95,10 +96,64 @@ Inheritance diagram for org.motechproject.server.event.ServerEventRelay:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_server_event_relay.html#a7a945f06bfd66e6a920989127cd70d09">ServerEventRelay</a> (<a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_outbound_event_gateway.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html">EventListenerRegistry</a> eventListenerRegistry, <a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html">MetricsAgent</a> metricsAgent)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_server_event_relay.html#a4888fc8464fe893ddaf050fad19a5d24">sendEventMessage</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> event)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_server_event_relay.html#aa47cb23ddc45c5ade82e4a874ccdf611">relayEvent</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> event)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_server_event_relay.html#a719edc621af8542cb820c868e19baf99">ServerEventRelay</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_server_event_relay.html#a7a945f06bfd66e6a920989127cd70d09">ServerEventRelay</a> (<a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_outbound_event_gateway.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html">EventListenerRegistry</a> eventListenerRegistry, <a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html">MetricsAgent</a> metricsAgent)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_server_event_relay.html#a4888fc8464fe893ddaf050fad19a5d24">sendEventMessage</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> event)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_server_event_relay.html#aa47cb23ddc45c5ade82e4a874ccdf611">relayEvent</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> event)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>This class handled incoming scheduled events and relays those events to the appropriate <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> listeners. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a719edc621af8542cb820c868e19baf99"></a><!-- doxytag: member="org::motechproject::server::event::ServerEventRelay::ServerEventRelay" ref="a719edc621af8542cb820c868e19baf99" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.event.ServerEventRelay.ServerEventRelay </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a945f06bfd66e6a920989127cd70d09"></a><!-- doxytag: member="org::motechproject::server::event::ServerEventRelay::ServerEventRelay" ref="a7a945f06bfd66e6a920989127cd70d09" args="(OutboundEventGateway outboundEventGateway, EventListenerRegistry eventListenerRegistry, MetricsAgent metricsAgent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.event.ServerEventRelay.ServerEventRelay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceorg_1_1motechproject_1_1gateway_1_1_outbound_event_gateway.html">OutboundEventGateway</a>&nbsp;</td>
+          <td class="paramname"> <em>outboundEventGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1event_1_1_event_listener_registry.html">EventListenerRegistry</a>&nbsp;</td>
+          <td class="paramname"> <em>eventListenerRegistry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceorg_1_1motechproject_1_1metrics_1_1_metrics_agent.html">MetricsAgent</a>&nbsp;</td>
+          <td class="paramname"> <em>metricsAgent</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a719edc621af8542cb820c868e19baf99"></a><!-- doxytag: member="org::motechproject::server::event::ServerEventRelay::ServerEventRelay" ref="a719edc621af8542cb820c868e19baf99" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -176,6 +231,32 @@ Inheritance diagram for org.motechproject.server.event.ServerEventRelay:</div>
 
 </div>
 </div>
+<a class="anchor" id="aa47cb23ddc45c5ade82e4a874ccdf611"></a><!-- doxytag: member="org::motechproject::server::event::ServerEventRelay::relayEvent" ref="aa47cb23ddc45c5ade82e4a874ccdf611" args="(MotechEvent event)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.event.ServerEventRelay.relayEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a>&nbsp;</td>
+          <td class="paramname"> <em>event</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Relay an <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> to all the listeners of that <a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a></em>&nbsp;</td><td><a class="el" href="namespaceorg_1_1motechproject_1_1server_1_1event.html" title="MOTECH PLATFORM OPENSOURCE LICENSE AGREEMENT.">event</a> being relayed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a4888fc8464fe893ddaf050fad19a5d24"></a><!-- doxytag: member="org::motechproject::server::event::ServerEventRelay::sendEventMessage" ref="a4888fc8464fe893ddaf050fad19a5d24" args="(MotechEvent event)" -->
 <div class="memitem">
 <div class="memproto">
@@ -196,8 +277,29 @@ Inheritance diagram for org.motechproject.server.event.ServerEventRelay:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-platform-server-api/src/main/java/org/motechproject/server/event/<a class="el" href="_server_event_relay_8java.html">ServerEventRelay.java</a></li>
+<a class="anchor" id="a4888fc8464fe893ddaf050fad19a5d24"></a><!-- doxytag: member="org::motechproject::server::event::ServerEventRelay::sendEventMessage" ref="a4888fc8464fe893ddaf050fad19a5d24" args="(MotechEvent event)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.event.ServerEventRelay.sendEventMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a>&nbsp;</td>
+          <td class="paramname"> <em>event</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1event_1_1_event_relay.html#a4ee17c9019a24fb33e5d374c10f20b0c">org.motechproject.event.EventRelay</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-platform-server-api/src/main/java/org/motechproject/server/event/<a class="el" href="motech-platform-server-api_2src_2main_2java_2org_2motechproject_2server_2event_2_server_event_relay_8java.html">ServerEventRelay.java</a></li>
+<li>target/checkout/motech-platform-server-api/src/main/java/org/motechproject/server/event/<a class="el" href="target_2checkout_2motech-platform-server-api_2src_2main_2java_2org_2motechproject_2server_2event_2_server_event_relay_8java.html">ServerEventRelay.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

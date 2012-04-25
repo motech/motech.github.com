@@ -74,13 +74,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.sms.http.SmsSendHandler Class Reference</h1><!-- doxytag: class="org::motechproject::sms::http::SmsSendHandler" --><!-- doxytag: inherits="org::motechproject::sms::api::SmsEventHandler" --><div class="dynheader">
+<h1>org.motechproject.sms.http.SmsSendHandler Class Reference</h1><!-- doxytag: class="org::motechproject::sms::http::SmsSendHandler" --><!-- doxytag: inherits="org::motechproject::sms::api::SmsEventHandler,org::motechproject::sms::api::SmsEventHandler" --><div class="dynheader">
 Inheritance diagram for org.motechproject.sms.http.SmsSendHandler:</div>
 <div class="dynsection">
  <div class="center">
   <img src="classorg_1_1motechproject_1_1sms_1_1http_1_1_sms_send_handler.gif" usemap="#org.motechproject.sms.http.SmsSendHandler_map" alt=""/>
   <map id="org.motechproject.sms.http.SmsSendHandler_map" name="org.motechproject.sms.http.SmsSendHandler_map">
 <area href="interfaceorg_1_1motechproject_1_1sms_1_1api_1_1_sms_event_handler.html" alt="org.motechproject.sms.api.SmsEventHandler" shape="rect" coords="0,0,264,24"/>
+<area href="interfaceorg_1_1motechproject_1_1sms_1_1api_1_1_sms_event_handler.html" alt="org.motechproject.sms.api.SmsEventHandler" shape="rect" coords="274,0,538,24"/>
 </map>
  </div>
 </div>
@@ -90,8 +91,37 @@ Inheritance diagram for org.motechproject.sms.http.SmsSendHandler:</div>
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1sms_1_1http_1_1_sms_send_handler.html#ae99bf97e850f73da0fdee831f84bb6b7">SmsSendHandler</a> (<a class="el" href="classorg_1_1motechproject_1_1sms_1_1http_1_1_template_reader.html">TemplateReader</a> templateReader, HttpClient commonsHttpClient)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1sms_1_1http_1_1_sms_send_handler.html#ad75c68a636a448f49b9912d41a554227">handle</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> event)  throws IOException, SmsDeliveryFailureException </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1sms_1_1http_1_1_sms_send_handler.html#ae99bf97e850f73da0fdee831f84bb6b7">SmsSendHandler</a> (<a class="el" href="classorg_1_1motechproject_1_1sms_1_1http_1_1_template_reader.html">TemplateReader</a> templateReader, HttpClient commonsHttpClient)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1sms_1_1http_1_1_sms_send_handler.html#ad75c68a636a448f49b9912d41a554227">handle</a> (<a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a> event)  throws IOException, SmsDeliveryFailureException </td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae99bf97e850f73da0fdee831f84bb6b7"></a><!-- doxytag: member="org::motechproject::sms::http::SmsSendHandler::SmsSendHandler" ref="ae99bf97e850f73da0fdee831f84bb6b7" args="(TemplateReader templateReader, HttpClient commonsHttpClient)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.sms.http.SmsSendHandler.SmsSendHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1sms_1_1http_1_1_template_reader.html">TemplateReader</a>&nbsp;</td>
+          <td class="paramname"> <em>templateReader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HttpClient&nbsp;</td>
+          <td class="paramname"> <em>commonsHttpClient</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae99bf97e850f73da0fdee831f84bb6b7"></a><!-- doxytag: member="org::motechproject::sms::http::SmsSendHandler::SmsSendHandler" ref="ae99bf97e850f73da0fdee831f84bb6b7" args="(TemplateReader templateReader, HttpClient commonsHttpClient)" -->
 <div class="memitem">
 <div class="memproto">
@@ -140,8 +170,29 @@ Inheritance diagram for org.motechproject.sms.http.SmsSendHandler:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a class="anchor" id="ad75c68a636a448f49b9912d41a554227"></a><!-- doxytag: member="org::motechproject::sms::http::SmsSendHandler::handle" ref="ad75c68a636a448f49b9912d41a554227" args="(MotechEvent event)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.sms.http.SmsSendHandler.handle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1model_1_1_motech_event.html">MotechEvent</a>&nbsp;</td>
+          <td class="paramname"> <em>event</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>  throws IOException, <a class="el" href="classorg_1_1motechproject_1_1sms_1_1http_1_1_sms_delivery_failure_exception.html">SmsDeliveryFailureException</a> </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="interfaceorg_1_1motechproject_1_1sms_1_1api_1_1_sms_event_handler.html#a5edcb8ae1b0c11907e482ba03ad99bcd">org.motechproject.sms.api.SmsEventHandler</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>motech-sms-http/src/main/java/org/motechproject/sms/http/<a class="el" href="motech-sms-http_2src_2main_2java_2org_2motechproject_2sms_2http_2_sms_send_handler_8java.html">SmsSendHandler.java</a></li>
+<li>target/checkout/motech-sms-http/src/main/java/org/motechproject/sms/http/<a class="el" href="target_2checkout_2motech-sms-http_2src_2main_2java_2org_2motechproject_2sms_2http_2_sms_send_handler_8java.html">SmsSendHandler.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

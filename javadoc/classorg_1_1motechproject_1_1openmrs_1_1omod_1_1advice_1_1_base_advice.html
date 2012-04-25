@@ -74,15 +74,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.openmrs.omod.advice.BaseAdvice Class Reference</h1><!-- doxytag: class="org::motechproject::openmrs::omod::advice::BaseAdvice" --><!-- doxytag: inherits="org::springframework::aop::AfterReturningAdvice" --><div class="dynheader">
+<h1>org.motechproject.openmrs.omod.advice.BaseAdvice Class Reference</h1><!-- doxytag: class="org::motechproject::openmrs::omod::advice::BaseAdvice" --><!-- doxytag: inherits="org::springframework::aop::AfterReturningAdvice,org::springframework::aop::AfterReturningAdvice" --><div class="dynheader">
 Inheritance diagram for org.motechproject.openmrs.omod.advice.BaseAdvice:</div>
 <div class="dynsection">
  <div class="center">
   <img src="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.gif" usemap="#org.motechproject.openmrs.omod.advice.BaseAdvice_map" alt=""/>
   <map id="org.motechproject.openmrs.omod.advice.BaseAdvice_map" name="org.motechproject.openmrs.omod.advice.BaseAdvice_map">
 <area href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_encounter_advice.html" alt="org.motechproject.openmrs.omod.advice.EncounterAdvice" shape="rect" coords="0,56,344,80"/>
-<area href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_obs_advice.html" alt="org.motechproject.openmrs.omod.advice.ObsAdvice" shape="rect" coords="354,56,698,80"/>
-<area href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_patient_advice.html" alt="org.motechproject.openmrs.omod.advice.PatientAdvice" shape="rect" coords="708,56,1052,80"/>
+<area href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_encounter_advice.html" alt="org.motechproject.openmrs.omod.advice.EncounterAdvice" shape="rect" coords="354,56,698,80"/>
+<area href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_obs_advice.html" alt="org.motechproject.openmrs.omod.advice.ObsAdvice" shape="rect" coords="708,56,1052,80"/>
+<area href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_obs_advice.html" alt="org.motechproject.openmrs.omod.advice.ObsAdvice" shape="rect" coords="1062,56,1406,80"/>
+<area href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_patient_advice.html" alt="org.motechproject.openmrs.omod.advice.PatientAdvice" shape="rect" coords="1416,56,1760,80"/>
+<area href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_patient_advice.html" alt="org.motechproject.openmrs.omod.advice.PatientAdvice" shape="rect" coords="1770,56,2114,80"/>
 </map>
  </div>
 </div>
@@ -91,11 +94,12 @@ Inheritance diagram for org.motechproject.openmrs.omod.advice.BaseAdvice:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#adea0d6380b9f96a9ca9ec61c9f25c1c3">afterReturning</a> (Object returnValue, Method method, Object[] args, Object target)  throws Throwable </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#adea0d6380b9f96a9ca9ec61c9f25c1c3">afterReturning</a> (Object returnValue, Method method, Object[] args, Object target)  throws Throwable </td></tr>
 <tr><td colspan="2"><h2>Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static final String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#a861c11bcf4de2f97b02f849d53a92e6b">ADVICE_EVENT_RETURNED_VALUE</a> = &quot;returnedValue&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static final String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#a315795f4e8f8717f4432d10bd12ab376">ADVICE_EVENT_METHOD_INVOKED</a> = &quot;methodInvoked&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static final String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#a988be6b6310fd8c412501967469d2720">ADVICE_EVENT_RETURNED_VALUE</a> = &quot;returnedValue&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static final String&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#af63314f143c3fb1a4892c32214043e14">ADVICE_EVENT_METHOD_INVOKED</a> = &quot;methodInvoked&quot;</td></tr>
 <tr><td colspan="2"><h2>Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1service_1_1_omod_publisher.html">OmodPublisher</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#a4316563f4f34dafceb110e1a3269eb30">publisher</a> = new <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1service_1_1_omod_publisher.html">OmodPublisher</a>()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1service_1_1_omod_publisher.html">OmodPublisher</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#ad385d209103d9720aa075144d4bf3889">publisher</a> = new <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1service_1_1_omod_publisher.html">OmodPublisher</a>()</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="adea0d6380b9f96a9ca9ec61c9f25c1c3"></a><!-- doxytag: member="org::motechproject::openmrs::omod::advice::BaseAdvice::afterReturning" ref="adea0d6380b9f96a9ca9ec61c9f25c1c3" args="(Object returnValue, Method method, Object[] args, Object target)" -->
@@ -137,13 +141,52 @@ Inheritance diagram for org.motechproject.openmrs.omod.advice.BaseAdvice:</div>
 
 </div>
 </div>
+<a class="anchor" id="adea0d6380b9f96a9ca9ec61c9f25c1c3"></a><!-- doxytag: member="org::motechproject::openmrs::omod::advice::BaseAdvice::afterReturning" ref="adea0d6380b9f96a9ca9ec61c9f25c1c3" args="(Object returnValue, Method method, Object[] args, Object target)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.openmrs.omod.advice.BaseAdvice.afterReturning </td>
+          <td>(</td>
+          <td class="paramtype">Object&nbsp;</td>
+          <td class="paramname"> <em>returnValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Method&nbsp;</td>
+          <td class="paramname"> <em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Object[]&nbsp;</td>
+          <td class="paramname"> <em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Object&nbsp;</td>
+          <td class="paramname"> <em>target</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td>  throws Throwable </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a315795f4e8f8717f4432d10bd12ab376"></a><!-- doxytag: member="org::motechproject::openmrs::omod::advice::BaseAdvice::ADVICE_EVENT_METHOD_INVOKED" ref="a315795f4e8f8717f4432d10bd12ab376" args="" -->
+<a class="anchor" id="af63314f143c3fb1a4892c32214043e14"></a><!-- doxytag: member="org::motechproject::openmrs::omod::advice::BaseAdvice::ADVICE_EVENT_METHOD_INVOKED" ref="af63314f143c3fb1a4892c32214043e14" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#a315795f4e8f8717f4432d10bd12ab376">org.motechproject.openmrs.omod.advice.BaseAdvice.ADVICE_EVENT_METHOD_INVOKED</a> = &quot;methodInvoked&quot;<code> [static]</code></td>
+          <td class="memname">static final String <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#af63314f143c3fb1a4892c32214043e14">org::motechproject::openmrs::omod::advice.BaseAdvice::ADVICE_EVENT_METHOD_INVOKED</a> = &quot;methodInvoked&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -151,12 +194,12 @@ Inheritance diagram for org.motechproject.openmrs.omod.advice.BaseAdvice:</div>
 
 </div>
 </div>
-<a class="anchor" id="a861c11bcf4de2f97b02f849d53a92e6b"></a><!-- doxytag: member="org::motechproject::openmrs::omod::advice::BaseAdvice::ADVICE_EVENT_RETURNED_VALUE" ref="a861c11bcf4de2f97b02f849d53a92e6b" args="" -->
+<a class="anchor" id="a988be6b6310fd8c412501967469d2720"></a><!-- doxytag: member="org::motechproject::openmrs::omod::advice::BaseAdvice::ADVICE_EVENT_RETURNED_VALUE" ref="a988be6b6310fd8c412501967469d2720" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#a861c11bcf4de2f97b02f849d53a92e6b">org.motechproject.openmrs.omod.advice.BaseAdvice.ADVICE_EVENT_RETURNED_VALUE</a> = &quot;returnedValue&quot;<code> [static]</code></td>
+          <td class="memname">static final String <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#a988be6b6310fd8c412501967469d2720">org::motechproject::openmrs::omod::advice.BaseAdvice::ADVICE_EVENT_RETURNED_VALUE</a> = &quot;returnedValue&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -164,12 +207,12 @@ Inheritance diagram for org.motechproject.openmrs.omod.advice.BaseAdvice:</div>
 
 </div>
 </div>
-<a class="anchor" id="a4316563f4f34dafceb110e1a3269eb30"></a><!-- doxytag: member="org::motechproject::openmrs::omod::advice::BaseAdvice::publisher" ref="a4316563f4f34dafceb110e1a3269eb30" args="" -->
+<a class="anchor" id="ad385d209103d9720aa075144d4bf3889"></a><!-- doxytag: member="org::motechproject::openmrs::omod::advice::BaseAdvice::publisher" ref="ad385d209103d9720aa075144d4bf3889" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1service_1_1_omod_publisher.html">OmodPublisher</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#a4316563f4f34dafceb110e1a3269eb30">org.motechproject.openmrs.omod.advice.BaseAdvice.publisher</a> = new <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1service_1_1_omod_publisher.html">OmodPublisher</a>()<code> [protected]</code></td>
+          <td class="memname"><a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1service_1_1_omod_publisher.html">OmodPublisher</a> <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1advice_1_1_base_advice.html#ad385d209103d9720aa075144d4bf3889">org::motechproject::openmrs::omod::advice.BaseAdvice::publisher</a> = new <a class="el" href="classorg_1_1motechproject_1_1openmrs_1_1omod_1_1service_1_1_omod_publisher.html">OmodPublisher</a>()<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -177,8 +220,9 @@ Inheritance diagram for org.motechproject.openmrs.omod.advice.BaseAdvice:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-openmrs-omod/src/main/java/org/motechproject/openmrs/omod/advice/<a class="el" href="_base_advice_8java.html">BaseAdvice.java</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-openmrs-omod/src/main/java/org/motechproject/openmrs/omod/advice/<a class="el" href="motech-openmrs-omod_2src_2main_2java_2org_2motechproject_2openmrs_2omod_2advice_2_base_advice_8java.html">BaseAdvice.java</a></li>
+<li>target/checkout/motech-openmrs-omod/src/main/java/org/motechproject/openmrs/omod/advice/<a class="el" href="target_2checkout_2motech-openmrs-omod_2src_2main_2java_2org_2motechproject_2openmrs_2omod_2advice_2_base_advice_8java.html">BaseAdvice.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

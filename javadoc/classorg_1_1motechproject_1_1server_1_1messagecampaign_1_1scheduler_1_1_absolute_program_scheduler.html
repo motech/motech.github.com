@@ -74,18 +74,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>org.motechproject.server.messagecampaign.scheduler.AbsoluteProgramScheduler Class Reference</h1><!-- doxytag: class="org::motechproject::server::messagecampaign::scheduler::AbsoluteProgramScheduler" --><!-- doxytag: inherits="org::motechproject::server::messagecampaign::scheduler::MessageCampaignScheduler" -->
-<p>Inherits org::motechproject::server::messagecampaign::scheduler::MessageCampaignScheduler&lt; AbsoluteCampaignMessage, AbsoluteCampaign &gt;.</p>
+<h1>org.motechproject.server.messagecampaign.scheduler.AbsoluteProgramScheduler Class Reference</h1><!-- doxytag: class="org::motechproject::server::messagecampaign::scheduler::AbsoluteProgramScheduler" --><!-- doxytag: inherits="org::motechproject::server::messagecampaign::scheduler::MessageCampaignScheduler,org::motechproject::server::messagecampaign::scheduler::MessageCampaignScheduler" -->
+<p>Inherits org::motechproject::server::messagecampaign::scheduler::MessageCampaignScheduler&lt; AbsoluteCampaignMessage, AbsoluteCampaign &gt;, and org::motechproject::server::messagecampaign::scheduler::MessageCampaignScheduler&lt; AbsoluteCampaignMessage, AbsoluteCampaign &gt;.</p>
 
 <p><a href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1scheduler_1_1_absolute_program_scheduler-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1scheduler_1_1_absolute_program_scheduler.html#a0af1fea0655fd038c412187d6e3ccd38">AbsoluteProgramScheduler</a> (<a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html">MotechSchedulerService</a> schedulerService, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1contract_1_1_campaign_request.html">CampaignRequest</a> campaignRequest, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_absolute_campaign.html">AbsoluteCampaign</a> campaign, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollment_service.html">CampaignEnrollmentService</a> campaignEnrollmentService)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1scheduler_1_1_absolute_program_scheduler.html#a0af1fea0655fd038c412187d6e3ccd38">AbsoluteProgramScheduler</a> (<a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html">MotechSchedulerService</a> schedulerService, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1contract_1_1_campaign_request.html">CampaignRequest</a> campaignRequest, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_absolute_campaign.html">AbsoluteCampaign</a> campaign, <a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollment_service.html">CampaignEnrollmentService</a> campaignEnrollmentService)</td></tr>
 <tr><td colspan="2"><h2>Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1scheduler_1_1_absolute_program_scheduler.html#a62031af1863938f7c7712c7de59f2f19">scheduleJobFor</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_absolute_campaign_message.html">AbsoluteCampaignMessage</a> absoluteCampaignMessage)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1scheduler_1_1_absolute_program_scheduler.html#a2bfe5be5a16807540bde3bf6308296ba">getCampaignEnd</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1scheduler_1_1_absolute_program_scheduler.html#a62031af1863938f7c7712c7de59f2f19">scheduleJobFor</a> (<a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_absolute_campaign_message.html">AbsoluteCampaignMessage</a> absoluteCampaignMessage)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">DateTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1scheduler_1_1_absolute_program_scheduler.html#a2bfe5be5a16807540bde3bf6308296ba">getCampaignEnd</a> ()</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0af1fea0655fd038c412187d6e3ccd38"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::scheduler::AbsoluteProgramScheduler::AbsoluteProgramScheduler" ref="a0af1fea0655fd038c412187d6e3ccd38" args="(MotechSchedulerService schedulerService, CampaignRequest campaignRequest, AbsoluteCampaign campaign, CampaignEnrollmentService campaignEnrollmentService)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">org.motechproject.server.messagecampaign.scheduler.AbsoluteProgramScheduler.AbsoluteProgramScheduler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceorg_1_1motechproject_1_1scheduler_1_1_motech_scheduler_service.html">MotechSchedulerService</a>&nbsp;</td>
+          <td class="paramname"> <em>schedulerService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1contract_1_1_campaign_request.html">CampaignRequest</a>&nbsp;</td>
+          <td class="paramname"> <em>campaignRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1campaign_1_1_absolute_campaign.html">AbsoluteCampaign</a>&nbsp;</td>
+          <td class="paramname"> <em>campaign</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1service_1_1_campaign_enrollment_service.html">CampaignEnrollmentService</a>&nbsp;</td>
+          <td class="paramname"> <em>campaignEnrollmentService</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a0af1fea0655fd038c412187d6e3ccd38"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::scheduler::AbsoluteProgramScheduler::AbsoluteProgramScheduler" ref="a0af1fea0655fd038c412187d6e3ccd38" args="(MotechSchedulerService schedulerService, CampaignRequest campaignRequest, AbsoluteCampaign campaign, CampaignEnrollmentService campaignEnrollmentService)" -->
 <div class="memitem">
 <div class="memproto">
@@ -143,6 +185,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a2bfe5be5a16807540bde3bf6308296ba"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::scheduler::AbsoluteProgramScheduler::getCampaignEnd" ref="a2bfe5be5a16807540bde3bf6308296ba" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime org.motechproject.server.messagecampaign.scheduler.AbsoluteProgramScheduler.getCampaignEnd </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a62031af1863938f7c7712c7de59f2f19"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::scheduler::AbsoluteProgramScheduler::scheduleJobFor" ref="a62031af1863938f7c7712c7de59f2f19" args="(AbsoluteCampaignMessage absoluteCampaignMessage)" -->
 <div class="memitem">
 <div class="memproto">
@@ -161,8 +220,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/scheduler/<a class="el" href="_absolute_program_scheduler_8java.html">AbsoluteProgramScheduler.java</a></li>
+<a class="anchor" id="a62031af1863938f7c7712c7de59f2f19"></a><!-- doxytag: member="org::motechproject::server::messagecampaign::scheduler::AbsoluteProgramScheduler::scheduleJobFor" ref="a62031af1863938f7c7712c7de59f2f19" args="(AbsoluteCampaignMessage absoluteCampaignMessage)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.scheduler.AbsoluteProgramScheduler.scheduleJobFor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classorg_1_1motechproject_1_1server_1_1messagecampaign_1_1domain_1_1message_1_1_absolute_campaign_message.html">AbsoluteCampaignMessage</a>&nbsp;</td>
+          <td class="paramname"> <em>absoluteCampaignMessage</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/scheduler/<a class="el" href="motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messagecampaign_2scheduler11d72b4303779b6d9863cd1302ffb5f0.html">AbsoluteProgramScheduler.java</a></li>
+<li>target/checkout/motech-message-campaign/src/main/java/org/motechproject/server/messagecampaign/scheduler/<a class="el" href="target_2checkout_2motech-message-campaign_2src_2main_2java_2org_2motechproject_2server_2messageccb9182c28ed7a256293473864fb9abc2.html">AbsoluteProgramScheduler.java</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
