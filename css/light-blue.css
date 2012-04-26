@@ -17,7 +17,6 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -3213,4 +3212,8 @@ hr {
 
 .mr50 {
 	margin-right: 50px !important;
+}
+
+#footer ul, li, a, span, div{
+padding : 0px;
 }
