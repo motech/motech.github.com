@@ -3213,3 +3213,7 @@ hr {
 .mr50 {
 	margin-right: 50px !important;
 }
+
+#footer ul, li, a, span, div{
+padding : 0px;
+}
