@@ -195,8 +195,11 @@ title: MOTECH - Mobile Technology for Community Health
       <dt>repeatInterval</dt> <dd>An interval that determines how many times a message is sent, based upon the maxDuration.</dd>
       <dt>deliverTime</dt> <dd>The time of day the message is delivered.</dd>
       <dt>weekDaysApplicable</dt> <dd>The days of the week the message will be sent.</dd>
-      <dt>calendarStartOfWeek</dt> <dd>TODO</dd>
+      <dt>calendarStartOfWeek</dt> <dd>The day of week that should be used as start day of a week. Defaults to sunday if undefined. This value will affect the week number of the enrollment.</dd>
     </dl>
+
+    <h6>Repeating strategy</h6>
+	  <p>For repeating campaigns, it is possible to specify a deliverTime, i.e. the time at which the event will be raised. If there are a large number of enrollments in the system, a large number of events will have to be raised at the same time. This will add a significant load on the scheduler for that instant of time. To avoid this, a strategy can be enabled in messageCampaign.properties (24.hour.repeating.campaign.strategy). When enabled, the reminder time of the enrollment will be used for the time at which the event will be raised. As different enrollments will have different reminder times there will not be one time at which all event must be raised, thus reducing maximum load.</p>
 
     <h5>Cron-based Campaign</h5>
     <p>This type of campaign is specified as CRON. Each cron campaign message contains a cron expression. The cron expression determines the periodic schedule the messages will follow. </p>
@@ -345,6 +348,27 @@ title: MOTECH - Mobile Technology for Community Health
     <p>Graphical representation of the event flow through the message campaign module:</p>
 
     <img src="/assets/modules/campaignmessageflow.png"/>
+
+    <h4>Querying enrollments</h4> 
+    <p>The module provides a search() method for querying enrollments. This allows the client to find enrollments using various critera (based on state, campaign etc). search() takes a CampaignEnrollmentsQuery. The query can be built by adding search clauses such as status, campaign name etc. The clauses together will define a specific seatch criteria.</p>
+
+	<p>Examples:
+
+	{% highlight java %}
+	messageCampaignService.search(new CampaignEnrollmentsQuery().havingState(CampaignEnrollmentStatus.ACTIVE))
+	{% endhighlight %}
+
+	will find all active enrollments</p>
+
+	{% highlight java %}
+	messageCampaignService.search(
+		new CampaignEnrollmentsQuery()
+			.withCampaignName("My Program")
+			.havingState(CampaignEnrollmentStatus.ACTIVE)
+	{% endhighlight %}
+
+	will find active enrollments enrolled into "My Program" campaign.
+	</p>
 
     <h4>Questions</h4>
 
