@@ -36,23 +36,9 @@ title: MOTECH - Mobile Technology for Community Health
 
     <img src="/assets/modules/voiceoutboxservice.png"/>
 
-    <p><b>addMessage</b> - Adds the OutboundVoiceMessage to the party's outbox. The party's ID is retrieved from the OutboundVoiceMessage.</p>
+    <p>For more details about the API, refer javadoc. </p>
 
-    <p><b>getNextPendingMessage</b> - Returns the next OutboundVoiceMessage in the party's outbox. The party's ID is retrieved from the String parameter. Returns null if there are no pending messages. Pending messages contain the message status PENDING and their retrieval is based upon creation date and priority (LOW, MEDIUM, HIGH).</p>
-
-    <p><b>getNextSavedMessage</b> - Returns the next saved OutboundVoiceMessage in the party's outbox. Returns null if there are no saved messages. The party's ID is retrieved from the String parameter. Saved messages contain the message status SAVED.</p>
-
-    <p><b>getMessageById</b> - Returns an OutboundVoiceMessage based on its message ID passed in as a string.</p>
-
-    <p><b>removeMessage</b> - Removes the corresponding OutboundVoiceMessage from the outbox, based on the message ID passed in as a string.</p>
-
-    <p><b>setMessageStatus</b> - Sets the voice message status of the message, based on the message ID passed in as a string. Message status can be PENDING, PLAYED, SAVED, EXPIRED or FAILED.</p>
-
-    <p><b>saveMessage</b> - Saves the OutboundVoiceMessage by its message ID. Its message status is changed to SAVED. The length of time to save the message is specified in the configuration. The date of saving + the length of time to save the message determines the date the message is saved until.</p>
-
-    <p><b>getNumberPendingMessages</b> - Returns the number of pending messages (messages with PENDING message status) based on the party's ID, which is retrieved from the string parameter.</p>
-
-    <p>The setters and getters for configurable properties of the outbox are excluded from the details. They are described in the following section.</p>
+    <p>The configurable properties of the outbox are described in the following section.</p>
 
     <p>Several methods of the service require OutboundVoiceMessages. [[outbound-voice-messages|See here]] for more information about OutboundVoiceMessages.</p>
 
@@ -127,10 +113,10 @@ title: MOTECH - Mobile Technology for Community Health
     <dl>
       <dt>VoiceOutBoxService</dt>
       <dt>EventKeys</dt>
+	  <dt>SortKey</dt>
       <dt>OutboundVoiceMessage</dt>
       <dt>VoiceMessageType</dt>
       <dt>OutboundVoiceMessageStatus</dt>
-      <dt>MessagePriority</dt>
       <dt>OutboxContext</dt>
     </dl>
 
