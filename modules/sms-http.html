@@ -82,6 +82,7 @@ EventDataKeys.RECIPIENTS ("number") mapped to a List<String>
 EventDataKeys.MESSAGE ("message") mapped to a String
 EventDataKeys.DELIVERY_TIME ("delivery_time") mapped to a DateTime
 {% endhighlight %}
+This event will be emitted by the sms-api module. The HTTP module will send an sms to all the recipients with given message, both being defined in the payload of the event. In addition a delivery time can also be specified in which case the message will be scheduled to be sent out at the specified time.
 
     <h4>Emitted events:</h4>
 {% highlight java %}
