@@ -92,12 +92,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00919.html">mobileforms</a>      </li>
-      <li class="navelem"><a class="el" href="a00920.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00926.html">utils</a>      </li>
-      <li class="navelem"><a class="el" href="a00131.html">Encoder</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01504.html">pillreminder</a>      </li>
+      <li class="navelem"><a class="el" href="a01505.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01507.html">contract</a>      </li>
+      <li class="navelem"><a class="el" href="a00131.html">DosageRequest</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,32 +106,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.mobileforms.api.utils.Encoder Class Reference</div>  </div>
+<div class="title">org.motechproject.server.pillreminder.api.contract.DosageRequest Class Reference<div class="ingroups"><a class="el" href="a01548.html">Pill Reminder</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01177.html">List of all members.</a></p>
+<p><a href="a01916.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e3847a4215bcaa85930a13bc0721679"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a5e3847a4215bcaa85930a13bc0721679">sha</a> (String pass, String salt)</td></tr>
+<tr class="memitem:a066db02c9a5ae8d742982e0d09712913"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a066db02c9a5ae8d742982e0d09712913">DosageRequest</a> (int startHour, int startMinute, List&lt; <a class="el" href="a00236.html">MedicineRequest</a> &gt; medicineRequests)</td></tr>
+<tr class="memitem:a8e87f35b6a147cb39dcd600e460d7e6c"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00236.html">MedicineRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a8e87f35b6a147cb39dcd600e460d7e6c">getMedicineRequests</a> ()</td></tr>
+<tr class="memitem:a641f223623ba87524b4310397e6024f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a641f223623ba87524b4310397e6024f5">getStartMinute</a> ()</td></tr>
+<tr class="memitem:a206e50829f0c7e862027ae72a15f9915"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a206e50829f0c7e862027ae72a15f9915">getStartHour</a> ()</td></tr>
+<tr class="memitem:a066db02c9a5ae8d742982e0d09712913"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a066db02c9a5ae8d742982e0d09712913">DosageRequest</a> (int startHour, int startMinute, List&lt; <a class="el" href="a00236.html">MedicineRequest</a> &gt; medicineRequests)</td></tr>
+<tr class="memitem:a8e87f35b6a147cb39dcd600e460d7e6c"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00236.html">MedicineRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a8e87f35b6a147cb39dcd600e460d7e6c">getMedicineRequests</a> ()</td></tr>
+<tr class="memitem:a641f223623ba87524b4310397e6024f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a641f223623ba87524b4310397e6024f5">getStartMinute</a> ()</td></tr>
+<tr class="memitem:a206e50829f0c7e862027ae72a15f9915"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html#a206e50829f0c7e862027ae72a15f9915">getStartHour</a> ()</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a5e3847a4215bcaa85930a13bc0721679"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Dosage Request represents Dosage schedule and medicine list for the schedule. </p>
+<p>startHour and startMinute represent dosage timings. </p>
+<dl class="section see"><dt>See also:</dt><dd><a class="el" href="a00236.html" title="MedicineRequest specifies medicine name and prescription effective date range.">MedicineRequest</a> </dd></dl>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a066db02c9a5ae8d742982e0d09712913"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00131.html#a5e3847a4215bcaa85930a13bc0721679">org.motechproject.mobileforms.api.utils.Encoder.sha</a> </td>
+          <td class="memname"><a class="el" href="a00131.html#a066db02c9a5ae8d742982e0d09712913">org.motechproject.server.pillreminder.api.contract.DosageRequest.DosageRequest</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>pass</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startHour</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>salt</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startMinute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="a00236.html">MedicineRequest</a> &gt;&#160;</td>
+          <td class="paramname"><em>medicineRequests</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -140,6 +158,154 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a066db02c9a5ae8d742982e0d09712913"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00131.html#a066db02c9a5ae8d742982e0d09712913">org.motechproject.server.pillreminder.api.contract.DosageRequest.DosageRequest</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startHour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startMinute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="a00236.html">MedicineRequest</a> &gt;&#160;</td>
+          <td class="paramname"><em>medicineRequests</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a8e87f35b6a147cb39dcd600e460d7e6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00236.html">MedicineRequest</a>&gt; <a class="el" href="a00131.html#a8e87f35b6a147cb39dcd600e460d7e6c">org.motechproject.server.pillreminder.api.contract.DosageRequest.getMedicineRequests</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Medicines prescribed for this dose. </p>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e87f35b6a147cb39dcd600e460d7e6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00236.html">MedicineRequest</a>&gt; <a class="el" href="a00131.html#a8e87f35b6a147cb39dcd600e460d7e6c">org.motechproject.server.pillreminder.api.contract.DosageRequest.getMedicineRequests</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Medicines prescribed for this dose. </p>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a206e50829f0c7e862027ae72a15f9915"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00131.html#a206e50829f0c7e862027ae72a15f9915">org.motechproject.server.pillreminder.api.contract.DosageRequest.getStartHour</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Dosage time hour component. </p>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a206e50829f0c7e862027ae72a15f9915"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00131.html#a206e50829f0c7e862027ae72a15f9915">org.motechproject.server.pillreminder.api.contract.DosageRequest.getStartHour</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Dosage time hour component. </p>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a641f223623ba87524b4310397e6024f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00131.html#a641f223623ba87524b4310397e6024f5">org.motechproject.server.pillreminder.api.contract.DosageRequest.getStartMinute</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Dosage time minute component. </p>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a641f223623ba87524b4310397e6024f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00131.html#a641f223623ba87524b4310397e6024f5">org.motechproject.server.pillreminder.api.contract.DosageRequest.getStartMinute</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Dosage time minute component. </p>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
 
 </div>
 </div>

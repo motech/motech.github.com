@@ -92,13 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00959.html">scheduletracking</a>      </li>
-      <li class="navelem"><a class="el" href="a00960.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00961.html">domain</a>      </li>
-      <li class="navelem"><a class="el" href="a00963.html">exception</a>      </li>
-      <li class="navelem"><a class="el" href="a00117.html">DefaultedMilestoneFulfillmentException</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01478.html">decisiontree</a>      </li>
+      <li class="navelem"><a class="el" href="a01479.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a00117.html">DecisionTreeService</a>      </li>
     </ul>
   </div>
 </div>
@@ -106,30 +105,105 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.scheduletracking.api.domain.exception.DefaultedMilestoneFulfillmentException Class Reference</div>  </div>
+<div class="title">org.motechproject.server.decisiontree.service.DecisionTreeService Interface Reference<div class="ingroups"><a class="el" href="a01549.html">Decision Tree</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.server.decisiontree.service.DecisionTreeService:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00117.png" usemap="#org.motechproject.server.decisiontree.service.DecisionTreeService_map" alt=""/>
+  <map id="org.motechproject.server.decisiontree.service.DecisionTreeService_map" name="org.motechproject.server.decisiontree.service.DecisionTreeService_map">
+<area href="a00118.html" alt="org.motechproject.server.decisiontree.service.DecisionTreeServiceImpl" shape="rect" coords="0,56,419,80"/>
+<area href="a00118.html" alt="org.motechproject.server.decisiontree.service.DecisionTreeServiceImpl" shape="rect" coords="429,56,848,80"/>
+</map>
+ </div></div>
 
-<p><a href="a01275.html">List of all members.</a></p>
+<p><a href="a01834.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a87cd4a05d7b0fc3908e673e843da7df7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a87cd4a05d7b0fc3908e673e843da7df7">DefaultedMilestoneFulfillmentException</a> ()</td></tr>
+<tr class="memitem:ab6d643c5fe90945fd1f3123b361678fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00295.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ab6d643c5fe90945fd1f3123b361678fa">getNode</a> (String treeName, String transitionPath)</td></tr>
+<tr class="memitem:ab6d643c5fe90945fd1f3123b361678fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00295.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ab6d643c5fe90945fd1f3123b361678fa">getNode</a> (String treeName, String transitionPath)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a87cd4a05d7b0fc3908e673e843da7df7"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Provides mechanism to navigate through a decision tree. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ab6d643c5fe90945fd1f3123b361678fa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00117.html#a87cd4a05d7b0fc3908e673e843da7df7">org.motechproject.scheduletracking.api.domain.exception.DefaultedMilestoneFulfillmentException.DefaultedMilestoneFulfillmentException</a> </td>
+          <td class="memname"><a class="el" href="a00295.html">Node</a> <a class="el" href="a00117.html#ab6d643c5fe90945fd1f3123b361678fa">org.motechproject.server.decisiontree.service.DecisionTreeService.getNode</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>treeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>transitionPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Fetches the node from a decision tree based on the transition path. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">treeName</td><td>Name of the decision tree on which the node needs to be located </td></tr>
+    <tr><td class="paramname">transitionPath</td><td>The traversal path on the tree, starting from root (/) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Node, if found. Otherwise, null. </dd></dl>
+
+<p>Implemented in <a class="el" href="a00118.html#ab17570e9554fcd8df97fec49fd0933c0">org.motechproject.server.decisiontree.service.DecisionTreeServiceImpl</a>, and <a class="el" href="a00118.html#ab17570e9554fcd8df97fec49fd0933c0">org.motechproject.server.decisiontree.service.DecisionTreeServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6d643c5fe90945fd1f3123b361678fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00295.html">Node</a> <a class="el" href="a00117.html#ab6d643c5fe90945fd1f3123b361678fa">org.motechproject.server.decisiontree.service.DecisionTreeService.getNode</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>treeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>transitionPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fetches the node from a decision tree based on the transition path. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">treeName</td><td>Name of the decision tree on which the node needs to be located </td></tr>
+    <tr><td class="paramname">transitionPath</td><td>The traversal path on the tree, starting from root (/) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Node, if found. Otherwise, null. </dd></dl>
+
+<p>Implemented in <a class="el" href="a00118.html#ab17570e9554fcd8df97fec49fd0933c0">org.motechproject.server.decisiontree.service.DecisionTreeServiceImpl</a>, and <a class="el" href="a00118.html#ab17570e9554fcd8df97fec49fd0933c0">org.motechproject.server.decisiontree.service.DecisionTreeServiceImpl</a>.</p>
 
 </div>
 </div>

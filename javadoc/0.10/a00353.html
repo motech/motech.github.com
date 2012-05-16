@@ -92,57 +92,105 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00888.html">cmslite</a>      </li>
-      <li class="navelem"><a class="el" href="a00889.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00894.html">web</a>      </li>
-      <li class="navelem"><a class="el" href="a00353.html">ResourceServlet</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01487.html">messagecampaign</a>      </li>
+      <li class="navelem"><a class="el" href="a01491.html">domain</a>      </li>
+      <li class="navelem"><a class="el" href="a01494.html">message</a>      </li>
+      <li class="navelem"><a class="el" href="a00353.html">RepeatingCampaignMessage</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.cmslite.api.web.ResourceServlet Class Reference</div>  </div>
+<div class="title">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00353.png" usemap="#org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage_map" alt=""/>
+  <map id="org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage_map" name="org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage_map">
+<area href="a00075.html" alt="org.motechproject.server.messagecampaign.domain.message.CampaignMessage" shape="rect" coords="0,0,526,24"/>
+<area href="a00075.html" alt="org.motechproject.server.messagecampaign.domain.message.CampaignMessage" shape="rect" coords="536,0,1062,24"/>
+</map>
+ </div></div>
 
-<p>Inherits HttpServlet.</p>
-
-<p><a href="a01093.html">List of all members.</a></p>
+<p><a href="a01875.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aefb81ab644629c0e9fbe24391b24899f"><td class="memItemLeft" align="right" valign="top">static synchronized <br class="typebreak"/>
-ApplicationContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#aefb81ab644629c0e9fbe24391b24899f">getContext</a> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac17585dcf8c4c346c98cfe87692b8ead"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ac17585dcf8c4c346c98cfe87692b8ead">doGet</a> (HttpServletRequest request, HttpServletResponse response)  throws ServletException, IOException </td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8167719e76744199c2cdac0042cab93f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a8167719e76744199c2cdac0042cab93f">RepeatingCampaignMessage</a> (String repeatInterval, String deliverTime)</td></tr>
+<tr class="memitem:ab69123bada2c211f3898e2ec7bc3f555"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ab69123bada2c211f3898e2ec7bc3f555">RepeatingCampaignMessage</a> (List&lt; String &gt; weekDaysApplicable, String deliverTime)</td></tr>
+<tr class="memitem:a5b725da80b446cb3ac9d6420060c577e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a5b725da80b446cb3ac9d6420060c577e">RepeatingCampaignMessage</a> (String calendarStartOfWeek, List&lt; String &gt; weekDaysApplicable, String deliverTime)</td></tr>
+<tr class="memitem:a422ab35e3b2d6118c18a384fd00c0907"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a422ab35e3b2d6118c18a384fd00c0907">repeatIntervalForSchedule</a> ()</td></tr>
+<tr class="memitem:a0e40a4a8f28e8da52db143f4841d44ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a0e40a4a8f28e8da52db143f4841d44ff">repeatIntervalInDaysForOffset</a> ()</td></tr>
+<tr class="memitem:a851ce7e4b53d1795bf472df27e9ffe44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a851ce7e4b53d1795bf472df27e9ffe44">repeatInterval</a> (String repeatInterval)</td></tr>
+<tr class="memitem:a507c399efec9369433d8bf473ce82e9c"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a507c399efec9369433d8bf473ce82e9c">repeatInterval</a> ()</td></tr>
+<tr class="memitem:a5fe8acf21668c7eea6c419b4863e345e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00114.html">DayOfWeek</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a5fe8acf21668c7eea6c419b4863e345e">weekDaysApplicable</a> ()</td></tr>
+<tr class="memitem:a6d505b1d2e3c5fde2fe8cbb23b8b53c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a6d505b1d2e3c5fde2fe8cbb23b8b53c0">calendarStartOfWeek</a> (String calendarStartOfWeek)</td></tr>
+<tr class="memitem:ab0cf03ea1d9cf7b2b8935e89e5b506f0"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ab0cf03ea1d9cf7b2b8935e89e5b506f0">calendarStartOfWeek</a> ()</td></tr>
+<tr class="memitem:ad6d672ef1736778211d1b94335d0641b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00114.html">DayOfWeek</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ad6d672ef1736778211d1b94335d0641b">calendarStartDayOfWeek</a> ()</td></tr>
+<tr class="memitem:aba83197d70f146d337352538de6eba94"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#aba83197d70f146d337352538de6eba94">isApplicable</a> ()</td></tr>
+<tr class="memitem:a4bf255ce72e0b04ba90d4c615689f130"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00353.html">RepeatingCampaignMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a4bf255ce72e0b04ba90d4c615689f130">mode</a> (<a class="el" href="a00354.html">RepeatingMessageMode</a> repeatingMessageMode)</td></tr>
+<tr class="memitem:a159495488ae6280b52fd2bdbfa0081a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00354.html">RepeatingMessageMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a159495488ae6280b52fd2bdbfa0081a8">mode</a> ()</td></tr>
+<tr class="memitem:abd962fb2c3f5fbdca883e02366ae3a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00353.html">RepeatingCampaignMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#abd962fb2c3f5fbdca883e02366ae3a45">deliverTime</a> (<a class="el" href="a00416.html">Time</a> deliverTime)</td></tr>
+<tr class="memitem:ab2226917e9c067cb945b88943f82266f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00416.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ab2226917e9c067cb945b88943f82266f">deliverTime</a> ()</td></tr>
+<tr class="memitem:ab059f9f83b004e92d1c176ab9c874976"><td class="memItemLeft" align="right" valign="top">Integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ab059f9f83b004e92d1c176ab9c874976">currentOffset</a> (Date startTime, Integer startIntervalOffset)</td></tr>
+<tr class="memitem:aaf7b76e18ffa672bcfea687d27689dce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#aaf7b76e18ffa672bcfea687d27689dce">durationInDaysToAdd</a> (<a class="el" href="a00454.html">WallTime</a> duration, <a class="el" href="a00080.html">CampaignRequest</a> campaignRequest)</td></tr>
+<tr class="memitem:af30442911b1880aba708efbd817d50d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00114.html">DayOfWeek</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#af30442911b1880aba708efbd817d50d1">applicableWeekDayInNext24Hours</a> ()</td></tr>
+<tr class="memitem:a48288458d19d9e0a0a81bbb4142a3a6f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a48288458d19d9e0a0a81bbb4142a3a6f">hasEnded</a> (Date endTime)</td></tr>
+<tr class="memitem:a8167719e76744199c2cdac0042cab93f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a8167719e76744199c2cdac0042cab93f">RepeatingCampaignMessage</a> (String repeatInterval, String deliverTime)</td></tr>
+<tr class="memitem:ab69123bada2c211f3898e2ec7bc3f555"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ab69123bada2c211f3898e2ec7bc3f555">RepeatingCampaignMessage</a> (List&lt; String &gt; weekDaysApplicable, String deliverTime)</td></tr>
+<tr class="memitem:a5b725da80b446cb3ac9d6420060c577e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a5b725da80b446cb3ac9d6420060c577e">RepeatingCampaignMessage</a> (String calendarStartOfWeek, List&lt; String &gt; weekDaysApplicable, String deliverTime)</td></tr>
+<tr class="memitem:a422ab35e3b2d6118c18a384fd00c0907"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a422ab35e3b2d6118c18a384fd00c0907">repeatIntervalForSchedule</a> ()</td></tr>
+<tr class="memitem:a0e40a4a8f28e8da52db143f4841d44ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a0e40a4a8f28e8da52db143f4841d44ff">repeatIntervalInDaysForOffset</a> ()</td></tr>
+<tr class="memitem:a851ce7e4b53d1795bf472df27e9ffe44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a851ce7e4b53d1795bf472df27e9ffe44">repeatInterval</a> (String repeatInterval)</td></tr>
+<tr class="memitem:a507c399efec9369433d8bf473ce82e9c"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a507c399efec9369433d8bf473ce82e9c">repeatInterval</a> ()</td></tr>
+<tr class="memitem:a5fe8acf21668c7eea6c419b4863e345e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00114.html">DayOfWeek</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a5fe8acf21668c7eea6c419b4863e345e">weekDaysApplicable</a> ()</td></tr>
+<tr class="memitem:a6d505b1d2e3c5fde2fe8cbb23b8b53c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a6d505b1d2e3c5fde2fe8cbb23b8b53c0">calendarStartOfWeek</a> (String calendarStartOfWeek)</td></tr>
+<tr class="memitem:ab0cf03ea1d9cf7b2b8935e89e5b506f0"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ab0cf03ea1d9cf7b2b8935e89e5b506f0">calendarStartOfWeek</a> ()</td></tr>
+<tr class="memitem:ad6d672ef1736778211d1b94335d0641b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00114.html">DayOfWeek</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ad6d672ef1736778211d1b94335d0641b">calendarStartDayOfWeek</a> ()</td></tr>
+<tr class="memitem:aba83197d70f146d337352538de6eba94"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#aba83197d70f146d337352538de6eba94">isApplicable</a> ()</td></tr>
+<tr class="memitem:a4bf255ce72e0b04ba90d4c615689f130"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00353.html">RepeatingCampaignMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a4bf255ce72e0b04ba90d4c615689f130">mode</a> (<a class="el" href="a00354.html">RepeatingMessageMode</a> repeatingMessageMode)</td></tr>
+<tr class="memitem:a159495488ae6280b52fd2bdbfa0081a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00354.html">RepeatingMessageMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a159495488ae6280b52fd2bdbfa0081a8">mode</a> ()</td></tr>
+<tr class="memitem:abd962fb2c3f5fbdca883e02366ae3a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00353.html">RepeatingCampaignMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#abd962fb2c3f5fbdca883e02366ae3a45">deliverTime</a> (<a class="el" href="a00416.html">Time</a> deliverTime)</td></tr>
+<tr class="memitem:ab2226917e9c067cb945b88943f82266f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00416.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ab2226917e9c067cb945b88943f82266f">deliverTime</a> ()</td></tr>
+<tr class="memitem:ab059f9f83b004e92d1c176ab9c874976"><td class="memItemLeft" align="right" valign="top">Integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#ab059f9f83b004e92d1c176ab9c874976">currentOffset</a> (Date startTime, Integer startIntervalOffset)</td></tr>
+<tr class="memitem:aaf7b76e18ffa672bcfea687d27689dce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#aaf7b76e18ffa672bcfea687d27689dce">durationInDaysToAdd</a> (<a class="el" href="a00454.html">WallTime</a> duration, <a class="el" href="a00080.html">CampaignRequest</a> campaignRequest)</td></tr>
+<tr class="memitem:af30442911b1880aba708efbd817d50d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00114.html">DayOfWeek</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#af30442911b1880aba708efbd817d50d1">applicableWeekDayInNext24Hours</a> ()</td></tr>
+<tr class="memitem:a48288458d19d9e0a0a81bbb4142a3a6f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a48288458d19d9e0a0a81bbb4142a3a6f">hasEnded</a> (Date endTime)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:afccb3194fa8896a46537dadd4bb9d2d7"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#afccb3194fa8896a46537dadd4bb9d2d7">DAILY_REPEAT_INTERVAL</a> = 1</td></tr>
+<tr class="memitem:a22207a11c979065cd913da166d299272"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00353.html#a22207a11c979065cd913da166d299272">WEEKLY_REPEAT_INTERVAL</a> = 7</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ac17585dcf8c4c346c98cfe87692b8ead"></a>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8167719e76744199c2cdac0042cab93f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00353.html#ac17585dcf8c4c346c98cfe87692b8ead">org.motechproject.cmslite.api.web.ResourceServlet.doGet</a> </td>
+          <td class="memname"><a class="el" href="a00353.html#a8167719e76744199c2cdac0042cab93f">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage</a> </td>
           <td>(</td>
-          <td class="paramtype">HttpServletRequest&#160;</td>
-          <td class="paramname"><em>request</em>, </td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>repeatInterval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HttpServletResponse&#160;</td>
-          <td class="paramname"><em>response</em>&#160;</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deliverTime</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throws ServletException, IOException <code> [protected]</code></td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -150,15 +198,772 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aefb81ab644629c0e9fbe24391b24899f"></a>
+<a class="anchor" id="ab69123bada2c211f3898e2ec7bc3f555"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static synchronized ApplicationContext <a class="el" href="a00353.html#aefb81ab644629c0e9fbe24391b24899f">org.motechproject.cmslite.api.web.ResourceServlet.getContext</a> </td>
+          <td class="memname"><a class="el" href="a00353.html#a8167719e76744199c2cdac0042cab93f">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>weekDaysApplicable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deliverTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b725da80b446cb3ac9d6420060c577e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00353.html#a8167719e76744199c2cdac0042cab93f">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>calendarStartOfWeek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>weekDaysApplicable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deliverTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8167719e76744199c2cdac0042cab93f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00353.html#a8167719e76744199c2cdac0042cab93f">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>repeatInterval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deliverTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab69123bada2c211f3898e2ec7bc3f555"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00353.html#a8167719e76744199c2cdac0042cab93f">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>weekDaysApplicable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deliverTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b725da80b446cb3ac9d6420060c577e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00353.html#a8167719e76744199c2cdac0042cab93f">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.RepeatingCampaignMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>calendarStartOfWeek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>weekDaysApplicable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deliverTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="af30442911b1880aba708efbd817d50d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00114.html">DayOfWeek</a> <a class="el" href="a00353.html#af30442911b1880aba708efbd817d50d1">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.applicableWeekDayInNext24Hours</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [static]</code></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af30442911b1880aba708efbd817d50d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00114.html">DayOfWeek</a> <a class="el" href="a00353.html#af30442911b1880aba708efbd817d50d1">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.applicableWeekDayInNext24Hours</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6d672ef1736778211d1b94335d0641b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00114.html">DayOfWeek</a> <a class="el" href="a00353.html#ad6d672ef1736778211d1b94335d0641b">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartDayOfWeek</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6d672ef1736778211d1b94335d0641b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00114.html">DayOfWeek</a> <a class="el" href="a00353.html#ad6d672ef1736778211d1b94335d0641b">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartDayOfWeek</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d505b1d2e3c5fde2fe8cbb23b8b53c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartOfWeek </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>calendarStartOfWeek</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d505b1d2e3c5fde2fe8cbb23b8b53c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartOfWeek </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>calendarStartOfWeek</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0cf03ea1d9cf7b2b8935e89e5b506f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartOfWeek </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0cf03ea1d9cf7b2b8935e89e5b506f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.calendarStartOfWeek </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab059f9f83b004e92d1c176ab9c874976"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Integer <a class="el" href="a00353.html#ab059f9f83b004e92d1c176ab9c874976">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.currentOffset</a> </td>
+          <td>(</td>
+          <td class="paramtype">Date&#160;</td>
+          <td class="paramname"><em>startTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integer&#160;</td>
+          <td class="paramname"><em>startIntervalOffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab059f9f83b004e92d1c176ab9c874976"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Integer <a class="el" href="a00353.html#ab059f9f83b004e92d1c176ab9c874976">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.currentOffset</a> </td>
+          <td>(</td>
+          <td class="paramtype">Date&#160;</td>
+          <td class="paramname"><em>startTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integer&#160;</td>
+          <td class="paramname"><em>startIntervalOffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abd962fb2c3f5fbdca883e02366ae3a45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00353.html">RepeatingCampaignMessage</a> org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.deliverTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00416.html">Time</a>&#160;</td>
+          <td class="paramname"><em>deliverTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abd962fb2c3f5fbdca883e02366ae3a45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00353.html">RepeatingCampaignMessage</a> org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.deliverTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00416.html">Time</a>&#160;</td>
+          <td class="paramname"><em>deliverTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2226917e9c067cb945b88943f82266f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00416.html">Time</a> org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.deliverTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2226917e9c067cb945b88943f82266f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00416.html">Time</a> org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.deliverTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf7b76e18ffa672bcfea687d27689dce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00353.html#aaf7b76e18ffa672bcfea687d27689dce">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.durationInDaysToAdd</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00454.html">WallTime</a>&#160;</td>
+          <td class="paramname"><em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>campaignRequest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf7b76e18ffa672bcfea687d27689dce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00353.html#aaf7b76e18ffa672bcfea687d27689dce">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.durationInDaysToAdd</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00454.html">WallTime</a>&#160;</td>
+          <td class="paramname"><em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>campaignRequest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48288458d19d9e0a0a81bbb4142a3a6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="a00353.html#a48288458d19d9e0a0a81bbb4142a3a6f">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.hasEnded</a> </td>
+          <td>(</td>
+          <td class="paramtype">Date&#160;</td>
+          <td class="paramname"><em>endTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48288458d19d9e0a0a81bbb4142a3a6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="a00353.html#a48288458d19d9e0a0a81bbb4142a3a6f">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.hasEnded</a> </td>
+          <td>(</td>
+          <td class="paramtype">Date&#160;</td>
+          <td class="paramname"><em>endTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba83197d70f146d337352538de6eba94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="a00353.html#aba83197d70f146d337352538de6eba94">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.isApplicable</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba83197d70f146d337352538de6eba94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="a00353.html#aba83197d70f146d337352538de6eba94">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.isApplicable</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bf255ce72e0b04ba90d4c615689f130"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00353.html">RepeatingCampaignMessage</a> <a class="el" href="a00353.html#a4bf255ce72e0b04ba90d4c615689f130">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.mode</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00354.html">RepeatingMessageMode</a>&#160;</td>
+          <td class="paramname"><em>repeatingMessageMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bf255ce72e0b04ba90d4c615689f130"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00353.html">RepeatingCampaignMessage</a> <a class="el" href="a00353.html#a4bf255ce72e0b04ba90d4c615689f130">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.mode</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00354.html">RepeatingMessageMode</a>&#160;</td>
+          <td class="paramname"><em>repeatingMessageMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a159495488ae6280b52fd2bdbfa0081a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00354.html">RepeatingMessageMode</a> <a class="el" href="a00353.html#a4bf255ce72e0b04ba90d4c615689f130">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.mode</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a159495488ae6280b52fd2bdbfa0081a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00354.html">RepeatingMessageMode</a> <a class="el" href="a00353.html#a4bf255ce72e0b04ba90d4c615689f130">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.mode</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a851ce7e4b53d1795bf472df27e9ffe44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatInterval </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>repeatInterval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a851ce7e4b53d1795bf472df27e9ffe44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatInterval </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>repeatInterval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a507c399efec9369433d8bf473ce82e9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatInterval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a507c399efec9369433d8bf473ce82e9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatInterval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a422ab35e3b2d6118c18a384fd00c0907"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00353.html#a422ab35e3b2d6118c18a384fd00c0907">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatIntervalForSchedule</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a422ab35e3b2d6118c18a384fd00c0907"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00353.html#a422ab35e3b2d6118c18a384fd00c0907">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatIntervalForSchedule</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e40a4a8f28e8da52db143f4841d44ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00353.html#a0e40a4a8f28e8da52db143f4841d44ff">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatIntervalInDaysForOffset</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e40a4a8f28e8da52db143f4841d44ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00353.html#a0e40a4a8f28e8da52db143f4841d44ff">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.repeatIntervalInDaysForOffset</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5fe8acf21668c7eea6c419b4863e345e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00114.html">DayOfWeek</a>&gt; org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.weekDaysApplicable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5fe8acf21668c7eea6c419b4863e345e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00114.html">DayOfWeek</a>&gt; org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.weekDaysApplicable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="afccb3194fa8896a46537dadd4bb9d2d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final int <a class="el" href="a00353.html#afccb3194fa8896a46537dadd4bb9d2d7">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.DAILY_REPEAT_INTERVAL</a> = 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22207a11c979065cd913da166d299272"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final int <a class="el" href="a00353.html#a22207a11c979065cd913da166d299272">org.motechproject.server.messagecampaign.domain.message.RepeatingCampaignMessage.WEEKLY_REPEAT_INTERVAL</a> = 7<code> [static]</code></td>
         </tr>
       </table>
 </div>

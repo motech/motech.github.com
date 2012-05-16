@@ -92,47 +92,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00919.html">mobileforms</a>      </li>
-      <li class="navelem"><a class="el" href="a00920.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00924.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00029.html">AllMobileForms</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01399.html">ivr</a>      </li>
+      <li class="navelem"><a class="el" href="a01402.html">kookoo</a>      </li>
+      <li class="navelem"><a class="el" href="a01407.html">repository</a>      </li>
+      <li class="navelem"><a class="el" href="a00029.html">AllKooKooCallDetailRecords</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.mobileforms.api.repository.AllMobileForms Class Reference</div>  </div>
+<div class="title">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01171.html">List of all members.</a></p>
+<p>Inherits MotechBaseRepository&lt; KookooCallDetailRecord &gt;, and MotechBaseRepository&lt; KookooCallDetailRecord &gt;.</p>
+
+<p><a href="a01647.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acdbb480d24cec95c8779a2a5e5a9686d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#acdbb480d24cec95c8779a2a5e5a9686d">AllMobileForms</a> (@Qualifier(value=&quot;mobileFormsProperties&quot;) Properties properties)</td></tr>
-<tr class="memitem:abb397e80a7330aee24a92a9eb85693c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#abb397e80a7330aee24a92a9eb85693c3">initialize</a> ()</td></tr>
-<tr class="memitem:abb22bc4244cdf2a772d2e690baa9dc06"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00174.html">FormGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#abb22bc4244cdf2a772d2e690baa9dc06">getAllFormGroups</a> ()</td></tr>
-<tr class="memitem:a7628b611fb8c4456b11413b7dec31a2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00174.html">FormGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a7628b611fb8c4456b11413b7dec31a2e">getFormGroup</a> (Integer index)</td></tr>
-<tr class="memitem:ac94c1c54e0b6c489fc59e0fd4abcf36e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00169.html">Form</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#ac94c1c54e0b6c489fc59e0fd4abcf36e">getFormByName</a> (String formName)</td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:af5cf469be991776289379c8057906b74"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#af5cf469be991776289379c8057906b74">FORMS_CONFIG_FILE</a> = &quot;forms.config.file&quot;</td></tr>
+<tr class="memitem:a1e3ab9e7ba45cd7cbc1769e1005c9242"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a1e3ab9e7ba45cd7cbc1769e1005c9242">AllKooKooCallDetailRecords</a> (@Qualifier(&quot;kookooIvrDbConnector&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a82a2edfccf783a7ff5186c792679ffbd"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00217.html">KookooCallDetailRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a82a2edfccf783a7ff5186c792679ffbd">findByStartDate</a> (DateTime start, DateTime end, int limit)</td></tr>
+<tr class="memitem:ae20afcc6232fd66bb3089c29b87be7a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#ae20afcc6232fd66bb3089c29b87be7a8">removeInRange</a> (DateTime start, DateTime end)</td></tr>
+<tr class="memitem:ae4755e142426f8935cde1660b80a9b13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#ae4755e142426f8935cde1660b80a9b13">removeInRange</a> (DateTime start, DateTime end, int batchSize)</td></tr>
+<tr class="memitem:a1e3ab9e7ba45cd7cbc1769e1005c9242"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a1e3ab9e7ba45cd7cbc1769e1005c9242">AllKooKooCallDetailRecords</a> (@Qualifier(&quot;kookooIvrDbConnector&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a82a2edfccf783a7ff5186c792679ffbd"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00217.html">KookooCallDetailRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a82a2edfccf783a7ff5186c792679ffbd">findByStartDate</a> (DateTime start, DateTime end, int limit)</td></tr>
+<tr class="memitem:ae20afcc6232fd66bb3089c29b87be7a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#ae20afcc6232fd66bb3089c29b87be7a8">removeInRange</a> (DateTime start, DateTime end)</td></tr>
+<tr class="memitem:ae4755e142426f8935cde1660b80a9b13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#ae4755e142426f8935cde1660b80a9b13">removeInRange</a> (DateTime start, DateTime end, int batchSize)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acdbb480d24cec95c8779a2a5e5a9686d"></a>
+<a class="anchor" id="a1e3ab9e7ba45cd7cbc1769e1005c9242"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">org.motechproject.mobileforms.api.repository.AllMobileForms.AllMobileForms </td>
+          <td class="memname"><a class="el" href="a00029.html#a1e3ab9e7ba45cd7cbc1769e1005c9242">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.AllKooKooCallDetailRecords</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(value=&quot;mobileFormsProperties&quot;) Properties&#160;</td>
-          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td class="paramtype">@Qualifier(&quot;kookooIvrDbConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e3ab9e7ba45cd7cbc1769e1005c9242"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00029.html#a1e3ab9e7ba45cd7cbc1769e1005c9242">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.AllKooKooCallDetailRecords</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;kookooIvrDbConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -142,15 +160,32 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="abb22bc4244cdf2a772d2e690baa9dc06"></a>
+<a class="anchor" id="a82a2edfccf783a7ff5186c792679ffbd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00174.html">FormGroup</a>&gt; <a class="el" href="a00029.html#abb22bc4244cdf2a772d2e690baa9dc06">org.motechproject.mobileforms.api.repository.AllMobileForms.getAllFormGroups</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00217.html">KookooCallDetailRecord</a>&gt; <a class="el" href="a00029.html#a82a2edfccf783a7ff5186c792679ffbd">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.findByStartDate</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -158,16 +193,32 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac94c1c54e0b6c489fc59e0fd4abcf36e"></a>
+<a class="anchor" id="a82a2edfccf783a7ff5186c792679ffbd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00169.html">Form</a> <a class="el" href="a00029.html#ac94c1c54e0b6c489fc59e0fd4abcf36e">org.motechproject.mobileforms.api.repository.AllMobileForms.getFormByName</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00217.html">KookooCallDetailRecord</a>&gt; <a class="el" href="a00029.html#a82a2edfccf783a7ff5186c792679ffbd">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.findByStartDate</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>formName</em></td><td>)</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -175,16 +226,26 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7628b611fb8c4456b11413b7dec31a2e"></a>
+<a class="anchor" id="ae20afcc6232fd66bb3089c29b87be7a8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00174.html">FormGroup</a> <a class="el" href="a00029.html#a7628b611fb8c4456b11413b7dec31a2e">org.motechproject.mobileforms.api.repository.AllMobileForms.getFormGroup</a> </td>
+          <td class="memname">void <a class="el" href="a00029.html#ae20afcc6232fd66bb3089c29b87be7a8">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.removeInRange</a> </td>
           <td>(</td>
-          <td class="paramtype">Integer&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -192,15 +253,26 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb397e80a7330aee24a92a9eb85693c3"></a>
+<a class="anchor" id="ae20afcc6232fd66bb3089c29b87be7a8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00029.html#abb397e80a7330aee24a92a9eb85693c3">org.motechproject.mobileforms.api.repository.AllMobileForms.initialize</a> </td>
+          <td class="memname">void <a class="el" href="a00029.html#ae20afcc6232fd66bb3089c29b87be7a8">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.removeInRange</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -208,13 +280,65 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="af5cf469be991776289379c8057906b74"></a>
+<a class="anchor" id="ae4755e142426f8935cde1660b80a9b13"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="a00029.html#af5cf469be991776289379c8057906b74">org.motechproject.mobileforms.api.repository.AllMobileForms.FORMS_CONFIG_FILE</a> = &quot;forms.config.file&quot;<code> [static]</code></td>
+          <td class="memname">void <a class="el" href="a00029.html#ae20afcc6232fd66bb3089c29b87be7a8">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.removeInRange</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>batchSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4755e142426f8935cde1660b80a9b13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00029.html#ae20afcc6232fd66bb3089c29b87be7a8">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.removeInRange</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>batchSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>

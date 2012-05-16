@@ -92,47 +92,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00876.html">appointments</a>      </li>
-      <li class="navelem"><a class="el" href="a00877.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00883.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00033.html">AllReminderJobs</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01444.html">outbox</a>      </li>
+      <li class="navelem"><a class="el" href="a01445.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01449.html">repository</a>      </li>
+      <li class="navelem"><a class="el" href="a00033.html">AllOutboundVoiceMessages</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.appointments.api.repository.AllReminderJobs Class Reference</div>  </div>
+<div class="title">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01070.html">List of all members.</a></p>
+<p>Inherits MotechBaseRepository&lt; OutboundVoiceMessage &gt;, and MotechBaseRepository&lt; OutboundVoiceMessage &gt;.</p>
+
+<p><a href="a01753.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a168babaad3b471dec297f8d6a174385b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a168babaad3b471dec297f8d6a174385b">AllReminderJobs</a> (<a class="el" href="a00268.html">MotechSchedulerService</a> schedulerService)</td></tr>
-<tr class="memitem:a8a335e087939a5b6ed6be4ae5c9b8d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a8a335e087939a5b6ed6be4ae5c9b8d25">addAppointmentJob</a> (String externalId, <a class="el" href="a00416.html">Visit</a> visit)</td></tr>
-<tr class="memitem:a56cd50bd58be35a73742629df30638f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a56cd50bd58be35a73742629df30638f9">addVisitJob</a> (String externalId, <a class="el" href="a00416.html">Visit</a> visit)</td></tr>
-<tr class="memitem:a825171e7cbbb6aec7f65b0609abf66a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a825171e7cbbb6aec7f65b0609abf66a9">removeAppointmentJob</a> (String externalId, <a class="el" href="a00416.html">Visit</a> visit)</td></tr>
-<tr class="memitem:a6ee7d7e41ba7d59834ca92c7d46a056c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a6ee7d7e41ba7d59834ca92c7d46a056c">removeVisitJob</a> (String externalId, <a class="el" href="a00416.html">Visit</a> visit)</td></tr>
-<tr class="memitem:a6250c9381bb544c7592bb52f5d5feb19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a6250c9381bb544c7592bb52f5d5feb19">rescheduleAppointmentJob</a> (String externalId, <a class="el" href="a00416.html">Visit</a> visit)</td></tr>
-<tr class="memitem:aa7232cd3432bf125046df5efa15cb1dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#aa7232cd3432bf125046df5efa15cb1dd">rescheduleVisitJob</a> (String externalId, <a class="el" href="a00416.html">Visit</a> visit)</td></tr>
-<tr class="memitem:a0493431d21b42ca1dacabdc6f698e5dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a0493431d21b42ca1dacabdc6f698e5dd">removeAll</a> (String externalId)</td></tr>
+<tr class="memitem:a3c7b40408659b077b443da8e05705861"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00321.html">OutboundVoiceMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a3c7b40408659b077b443da8e05705861">getMessages</a> (String externalId, <a class="el" href="a00322.html">OutboundVoiceMessageStatus</a> status, <a class="el" href="a00402.html">SortKey</a> sortKey)</td></tr>
+<tr class="memitem:a58cff24cb4de3e287b9241a6f7d28377"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a58cff24cb4de3e287b9241a6f7d28377">getMessagesCount</a> (String externalId, <a class="el" href="a00322.html">OutboundVoiceMessageStatus</a> messageStatus)</td></tr>
+<tr class="memitem:a4ee6e51381c67ffb8b33b9ad289ae59f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a4ee6e51381c67ffb8b33b9ad289ae59f">getMessagesCount</a> (String externalId, <a class="el" href="a00322.html">OutboundVoiceMessageStatus</a> messageStatus, String voiceMessageTypeName)</td></tr>
+<tr class="memitem:a3c7b40408659b077b443da8e05705861"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00321.html">OutboundVoiceMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a3c7b40408659b077b443da8e05705861">getMessages</a> (String externalId, <a class="el" href="a00322.html">OutboundVoiceMessageStatus</a> status, <a class="el" href="a00402.html">SortKey</a> sortKey)</td></tr>
+<tr class="memitem:a58cff24cb4de3e287b9241a6f7d28377"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a58cff24cb4de3e287b9241a6f7d28377">getMessagesCount</a> (String externalId, <a class="el" href="a00322.html">OutboundVoiceMessageStatus</a> messageStatus)</td></tr>
+<tr class="memitem:a4ee6e51381c67ffb8b33b9ad289ae59f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#a4ee6e51381c67ffb8b33b9ad289ae59f">getMessagesCount</a> (String externalId, <a class="el" href="a00322.html">OutboundVoiceMessageStatus</a> messageStatus, String voiceMessageTypeName)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad8bef5a1af7d2991cd077b21c933bff8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#ad8bef5a1af7d2991cd077b21c933bff8">AllOutboundVoiceMessages</a> (@Qualifier(&quot;outboxDatabase&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:ad8bef5a1af7d2991cd077b21c933bff8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html#ad8bef5a1af7d2991cd077b21c933bff8">AllOutboundVoiceMessages</a> (@Qualifier(&quot;outboxDatabase&quot;) CouchDbConnector db)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a168babaad3b471dec297f8d6a174385b"></a>
+<a class="anchor" id="ad8bef5a1af7d2991cd077b21c933bff8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00033.html#a168babaad3b471dec297f8d6a174385b">org.motechproject.appointments.api.repository.AllReminderJobs.AllReminderJobs</a> </td>
+          <td class="memname"><a class="el" href="a00033.html#ad8bef5a1af7d2991cd077b21c933bff8">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.AllOutboundVoiceMessages</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00268.html">MotechSchedulerService</a>&#160;</td>
-          <td class="paramname"><em>schedulerService</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">@Qualifier(&quot;outboxDatabase&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8bef5a1af7d2991cd077b21c933bff8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00033.html#ad8bef5a1af7d2991cd077b21c933bff8">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.AllOutboundVoiceMessages</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;outboxDatabase&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -141,12 +163,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a8a335e087939a5b6ed6be4ae5c9b8d25"></a>
+<a class="anchor" id="a3c7b40408659b077b443da8e05705861"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00033.html#a8a335e087939a5b6ed6be4ae5c9b8d25">org.motechproject.appointments.api.repository.AllReminderJobs.addAppointmentJob</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00321.html">OutboundVoiceMessage</a>&gt; <a class="el" href="a00033.html#a3c7b40408659b077b443da8e05705861">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getMessages</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em>, </td>
@@ -154,8 +176,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00416.html">Visit</a>&#160;</td>
-          <td class="paramname"><em>visit</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00322.html">OutboundVoiceMessageStatus</a>&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00402.html">SortKey</a>&#160;</td>
+          <td class="paramname"><em>sortKey</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -168,12 +196,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a56cd50bd58be35a73742629df30638f9"></a>
+<a class="anchor" id="a3c7b40408659b077b443da8e05705861"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00033.html#a56cd50bd58be35a73742629df30638f9">org.motechproject.appointments.api.repository.AllReminderJobs.addVisitJob</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00321.html">OutboundVoiceMessage</a>&gt; <a class="el" href="a00033.html#a3c7b40408659b077b443da8e05705861">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getMessages</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em>, </td>
@@ -181,8 +209,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00416.html">Visit</a>&#160;</td>
-          <td class="paramname"><em>visit</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00322.html">OutboundVoiceMessageStatus</a>&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00402.html">SortKey</a>&#160;</td>
+          <td class="paramname"><em>sortKey</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -195,29 +229,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0493431d21b42ca1dacabdc6f698e5dd"></a>
+<a class="anchor" id="a58cff24cb4de3e287b9241a6f7d28377"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00033.html#a0493431d21b42ca1dacabdc6f698e5dd">org.motechproject.appointments.api.repository.AllReminderJobs.removeAll</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a825171e7cbbb6aec7f65b0609abf66a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00033.html#a825171e7cbbb6aec7f65b0609abf66a9">org.motechproject.appointments.api.repository.AllReminderJobs.removeAppointmentJob</a> </td>
+          <td class="memname">int <a class="el" href="a00033.html#a58cff24cb4de3e287b9241a6f7d28377">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getMessagesCount</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em>, </td>
@@ -225,8 +242,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00416.html">Visit</a>&#160;</td>
-          <td class="paramname"><em>visit</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00322.html">OutboundVoiceMessageStatus</a>&#160;</td>
+          <td class="paramname"><em>messageStatus</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -239,12 +256,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6ee7d7e41ba7d59834ca92c7d46a056c"></a>
+<a class="anchor" id="a58cff24cb4de3e287b9241a6f7d28377"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00033.html#a6ee7d7e41ba7d59834ca92c7d46a056c">org.motechproject.appointments.api.repository.AllReminderJobs.removeVisitJob</a> </td>
+          <td class="memname">int <a class="el" href="a00033.html#a58cff24cb4de3e287b9241a6f7d28377">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getMessagesCount</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em>, </td>
@@ -252,8 +269,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00416.html">Visit</a>&#160;</td>
-          <td class="paramname"><em>visit</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00322.html">OutboundVoiceMessageStatus</a>&#160;</td>
+          <td class="paramname"><em>messageStatus</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -266,12 +283,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6250c9381bb544c7592bb52f5d5feb19"></a>
+<a class="anchor" id="a4ee6e51381c67ffb8b33b9ad289ae59f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00033.html#a6250c9381bb544c7592bb52f5d5feb19">org.motechproject.appointments.api.repository.AllReminderJobs.rescheduleAppointmentJob</a> </td>
+          <td class="memname">int <a class="el" href="a00033.html#a58cff24cb4de3e287b9241a6f7d28377">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getMessagesCount</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em>, </td>
@@ -279,8 +296,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00416.html">Visit</a>&#160;</td>
-          <td class="paramname"><em>visit</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00322.html">OutboundVoiceMessageStatus</a>&#160;</td>
+          <td class="paramname"><em>messageStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>voiceMessageTypeName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -293,12 +316,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa7232cd3432bf125046df5efa15cb1dd"></a>
+<a class="anchor" id="a4ee6e51381c67ffb8b33b9ad289ae59f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00033.html#aa7232cd3432bf125046df5efa15cb1dd">org.motechproject.appointments.api.repository.AllReminderJobs.rescheduleVisitJob</a> </td>
+          <td class="memname">int <a class="el" href="a00033.html#a58cff24cb4de3e287b9241a6f7d28377">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getMessagesCount</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em>, </td>
@@ -306,8 +329,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00416.html">Visit</a>&#160;</td>
-          <td class="paramname"><em>visit</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00322.html">OutboundVoiceMessageStatus</a>&#160;</td>
+          <td class="paramname"><em>messageStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>voiceMessageTypeName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

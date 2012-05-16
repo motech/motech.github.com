@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00991.html">messagecampaign</a>      </li>
-      <li class="navelem"><a class="el" href="a01002.html">search</a>      </li>
-      <li class="navelem"><a class="el" href="a00384.html">StatusCriterion</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01485.html">event</a>      </li>
+      <li class="navelem"><a class="el" href="a00384.html">ServerEventRelay</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,37 +104,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.messagecampaign.search.StatusCriterion Class Reference</div>  </div>
+<div class="title">org.motechproject.server.event.ServerEventRelay Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for org.motechproject.server.messagecampaign.search.StatusCriterion:</div>
+Inheritance diagram for org.motechproject.server.event.ServerEventRelay:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00384.png" usemap="#org.motechproject.server.messagecampaign.search.StatusCriterion_map" alt=""/>
-  <map id="org.motechproject.server.messagecampaign.search.StatusCriterion_map" name="org.motechproject.server.messagecampaign.search.StatusCriterion_map">
-<area href="a00097.html" alt="org.motechproject.server.messagecampaign.search.Criterion" shape="rect" coords="0,0,392,24"/>
+  <img src="a00384.png" usemap="#org.motechproject.server.event.ServerEventRelay_map" alt=""/>
+  <map id="org.motechproject.server.event.ServerEventRelay_map" name="org.motechproject.server.event.ServerEventRelay_map">
+<area href="a00163.html" alt="org.motechproject.event.EventRelay" shape="rect" coords="0,0,297,24"/>
+<area href="a00163.html" alt="org.motechproject.event.EventRelay" shape="rect" coords="307,0,604,24"/>
 </map>
  </div></div>
 
-<p><a href="a01386.html">List of all members.</a></p>
+<p><a href="a01846.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9b24b2aa2fdd94ff7c694609f44f0109"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a9b24b2aa2fdd94ff7c694609f44f0109">StatusCriterion</a> (<a class="el" href="a00071.html">CampaignEnrollmentStatus</a> campaignEnrollmentStatus)</td></tr>
-<tr class="memitem:a293d83d0731cafe566ab073e1a87fcee"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00066.html">CampaignEnrollment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a293d83d0731cafe566ab073e1a87fcee">fetch</a> (<a class="el" href="a00024.html">AllCampaignEnrollments</a> allCampaignEnrollments)</td></tr>
-<tr class="memitem:a7b238cf3a1606b8c9d5fff252aa5adbc"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00066.html">CampaignEnrollment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a7b238cf3a1606b8c9d5fff252aa5adbc">filter</a> (List&lt; <a class="el" href="a00066.html">CampaignEnrollment</a> &gt; campaignEnrollments)</td></tr>
+<tr class="memitem:a719edc621af8542cb820c868e19baf99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a719edc621af8542cb820c868e19baf99">ServerEventRelay</a> ()</td></tr>
+<tr class="memitem:a7a945f06bfd66e6a920989127cd70d09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a7a945f06bfd66e6a920989127cd70d09">ServerEventRelay</a> (<a class="el" href="a00318.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="a00162.html">EventListenerRegistry</a> eventListenerRegistry, <a class="el" href="a00247.html">MetricsAgent</a> metricsAgent)</td></tr>
+<tr class="memitem:a4888fc8464fe893ddaf050fad19a5d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a4888fc8464fe893ddaf050fad19a5d24">sendEventMessage</a> (<a class="el" href="a00262.html">MotechEvent</a> event)</td></tr>
+<tr class="memitem:aa47cb23ddc45c5ade82e4a874ccdf611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#aa47cb23ddc45c5ade82e4a874ccdf611">relayEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> event)</td></tr>
+<tr class="memitem:a719edc621af8542cb820c868e19baf99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a719edc621af8542cb820c868e19baf99">ServerEventRelay</a> ()</td></tr>
+<tr class="memitem:a7a945f06bfd66e6a920989127cd70d09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a7a945f06bfd66e6a920989127cd70d09">ServerEventRelay</a> (<a class="el" href="a00318.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="a00162.html">EventListenerRegistry</a> eventListenerRegistry, <a class="el" href="a00247.html">MetricsAgent</a> metricsAgent)</td></tr>
+<tr class="memitem:a4888fc8464fe893ddaf050fad19a5d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#a4888fc8464fe893ddaf050fad19a5d24">sendEventMessage</a> (<a class="el" href="a00262.html">MotechEvent</a> event)</td></tr>
+<tr class="memitem:aa47cb23ddc45c5ade82e4a874ccdf611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00384.html#aa47cb23ddc45c5ade82e4a874ccdf611">relayEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> event)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9b24b2aa2fdd94ff7c694609f44f0109"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>This class handled incoming scheduled events and relays those events to the appropriate event listeners. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a719edc621af8542cb820c868e19baf99"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00384.html#a9b24b2aa2fdd94ff7c694609f44f0109">org.motechproject.server.messagecampaign.search.StatusCriterion.StatusCriterion</a> </td>
+          <td class="memname"><a class="el" href="a00384.html#a719edc621af8542cb820c868e19baf99">org.motechproject.server.event.ServerEventRelay.ServerEventRelay</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00071.html">CampaignEnrollmentStatus</a>&#160;</td>
-          <td class="paramname"><em>campaignEnrollmentStatus</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -144,42 +150,174 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7a945f06bfd66e6a920989127cd70d09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00384.html#a719edc621af8542cb820c868e19baf99">org.motechproject.server.event.ServerEventRelay.ServerEventRelay</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00318.html">OutboundEventGateway</a>&#160;</td>
+          <td class="paramname"><em>outboundEventGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00162.html">EventListenerRegistry</a>&#160;</td>
+          <td class="paramname"><em>eventListenerRegistry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00247.html">MetricsAgent</a>&#160;</td>
+          <td class="paramname"><em>metricsAgent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a719edc621af8542cb820c868e19baf99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00384.html#a719edc621af8542cb820c868e19baf99">org.motechproject.server.event.ServerEventRelay.ServerEventRelay</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a945f06bfd66e6a920989127cd70d09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00384.html#a719edc621af8542cb820c868e19baf99">org.motechproject.server.event.ServerEventRelay.ServerEventRelay</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00318.html">OutboundEventGateway</a>&#160;</td>
+          <td class="paramname"><em>outboundEventGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00162.html">EventListenerRegistry</a>&#160;</td>
+          <td class="paramname"><em>eventListenerRegistry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00247.html">MetricsAgent</a>&#160;</td>
+          <td class="paramname"><em>metricsAgent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a293d83d0731cafe566ab073e1a87fcee"></a>
+<a class="anchor" id="aa47cb23ddc45c5ade82e4a874ccdf611"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00066.html">CampaignEnrollment</a>&gt; <a class="el" href="a00384.html#a293d83d0731cafe566ab073e1a87fcee">org.motechproject.server.messagecampaign.search.StatusCriterion.fetch</a> </td>
+          <td class="memname">void <a class="el" href="a00384.html#aa47cb23ddc45c5ade82e4a874ccdf611">org.motechproject.server.event.ServerEventRelay.relayEvent</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00024.html">AllCampaignEnrollments</a>&#160;</td>
-          <td class="paramname"><em>allCampaignEnrollments</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="a00097.html#aeb227006d8561859ddfe6f11a87957e1">org.motechproject.server.messagecampaign.search.Criterion</a>.</p>
+<p>Relay an event to all the listeners of that event. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>event being relayed </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a7b238cf3a1606b8c9d5fff252aa5adbc"></a>
+<a class="anchor" id="aa47cb23ddc45c5ade82e4a874ccdf611"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00066.html">CampaignEnrollment</a>&gt; <a class="el" href="a00384.html#a7b238cf3a1606b8c9d5fff252aa5adbc">org.motechproject.server.messagecampaign.search.StatusCriterion.filter</a> </td>
+          <td class="memname">void <a class="el" href="a00384.html#aa47cb23ddc45c5ade82e4a874ccdf611">org.motechproject.server.event.ServerEventRelay.relayEvent</a> </td>
           <td>(</td>
-          <td class="paramtype">List&lt; <a class="el" href="a00066.html">CampaignEnrollment</a> &gt;&#160;</td>
-          <td class="paramname"><em>campaignEnrollments</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="a00097.html#af61d842c7bbf4297a93a2c88f590dc1e">org.motechproject.server.messagecampaign.search.Criterion</a>.</p>
+<p>Relay an event to all the listeners of that event. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>event being relayed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4888fc8464fe893ddaf050fad19a5d24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00384.html#a4888fc8464fe893ddaf050fad19a5d24">org.motechproject.server.event.ServerEventRelay.sendEventMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="a00163.html#a4ee17c9019a24fb33e5d374c10f20b0c">org.motechproject.event.EventRelay</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4888fc8464fe893ddaf050fad19a5d24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00384.html#a4888fc8464fe893ddaf050fad19a5d24">org.motechproject.server.event.ServerEventRelay.sendEventMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="a00163.html#a4ee17c9019a24fb33e5d374c10f20b0c">org.motechproject.event.EventRelay</a>.</p>
 
 </div>
 </div>

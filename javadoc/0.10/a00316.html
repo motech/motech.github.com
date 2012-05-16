@@ -92,38 +92,558 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a01034.html">valueobjects</a>      </li>
-      <li class="navelem"><a class="el" href="a00316.html">ParseException</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01433.html">openmrs</a>      </li>
+      <li class="navelem"><a class="el" href="a01443.html">services</a>      </li>
+      <li class="navelem"><a class="el" href="a00316.html">OpenMRSUserAdapter</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.valueobjects.ParseException Class Reference</div>  </div>
+<div class="title">org.motechproject.openmrs.services.OpenMRSUserAdapter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.openmrs.services.OpenMRSUserAdapter:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00316.png" usemap="#org.motechproject.openmrs.services.OpenMRSUserAdapter_map" alt=""/>
+  <map id="org.motechproject.openmrs.services.OpenMRSUserAdapter_map" name="org.motechproject.openmrs.services.OpenMRSUserAdapter_map">
+<area href="a00293.html" title="Interface to handle MRSUser (Staff)" alt="org.motechproject.mrs.services.MRSUserAdapter" shape="rect" coords="0,0,351,24"/>
+<area href="a00293.html" title="Interface to handle MRSUser (Staff)" alt="org.motechproject.mrs.services.MRSUserAdapter" shape="rect" coords="361,0,712,24"/>
+</map>
+ </div></div>
 
-<p><a href="a01475.html">List of all members.</a></p>
+<p><a href="a01745.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af4d595abe510b634e732000197e44eee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#af4d595abe510b634e732000197e44eee">ParseException</a> (String s)</td></tr>
+<tr class="memitem:aa8fa4f79ab0f20d7750a65b64add08d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#aa8fa4f79ab0f20d7750a65b64add08d1">OpenMRSUserAdapter</a> (UserService userService, PersonService personService, <a class="el" href="a00312.html">OpenMRSPersonAdapter</a> openMRSPersonAdapter)</td></tr>
+<tr class="memitem:a0b600bee72512bd87198ec13234e2402"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a0b600bee72512bd87198ec13234e2402">changeCurrentUserPassword</a> (String currentPassword, String newPassword)  throws MRSException </td></tr>
+<tr class="memitem:a75fda1d7be710ea56b8e3a54306925e7"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a75fda1d7be710ea56b8e3a54306925e7">saveUser</a> (<a class="el" href="a00292.html">MRSUser</a> mrsUser)  throws UserAlreadyExistsException </td></tr>
+<tr class="memitem:ae65312b8ba182f6454511d188255a916"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#ae65312b8ba182f6454511d188255a916">updateUser</a> (<a class="el" href="a00292.html">MRSUser</a> mrsUser)</td></tr>
+<tr class="memitem:a24a4f4fce884b984a26158e4d0d134a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00292.html">MRSUser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a24a4f4fce884b984a26158e4d0d134a8">getUserByUserName</a> (String userId)</td></tr>
+<tr class="memitem:a42a090cffdecb9f661aa74c643bb85c1"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00292.html">MRSUser</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a42a090cffdecb9f661aa74c643bb85c1">getAllUsers</a> ()</td></tr>
+<tr class="memitem:a7570b9452352d3b519ccf9c3ec3dd6ed"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a7570b9452352d3b519ccf9c3ec3dd6ed">getRoleFromOpenMRSUser</a> (Set&lt; Role &gt; roles)</td></tr>
+<tr class="memitem:a72aeaa45369316f367784db473ae0def"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a72aeaa45369316f367784db473ae0def">setNewPasswordForUser</a> (String userId)  throws UsernameNotFoundException </td></tr>
+<tr class="memitem:aa8fa4f79ab0f20d7750a65b64add08d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#aa8fa4f79ab0f20d7750a65b64add08d1">OpenMRSUserAdapter</a> (UserService userService, PersonService personService, <a class="el" href="a00312.html">OpenMRSPersonAdapter</a> openMRSPersonAdapter)</td></tr>
+<tr class="memitem:a0b600bee72512bd87198ec13234e2402"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a0b600bee72512bd87198ec13234e2402">changeCurrentUserPassword</a> (String currentPassword, String newPassword)  throws MRSException </td></tr>
+<tr class="memitem:a75fda1d7be710ea56b8e3a54306925e7"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a75fda1d7be710ea56b8e3a54306925e7">saveUser</a> (<a class="el" href="a00292.html">MRSUser</a> mrsUser)  throws UserAlreadyExistsException </td></tr>
+<tr class="memitem:ae65312b8ba182f6454511d188255a916"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#ae65312b8ba182f6454511d188255a916">updateUser</a> (<a class="el" href="a00292.html">MRSUser</a> mrsUser)</td></tr>
+<tr class="memitem:a24a4f4fce884b984a26158e4d0d134a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00292.html">MRSUser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a24a4f4fce884b984a26158e4d0d134a8">getUserByUserName</a> (String userId)</td></tr>
+<tr class="memitem:a42a090cffdecb9f661aa74c643bb85c1"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00292.html">MRSUser</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a42a090cffdecb9f661aa74c643bb85c1">getAllUsers</a> ()</td></tr>
+<tr class="memitem:a7570b9452352d3b519ccf9c3ec3dd6ed"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a7570b9452352d3b519ccf9c3ec3dd6ed">getRoleFromOpenMRSUser</a> (Set&lt; Role &gt; roles)</td></tr>
+<tr class="memitem:a72aeaa45369316f367784db473ae0def"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a72aeaa45369316f367784db473ae0def">setNewPasswordForUser</a> (String userId)  throws UsernameNotFoundException </td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ac53e761780d19b3d15287c3007338812"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#ac53e761780d19b3d15287c3007338812">USER_KEY</a> = &quot;mrsUser&quot;</td></tr>
+<tr class="memitem:a312a813ca29a2e98fc8ecb009470f309"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00316.html#a312a813ca29a2e98fc8ecb009470f309">PASSWORD_USER_KEY</a> = &quot;password&quot;</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af4d595abe510b634e732000197e44eee"></a>
+<a class="anchor" id="aa8fa4f79ab0f20d7750a65b64add08d1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00316.html#af4d595abe510b634e732000197e44eee">org.motechproject.valueobjects.ParseException.ParseException</a> </td>
+          <td class="memname"><a class="el" href="a00316.html#aa8fa4f79ab0f20d7750a65b64add08d1">org.motechproject.openmrs.services.OpenMRSUserAdapter.OpenMRSUserAdapter</a> </td>
+          <td>(</td>
+          <td class="paramtype">UserService&#160;</td>
+          <td class="paramname"><em>userService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PersonService&#160;</td>
+          <td class="paramname"><em>personService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00312.html">OpenMRSPersonAdapter</a>&#160;</td>
+          <td class="paramname"><em>openMRSPersonAdapter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8fa4f79ab0f20d7750a65b64add08d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00316.html#aa8fa4f79ab0f20d7750a65b64add08d1">org.motechproject.openmrs.services.OpenMRSUserAdapter.OpenMRSUserAdapter</a> </td>
+          <td>(</td>
+          <td class="paramtype">UserService&#160;</td>
+          <td class="paramname"><em>userService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PersonService&#160;</td>
+          <td class="paramname"><em>personService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00312.html">OpenMRSPersonAdapter</a>&#160;</td>
+          <td class="paramname"><em>openMRSPersonAdapter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a0b600bee72512bd87198ec13234e2402"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00316.html#a0b600bee72512bd87198ec13234e2402">org.motechproject.openmrs.services.OpenMRSUserAdapter.changeCurrentUserPassword</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramname"><em>currentPassword</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>newPassword</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="a00283.html">MRSException</a> </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Changes the password of the user. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentPassword</td><td>Old password </td></tr>
+    <tr><td class="paramname">newPassword</td><td>New password </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MRSException</td><td>Thrown when change password fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00293.html#a005770bca9dce360811cc34d2417c73f">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b600bee72512bd87198ec13234e2402"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00316.html#a0b600bee72512bd87198ec13234e2402">org.motechproject.openmrs.services.OpenMRSUserAdapter.changeCurrentUserPassword</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>currentPassword</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>newPassword</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="a00283.html">MRSException</a> </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Changes the password of the user. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentPassword</td><td>Old password </td></tr>
+    <tr><td class="paramname">newPassword</td><td>New password </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">MRSException</td><td>Thrown when change password fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00293.html#a005770bca9dce360811cc34d2417c73f">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42a090cffdecb9f661aa74c643bb85c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00292.html">MRSUser</a>&gt; <a class="el" href="a00316.html#a42a090cffdecb9f661aa74c643bb85c1">org.motechproject.openmrs.services.OpenMRSUserAdapter.getAllUsers</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets all users present in the openMRS system. </p>
+<dl class="section return"><dt>Returns:</dt><dd>List of all Users if users exist, else empty list </dd></dl>
+
+<p>Implements <a class="el" href="a00293.html#a35b2e4de45ee67e1312261d949b4c5ab">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42a090cffdecb9f661aa74c643bb85c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00292.html">MRSUser</a>&gt; <a class="el" href="a00316.html#a42a090cffdecb9f661aa74c643bb85c1">org.motechproject.openmrs.services.OpenMRSUserAdapter.getAllUsers</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets all users present in the openMRS system. </p>
+<dl class="section return"><dt>Returns:</dt><dd>List of all Users if users exist, else empty list </dd></dl>
+
+<p>Implements <a class="el" href="a00293.html#a35b2e4de45ee67e1312261d949b4c5ab">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7570b9452352d3b519ccf9c3ec3dd6ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00316.html#a7570b9452352d3b519ccf9c3ec3dd6ed">org.motechproject.openmrs.services.OpenMRSUserAdapter.getRoleFromOpenMRSUser</a> </td>
+          <td>(</td>
+          <td class="paramtype">Set&lt; Role &gt;&#160;</td>
+          <td class="paramname"><em>roles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7570b9452352d3b519ccf9c3ec3dd6ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00316.html#a7570b9452352d3b519ccf9c3ec3dd6ed">org.motechproject.openmrs.services.OpenMRSUserAdapter.getRoleFromOpenMRSUser</a> </td>
+          <td>(</td>
+          <td class="paramtype">Set&lt; Role &gt;&#160;</td>
+          <td class="paramname"><em>roles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24a4f4fce884b984a26158e4d0d134a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00292.html">MRSUser</a> <a class="el" href="a00316.html#a24a4f4fce884b984a26158e4d0d134a8">org.motechproject.openmrs.services.OpenMRSUserAdapter.getUserByUserName</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>userId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Finds user by UserName. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>User's unique Identifier ( email or MOTECH id ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>The User object, if found, else null. </dd></dl>
+
+<p>Implements <a class="el" href="a00293.html#a56a14308c06644d3904b612b0832e75e">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24a4f4fce884b984a26158e4d0d134a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00292.html">MRSUser</a> <a class="el" href="a00316.html#a24a4f4fce884b984a26158e4d0d134a8">org.motechproject.openmrs.services.OpenMRSUserAdapter.getUserByUserName</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>userId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Finds user by UserName. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>User's unique Identifier ( email or MOTECH id ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>The User object, if found, else null. </dd></dl>
+
+<p>Implements <a class="el" href="a00293.html#a56a14308c06644d3904b612b0832e75e">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a75fda1d7be710ea56b8e3a54306925e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, Object&gt; <a class="el" href="a00316.html#a75fda1d7be710ea56b8e3a54306925e7">org.motechproject.openmrs.services.OpenMRSUserAdapter.saveUser</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00292.html">MRSUser</a>&#160;</td>
+          <td class="paramname"><em>mrsUser</em></td><td>)</td>
+          <td>  throws <a class="el" href="a00429.html">UserAlreadyExistsException</a> </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates a new MRSUser. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mrsUser</td><td>Instance of the User object to be saved </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A Map containing saved user's data </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UserAlreadyExistsException</td><td>Thrown if the user already exists </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00293.html#aec6f256a24d6ec7ed9b62b95967d7e1e">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a75fda1d7be710ea56b8e3a54306925e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, Object&gt; <a class="el" href="a00316.html#a75fda1d7be710ea56b8e3a54306925e7">org.motechproject.openmrs.services.OpenMRSUserAdapter.saveUser</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00292.html">MRSUser</a>&#160;</td>
+          <td class="paramname"><em>mrsUser</em></td><td>)</td>
+          <td>  throws <a class="el" href="a00429.html">UserAlreadyExistsException</a> </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates a new MRSUser. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mrsUser</td><td>Instance of the User object to be saved </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A Map containing saved user's data </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UserAlreadyExistsException</td><td>Thrown if the user already exists </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00293.html#aec6f256a24d6ec7ed9b62b95967d7e1e">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72aeaa45369316f367784db473ae0def"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00316.html#a72aeaa45369316f367784db473ae0def">org.motechproject.openmrs.services.OpenMRSUserAdapter.setNewPasswordForUser</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>userId</em></td><td>)</td>
+          <td>  throws UsernameNotFoundException </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Resets the password of a given User. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>User's unique identifier (email or MOTECH id) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>New password </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UsernameNotFoundException</td><td>If the user is not found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00293.html#a484ae917286f1695fefd52fbea13d4f0">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72aeaa45369316f367784db473ae0def"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00316.html#a72aeaa45369316f367784db473ae0def">org.motechproject.openmrs.services.OpenMRSUserAdapter.setNewPasswordForUser</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>userId</em></td><td>)</td>
+          <td>  throws UsernameNotFoundException </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Resets the password of a given User. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>User's unique identifier (email or MOTECH id) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>New password </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">UsernameNotFoundException</td><td>If the user is not found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00293.html#a484ae917286f1695fefd52fbea13d4f0">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae65312b8ba182f6454511d188255a916"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, Object&gt; <a class="el" href="a00316.html#ae65312b8ba182f6454511d188255a916">org.motechproject.openmrs.services.OpenMRSUserAdapter.updateUser</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00292.html">MRSUser</a>&#160;</td>
+          <td class="paramname"><em>mrsUser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Updates User attributes if found, else creates the user. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mrsUser</td><td>MRS User object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A Map containing saved user's data </dd></dl>
+
+<p>Implements <a class="el" href="a00293.html#a6b0661fe6f45985f01281afe137a316a">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae65312b8ba182f6454511d188255a916"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, Object&gt; <a class="el" href="a00316.html#ae65312b8ba182f6454511d188255a916">org.motechproject.openmrs.services.OpenMRSUserAdapter.updateUser</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00292.html">MRSUser</a>&#160;</td>
+          <td class="paramname"><em>mrsUser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Updates User attributes if found, else creates the user. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mrsUser</td><td>MRS User object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A Map containing saved user's data </dd></dl>
+
+<p>Implements <a class="el" href="a00293.html#a6b0661fe6f45985f01281afe137a316a">org.motechproject.mrs.services.MRSUserAdapter</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a312a813ca29a2e98fc8ecb009470f309"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final String <a class="el" href="a00316.html#a312a813ca29a2e98fc8ecb009470f309">org.motechproject.openmrs.services.OpenMRSUserAdapter.PASSWORD_USER_KEY</a> = &quot;password&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac53e761780d19b3d15287c3007338812"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final String <a class="el" href="a00316.html#ac53e761780d19b3d15287c3007338812">org.motechproject.openmrs.services.OpenMRSUserAdapter.USER_KEY</a> = &quot;mrsUser&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>

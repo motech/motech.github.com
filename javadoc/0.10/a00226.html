@@ -92,13 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a01008.html">pillreminder</a>      </li>
-      <li class="navelem"><a class="el" href="a01009.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a01011.html">contract</a>      </li>
-      <li class="navelem"><a class="el" href="a00226.html">MedicineRequest</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01501.html">osgi</a>      </li>
+      <li class="navelem"><a class="el" href="a00226.html">Log4JBundleLoader</a>      </li>
     </ul>
   </div>
 </div>
@@ -106,62 +104,105 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.pillreminder.api.contract.MedicineRequest Class Reference</div>  </div>
+<div class="title">org.motechproject.server.osgi.Log4JBundleLoader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.server.osgi.Log4JBundleLoader:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00226.png" usemap="#org.motechproject.server.osgi.Log4JBundleLoader_map" alt=""/>
+  <map id="org.motechproject.server.osgi.Log4JBundleLoader_map" name="org.motechproject.server.osgi.Log4JBundleLoader_map">
+<area href="a00057.html" title="Interface for custom bundle loading processes." alt="org.motechproject.server.osgi.BundleLoader" shape="rect" coords="0,0,300,24"/>
+<area href="a00057.html" title="Interface for custom bundle loading processes." alt="org.motechproject.server.osgi.BundleLoader" shape="rect" coords="310,0,610,24"/>
+</map>
+ </div></div>
 
-<p><a href="a01416.html">List of all members.</a></p>
+<p><a href="a01899.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abada8b7e38e659fc2a522c25f8281055"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#abada8b7e38e659fc2a522c25f8281055">MedicineRequest</a> (String name, LocalDate startDate, LocalDate endDate)</td></tr>
-<tr class="memitem:afd0cf936b2b71f5d28867a4321e81238"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#afd0cf936b2b71f5d28867a4321e81238">getName</a> ()</td></tr>
-<tr class="memitem:afe78419ca398fe6b50274017182ba367"><td class="memItemLeft" align="right" valign="top">LocalDate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#afe78419ca398fe6b50274017182ba367">getStartDate</a> ()</td></tr>
-<tr class="memitem:ab38bb50844bab36d1a388a8f3b21540a"><td class="memItemLeft" align="right" valign="top">LocalDate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#ab38bb50844bab36d1a388a8f3b21540a">getEndDate</a> ()</td></tr>
+<tr class="memitem:ac35cd6518f1e56ebb809d7af6c84ce1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#ac35cd6518f1e56ebb809d7af6c84ce1a">loadBundle</a> (Bundle bundle)  throws Exception </td></tr>
+<tr class="memitem:a4d30e850a864cde425cd0965b39bcf71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a4d30e850a864cde425cd0965b39bcf71">setLog4jConf</a> (String log4jConf)</td></tr>
+<tr class="memitem:ac35cd6518f1e56ebb809d7af6c84ce1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#ac35cd6518f1e56ebb809d7af6c84ce1a">loadBundle</a> (Bundle bundle)  throws Exception </td></tr>
+<tr class="memitem:a4d30e850a864cde425cd0965b39bcf71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a4d30e850a864cde425cd0965b39bcf71">setLog4jConf</a> (String log4jConf)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abada8b7e38e659fc2a522c25f8281055"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Custom log4j configuration loader. </p>
+<p>Merge bundle specific configurations to the existing if a bundle contains log4j.xml</p>
+<dl class="section author"><dt>Author:</dt><dd>Ricky Wang </dd></dl>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ac35cd6518f1e56ebb809d7af6c84ce1a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00226.html#abada8b7e38e659fc2a522c25f8281055">org.motechproject.server.pillreminder.api.contract.MedicineRequest.MedicineRequest</a> </td>
+          <td class="memname">void <a class="el" href="a00226.html#ac35cd6518f1e56ebb809d7af6c84ce1a">org.motechproject.server.osgi.Log4JBundleLoader.loadBundle</a> </td>
+          <td>(</td>
+          <td class="paramtype">Bundle&#160;</td>
+          <td class="paramname"><em>bundle</em></td><td>)</td>
+          <td>  throws Exception </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bundle</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00057.html#aa8e665376581d423fd3f20497a612190">org.motechproject.server.osgi.BundleLoader</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac35cd6518f1e56ebb809d7af6c84ce1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00226.html#ac35cd6518f1e56ebb809d7af6c84ce1a">org.motechproject.server.osgi.Log4JBundleLoader.loadBundle</a> </td>
+          <td>(</td>
+          <td class="paramtype">Bundle&#160;</td>
+          <td class="paramname"><em>bundle</em></td><td>)</td>
+          <td>  throws Exception </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bundle</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00057.html#aa8e665376581d423fd3f20497a612190">org.motechproject.server.osgi.BundleLoader</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d30e850a864cde425cd0965b39bcf71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00226.html#a4d30e850a864cde425cd0965b39bcf71">org.motechproject.server.osgi.Log4JBundleLoader.setLog4jConf</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LocalDate&#160;</td>
-          <td class="paramname"><em>startDate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LocalDate&#160;</td>
-          <td class="paramname"><em>endDate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ab38bb50844bab36d1a388a8f3b21540a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LocalDate <a class="el" href="a00226.html#ab38bb50844bab36d1a388a8f3b21540a">org.motechproject.server.pillreminder.api.contract.MedicineRequest.getEndDate</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>log4jConf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -170,30 +211,15 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afd0cf936b2b71f5d28867a4321e81238"></a>
+<a class="anchor" id="a4d30e850a864cde425cd0965b39bcf71"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00226.html#afd0cf936b2b71f5d28867a4321e81238">org.motechproject.server.pillreminder.api.contract.MedicineRequest.getName</a> </td>
+          <td class="memname">void <a class="el" href="a00226.html#a4d30e850a864cde425cd0965b39bcf71">org.motechproject.server.osgi.Log4JBundleLoader.setLog4jConf</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afe78419ca398fe6b50274017182ba367"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">LocalDate <a class="el" href="a00226.html#afe78419ca398fe6b50274017182ba367">org.motechproject.server.pillreminder.api.contract.MedicineRequest.getStartDate</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>log4jConf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

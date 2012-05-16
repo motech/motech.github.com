@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00959.html">scheduletracking</a>      </li>
-      <li class="navelem"><a class="el" href="a00960.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00969.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00395.html">TrackedSchedulesJsonReaderImpl</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01520.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a00395.html">SMSRecord</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,37 +104,125 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReaderImpl Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.api.SMSRecord Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReaderImpl:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00395.png" usemap="#org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReaderImpl_map" alt=""/>
-  <map id="org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReaderImpl_map" name="org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReaderImpl_map">
-<area href="a00394.html" alt="org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReader" shape="rect" coords="0,0,495,24"/>
-</map>
- </div></div>
 
-<p><a href="a01302.html">List of all members.</a></p>
+<p><a href="a01963.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9584daeed4758aeedff80c7e22cb3fcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a9584daeed4758aeedff80c7e22cb3fcf">TrackedSchedulesJsonReaderImpl</a> (@Value(&quot;#{schedule_tracking['schedule.definitions.directory']}&quot;) String definitionsDirectoryName)</td></tr>
-<tr class="memitem:aa349e360113824225344de7d3f72d654"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00362.html">ScheduleRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#aa349e360113824225344de7d3f72d654">records</a> ()</td></tr>
+<tr class="memitem:ad84c04b660b246554bcaa916914db6e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#ad84c04b660b246554bcaa916914db6e0">SMSRecord</a> (<a class="el" href="a00401.html">SMSType</a> type, String phoneNo, <a class="el" href="a00122.html">DeliveryStatus</a> deliveryStatus, String refNo, String content, DateTime messageTime)</td></tr>
+<tr class="memitem:ac96141f77f83d5bbda79f816a1449f71"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#ac96141f77f83d5bbda79f816a1449f71">getRefNo</a> ()</td></tr>
+<tr class="memitem:a4a09823b8cd0ff2c555d460fa93cf979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00122.html">DeliveryStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a4a09823b8cd0ff2c555d460fa93cf979">getDeliveryStatus</a> ()</td></tr>
+<tr class="memitem:a6a39947b9a30ca85c8be0734f7fdfc20"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a6a39947b9a30ca85c8be0734f7fdfc20">getPhoneNo</a> ()</td></tr>
+<tr class="memitem:a37500cbc8bf44c7c270d8eef4250088b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00401.html">SMSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a37500cbc8bf44c7c270d8eef4250088b">getType</a> ()</td></tr>
+<tr class="memitem:a620e27ddaa00f32a4cfc874192a7297b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a620e27ddaa00f32a4cfc874192a7297b">getContent</a> ()</td></tr>
+<tr class="memitem:a967d34cc4d95e7f32288cf5f331bd679"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a967d34cc4d95e7f32288cf5f331bd679">getMessageTime</a> ()</td></tr>
+<tr class="memitem:ad84c04b660b246554bcaa916914db6e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#ad84c04b660b246554bcaa916914db6e0">SMSRecord</a> (<a class="el" href="a00401.html">SMSType</a> type, String phoneNo, <a class="el" href="a00122.html">DeliveryStatus</a> deliveryStatus, String refNo, String content, DateTime messageTime)</td></tr>
+<tr class="memitem:ac96141f77f83d5bbda79f816a1449f71"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#ac96141f77f83d5bbda79f816a1449f71">getRefNo</a> ()</td></tr>
+<tr class="memitem:a4a09823b8cd0ff2c555d460fa93cf979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00122.html">DeliveryStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a4a09823b8cd0ff2c555d460fa93cf979">getDeliveryStatus</a> ()</td></tr>
+<tr class="memitem:a6a39947b9a30ca85c8be0734f7fdfc20"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a6a39947b9a30ca85c8be0734f7fdfc20">getPhoneNo</a> ()</td></tr>
+<tr class="memitem:a37500cbc8bf44c7c270d8eef4250088b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00401.html">SMSType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a37500cbc8bf44c7c270d8eef4250088b">getType</a> ()</td></tr>
+<tr class="memitem:a620e27ddaa00f32a4cfc874192a7297b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a620e27ddaa00f32a4cfc874192a7297b">getContent</a> ()</td></tr>
+<tr class="memitem:a967d34cc4d95e7f32288cf5f331bd679"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00395.html#a967d34cc4d95e7f32288cf5f331bd679">getMessageTime</a> ()</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9584daeed4758aeedff80c7e22cb3fcf"></a>
+<a class="anchor" id="ad84c04b660b246554bcaa916914db6e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00395.html#a9584daeed4758aeedff80c7e22cb3fcf">org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReaderImpl.TrackedSchedulesJsonReaderImpl</a> </td>
+          <td class="memname"><a class="el" href="a00395.html#ad84c04b660b246554bcaa916914db6e0">org.motechproject.sms.api.SMSRecord.SMSRecord</a> </td>
           <td>(</td>
-          <td class="paramtype">@Value(&quot;#{schedule_tracking['schedule.definitions.directory']}&quot;) String&#160;</td>
-          <td class="paramname"><em>definitionsDirectoryName</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00401.html">SMSType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00122.html">DeliveryStatus</a>&#160;</td>
+          <td class="paramname"><em>deliveryStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>messageTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad84c04b660b246554bcaa916914db6e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00395.html#ad84c04b660b246554bcaa916914db6e0">org.motechproject.sms.api.SMSRecord.SMSRecord</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00401.html">SMSType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00122.html">DeliveryStatus</a>&#160;</td>
+          <td class="paramname"><em>deliveryStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>messageTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -144,12 +231,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa349e360113824225344de7d3f72d654"></a>
+<a class="anchor" id="a620e27ddaa00f32a4cfc874192a7297b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00362.html">ScheduleRecord</a>&gt; <a class="el" href="a00395.html#aa349e360113824225344de7d3f72d654">org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReaderImpl.records</a> </td>
+          <td class="memname">String <a class="el" href="a00395.html#a620e27ddaa00f32a4cfc874192a7297b">org.motechproject.sms.api.SMSRecord.getContent</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -158,7 +245,181 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="a00394.html#ab9278db4f6853af0cebf187c1e20585b">org.motechproject.scheduletracking.api.repository.TrackedSchedulesJsonReader</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a620e27ddaa00f32a4cfc874192a7297b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00395.html#a620e27ddaa00f32a4cfc874192a7297b">org.motechproject.sms.api.SMSRecord.getContent</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a09823b8cd0ff2c555d460fa93cf979"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00122.html">DeliveryStatus</a> <a class="el" href="a00395.html#a4a09823b8cd0ff2c555d460fa93cf979">org.motechproject.sms.api.SMSRecord.getDeliveryStatus</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a09823b8cd0ff2c555d460fa93cf979"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00122.html">DeliveryStatus</a> <a class="el" href="a00395.html#a4a09823b8cd0ff2c555d460fa93cf979">org.motechproject.sms.api.SMSRecord.getDeliveryStatus</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a967d34cc4d95e7f32288cf5f331bd679"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime <a class="el" href="a00395.html#a967d34cc4d95e7f32288cf5f331bd679">org.motechproject.sms.api.SMSRecord.getMessageTime</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a967d34cc4d95e7f32288cf5f331bd679"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime <a class="el" href="a00395.html#a967d34cc4d95e7f32288cf5f331bd679">org.motechproject.sms.api.SMSRecord.getMessageTime</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a39947b9a30ca85c8be0734f7fdfc20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00395.html#a6a39947b9a30ca85c8be0734f7fdfc20">org.motechproject.sms.api.SMSRecord.getPhoneNo</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a39947b9a30ca85c8be0734f7fdfc20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00395.html#a6a39947b9a30ca85c8be0734f7fdfc20">org.motechproject.sms.api.SMSRecord.getPhoneNo</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac96141f77f83d5bbda79f816a1449f71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00395.html#ac96141f77f83d5bbda79f816a1449f71">org.motechproject.sms.api.SMSRecord.getRefNo</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac96141f77f83d5bbda79f816a1449f71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00395.html#ac96141f77f83d5bbda79f816a1449f71">org.motechproject.sms.api.SMSRecord.getRefNo</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37500cbc8bf44c7c270d8eef4250088b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00401.html">SMSType</a> <a class="el" href="a00395.html#a37500cbc8bf44c7c270d8eef4250088b">org.motechproject.sms.api.SMSRecord.getType</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37500cbc8bf44c7c270d8eef4250088b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00401.html">SMSType</a> <a class="el" href="a00395.html#a37500cbc8bf44c7c270d8eef4250088b">org.motechproject.sms.api.SMSRecord.getType</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

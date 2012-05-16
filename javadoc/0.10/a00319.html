@@ -92,11 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00938.html">openmrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00940.html">helper</a>      </li>
-      <li class="navelem"><a class="el" href="a00319.html">PatientHelper</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01528.html">smpp</a>      </li>
+      <li class="navelem"><a class="el" href="a00319.html">OutboundMessageNotification</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,44 +104,119 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.openmrs.helper.PatientHelper Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.smpp.OutboundMessageNotification Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01224.html">List of all members.</a></p>
+<p>Inherits IOutboundMessageNotification, and IOutboundMessageNotification.</p>
+
+<p><a href="a01988.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4da98f76b2dc20df7f30f2a5d43b8a45"><td class="memItemLeft" align="right" valign="top">Patient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00319.html#a4da98f76b2dc20df7f30f2a5d43b8a45">buildOpenMrsPatient</a> (<a class="el" href="a00279.html">MRSPatient</a> patient, PatientIdentifierType patientIdentifierType, Location location, List&lt; PersonAttributeType &gt; allPersonAttributeTypes)</td></tr>
+<tr class="memitem:ae402ddd153b2ed0a2f4c38762ab8fd3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00319.html#ae402ddd153b2ed0a2f4c38762ab8fd3c">OutboundMessageNotification</a> (<a class="el" href="a00318.html">OutboundEventGateway</a> outboundEventGateway,@Qualifier(&quot;smsProperties&quot;) Properties smsProperties)</td></tr>
+<tr class="memitem:a0630dd4a2d4c36fe1431577ef4c47eaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00319.html#a0630dd4a2d4c36fe1431577ef4c47eaf">process</a> (AGateway gateway, OutboundMessage msg)</td></tr>
+<tr class="memitem:ae402ddd153b2ed0a2f4c38762ab8fd3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00319.html#ae402ddd153b2ed0a2f4c38762ab8fd3c">OutboundMessageNotification</a> (<a class="el" href="a00318.html">OutboundEventGateway</a> outboundEventGateway,@Qualifier(&quot;smsProperties&quot;) Properties smsProperties)</td></tr>
+<tr class="memitem:a0630dd4a2d4c36fe1431577ef4c47eaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00319.html#a0630dd4a2d4c36fe1431577ef4c47eaf">process</a> (AGateway gateway, OutboundMessage msg)</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a4da98f76b2dc20df7f30f2a5d43b8a45"></a>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae402ddd153b2ed0a2f4c38762ab8fd3c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Patient <a class="el" href="a00319.html#a4da98f76b2dc20df7f30f2a5d43b8a45">org.motechproject.openmrs.helper.PatientHelper.buildOpenMrsPatient</a> </td>
+          <td class="memname"><a class="el" href="a00319.html#ae402ddd153b2ed0a2f4c38762ab8fd3c">org.motechproject.sms.smpp.OutboundMessageNotification.OutboundMessageNotification</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00279.html">MRSPatient</a>&#160;</td>
-          <td class="paramname"><em>patient</em>, </td>
+          <td class="paramtype"><a class="el" href="a00318.html">OutboundEventGateway</a>&#160;</td>
+          <td class="paramname"><em>outboundEventGateway</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">PatientIdentifierType&#160;</td>
-          <td class="paramname"><em>patientIdentifierType</em>, </td>
+          <td class="paramtype">@Qualifier(&quot;smsProperties&quot;) Properties&#160;</td>
+          <td class="paramname"><em>smsProperties</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae402ddd153b2ed0a2f4c38762ab8fd3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00319.html#ae402ddd153b2ed0a2f4c38762ab8fd3c">org.motechproject.sms.smpp.OutboundMessageNotification.OutboundMessageNotification</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00318.html">OutboundEventGateway</a>&#160;</td>
+          <td class="paramname"><em>outboundEventGateway</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Location&#160;</td>
-          <td class="paramname"><em>location</em>, </td>
+          <td class="paramtype">@Qualifier(&quot;smsProperties&quot;) Properties&#160;</td>
+          <td class="paramname"><em>smsProperties</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a0630dd4a2d4c36fe1431577ef4c47eaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00319.html#a0630dd4a2d4c36fe1431577ef4c47eaf">org.motechproject.sms.smpp.OutboundMessageNotification.process</a> </td>
+          <td>(</td>
+          <td class="paramtype">AGateway&#160;</td>
+          <td class="paramname"><em>gateway</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">List&lt; PersonAttributeType &gt;&#160;</td>
-          <td class="paramname"><em>allPersonAttributeTypes</em>&#160;</td>
+          <td class="paramtype">OutboundMessage&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0630dd4a2d4c36fe1431577ef4c47eaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00319.html#a0630dd4a2d4c36fe1431577ef4c47eaf">org.motechproject.sms.smpp.OutboundMessageNotification.process</a> </td>
+          <td>(</td>
+          <td class="paramtype">AGateway&#160;</td>
+          <td class="paramname"><em>gateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutboundMessage&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

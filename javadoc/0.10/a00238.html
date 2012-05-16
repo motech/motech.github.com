@@ -92,10 +92,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00917.html">metrics</a>      </li>
-      <li class="navelem"><a class="el" href="a00238.html">MetricsAgent</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01504.html">pillreminder</a>      </li>
+      <li class="navelem"><a class="el" href="a01505.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01506.html">builder</a>      </li>
+      <li class="navelem"><a class="el" href="a00238.html">MedicineResponseBuilder</a>      </li>
     </ul>
   </div>
 </div>
@@ -103,150 +106,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.metrics.MetricsAgent Interface Reference</div>  </div>
+<div class="title">org.motechproject.server.pillreminder.api.builder.MedicineResponseBuilder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.metrics.MetricsAgent:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00238.png" usemap="#org.motechproject.metrics.MetricsAgent_map" alt=""/>
-  <map id="org.motechproject.metrics.MetricsAgent_map" name="org.motechproject.metrics.MetricsAgent_map">
-<area href="a00285.html" alt="org.motechproject.metrics.impl.MultipleMetricsAgentImpl" shape="rect" coords="0,56,329,80"/>
-</map>
- </div></div>
 
-<p><a href="a01157.html">List of all members.</a></p>
+<p><a href="a01911.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acf8bb4eb90784b338dde30a6594f8d7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html#acf8bb4eb90784b338dde30a6594f8d7f">logEvent</a> (String metric, Map&lt; String, String &gt; parameters)</td></tr>
-<tr class="memitem:ac7cf41863d678963a986047ebfd5dc43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html#ac7cf41863d678963a986047ebfd5dc43">logEvent</a> (String metric)</td></tr>
-<tr class="memitem:aca98b464876ef495aa57a29232bdab05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html#aca98b464876ef495aa57a29232bdab05">startTimer</a> (String metric)</td></tr>
-<tr class="memitem:a6cc80ef404643e07dd11b70c6de84f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html#a6cc80ef404643e07dd11b70c6de84f2e">stopTimer</a> (String metric)</td></tr>
+<tr class="memitem:a59ab2676440cc68ced249c387c469c4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00237.html">MedicineResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html#a59ab2676440cc68ced249c387c469c4d">createFrom</a> (<a class="el" href="a00234.html">Medicine</a> medicine)</td></tr>
+<tr class="memitem:a59ab2676440cc68ced249c387c469c4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00237.html">MedicineResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html#a59ab2676440cc68ced249c387c469c4d">createFrom</a> (<a class="el" href="a00234.html">Medicine</a> medicine)</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Interface into the metrics system. </p>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="acf8bb4eb90784b338dde30a6594f8d7f"></a>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a59ab2676440cc68ced249c387c469c4d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00238.html#acf8bb4eb90784b338dde30a6594f8d7f">org.motechproject.metrics.MetricsAgent.logEvent</a> </td>
+          <td class="memname"><a class="el" href="a00237.html">MedicineResponse</a> <a class="el" href="a00238.html#a59ab2676440cc68ced249c387c469c4d">org.motechproject.server.pillreminder.api.builder.MedicineResponseBuilder.createFrom</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>metric</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, String &gt;&#160;</td>
-          <td class="paramname"><em>parameters</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reports an occurrence of metric, incrementing it's count. </p>
-<p>Not all implementations may make use of parameters</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">metric</td><td>The metric being recorded </td></tr>
-    <tr><td class="paramname">parameters</td><td>Optional parameters related to the event </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00285.html#adafb7368fd998167a2419697e17acc46">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac7cf41863d678963a986047ebfd5dc43"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00238.html#acf8bb4eb90784b338dde30a6594f8d7f">org.motechproject.metrics.MetricsAgent.logEvent</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>metric</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00234.html">Medicine</a>&#160;</td>
+          <td class="paramname"><em>medicine</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reports an occurrence of metric, incrementing it's count. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">metric</td><td>The metric being recorded </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00285.html#ac7a3804d27f8684e8431844aa6ae0e95">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="aca98b464876ef495aa57a29232bdab05"></a>
+<a class="anchor" id="a59ab2676440cc68ced249c387c469c4d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00238.html#aca98b464876ef495aa57a29232bdab05">org.motechproject.metrics.MetricsAgent.startTimer</a> </td>
+          <td class="memname"><a class="el" href="a00237.html">MedicineResponse</a> <a class="el" href="a00238.html#a59ab2676440cc68ced249c387c469c4d">org.motechproject.server.pillreminder.api.builder.MedicineResponseBuilder.createFrom</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>metric</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00234.html">Medicine</a>&#160;</td>
+          <td class="paramname"><em>medicine</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Starts a timer for metric. </p>
-<p>Later calls to startTimer without a corresponding call to endTimer for the same metric are ignored</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">metric</td><td>The metric being timed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00285.html#a8d565d978ccc16d2479651a8f04304ea">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6cc80ef404643e07dd11b70c6de84f2e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00238.html#a6cc80ef404643e07dd11b70c6de84f2e">org.motechproject.metrics.MetricsAgent.stopTimer</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>metric</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Ends the timer for metric and records it. </p>
-<p>No action is taken if a start timer was not recorded for metric</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">metric</td><td>The metric being timed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00285.html#a121fed90453c22487ea803e2179d2b12">org.motechproject.metrics.impl.MultipleMetricsAgentImpl</a>.</p>
 
 </div>
 </div>

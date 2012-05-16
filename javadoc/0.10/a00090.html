@@ -92,171 +92,84 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00888.html">cmslite</a>      </li>
-      <li class="navelem"><a class="el" href="a00889.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00890.html">model</a>      </li>
-      <li class="navelem"><a class="el" href="a00090.html">Content</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01514.html">voxeo</a>      </li>
+      <li class="navelem"><a class="el" href="a01515.html">config</a>      </li>
+      <li class="navelem"><a class="el" href="a00090.html">ConfigReader</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.cmslite.api.model.Content Class Reference</div>  </div>
+<div class="title">org.motechproject.server.voxeo.config.ConfigReader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.cmslite.api.model.Content:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00090.png" usemap="#org.motechproject.cmslite.api.model.Content_map" alt=""/>
-  <map id="org.motechproject.cmslite.api.model.Content_map" name="org.motechproject.cmslite.api.model.Content_map">
-<area href="a00251.html" alt="org.motechproject.model.MotechBaseDataObject" shape="rect" coords="155,0,455,24"/>
-<area href="a00386.html" alt="org.motechproject.cmslite.api.model.StreamContent" shape="rect" coords="0,112,300,136"/>
-<area href="a00387.html" alt="org.motechproject.cmslite.api.model.StringContent" shape="rect" coords="310,112,610,136"/>
-</map>
- </div></div>
 
-<p><a href="a01083.html">List of all members.</a></p>
+<p><a href="a01947.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a79440fc102f0a231c5cede3827768bd6"><td class="memItemLeft" align="right" valign="top">Map&lt; String, String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a79440fc102f0a231c5cede3827768bd6">getMetadata</a> ()</td></tr>
-<tr class="memitem:a96a3604ebc6f134fcc6872aee1c525fb"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a96a3604ebc6f134fcc6872aee1c525fb">getLanguage</a> ()</td></tr>
-<tr class="memitem:ad1f053116dacb66005741133da0ac107"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#ad1f053116dacb66005741133da0ac107">getName</a> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:af9c11a09107091221e242f45d9cf66b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#af9c11a09107091221e242f45d9cf66b0">Content</a> ()</td></tr>
-<tr class="memitem:a4a31791e7c1c7b3e59853b93c4333aa5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a4a31791e7c1c7b3e59853b93c4333aa5">Content</a> (String language, String name)</td></tr>
-<tr class="memitem:acc798e05689b9edc8b3fb73fa4bcb050"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#acc798e05689b9edc8b3fb73fa4bcb050">Content</a> (String language, String name, Map&lt; String, String &gt; metadata)</td></tr>
+<tr class="memitem:ab9fdd792affbdbc81e79047e4ae42115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00450.html">VoxeoConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#ab9fdd792affbdbc81e79047e4ae42115">getConfig</a> (String filename)</td></tr>
+<tr class="memitem:ab9fdd792affbdbc81e79047e4ae42115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00450.html">VoxeoConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#ab9fdd792affbdbc81e79047e4ae42115">getConfig</a> (String filename)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af9c11a09107091221e242f45d9cf66b0"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>JSON based Configuration file reader. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ab9fdd792affbdbc81e79047e4ae42115"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00090.html#af9c11a09107091221e242f45d9cf66b0">org.motechproject.cmslite.api.model.Content.Content</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4a31791e7c1c7b3e59853b93c4333aa5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00090.html#af9c11a09107091221e242f45d9cf66b0">org.motechproject.cmslite.api.model.Content.Content</a> </td>
+          <td class="memname"><a class="el" href="a00450.html">VoxeoConfig</a> <a class="el" href="a00090.html#ab9fdd792affbdbc81e79047e4ae42115">org.motechproject.server.voxeo.config.ConfigReader.getConfig</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Read json file and return <a class="el" href="a00450.html" title="Configuration parameters for Voxeo IVR system.">VoxeoConfig</a>. </p>
+<p>Typically server url and application tokens </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>json file to read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="a00450.html" title="Configuration parameters for Voxeo IVR system.">VoxeoConfig</a> object with configuration from json file. </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="acc798e05689b9edc8b3fb73fa4bcb050"></a>
+<a class="anchor" id="ab9fdd792affbdbc81e79047e4ae42115"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00090.html#af9c11a09107091221e242f45d9cf66b0">org.motechproject.cmslite.api.model.Content.Content</a> </td>
+          <td class="memname"><a class="el" href="a00450.html">VoxeoConfig</a> <a class="el" href="a00090.html#ab9fdd792affbdbc81e79047e4ae42115">org.motechproject.server.voxeo.config.ConfigReader.getConfig</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, String &gt;&#160;</td>
-          <td class="paramname"><em>metadata</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a96a3604ebc6f134fcc6872aee1c525fb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String <a class="el" href="a00090.html#a96a3604ebc6f134fcc6872aee1c525fb">org.motechproject.cmslite.api.model.Content.getLanguage</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a79440fc102f0a231c5cede3827768bd6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Map&lt;String, String&gt; <a class="el" href="a00090.html#a79440fc102f0a231c5cede3827768bd6">org.motechproject.cmslite.api.model.Content.getMetadata</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad1f053116dacb66005741133da0ac107"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String <a class="el" href="a00090.html#ad1f053116dacb66005741133da0ac107">org.motechproject.cmslite.api.model.Content.getName</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Read json file and return <a class="el" href="a00450.html" title="Configuration parameters for Voxeo IVR system.">VoxeoConfig</a>. </p>
+<p>Typically server url and application tokens </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>json file to read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="a00450.html" title="Configuration parameters for Voxeo IVR system.">VoxeoConfig</a> object with configuration from json file. </dd></dl>
 
 </div>
 </div>

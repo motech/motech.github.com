@@ -92,12 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00876.html">appointments</a>      </li>
-      <li class="navelem"><a class="el" href="a00877.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00878.html">mapper</a>      </li>
-      <li class="navelem"><a class="el" href="a00350.html">RescheduleAppointmentMapper</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01504.html">pillreminder</a>      </li>
+      <li class="navelem"><a class="el" href="a01505.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a00350.html">ReminderEventHandler</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,26 +105,123 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.appointments.api.mapper.RescheduleAppointmentMapper Class Reference</div>  </div>
+<div class="title">org.motechproject.server.pillreminder.api.ReminderEventHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.server.pillreminder.api.ReminderEventHandler:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00350.png" usemap="#org.motechproject.server.pillreminder.api.ReminderEventHandler_map" alt=""/>
+  <map id="org.motechproject.server.pillreminder.api.ReminderEventHandler_map" name="org.motechproject.server.pillreminder.api.ReminderEventHandler_map">
+<area href="a00271.html" title="LayerSupertype for entire motech project." alt="org.motechproject.MotechObject" shape="rect" coords="0,0,380,24"/>
+<area href="a00271.html" title="LayerSupertype for entire motech project." alt="org.motechproject.MotechObject" shape="rect" coords="390,0,770,24"/>
+</map>
+ </div></div>
 
-<p><a href="a01055.html">List of all members.</a></p>
+<p><a href="a01907.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa9986267adb17170909e18cd470893c9"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00338.html">Reminder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00350.html#aa9986267adb17170909e18cd470893c9">map</a> (<a class="el" href="a00351.html">RescheduleAppointmentRequest</a> rescheduleAppointmentRequest)</td></tr>
+<tr class="memitem:a35329ff229e692ab45e9628b69ed59ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00350.html#a35329ff229e692ab45e9628b69ed59ed">ReminderEventHandler</a> (<a class="el" href="a00318.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="a00035.html">AllPillRegimens</a> allPillRegimens, <a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService)</td></tr>
+<tr class="memitem:a7e78a1ead81511eb0244d91e43af7fce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00350.html#a7e78a1ead81511eb0244d91e43af7fce">handleEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
+<tr class="memitem:a35329ff229e692ab45e9628b69ed59ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00350.html#a35329ff229e692ab45e9628b69ed59ed">ReminderEventHandler</a> (<a class="el" href="a00318.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="a00035.html">AllPillRegimens</a> allPillRegimens, <a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService)</td></tr>
+<tr class="memitem:a7e78a1ead81511eb0244d91e43af7fce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00350.html#a7e78a1ead81511eb0244d91e43af7fce">handleEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa9986267adb17170909e18cd470893c9"></a>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a35329ff229e692ab45e9628b69ed59ed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00338.html">Reminder</a>&gt; <a class="el" href="a00350.html#aa9986267adb17170909e18cd470893c9">org.motechproject.appointments.api.mapper.RescheduleAppointmentMapper.map</a> </td>
+          <td class="memname"><a class="el" href="a00350.html#a35329ff229e692ab45e9628b69ed59ed">org.motechproject.server.pillreminder.api.ReminderEventHandler.ReminderEventHandler</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00351.html">RescheduleAppointmentRequest</a>&#160;</td>
-          <td class="paramname"><em>rescheduleAppointmentRequest</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00318.html">OutboundEventGateway</a>&#160;</td>
+          <td class="paramname"><em>outboundEventGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00035.html">AllPillRegimens</a>&#160;</td>
+          <td class="paramname"><em>allPillRegimens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a35329ff229e692ab45e9628b69ed59ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00350.html#a35329ff229e692ab45e9628b69ed59ed">org.motechproject.server.pillreminder.api.ReminderEventHandler.ReminderEventHandler</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00318.html">OutboundEventGateway</a>&#160;</td>
+          <td class="paramname"><em>outboundEventGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00035.html">AllPillRegimens</a>&#160;</td>
+          <td class="paramname"><em>allPillRegimens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a7e78a1ead81511eb0244d91e43af7fce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00350.html#a7e78a1ead81511eb0244d91e43af7fce">org.motechproject.server.pillreminder.api.ReminderEventHandler.handleEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e78a1ead81511eb0244d91e43af7fce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00350.html#a7e78a1ead81511eb0244d91e43af7fce">org.motechproject.server.pillreminder.api.ReminderEventHandler.handleEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

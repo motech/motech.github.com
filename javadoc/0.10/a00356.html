@@ -92,54 +92,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00931.html">model</a>      </li>
-      <li class="navelem"><a class="el" href="a00356.html">RunOnceSchedulableJob</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01487.html">messagecampaign</a>      </li>
+      <li class="navelem"><a class="el" href="a01497.html">scheduler</a>      </li>
+      <li class="navelem"><a class="el" href="a00356.html">RepeatingProgramScheduler</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.model.RunOnceSchedulableJob Class Reference</div>  </div>
+<div class="title">org.motechproject.server.messagecampaign.scheduler.RepeatingProgramScheduler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits Serializable.</p>
+<p>Inherits MessageCampaignScheduler&lt; RepeatingCampaignMessage, RepeatingCampaign &gt;, and MessageCampaignScheduler&lt; RepeatingCampaignMessage, RepeatingCampaign &gt;.</p>
 
-<p><a href="a01199.html">List of all members.</a></p>
+<p><a href="a01884.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca5dd72c3ad94b83c7cfde5caa02ff82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#aca5dd72c3ad94b83c7cfde5caa02ff82">RunOnceSchedulableJob</a> (<a class="el" href="a00253.html">MotechEvent</a> motechEvent, Date startDate)</td></tr>
-<tr class="memitem:a03e51511de9d4b000e62ce4b7c343159"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#a03e51511de9d4b000e62ce4b7c343159">getMotechEvent</a> ()</td></tr>
-<tr class="memitem:a0ea6b468619dc496ecbd048e437f70e7"><td class="memItemLeft" align="right" valign="top">Date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#a0ea6b468619dc496ecbd048e437f70e7">getStartDate</a> ()</td></tr>
-<tr class="memitem:a22122db9babc58e852a8f4ed5aacbda7"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#a22122db9babc58e852a8f4ed5aacbda7">equals</a> (Object o)</td></tr>
-<tr class="memitem:a607e16dceddb8a1d57168e43ae5fb603"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#a607e16dceddb8a1d57168e43ae5fb603">hashCode</a> ()</td></tr>
-<tr class="memitem:a02b5ce030f4feec7326dc857f01d98b1"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#a02b5ce030f4feec7326dc857f01d98b1">toString</a> ()</td></tr>
+<tr class="memitem:acf61e46eb4ad40d73c50427d6f07f657"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#acf61e46eb4ad40d73c50427d6f07f657">RepeatingProgramScheduler</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService, <a class="el" href="a00080.html">CampaignRequest</a> enrollRequest, <a class="el" href="a00352.html">RepeatingCampaign</a> campaign, <a class="el" href="a00072.html">CampaignEnrollmentService</a> campaignEnrollmentService, Boolean <a class="el" href="a00356.html#a052f7aea328f48efe2b5fe39bceda847">dispatchMessagesEvery24Hours</a>)</td></tr>
+<tr class="memitem:acf61e46eb4ad40d73c50427d6f07f657"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#acf61e46eb4ad40d73c50427d6f07f657">RepeatingProgramScheduler</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService, <a class="el" href="a00080.html">CampaignRequest</a> enrollRequest, <a class="el" href="a00352.html">RepeatingCampaign</a> campaign, <a class="el" href="a00072.html">CampaignEnrollmentService</a> campaignEnrollmentService, Boolean <a class="el" href="a00356.html#a052f7aea328f48efe2b5fe39bceda847">dispatchMessagesEvery24Hours</a>)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a052f7aea328f48efe2b5fe39bceda847"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#a052f7aea328f48efe2b5fe39bceda847">dispatchMessagesEvery24Hours</a></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa6840fcf956a310fe91e83f7bf3a960a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#aa6840fcf956a310fe91e83f7bf3a960a">scheduleJobFor</a> (<a class="el" href="a00353.html">RepeatingCampaignMessage</a> message)</td></tr>
+<tr class="memitem:aa47ad28403a054adb058ddb37714cea8"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#aa47ad28403a054adb058ddb37714cea8">getCampaignEnd</a> ()</td></tr>
+<tr class="memitem:aa6840fcf956a310fe91e83f7bf3a960a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#aa6840fcf956a310fe91e83f7bf3a960a">scheduleJobFor</a> (<a class="el" href="a00353.html">RepeatingCampaignMessage</a> message)</td></tr>
+<tr class="memitem:aa47ad28403a054adb058ddb37714cea8"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00356.html#aa47ad28403a054adb058ddb37714cea8">getCampaignEnd</a> ()</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Run Once Schedulable Job - a data carrier class for a job scheduled in the future that can be fired only once. </p>
-<p>This class is immutable</p>
-<p>User: Igor (<a href="#" onclick="location.href='mai'+'lto:'+'iop'+'us'+'hny'+'ev'+'@2p'+'at'+'hs.'+'co'+'m'; return false;">iopus<span style="display: none;">.nosp@m.</span>hnye<span style="display: none;">.nosp@m.</span>v@2pa<span style="display: none;">.nosp@m.</span>ths.<span style="display: none;">.nosp@m.</span>com</a>) Date: 16/02/11 <a class="el" href="a00393.html">Time</a>: 1:43 PM </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aca5dd72c3ad94b83c7cfde5caa02ff82"></a>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="acf61e46eb4ad40d73c50427d6f07f657"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00356.html#aca5dd72c3ad94b83c7cfde5caa02ff82">org.motechproject.model.RunOnceSchedulableJob.RunOnceSchedulableJob</a> </td>
+          <td class="memname"><a class="el" href="a00356.html#acf61e46eb4ad40d73c50427d6f07f657">org.motechproject.server.messagecampaign.scheduler.RepeatingProgramScheduler.RepeatingProgramScheduler</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td>
-          <td class="paramname"><em>motechEvent</em>, </td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Date&#160;</td>
-          <td class="paramname"><em>startDate</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00352.html">RepeatingCampaign</a>&#160;</td>
+          <td class="paramname"><em>campaign</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00072.html">CampaignEnrollmentService</a>&#160;</td>
+          <td class="paramname"><em>campaignEnrollmentService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Boolean&#160;</td>
+          <td class="paramname"><em>dispatchMessagesEvery24Hours</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -150,34 +173,63 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Constructor. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">motechEvent</td><td>- event data message that will be send by Motech Scheduler when this job is fired </td></tr>
-    <tr><td class="paramname">startDate</td><td>- date and time when the job fill be fired</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if motechEvent or startDate is null or startDate is in past </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<a class="anchor" id="acf61e46eb4ad40d73c50427d6f07f657"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00356.html#acf61e46eb4ad40d73c50427d6f07f657">org.motechproject.server.messagecampaign.scheduler.RepeatingProgramScheduler.RepeatingProgramScheduler</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00352.html">RepeatingCampaign</a>&#160;</td>
+          <td class="paramname"><em>campaign</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00072.html">CampaignEnrollmentService</a>&#160;</td>
+          <td class="paramname"><em>campaignEnrollmentService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Boolean&#160;</td>
+          <td class="paramname"><em>dispatchMessagesEvery24Hours</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a22122db9babc58e852a8f4ed5aacbda7"></a>
+<a class="anchor" id="aa47ad28403a054adb058ddb37714cea8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean <a class="el" href="a00356.html#a22122db9babc58e852a8f4ed5aacbda7">org.motechproject.model.RunOnceSchedulableJob.equals</a> </td>
+          <td class="memname">DateTime <a class="el" href="a00356.html#aa47ad28403a054adb058ddb37714cea8">org.motechproject.server.messagecampaign.scheduler.RepeatingProgramScheduler.getCampaignEnd</a> </td>
           <td>(</td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -185,15 +237,15 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a03e51511de9d4b000e62ce4b7c343159"></a>
+<a class="anchor" id="aa47ad28403a054adb058ddb37714cea8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00253.html">MotechEvent</a> <a class="el" href="a00356.html#a03e51511de9d4b000e62ce4b7c343159">org.motechproject.model.RunOnceSchedulableJob.getMotechEvent</a> </td>
+          <td class="memname">DateTime <a class="el" href="a00356.html#aa47ad28403a054adb058ddb37714cea8">org.motechproject.server.messagecampaign.scheduler.RepeatingProgramScheduler.getCampaignEnd</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -201,15 +253,16 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0ea6b468619dc496ecbd048e437f70e7"></a>
+<a class="anchor" id="aa6840fcf956a310fe91e83f7bf3a960a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Date <a class="el" href="a00356.html#a0ea6b468619dc496ecbd048e437f70e7">org.motechproject.model.RunOnceSchedulableJob.getStartDate</a> </td>
+          <td class="memname">void <a class="el" href="a00356.html#aa6840fcf956a310fe91e83f7bf3a960a">org.motechproject.server.messagecampaign.scheduler.RepeatingProgramScheduler.scheduleJobFor</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a00353.html">RepeatingCampaignMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -217,15 +270,16 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a607e16dceddb8a1d57168e43ae5fb603"></a>
+<a class="anchor" id="aa6840fcf956a310fe91e83f7bf3a960a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="a00356.html#a607e16dceddb8a1d57168e43ae5fb603">org.motechproject.model.RunOnceSchedulableJob.hashCode</a> </td>
+          <td class="memname">void <a class="el" href="a00356.html#aa6840fcf956a310fe91e83f7bf3a960a">org.motechproject.server.messagecampaign.scheduler.RepeatingProgramScheduler.scheduleJobFor</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a00353.html">RepeatingCampaignMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -233,15 +287,13 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a02b5ce030f4feec7326dc857f01d98b1"></a>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a052f7aea328f48efe2b5fe39bceda847"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00356.html#a02b5ce030f4feec7326dc857f01d98b1">org.motechproject.model.RunOnceSchedulableJob.toString</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">Boolean <a class="el" href="a00356.html#a052f7aea328f48efe2b5fe39bceda847">org.motechproject.server.messagecampaign.scheduler.RepeatingProgramScheduler.dispatchMessagesEvery24Hours</a></td>
         </tr>
       </table>
 </div>

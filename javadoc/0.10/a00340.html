@@ -92,12 +92,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a01008.html">pillreminder</a>      </li>
-      <li class="navelem"><a class="el" href="a01009.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00340.html">ReminderEventHandler</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01504.html">pillreminder</a>      </li>
+      <li class="navelem"><a class="el" href="a01505.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01510.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a00340.html">PillReminderServiceImpl</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,48 +106,80 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.pillreminder.api.ReminderEventHandler Class Reference</div>  </div>
+<div class="title">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for org.motechproject.server.pillreminder.api.ReminderEventHandler:</div>
+Inheritance diagram for org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00340.png" usemap="#org.motechproject.server.pillreminder.api.ReminderEventHandler_map" alt=""/>
-  <map id="org.motechproject.server.pillreminder.api.ReminderEventHandler_map" name="org.motechproject.server.pillreminder.api.ReminderEventHandler_map">
-<area href="a00262.html" title="LayerSupertype for entire motech project." alt="org.motechproject.MotechObject" shape="rect" coords="0,0,380,24"/>
+  <img src="a00340.png" usemap="#org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl_map" alt=""/>
+  <map id="org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl_map" name="org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl_map">
+<area href="a00339.html" title="Pill reminder service supports creating/querying/deleting pill schedule as per prescription." alt="org.motechproject.server.pillreminder.api.service.PillReminderService" shape="rect" coords="0,0,432,24"/>
+<area href="a00339.html" title="Pill reminder service supports creating/querying/deleting pill schedule as per prescription." alt="org.motechproject.server.pillreminder.api.service.PillReminderService" shape="rect" coords="442,0,874,24"/>
 </map>
  </div></div>
 
-<p><a href="a01405.html">List of all members.</a></p>
+<p><a href="a01929.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a35329ff229e692ab45e9628b69ed59ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a35329ff229e692ab45e9628b69ed59ed">ReminderEventHandler</a> (<a class="el" href="a00310.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="a00032.html">AllPillRegimens</a> allPillRegimens, <a class="el" href="a00268.html">MotechSchedulerService</a> schedulerService)</td></tr>
-<tr class="memitem:a7e78a1ead81511eb0244d91e43af7fce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a7e78a1ead81511eb0244d91e43af7fce">handleEvent</a> (<a class="el" href="a00253.html">MotechEvent</a> motechEvent)</td></tr>
+<tr class="memitem:ac5e2ffc0c3251d7a4e539fa98dbb8aea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#ac5e2ffc0c3251d7a4e539fa98dbb8aea">PillReminderServiceImpl</a> (<a class="el" href="a00035.html">AllPillRegimens</a> allPillRegimens, <a class="el" href="a00336.html">PillRegimenJobScheduler</a> pillRegimenJobScheduler)</td></tr>
+<tr class="memitem:a18c0a09d7a1423be8d444dca06443953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a18c0a09d7a1423be8d444dca06443953">createNew</a> (<a class="el" href="a00109.html">DailyPillRegimenRequest</a> dailyPillRegimenRequest)</td></tr>
+<tr class="memitem:adb7252fda289559e85c3e204592a083e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#adb7252fda289559e85c3e204592a083e">renew</a> (<a class="el" href="a00109.html">DailyPillRegimenRequest</a> dailyPillRegimenRequest)</td></tr>
+<tr class="memitem:add7be41fb6a7ed297b43b09d96f933a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#add7be41fb6a7ed297b43b09d96f933a6">dosageStatusKnown</a> (String pillRegimenId, String dosageId, LocalDate lastCapturedDate)</td></tr>
+<tr class="memitem:af3565685b441c2f317c2a337cb4605fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00337.html">PillRegimenResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#af3565685b441c2f317c2a337cb4605fc">getPillRegimen</a> (String externalId)</td></tr>
+<tr class="memitem:a3adc711de493877c891f9310e8e5ce3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a3adc711de493877c891f9310e8e5ce3b">remove</a> (String externalID)</td></tr>
+<tr class="memitem:ac5e2ffc0c3251d7a4e539fa98dbb8aea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#ac5e2ffc0c3251d7a4e539fa98dbb8aea">PillReminderServiceImpl</a> (<a class="el" href="a00035.html">AllPillRegimens</a> allPillRegimens, <a class="el" href="a00336.html">PillRegimenJobScheduler</a> pillRegimenJobScheduler)</td></tr>
+<tr class="memitem:a18c0a09d7a1423be8d444dca06443953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a18c0a09d7a1423be8d444dca06443953">createNew</a> (<a class="el" href="a00109.html">DailyPillRegimenRequest</a> dailyPillRegimenRequest)</td></tr>
+<tr class="memitem:adb7252fda289559e85c3e204592a083e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#adb7252fda289559e85c3e204592a083e">renew</a> (<a class="el" href="a00109.html">DailyPillRegimenRequest</a> dailyPillRegimenRequest)</td></tr>
+<tr class="memitem:add7be41fb6a7ed297b43b09d96f933a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#add7be41fb6a7ed297b43b09d96f933a6">dosageStatusKnown</a> (String pillRegimenId, String dosageId, LocalDate lastCapturedDate)</td></tr>
+<tr class="memitem:af3565685b441c2f317c2a337cb4605fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00337.html">PillRegimenResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#af3565685b441c2f317c2a337cb4605fc">getPillRegimen</a> (String externalId)</td></tr>
+<tr class="memitem:a3adc711de493877c891f9310e8e5ce3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a3adc711de493877c891f9310e8e5ce3b">remove</a> (String externalID)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a35329ff229e692ab45e9628b69ed59ed"></a>
+<a class="anchor" id="ac5e2ffc0c3251d7a4e539fa98dbb8aea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00340.html#a35329ff229e692ab45e9628b69ed59ed">org.motechproject.server.pillreminder.api.ReminderEventHandler.ReminderEventHandler</a> </td>
+          <td class="memname"><a class="el" href="a00340.html#ac5e2ffc0c3251d7a4e539fa98dbb8aea">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.PillReminderServiceImpl</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00310.html">OutboundEventGateway</a>&#160;</td>
-          <td class="paramname"><em>outboundEventGateway</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00032.html">AllPillRegimens</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00035.html">AllPillRegimens</a>&#160;</td>
           <td class="paramname"><em>allPillRegimens</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00268.html">MotechSchedulerService</a>&#160;</td>
-          <td class="paramname"><em>schedulerService</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00336.html">PillRegimenJobScheduler</a>&#160;</td>
+          <td class="paramname"><em>pillRegimenJobScheduler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac5e2ffc0c3251d7a4e539fa98dbb8aea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00340.html#ac5e2ffc0c3251d7a4e539fa98dbb8aea">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.PillReminderServiceImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00035.html">AllPillRegimens</a>&#160;</td>
+          <td class="paramname"><em>allPillRegimens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00336.html">PillRegimenJobScheduler</a>&#160;</td>
+          <td class="paramname"><em>pillRegimenJobScheduler</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -160,20 +193,317 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a7e78a1ead81511eb0244d91e43af7fce"></a>
+<a class="anchor" id="a18c0a09d7a1423be8d444dca06443953"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00340.html#a7e78a1ead81511eb0244d91e43af7fce">org.motechproject.server.pillreminder.api.ReminderEventHandler.handleEvent</a> </td>
+          <td class="memname">void <a class="el" href="a00340.html#a18c0a09d7a1423be8d444dca06443953">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.createNew</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td>
-          <td class="paramname"><em>motechEvent</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00109.html">DailyPillRegimenRequest</a>&#160;</td>
+          <td class="paramname"><em>dailyPillRegimenRequest</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Subscribe to pill reminder. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dailyPillRegimenRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also:</dt><dd>DailyPillRegimenRequest </dd></dl>
+
+<p>Implements <a class="el" href="a00339.html#a80a240c35b0c57655ff908352c9fdbe2">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18c0a09d7a1423be8d444dca06443953"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00340.html#a18c0a09d7a1423be8d444dca06443953">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.createNew</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00109.html">DailyPillRegimenRequest</a>&#160;</td>
+          <td class="paramname"><em>dailyPillRegimenRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Subscribe to pill reminder. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dailyPillRegimenRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also:</dt><dd>DailyPillRegimenRequest </dd></dl>
+
+<p>Implements <a class="el" href="a00339.html#a80a240c35b0c57655ff908352c9fdbe2">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add7be41fb6a7ed297b43b09d96f933a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00340.html#add7be41fb6a7ed297b43b09d96f933a6">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.dosageStatusKnown</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>pillRegimenId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>dosageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LocalDate&#160;</td>
+          <td class="paramname"><em>lastCapturedDate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Update the dosage take status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pillRegimenId</td><td>subscription id </td></tr>
+    <tr><td class="paramname">dosageId</td><td>Dosage id </td></tr>
+    <tr><td class="paramname">lastCapturedDate</td><td>Dosage confirmation captured date. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00339.html#a0d1278250dbb1a4ed80a8bab8fff037b">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add7be41fb6a7ed297b43b09d96f933a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00340.html#add7be41fb6a7ed297b43b09d96f933a6">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.dosageStatusKnown</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>pillRegimenId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>dosageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LocalDate&#160;</td>
+          <td class="paramname"><em>lastCapturedDate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Update the dosage take status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pillRegimenId</td><td>subscription id </td></tr>
+    <tr><td class="paramname">dosageId</td><td>Dosage id </td></tr>
+    <tr><td class="paramname">lastCapturedDate</td><td>Dosage confirmation captured date. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00339.html#a0d1278250dbb1a4ed80a8bab8fff037b">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3565685b441c2f317c2a337cb4605fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00337.html">PillRegimenResponse</a> <a class="el" href="a00340.html#af3565685b441c2f317c2a337cb4605fc">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.getPillRegimen</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get pill regimen for given subscriber (externalId) </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">externalId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Dosage details along with reminder config </dd></dl>
+<dl class="section see"><dt>See also:</dt><dd>PillRegimenResponse </dd></dl>
+
+<p>Implements <a class="el" href="a00339.html#ad4d664b5ba423c554d3febd804f98ceb">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3565685b441c2f317c2a337cb4605fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00337.html">PillRegimenResponse</a> <a class="el" href="a00340.html#af3565685b441c2f317c2a337cb4605fc">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.getPillRegimen</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get pill regimen for given subscriber (externalId) </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">externalId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Dosage details along with reminder config </dd></dl>
+<dl class="section see"><dt>See also:</dt><dd>PillRegimenResponse </dd></dl>
+
+<p>Implements <a class="el" href="a00339.html#ad4d664b5ba423c554d3febd804f98ceb">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3adc711de493877c891f9310e8e5ce3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00340.html#a3adc711de493877c891f9310e8e5ce3b">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.remove</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Unsubscribe from pill reminder service. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">externalID</td><td>Unique subscriber id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00339.html#aebbdfe14692ca4a78faca3e0ed4c4226">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3adc711de493877c891f9310e8e5ce3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00340.html#a3adc711de493877c891f9310e8e5ce3b">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.remove</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Unsubscribe from pill reminder service. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">externalID</td><td>Unique subscriber id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00339.html#aebbdfe14692ca4a78faca3e0ed4c4226">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adb7252fda289559e85c3e204592a083e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00340.html#adb7252fda289559e85c3e204592a083e">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.renew</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00109.html">DailyPillRegimenRequest</a>&#160;</td>
+          <td class="paramname"><em>newDailyScheduleRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Update the pill reminder subscription. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newDailyScheduleRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also:</dt><dd>DailyPillRegimenRequest </dd></dl>
+
+<p>Implements <a class="el" href="a00339.html#a89bb1eb9e0229631fda30bbc4c76ae96">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adb7252fda289559e85c3e204592a083e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00340.html#adb7252fda289559e85c3e204592a083e">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.renew</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00109.html">DailyPillRegimenRequest</a>&#160;</td>
+          <td class="paramname"><em>newDailyScheduleRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Update the pill reminder subscription. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newDailyScheduleRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also:</dt><dd>DailyPillRegimenRequest </dd></dl>
+
+<p>Implements <a class="el" href="a00339.html#a89bb1eb9e0229631fda30bbc4c76ae96">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
 
 </div>
 </div>

@@ -92,12 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a01016.html">verboice</a>      </li>
-      <li class="navelem"><a class="el" href="a01017.html">domain</a>      </li>
-      <li class="navelem"><a class="el" href="a00181.html">Gather</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01414.html">mobileforms</a>      </li>
+      <li class="navelem"><a class="el" href="a01415.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01416.html">callbacks</a>      </li>
+      <li class="navelem"><a class="el" href="a00181.html">FormProcessor</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,44 +105,73 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.verboice.domain.Gather Class Reference</div>  </div>
+<div class="title">org.motechproject.mobileforms.api.callbacks.FormProcessor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.server.verboice.domain.Gather:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00181.png" usemap="#org.motechproject.server.verboice.domain.Gather_map" alt=""/>
-  <map id="org.motechproject.server.verboice.domain.Gather_map" name="org.motechproject.server.verboice.domain.Gather_map">
-<area href="a00011.html" alt="org.motechproject.server.verboice.domain.AggregatedVerboiceAction" shape="rect" coords="0,56,411,80"/>
-<area href="a00412.html" alt="org.motechproject.server.verboice.domain.VerboiceAction" shape="rect" coords="0,0,411,24"/>
-</map>
- </div></div>
 
-<p><a href="a01433.html">List of all members.</a></p>
+<p>Inherits DeserializationListenerAdapter, and DeserializationListenerAdapter.</p>
+
+<p><a href="a01663.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a16a8f65bfb9c544967ef8f54ff6d6a94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a16a8f65bfb9c544967ef8f54ff6d6a94">Gather</a> (String action, int numDigits)</td></tr>
-<tr class="memitem:a9f60a989fb01ba3e163d0236ddfe1044"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a9f60a989fb01ba3e163d0236ddfe1044">Gather</a> (String action, int numDigits, char finishOnKey, int timeout)</td></tr>
-<tr class="memitem:ab7860ae7b01971a20ebec96c624fb9cc"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#ab7860ae7b01971a20ebec96c624fb9cc">toXMLString</a> ()</td></tr>
+<tr class="memitem:aceecf5ad4b17d3bb396a1cf58b6bc655"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#aceecf5ad4b17d3bb396a1cf58b6bc655">FormProcessor</a> ()</td></tr>
+<tr class="memitem:af14cd21bf157fbd2509174fc7b4d5ae9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#af14cd21bf157fbd2509174fc7b4d5ae9">FormProcessor</a> (<a class="el" href="a00176.html">FormDataParser</a> parser, <a class="el" href="a00231.html">MapToBeanConvertor</a> mapToBeanConvertor, <a class="el" href="a00031.html">AllMobileForms</a> allMobileForms, String marker)</td></tr>
+<tr class="memitem:a1edfa48229008daf6e7ce36b6dc9fa5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a1edfa48229008daf6e7ce36b6dc9fa5a">processingStudy</a> (StudyData studyData)</td></tr>
+<tr class="memitem:acd046c6b8d7674b1dc680525f21885fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#acd046c6b8d7674b1dc680525f21885fe">formProcessed</a> (StudyData studyData, FormData formData, String formXml)</td></tr>
+<tr class="memitem:a37a1b0df7d74bfb6b8e3781108f9a645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a37a1b0df7d74bfb6b8e3781108f9a645">start</a> ()</td></tr>
+<tr class="memitem:a3091cba62a4cb43f0675630ca515bae1"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00413.html">Study</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a3091cba62a4cb43f0675630ca515bae1">getStudies</a> ()</td></tr>
+<tr class="memitem:aceecf5ad4b17d3bb396a1cf58b6bc655"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#aceecf5ad4b17d3bb396a1cf58b6bc655">FormProcessor</a> ()</td></tr>
+<tr class="memitem:af14cd21bf157fbd2509174fc7b4d5ae9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#af14cd21bf157fbd2509174fc7b4d5ae9">FormProcessor</a> (<a class="el" href="a00176.html">FormDataParser</a> parser, <a class="el" href="a00231.html">MapToBeanConvertor</a> mapToBeanConvertor, <a class="el" href="a00031.html">AllMobileForms</a> allMobileForms, String marker)</td></tr>
+<tr class="memitem:a1edfa48229008daf6e7ce36b6dc9fa5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a1edfa48229008daf6e7ce36b6dc9fa5a">processingStudy</a> (StudyData studyData)</td></tr>
+<tr class="memitem:acd046c6b8d7674b1dc680525f21885fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#acd046c6b8d7674b1dc680525f21885fe">formProcessed</a> (StudyData studyData, FormData formData, String formXml)</td></tr>
+<tr class="memitem:a37a1b0df7d74bfb6b8e3781108f9a645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a37a1b0df7d74bfb6b8e3781108f9a645">start</a> ()</td></tr>
+<tr class="memitem:a3091cba62a4cb43f0675630ca515bae1"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00413.html">Study</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00181.html#a3091cba62a4cb43f0675630ca515bae1">getStudies</a> ()</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a16a8f65bfb9c544967ef8f54ff6d6a94"></a>
+<a class="anchor" id="aceecf5ad4b17d3bb396a1cf58b6bc655"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00181.html#a16a8f65bfb9c544967ef8f54ff6d6a94">org.motechproject.server.verboice.domain.Gather.Gather</a> </td>
+          <td class="memname"><a class="el" href="a00181.html#aceecf5ad4b17d3bb396a1cf58b6bc655">org.motechproject.mobileforms.api.callbacks.FormProcessor.FormProcessor</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af14cd21bf157fbd2509174fc7b4d5ae9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00181.html#aceecf5ad4b17d3bb396a1cf58b6bc655">org.motechproject.mobileforms.api.callbacks.FormProcessor.FormProcessor</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00176.html">FormDataParser</a>&#160;</td>
+          <td class="paramname"><em>parser</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numDigits</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00231.html">MapToBeanConvertor</a>&#160;</td>
+          <td class="paramname"><em>mapToBeanConvertor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00031.html">AllMobileForms</a>&#160;</td>
+          <td class="paramname"><em>allMobileForms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>marker</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -155,33 +184,49 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9f60a989fb01ba3e163d0236ddfe1044"></a>
+<a class="anchor" id="aceecf5ad4b17d3bb396a1cf58b6bc655"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00181.html#a16a8f65bfb9c544967ef8f54ff6d6a94">org.motechproject.server.verboice.domain.Gather.Gather</a> </td>
+          <td class="memname"><a class="el" href="a00181.html#aceecf5ad4b17d3bb396a1cf58b6bc655">org.motechproject.mobileforms.api.callbacks.FormProcessor.FormProcessor</a> </td>
           <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af14cd21bf157fbd2509174fc7b4d5ae9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00181.html#aceecf5ad4b17d3bb396a1cf58b6bc655">org.motechproject.mobileforms.api.callbacks.FormProcessor.FormProcessor</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00176.html">FormDataParser</a>&#160;</td>
+          <td class="paramname"><em>parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00231.html">MapToBeanConvertor</a>&#160;</td>
+          <td class="paramname"><em>mapToBeanConvertor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00031.html">AllMobileForms</a>&#160;</td>
+          <td class="paramname"><em>allMobileForms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numDigits</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>finishOnKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
+          <td class="paramname"><em>marker</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -195,12 +240,78 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ab7860ae7b01971a20ebec96c624fb9cc"></a>
+<a class="anchor" id="acd046c6b8d7674b1dc680525f21885fe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00181.html#ab7860ae7b01971a20ebec96c624fb9cc">org.motechproject.server.verboice.domain.Gather.toXMLString</a> </td>
+          <td class="memname">void <a class="el" href="a00181.html#acd046c6b8d7674b1dc680525f21885fe">org.motechproject.mobileforms.api.callbacks.FormProcessor.formProcessed</a> </td>
+          <td>(</td>
+          <td class="paramtype">StudyData&#160;</td>
+          <td class="paramname"><em>studyData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FormData&#160;</td>
+          <td class="paramname"><em>formData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>formXml</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd046c6b8d7674b1dc680525f21885fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00181.html#acd046c6b8d7674b1dc680525f21885fe">org.motechproject.mobileforms.api.callbacks.FormProcessor.formProcessed</a> </td>
+          <td>(</td>
+          <td class="paramtype">StudyData&#160;</td>
+          <td class="paramname"><em>studyData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FormData&#160;</td>
+          <td class="paramname"><em>formData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>formXml</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3091cba62a4cb43f0675630ca515bae1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00413.html">Study</a>&gt; <a class="el" href="a00181.html#a3091cba62a4cb43f0675630ca515bae1">org.motechproject.mobileforms.api.callbacks.FormProcessor.getStudies</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -209,7 +320,87 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="a00011.html#a80b2833959a971b9645f3dc4272bcc7b">org.motechproject.server.verboice.domain.AggregatedVerboiceAction</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a3091cba62a4cb43f0675630ca515bae1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00413.html">Study</a>&gt; <a class="el" href="a00181.html#a3091cba62a4cb43f0675630ca515bae1">org.motechproject.mobileforms.api.callbacks.FormProcessor.getStudies</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1edfa48229008daf6e7ce36b6dc9fa5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00181.html#a1edfa48229008daf6e7ce36b6dc9fa5a">org.motechproject.mobileforms.api.callbacks.FormProcessor.processingStudy</a> </td>
+          <td>(</td>
+          <td class="paramtype">StudyData&#160;</td>
+          <td class="paramname"><em>studyData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1edfa48229008daf6e7ce36b6dc9fa5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00181.html#a1edfa48229008daf6e7ce36b6dc9fa5a">org.motechproject.mobileforms.api.callbacks.FormProcessor.processingStudy</a> </td>
+          <td>(</td>
+          <td class="paramtype">StudyData&#160;</td>
+          <td class="paramname"><em>studyData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37a1b0df7d74bfb6b8e3781108f9a645"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00181.html#a37a1b0df7d74bfb6b8e3781108f9a645">org.motechproject.mobileforms.api.callbacks.FormProcessor.start</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37a1b0df7d74bfb6b8e3781108f9a645"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00181.html#a37a1b0df7d74bfb6b8e3781108f9a645">org.motechproject.mobileforms.api.callbacks.FormProcessor.start</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

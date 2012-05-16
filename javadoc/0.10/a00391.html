@@ -92,11 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a01023.html">sms</a>      </li>
-      <li class="navelem"><a class="el" href="a01027.html">http</a>      </li>
-      <li class="navelem"><a class="el" href="a00391.html">TemplateReader</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01520.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a00391.html">SmsEventHandler</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,31 +104,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.sms.http.TemplateReader Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.api.SmsEventHandler Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.sms.api.SmsEventHandler:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00391.png" usemap="#org.motechproject.sms.api.SmsEventHandler_map" alt=""/>
+  <map id="org.motechproject.sms.api.SmsEventHandler_map" name="org.motechproject.sms.api.SmsEventHandler_map">
+<area href="a00373.html" alt="org.motechproject.sms.http.ScheduledSmsSendHandler" shape="rect" coords="0,56,324,80"/>
+<area href="a00373.html" alt="org.motechproject.sms.http.ScheduledSmsSendHandler" shape="rect" coords="334,56,658,80"/>
+<area href="a00398.html" alt="org.motechproject.sms.http.SmsSendHandler" shape="rect" coords="668,56,992,80"/>
+<area href="a00398.html" alt="org.motechproject.sms.http.SmsSendHandler" shape="rect" coords="1002,56,1326,80"/>
+<area href="a00397.html" alt="org.motechproject.sms.smpp.SmsSendHandler" shape="rect" coords="1336,56,1660,80"/>
+<area href="a00397.html" alt="org.motechproject.sms.smpp.SmsSendHandler" shape="rect" coords="1670,56,1994,80"/>
+</map>
+ </div></div>
 
-<p><a href="a01459.html">List of all members.</a></p>
+<p><a href="a01962.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ff211fac28d03c986fcd2ef4485154c"><td class="memItemLeft" align="right" valign="top">SmsSendTemplate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00391.html#a7ff211fac28d03c986fcd2ef4485154c">getTemplate</a> (String filename)</td></tr>
+<tr class="memitem:a5edcb8ae1b0c11907e482ba03ad99bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00391.html#a5edcb8ae1b0c11907e482ba03ad99bcd">handle</a> (<a class="el" href="a00262.html">MotechEvent</a> event)  throws Exception</td></tr>
+<tr class="memitem:a5edcb8ae1b0c11907e482ba03ad99bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00391.html#a5edcb8ae1b0c11907e482ba03ad99bcd">handle</a> (<a class="el" href="a00262.html">MotechEvent</a> event)  throws Exception</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a7ff211fac28d03c986fcd2ef4485154c"></a>
+<a class="anchor" id="a5edcb8ae1b0c11907e482ba03ad99bcd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SmsSendTemplate <a class="el" href="a00391.html#a7ff211fac28d03c986fcd2ef4485154c">org.motechproject.sms.http.TemplateReader.getTemplate</a> </td>
+          <td class="memname">void <a class="el" href="a00391.html#a5edcb8ae1b0c11907e482ba03ad99bcd">org.motechproject.sms.api.SmsEventHandler.handle</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td>  throws Exception</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00398.html#ad75c68a636a448f49b9912d41a554227">org.motechproject.sms.http.SmsSendHandler</a>, <a class="el" href="a00398.html#ad75c68a636a448f49b9912d41a554227">org.motechproject.sms.http.SmsSendHandler</a>, <a class="el" href="a00373.html#a7e9ba2b756300e38c419bd6663c6c488">org.motechproject.sms.http.ScheduledSmsSendHandler</a>, <a class="el" href="a00373.html#a7e9ba2b756300e38c419bd6663c6c488">org.motechproject.sms.http.ScheduledSmsSendHandler</a>, <a class="el" href="a00397.html#a0485a0d69d7049f64a0d33dbf7c024d5">org.motechproject.sms.smpp.SmsSendHandler</a>, and <a class="el" href="a00397.html#a0485a0d69d7049f64a0d33dbf7c024d5">org.motechproject.sms.smpp.SmsSendHandler</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5edcb8ae1b0c11907e482ba03ad99bcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00391.html#a5edcb8ae1b0c11907e482ba03ad99bcd">org.motechproject.sms.api.SmsEventHandler.handle</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td>  throws Exception</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00398.html#ad75c68a636a448f49b9912d41a554227">org.motechproject.sms.http.SmsSendHandler</a>, <a class="el" href="a00398.html#ad75c68a636a448f49b9912d41a554227">org.motechproject.sms.http.SmsSendHandler</a>, <a class="el" href="a00373.html#a7e9ba2b756300e38c419bd6663c6c488">org.motechproject.sms.http.ScheduledSmsSendHandler</a>, <a class="el" href="a00373.html#a7e9ba2b756300e38c419bd6663c6c488">org.motechproject.sms.http.ScheduledSmsSendHandler</a>, <a class="el" href="a00397.html#a0485a0d69d7049f64a0d33dbf7c024d5">org.motechproject.sms.smpp.SmsSendHandler</a>, and <a class="el" href="a00397.html#a0485a0d69d7049f64a0d33dbf7c024d5">org.motechproject.sms.smpp.SmsSendHandler</a>.</p>
 
 </div>
 </div>

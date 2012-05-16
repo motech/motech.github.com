@@ -92,10 +92,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00931.html">model</a>      </li>
-      <li class="navelem"><a class="el" href="a00163.html">ExtensibleDataObject&lt; T &gt;</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01397.html">event</a>      </li>
+      <li class="navelem"><a class="el" href="a00163.html">EventRelay</a>      </li>
     </ul>
   </div>
 </div>
@@ -103,76 +103,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.model.ExtensibleDataObject&lt; T &gt; Class Reference</div>  </div>
+<div class="title">org.motechproject.event.EventRelay Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.event.EventRelay:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00163.png" usemap="#org.motechproject.event.EventRelay_map" alt=""/>
+  <map id="org.motechproject.event.EventRelay_map" name="org.motechproject.event.EventRelay_map">
+<area href="a00084.html" title="This class handled incoming scheduled events and relays those events to the appropriate event listene..." alt="org.motechproject.event.ClientEventRelay" shape="rect" coords="0,56,297,80"/>
+<area href="a00084.html" title="This class handled incoming scheduled events and relays those events to the appropriate event listene..." alt="org.motechproject.event.ClientEventRelay" shape="rect" coords="307,56,604,80"/>
+<area href="a00384.html" title="This class handled incoming scheduled events and relays those events to the appropriate event listene..." alt="org.motechproject.server.event.ServerEventRelay" shape="rect" coords="614,56,911,80"/>
+<area href="a00384.html" title="This class handled incoming scheduled events and relays those events to the appropriate event listene..." alt="org.motechproject.server.event.ServerEventRelay" shape="rect" coords="921,56,1218,80"/>
+</map>
+ </div></div>
 
-<p><a href="a01194.html">List of all members.</a></p>
+<p><a href="a01620.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4daf03fdafe131a4a8571fb52f45c208"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a4daf03fdafe131a4a8571fb52f45c208">getData</a> ()</td></tr>
-<tr class="memitem:aa99520891c886b2427f9467bf76b8987"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#aa99520891c886b2427f9467bf76b8987">addData</a> (String key, Object value)</td></tr>
-<tr class="memitem:afe8da4454d81646994d83a5ff60a9d8c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#afe8da4454d81646994d83a5ff60a9d8c">addData</a> (Map&lt; String, Object &gt; data)</td></tr>
+<tr class="memitem:a4ee17c9019a24fb33e5d374c10f20b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a4ee17c9019a24fb33e5d374c10f20b0c">sendEventMessage</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
+<tr class="memitem:a4ee17c9019a24fb33e5d374c10f20b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html#a4ee17c9019a24fb33e5d374c10f20b0c">sendEventMessage</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa99520891c886b2427f9467bf76b8987"></a>
+<a class="anchor" id="a4ee17c9019a24fb33e5d374c10f20b0c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">T org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00163.html#aa99520891c886b2427f9467bf76b8987">addData</a> </td>
+          <td class="memname">void <a class="el" href="a00163.html#a4ee17c9019a24fb33e5d374c10f20b0c">org.motechproject.event.EventRelay.sendEventMessage</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afe8da4454d81646994d83a5ff60a9d8c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">T org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00163.html#aa99520891c886b2427f9467bf76b8987">addData</a> </td>
-          <td>(</td>
-          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Implemented in <a class="el" href="a00084.html#afc7ef603ad96bdd8a2f4ee065f2f2f40">org.motechproject.event.ClientEventRelay</a>, <a class="el" href="a00084.html#afc7ef603ad96bdd8a2f4ee065f2f2f40">org.motechproject.event.ClientEventRelay</a>, <a class="el" href="a00384.html#a4888fc8464fe893ddaf050fad19a5d24">org.motechproject.server.event.ServerEventRelay</a>, and <a class="el" href="a00384.html#a4888fc8464fe893ddaf050fad19a5d24">org.motechproject.server.event.ServerEventRelay</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a4daf03fdafe131a4a8571fb52f45c208"></a>
+<a class="anchor" id="a4ee17c9019a24fb33e5d374c10f20b0c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Map&lt;String, Object&gt; org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00163.html#a4daf03fdafe131a4a8571fb52f45c208">getData</a> </td>
+          <td class="memname">void <a class="el" href="a00163.html#a4ee17c9019a24fb33e5d374c10f20b0c">org.motechproject.event.EventRelay.sendEventMessage</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00084.html#afc7ef603ad96bdd8a2f4ee065f2f2f40">org.motechproject.event.ClientEventRelay</a>, <a class="el" href="a00084.html#afc7ef603ad96bdd8a2f4ee065f2f2f40">org.motechproject.event.ClientEventRelay</a>, <a class="el" href="a00384.html#a4888fc8464fe893ddaf050fad19a5d24">org.motechproject.server.event.ServerEventRelay</a>, and <a class="el" href="a00384.html#a4888fc8464fe893ddaf050fad19a5d24">org.motechproject.server.event.ServerEventRelay</a>.</p>
 
 </div>
 </div>

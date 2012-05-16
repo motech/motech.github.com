@@ -92,48 +92,486 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00896.html">dao</a>      </li>
-      <li class="navelem"><a class="el" href="a00055.html">BusinessIdNotUniqueException</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01414.html">mobileforms</a>      </li>
+      <li class="navelem"><a class="el" href="a01415.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01425.html">web</a>      </li>
+      <li class="navelem"><a class="el" href="a00055.html">BaseFormServlet</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.dao.BusinessIdNotUniqueException Class Reference</div>  </div>
+<div class="title">org.motechproject.mobileforms.api.web.BaseFormServlet Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.mobileforms.api.web.BaseFormServlet:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00055.png" usemap="#org.motechproject.mobileforms.api.web.BaseFormServlet_map" alt=""/>
+  <map id="org.motechproject.mobileforms.api.web.BaseFormServlet_map" name="org.motechproject.mobileforms.api.web.BaseFormServlet_map">
+<area href="a00177.html" alt="org.motechproject.mobileforms.api.web.FormDownloadServlet" shape="rect" coords="0,56,362,80"/>
+<area href="a00177.html" alt="org.motechproject.mobileforms.api.web.FormDownloadServlet" shape="rect" coords="372,56,734,80"/>
+<area href="a00184.html" alt="org.motechproject.mobileforms.api.web.FormUploadServlet" shape="rect" coords="744,56,1106,80"/>
+<area href="a00184.html" alt="org.motechproject.mobileforms.api.web.FormUploadServlet" shape="rect" coords="1116,56,1478,80"/>
+</map>
+ </div></div>
 
-<p><a href="a01099.html">List of all members.</a></p>
+<p><a href="a01690.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a16f76e0a6f0f0f8eff242568c31c7b5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a16f76e0a6f0f0f8eff242568c31c7b5e">BusinessIdNotUniqueException</a> (String fieldName, String id)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a0f509957d49a795882b5c4a2e4deac60"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a0f509957d49a795882b5c4a2e4deac60">RESPONSE_ERROR</a> = 0</td></tr>
+<tr class="memitem:ad752601fbaa529fed48267e168ce6c99"><td class="memItemLeft" align="right" valign="top">static final byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ad752601fbaa529fed48267e168ce6c99">RESPONSE_SUCCESS</a> = 1</td></tr>
+<tr class="memitem:a8800c90518f4e0e40bc90d9f31956cb0"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a8800c90518f4e0e40bc90d9f31956cb0">FAILED_TO_SERIALIZE_DATA</a> = &quot;failed to serialize data&quot;</td></tr>
+<tr class="memitem:a17521dcaff0fde0735d488a6ba5b9234"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a17521dcaff0fde0735d488a6ba5b9234">APPLICATION_OCTET_STREAM</a> = &quot;application/octet-stream&quot;</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab7732516995207674fe40e26455d37b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ab7732516995207674fe40e26455d37b5">BaseFormServlet</a> ()</td></tr>
+<tr class="memitem:a2838acbe1376811490c971dd9f97f76b"><td class="memItemLeft" align="right" valign="top">EpihandyXformSerializer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2838acbe1376811490c971dd9f97f76b">serializer</a> ()</td></tr>
+<tr class="memitem:aeec219fadaf64da3d50935669b2ae4f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#aeec219fadaf64da3d50935669b2ae4f2">readParameters</a> (DataInputStream dataInput)  throws IOException </td></tr>
+<tr class="memitem:aa09b82f8354275a7b89cd328049f64c4"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#aa09b82f8354275a7b89cd328049f64c4">doPost</a> (HttpServletRequest request, HttpServletResponse response)  throws ServletException, IOException</td></tr>
+<tr class="memitem:ae9a5366f18f9c49e898604a2c171f222"><td class="memItemLeft" align="right" valign="top">FormValidator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ae9a5366f18f9c49e898604a2c171f222">getValidatorFor</a> (<a class="el" href="a00175.html">FormBean</a> formBean)</td></tr>
+<tr class="memitem:aae47f4545f973121a902b2a594f6e35d"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#aae47f4545f973121a902b2a594f6e35d">readActionByte</a> (DataInputStream dataInput)  throws IOException </td></tr>
+<tr class="memitem:a6b4bb1e1f99ae92fdc562df65bde251b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00180.html">FormOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a6b4bb1e1f99ae92fdc562df65bde251b">getFormOutput</a> ()</td></tr>
+<tr class="memitem:a61d25903989d48ea9fdb97b058f4b5f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00181.html">FormProcessor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a61d25903989d48ea9fdb97b058f4b5f4">createFormProcessor</a> ()</td></tr>
+<tr class="memitem:ab7732516995207674fe40e26455d37b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ab7732516995207674fe40e26455d37b5">BaseFormServlet</a> ()</td></tr>
+<tr class="memitem:a2838acbe1376811490c971dd9f97f76b"><td class="memItemLeft" align="right" valign="top">EpihandyXformSerializer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2838acbe1376811490c971dd9f97f76b">serializer</a> ()</td></tr>
+<tr class="memitem:aeec219fadaf64da3d50935669b2ae4f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#aeec219fadaf64da3d50935669b2ae4f2">readParameters</a> (DataInputStream dataInput)  throws IOException </td></tr>
+<tr class="memitem:aa09b82f8354275a7b89cd328049f64c4"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#aa09b82f8354275a7b89cd328049f64c4">doPost</a> (HttpServletRequest request, HttpServletResponse response)  throws ServletException, IOException</td></tr>
+<tr class="memitem:ae9a5366f18f9c49e898604a2c171f222"><td class="memItemLeft" align="right" valign="top">FormValidator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ae9a5366f18f9c49e898604a2c171f222">getValidatorFor</a> (<a class="el" href="a00175.html">FormBean</a> formBean)</td></tr>
+<tr class="memitem:aae47f4545f973121a902b2a594f6e35d"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#aae47f4545f973121a902b2a594f6e35d">readActionByte</a> (DataInputStream dataInput)  throws IOException </td></tr>
+<tr class="memitem:a6b4bb1e1f99ae92fdc562df65bde251b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00180.html">FormOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a6b4bb1e1f99ae92fdc562df65bde251b">getFormOutput</a> ()</td></tr>
+<tr class="memitem:a61d25903989d48ea9fdb97b058f4b5f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00181.html">FormProcessor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a61d25903989d48ea9fdb97b058f4b5f4">createFormProcessor</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:acf92a7c4a8a448609aff019e41130931"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00430.html">UsersService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#acf92a7c4a8a448609aff019e41130931">usersService</a></td></tr>
+<tr class="memitem:ab9b048bd9ae47315572bac8c7690a975"><td class="memItemLeft" align="right" valign="top">ApplicationContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ab9b048bd9ae47315572bac8c7690a975">context</a></td></tr>
+<tr class="memitem:a2949af2fa340937dd163e4d6a6b3626b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00182.html">FormPublisher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2949af2fa340937dd163e4d6a6b3626b">formPublisher</a></td></tr>
+<tr class="memitem:a2a53e24e7a2f5550f23f8ae606880ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00257.html">MobileFormsService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2a53e24e7a2f5550f23f8ae606880ec1">mobileFormsService</a></td></tr>
+<tr class="memitem:ac8acee245e811960ce6cf5cb390ea82d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">AllMobileForms</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ac8acee245e811960ce6cf5cb390ea82d">allMobileForms</a></td></tr>
+<tr class="memitem:a199ae6281c78522b9c1c5ad3375c265e"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a199ae6281c78522b9c1c5ad3375c265e">marker</a></td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a16f76e0a6f0f0f8eff242568c31c7b5e"></a>
+<a class="anchor" id="ab7732516995207674fe40e26455d37b5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00055.html#a16f76e0a6f0f0f8eff242568c31c7b5e">org.motechproject.dao.BusinessIdNotUniqueException.BusinessIdNotUniqueException</a> </td>
+          <td class="memname"><a class="el" href="a00055.html#ab7732516995207674fe40e26455d37b5">org.motechproject.mobileforms.api.web.BaseFormServlet.BaseFormServlet</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>fieldName</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab7732516995207674fe40e26455d37b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00055.html#ab7732516995207674fe40e26455d37b5">org.motechproject.mobileforms.api.web.BaseFormServlet.BaseFormServlet</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a61d25903989d48ea9fdb97b058f4b5f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00181.html">FormProcessor</a> <a class="el" href="a00055.html#a61d25903989d48ea9fdb97b058f4b5f4">org.motechproject.mobileforms.api.web.BaseFormServlet.createFormProcessor</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61d25903989d48ea9fdb97b058f4b5f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00181.html">FormProcessor</a> <a class="el" href="a00055.html#a61d25903989d48ea9fdb97b058f4b5f4">org.motechproject.mobileforms.api.web.BaseFormServlet.createFormProcessor</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa09b82f8354275a7b89cd328049f64c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void <a class="el" href="a00055.html#aa09b82f8354275a7b89cd328049f64c4">org.motechproject.mobileforms.api.web.BaseFormServlet.doPost</a> </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>  throws ServletException, IOException<code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00184.html#a8f585dd79e65d864337ceaeecf11a471">org.motechproject.mobileforms.api.web.FormUploadServlet</a>, <a class="el" href="a00184.html#a8f585dd79e65d864337ceaeecf11a471">org.motechproject.mobileforms.api.web.FormUploadServlet</a>, <a class="el" href="a00177.html#a3efabb26244c461f177da7fcc707a7e1">org.motechproject.mobileforms.api.web.FormDownloadServlet</a>, and <a class="el" href="a00177.html#a3efabb26244c461f177da7fcc707a7e1">org.motechproject.mobileforms.api.web.FormDownloadServlet</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa09b82f8354275a7b89cd328049f64c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void <a class="el" href="a00055.html#aa09b82f8354275a7b89cd328049f64c4">org.motechproject.mobileforms.api.web.BaseFormServlet.doPost</a> </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws ServletException, IOException<code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00184.html#a8f585dd79e65d864337ceaeecf11a471">org.motechproject.mobileforms.api.web.FormUploadServlet</a>, <a class="el" href="a00184.html#a8f585dd79e65d864337ceaeecf11a471">org.motechproject.mobileforms.api.web.FormUploadServlet</a>, <a class="el" href="a00177.html#a3efabb26244c461f177da7fcc707a7e1">org.motechproject.mobileforms.api.web.FormDownloadServlet</a>, and <a class="el" href="a00177.html#a3efabb26244c461f177da7fcc707a7e1">org.motechproject.mobileforms.api.web.FormDownloadServlet</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b4bb1e1f99ae92fdc562df65bde251b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00180.html">FormOutput</a> <a class="el" href="a00055.html#a6b4bb1e1f99ae92fdc562df65bde251b">org.motechproject.mobileforms.api.web.BaseFormServlet.getFormOutput</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b4bb1e1f99ae92fdc562df65bde251b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00180.html">FormOutput</a> <a class="el" href="a00055.html#a6b4bb1e1f99ae92fdc562df65bde251b">org.motechproject.mobileforms.api.web.BaseFormServlet.getFormOutput</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9a5366f18f9c49e898604a2c171f222"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FormValidator <a class="el" href="a00055.html#ae9a5366f18f9c49e898604a2c171f222">org.motechproject.mobileforms.api.web.BaseFormServlet.getValidatorFor</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00175.html">FormBean</a>&#160;</td>
+          <td class="paramname"><em>formBean</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9a5366f18f9c49e898604a2c171f222"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FormValidator <a class="el" href="a00055.html#ae9a5366f18f9c49e898604a2c171f222">org.motechproject.mobileforms.api.web.BaseFormServlet.getValidatorFor</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00175.html">FormBean</a>&#160;</td>
+          <td class="paramname"><em>formBean</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae47f4545f973121a902b2a594f6e35d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte <a class="el" href="a00055.html#aae47f4545f973121a902b2a594f6e35d">org.motechproject.mobileforms.api.web.BaseFormServlet.readActionByte</a> </td>
+          <td>(</td>
+          <td class="paramtype">DataInputStream&#160;</td>
+          <td class="paramname"><em>dataInput</em></td><td>)</td>
+          <td>  throws IOException <code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae47f4545f973121a902b2a594f6e35d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte <a class="el" href="a00055.html#aae47f4545f973121a902b2a594f6e35d">org.motechproject.mobileforms.api.web.BaseFormServlet.readActionByte</a> </td>
+          <td>(</td>
+          <td class="paramtype">DataInputStream&#160;</td>
+          <td class="paramname"><em>dataInput</em></td><td>)</td>
+          <td>  throws IOException <code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeec219fadaf64da3d50935669b2ae4f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00055.html#aeec219fadaf64da3d50935669b2ae4f2">org.motechproject.mobileforms.api.web.BaseFormServlet.readParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype">DataInputStream&#160;</td>
+          <td class="paramname"><em>dataInput</em></td><td>)</td>
+          <td>  throws IOException <code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeec219fadaf64da3d50935669b2ae4f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00055.html#aeec219fadaf64da3d50935669b2ae4f2">org.motechproject.mobileforms.api.web.BaseFormServlet.readParameters</a> </td>
+          <td>(</td>
+          <td class="paramtype">DataInputStream&#160;</td>
+          <td class="paramname"><em>dataInput</em></td><td>)</td>
+          <td>  throws IOException <code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2838acbe1376811490c971dd9f97f76b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EpihandyXformSerializer <a class="el" href="a00055.html#a2838acbe1376811490c971dd9f97f76b">org.motechproject.mobileforms.api.web.BaseFormServlet.serializer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2838acbe1376811490c971dd9f97f76b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EpihandyXformSerializer <a class="el" href="a00055.html#a2838acbe1376811490c971dd9f97f76b">org.motechproject.mobileforms.api.web.BaseFormServlet.serializer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="ac8acee245e811960ce6cf5cb390ea82d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">AllMobileForms</a> <a class="el" href="a00055.html#ac8acee245e811960ce6cf5cb390ea82d">org.motechproject.mobileforms.api.web.BaseFormServlet.allMobileForms</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17521dcaff0fde0735d488a6ba5b9234"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final String <a class="el" href="a00055.html#a17521dcaff0fde0735d488a6ba5b9234">org.motechproject.mobileforms.api.web.BaseFormServlet.APPLICATION_OCTET_STREAM</a> = &quot;application/octet-stream&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9b048bd9ae47315572bac8c7690a975"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ApplicationContext <a class="el" href="a00055.html#ab9b048bd9ae47315572bac8c7690a975">org.motechproject.mobileforms.api.web.BaseFormServlet.context</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8800c90518f4e0e40bc90d9f31956cb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final String <a class="el" href="a00055.html#a8800c90518f4e0e40bc90d9f31956cb0">org.motechproject.mobileforms.api.web.BaseFormServlet.FAILED_TO_SERIALIZE_DATA</a> = &quot;failed to serialize data&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2949af2fa340937dd163e4d6a6b3626b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00182.html">FormPublisher</a> <a class="el" href="a00055.html#a2949af2fa340937dd163e4d6a6b3626b">org.motechproject.mobileforms.api.web.BaseFormServlet.formPublisher</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a199ae6281c78522b9c1c5ad3375c265e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00055.html#a199ae6281c78522b9c1c5ad3375c265e">org.motechproject.mobileforms.api.web.BaseFormServlet.marker</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a53e24e7a2f5550f23f8ae606880ec1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00257.html">MobileFormsService</a> <a class="el" href="a00055.html#a2a53e24e7a2f5550f23f8ae606880ec1">org.motechproject.mobileforms.api.web.BaseFormServlet.mobileFormsService</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f509957d49a795882b5c4a2e4deac60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final byte <a class="el" href="a00055.html#a0f509957d49a795882b5c4a2e4deac60">org.motechproject.mobileforms.api.web.BaseFormServlet.RESPONSE_ERROR</a> = 0<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad752601fbaa529fed48267e168ce6c99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final byte <a class="el" href="a00055.html#ad752601fbaa529fed48267e168ce6c99">org.motechproject.mobileforms.api.web.BaseFormServlet.RESPONSE_SUCCESS</a> = 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf92a7c4a8a448609aff019e41130931"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00430.html">UsersService</a> <a class="el" href="a00055.html#acf92a7c4a8a448609aff019e41130931">org.motechproject.mobileforms.api.web.BaseFormServlet.usersService</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>

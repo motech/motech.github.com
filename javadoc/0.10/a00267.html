@@ -92,10 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00903.html">gateway</a>      </li>
-      <li class="navelem"><a class="el" href="a00267.html">MotechSchedulerGateway</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01485.html">event</a>      </li>
+      <li class="navelem"><a class="el" href="a01486.html">annotations</a>      </li>
+      <li class="navelem"><a class="el" href="a00267.html">MotechListenerEventProxy</a>      </li>
     </ul>
   </div>
 </div>
@@ -103,128 +105,175 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.gateway.MotechSchedulerGateway Interface Reference</div>  </div>
+<div class="title">org.motechproject.server.event.annotations.MotechListenerEventProxy Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.server.event.annotations.MotechListenerEventProxy:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00267.png" usemap="#org.motechproject.server.event.annotations.MotechListenerEventProxy_map" alt=""/>
+  <map id="org.motechproject.server.event.annotations.MotechListenerEventProxy_map" name="org.motechproject.server.event.annotations.MotechListenerEventProxy_map">
+<area href="a00266.html" title="Event Listener Proxy base abstract class." alt="org.motechproject.server.event.annotations.MotechListenerAbstractProxy" shape="rect" coords="219,56,648,80"/>
+<area href="a00266.html" title="Event Listener Proxy base abstract class." alt="org.motechproject.server.event.annotations.MotechListenerAbstractProxy" shape="rect" coords="1097,56,1526,80"/>
+<area href="a00161.html" alt="org.motechproject.server.event.EventListener" shape="rect" coords="0,0,429,24"/>
+<area href="a00161.html" alt="org.motechproject.server.event.EventListener" shape="rect" coords="439,0,868,24"/>
+<area href="a00161.html" alt="org.motechproject.server.event.EventListener" shape="rect" coords="878,0,1307,24"/>
+<area href="a00161.html" alt="org.motechproject.server.event.EventListener" shape="rect" coords="1317,0,1746,24"/>
+</map>
+ </div></div>
 
-<p><a href="a01120.html">List of all members.</a></p>
+<p><a href="a01850.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a99245da79a59471a724203f161f59b2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a99245da79a59471a724203f161f59b2a">scheduleJob</a> (<a class="el" href="a00105.html">CronSchedulableJob</a> cronSchedulableJob)</td></tr>
-<tr class="memitem:a8b59770181c3a915d0ebd53b924a4dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a8b59770181c3a915d0ebd53b924a4dc6">scheduleRepeatingJob</a> (<a class="el" href="a00347.html">RepeatingSchedulableJob</a> schedulableJob)</td></tr>
-<tr class="memitem:a9db990af873655c344d7fc2c24f8d225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a9db990af873655c344d7fc2c24f8d225">scheduleRunOnceJob</a> (<a class="el" href="a00356.html">RunOnceSchedulableJob</a> schedulableJob)</td></tr>
-<tr class="memitem:aee498e740e2ecdd72f62ee9636b87212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#aee498e740e2ecdd72f62ee9636b87212">unscheduleJob</a> (String jobId)</td></tr>
+<tr class="memitem:a009cf2d8878784b568fd71529b72bec9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a009cf2d8878784b568fd71529b72bec9">MotechListenerEventProxy</a> (String <a class="el" href="a00266.html#ac1ab6e9bea9173cb2f97b9acab1668ae">name</a>, Object <a class="el" href="a00266.html#ad9b29818793e1e681272b5e0cca6ae80">bean</a>, Method <a class="el" href="a00266.html#a54bd91bbdf792cdeeeca3a55ddb3c135">method</a>)</td></tr>
+<tr class="memitem:a327ee9f87d5f165da33455540da1d769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a327ee9f87d5f165da33455540da1d769">callHandler</a> (<a class="el" href="a00262.html">MotechEvent</a> event)</td></tr>
+<tr class="memitem:a009cf2d8878784b568fd71529b72bec9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a009cf2d8878784b568fd71529b72bec9">MotechListenerEventProxy</a> (String <a class="el" href="a00266.html#ac1ab6e9bea9173cb2f97b9acab1668ae">name</a>, Object <a class="el" href="a00266.html#ad9b29818793e1e681272b5e0cca6ae80">bean</a>, Method <a class="el" href="a00266.html#a54bd91bbdf792cdeeeca3a55ddb3c135">method</a>)</td></tr>
+<tr class="memitem:a327ee9f87d5f165da33455540da1d769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a327ee9f87d5f165da33455540da1d769">callHandler</a> (<a class="el" href="a00262.html">MotechEvent</a> event)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Motech Scheduler Gateway provides access to Motech Scheduler. </p>
-<p>A proxy for that interface will be generated at run-time.</p>
-<p>This interface should be injected into any class that needs access to Motech Scheduler for scheduling, unscheduling and rescheduling jobs/tasks.</p>
-<p>The interface is configured in the schedulerOutboundChannelAdapter.xml (motech-platform-core)</p>
-<p>For example of use see SchedulerGatewayIT (motech-platform-core)</p>
-<dl class="section author"><dt>Author:</dt><dd>Igor (<a href="#" onclick="location.href='mai'+'lto:'+'iop'+'us'+'hny'+'ev'+'@2p'+'at'+'hs.'+'co'+'m'; return false;">iopus<span style="display: none;">.nosp@m.</span>hnye<span style="display: none;">.nosp@m.</span>v@2pa<span style="display: none;">.nosp@m.</span>ths.<span style="display: none;">.nosp@m.</span>com</a>) Date: 23/02/11 </dd></dl>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a99245da79a59471a724203f161f59b2a"></a>
+<div class="textblock"><p>Responsible for dispatching to. </p>
+<div class="fragment"><pre class="fragment"> <span class="keywordtype">void</span> doSomething(MotechEvent event) {}  
+</pre></div><p> type of handlers </p>
+<dl class="section author"><dt>Author:</dt><dd>yyonkov </dd></dl>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a009cf2d8878784b568fd71529b72bec9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00267.html#a99245da79a59471a724203f161f59b2a">org.motechproject.gateway.MotechSchedulerGateway.scheduleJob</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00105.html">CronSchedulableJob</a>&#160;</td>
-          <td class="paramname"><em>cronSchedulableJob</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Sends a message with the given SchedulableJob payload. </p>
-<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cronSchedulableJob</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8b59770181c3a915d0ebd53b924a4dc6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00267.html#a8b59770181c3a915d0ebd53b924a4dc6">org.motechproject.gateway.MotechSchedulerGateway.scheduleRepeatingJob</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00347.html">RepeatingSchedulableJob</a>&#160;</td>
-          <td class="paramname"><em>schedulableJob</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Sends a message with the given SchedulableJob payload. </p>
-<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">schedulableJob</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a9db990af873655c344d7fc2c24f8d225"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00267.html#a9db990af873655c344d7fc2c24f8d225">org.motechproject.gateway.MotechSchedulerGateway.scheduleRunOnceJob</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00356.html">RunOnceSchedulableJob</a>&#160;</td>
-          <td class="paramname"><em>schedulableJob</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Sends a message with the given RunOnceSchedulableJob payload. </p>
-<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">schedulableJob</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aee498e740e2ecdd72f62ee9636b87212"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00267.html#aee498e740e2ecdd72f62ee9636b87212">org.motechproject.gateway.MotechSchedulerGateway.unscheduleJob</a> </td>
+          <td class="memname"><a class="el" href="a00267.html#a009cf2d8878784b568fd71529b72bec9">org.motechproject.server.event.annotations.MotechListenerEventProxy.MotechListenerEventProxy</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>jobId</em></td><td>)</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>bean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Method&#160;</td>
+          <td class="paramname"><em>method</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">bean</td><td></td></tr>
+    <tr><td class="paramname">method</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a009cf2d8878784b568fd71529b72bec9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00267.html#a009cf2d8878784b568fd71529b72bec9">org.motechproject.server.event.annotations.MotechListenerEventProxy.MotechListenerEventProxy</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>bean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Method&#160;</td>
+          <td class="paramname"><em>method</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">bean</td><td></td></tr>
+    <tr><td class="paramname">method</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a327ee9f87d5f165da33455540da1d769"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00267.html#a327ee9f87d5f165da33455540da1d769">org.motechproject.server.event.annotations.MotechListenerEventProxy.callHandler</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Sends a message with the given jobID (String) payload. </p>
-<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<p>Needs to be implemented by concrete Proxies. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">jobId</td><td></td></tr>
+    <tr><td class="paramname">event</td><td></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+<p>Implements <a class="el" href="a00266.html#ab201e470b586210ee166d5ecffcb4faf">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a327ee9f87d5f165da33455540da1d769"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00267.html#a327ee9f87d5f165da33455540da1d769">org.motechproject.server.event.annotations.MotechListenerEventProxy.callHandler</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Needs to be implemented by concrete Proxies. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+<p>Implements <a class="el" href="a00266.html#ab201e470b586210ee166d5ecffcb4faf">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
 
 </div>
 </div>

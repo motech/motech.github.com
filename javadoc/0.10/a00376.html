@@ -92,11 +92,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a01023.html">sms</a>      </li>
-      <li class="navelem"><a class="el" href="a01028.html">smpp</a>      </li>
-      <li class="navelem"><a class="el" href="a00376.html">SmsSendHandler</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01452.html">scheduler</a>      </li>
+      <li class="navelem"><a class="el" href="a00376.html">SchedulerFireEventGateway</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,61 +103,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.sms.smpp.SmsSendHandler Class Reference</div>  </div>
+<div class="title">org.motechproject.scheduler.SchedulerFireEventGateway Interface Reference<div class="ingroups"><a class="el" href="a01550.html">Scheduler</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.sms.smpp.SmsSendHandler:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00376.png" usemap="#org.motechproject.sms.smpp.SmsSendHandler_map" alt=""/>
-  <map id="org.motechproject.sms.smpp.SmsSendHandler_map" name="org.motechproject.sms.smpp.SmsSendHandler_map">
-<area href="a00374.html" alt="org.motechproject.sms.api.SmsEventHandler" shape="rect" coords="0,0,273,24"/>
-</map>
- </div></div>
 
-<p><a href="a01463.html">List of all members.</a></p>
+<p><a href="a01761.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a187a2bbfb979f560ff243aa7cde5eb9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00376.html#a187a2bbfb979f560ff243aa7cde5eb9f">SmsSendHandler</a> (<a class="el" href="a00220.html">ManagedSmslibService</a> service)</td></tr>
-<tr class="memitem:a0485a0d69d7049f64a0d33dbf7c024d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00376.html#a0485a0d69d7049f64a0d33dbf7c024d5">handle</a> (<a class="el" href="a00253.html">MotechEvent</a> event)  throws Exception </td></tr>
+<tr class="memitem:a57b3533f4a01e8ec64370fd5e1c252ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00376.html#a57b3533f4a01e8ec64370fd5e1c252ff">sendEventMessage</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
+<tr class="memitem:a57b3533f4a01e8ec64370fd5e1c252ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00376.html#a57b3533f4a01e8ec64370fd5e1c252ff">sendEventMessage</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a187a2bbfb979f560ff243aa7cde5eb9f"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>*A gateway interface to a Spring Integration message channel. </p>
+<p>This interface configured in schedulerFiredEventChannelAdapter.xml</p>
+<dl class="section author"><dt>Author:</dt><dd>Igor (<a href="#" onclick="location.href='mai'+'lto:'+'iop'+'us'+'hny'+'ev'+'@2p'+'at'+'hs.'+'co'+'m'; return false;">iopus<span style="display: none;">.nosp@m.</span>hnye<span style="display: none;">.nosp@m.</span>v@2pa<span style="display: none;">.nosp@m.</span>ths.<span style="display: none;">.nosp@m.</span>com</a>) Date: 23/02/11 </dd></dl>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a57b3533f4a01e8ec64370fd5e1c252ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00376.html#a187a2bbfb979f560ff243aa7cde5eb9f">org.motechproject.sms.smpp.SmsSendHandler.SmsSendHandler</a> </td>
+          <td class="memname">void <a class="el" href="a00376.html#a57b3533f4a01e8ec64370fd5e1c252ff">org.motechproject.scheduler.SchedulerFireEventGateway.sendEventMessage</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00220.html">ManagedSmslibService</a>&#160;</td>
-          <td class="paramname"><em>service</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Sends the given MotechEvent message as a payload to the message channel defined in the Spring Integration configuration file. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motechEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a0485a0d69d7049f64a0d33dbf7c024d5"></a>
+<a class="anchor" id="a57b3533f4a01e8ec64370fd5e1c252ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00376.html#a0485a0d69d7049f64a0d33dbf7c024d5">org.motechproject.sms.smpp.SmsSendHandler.handle</a> </td>
+          <td class="memname">void <a class="el" href="a00376.html#a57b3533f4a01e8ec64370fd5e1c252ff">org.motechproject.scheduler.SchedulerFireEventGateway.sendEventMessage</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td>  throws Exception </td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="a00374.html#a5edcb8ae1b0c11907e482ba03ad99bcd">org.motechproject.sms.api.SmsEventHandler</a>.</p>
+<p>Sends the given MotechEvent message as a payload to the message channel defined in the Spring Integration configuration file. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motechEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

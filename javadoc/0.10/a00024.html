@@ -92,67 +92,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00991.html">messagecampaign</a>      </li>
-      <li class="navelem"><a class="el" href="a00994.html">dao</a>      </li>
-      <li class="navelem"><a class="el" href="a00024.html">AllCampaignEnrollments</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01372.html">appointments</a>      </li>
+      <li class="navelem"><a class="el" href="a01373.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01379.html">repository</a>      </li>
+      <li class="navelem"><a class="el" href="a00024.html">AllAppointmentCalendars</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments Class Reference</div>  </div>
+<div class="title">org.motechproject.appointments.api.repository.AllAppointmentCalendars Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits MotechBaseRepository&lt; CampaignEnrollment &gt;.</p>
+<p>Inherits MotechBaseRepository&lt; AppointmentCalendar &gt;, and MotechBaseRepository&lt; AppointmentCalendar &gt;.</p>
 
-<p><a href="a01358.html">List of all members.</a></p>
+<p><a href="a01572.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a56dee5f098e737f5241f283f7a65d113"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00066.html">CampaignEnrollment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a56dee5f098e737f5241f283f7a65d113">findByExternalIdAndCampaignName</a> (String externalId, String campaignName)</td></tr>
-<tr class="memitem:adddedf83e15ee50fb03350e4f465f020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#adddedf83e15ee50fb03350e4f465f020">saveOrUpdate</a> (<a class="el" href="a00066.html">CampaignEnrollment</a> enrollment)</td></tr>
-<tr class="memitem:a0de76d1aa4bca1ee39cf222b35c3aaf9"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00066.html">CampaignEnrollment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a0de76d1aa4bca1ee39cf222b35c3aaf9">findByStatus</a> (<a class="el" href="a00071.html">CampaignEnrollmentStatus</a> status)</td></tr>
-<tr class="memitem:ad08b2b69713c05836e8efa5b2845875e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00066.html">CampaignEnrollment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#ad08b2b69713c05836e8efa5b2845875e">findByExternalId</a> (String externalId)</td></tr>
-<tr class="memitem:a25554e1feba0534f920a6749712b5f5a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00066.html">CampaignEnrollment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a25554e1feba0534f920a6749712b5f5a">findByCampaignName</a> (String campaignName)</td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:add7ae8a1c9f9d6872d13f9ac6a1f58f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#add7ae8a1c9f9d6872d13f9ac6a1f58f2">AllCampaignEnrollments</a> (@Qualifier(&quot;messageCampaignDBConnector&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a94b4cd5bb1a11ec47733eb51a2300019"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a94b4cd5bb1a11ec47733eb51a2300019">AllAppointmentCalendars</a> (@Qualifier(&quot;appointmentsDatabase&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:aa03bc0541b7ad98cf13985228a10e4ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#aa03bc0541b7ad98cf13985228a10e4ec">saveAppointmentCalendar</a> (<a class="el" href="a00045.html">AppointmentCalendar</a> appointmentCalendar)</td></tr>
+<tr class="memitem:a0e1514b3b532de84f38039cd09edbfe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00045.html">AppointmentCalendar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a0e1514b3b532de84f38039cd09edbfe1">findByExternalId</a> (String externalId)</td></tr>
+<tr class="memitem:ace3b15a53fc48f5cb7cf0a0f9d802c7a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00443.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#ace3b15a53fc48f5cb7cf0a0f9d802c7a">findVisitsWithDueDateInRange</a> (DateTime start, DateTime end)</td></tr>
+<tr class="memitem:acf4b8dc1ce0f2fdccc992d69e5eeb872"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00443.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#acf4b8dc1ce0f2fdccc992d69e5eeb872">findMissedVisits</a> ()</td></tr>
+<tr class="memitem:a28fbca587c6e098dab88b682fa159c50"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00443.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a28fbca587c6e098dab88b682fa159c50">findByMetadataProperty</a> (String property, String value)</td></tr>
+<tr class="memitem:a1aec77827571061b2ed916e6393521d7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00443.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a1aec77827571061b2ed916e6393521d7">findVisitsByExternalId</a> (String externalId)</td></tr>
+<tr class="memitem:a94b4cd5bb1a11ec47733eb51a2300019"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a94b4cd5bb1a11ec47733eb51a2300019">AllAppointmentCalendars</a> (@Qualifier(&quot;appointmentsDatabase&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:aa03bc0541b7ad98cf13985228a10e4ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#aa03bc0541b7ad98cf13985228a10e4ec">saveAppointmentCalendar</a> (<a class="el" href="a00045.html">AppointmentCalendar</a> appointmentCalendar)</td></tr>
+<tr class="memitem:a0e1514b3b532de84f38039cd09edbfe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00045.html">AppointmentCalendar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a0e1514b3b532de84f38039cd09edbfe1">findByExternalId</a> (String externalId)</td></tr>
+<tr class="memitem:ace3b15a53fc48f5cb7cf0a0f9d802c7a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00443.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#ace3b15a53fc48f5cb7cf0a0f9d802c7a">findVisitsWithDueDateInRange</a> (DateTime start, DateTime end)</td></tr>
+<tr class="memitem:acf4b8dc1ce0f2fdccc992d69e5eeb872"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00443.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#acf4b8dc1ce0f2fdccc992d69e5eeb872">findMissedVisits</a> ()</td></tr>
+<tr class="memitem:a28fbca587c6e098dab88b682fa159c50"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00443.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a28fbca587c6e098dab88b682fa159c50">findByMetadataProperty</a> (String property, String value)</td></tr>
+<tr class="memitem:a1aec77827571061b2ed916e6393521d7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00443.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#a1aec77827571061b2ed916e6393521d7">findVisitsByExternalId</a> (String externalId)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aac004fcf54d29a558d527a0ce0b4ed28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00444.html">VisitResponseMapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html#aac004fcf54d29a558d527a0ce0b4ed28">visitResponseMapper</a></td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="add7ae8a1c9f9d6872d13f9ac6a1f58f2"></a>
+<a class="anchor" id="a94b4cd5bb1a11ec47733eb51a2300019"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00024.html#add7ae8a1c9f9d6872d13f9ac6a1f58f2">org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.AllCampaignEnrollments</a> </td>
+          <td class="memname"><a class="el" href="a00024.html#a94b4cd5bb1a11ec47733eb51a2300019">org.motechproject.appointments.api.repository.AllAppointmentCalendars.AllAppointmentCalendars</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(&quot;messageCampaignDBConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramtype">@Qualifier(&quot;appointmentsDatabase&quot;) CouchDbConnector&#160;</td>
           <td class="paramname"><em>db</em></td><td>)</td>
-          <td><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a25554e1feba0534f920a6749712b5f5a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="a00066.html">CampaignEnrollment</a>&gt; <a class="el" href="a00024.html#a25554e1feba0534f920a6749712b5f5a">org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.findByCampaignName</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>campaignName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -161,12 +152,30 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad08b2b69713c05836e8efa5b2845875e"></a>
+<a class="anchor" id="a94b4cd5bb1a11ec47733eb51a2300019"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00066.html">CampaignEnrollment</a>&gt; <a class="el" href="a00024.html#ad08b2b69713c05836e8efa5b2845875e">org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.findByExternalId</a> </td>
+          <td class="memname"><a class="el" href="a00024.html#a94b4cd5bb1a11ec47733eb51a2300019">org.motechproject.appointments.api.repository.AllAppointmentCalendars.AllAppointmentCalendars</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;appointmentsDatabase&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a0e1514b3b532de84f38039cd09edbfe1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00045.html">AppointmentCalendar</a> <a class="el" href="a00024.html#a0e1514b3b532de84f38039cd09edbfe1">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findByExternalId</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em></td><td>)</td>
@@ -178,21 +187,38 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a56dee5f098e737f5241f283f7a65d113"></a>
+<a class="anchor" id="a0e1514b3b532de84f38039cd09edbfe1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00066.html">CampaignEnrollment</a> <a class="el" href="a00024.html#a56dee5f098e737f5241f283f7a65d113">org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.findByExternalIdAndCampaignName</a> </td>
+          <td class="memname"><a class="el" href="a00045.html">AppointmentCalendar</a> <a class="el" href="a00024.html#a0e1514b3b532de84f38039cd09edbfe1">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findByExternalId</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a28fbca587c6e098dab88b682fa159c50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00443.html">VisitResponse</a>&gt; <a class="el" href="a00024.html#a28fbca587c6e098dab88b682fa159c50">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findByMetadataProperty</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>campaignName</em>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -205,15 +231,41 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0de76d1aa4bca1ee39cf222b35c3aaf9"></a>
+<a class="anchor" id="a28fbca587c6e098dab88b682fa159c50"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00066.html">CampaignEnrollment</a>&gt; <a class="el" href="a00024.html#a0de76d1aa4bca1ee39cf222b35c3aaf9">org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.findByStatus</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00443.html">VisitResponse</a>&gt; <a class="el" href="a00024.html#a28fbca587c6e098dab88b682fa159c50">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findByMetadataProperty</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00071.html">CampaignEnrollmentStatus</a>&#160;</td>
-          <td class="paramname"><em>status</em></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>property</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf4b8dc1ce0f2fdccc992d69e5eeb872"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00443.html">VisitResponse</a>&gt; <a class="el" href="a00024.html#acf4b8dc1ce0f2fdccc992d69e5eeb872">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findMissedVisits</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -222,16 +274,151 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adddedf83e15ee50fb03350e4f465f020"></a>
+<a class="anchor" id="acf4b8dc1ce0f2fdccc992d69e5eeb872"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00024.html#adddedf83e15ee50fb03350e4f465f020">org.motechproject.server.messagecampaign.dao.AllCampaignEnrollments.saveOrUpdate</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00443.html">VisitResponse</a>&gt; <a class="el" href="a00024.html#acf4b8dc1ce0f2fdccc992d69e5eeb872">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findMissedVisits</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00066.html">CampaignEnrollment</a>&#160;</td>
-          <td class="paramname"><em>enrollment</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1aec77827571061b2ed916e6393521d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00443.html">VisitResponse</a>&gt; <a class="el" href="a00024.html#a1aec77827571061b2ed916e6393521d7">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findVisitsByExternalId</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1aec77827571061b2ed916e6393521d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00443.html">VisitResponse</a>&gt; <a class="el" href="a00024.html#a1aec77827571061b2ed916e6393521d7">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findVisitsByExternalId</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ace3b15a53fc48f5cb7cf0a0f9d802c7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00443.html">VisitResponse</a>&gt; <a class="el" href="a00024.html#ace3b15a53fc48f5cb7cf0a0f9d802c7a">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findVisitsWithDueDateInRange</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ace3b15a53fc48f5cb7cf0a0f9d802c7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00443.html">VisitResponse</a>&gt; <a class="el" href="a00024.html#ace3b15a53fc48f5cb7cf0a0f9d802c7a">org.motechproject.appointments.api.repository.AllAppointmentCalendars.findVisitsWithDueDateInRange</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa03bc0541b7ad98cf13985228a10e4ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00024.html#aa03bc0541b7ad98cf13985228a10e4ec">org.motechproject.appointments.api.repository.AllAppointmentCalendars.saveAppointmentCalendar</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00045.html">AppointmentCalendar</a>&#160;</td>
+          <td class="paramname"><em>appointmentCalendar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa03bc0541b7ad98cf13985228a10e4ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00024.html#aa03bc0541b7ad98cf13985228a10e4ec">org.motechproject.appointments.api.repository.AllAppointmentCalendars.saveAppointmentCalendar</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00045.html">AppointmentCalendar</a>&#160;</td>
+          <td class="paramname"><em>appointmentCalendar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="aac004fcf54d29a558d527a0ce0b4ed28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00444.html">VisitResponseMapper</a> <a class="el" href="a00024.html#aac004fcf54d29a558d527a0ce0b4ed28">org.motechproject.appointments.api.repository.AllAppointmentCalendars.visitResponseMapper</a></td>
         </tr>
       </table>
 </div>

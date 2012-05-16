@@ -92,12 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00989.html">event</a>      </li>
-      <li class="navelem"><a class="el" href="a00990.html">annotations</a>      </li>
-      <li class="navelem"><a class="el" href="a00258.html">MotechListenerEventProxy</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01414.html">mobileforms</a>      </li>
+      <li class="navelem"><a class="el" href="a01415.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01420.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a00258.html">MobileFormsServiceImpl</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,100 +105,176 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.event.annotations.MotechListenerEventProxy Class Reference</div>  </div>
+<div class="title">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for org.motechproject.server.event.annotations.MotechListenerEventProxy:</div>
+Inheritance diagram for org.motechproject.mobileforms.api.service.MobileFormsServiceImpl:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00258.png" usemap="#org.motechproject.server.event.annotations.MotechListenerEventProxy_map" alt=""/>
-  <map id="org.motechproject.server.event.annotations.MotechListenerEventProxy_map" name="org.motechproject.server.event.annotations.MotechListenerEventProxy_map">
-<area href="a00257.html" title="Event Listener Proxy base abstract class." alt="org.motechproject.server.event.annotations.MotechListenerAbstractProxy" shape="rect" coords="0,56,429,80"/>
-<area href="a00157.html" alt="org.motechproject.server.event.EventListener" shape="rect" coords="0,0,429,24"/>
+  <img src="a00258.png" usemap="#org.motechproject.mobileforms.api.service.MobileFormsServiceImpl_map" alt=""/>
+  <map id="org.motechproject.mobileforms.api.service.MobileFormsServiceImpl_map" name="org.motechproject.mobileforms.api.service.MobileFormsServiceImpl_map">
+<area href="a00257.html" alt="org.motechproject.mobileforms.api.service.MobileFormsService" shape="rect" coords="0,0,395,24"/>
+<area href="a00257.html" alt="org.motechproject.mobileforms.api.service.MobileFormsService" shape="rect" coords="405,0,800,24"/>
 </map>
  </div></div>
 
-<p><a href="a01348.html">List of all members.</a></p>
+<p><a href="a01674.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a009cf2d8878784b568fd71529b72bec9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#a009cf2d8878784b568fd71529b72bec9">MotechListenerEventProxy</a> (String <a class="el" href="a00257.html#ac8e54e621a68bc26424e8af3415127e8">name</a>, Object <a class="el" href="a00257.html#ad69bc07a6f5c9c29285e4075f86bb7f9">bean</a>, Method <a class="el" href="a00257.html#a843a5e37294b5ab113b48540077e60e5">method</a>)</td></tr>
-<tr class="memitem:a327ee9f87d5f165da33455540da1d769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#a327ee9f87d5f165da33455540da1d769">callHandler</a> (<a class="el" href="a00253.html">MotechEvent</a> event)</td></tr>
+<tr class="memitem:a9b5648927c39971e123efedd4e9dd40f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#a9b5648927c39971e123efedd4e9dd40f">MobileFormsServiceImpl</a> (<a class="el" href="a00031.html">AllMobileForms</a> allMobileForms)</td></tr>
+<tr class="memitem:a19ebe81a5194028681a158fddbb9c4da"><td class="memItemLeft" align="right" valign="top">List&lt; Object[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#a19ebe81a5194028681a158fddbb9c4da">getAllFormGroups</a> ()</td></tr>
+<tr class="memitem:ae7375be106e025842568bf1cde59d782"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00413.html">Study</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#ae7375be106e025842568bf1cde59d782">getForms</a> (Integer formGroupIndex)</td></tr>
+<tr class="memitem:ad89ab5b10e475fdae965805ffbc2cee6"><td class="memItemLeft" align="right" valign="top">Map&lt; Integer, String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#ad89ab5b10e475fdae965805ffbc2cee6">getFormIdMap</a> ()</td></tr>
+<tr class="memitem:a9b5648927c39971e123efedd4e9dd40f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#a9b5648927c39971e123efedd4e9dd40f">MobileFormsServiceImpl</a> (<a class="el" href="a00031.html">AllMobileForms</a> allMobileForms)</td></tr>
+<tr class="memitem:a19ebe81a5194028681a158fddbb9c4da"><td class="memItemLeft" align="right" valign="top">List&lt; Object[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#a19ebe81a5194028681a158fddbb9c4da">getAllFormGroups</a> ()</td></tr>
+<tr class="memitem:ae7375be106e025842568bf1cde59d782"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00413.html">Study</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#ae7375be106e025842568bf1cde59d782">getForms</a> (Integer formGroupIndex)</td></tr>
+<tr class="memitem:ad89ab5b10e475fdae965805ffbc2cee6"><td class="memItemLeft" align="right" valign="top">Map&lt; Integer, String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html#ad89ab5b10e475fdae965805ffbc2cee6">getFormIdMap</a> ()</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Responsible for dispatching to. </p>
-<div class="fragment"><pre class="fragment"> <span class="keywordtype">void</span> doSomething(MotechEvent event) {}  
-</pre></div><p> type of handlers </p>
-<dl class="section author"><dt>Author:</dt><dd>yyonkov </dd></dl>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a009cf2d8878784b568fd71529b72bec9"></a>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9b5648927c39971e123efedd4e9dd40f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00258.html#a009cf2d8878784b568fd71529b72bec9">org.motechproject.server.event.annotations.MotechListenerEventProxy.MotechListenerEventProxy</a> </td>
+          <td class="memname"><a class="el" href="a00258.html#a9b5648927c39971e123efedd4e9dd40f">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl.MobileFormsServiceImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00031.html">AllMobileForms</a>&#160;</td>
+          <td class="paramname"><em>allMobileForms</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>bean</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Method&#160;</td>
-          <td class="paramname"><em>method</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
-    <tr><td class="paramname">bean</td><td></td></tr>
-    <tr><td class="paramname">method</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9b5648927c39971e123efedd4e9dd40f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00258.html#a9b5648927c39971e123efedd4e9dd40f">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl.MobileFormsServiceImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00031.html">AllMobileForms</a>&#160;</td>
+          <td class="paramname"><em>allMobileForms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a327ee9f87d5f165da33455540da1d769"></a>
+<a class="anchor" id="a19ebe81a5194028681a158fddbb9c4da"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00258.html#a327ee9f87d5f165da33455540da1d769">org.motechproject.server.event.annotations.MotechListenerEventProxy.callHandler</a> </td>
+          <td class="memname">List&lt;Object[]&gt; <a class="el" href="a00258.html#a19ebe81a5194028681a158fddbb9c4da">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl.getAllFormGroups</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Needs to be implemented by concrete Proxies. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+<p>Implements <a class="el" href="a00257.html#a76f775523b33f676583bacc86c125848">org.motechproject.mobileforms.api.service.MobileFormsService</a>.</p>
 
-<p>Implements <a class="el" href="a00257.html#ab201e470b586210ee166d5ecffcb4faf">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a19ebe81a5194028681a158fddbb9c4da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Object[]&gt; <a class="el" href="a00258.html#a19ebe81a5194028681a158fddbb9c4da">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl.getAllFormGroups</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="a00257.html#a76f775523b33f676583bacc86c125848">org.motechproject.mobileforms.api.service.MobileFormsService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad89ab5b10e475fdae965805ffbc2cee6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;Integer, String&gt; <a class="el" href="a00258.html#ad89ab5b10e475fdae965805ffbc2cee6">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl.getFormIdMap</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="a00257.html#a1f61410814728f345f33cdb15c69484a">org.motechproject.mobileforms.api.service.MobileFormsService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad89ab5b10e475fdae965805ffbc2cee6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;Integer, String&gt; <a class="el" href="a00258.html#ad89ab5b10e475fdae965805ffbc2cee6">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl.getFormIdMap</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="a00257.html#a1f61410814728f345f33cdb15c69484a">org.motechproject.mobileforms.api.service.MobileFormsService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7375be106e025842568bf1cde59d782"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00413.html">Study</a> <a class="el" href="a00258.html#ae7375be106e025842568bf1cde59d782">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl.getForms</a> </td>
+          <td>(</td>
+          <td class="paramtype">Integer&#160;</td>
+          <td class="paramname"><em>formGroupIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="a00257.html#ab683a8aa1bfec5218c70b86c69b6cfce">org.motechproject.mobileforms.api.service.MobileFormsService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7375be106e025842568bf1cde59d782"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00413.html">Study</a> <a class="el" href="a00258.html#ae7375be106e025842568bf1cde59d782">org.motechproject.mobileforms.api.service.MobileFormsServiceImpl.getForms</a> </td>
+          <td>(</td>
+          <td class="paramtype">Integer&#160;</td>
+          <td class="paramname"><em>formGroupIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="a00257.html#ab683a8aa1bfec5218c70b86c69b6cfce">org.motechproject.mobileforms.api.service.MobileFormsService</a>.</p>
 
 </div>
 </div>

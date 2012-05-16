@@ -92,11 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00938.html">openmrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00948.html">services</a>      </li>
-      <li class="navelem"><a class="el" href="a00299.html">OpenMRSConceptAdapter</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01427.html">mrs</a>      </li>
+      <li class="navelem"><a class="el" href="a01428.html">exception</a>      </li>
+      <li class="navelem"><a class="el" href="a00299.html">ObservationNotFoundException</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,42 +104,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.openmrs.services.OpenMRSConceptAdapter Class Reference</div>  </div>
+<div class="title">org.motechproject.mrs.exception.ObservationNotFoundException Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01237.html">List of all members.</a></p>
+<p><a href="a01704.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa79b0e265670519988f612ade801c2a7"><td class="memItemLeft" align="right" valign="top">Concept&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html#aa79b0e265670519988f612ade801c2a7">getConceptByName</a> (String conceptName)</td></tr>
+<tr class="memitem:a44cabd9e3f178ac6d786088f2b2d4277"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html#a44cabd9e3f178ac6d786088f2b2d4277">ObservationNotFoundException</a> (String message)</td></tr>
+<tr class="memitem:a44cabd9e3f178ac6d786088f2b2d4277"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html#a44cabd9e3f178ac6d786088f2b2d4277">ObservationNotFoundException</a> (String message)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Adapter class to get Concepts in OpenMRS. </p>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa79b0e265670519988f612ade801c2a7"></a>
+<div class="textblock"><p>Thrown when a MRSObservation is null while performing operations on it. </p>
+<ul>
+<li>
+For e.g. in voiding an MRSObservation, if observation is not found this exception is thrown </li>
+</ul>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a44cabd9e3f178ac6d786088f2b2d4277"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Concept <a class="el" href="a00299.html#aa79b0e265670519988f612ade801c2a7">org.motechproject.openmrs.services.OpenMRSConceptAdapter.getConceptByName</a> </td>
+          <td class="memname"><a class="el" href="a00299.html#a44cabd9e3f178ac6d786088f2b2d4277">org.motechproject.mrs.exception.ObservationNotFoundException.ObservationNotFoundException</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>conceptName</em></td><td>)</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Fetches the Concept object of openMRS. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">conceptName</td><td>Name of the concept </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>OpenMRS concept </dd></dl>
+</div>
+</div>
+<a class="anchor" id="a44cabd9e3f178ac6d786088f2b2d4277"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00299.html#a44cabd9e3f178ac6d786088f2b2d4277">org.motechproject.mrs.exception.ObservationNotFoundException.ObservationNotFoundException</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00982.html">decisiontree</a>      </li>
-      <li class="navelem"><a class="el" href="a00983.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00398.html">TreeEventProcessor</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01524.html">http</a>      </li>
+      <li class="navelem"><a class="el" href="a00398.html">SmsSendHandler</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,43 +104,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.decisiontree.service.TreeEventProcessor Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.http.SmsSendHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.sms.http.SmsSendHandler:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00398.png" usemap="#org.motechproject.sms.http.SmsSendHandler_map" alt=""/>
+  <map id="org.motechproject.sms.http.SmsSendHandler_map" name="org.motechproject.sms.http.SmsSendHandler_map">
+<area href="a00391.html" alt="org.motechproject.sms.api.SmsEventHandler" shape="rect" coords="0,0,264,24"/>
+<area href="a00391.html" alt="org.motechproject.sms.api.SmsEventHandler" shape="rect" coords="274,0,538,24"/>
+</map>
+ </div></div>
 
-<p><a href="a01334.html">List of all members.</a></p>
+<p><a href="a01978.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab8bab4e4a4b82f075fe46d52a0acb6a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00398.html#ab8bab4e4a4b82f075fe46d52a0acb6a4">sendActionsBefore</a> (<a class="el" href="a00286.html">Node</a> node, String path, Map&lt; String, Object &gt; params)</td></tr>
-<tr class="memitem:aa2d3cd483fe44e3f6e79eaca0b51b0cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00398.html#aa2d3cd483fe44e3f6e79eaca0b51b0cf">sendActionsAfter</a> (<a class="el" href="a00286.html">Node</a> node, String path, Map&lt; String, Object &gt; params)</td></tr>
-<tr class="memitem:a930f4d21f393c4ef7d7ca40fa762cbef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00398.html#a930f4d21f393c4ef7d7ca40fa762cbef">sendTransitionActions</a> (<a class="el" href="a00396.html">Transition</a> transition, Map&lt; String, Object &gt; params)</td></tr>
+<tr class="memitem:af2e5e03f1e9f483062b3e076e91a227a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00398.html#af2e5e03f1e9f483062b3e076e91a227a">SmsSendHandler</a> (<a class="el" href="a00392.html">SmsHttpService</a> smsHttpService, <a class="el" href="a00277.html">MotechSchedulerService</a> motechSchedulerService)</td></tr>
+<tr class="memitem:ad75c68a636a448f49b9912d41a554227"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00398.html#ad75c68a636a448f49b9912d41a554227">handle</a> (<a class="el" href="a00262.html">MotechEvent</a> event)  throws SmsDeliveryFailureException </td></tr>
+<tr class="memitem:af2e5e03f1e9f483062b3e076e91a227a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00398.html#af2e5e03f1e9f483062b3e076e91a227a">SmsSendHandler</a> (<a class="el" href="a00392.html">SmsHttpService</a> smsHttpService, <a class="el" href="a00277.html">MotechSchedulerService</a> motechSchedulerService)</td></tr>
+<tr class="memitem:ad75c68a636a448f49b9912d41a554227"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00398.html#ad75c68a636a448f49b9912d41a554227">handle</a> (<a class="el" href="a00262.html">MotechEvent</a> event)  throws SmsDeliveryFailureException </td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Responsible for emitting Tree events. </p>
-<dl class="section author"><dt>Author:</dt><dd>yyonkov </dd></dl>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa2d3cd483fe44e3f6e79eaca0b51b0cf"></a>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af2e5e03f1e9f483062b3e076e91a227a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00398.html#aa2d3cd483fe44e3f6e79eaca0b51b0cf">org.motechproject.server.decisiontree.service.TreeEventProcessor.sendActionsAfter</a> </td>
+          <td class="memname"><a class="el" href="a00398.html#af2e5e03f1e9f483062b3e076e91a227a">org.motechproject.sms.http.SmsSendHandler.SmsSendHandler</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00286.html">Node</a>&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
+          <td class="paramtype"><a class="el" href="a00392.html">SmsHttpService</a>&#160;</td>
+          <td class="paramname"><em>smsHttpService</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
-          <td class="paramname"><em>params</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>motechSchedulerService</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -154,27 +155,21 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab8bab4e4a4b82f075fe46d52a0acb6a4"></a>
+<a class="anchor" id="af2e5e03f1e9f483062b3e076e91a227a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00398.html#ab8bab4e4a4b82f075fe46d52a0acb6a4">org.motechproject.server.decisiontree.service.TreeEventProcessor.sendActionsBefore</a> </td>
+          <td class="memname"><a class="el" href="a00398.html#af2e5e03f1e9f483062b3e076e91a227a">org.motechproject.sms.http.SmsSendHandler.SmsSendHandler</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00286.html">Node</a>&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
+          <td class="paramtype"><a class="el" href="a00392.html">SmsHttpService</a>&#160;</td>
+          <td class="paramname"><em>smsHttpService</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
-          <td class="paramname"><em>params</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>motechSchedulerService</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -187,30 +182,42 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a930f4d21f393c4ef7d7ca40fa762cbef"></a>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ad75c68a636a448f49b9912d41a554227"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00398.html#a930f4d21f393c4ef7d7ca40fa762cbef">org.motechproject.server.decisiontree.service.TreeEventProcessor.sendTransitionActions</a> </td>
+          <td class="memname">void <a class="el" href="a00398.html#ad75c68a636a448f49b9912d41a554227">org.motechproject.sms.http.SmsSendHandler.handle</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00396.html">Transition</a>&#160;</td>
-          <td class="paramname"><em>transition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
-          <td class="paramname"><em>params</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td>  throws <a class="el" href="a00390.html">SmsDeliveryFailureException</a> </td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Implements <a class="el" href="a00391.html#a5edcb8ae1b0c11907e482ba03ad99bcd">org.motechproject.sms.api.SmsEventHandler</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad75c68a636a448f49b9912d41a554227"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00398.html#ad75c68a636a448f49b9912d41a554227">org.motechproject.sms.http.SmsSendHandler.handle</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td>  throws <a class="el" href="a00390.html">SmsDeliveryFailureException</a> </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="a00391.html#a5edcb8ae1b0c11907e482ba03ad99bcd">org.motechproject.sms.api.SmsEventHandler</a>.</p>
 
 </div>
 </div>

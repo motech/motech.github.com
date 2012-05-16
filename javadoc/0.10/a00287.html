@@ -92,11 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00897.html">decisiontree</a>      </li>
-      <li class="navelem"><a class="el" href="a00898.html">model</a>      </li>
-      <li class="navelem"><a class="el" href="a00287.html">NodeInfo</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01427.html">mrs</a>      </li>
+      <li class="navelem"><a class="el" href="a01432.html">services</a>      </li>
+      <li class="navelem"><a class="el" href="a00287.html">MRSObservationAdapter</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,34 +104,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.decisiontree.model.NodeInfo Class Reference</div>  </div>
+<div class="title">org.motechproject.mrs.services.MRSObservationAdapter Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.mrs.services.MRSObservationAdapter:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00287.png" usemap="#org.motechproject.mrs.services.MRSObservationAdapter_map" alt=""/>
+  <map id="org.motechproject.mrs.services.MRSObservationAdapter_map" name="org.motechproject.mrs.services.MRSObservationAdapter_map">
+<area href="a00310.html" alt="org.motechproject.openmrs.services.OpenMRSObservationAdapter" shape="rect" coords="0,56,394,80"/>
+<area href="a00310.html" alt="org.motechproject.openmrs.services.OpenMRSObservationAdapter" shape="rect" coords="404,56,798,80"/>
+</map>
+ </div></div>
 
-<p><a href="a01109.html">List of all members.</a></p>
+<p><a href="a01718.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afe96c10be869b6bf93a5f2be3658d778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#afe96c10be869b6bf93a5f2be3658d778">NodeInfo</a> (String path, <a class="el" href="a00286.html">Node</a> node)</td></tr>
-<tr class="memitem:a57ca12f458162bb3df6671d364d3c20e"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#a57ca12f458162bb3df6671d364d3c20e">path</a> ()</td></tr>
-<tr class="memitem:a87652b328f9184feea6798211cf6d00e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00286.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#a87652b328f9184feea6798211cf6d00e">node</a> ()</td></tr>
+<tr class="memitem:a3a9ed5b74e1957363a43fd6683ddc5cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#a3a9ed5b74e1957363a43fd6683ddc5cd">voidObservation</a> (MRSObservation mrsObservation, String reason, String mrsUserMotechId)  throws ObservationNotFoundException</td></tr>
+<tr class="memitem:a11bb0ceacaf980ce6ae7d68633db01ff"><td class="memItemLeft" align="right" valign="top">MRSObservation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#a11bb0ceacaf980ce6ae7d68633db01ff">findObservation</a> (String patientMotechId, String conceptName)</td></tr>
+<tr class="memitem:af7f93b3a4de7468ee45259e2e3f08065"><td class="memItemLeft" align="right" valign="top">List&lt; MRSObservation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#af7f93b3a4de7468ee45259e2e3f08065">findObservations</a> (String patientMotechId, String conceptName)</td></tr>
+<tr class="memitem:a3a9ed5b74e1957363a43fd6683ddc5cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#a3a9ed5b74e1957363a43fd6683ddc5cd">voidObservation</a> (MRSObservation mrsObservation, String reason, String mrsUserMotechId)  throws ObservationNotFoundException</td></tr>
+<tr class="memitem:a11bb0ceacaf980ce6ae7d68633db01ff"><td class="memItemLeft" align="right" valign="top">MRSObservation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#a11bb0ceacaf980ce6ae7d68633db01ff">findObservation</a> (String patientMotechId, String conceptName)</td></tr>
+<tr class="memitem:af7f93b3a4de7468ee45259e2e3f08065"><td class="memItemLeft" align="right" valign="top">List&lt; MRSObservation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#af7f93b3a4de7468ee45259e2e3f08065">findObservations</a> (String patientMotechId, String conceptName)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afe96c10be869b6bf93a5f2be3658d778"></a>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a11bb0ceacaf980ce6ae7d68633db01ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00287.html#afe96c10be869b6bf93a5f2be3658d778">org.motechproject.decisiontree.model.NodeInfo.NodeInfo</a> </td>
+          <td class="memname">MRSObservation <a class="el" href="a00287.html#a11bb0ceacaf980ce6ae7d68633db01ff">org.motechproject.mrs.services.MRSObservationAdapter.findObservation</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
+          <td class="paramname"><em>patientMotechId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00286.html">Node</a>&#160;</td>
-          <td class="paramname"><em>node</em>&#160;</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conceptName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -142,38 +155,218 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Returns the Latest MRSObservation of the MRS patient, given the concept name. </p>
+<p>(e.g. WEIGHT)</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patientMotechId</td><td>MOTECH Id of the patient </td></tr>
+    <tr><td class="paramname">conceptName</td><td>Concept Name of the MRSObservation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>MRSObservation if present. </dd></dl>
+
+<p>Implemented in <a class="el" href="a00310.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="a00310.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a87652b328f9184feea6798211cf6d00e"></a>
+<a class="anchor" id="a11bb0ceacaf980ce6ae7d68633db01ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00286.html">Node</a> org.motechproject.decisiontree.model.NodeInfo.node </td>
+          <td class="memname">MRSObservation <a class="el" href="a00287.html#a11bb0ceacaf980ce6ae7d68633db01ff">org.motechproject.mrs.services.MRSObservationAdapter.findObservation</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>patientMotechId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conceptName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Returns the Latest MRSObservation of the MRS patient, given the concept name. </p>
+<p>(e.g. WEIGHT)</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patientMotechId</td><td>MOTECH Id of the patient </td></tr>
+    <tr><td class="paramname">conceptName</td><td>Concept Name of the MRSObservation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>MRSObservation if present. </dd></dl>
+
+<p>Implemented in <a class="el" href="a00310.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="a00310.html#a7a3b066781a390e796dce357394e548b">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a57ca12f458162bb3df6671d364d3c20e"></a>
+<a class="anchor" id="af7f93b3a4de7468ee45259e2e3f08065"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String org.motechproject.decisiontree.model.NodeInfo.path </td>
+          <td class="memname">List&lt;MRSObservation&gt; <a class="el" href="a00287.html#af7f93b3a4de7468ee45259e2e3f08065">org.motechproject.mrs.services.MRSObservationAdapter.findObservations</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>patientMotechId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conceptName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00310.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="a00310.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7f93b3a4de7468ee45259e2e3f08065"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;MRSObservation&gt; <a class="el" href="a00287.html#af7f93b3a4de7468ee45259e2e3f08065">org.motechproject.mrs.services.MRSObservationAdapter.findObservations</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>patientMotechId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conceptName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00310.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="a00310.html#a5a5377ab5a7de29a44860523904b4ddc">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a9ed5b74e1957363a43fd6683ddc5cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00287.html#a3a9ed5b74e1957363a43fd6683ddc5cd">org.motechproject.mrs.services.MRSObservationAdapter.voidObservation</a> </td>
+          <td>(</td>
+          <td class="paramtype">MRSObservation&#160;</td>
+          <td class="paramname"><em>mrsObservation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>mrsUserMotechId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="a00299.html">ObservationNotFoundException</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Voids an observation for the MOTECH user, with the given reason. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mrsObservation</td><td>MRSObservation to be voided </td></tr>
+    <tr><td class="paramname">reason</td><td>Reason for voiding the MRSObservation </td></tr>
+    <tr><td class="paramname">mrsUserMotechId</td><td>MOTECH ID of the user who's MRSObservation needs to be voided </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ObservationNotFoundException</td><td>Exception when the expected Observation does not exist </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a00310.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="a00310.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a9ed5b74e1957363a43fd6683ddc5cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00287.html#a3a9ed5b74e1957363a43fd6683ddc5cd">org.motechproject.mrs.services.MRSObservationAdapter.voidObservation</a> </td>
+          <td>(</td>
+          <td class="paramtype">MRSObservation&#160;</td>
+          <td class="paramname"><em>mrsObservation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>mrsUserMotechId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="a00299.html">ObservationNotFoundException</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Voids an observation for the MOTECH user, with the given reason. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mrsObservation</td><td>MRSObservation to be voided </td></tr>
+    <tr><td class="paramname">reason</td><td>Reason for voiding the MRSObservation </td></tr>
+    <tr><td class="paramname">mrsUserMotechId</td><td>MOTECH ID of the user who's MRSObservation needs to be voided </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ObservationNotFoundException</td><td>Exception when the expected Observation does not exist </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a00310.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>, and <a class="el" href="a00310.html#a6a63535461654d1f1db1b2b4eea202a1">org.motechproject.openmrs.services.OpenMRSObservationAdapter</a>.</p>
 
 </div>
 </div>

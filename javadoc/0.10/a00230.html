@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00991.html">messagecampaign</a>      </li>
-      <li class="navelem"><a class="el" href="a00995.html">domain</a>      </li>
-      <li class="navelem"><a class="el" href="a00230.html">MessageCampaignException</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01528.html">smpp</a>      </li>
+      <li class="navelem"><a class="el" href="a00230.html">ManagedSmslibService</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,27 +104,294 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.messagecampaign.domain.MessageCampaignException Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.smpp.ManagedSmslibService Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01360.html">List of all members.</a></p>
+<p><a href="a01987.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0af9665cc80a58dd9d83c917c801f7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#ad0af9665cc80a58dd9d83c917c801f7c">MessageCampaignException</a> (String message)</td></tr>
+<tr class="memitem:a9e09f879f40a7979c4861be748993700"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#a9e09f879f40a7979c4861be748993700">ManagedSmslibService</a> (Service smslibService, Properties smsProperties, Properties smppProperties, <a class="el" href="a00319.html">OutboundMessageNotification</a> outboundMessageNotification, <a class="el" href="a00190.html">InboundMessageNotification</a> inboundMessageNotification)</td></tr>
+<tr class="memitem:adff7396ee2350dc624add6e8d6b0c342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#adff7396ee2350dc624add6e8d6b0c342">connect</a> ()  throws SMSLibException, IOException, InterruptedException </td></tr>
+<tr class="memitem:a4f6e1528f0bd29cc07a4a5879c76b459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#a4f6e1528f0bd29cc07a4a5879c76b459">disconnect</a> ()  throws SMSLibException, IOException, InterruptedException </td></tr>
+<tr class="memitem:ab3817fb61c767b1524fcb0cf0a90f7df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#ab3817fb61c767b1524fcb0cf0a90f7df">queueMessage</a> (List&lt; String &gt; recipients, final String message)</td></tr>
+<tr class="memitem:a078b370f212a691c1a30e4ec649238d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#a078b370f212a691c1a30e4ec649238d2">queueMessageAt</a> (List&lt; String &gt; recipients, final String message, DateTime dateTime)</td></tr>
+<tr class="memitem:a9e09f879f40a7979c4861be748993700"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#a9e09f879f40a7979c4861be748993700">ManagedSmslibService</a> (Service smslibService, Properties smsProperties, Properties smppProperties, <a class="el" href="a00319.html">OutboundMessageNotification</a> outboundMessageNotification, <a class="el" href="a00190.html">InboundMessageNotification</a> inboundMessageNotification)</td></tr>
+<tr class="memitem:adff7396ee2350dc624add6e8d6b0c342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#adff7396ee2350dc624add6e8d6b0c342">connect</a> ()  throws SMSLibException, IOException, InterruptedException </td></tr>
+<tr class="memitem:a4f6e1528f0bd29cc07a4a5879c76b459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#a4f6e1528f0bd29cc07a4a5879c76b459">disconnect</a> ()  throws SMSLibException, IOException, InterruptedException </td></tr>
+<tr class="memitem:ab3817fb61c767b1524fcb0cf0a90f7df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#ab3817fb61c767b1524fcb0cf0a90f7df">queueMessage</a> (List&lt; String &gt; recipients, final String message)</td></tr>
+<tr class="memitem:a078b370f212a691c1a30e4ec649238d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html#a078b370f212a691c1a30e4ec649238d2">queueMessageAt</a> (List&lt; String &gt; recipients, final String message, DateTime dateTime)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad0af9665cc80a58dd9d83c917c801f7c"></a>
+<a class="anchor" id="a9e09f879f40a7979c4861be748993700"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00230.html#ad0af9665cc80a58dd9d83c917c801f7c">org.motechproject.server.messagecampaign.domain.MessageCampaignException.MessageCampaignException</a> </td>
+          <td class="memname"><a class="el" href="a00230.html#a9e09f879f40a7979c4861be748993700">org.motechproject.sms.smpp.ManagedSmslibService.ManagedSmslibService</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramtype">Service&#160;</td>
+          <td class="paramname"><em>smslibService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Properties&#160;</td>
+          <td class="paramname"><em>smsProperties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Properties&#160;</td>
+          <td class="paramname"><em>smppProperties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00319.html">OutboundMessageNotification</a>&#160;</td>
+          <td class="paramname"><em>outboundMessageNotification</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00190.html">InboundMessageNotification</a>&#160;</td>
+          <td class="paramname"><em>inboundMessageNotification</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e09f879f40a7979c4861be748993700"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00230.html#a9e09f879f40a7979c4861be748993700">org.motechproject.sms.smpp.ManagedSmslibService.ManagedSmslibService</a> </td>
+          <td>(</td>
+          <td class="paramtype">Service&#160;</td>
+          <td class="paramname"><em>smslibService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Properties&#160;</td>
+          <td class="paramname"><em>smsProperties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Properties&#160;</td>
+          <td class="paramname"><em>smppProperties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00319.html">OutboundMessageNotification</a>&#160;</td>
+          <td class="paramname"><em>outboundMessageNotification</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00190.html">InboundMessageNotification</a>&#160;</td>
+          <td class="paramname"><em>inboundMessageNotification</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="adff7396ee2350dc624add6e8d6b0c342"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00230.html#adff7396ee2350dc624add6e8d6b0c342">org.motechproject.sms.smpp.ManagedSmslibService.connect</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throws SMSLibException, IOException, InterruptedException </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adff7396ee2350dc624add6e8d6b0c342"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00230.html#adff7396ee2350dc624add6e8d6b0c342">org.motechproject.sms.smpp.ManagedSmslibService.connect</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throws SMSLibException, IOException, InterruptedException </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f6e1528f0bd29cc07a4a5879c76b459"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00230.html#a4f6e1528f0bd29cc07a4a5879c76b459">org.motechproject.sms.smpp.ManagedSmslibService.disconnect</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throws SMSLibException, IOException, InterruptedException </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f6e1528f0bd29cc07a4a5879c76b459"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00230.html#a4f6e1528f0bd29cc07a4a5879c76b459">org.motechproject.sms.smpp.ManagedSmslibService.disconnect</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throws SMSLibException, IOException, InterruptedException </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3817fb61c767b1524fcb0cf0a90f7df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00230.html#ab3817fb61c767b1524fcb0cf0a90f7df">org.motechproject.sms.smpp.ManagedSmslibService.queueMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>recipients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3817fb61c767b1524fcb0cf0a90f7df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00230.html#ab3817fb61c767b1524fcb0cf0a90f7df">org.motechproject.sms.smpp.ManagedSmslibService.queueMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>recipients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a078b370f212a691c1a30e4ec649238d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00230.html#a078b370f212a691c1a30e4ec649238d2">org.motechproject.sms.smpp.ManagedSmslibService.queueMessageAt</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>recipients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>dateTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a078b370f212a691c1a30e4ec649238d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00230.html#a078b370f212a691c1a30e4ec649238d2">org.motechproject.sms.smpp.ManagedSmslibService.queueMessageAt</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>recipients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>dateTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>

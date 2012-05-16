@@ -92,42 +92,187 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00904.html">ivr</a>      </li>
-      <li class="navelem"><a class="el" href="a00907.html">kookoo</a>      </li>
-      <li class="navelem"><a class="el" href="a00912.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00027.html">AllKooKooCallDetailRecords</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01527.html">repository</a>      </li>
+      <li class="navelem"><a class="el" href="a00027.html">AllInboundSMS</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.repository.AllInboundSMS Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits MotechBaseRepository&lt; KookooCallDetailRecord &gt;.</p>
+<p>Inherits MotechBaseRepository&lt; InboundSMS &gt;, and MotechBaseRepository&lt; InboundSMS &gt;.</p>
 
-<p><a href="a01146.html">List of all members.</a></p>
+<p><a href="a01983.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e3ab9e7ba45cd7cbc1769e1005c9242"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a1e3ab9e7ba45cd7cbc1769e1005c9242">AllKooKooCallDetailRecords</a> (@Qualifier(&quot;kookooIvrDbConnector&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a3237b21a8fba72dc08c1448b1c9c1f57"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00191.html">InboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a3237b21a8fba72dc08c1448b1c9c1f57">messagesReceivedBetween</a> (String phoneNumber, DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a7200fb18ae05d6bd6b1ab2cdca0e169d"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00191.html">InboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7200fb18ae05d6bd6b1ab2cdca0e169d">messagesReceivedBetween</a> (DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a3237b21a8fba72dc08c1448b1c9c1f57"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00191.html">InboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a3237b21a8fba72dc08c1448b1c9c1f57">messagesReceivedBetween</a> (String phoneNumber, DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a7200fb18ae05d6bd6b1ab2cdca0e169d"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00191.html">InboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a7200fb18ae05d6bd6b1ab2cdca0e169d">messagesReceivedBetween</a> (DateTime from, DateTime to)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3c5da1505280b1296c3228918273b213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a3c5da1505280b1296c3228918273b213">AllInboundSMS</a> (@Qualifier(&quot;smppDBConnector&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a3c5da1505280b1296c3228918273b213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a3c5da1505280b1296c3228918273b213">AllInboundSMS</a> (@Qualifier(&quot;smppDBConnector&quot;) CouchDbConnector db)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1e3ab9e7ba45cd7cbc1769e1005c9242"></a>
+<a class="anchor" id="a3c5da1505280b1296c3228918273b213"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00027.html#a1e3ab9e7ba45cd7cbc1769e1005c9242">org.motechproject.ivr.kookoo.repository.AllKooKooCallDetailRecords.AllKooKooCallDetailRecords</a> </td>
+          <td class="memname"><a class="el" href="a00027.html#a3c5da1505280b1296c3228918273b213">org.motechproject.sms.repository.AllInboundSMS.AllInboundSMS</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(&quot;kookooIvrDbConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramtype">@Qualifier(&quot;smppDBConnector&quot;) CouchDbConnector&#160;</td>
           <td class="paramname"><em>db</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c5da1505280b1296c3228918273b213"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00027.html#a3c5da1505280b1296c3228918273b213">org.motechproject.sms.repository.AllInboundSMS.AllInboundSMS</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;smppDBConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a3237b21a8fba72dc08c1448b1c9c1f57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00191.html">InboundSMS</a>&gt; <a class="el" href="a00027.html#a3237b21a8fba72dc08c1448b1c9c1f57">org.motechproject.sms.repository.AllInboundSMS.messagesReceivedBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3237b21a8fba72dc08c1448b1c9c1f57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00191.html">InboundSMS</a>&gt; <a class="el" href="a00027.html#a3237b21a8fba72dc08c1448b1c9c1f57">org.motechproject.sms.repository.AllInboundSMS.messagesReceivedBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7200fb18ae05d6bd6b1ab2cdca0e169d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00191.html">InboundSMS</a>&gt; <a class="el" href="a00027.html#a3237b21a8fba72dc08c1448b1c9c1f57">org.motechproject.sms.repository.AllInboundSMS.messagesReceivedBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7200fb18ae05d6bd6b1ab2cdca0e169d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00191.html">InboundSMS</a>&gt; <a class="el" href="a00027.html#a3237b21a8fba72dc08c1448b1c9c1f57">org.motechproject.sms.repository.AllInboundSMS.messagesReceivedBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>

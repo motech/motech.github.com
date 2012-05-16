@@ -92,11 +92,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a01015.html">ruleengine</a>      </li>
-      <li class="navelem"><a class="el" href="a00168.html">FilesystemRuleLoader</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01426.html">model</a>      </li>
+      <li class="navelem"><a class="el" href="a00168.html">ExtensibleDataObject&lt; T &gt;</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,57 +103,118 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.ruleengine.FilesystemRuleLoader Class Reference</div>  </div>
+<div class="title">org.motechproject.model.ExtensibleDataObject&lt; T &gt; Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01428.html">List of all members.</a></p>
+<p><a href="a01695.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a81eadbf145c44e9741bc35d44dcc7a18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a81eadbf145c44e9741bc35d44dcc7a18">load</a> ()  throws Exception </td></tr>
-<tr class="memitem:a85ccd7d190e6524f2946b121bbacb6da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a85ccd7d190e6524f2946b121bbacb6da">setInternalRuleFolder</a> (String ruleFolder)</td></tr>
-<tr class="memitem:afe6bd9fe22c91dc02102331b4f331c5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#afe6bd9fe22c91dc02102331b4f331c5a">setExternalRuleFolder</a> (String externalRuleFolder)</td></tr>
-<tr class="memitem:a50ee184ed5924fc323baef8e2932630c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a50ee184ed5924fc323baef8e2932630c">setKnowledgeBaseManager</a> (<a class="el" href="a00205.html">KnowledgeBaseManager</a> knowledgeBaseManager)</td></tr>
-<tr class="memitem:aa694ed94b6c1669cbc857a665f06d4e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#aa694ed94b6c1669cbc857a665f06d4e1">setOsgiFrameworkService</a> (<a class="el" href="a00309.html">OsgiFrameworkService</a> osgiFrameworkService)</td></tr>
+<tr class="memitem:a4daf03fdafe131a4a8571fb52f45c208"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a4daf03fdafe131a4a8571fb52f45c208">getData</a> ()</td></tr>
+<tr class="memitem:aa99520891c886b2427f9467bf76b8987"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#aa99520891c886b2427f9467bf76b8987">addData</a> (String key, Object value)</td></tr>
+<tr class="memitem:afe8da4454d81646994d83a5ff60a9d8c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#afe8da4454d81646994d83a5ff60a9d8c">addData</a> (Map&lt; String, Object &gt; data)</td></tr>
+<tr class="memitem:a4daf03fdafe131a4a8571fb52f45c208"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#a4daf03fdafe131a4a8571fb52f45c208">getData</a> ()</td></tr>
+<tr class="memitem:aa99520891c886b2427f9467bf76b8987"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#aa99520891c886b2427f9467bf76b8987">addData</a> (String key, Object value)</td></tr>
+<tr class="memitem:afe8da4454d81646994d83a5ff60a9d8c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00168.html#afe8da4454d81646994d83a5ff60a9d8c">addData</a> (Map&lt; String, Object &gt; data)</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Load rule files from the file system. </p>
-<dl class="section author"><dt>Author:</dt><dd>Ricky Wang </dd></dl>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a81eadbf145c44e9741bc35d44dcc7a18"></a>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aa99520891c886b2427f9467bf76b8987"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00168.html#a81eadbf145c44e9741bc35d44dcc7a18">org.motechproject.server.ruleengine.FilesystemRuleLoader.load</a> </td>
+          <td class="memname">T org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00168.html#aa99520891c886b2427f9467bf76b8987">addData</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa99520891c886b2427f9467bf76b8987"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00168.html#aa99520891c886b2427f9467bf76b8987">addData</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe8da4454d81646994d83a5ff60a9d8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00168.html#aa99520891c886b2427f9467bf76b8987">addData</a> </td>
+          <td>(</td>
+          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe8da4454d81646994d83a5ff60a9d8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00168.html#aa99520891c886b2427f9467bf76b8987">addData</a> </td>
+          <td>(</td>
+          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4daf03fdafe131a4a8571fb52f45c208"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, Object&gt; org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00168.html#a4daf03fdafe131a4a8571fb52f45c208">getData</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throws Exception </td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Load rule files from the internal and external rule folders. </p>
-<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">Exception</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="afe6bd9fe22c91dc02102331b4f331c5a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00168.html#afe6bd9fe22c91dc02102331b4f331c5a">org.motechproject.server.ruleengine.FilesystemRuleLoader.setExternalRuleFolder</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalRuleFolder</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -163,49 +223,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a85ccd7d190e6524f2946b121bbacb6da"></a>
+<a class="anchor" id="a4daf03fdafe131a4a8571fb52f45c208"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00168.html#a85ccd7d190e6524f2946b121bbacb6da">org.motechproject.server.ruleengine.FilesystemRuleLoader.setInternalRuleFolder</a> </td>
+          <td class="memname">Map&lt;String, Object&gt; org.motechproject.model.ExtensibleDataObject&lt; T &gt;.<a class="el" href="a00168.html#a4daf03fdafe131a4a8571fb52f45c208">getData</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>ruleFolder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a50ee184ed5924fc323baef8e2932630c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00168.html#a50ee184ed5924fc323baef8e2932630c">org.motechproject.server.ruleengine.FilesystemRuleLoader.setKnowledgeBaseManager</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00205.html">KnowledgeBaseManager</a>&#160;</td>
-          <td class="paramname"><em>knowledgeBaseManager</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa694ed94b6c1669cbc857a665f06d4e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00168.html#aa694ed94b6c1669cbc857a665f06d4e1">org.motechproject.server.ruleengine.FilesystemRuleLoader.setOsgiFrameworkService</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00309.html">OsgiFrameworkService</a>&#160;</td>
-          <td class="paramname"><em>osgiFrameworkService</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

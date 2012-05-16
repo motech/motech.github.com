@@ -92,11 +92,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00932.html">mrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00937.html">services</a>      </li>
-      <li class="navelem"><a class="el" href="a00273.html">MRSEncounterAdapter</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01452.html">scheduler</a>      </li>
+      <li class="navelem"><a class="el" href="a00273.html">MotechScheduledJob</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,91 +103,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.mrs.services.MRSEncounterAdapter Interface Reference</div>  </div>
+<div class="title">org.motechproject.scheduler.MotechScheduledJob Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.mrs.services.MRSEncounterAdapter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00273.png" usemap="#org.motechproject.mrs.services.MRSEncounterAdapter_map" alt=""/>
-  <map id="org.motechproject.mrs.services.MRSEncounterAdapter_map" name="org.motechproject.mrs.services.MRSEncounterAdapter_map">
-<area href="a00300.html" title="Manages OpenMRS Encounters." alt="org.motechproject.openmrs.services.OpenMRSEncounterAdapter" shape="rect" coords="0,56,383,80"/>
-</map>
- </div></div>
 
-<p><a href="a01215.html">List of all members.</a></p>
+<p><a href="a01757.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6d2a50b436b7fd07305dab898ce0ca2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00272.html">MRSEncounter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00273.html#ad6d2a50b436b7fd07305dab898ce0ca2">createEncounter</a> (<a class="el" href="a00272.html">MRSEncounter</a> <a class="el" href="a00272.html">MRSEncounter</a>)</td></tr>
-<tr class="memitem:a486a9af31b6c8a186fa9bbc528cb0969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00272.html">MRSEncounter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00273.html#a486a9af31b6c8a186fa9bbc528cb0969">getLatestEncounterByPatientMotechId</a> (String motechId, String encounterType)</td></tr>
+<tr class="memitem:a98c3c09f7b2fb4ce8b3e4ddf1573f322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00273.html#a98c3c09f7b2fb4ce8b3e4ddf1573f322">execute</a> (JobExecutionContext jobExecutionContext)  throws JobExecutionException </td></tr>
+<tr class="memitem:a98c3c09f7b2fb4ce8b3e4ddf1573f322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00273.html#a98c3c09f7b2fb4ce8b3e4ddf1573f322">execute</a> (JobExecutionContext jobExecutionContext)  throws JobExecutionException </td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Interface for fetching and storing MRSEncounter details. </p>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ad6d2a50b436b7fd07305dab898ce0ca2"></a>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a98c3c09f7b2fb4ce8b3e4ddf1573f322"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00272.html">MRSEncounter</a> <a class="el" href="a00273.html#ad6d2a50b436b7fd07305dab898ce0ca2">org.motechproject.mrs.services.MRSEncounterAdapter.createEncounter</a> </td>
+          <td class="memname">void <a class="el" href="a00273.html#a98c3c09f7b2fb4ce8b3e4ddf1573f322">org.motechproject.scheduler.MotechScheduledJob.execute</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00272.html">MRSEncounter</a>&#160;</td>
-          <td class="paramname"><em>MRSEncounter</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">JobExecutionContext&#160;</td>
+          <td class="paramname"><em>jobExecutionContext</em></td><td>)</td>
+          <td>  throws JobExecutionException </td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Stores a given MRSEncounter in the MRS system. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">MRSEncounter</td><td>Object to be saved. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>Saved MRS Encounter object </dd></dl>
-
 </div>
 </div>
-<a class="anchor" id="a486a9af31b6c8a186fa9bbc528cb0969"></a>
+<a class="anchor" id="a98c3c09f7b2fb4ce8b3e4ddf1573f322"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00272.html">MRSEncounter</a> <a class="el" href="a00273.html#a486a9af31b6c8a186fa9bbc528cb0969">org.motechproject.mrs.services.MRSEncounterAdapter.getLatestEncounterByPatientMotechId</a> </td>
+          <td class="memname">void <a class="el" href="a00273.html#a98c3c09f7b2fb4ce8b3e4ddf1573f322">org.motechproject.scheduler.MotechScheduledJob.execute</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>motechId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>encounterType</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">JobExecutionContext&#160;</td>
+          <td class="paramname"><em>jobExecutionContext</em></td><td>)</td>
+          <td>  throws JobExecutionException </td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Fetches the latest encounter of a patient identified by MOTECH ID and the encounter type. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">motechId</td><td>Identifier of the patient </td></tr>
-    <tr><td class="paramname">encounterType</td><td>Type of the encounter. (e.g. ANCVISIT) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>The latest MRSEncounter if found. </dd></dl>
-
-<p>Implemented in <a class="el" href="a00300.html#a3852a5300bf8cef9f1af1f00cd95f602">org.motechproject.openmrs.services.OpenMRSEncounterAdapter</a>.</p>
 
 </div>
 </div>

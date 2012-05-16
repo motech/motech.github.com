@@ -92,12 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00959.html">scheduletracking</a>      </li>
-      <li class="navelem"><a class="el" href="a00960.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00970.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00242.html">MilestoneAlerts</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01487.html">messagecampaign</a>      </li>
+      <li class="navelem"><a class="el" href="a01499.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a00242.html">MessageCampaignService</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,136 +105,239 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.scheduletracking.api.service.MilestoneAlerts Class Reference</div>  </div>
+<div class="title">org.motechproject.server.messagecampaign.service.MessageCampaignService Interface Reference<div class="ingroups"><a class="el" href="a01544.html">Message Campaign</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.server.messagecampaign.service.MessageCampaignService:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00242.png" usemap="#org.motechproject.server.messagecampaign.service.MessageCampaignService_map" alt=""/>
+  <map id="org.motechproject.server.messagecampaign.service.MessageCampaignService_map" name="org.motechproject.server.messagecampaign.service.MessageCampaignService_map">
+<area href="a00243.html" alt="org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl" shape="rect" coords="0,56,485,80"/>
+<area href="a00243.html" alt="org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl" shape="rect" coords="495,56,980,80"/>
+</map>
+ </div></div>
 
-<p><a href="a01307.html">List of all members.</a></p>
+<p><a href="a01894.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8de9d78f1b230cdc2f92074dbb972416"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a8de9d78f1b230cdc2f92074dbb972416">MilestoneAlerts</a> ()</td></tr>
-<tr class="memitem:a94756a6cd375faf566fc6f03b80042f0"><td class="memItemLeft" align="right" valign="top">Map&lt; String, List&lt; DateTime &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a94756a6cd375faf566fc6f03b80042f0">getAlertTimings</a> ()</td></tr>
-<tr class="memitem:ab8b7d7bb08d75fa61c8d4d82f74c8e52"><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#ab8b7d7bb08d75fa61c8d4d82f74c8e52">getEarliestWindowAlertTimings</a> ()</td></tr>
-<tr class="memitem:a2e67476d35fe193473605ef0513ad2f1"><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a2e67476d35fe193473605ef0513ad2f1">getDueWindowAlertTimings</a> ()</td></tr>
-<tr class="memitem:afd52e96bd7259ff3b9e1e6356091c0b0"><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#afd52e96bd7259ff3b9e1e6356091c0b0">getLateWindowAlertTimings</a> ()</td></tr>
-<tr class="memitem:abb5173d71ecf70b5d1078f199822943a"><td class="memItemLeft" align="right" valign="top">List&lt; DateTime &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#abb5173d71ecf70b5d1078f199822943a">getMaxWindowAlertTimings</a> ()</td></tr>
+<tr class="memitem:aa90aa7aa32e1c6f7aa2e22a0fd969454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#aa90aa7aa32e1c6f7aa2e22a0fd969454">startFor</a> (<a class="el" href="a00080.html">CampaignRequest</a> enrollRequest)</td></tr>
+<tr class="memitem:a7a88a65ea05b9b2897b63a68c5fd8d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a7a88a65ea05b9b2897b63a68c5fd8d0f">stopFor</a> (<a class="el" href="a00080.html">CampaignRequest</a> enrollRequest, String message)</td></tr>
+<tr class="memitem:a670f7aa4d36ceeaf10b7951b7d200ed0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a670f7aa4d36ceeaf10b7951b7d200ed0">stopAll</a> (<a class="el" href="a00080.html">CampaignRequest</a> enrollRequest)</td></tr>
+<tr class="memitem:a4404ab3ab5bef163283d350a54dd97a8"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00070.html">CampaignEnrollmentRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a4404ab3ab5bef163283d350a54dd97a8">search</a> (<a class="el" href="a00073.html">CampaignEnrollmentsQuery</a> query)</td></tr>
+<tr class="memitem:aa90aa7aa32e1c6f7aa2e22a0fd969454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#aa90aa7aa32e1c6f7aa2e22a0fd969454">startFor</a> (<a class="el" href="a00080.html">CampaignRequest</a> enrollRequest)</td></tr>
+<tr class="memitem:a7a88a65ea05b9b2897b63a68c5fd8d0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a7a88a65ea05b9b2897b63a68c5fd8d0f">stopFor</a> (<a class="el" href="a00080.html">CampaignRequest</a> enrollRequest, String message)</td></tr>
+<tr class="memitem:a670f7aa4d36ceeaf10b7951b7d200ed0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a670f7aa4d36ceeaf10b7951b7d200ed0">stopAll</a> (<a class="el" href="a00080.html">CampaignRequest</a> enrollRequest)</td></tr>
+<tr class="memitem:a4404ab3ab5bef163283d350a54dd97a8"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00070.html">CampaignEnrollmentRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html#a4404ab3ab5bef163283d350a54dd97a8">search</a> (<a class="el" href="a00073.html">CampaignEnrollmentsQuery</a> query)</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This contains the alert timings of all the windows of a milestone. </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a8de9d78f1b230cdc2f92074dbb972416"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00242.html#a8de9d78f1b230cdc2f92074dbb972416">org.motechproject.scheduletracking.api.service.MilestoneAlerts.MilestoneAlerts</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Constructor to create <a class="el" href="a00242.html" title="This contains the alert timings of all the windows of a milestone.">MilestoneAlerts</a>. </p>
-
-</div>
-</div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a94756a6cd375faf566fc6f03b80042f0"></a>
+<a class="anchor" id="a4404ab3ab5bef163283d350a54dd97a8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Map&lt;String, List&lt;DateTime&gt; &gt; <a class="el" href="a00242.html#a94756a6cd375faf566fc6f03b80042f0">org.motechproject.scheduletracking.api.service.MilestoneAlerts.getAlertTimings</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00070.html">CampaignEnrollmentRecord</a>&gt; <a class="el" href="a00242.html#a4404ab3ab5bef163283d350a54dd97a8">org.motechproject.server.messagecampaign.service.MessageCampaignService.search</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00073.html">CampaignEnrollmentsQuery</a>&#160;</td>
+          <td class="paramname"><em>query</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gives the alert timings for all the windows. </p>
-<p>Note : To get the alert timings of a particular window, use the corresponding getWindowAlertTimings method</p>
-<dl class="section return"><dt>Returns:</dt><dd>a map of window names to the list of their alert timings </dd></dl>
+<p>Searches and returns the Campaign Enrollment Records as per the criteria in the given <a class="el" href="a00073.html" title="This is the Query builder for retrieving campaign enrollments Provides methods for different query cr...">CampaignEnrollmentsQuery</a> The query consists of various criteria based on Status, ExternalId and CampaignName of the CampaignEnrollment. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>List&lt;CampaignEnrollmentRecord&gt; </dd></dl>
+
+<p>Implemented in <a class="el" href="a00243.html#ae714f5c241a3cb9b7d8c381d618dc776">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>, and <a class="el" href="a00243.html#ae714f5c241a3cb9b7d8c381d618dc776">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2e67476d35fe193473605ef0513ad2f1"></a>
+<a class="anchor" id="a4404ab3ab5bef163283d350a54dd97a8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;DateTime&gt; <a class="el" href="a00242.html#a2e67476d35fe193473605ef0513ad2f1">org.motechproject.scheduletracking.api.service.MilestoneAlerts.getDueWindowAlertTimings</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00070.html">CampaignEnrollmentRecord</a>&gt; <a class="el" href="a00242.html#a4404ab3ab5bef163283d350a54dd97a8">org.motechproject.server.messagecampaign.service.MessageCampaignService.search</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00073.html">CampaignEnrollmentsQuery</a>&#160;</td>
+          <td class="paramname"><em>query</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gives the alert timings of due window of the milestone. </p>
-<dl class="section return"><dt>Returns:</dt><dd>List&lt;DateTime&gt; : represents the alert timings of due window </dd></dl>
+<p>Searches and returns the Campaign Enrollment Records as per the criteria in the given <a class="el" href="a00073.html" title="This is the Query builder for retrieving campaign enrollments Provides methods for different query cr...">CampaignEnrollmentsQuery</a> The query consists of various criteria based on Status, ExternalId and CampaignName of the CampaignEnrollment. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>List&lt;CampaignEnrollmentRecord&gt; </dd></dl>
+
+<p>Implemented in <a class="el" href="a00243.html#ae714f5c241a3cb9b7d8c381d618dc776">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>, and <a class="el" href="a00243.html#ae714f5c241a3cb9b7d8c381d618dc776">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab8b7d7bb08d75fa61c8d4d82f74c8e52"></a>
+<a class="anchor" id="aa90aa7aa32e1c6f7aa2e22a0fd969454"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;DateTime&gt; <a class="el" href="a00242.html#ab8b7d7bb08d75fa61c8d4d82f74c8e52">org.motechproject.scheduletracking.api.service.MilestoneAlerts.getEarliestWindowAlertTimings</a> </td>
+          <td class="memname">void <a class="el" href="a00242.html#aa90aa7aa32e1c6f7aa2e22a0fd969454">org.motechproject.server.messagecampaign.service.MessageCampaignService.startFor</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gives the alert timings of earliest window of the milestone. </p>
-<dl class="section return"><dt>Returns:</dt><dd>List&lt;DateTime&gt; : represents the alert timings of earliest window </dd></dl>
+<p>Enrolls the external id into the campaign as specified in the request. </p>
+<p>The enrolled entity will have events raised against it according to the campaign definition.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enrollRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a00243.html#a47fb676f37586d77cf397f8c8ea9d94f">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>, and <a class="el" href="a00243.html#a47fb676f37586d77cf397f8c8ea9d94f">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afd52e96bd7259ff3b9e1e6356091c0b0"></a>
+<a class="anchor" id="aa90aa7aa32e1c6f7aa2e22a0fd969454"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;DateTime&gt; <a class="el" href="a00242.html#afd52e96bd7259ff3b9e1e6356091c0b0">org.motechproject.scheduletracking.api.service.MilestoneAlerts.getLateWindowAlertTimings</a> </td>
+          <td class="memname">void <a class="el" href="a00242.html#aa90aa7aa32e1c6f7aa2e22a0fd969454">org.motechproject.server.messagecampaign.service.MessageCampaignService.startFor</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gives the alert timings of late window of the milestone. </p>
-<dl class="section return"><dt>Returns:</dt><dd>List&lt;DateTime&gt; : represents the alert timings of late window </dd></dl>
+<p>Enrolls the external id into the campaign as specified in the request. </p>
+<p>The enrolled entity will have events raised against it according to the campaign definition.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enrollRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a00243.html#a47fb676f37586d77cf397f8c8ea9d94f">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>, and <a class="el" href="a00243.html#a47fb676f37586d77cf397f8c8ea9d94f">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abb5173d71ecf70b5d1078f199822943a"></a>
+<a class="anchor" id="a670f7aa4d36ceeaf10b7951b7d200ed0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;DateTime&gt; <a class="el" href="a00242.html#abb5173d71ecf70b5d1078f199822943a">org.motechproject.scheduletracking.api.service.MilestoneAlerts.getMaxWindowAlertTimings</a> </td>
+          <td class="memname">void <a class="el" href="a00242.html#a670f7aa4d36ceeaf10b7951b7d200ed0">org.motechproject.server.messagecampaign.service.MessageCampaignService.stopAll</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gives the alert timings of max window of the milestone. </p>
-<dl class="section return"><dt>Returns:</dt><dd>List&lt;DateTime&gt; : represents the alert timings of max window </dd></dl>
+<p>Implemented in <a class="el" href="a00243.html#a155a6290e1160fd2d0f01611212bf3ba">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>, and <a class="el" href="a00243.html#a155a6290e1160fd2d0f01611212bf3ba">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a670f7aa4d36ceeaf10b7951b7d200ed0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00242.html#a670f7aa4d36ceeaf10b7951b7d200ed0">org.motechproject.server.messagecampaign.service.MessageCampaignService.stopAll</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00243.html#a155a6290e1160fd2d0f01611212bf3ba">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>, and <a class="el" href="a00243.html#a155a6290e1160fd2d0f01611212bf3ba">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a88a65ea05b9b2897b63a68c5fd8d0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00242.html#a7a88a65ea05b9b2897b63a68c5fd8d0f">org.motechproject.server.messagecampaign.service.MessageCampaignService.stopFor</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00243.html#a95c9b2db105902577ef725836f7e8eba">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>, and <a class="el" href="a00243.html#a95c9b2db105902577ef725836f7e8eba">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a88a65ea05b9b2897b63a68c5fd8d0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00242.html#a7a88a65ea05b9b2897b63a68c5fd8d0f">org.motechproject.server.messagecampaign.service.MessageCampaignService.stopFor</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00243.html#a95c9b2db105902577ef725836f7e8eba">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>, and <a class="el" href="a00243.html#a95c9b2db105902577ef725836f7e8eba">org.motechproject.server.messagecampaign.service.MessageCampaignServiceImpl</a>.</p>
 
 </div>
 </div>

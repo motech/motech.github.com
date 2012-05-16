@@ -92,11 +92,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00932.html">mrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00937.html">services</a>      </li>
-      <li class="navelem"><a class="el" href="a00276.html">MRSFacilityAdapter</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01398.html">gateway</a>      </li>
+      <li class="navelem"><a class="el" href="a00276.html">MotechSchedulerGateway</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,131 +103,236 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.mrs.services.MRSFacilityAdapter Interface Reference</div>  </div>
+<div class="title">org.motechproject.gateway.MotechSchedulerGateway Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.mrs.services.MRSFacilityAdapter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00276.png" usemap="#org.motechproject.mrs.services.MRSFacilityAdapter_map" alt=""/>
-  <map id="org.motechproject.mrs.services.MRSFacilityAdapter_map" name="org.motechproject.mrs.services.MRSFacilityAdapter_map">
-<area href="a00301.html" title="Manages OpenMRS Facilities." alt="org.motechproject.openmrs.services.OpenMRSFacilityAdapter" shape="rect" coords="0,56,366,80"/>
-</map>
- </div></div>
 
-<p><a href="a01216.html">List of all members.</a></p>
+<p><a href="a01621.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa1336a8fac819d4300cb7b7b1a284f59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00275.html">MRSFacility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#aa1336a8fac819d4300cb7b7b1a284f59">saveFacility</a> (<a class="el" href="a00275.html">MRSFacility</a> facility)</td></tr>
-<tr class="memitem:ac0231d032a68270b6d502bc1ad8728b7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00275.html">MRSFacility</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#ac0231d032a68270b6d502bc1ad8728b7">getFacilities</a> ()</td></tr>
-<tr class="memitem:af91550ee2f031c41fee329af997288c8"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00275.html">MRSFacility</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#af91550ee2f031c41fee329af997288c8">getFacilities</a> (String locationName)</td></tr>
-<tr class="memitem:a5b2bfc1da0fe81c6736f8474de2a1568"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00275.html">MRSFacility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#a5b2bfc1da0fe81c6736f8474de2a1568">getFacility</a> (String facilityId)</td></tr>
+<tr class="memitem:a99245da79a59471a724203f161f59b2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#a99245da79a59471a724203f161f59b2a">scheduleJob</a> (<a class="el" href="a00108.html">CronSchedulableJob</a> cronSchedulableJob)</td></tr>
+<tr class="memitem:a8b59770181c3a915d0ebd53b924a4dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#a8b59770181c3a915d0ebd53b924a4dc6">scheduleRepeatingJob</a> (<a class="el" href="a00357.html">RepeatingSchedulableJob</a> schedulableJob)</td></tr>
+<tr class="memitem:a9db990af873655c344d7fc2c24f8d225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#a9db990af873655c344d7fc2c24f8d225">scheduleRunOnceJob</a> (<a class="el" href="a00368.html">RunOnceSchedulableJob</a> schedulableJob)</td></tr>
+<tr class="memitem:aee498e740e2ecdd72f62ee9636b87212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#aee498e740e2ecdd72f62ee9636b87212">unscheduleJob</a> (String jobId)</td></tr>
+<tr class="memitem:a99245da79a59471a724203f161f59b2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#a99245da79a59471a724203f161f59b2a">scheduleJob</a> (<a class="el" href="a00108.html">CronSchedulableJob</a> cronSchedulableJob)</td></tr>
+<tr class="memitem:a8b59770181c3a915d0ebd53b924a4dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#a8b59770181c3a915d0ebd53b924a4dc6">scheduleRepeatingJob</a> (<a class="el" href="a00357.html">RepeatingSchedulableJob</a> schedulableJob)</td></tr>
+<tr class="memitem:a9db990af873655c344d7fc2c24f8d225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#a9db990af873655c344d7fc2c24f8d225">scheduleRunOnceJob</a> (<a class="el" href="a00368.html">RunOnceSchedulableJob</a> schedulableJob)</td></tr>
+<tr class="memitem:aee498e740e2ecdd72f62ee9636b87212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html#aee498e740e2ecdd72f62ee9636b87212">unscheduleJob</a> (String jobId)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Interface to save and get facilities (Location) </p>
+<div class="textblock"><p>Motech Scheduler Gateway provides access to Motech Scheduler. </p>
+<p>A proxy for that interface will be generated at run-time.</p>
+<p>This interface should be injected into any class that needs access to Motech Scheduler for scheduling, unscheduling and rescheduling jobs/tasks.</p>
+<p>The interface is configured in the schedulerOutboundChannelAdapter.xml (motech-platform-core)</p>
+<p>For example of use see SchedulerGatewayIT (motech-platform-core)</p>
+<dl class="section author"><dt>Author:</dt><dd>Igor (<a href="#" onclick="location.href='mai'+'lto:'+'iop'+'us'+'hny'+'ev'+'@2p'+'at'+'hs.'+'co'+'m'; return false;">iopus<span style="display: none;">.nosp@m.</span>hnye<span style="display: none;">.nosp@m.</span>v@2pa<span style="display: none;">.nosp@m.</span>ths.<span style="display: none;">.nosp@m.</span>com</a>) Date: 23/02/11 </dd></dl>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ac0231d032a68270b6d502bc1ad8728b7"></a>
+<a class="anchor" id="a99245da79a59471a724203f161f59b2a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00275.html">MRSFacility</a>&gt; <a class="el" href="a00276.html#ac0231d032a68270b6d502bc1ad8728b7">org.motechproject.mrs.services.MRSFacilityAdapter.getFacilities</a> </td>
+          <td class="memname">void <a class="el" href="a00276.html#a99245da79a59471a724203f161f59b2a">org.motechproject.gateway.MotechSchedulerGateway.scheduleJob</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00108.html">CronSchedulableJob</a>&#160;</td>
+          <td class="paramname"><em>cronSchedulableJob</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gets all the facilities in the MRS system. </p>
-<dl class="section return"><dt>Returns:</dt><dd>List of all available facilities </dd></dl>
-
-<p>Implemented in <a class="el" href="a00301.html#a37038280977f1fbf12d8ba24eccad267">org.motechproject.openmrs.services.OpenMRSFacilityAdapter</a>.</p>
+<p>Sends a message with the given SchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cronSchedulableJob</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="af91550ee2f031c41fee329af997288c8"></a>
+<a class="anchor" id="a99245da79a59471a724203f161f59b2a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00275.html">MRSFacility</a>&gt; <a class="el" href="a00276.html#ac0231d032a68270b6d502bc1ad8728b7">org.motechproject.mrs.services.MRSFacilityAdapter.getFacilities</a> </td>
+          <td class="memname">void <a class="el" href="a00276.html#a99245da79a59471a724203f161f59b2a">org.motechproject.gateway.MotechSchedulerGateway.scheduleJob</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00108.html">CronSchedulableJob</a>&#160;</td>
+          <td class="paramname"><em>cronSchedulableJob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given SchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cronSchedulableJob</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8b59770181c3a915d0ebd53b924a4dc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00276.html#a8b59770181c3a915d0ebd53b924a4dc6">org.motechproject.gateway.MotechSchedulerGateway.scheduleRepeatingJob</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00357.html">RepeatingSchedulableJob</a>&#160;</td>
+          <td class="paramname"><em>schedulableJob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given SchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schedulableJob</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8b59770181c3a915d0ebd53b924a4dc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00276.html#a8b59770181c3a915d0ebd53b924a4dc6">org.motechproject.gateway.MotechSchedulerGateway.scheduleRepeatingJob</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00357.html">RepeatingSchedulableJob</a>&#160;</td>
+          <td class="paramname"><em>schedulableJob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given SchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schedulableJob</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9db990af873655c344d7fc2c24f8d225"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00276.html#a9db990af873655c344d7fc2c24f8d225">org.motechproject.gateway.MotechSchedulerGateway.scheduleRunOnceJob</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00368.html">RunOnceSchedulableJob</a>&#160;</td>
+          <td class="paramname"><em>schedulableJob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given RunOnceSchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schedulableJob</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9db990af873655c344d7fc2c24f8d225"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00276.html#a9db990af873655c344d7fc2c24f8d225">org.motechproject.gateway.MotechSchedulerGateway.scheduleRunOnceJob</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00368.html">RunOnceSchedulableJob</a>&#160;</td>
+          <td class="paramname"><em>schedulableJob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends a message with the given RunOnceSchedulableJob payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">schedulableJob</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aee498e740e2ecdd72f62ee9636b87212"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00276.html#aee498e740e2ecdd72f62ee9636b87212">org.motechproject.gateway.MotechSchedulerGateway.unscheduleJob</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>locationName</em></td><td>)</td>
+          <td class="paramname"><em>jobId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Fetches all facilities that have the given location name. </p>
+<p>Sends a message with the given jobID (String) payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">locationName</td><td>Value to be used to search </td></tr>
+    <tr><td class="paramname">jobId</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns:</dt><dd>List of matched facilities </dd></dl>
-
-<p>Implemented in <a class="el" href="a00301.html#a4c7d05486b3693b659b1eeaba976e75e">org.motechproject.openmrs.services.OpenMRSFacilityAdapter</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5b2bfc1da0fe81c6736f8474de2a1568"></a>
+<a class="anchor" id="aee498e740e2ecdd72f62ee9636b87212"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00275.html">MRSFacility</a> <a class="el" href="a00276.html#a5b2bfc1da0fe81c6736f8474de2a1568">org.motechproject.mrs.services.MRSFacilityAdapter.getFacility</a> </td>
+          <td class="memname">void <a class="el" href="a00276.html#aee498e740e2ecdd72f62ee9636b87212">org.motechproject.gateway.MotechSchedulerGateway.unscheduleJob</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>facilityId</em></td><td>)</td>
+          <td class="paramname"><em>jobId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Fetches facility by facility id (not the MOTECH ID of the facility) </p>
+<p>Sends a message with the given jobID (String) payload. </p>
+<p>The message directed to the channel specified in the a Spring Integration configuration file.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">facilityId</td><td>Id of the facility to be fetched </td></tr>
+    <tr><td class="paramname">jobId</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns:</dt><dd>Facility with the given id </dd></dl>
-
-<p>Implemented in <a class="el" href="a00301.html#a6a78eb64b2891fb270df51341e60ab59">org.motechproject.openmrs.services.OpenMRSFacilityAdapter</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa1336a8fac819d4300cb7b7b1a284f59"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00275.html">MRSFacility</a> <a class="el" href="a00276.html#aa1336a8fac819d4300cb7b7b1a284f59">org.motechproject.mrs.services.MRSFacilityAdapter.saveFacility</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00275.html">MRSFacility</a>&#160;</td>
-          <td class="paramname"><em>facility</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Saves the given facility in the MRS System. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">facility</td><td>object to be saved </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>The saved instance of the facility </dd></dl>
 
 </div>
 </div>

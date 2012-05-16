@@ -92,62 +92,395 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a01023.html">sms</a>      </li>
-      <li class="navelem"><a class="el" href="a01028.html">smpp</a>      </li>
-      <li class="navelem"><a class="el" href="a01029.html">constants</a>      </li>
-      <li class="navelem"><a class="el" href="a00162.html">EventSubjects</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01485.html">event</a>      </li>
+      <li class="navelem"><a class="el" href="a00162.html">EventListenerRegistry</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.sms.smpp.constants.EventSubjects Class Reference</div>  </div>
+<div class="title">org.motechproject.server.event.EventListenerRegistry Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01465.html">List of all members.</a></p>
+<p><a href="a01845.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:aef8842ead3de8a06818f05a2aef1eaca"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#aef8842ead3de8a06818f05a2aef1eaca">SMS_FAILURE_NOTIFICATION</a> = &quot;sms_failure_notification&quot;</td></tr>
-<tr class="memitem:a6658fa8e7fa448c4a8a2cd79e615e004"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a6658fa8e7fa448c4a8a2cd79e615e004">INBOUND_SMS</a> = &quot;inbound_sms&quot;</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7a7aacffbae71c79c09dda178ceb7a57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a7a7aacffbae71c79c09dda178ceb7a57">EventListenerRegistry</a> ()</td></tr>
+<tr class="memitem:ada504031bd9cef2ef938eff3922782eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#ada504031bd9cef2ef938eff3922782eb">EventListenerRegistry</a> (<a class="el" href="a00247.html">MetricsAgent</a> metricsAgent)</td></tr>
+<tr class="memitem:af72c3f420b1bfabe3348f5b9eb969e04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#af72c3f420b1bfabe3348f5b9eb969e04">registerListener</a> (<a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a> listener, List&lt; String &gt; subjects)</td></tr>
+<tr class="memitem:a877b0cb9053592d1e7f935be3f5c37db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a877b0cb9053592d1e7f935be3f5c37db">registerListener</a> (<a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a> listener, String subject)</td></tr>
+<tr class="memitem:a4bd22e36b029b78a0631f0a738329055"><td class="memItemLeft" align="right" valign="top">Set<br class="typebreak"/>
+&lt; <a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a4bd22e36b029b78a0631f0a738329055">getListeners</a> (String subject)</td></tr>
+<tr class="memitem:a9edaf620517c4fdc197c5cfac4e0c403"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a9edaf620517c4fdc197c5cfac4e0c403">hasListener</a> (String subject)</td></tr>
+<tr class="memitem:a2de7fde35d48cb989264703def7c7bc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a2de7fde35d48cb989264703def7c7bc4">getListenerCount</a> (String subject)</td></tr>
+<tr class="memitem:a7a7aacffbae71c79c09dda178ceb7a57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a7a7aacffbae71c79c09dda178ceb7a57">EventListenerRegistry</a> ()</td></tr>
+<tr class="memitem:ada504031bd9cef2ef938eff3922782eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#ada504031bd9cef2ef938eff3922782eb">EventListenerRegistry</a> (<a class="el" href="a00247.html">MetricsAgent</a> metricsAgent)</td></tr>
+<tr class="memitem:af72c3f420b1bfabe3348f5b9eb969e04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#af72c3f420b1bfabe3348f5b9eb969e04">registerListener</a> (<a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a> listener, List&lt; String &gt; subjects)</td></tr>
+<tr class="memitem:a877b0cb9053592d1e7f935be3f5c37db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a877b0cb9053592d1e7f935be3f5c37db">registerListener</a> (<a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a> listener, String subject)</td></tr>
+<tr class="memitem:a4bd22e36b029b78a0631f0a738329055"><td class="memItemLeft" align="right" valign="top">Set<br class="typebreak"/>
+&lt; <a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a4bd22e36b029b78a0631f0a738329055">getListeners</a> (String subject)</td></tr>
+<tr class="memitem:a9edaf620517c4fdc197c5cfac4e0c403"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a9edaf620517c4fdc197c5cfac4e0c403">hasListener</a> (String subject)</td></tr>
+<tr class="memitem:a2de7fde35d48cb989264703def7c7bc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html#a2de7fde35d48cb989264703def7c7bc4">getListenerCount</a> (String subject)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>describes all the events emitted by the module </p>
-</div><hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a6658fa8e7fa448c4a8a2cd79e615e004"></a>
+<div class="textblock"><p>This class acts as a registry for all scheduled event listeners. </p>
+<p>One can register themselves to listen for a specific set of event types. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7a7aacffbae71c79c09dda178ceb7a57"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="a00162.html#a6658fa8e7fa448c4a8a2cd79e615e004">org.motechproject.sms.smpp.constants.EventSubjects.INBOUND_SMS</a> = &quot;inbound_sms&quot;<code> [static]</code></td>
+          <td class="memname"><a class="el" href="a00162.html#a7a7aacffbae71c79c09dda178ceb7a57">org.motechproject.server.event.EventListenerRegistry.EventListenerRegistry</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>This event is raised when the SMSC notifies the module of an inbound sms. </p>
-<p>Payload: SENDER - the sender's number INBOUND_MESSAGE - the message text TIMESTAMP - the time at which the SMS </p>
-
 </div>
 </div>
-<a class="anchor" id="aef8842ead3de8a06818f05a2aef1eaca"></a>
+<a class="anchor" id="ada504031bd9cef2ef938eff3922782eb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="a00162.html#aef8842ead3de8a06818f05a2aef1eaca">org.motechproject.sms.smpp.constants.EventSubjects.SMS_FAILURE_NOTIFICATION</a> = &quot;sms_failure_notification&quot;<code> [static]</code></td>
+          <td class="memname"><a class="el" href="a00162.html#a7a7aacffbae71c79c09dda178ceb7a57">org.motechproject.server.event.EventListenerRegistry.EventListenerRegistry</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00247.html">MetricsAgent</a>&#160;</td>
+          <td class="paramname"><em>metricsAgent</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>This event is raised when an sms remains undelivered after the delivery has been retried max_retries number of times. </p>
-<p>Payload: RECIPIENT - the reciepient for which the message delivery has failed MESSAGE - the message text </p>
+</div>
+</div>
+<a class="anchor" id="a7a7aacffbae71c79c09dda178ceb7a57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00162.html#a7a7aacffbae71c79c09dda178ceb7a57">org.motechproject.server.event.EventListenerRegistry.EventListenerRegistry</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada504031bd9cef2ef938eff3922782eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00162.html#a7a7aacffbae71c79c09dda178ceb7a57">org.motechproject.server.event.EventListenerRegistry.EventListenerRegistry</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00247.html">MetricsAgent</a>&#160;</td>
+          <td class="paramname"><em>metricsAgent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a2de7fde35d48cb989264703def7c7bc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00162.html#a2de7fde35d48cb989264703def7c7bc4">org.motechproject.server.event.EventListenerRegistry.getListenerCount</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>subject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the count of listeners for a particular subject. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subject</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2de7fde35d48cb989264703def7c7bc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00162.html#a2de7fde35d48cb989264703def7c7bc4">org.motechproject.server.event.EventListenerRegistry.getListenerCount</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>subject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the count of listeners for a particular subject. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subject</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4bd22e36b029b78a0631f0a738329055"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Set&lt;<a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a>&gt; <a class="el" href="a00162.html#a4bd22e36b029b78a0631f0a738329055">org.motechproject.server.event.EventListenerRegistry.getListeners</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>subject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Retrieve a list of event listeners for a given event type. </p>
+<p>If there are no listeners, an empty list is returned. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subject</td><td>The event type that you are seeking listeners for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A list of scheduled event listeners that are interested in that event </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4bd22e36b029b78a0631f0a738329055"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Set&lt;<a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a>&gt; <a class="el" href="a00162.html#a4bd22e36b029b78a0631f0a738329055">org.motechproject.server.event.EventListenerRegistry.getListeners</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>subject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Retrieve a list of event listeners for a given event type. </p>
+<p>If there are no listeners, an empty list is returned. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subject</td><td>The event type that you are seeking listeners for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A list of scheduled event listeners that are interested in that event </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9edaf620517c4fdc197c5cfac4e0c403"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="a00162.html#a9edaf620517c4fdc197c5cfac4e0c403">org.motechproject.server.event.EventListenerRegistry.hasListener</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>subject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>See if a particular subject has any listeners. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subject</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9edaf620517c4fdc197c5cfac4e0c403"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean <a class="el" href="a00162.html#a9edaf620517c4fdc197c5cfac4e0c403">org.motechproject.server.event.EventListenerRegistry.hasListener</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>subject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>See if a particular subject has any listeners. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subject</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af72c3f420b1bfabe3348f5b9eb969e04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00162.html#af72c3f420b1bfabe3348f5b9eb969e04">org.motechproject.server.event.EventListenerRegistry.registerListener</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>subjects</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Register an event listener to be notified when events of a given type are received via the Server JMS Event Queue. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>the listener instance </td></tr>
+    <tr><td class="paramname">subjects</td><td>the event types that a listener is interested in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af72c3f420b1bfabe3348f5b9eb969e04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00162.html#af72c3f420b1bfabe3348f5b9eb969e04">org.motechproject.server.event.EventListenerRegistry.registerListener</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>subjects</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Register an event listener to be notified when events of a given type are received via the Server JMS Event Queue. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>the listener instance </td></tr>
+    <tr><td class="paramname">subjects</td><td>the event types that a listener is interested in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a877b0cb9053592d1e7f935be3f5c37db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00162.html#af72c3f420b1bfabe3348f5b9eb969e04">org.motechproject.server.event.EventListenerRegistry.registerListener</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>subject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a877b0cb9053592d1e7f935be3f5c37db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00162.html#af72c3f420b1bfabe3348f5b9eb969e04">org.motechproject.server.event.EventListenerRegistry.registerListener</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00161.html">org.motechproject.server.event.EventListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>subject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

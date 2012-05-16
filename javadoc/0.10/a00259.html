@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00989.html">event</a>      </li>
-      <li class="navelem"><a class="el" href="a00990.html">annotations</a>      </li>
-      <li class="navelem"><a class="el" href="a00259.html">MotechListenerNamedParametersProxy</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01399.html">ivr</a>      </li>
+      <li class="navelem"><a class="el" href="a01400.html">asterisk</a>      </li>
+      <li class="navelem"><a class="el" href="a00259.html">MotechAsteriskCallBackImpl</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,97 +104,234 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy Class Reference</div>  </div>
+<div class="title">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00259.png" usemap="#org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy_map" alt=""/>
-  <map id="org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy_map" name="org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy_map">
-<area href="a00257.html" title="Event Listener Proxy base abstract class." alt="org.motechproject.server.event.annotations.MotechListenerAbstractProxy" shape="rect" coords="0,56,485,80"/>
-<area href="a00157.html" alt="org.motechproject.server.event.EventListener" shape="rect" coords="0,0,485,24"/>
-</map>
- </div></div>
 
-<p><a href="a01349.html">List of all members.</a></p>
+<p>Inherits OriginateCallback, and OriginateCallback.</p>
+
+<p><a href="a01625.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a76211ca033234facb85695de371fc6dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a76211ca033234facb85695de371fc6dc">MotechListenerNamedParametersProxy</a> (String <a class="el" href="a00257.html#ac8e54e621a68bc26424e8af3415127e8">name</a>, Object <a class="el" href="a00257.html#ad69bc07a6f5c9c29285e4075f86bb7f9">bean</a>, Method <a class="el" href="a00257.html#a843a5e37294b5ab113b48540077e60e5">method</a>)</td></tr>
-<tr class="memitem:af9c8a2c62ac7b7c2e71a0c0ffb376302"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#af9c8a2c62ac7b7c2e71a0c0ffb376302">callHandler</a> (<a class="el" href="a00253.html">MotechEvent</a> event)</td></tr>
+<tr class="memitem:a6072ef586572a0340181cb3e9c973b58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a6072ef586572a0340181cb3e9c973b58">MotechAsteriskCallBackImpl</a> (<a class="el" href="a00067.html">CallRequest</a> callRequest)</td></tr>
+<tr class="memitem:a97702ad4f32278e94d9c04c03c0d157e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a97702ad4f32278e94d9c04c03c0d157e">onDialing</a> (AsteriskChannel asteriskChannel)</td></tr>
+<tr class="memitem:a3511c57e75084f3157ad61168a7dd10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a3511c57e75084f3157ad61168a7dd10c">onSuccess</a> (AsteriskChannel asteriskChannel)</td></tr>
+<tr class="memitem:a57952167183c14bfa2d3bd2cc3835da5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a57952167183c14bfa2d3bd2cc3835da5">onNoAnswer</a> (AsteriskChannel asteriskChannel)</td></tr>
+<tr class="memitem:a04514f38d94d7e1fc4d3eb2b3f38e515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a04514f38d94d7e1fc4d3eb2b3f38e515">onBusy</a> (AsteriskChannel asteriskChannel)</td></tr>
+<tr class="memitem:adbf96eae3191871ecb853e8660741439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#adbf96eae3191871ecb853e8660741439">onFailure</a> (LiveException e)</td></tr>
+<tr class="memitem:a6072ef586572a0340181cb3e9c973b58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a6072ef586572a0340181cb3e9c973b58">MotechAsteriskCallBackImpl</a> (<a class="el" href="a00067.html">CallRequest</a> callRequest)</td></tr>
+<tr class="memitem:a97702ad4f32278e94d9c04c03c0d157e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a97702ad4f32278e94d9c04c03c0d157e">onDialing</a> (AsteriskChannel asteriskChannel)</td></tr>
+<tr class="memitem:a3511c57e75084f3157ad61168a7dd10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a3511c57e75084f3157ad61168a7dd10c">onSuccess</a> (AsteriskChannel asteriskChannel)</td></tr>
+<tr class="memitem:a57952167183c14bfa2d3bd2cc3835da5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a57952167183c14bfa2d3bd2cc3835da5">onNoAnswer</a> (AsteriskChannel asteriskChannel)</td></tr>
+<tr class="memitem:a04514f38d94d7e1fc4d3eb2b3f38e515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a04514f38d94d7e1fc4d3eb2b3f38e515">onBusy</a> (AsteriskChannel asteriskChannel)</td></tr>
+<tr class="memitem:adbf96eae3191871ecb853e8660741439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#adbf96eae3191871ecb853e8660741439">onFailure</a> (LiveException e)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author:</dt><dd>yyonkov </dd></dl>
+<div class="textblock"><p>Motech specific implementation of the Asterisk-Java call-back interface see org.asteriskjava.live.OriginateCallback.java for details. </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a76211ca033234facb85695de371fc6dc"></a>
+<a class="anchor" id="a6072ef586572a0340181cb3e9c973b58"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00259.html#a76211ca033234facb85695de371fc6dc">org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy.MotechListenerNamedParametersProxy</a> </td>
+          <td class="memname"><a class="el" href="a00259.html#a6072ef586572a0340181cb3e9c973b58">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.MotechAsteriskCallBackImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00067.html">CallRequest</a>&#160;</td>
+          <td class="paramname"><em>callRequest</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>bean</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Method&#160;</td>
-          <td class="paramname"><em>method</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td></td></tr>
-    <tr><td class="paramname">bean</td><td></td></tr>
-    <tr><td class="paramname">method</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6072ef586572a0340181cb3e9c973b58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00259.html#a6072ef586572a0340181cb3e9c973b58">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.MotechAsteriskCallBackImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00067.html">CallRequest</a>&#160;</td>
+          <td class="paramname"><em>callRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="af9c8a2c62ac7b7c2e71a0c0ffb376302"></a>
+<a class="anchor" id="a04514f38d94d7e1fc4d3eb2b3f38e515"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00259.html#af9c8a2c62ac7b7c2e71a0c0ffb376302">org.motechproject.server.event.annotations.MotechListenerNamedParametersProxy.callHandler</a> </td>
+          <td class="memname">void <a class="el" href="a00259.html#a04514f38d94d7e1fc4d3eb2b3f38e515">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onBusy</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="paramtype">AsteriskChannel&#160;</td>
+          <td class="paramname"><em>asteriskChannel</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Needs to be implemented by concrete Proxies. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">event</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+</div>
+</div>
+<a class="anchor" id="a04514f38d94d7e1fc4d3eb2b3f38e515"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#a04514f38d94d7e1fc4d3eb2b3f38e515">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onBusy</a> </td>
+          <td>(</td>
+          <td class="paramtype">AsteriskChannel&#160;</td>
+          <td class="paramname"><em>asteriskChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
-<p>Implements <a class="el" href="a00257.html#ab201e470b586210ee166d5ecffcb4faf">org.motechproject.server.event.annotations.MotechListenerAbstractProxy</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a97702ad4f32278e94d9c04c03c0d157e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#a97702ad4f32278e94d9c04c03c0d157e">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onDialing</a> </td>
+          <td>(</td>
+          <td class="paramtype">AsteriskChannel&#160;</td>
+          <td class="paramname"><em>asteriskChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a97702ad4f32278e94d9c04c03c0d157e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#a97702ad4f32278e94d9c04c03c0d157e">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onDialing</a> </td>
+          <td>(</td>
+          <td class="paramtype">AsteriskChannel&#160;</td>
+          <td class="paramname"><em>asteriskChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adbf96eae3191871ecb853e8660741439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#adbf96eae3191871ecb853e8660741439">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onFailure</a> </td>
+          <td>(</td>
+          <td class="paramtype">LiveException&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adbf96eae3191871ecb853e8660741439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#adbf96eae3191871ecb853e8660741439">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onFailure</a> </td>
+          <td>(</td>
+          <td class="paramtype">LiveException&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57952167183c14bfa2d3bd2cc3835da5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#a57952167183c14bfa2d3bd2cc3835da5">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onNoAnswer</a> </td>
+          <td>(</td>
+          <td class="paramtype">AsteriskChannel&#160;</td>
+          <td class="paramname"><em>asteriskChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57952167183c14bfa2d3bd2cc3835da5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#a57952167183c14bfa2d3bd2cc3835da5">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onNoAnswer</a> </td>
+          <td>(</td>
+          <td class="paramtype">AsteriskChannel&#160;</td>
+          <td class="paramname"><em>asteriskChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3511c57e75084f3157ad61168a7dd10c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#a3511c57e75084f3157ad61168a7dd10c">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onSuccess</a> </td>
+          <td>(</td>
+          <td class="paramtype">AsteriskChannel&#160;</td>
+          <td class="paramname"><em>asteriskChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3511c57e75084f3157ad61168a7dd10c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00259.html#a3511c57e75084f3157ad61168a7dd10c">org.motechproject.ivr.asterisk.MotechAsteriskCallBackImpl.onSuccess</a> </td>
+          <td>(</td>
+          <td class="paramtype">AsteriskChannel&#160;</td>
+          <td class="paramname"><em>asteriskChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

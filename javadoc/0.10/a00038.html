@@ -92,45 +92,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00897.html">decisiontree</a>      </li>
-      <li class="navelem"><a class="el" href="a00900.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00038.html">AllTrees</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01455.html">scheduletracking</a>      </li>
+      <li class="navelem"><a class="el" href="a01456.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01465.html">repository</a>      </li>
+      <li class="navelem"><a class="el" href="a00038.html">AllSchedules</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.decisiontree.repository.AllTrees Class Reference</div>  </div>
+<div class="title">org.motechproject.scheduletracking.api.repository.AllSchedules Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits MotechBaseRepository&lt; Tree &gt;.</p>
+<p>Inherits MotechBaseRepository&lt; ScheduleRecord &gt;, and MotechBaseRepository&lt; ScheduleRecord &gt;.</p>
 
-<p><a href="a01117.html">List of all members.</a></p>
+<p><a href="a01802.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aead27c47217aae3e5c0945c6a8ff7307"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00397.html">Tree</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#aead27c47217aae3e5c0945c6a8ff7307">findByName</a> (String name)</td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae514d28300243ae4e760fa3e5474f130"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#ae514d28300243ae4e760fa3e5474f130">AllTrees</a> (@Qualifier(&quot;treesDatabase&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a1da02b562f8cc996bc3edcc5a918bfd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a1da02b562f8cc996bc3edcc5a918bfd2">AllSchedules</a> (@Qualifier(&quot;scheduleTrackingDbConnector&quot;) CouchDbConnector db, <a class="el" href="a00417.html">TrackedSchedulesJsonReader</a> trackedSchedulesJsonReader, <a class="el" href="a00374.html">ScheduleFactory</a> scheduleFactory)</td></tr>
+<tr class="memitem:ad6452406cd4f7dc7eb0a83c98020e19b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00371.html">Schedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#ad6452406cd4f7dc7eb0a83c98020e19b">getByName</a> (String name)</td></tr>
+<tr class="memitem:a1da02b562f8cc996bc3edcc5a918bfd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a1da02b562f8cc996bc3edcc5a918bfd2">AllSchedules</a> (@Qualifier(&quot;scheduleTrackingDbConnector&quot;) CouchDbConnector db, <a class="el" href="a00417.html">TrackedSchedulesJsonReader</a> trackedSchedulesJsonReader, <a class="el" href="a00374.html">ScheduleFactory</a> scheduleFactory)</td></tr>
+<tr class="memitem:ad6452406cd4f7dc7eb0a83c98020e19b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00371.html">Schedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#ad6452406cd4f7dc7eb0a83c98020e19b">getByName</a> (String name)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae514d28300243ae4e760fa3e5474f130"></a>
+<a class="anchor" id="a1da02b562f8cc996bc3edcc5a918bfd2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00038.html#ae514d28300243ae4e760fa3e5474f130">org.motechproject.decisiontree.repository.AllTrees.AllTrees</a> </td>
+          <td class="memname"><a class="el" href="a00038.html#a1da02b562f8cc996bc3edcc5a918bfd2">org.motechproject.scheduletracking.api.repository.AllSchedules.AllSchedules</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(&quot;treesDatabase&quot;) CouchDbConnector&#160;</td>
-          <td class="paramname"><em>db</em></td><td>)</td>
-          <td><code> [protected]</code></td>
+          <td class="paramtype">@Qualifier(&quot;scheduleTrackingDbConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00417.html">TrackedSchedulesJsonReader</a>&#160;</td>
+          <td class="paramname"><em>trackedSchedulesJsonReader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00374.html">ScheduleFactory</a>&#160;</td>
+          <td class="paramname"><em>scheduleFactory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1da02b562f8cc996bc3edcc5a918bfd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00038.html#a1da02b562f8cc996bc3edcc5a918bfd2">org.motechproject.scheduletracking.api.repository.AllSchedules.AllSchedules</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;scheduleTrackingDbConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00417.html">TrackedSchedulesJsonReader</a>&#160;</td>
+          <td class="paramname"><em>trackedSchedulesJsonReader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00374.html">ScheduleFactory</a>&#160;</td>
+          <td class="paramname"><em>scheduleFactory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -139,12 +188,29 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aead27c47217aae3e5c0945c6a8ff7307"></a>
+<a class="anchor" id="ad6452406cd4f7dc7eb0a83c98020e19b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00397.html">Tree</a>&gt; <a class="el" href="a00038.html#aead27c47217aae3e5c0945c6a8ff7307">org.motechproject.decisiontree.repository.AllTrees.findByName</a> </td>
+          <td class="memname"><a class="el" href="a00371.html">Schedule</a> <a class="el" href="a00038.html#ad6452406cd4f7dc7eb0a83c98020e19b">org.motechproject.scheduletracking.api.repository.AllSchedules.getByName</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6452406cd4f7dc7eb0a83c98020e19b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00371.html">Schedule</a> <a class="el" href="a00038.html#ad6452406cd4f7dc7eb0a83c98020e19b">org.motechproject.scheduletracking.api.repository.AllSchedules.getByName</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>

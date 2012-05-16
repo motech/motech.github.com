@@ -92,106 +92,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00949.html">outbox</a>      </li>
-      <li class="navelem"><a class="el" href="a00950.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00953.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00030.html">AllOutboundVoiceMessages</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01487.html">messagecampaign</a>      </li>
+      <li class="navelem"><a class="el" href="a01490.html">dao</a>      </li>
+      <li class="navelem"><a class="el" href="a00030.html">AllMessageCampaigns</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages Class Reference</div>  </div>
+<div class="title">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits MotechBaseRepository&lt; OutboundVoiceMessage &gt;.</p>
-
-<p><a href="a01251.html">List of all members.</a></p>
+<p><a href="a01861.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae61eb67939ba050380b29273e8eeae7f"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00312.html">OutboundVoiceMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#ae61eb67939ba050380b29273e8eeae7f">getPendingMessages</a> (String partyId)</td></tr>
-<tr class="memitem:aa1fada3db0d6447594f457a995eabeff"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00312.html">OutboundVoiceMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#aa1fada3db0d6447594f457a995eabeff">getSavedMessages</a> (String partyId)</td></tr>
-<tr class="memitem:a6225c4e84068a6738a17ab20f5c1101a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a6225c4e84068a6738a17ab20f5c1101a">getPendingMessagesCount</a> (String partyId)</td></tr>
-<tr class="memitem:afb56ec8f48e11850cc62598348a26e6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#afb56ec8f48e11850cc62598348a26e6c">getPendingMessagesCount</a> (String partyId, String voiceMessageTypeName)</td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad8bef5a1af7d2991cd077b21c933bff8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#ad8bef5a1af7d2991cd077b21c933bff8">AllOutboundVoiceMessages</a> (@Qualifier(&quot;outboxDatabase&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:acb3e29399b9b8d60467bd65b6737b27b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#acb3e29399b9b8d60467bd65b6737b27b">AllMessageCampaigns</a> (Properties properties, <a class="el" href="a00264.html">MotechJsonReader</a> motechJsonReader)</td></tr>
+<tr class="memitem:ad95fbf03c86479e509c5ccc7ef307841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#ad95fbf03c86479e509c5ccc7ef307841">AllMessageCampaigns</a> (@Qualifier(value=&quot;messageCampaignProperties&quot;) Properties properties)</td></tr>
+<tr class="memitem:a0900438525239bec0c50e0c5d1dc613f"><td class="memItemLeft" align="right" valign="top">Campaign&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a0900438525239bec0c50e0c5d1dc613f">get</a> (String campaignName)</td></tr>
+<tr class="memitem:a270cb752a99f6bac8e6461d026c6ddd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00075.html">CampaignMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a270cb752a99f6bac8e6461d026c6ddd5">get</a> (String campaignName, String messageKey)</td></tr>
+<tr class="memitem:a1b74d1fd90766bd2f185ae881befc74f"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00114.html">DayOfWeek</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a1b74d1fd90766bd2f185ae881befc74f">getApplicableDaysForRepeatingCampaign</a> (String campaignName, String messageName)</td></tr>
+<tr class="memitem:a0a97c65ebad0be03435b3eaa2ba05dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00075.html">CampaignMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a0a97c65ebad0be03435b3eaa2ba05dc0">getCampaignMessageByMessageName</a> (String campaignName, String messageName)</td></tr>
+<tr class="memitem:acb3e29399b9b8d60467bd65b6737b27b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#acb3e29399b9b8d60467bd65b6737b27b">AllMessageCampaigns</a> (Properties properties, <a class="el" href="a00264.html">MotechJsonReader</a> motechJsonReader)</td></tr>
+<tr class="memitem:ad95fbf03c86479e509c5ccc7ef307841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#ad95fbf03c86479e509c5ccc7ef307841">AllMessageCampaigns</a> (@Qualifier(value=&quot;messageCampaignProperties&quot;) Properties properties)</td></tr>
+<tr class="memitem:a0900438525239bec0c50e0c5d1dc613f"><td class="memItemLeft" align="right" valign="top">Campaign&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a0900438525239bec0c50e0c5d1dc613f">get</a> (String campaignName)</td></tr>
+<tr class="memitem:a270cb752a99f6bac8e6461d026c6ddd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00075.html">CampaignMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a270cb752a99f6bac8e6461d026c6ddd5">get</a> (String campaignName, String messageKey)</td></tr>
+<tr class="memitem:a1b74d1fd90766bd2f185ae881befc74f"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00114.html">DayOfWeek</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a1b74d1fd90766bd2f185ae881befc74f">getApplicableDaysForRepeatingCampaign</a> (String campaignName, String messageName)</td></tr>
+<tr class="memitem:a0a97c65ebad0be03435b3eaa2ba05dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00075.html">CampaignMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a0a97c65ebad0be03435b3eaa2ba05dc0">getCampaignMessageByMessageName</a> (String campaignName, String messageName)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a66d9a4a404aca4cbd4b997912dcfbd6e"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a66d9a4a404aca4cbd4b997912dcfbd6e">MESSAGECAMPAIGN_DEFINITION_FILE</a> = &quot;messagecampaign.definition.file&quot;</td></tr>
+<tr class="memitem:a280b5bbccaafe757f0c307cf4e4eac7a"><td class="memItemLeft" align="right" valign="top">static List&lt; Campaign &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00030.html#a280b5bbccaafe757f0c307cf4e4eac7a">campaigns</a> = new ArrayList&lt;Campaign&gt;()</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad8bef5a1af7d2991cd077b21c933bff8"></a>
+<a class="anchor" id="acb3e29399b9b8d60467bd65b6737b27b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00030.html#ad8bef5a1af7d2991cd077b21c933bff8">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.AllOutboundVoiceMessages</a> </td>
+          <td class="memname"><a class="el" href="a00030.html#acb3e29399b9b8d60467bd65b6737b27b">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.AllMessageCampaigns</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(&quot;outboxDatabase&quot;) CouchDbConnector&#160;</td>
-          <td class="paramname"><em>db</em></td><td>)</td>
-          <td><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ae61eb67939ba050380b29273e8eeae7f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="a00312.html">OutboundVoiceMessage</a>&gt; <a class="el" href="a00030.html#ae61eb67939ba050380b29273e8eeae7f">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getPendingMessages</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>partyId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6225c4e84068a6738a17ab20f5c1101a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="a00030.html#a6225c4e84068a6738a17ab20f5c1101a">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getPendingMessagesCount</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>partyId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afb56ec8f48e11850cc62598348a26e6c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="a00030.html#a6225c4e84068a6738a17ab20f5c1101a">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getPendingMessagesCount</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>partyId</em>, </td>
+          <td class="paramtype">Properties&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>voiceMessageTypeName</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00264.html">MotechJsonReader</a>&#160;</td>
+          <td class="paramname"><em>motechJsonReader</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -204,16 +159,284 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa1fada3db0d6447594f457a995eabeff"></a>
+<a class="anchor" id="ad95fbf03c86479e509c5ccc7ef307841"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00312.html">OutboundVoiceMessage</a>&gt; <a class="el" href="a00030.html#aa1fada3db0d6447594f457a995eabeff">org.motechproject.outbox.api.repository.AllOutboundVoiceMessages.getSavedMessages</a> </td>
+          <td class="memname"><a class="el" href="a00030.html#acb3e29399b9b8d60467bd65b6737b27b">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.AllMessageCampaigns</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(value=&quot;messageCampaignProperties&quot;) Properties&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb3e29399b9b8d60467bd65b6737b27b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00030.html#acb3e29399b9b8d60467bd65b6737b27b">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.AllMessageCampaigns</a> </td>
+          <td>(</td>
+          <td class="paramtype">Properties&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00264.html">MotechJsonReader</a>&#160;</td>
+          <td class="paramname"><em>motechJsonReader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad95fbf03c86479e509c5ccc7ef307841"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00030.html#acb3e29399b9b8d60467bd65b6737b27b">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.AllMessageCampaigns</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(value=&quot;messageCampaignProperties&quot;) Properties&#160;</td>
+          <td class="paramname"><em>properties</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a0900438525239bec0c50e0c5d1dc613f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Campaign <a class="el" href="a00030.html#a0900438525239bec0c50e0c5d1dc613f">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.get</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>partyId</em></td><td>)</td>
+          <td class="paramname"><em>campaignName</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0900438525239bec0c50e0c5d1dc613f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Campaign <a class="el" href="a00030.html#a0900438525239bec0c50e0c5d1dc613f">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.get</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>campaignName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a270cb752a99f6bac8e6461d026c6ddd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00075.html">CampaignMessage</a> <a class="el" href="a00030.html#a0900438525239bec0c50e0c5d1dc613f">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.get</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>campaignName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a270cb752a99f6bac8e6461d026c6ddd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00075.html">CampaignMessage</a> <a class="el" href="a00030.html#a0900438525239bec0c50e0c5d1dc613f">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.get</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>campaignName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b74d1fd90766bd2f185ae881befc74f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00114.html">DayOfWeek</a>&gt; <a class="el" href="a00030.html#a1b74d1fd90766bd2f185ae881befc74f">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.getApplicableDaysForRepeatingCampaign</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>campaignName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b74d1fd90766bd2f185ae881befc74f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00114.html">DayOfWeek</a>&gt; <a class="el" href="a00030.html#a1b74d1fd90766bd2f185ae881befc74f">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.getApplicableDaysForRepeatingCampaign</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>campaignName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a97c65ebad0be03435b3eaa2ba05dc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00075.html">CampaignMessage</a> <a class="el" href="a00030.html#a0a97c65ebad0be03435b3eaa2ba05dc0">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.getCampaignMessageByMessageName</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>campaignName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a97c65ebad0be03435b3eaa2ba05dc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00075.html">CampaignMessage</a> <a class="el" href="a00030.html#a0a97c65ebad0be03435b3eaa2ba05dc0">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.getCampaignMessageByMessageName</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>campaignName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a280b5bbccaafe757f0c307cf4e4eac7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt; Campaign &gt; <a class="el" href="a00030.html#a280b5bbccaafe757f0c307cf4e4eac7a">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.campaigns</a> = new ArrayList&lt;Campaign&gt;()<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66d9a4a404aca4cbd4b997912dcfbd6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final String <a class="el" href="a00030.html#a66d9a4a404aca4cbd4b997912dcfbd6e">org.motechproject.server.messagecampaign.dao.AllMessageCampaigns.MESSAGECAMPAIGN_DEFINITION_FILE</a> = &quot;messagecampaign.definition.file&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
