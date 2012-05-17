@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -224,7 +224,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Handles Appointment Reminder HTTP requests and generates a VXML document based on a Velocity template. </p>
 <p>The HTTP request may contain an optional 'mId' parameter with value of ID of the message for which VXML document will be generated. If the "mId" parameter is not passed the next pending voice message will be obtained from the outbox and a VXML document will be generated for that message </p>
-<p>URL to request appointment reminder VoiceXML: <a href="http://">http://</a>&lt;host&gt;:&lt;port&gt;/&lt;motech-platform-server&gt;/module/outbox/vxml/outboxMessage?mId=&lt;messageId&gt; </p>
+<p>URL to request appointment reminder VoiceXML: <a href="http://{host}:{port}/">http://{host}:{port}/</a>{motech-platform-server{/module/outbox/vxml/outboxMessage?mId={messageId} </p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Handles Appointment Reminder HTTP requests and generates a VXML document based on a Velocity template. </p>
 <p>The HTTP request may contain an optional 'mId' parameter with value of ID of the message for which VXML document will be generated. If the "mId" parameter is not passed the next pending voice message will be obtained from the outbox and a VXML document will be generated for that message </p>
-<p>URL to request appointment reminder VoiceXML: <a href="http://">http://</a>&lt;host&gt;:&lt;port&gt;/&lt;motech-platform-server&gt;/module/outbox/vxml/outboxMessage?mId=&lt;messageId&gt; </p>
+<p>URL to request appointment reminder VoiceXML: <a href="http://{host}:{port}/">http://{host}:{port}/</a>{motech-platform-server{/module/outbox/vxml/outboxMessage?mId={messageId} </p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Static Public Attributes</h2></td></tr>
 <p>Handles Outbox HTTP requests to remove saved in the outbox message and generates a VXML document with message remove confirmation. </p>
 <p>The generated VXML document based on the msgRemovedConf.vm Velocity template.</p>
 <p>The message will not be physically removed. The message status will be set to PLAYED.</p>
-<p>URL to request a saved VoiceXML message from outbox : <a href="http://">http://</a>&lt;host&gt;:&lt;port&gt;/&lt;motech-platform-server&gt;/module/outbox/vxml/remove?mId=$message.id&amp;ln=$language&gt; </p>
+<p>URL to request a saved VoiceXML message from outbox : <a href="http://{host}:{port}">http://{host}:{port}</a>&gt;/{motech-platform-server}&gt;/module/outbox/vxml/remove?mId=$message.id&amp;ln={language} </p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ Static Public Attributes</h2></td></tr>
 <p>Handles Outbox HTTP requests to remove saved in the outbox message and generates a VXML document with message remove confirmation. </p>
 <p>The generated VXML document based on the msgRemovedConf.vm Velocity template.</p>
 <p>The message will not be physically removed. The message status will be set to PLAYED.</p>
-<p>URL to request a saved VoiceXML message from outbox : <a href="http://">http://</a>&lt;host&gt;:&lt;port&gt;/&lt;motech-platform-server&gt;/module/outbox/vxml/remove?mId=$message.id&amp;ln=$language&gt; </p>
+<p>URL to request a saved VoiceXML message from outbox : <a href="http://{host}:{port}">http://{host}:{port}</a>&gt;/{motech-platform-server}&gt;/module/outbox/vxml/remove?mId=$message.id&amp;ln={language} </p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Handles Outbox HTTP requests and generates a VXML document based on a Velocity template and data saved in the outbox. </p>
-<p>URL to request a saved VoiceXML message from outbox : <a href="http://">http://</a>&lt;host&gt;:&lt;port&gt;/&lt;motech-platform-server&gt;/module/outbox/vxml/savedMessage&gt; </p>
+<p>URL to request a saved VoiceXML message from outbox : <a href="http://{host}:{port}/{motech-platform-server}/module/outbox/vxml/savedMessage">http://{host}:{port}/{motech-platform-server}/module/outbox/vxml/savedMessage</a> </p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Handles Outbox HTTP requests and generates a VXML document based on a Velocity template and data saved in the outbox. </p>
-<p>URL to request a saved VoiceXML message from outbox : <a href="http://">http://</a>&lt;host&gt;:&lt;port&gt;/&lt;motech-platform-server&gt;/module/outbox/vxml/savedMessage&gt; </p>
+<p>URL to request a saved VoiceXML message from outbox : <a href="http://{host}:{port}/{motech-platform-server}/module/outbox/vxml/savedMessage">http://{host}:{port}/{motech-platform-server}/module/outbox/vxml/savedMessage</a> </p>
 
 </div>
 </div>
