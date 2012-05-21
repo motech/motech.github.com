@@ -12,7 +12,7 @@ title: MOTECH - Mobile Technology for Community Health
     <h3>Message Campaign Module</h3>
 
     <h4>Description</h4>
-    <p>The MOTECH message campaign module is used to enroll users into messaging campaigns. A user may be a patient, worker, lab, facility, or other desired recipient of the information to be disseminated. A campaign is a course of informational messages that are sent to the target user on an assigned date or schedule. A user can be entered into a campaign at any point during its duration. Users may be removed or re-enrolled into campaigns. The languages and formats of the campaign messages can be specified (IVR, SMS, English, etc). Campaign messages follow a clearly defined schedule and are automatically triggered by the scheduling system.</p>
+    <p>The MOTECH message campaign module is used to enroll users into messaging campaigns. A user may be a patient, worker, lab, facility, or other desired recipient of the information to be disseminated. A campaign is a course of informational messages that are sent to the target user on an assigned date or schedule. A user can be entered into a campaign at any point during its duration via a Campaign Request. Users may be removed or re-enrolled into campaigns. The languages and formats of the campaign messages can be specified (IVR, SMS, English, etc). Campaign messages follow a clearly defined schedule and are automatically triggered by the scheduling system.</p>
 
 
     <h4>Information for implementation</h4>
@@ -20,20 +20,23 @@ title: MOTECH - Mobile Technology for Community Health
 
     <ul>
       <li>Defining the campaign's characteristics</li>
-      <li>Starting or stopping a specific campaign for a user, or stopping all campaigns for a user</li>
+      <li>Starting or stopping a specific campaign message for a user, or stopping an entire campaign (all messages) for a user</li>
       <li>Providing the content for campaign messages</li>
+      <li>Querying enrollments by a variable set of criterion (campaign name, external Id, status)</li>
     </ul>
 
 
-    <h4>Defining the campaign's characteristics</h4>
-    <p>Specifying the characteristics of a campaign and its messages is typically accomplished using a JSON (JavaScript Object Notation) document. The messageCampaign.properties file specifies the location and name of the JSON message campaign file. Campaigns have a name and type in addition to other fields depending on the message type.</p>
-
+    <h4>Configuration</h4>
+    <p>The module provides its configuration in a messageCampaign.properties file. This file specifies the name and location of the JSON message campaign. This file also defines a strategy for providing client customization of message reminder times, which is explained in detail below in the discussion of REPEATING message campaigns.</p>
+  
+   <h4>Defining the campaign's characteristics</h4>
+    <p>Specifying the characteristics of a campaign and its messages is typically accomplished using a JSON (JavaScript Object Notation) document. The messageCampaign.properties configuration file specifies the location and name of the JSON message campaign file. Campaigns have a name and type in addition to other fields depending on the message type.</p>
 
     <h4>Types</h4>
-    <p>Campaigns contain a field for type which determines the type of message that will apply to the campaign. All campaign messages that are part of a campaign must be of the same campaign type. The module contains four different campaign types: absolute, cron based, offset and repeating. All campaigns contain a field for the name of the campaign and its type, along with a list of its campaign messages.</p>
+    <p>Campaigns contain a field for a type, which determines the type of message that will apply to the campaign. In a particular campaign, all campaign messages must be of the same campaign type. The module contains four different campaign types: absolute, cron based, offset, and repeating. All campaigns contain a field for the campaign name, campaign type, and a list of campaign messages. Each type of campaign has additional fields that correspond to its type specification. Each campaign message has the fields name, formats,  languages, and messageKey, along with additional fields depending on their campaign type.</p>
 
     <h5>Absolute Campaign</h5>
-    <p>This type of campaign is specified as ABSOLUTE. Absolute campaign messages contain a field for the specific date in which to send the message. </p>
+    <p>This type of campaign is specified as ABSOLUTE. Absolute campaign messages contain an additional field for the specific date in which to send the message, as they are only sent once. </p>
 
     {% highlight javascript %}
     {
@@ -76,7 +79,7 @@ title: MOTECH - Mobile Technology for Community Health
     </dl> 
 
     <h5>Offset Campaign</h5>
-    <p>This type of campaign is specified as OFFSET and also includes a field for max duration. There is a field for the maximum duration of the campaign. Each offset message contains an offset field. The offset determines how many days or weeks from the reference date that the job (message) will be scheduled. If no reference date is supplied, then the current date is used.</p>
+    <p>This type of campaign is specified as OFFSET. Offset campaigns include an additional field: maxDuration. This field specifies the maximum duration of the campaign. Offset campaign messages contain the additional field timeOffset. The value of this field is determined by a message campaign scheduler. This scheduler specifies how many days or weeks from a specified reference date the job (message) will be scheduled. If no reference date is supplied, then the message campaign scheduler uses the current date as the reference date.</p>
 
     {% highlight javascript %}
     {
@@ -125,8 +128,17 @@ title: MOTECH - Mobile Technology for Community Health
     </dl>
 
     <h5>Repeating Campaign</h5>
-    <p>This type of campaign is specified as REPEATING and also includes the maximum duration for the messages to be repeated. There is a list of repeating messages with fields for the repeating message mode, repeat interval, week days applicable, deliver time and the calendar start of week. The repeat interval determines how many messages will be scheduled, based upon the max duration of the campaign. Week days determine which days of the week the messages will be sent. </p>
-
+    <p>This type of campaign is specified as REPEATING. Repeating campaigns also include the additional 
+maxDuration field, which specifies the maximum duration in which the messages will be repeated. Repeating
+ campaign messages contain the following additional message fields: repeatInterval, calendarStartOfWeek, weekDaysApplicable, 
+and deliverTime. The repeat interval combined with the maximum duration determines how many messages will be scheduled. 
+Week days determine which days of the week the messages will be sent at the time specified by the deliver time. A repeating message 
+will always have the basic campaign message’s fields (name, formats, languages, and messageKey) in addition to a combination of 
+the additional fields defined above. A new message can be constructed in three ways:</p>
+<dd>1) A repeat interval and a delivery time</dd>
+<dd>2) A list of applicable week days and a delivery time</dd>
+<dd>3) A known calendar start of week, a list of applicable week days, and a delivery time. </dd>
+<br>
     {% highlight javascript %}
     {
       "name" : "Re1ative Parameterized Dates Message Program",
@@ -199,10 +211,10 @@ title: MOTECH - Mobile Technology for Community Health
     </dl>
 
     <h6>Repeating strategy</h6>
-	  <p>For repeating campaigns, it is possible to specify a deliverTime, i.e. the time at which the event will be raised. If there are a large number of enrollments in the system, a large number of events will have to be raised at the same time. This will add a significant load on the scheduler for that instant of time. To avoid this, a strategy can be enabled in messageCampaign.properties (24.hour.repeating.campaign.strategy). When enabled, the reminder time of the enrollment will be used for the time at which the event will be raised. As different enrollments will have different reminder times there will not be one time at which all event must be raised, thus reducing maximum load.</p>
+	  <p>For repeating campaigns, it is possible to specify a deliverTime, i.e. the time at which the event will be raised. If there are a large number of enrollments in the system, a large number of events will have to be raised at the same time. This will add a significant load on the scheduler for that instant of time. To avoid this, a strategy can be enabled in messageCampaign.properties (24.hour.repeating.campaign.strategy). When enabled, the reminder time of the enrollment replaces the value of the deliverTime. This adds the feature that clients can customize their reminder times. Because different enrollments have different reminder times, the number of synchronous events will be reduced, therefore reducing the maximum load. </p>
 
     <h5>Cron-based Campaign</h5>
-    <p>This type of campaign is specified as CRON. Each cron campaign message contains a cron expression. The cron expression determines the periodic schedule the messages will follow. </p>
+    <p>This type of campaign is specified as CRON. Each cron campaign message contains an additional field that identifies a cron expression. The cron expression determines the periodic schedule the messages will follow. </p>
 
     {% highlight javascript %}
     {
@@ -237,9 +249,18 @@ title: MOTECH - Mobile Technology for Community Health
     </dl>
 
     <h4>Enrolling a user into a campaign</h4> 
-    <p>The message-campaign module exposes a MessageCampaignService interface with three methods: startFor, stopFor and stopAll, each accepting a CampaignRequest object. The stopFor method also accepts a string corresponding to the key of the message to stop. The startFor method creates an enrollment record for the entity and schedules the message or messages as jobs in the scheduler. The stopFor method unschedules a particular message that is part of the campaign found in the campaign request, for the external id found in the campaign request. The stopAll method unschedules all campaign messages from the campaign in the campaign request for the id in the campaign request.</p>
+    <p>A campaign request associates a user (worker, patient, lab, etc.) with a unique campaign name, reference date, and reminder time. 
+The campaign name determines which campaign will be retrieved or unscheduled from the JSON document. The reference date determines 
+the calendar date that the campaign will begin for that user. If no reference date is supplied, then the current date upon enrollment is used 
+in its place. The reminder time specifies what time of day in hours and minutes that the message will be sent. </p>
 
-    <p>A campaign request associates a user (patient, lab, etc) with a campaign name, reference date and reminder time. The campaign name determines which campaign will be retrieved from the JSON document or unscheduled. The reference date determines the calendar date that the campaign will begin for that user. If no reference date is supplied, then the current date upon enrollment is used in its place. The reminder time specifies what time of day in hours and minutes that the message will be sent.</p>
+   <img src="/assets/modules/campaignrequest.png"/>
+<p>  The message-campaign module exposes a MessageCampaignService interface with three methods that accept a Campaign Request 
+object: startFor, stopFor, and stopAll. The startFor method creates an enrollment record for the request. It also schedules a campaign’s 
+message or messages as jobs in the scheduler. The stopFor method also accepts the unique key of the message to stop. This method 
+unschedules one particular campaign message of the given campaign request. The stopAll method unschedules all campaign messages 
+from the campaign. The search() method allows querying for enrollments and is discussed below.</p>
+    
 
     <img src="/assets/modules/messagecampaignservice.png"/>
 
@@ -318,8 +339,17 @@ title: MOTECH - Mobile Technology for Community Health
       EventKeys.EXTERNAL_ID_KEY (ExternalID)
     {% endhighlight %}
 
+    <br>
+    <p>Upon completion of a campaign, the End Of Campaign Handler handles events with the key EventKeys.MESSAGE_CAMPAIGN_COMPLETED_EVENT_SUBJECT.</p>
+   {% highlight java %}
+    EventKeys.MESSAGE_CAMPAIGN_COMPLETED_EVENT_SUBJECT(org.motechproject.server.messagecampaign.campaign-completed)
+    Parameters/Payload (originating from a CampaignEnrollment):
+	EventKeys.ENROLLMENT_KEY (Enrollment)
+	EventKeys.SCHEDULE_JOB_ID_KEY (JobID)
+  {% endhighlight %}
+
     <h4>Emitted events:</h4>
-    CampaignMessageHandler emits events with the key EventKeys.MESSAGE_CAMPAIGN_FIRED_EVENT_SUBJECT after handling EventKeys.MESSAGE_CAMPAIGN_SEND_EVENT_SUBJECT
+   <p> CampaignMessageHandler emits events with the key EventKeys.MESSAGE_CAMPAIGN_FIRED_EVENT_SUBJECT after handling EventKeys.MESSAGE_CAMPAIGN_SEND_EVENT_SUBJECT.</p>
 
     {% highlight java %}
     EventKeys.Message_MESSAGE_CAMPAIGN_FIRED_EVENT_SUBJECT (org.motechproject.server.messagecampaign.fired-campaign-message)
@@ -333,24 +363,40 @@ title: MOTECH - Mobile Technology for Community Health
       EventKeys.MESSAGE_LANGUAGES (MessageLanguages) - list retrieved from the campaign message's languages field
     {% endhighlight %}
 
+<p>Upon completion of a campaign, the Message Campaign Scheduler emits events with the key 
+EventKeys.MESSAGE_CAMPAIGN_COMPLETED_EVENT_SUBJECT.</p>
+
+  {% highlight java %}
+  EventKeys.Message_MESSAGE_CAMPAIGN_COMPLETED_EVENT_SUBJECT (org.motechproject.server.messagecampaign.campaign-completed)
+  Parameters/Payload
+	EventKeys.ENROLLMENT_KEY (Enrollment) - used to identify the Campaign Enrollment
+	EventKeys.SCHEDULE_JOB_ID_KEY (JobID) - used to identify the ID of the job/event.
+  {% endhighlight %}
+
+
     <h4>Additional information:</h4>
 
-    <p>The message key uniquely identifies campaign messages (even repeating messages have their own unique message key).
-        external ID is a user ID, identifying a patient, nurse, lab, facility, etc, from the campaign request.</p>
+    <p>The message key uniquely identifies campaign messages (even repeating messages have their own unique message key). 
+The external ID field of the Campaign Request is a user ID, identifying a patient, nurse, lab, facility, etc.
 
-    <p>The Job ID is a string constructed from EventKeys.BASE_SUBJECT, campaign name, external ID, and the message key, the latter three are from the campaign request</p>
+<p>The unique Job ID is a string constructed from EventKeys.BASE_SUBJECT, two fields from the campaign request: 
+campaign name and external ID, and one field from the campaign message: messageKey.</p>
 
-    <p>If the campaign name is Campaign1, externalID is 123 and the message key is MessageKey4, then the Job ID will be:
-        org.motechproject.server.messagecampaign.Campaign1.123.MessageKey4</p>
+<p>As an example, if the campaign name is Campaign1, externalID is 123 and the message key is MessageKey4, then the 
+Job ID would be: “org.motechproject.server.messagecampaign.Campaign1.123.MessageKey4.”</p>
 
-    <p>Note that some characteristics of a campaign message (for example, repeatInterval from repeating messages) are not sent as part of an event payload.</p>
+<p>Note that some characteristics of a campaign message (for example, repeatInterval from repeating messages) 
+are not sent as part of an event payload.</p>
 
     <p>Graphical representation of the event flow through the message campaign module:</p>
 
     <img src="/assets/modules/campaignmessageflow.png"/>
 
     <h4>Querying enrollments</h4> 
-    <p>The module provides a search() method for querying enrollments. This allows the client to find enrollments using various critera (based on state, campaign etc). search() takes a CampaignEnrollmentsQuery. The query can be built by adding search clauses such as status, campaign name etc. The clauses together will define a specific seatch criteria.</p>
+    <p>The module’s Message Campaign Service, in addition to its capability to start, stop, or stop all message(s), is capable of searching Campaign Enrollment 
+Records based on particular criteria provided by a Campaign Enrollments Query object. This  service’s search() allows the client to query for enrollment records
+ using various criteria: external ID, status, and/or campaign name. Queries are built by adding one or more of these criteria to the Campaign Enrollment 
+Query’s list of criteria. The clauses together define specific search criteria. The method returns a list of matching Campaign Enrollment Records.</p>
 
 	<p>Examples:
 
@@ -370,9 +416,19 @@ title: MOTECH - Mobile Technology for Community Health
 	will find active enrollments enrolled into "My Program" campaign.
 	</p>
 
+<img src="/assets/modules/campaignenrollmentrecord.png"/>
+<br>
+<img src="/assets/modules/campaignenrollmentsquery.png"/>
+	
     <h4>Questions</h4>
 
-    <p>Why do offset campaigns have a field for maximum duration, but cron based do not? Offset campaigns are scheduled as a single RunOnceSchedulableJob (repeating campaigns schedule multiple RunOnceSchedulableJobs). Cron are repeating and scheduled as a CronSchedulableJob with a null end date. It seems that the current implementation of offset campaigns has no use for a maximum duration field and cron based may. Is this wrong?</p>
+    <p>It seems that the search() method of the Message Campaign Service could vary in performance based on the order of the criteria specified.
+ Because each order of filtering will ultimately result in the same set, it seems there should be a recommended order in order to maximize 
+performance. Would it be advisable that one initially specifies a query that would return the minimized subset of results (for example, 
+query based on campaign name), and select further queries from this subset? Or should the query collect a larger subset first (for example, 
+query based on enrollment status), and then become more narrow?</p>
+
+<p>In addition, would an implementer ever have a reason to use the Campaign Enrollment Service directly to query for enrollments?</p>
   </div>
  </div>
 
