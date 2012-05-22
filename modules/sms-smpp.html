@@ -42,13 +42,21 @@ This event will be emitted by the sms-api module. The SMPP module will send an s
 
     <h4>Emitted events:</h4>
 {% highlight java %}
+Subject: EventSubjects.SMS_DELIVERY_REPORT
+Payload:
+EventDataKeys.SENDER ("sender") mapped to a String
+EventDataKeys.STATUS_MESSAGE ("status_message") mapped to a String
+EventDataKeys.TIMESTAMP ("timestamp") mapped to DateTime
+{% endhighlight %}
+This event will be emitted by the module when the SMSC notifies the module with the delivery status of an outbound message.
+
+{% highlight java %}
 Subject: EventSubjects.SMS_FAILURE_NOTIFICATION
 Payload:
 EventDataKeys.RECIPIENT ("number") mapped to a String
 EventDataKeys.MESSAGE ("message") mapped to a String
 {% endhighlight %}
 This event will be emitted by the module in the case the delivery of a message has failed. If the original send request had multiple recipients and the delivery fails for each one of them then individual events will be raised for each of the recipient.
-
 
 {% highlight java %}
 Subject: EventSubjects.INBOUND_SMS
@@ -58,6 +66,12 @@ EventDataKeys.INBOUND_MESSAGE ("message") mapped to a String
 EventDataKeys.TIMESTAMP ("date") mapped to DateTime
 {% endhighlight %}
 This event is emitted for an inbound sms. The payload contains the sender's number, the message text and the timestamp when the sender sent the message.
+
+	<h4>Persistence</h4>
+The module persists SMS messages in database. Outbound messages and inbound messages are stored in separate databases which can be accesses through the respective repository classes AllOutboundSMS and AllInboundSMS. For outbound messages, the delivery status of the message will be updated when the status is received from the SMSC. The repository classes also expose a number of query methods to find messages based on a few some criteria.
+
+	<h4>Configuration</h4>
+Various SMPP parameters like can be configured through smpp.properties. The supported parameters are system_id, password, bind_type, bind_ton, bind_npi, source_ton, source_npi, dest_ton, dest_npi.
 
 	<h4>Testing</h4>
 <p>Several free SMSC simulators are available which can be used to test the module. We have included one of them (from Seleinum software) under motech/tools with a suitable configuration for testing out the module. We also recommend the one available from Logica.</p>
