@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,13 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a01008.html">pillreminder</a>      </li>
-      <li class="navelem"><a class="el" href="a01009.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a01014.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00330.html">PillReminderServiceImpl</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01427.html">mrs</a>      </li>
+      <li class="navelem"><a class="el" href="a01428.html">exception</a>      </li>
+      <li class="navelem"><a class="el" href="a00330.html">PatientNotFoundException</a>      </li>
     </ul>
   </div>
 </div>
@@ -106,167 +104,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl Class Reference</div>  </div>
+<div class="title">org.motechproject.mrs.exception.PatientNotFoundException Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00330.png" usemap="#org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl_map" alt=""/>
-  <map id="org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl_map" name="org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl_map">
-<area href="a00329.html" alt="org.motechproject.server.pillreminder.api.service.PillReminderService" shape="rect" coords="0,0,432,24"/>
-</map>
- </div></div>
 
-<p><a href="a01427.html">List of all members.</a></p>
+<p><a href="a01705.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac5e2ffc0c3251d7a4e539fa98dbb8aea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html#ac5e2ffc0c3251d7a4e539fa98dbb8aea">PillReminderServiceImpl</a> (<a class="el" href="a00032.html">AllPillRegimens</a> allPillRegimens, <a class="el" href="a00326.html">PillRegimenJobScheduler</a> pillRegimenJobScheduler)</td></tr>
-<tr class="memitem:a18c0a09d7a1423be8d444dca06443953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html#a18c0a09d7a1423be8d444dca06443953">createNew</a> (<a class="el" href="a00106.html">DailyPillRegimenRequest</a> dailyPillRegimenRequest)</td></tr>
-<tr class="memitem:adb7252fda289559e85c3e204592a083e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html#adb7252fda289559e85c3e204592a083e">renew</a> (<a class="el" href="a00106.html">DailyPillRegimenRequest</a> dailyPillRegimenRequest)</td></tr>
-<tr class="memitem:add7be41fb6a7ed297b43b09d96f933a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html#add7be41fb6a7ed297b43b09d96f933a6">dosageStatusKnown</a> (String pillRegimenId, String dosageId, LocalDate lastCapturedDate)</td></tr>
-<tr class="memitem:af3565685b441c2f317c2a337cb4605fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00327.html">PillRegimenResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html#af3565685b441c2f317c2a337cb4605fc">getPillRegimen</a> (String externalId)</td></tr>
-<tr class="memitem:a3adc711de493877c891f9310e8e5ce3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html#a3adc711de493877c891f9310e8e5ce3b">remove</a> (String externalID)</td></tr>
+<tr class="memitem:ad6a033ad153aaf0890fcde1a409aa29c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html#ad6a033ad153aaf0890fcde1a409aa29c">PatientNotFoundException</a> (String message)</td></tr>
+<tr class="memitem:ad6a033ad153aaf0890fcde1a409aa29c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html#ad6a033ad153aaf0890fcde1a409aa29c">PatientNotFoundException</a> (String message)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac5e2ffc0c3251d7a4e539fa98dbb8aea"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Thrown when a Patient is null while performing operations on it. </p>
+<ul>
+<li>
+For e.g. in setting the patient as deceased, when Patient is not found this exception is thrown </li>
+</ul>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad6a033ad153aaf0890fcde1a409aa29c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00330.html#ac5e2ffc0c3251d7a4e539fa98dbb8aea">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.PillReminderServiceImpl</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00032.html">AllPillRegimens</a>&#160;</td>
-          <td class="paramname"><em>allPillRegimens</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00326.html">PillRegimenJobScheduler</a>&#160;</td>
-          <td class="paramname"><em>pillRegimenJobScheduler</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a18c0a09d7a1423be8d444dca06443953"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00330.html#a18c0a09d7a1423be8d444dca06443953">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.createNew</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00106.html">DailyPillRegimenRequest</a>&#160;</td>
-          <td class="paramname"><em>dailyPillRegimenRequest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="a00329.html#a80a240c35b0c57655ff908352c9fdbe2">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="add7be41fb6a7ed297b43b09d96f933a6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00330.html#add7be41fb6a7ed297b43b09d96f933a6">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.dosageStatusKnown</a> </td>
+          <td class="memname"><a class="el" href="a00330.html#ad6a033ad153aaf0890fcde1a409aa29c">org.motechproject.mrs.exception.PatientNotFoundException.PatientNotFoundException</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>pillRegimenId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>dosageId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LocalDate&#160;</td>
-          <td class="paramname"><em>lastCapturedDate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="a00329.html#a0d1278250dbb1a4ed80a8bab8fff037b">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="af3565685b441c2f317c2a337cb4605fc"></a>
+<a class="anchor" id="ad6a033ad153aaf0890fcde1a409aa29c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00327.html">PillRegimenResponse</a> <a class="el" href="a00330.html#af3565685b441c2f317c2a337cb4605fc">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.getPillRegimen</a> </td>
+          <td class="memname"><a class="el" href="a00330.html#ad6a033ad153aaf0890fcde1a409aa29c">org.motechproject.mrs.exception.PatientNotFoundException.PatientNotFoundException</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Implements <a class="el" href="a00329.html#ad4d664b5ba423c554d3febd804f98ceb">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3adc711de493877c891f9310e8e5ce3b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00330.html#a3adc711de493877c891f9310e8e5ce3b">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.remove</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="a00329.html#aebbdfe14692ca4a78faca3e0ed4c4226">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adb7252fda289559e85c3e204592a083e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00330.html#adb7252fda289559e85c3e204592a083e">org.motechproject.server.pillreminder.api.service.PillReminderServiceImpl.renew</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00106.html">DailyPillRegimenRequest</a>&#160;</td>
-          <td class="paramname"><em>dailyPillRegimenRequest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="a00329.html#a89bb1eb9e0229631fda30bbc4c76ae96">org.motechproject.server.pillreminder.api.service.PillReminderService</a>.</p>
 
 </div>
 </div>

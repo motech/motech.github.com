@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,42 +92,302 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a01031.html">util</a>      </li>
-      <li class="navelem"><a class="el" href="a00388.html">StringUtil</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01520.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01523.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a00388.html">SmsAuditService</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.util.StringUtil Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.api.service.SmsAuditService Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.sms.api.service.SmsAuditService:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00388.png" usemap="#org.motechproject.sms.api.service.SmsAuditService_map" alt=""/>
+  <map id="org.motechproject.sms.api.service.SmsAuditService_map" name="org.motechproject.sms.api.service.SmsAuditService_map">
+<area href="a00389.html" alt="org.motechproject.sms.http.service.SmsAuditServiceImpl" shape="rect" coords="0,56,331,80"/>
+<area href="a00389.html" alt="org.motechproject.sms.http.service.SmsAuditServiceImpl" shape="rect" coords="341,56,672,80"/>
+<area href="a00385.html" alt="org.motechproject.sms.smpp.SmppAuditServiceImpl" shape="rect" coords="682,56,1013,80"/>
+<area href="a00385.html" alt="org.motechproject.sms.smpp.SmppAuditServiceImpl" shape="rect" coords="1023,56,1354,80"/>
+</map>
+ </div></div>
 
-<p><a href="a01472.html">List of all members.</a></p>
+<p><a href="a01967.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a40b7dd42d6f14d1107405086a5453436"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#a40b7dd42d6f14d1107405086a5453436">isNullOrEmpty</a> (String str)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1ecde2ec0d006fb9fcfd875b4297b1e7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00395.html">SMSRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#a1ecde2ec0d006fb9fcfd875b4297b1e7">allOutboundMessagesBetween</a> (DateTime from, DateTime to)</td></tr>
+<tr class="memitem:aa90af70884634cc8c80c8d5b4ad15477"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00395.html">SMSRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#aa90af70884634cc8c80c8d5b4ad15477">allOutboundMessagesBetween</a> (String phoneNumber, DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a5e96a69b0ca052c564f96619d0339c97"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00395.html">SMSRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#a5e96a69b0ca052c564f96619d0339c97">allInboundMessagesBetween</a> (DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a3fad98142093c46390fcfa3e0a58c79e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00395.html">SMSRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#a3fad98142093c46390fcfa3e0a58c79e">allInboundMessagesBetween</a> (String phoneNumber, DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a1ecde2ec0d006fb9fcfd875b4297b1e7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00395.html">SMSRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#a1ecde2ec0d006fb9fcfd875b4297b1e7">allOutboundMessagesBetween</a> (DateTime from, DateTime to)</td></tr>
+<tr class="memitem:aa90af70884634cc8c80c8d5b4ad15477"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00395.html">SMSRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#aa90af70884634cc8c80c8d5b4ad15477">allOutboundMessagesBetween</a> (String phoneNumber, DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a5e96a69b0ca052c564f96619d0339c97"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00395.html">SMSRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#a5e96a69b0ca052c564f96619d0339c97">allInboundMessagesBetween</a> (DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a3fad98142093c46390fcfa3e0a58c79e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00395.html">SMSRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00388.html#a3fad98142093c46390fcfa3e0a58c79e">allInboundMessagesBetween</a> (String phoneNumber, DateTime from, DateTime to)</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a40b7dd42d6f14d1107405086a5453436"></a>
+<a class="anchor" id="a5e96a69b0ca052c564f96619d0339c97"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static boolean <a class="el" href="a00388.html#a40b7dd42d6f14d1107405086a5453436">org.motechproject.util.StringUtil.isNullOrEmpty</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00395.html">SMSRecord</a>&gt; <a class="el" href="a00388.html#a5e96a69b0ca052c564f96619d0339c97">org.motechproject.sms.api.service.SmsAuditService.allInboundMessagesBetween</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td><code> [static]</code></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00385.html#ab6fdf3565b70ac91b09059ea5e715c4c">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00385.html#ab6fdf3565b70ac91b09059ea5e715c4c">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00389.html#a8bfcc8a8880365b3e436274d50ea0249">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>, and <a class="el" href="a00389.html#a8bfcc8a8880365b3e436274d50ea0249">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e96a69b0ca052c564f96619d0339c97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00395.html">SMSRecord</a>&gt; <a class="el" href="a00388.html#a5e96a69b0ca052c564f96619d0339c97">org.motechproject.sms.api.service.SmsAuditService.allInboundMessagesBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00385.html#ab6fdf3565b70ac91b09059ea5e715c4c">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00385.html#ab6fdf3565b70ac91b09059ea5e715c4c">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00389.html#a8bfcc8a8880365b3e436274d50ea0249">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>, and <a class="el" href="a00389.html#a8bfcc8a8880365b3e436274d50ea0249">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fad98142093c46390fcfa3e0a58c79e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00395.html">SMSRecord</a>&gt; <a class="el" href="a00388.html#a5e96a69b0ca052c564f96619d0339c97">org.motechproject.sms.api.service.SmsAuditService.allInboundMessagesBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00385.html#ab5650d87ae395e7c6620bb918fc2ab71">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00385.html#ab5650d87ae395e7c6620bb918fc2ab71">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00389.html#ae82481c009ad39a3a9184e8f905556ab">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>, and <a class="el" href="a00389.html#ae82481c009ad39a3a9184e8f905556ab">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fad98142093c46390fcfa3e0a58c79e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00395.html">SMSRecord</a>&gt; <a class="el" href="a00388.html#a5e96a69b0ca052c564f96619d0339c97">org.motechproject.sms.api.service.SmsAuditService.allInboundMessagesBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00385.html#ab5650d87ae395e7c6620bb918fc2ab71">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00385.html#ab5650d87ae395e7c6620bb918fc2ab71">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00389.html#ae82481c009ad39a3a9184e8f905556ab">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>, and <a class="el" href="a00389.html#ae82481c009ad39a3a9184e8f905556ab">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ecde2ec0d006fb9fcfd875b4297b1e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00395.html">SMSRecord</a>&gt; <a class="el" href="a00388.html#a1ecde2ec0d006fb9fcfd875b4297b1e7">org.motechproject.sms.api.service.SmsAuditService.allOutboundMessagesBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00385.html#a8a7d152a71f09d4ae4200c45ad9c6623">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00385.html#a8a7d152a71f09d4ae4200c45ad9c6623">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00389.html#a4572f1fdc29494885c2fd8b225cee8dc">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>, and <a class="el" href="a00389.html#a4572f1fdc29494885c2fd8b225cee8dc">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ecde2ec0d006fb9fcfd875b4297b1e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00395.html">SMSRecord</a>&gt; <a class="el" href="a00388.html#a1ecde2ec0d006fb9fcfd875b4297b1e7">org.motechproject.sms.api.service.SmsAuditService.allOutboundMessagesBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00385.html#a8a7d152a71f09d4ae4200c45ad9c6623">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00385.html#a8a7d152a71f09d4ae4200c45ad9c6623">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00389.html#a4572f1fdc29494885c2fd8b225cee8dc">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>, and <a class="el" href="a00389.html#a4572f1fdc29494885c2fd8b225cee8dc">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa90af70884634cc8c80c8d5b4ad15477"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00395.html">SMSRecord</a>&gt; <a class="el" href="a00388.html#a1ecde2ec0d006fb9fcfd875b4297b1e7">org.motechproject.sms.api.service.SmsAuditService.allOutboundMessagesBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00385.html#aec611656ab453917045ba7cc14e0f4cd">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00385.html#aec611656ab453917045ba7cc14e0f4cd">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00389.html#aaa0d2b17dbcacce23069930204bb6dbd">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>, and <a class="el" href="a00389.html#aaa0d2b17dbcacce23069930204bb6dbd">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa90af70884634cc8c80c8d5b4ad15477"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00395.html">SMSRecord</a>&gt; <a class="el" href="a00388.html#a1ecde2ec0d006fb9fcfd875b4297b1e7">org.motechproject.sms.api.service.SmsAuditService.allOutboundMessagesBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="a00385.html#aec611656ab453917045ba7cc14e0f4cd">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00385.html#aec611656ab453917045ba7cc14e0f4cd">org.motechproject.sms.smpp.SmppAuditServiceImpl</a>, <a class="el" href="a00389.html#aaa0d2b17dbcacce23069930204bb6dbd">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>, and <a class="el" href="a00389.html#aaa0d2b17dbcacce23069930204bb6dbd">org.motechproject.sms.http.service.SmsAuditServiceImpl</a>.</p>
 
 </div>
 </div>

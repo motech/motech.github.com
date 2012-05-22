@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,46 +92,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a01008.html">pillreminder</a>      </li>
-      <li class="navelem"><a class="el" href="a01009.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a01012.html">dao</a>      </li>
-      <li class="navelem"><a class="el" href="a00032.html">AllPillRegimens</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01527.html">repository</a>      </li>
+      <li class="navelem"><a class="el" href="a00032.html">AllOutboundSMS</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.pillreminder.api.dao.AllPillRegimens Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.repository.AllOutboundSMS Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits MotechBaseRepository&lt; PillRegimen &gt;.</p>
+<p>Inherits MotechBaseRepository&lt; OutboundSMS &gt;, and MotechBaseRepository&lt; OutboundSMS &gt;.</p>
 
-<p><a href="a01419.html">List of all members.</a></p>
+<p><a href="a01984.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6b457e61362ad5042c58c305b8fcc78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#ac6b457e61362ad5042c58c305b8fcc78">AllPillRegimens</a> (@Qualifier(&quot;pillReminderDbConnector&quot;) CouchDbConnector db)</td></tr>
-<tr class="memitem:a608bd6ce32d0f03587190059d80543da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00324.html">PillRegimen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a608bd6ce32d0f03587190059d80543da">findByExternalId</a> (String externalID)</td></tr>
-<tr class="memitem:a8acfbf328fb82ef86cfee4dfc0107d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a8acfbf328fb82ef86cfee4dfc0107d6c">updateLastCapturedDate</a> (String regimenId, String dosageId, LocalDate lastCapturedDate)</td></tr>
-<tr class="memitem:abe55787b25c4dda6315b9b74374ce17f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#abe55787b25c4dda6315b9b74374ce17f">addOrReplace</a> (<a class="el" href="a00324.html">PillRegimen</a> pillRegimen)</td></tr>
+<tr class="memitem:a39e26960b577e843dad34f7c0490e973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a39e26960b577e843dad34f7c0490e973">updateDeliveryStatus</a> (String recipient, String refNo, String deliveryStatus)</td></tr>
+<tr class="memitem:a0ab082581f4f589c2fb138bfdae627bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00320.html">OutboundSMS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a0ab082581f4f589c2fb138bfdae627bc">findLatestBy</a> (String refNo, String phoneNumber)</td></tr>
+<tr class="memitem:a57d142687065f40b42fa2643c72a0a91"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00320.html">OutboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a57d142687065f40b42fa2643c72a0a91">findAllBy</a> (String refNo, String phoneNumber)</td></tr>
+<tr class="memitem:a293eeb4b7b14cd2b92a9b85b3ab8dcc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00320.html">OutboundSMS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a293eeb4b7b14cd2b92a9b85b3ab8dcc4">findBy</a> (DateTime deliveryTime, String refNo, String phoneNumber)</td></tr>
+<tr class="memitem:a766bdbd7f2101a900c399a7e0e51cb79"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00320.html">OutboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a766bdbd7f2101a900c399a7e0e51cb79">messagesSentBetween</a> (String phoneNumber, DateTime from, DateTime to)</td></tr>
+<tr class="memitem:aedddd031e0ac04240527e2321f2c2d56"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00320.html">OutboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#aedddd031e0ac04240527e2321f2c2d56">messagesSentBetween</a> (DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a84336f4ef2d60c5481d95a8ce696cfbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a84336f4ef2d60c5481d95a8ce696cfbe">createOrReplace</a> (<a class="el" href="a00320.html">OutboundSMS</a> outboundSMS)</td></tr>
+<tr class="memitem:a39e26960b577e843dad34f7c0490e973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a39e26960b577e843dad34f7c0490e973">updateDeliveryStatus</a> (String recipient, String refNo, String deliveryStatus)</td></tr>
+<tr class="memitem:a0ab082581f4f589c2fb138bfdae627bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00320.html">OutboundSMS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a0ab082581f4f589c2fb138bfdae627bc">findLatestBy</a> (String refNo, String phoneNumber)</td></tr>
+<tr class="memitem:a57d142687065f40b42fa2643c72a0a91"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00320.html">OutboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a57d142687065f40b42fa2643c72a0a91">findAllBy</a> (String refNo, String phoneNumber)</td></tr>
+<tr class="memitem:a293eeb4b7b14cd2b92a9b85b3ab8dcc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00320.html">OutboundSMS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a293eeb4b7b14cd2b92a9b85b3ab8dcc4">findBy</a> (DateTime deliveryTime, String refNo, String phoneNumber)</td></tr>
+<tr class="memitem:a766bdbd7f2101a900c399a7e0e51cb79"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00320.html">OutboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a766bdbd7f2101a900c399a7e0e51cb79">messagesSentBetween</a> (String phoneNumber, DateTime from, DateTime to)</td></tr>
+<tr class="memitem:aedddd031e0ac04240527e2321f2c2d56"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00320.html">OutboundSMS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#aedddd031e0ac04240527e2321f2c2d56">messagesSentBetween</a> (DateTime from, DateTime to)</td></tr>
+<tr class="memitem:a84336f4ef2d60c5481d95a8ce696cfbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a84336f4ef2d60c5481d95a8ce696cfbe">createOrReplace</a> (<a class="el" href="a00320.html">OutboundSMS</a> outboundSMS)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a52446544e874b122cb6d1959064c5d6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a52446544e874b122cb6d1959064c5d6b">AllOutboundSMS</a> (@Qualifier(&quot;smppDBConnector&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a52446544e874b122cb6d1959064c5d6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html#a52446544e874b122cb6d1959064c5d6b">AllOutboundSMS</a> (@Qualifier(&quot;smppDBConnector&quot;) CouchDbConnector db)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac6b457e61362ad5042c58c305b8fcc78"></a>
+<a class="anchor" id="a52446544e874b122cb6d1959064c5d6b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00032.html#ac6b457e61362ad5042c58c305b8fcc78">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.AllPillRegimens</a> </td>
+          <td class="memname"><a class="el" href="a00032.html#a52446544e874b122cb6d1959064c5d6b">org.motechproject.sms.repository.AllOutboundSMS.AllOutboundSMS</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(&quot;pillReminderDbConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramtype">@Qualifier(&quot;smppDBConnector&quot;) CouchDbConnector&#160;</td>
           <td class="paramname"><em>db</em></td><td>)</td>
-          <td></td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a52446544e874b122cb6d1959064c5d6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00032.html#a52446544e874b122cb6d1959064c5d6b">org.motechproject.sms.repository.AllOutboundSMS.AllOutboundSMS</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;smppDBConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -140,15 +170,15 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="abe55787b25c4dda6315b9b74374ce17f"></a>
+<a class="anchor" id="a84336f4ef2d60c5481d95a8ce696cfbe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00032.html#abe55787b25c4dda6315b9b74374ce17f">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.addOrReplace</a> </td>
+          <td class="memname">void <a class="el" href="a00032.html#a84336f4ef2d60c5481d95a8ce696cfbe">org.motechproject.sms.repository.AllOutboundSMS.createOrReplace</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00324.html">PillRegimen</a>&#160;</td>
-          <td class="paramname"><em>pillRegimen</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00320.html">OutboundSMS</a>&#160;</td>
+          <td class="paramname"><em>outboundSMS</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -157,15 +187,15 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a608bd6ce32d0f03587190059d80543da"></a>
+<a class="anchor" id="a84336f4ef2d60c5481d95a8ce696cfbe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00324.html">PillRegimen</a> <a class="el" href="a00032.html#a608bd6ce32d0f03587190059d80543da">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.findByExternalId</a> </td>
+          <td class="memname">void <a class="el" href="a00032.html#a84336f4ef2d60c5481d95a8ce696cfbe">org.motechproject.sms.repository.AllOutboundSMS.createOrReplace</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalID</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00320.html">OutboundSMS</a>&#160;</td>
+          <td class="paramname"><em>outboundSMS</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -174,27 +204,354 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8acfbf328fb82ef86cfee4dfc0107d6c"></a>
+<a class="anchor" id="a57d142687065f40b42fa2643c72a0a91"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00032.html#a8acfbf328fb82ef86cfee4dfc0107d6c">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.updateLastCapturedDate</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00320.html">OutboundSMS</a>&gt; <a class="el" href="a00032.html#a57d142687065f40b42fa2643c72a0a91">org.motechproject.sms.repository.AllOutboundSMS.findAllBy</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>regimenId</em>, </td>
+          <td class="paramname"><em>refNo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>dosageId</em>, </td>
+          <td class="paramname"><em>phoneNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57d142687065f40b42fa2643c72a0a91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00320.html">OutboundSMS</a>&gt; <a class="el" href="a00032.html#a57d142687065f40b42fa2643c72a0a91">org.motechproject.sms.repository.AllOutboundSMS.findAllBy</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">LocalDate&#160;</td>
-          <td class="paramname"><em>lastCapturedDate</em>&#160;</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a293eeb4b7b14cd2b92a9b85b3ab8dcc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00320.html">OutboundSMS</a> <a class="el" href="a00032.html#a293eeb4b7b14cd2b92a9b85b3ab8dcc4">org.motechproject.sms.repository.AllOutboundSMS.findBy</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>deliveryTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a293eeb4b7b14cd2b92a9b85b3ab8dcc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00320.html">OutboundSMS</a> <a class="el" href="a00032.html#a293eeb4b7b14cd2b92a9b85b3ab8dcc4">org.motechproject.sms.repository.AllOutboundSMS.findBy</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>deliveryTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ab082581f4f589c2fb138bfdae627bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00320.html">OutboundSMS</a> <a class="el" href="a00032.html#a0ab082581f4f589c2fb138bfdae627bc">org.motechproject.sms.repository.AllOutboundSMS.findLatestBy</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ab082581f4f589c2fb138bfdae627bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00320.html">OutboundSMS</a> <a class="el" href="a00032.html#a0ab082581f4f589c2fb138bfdae627bc">org.motechproject.sms.repository.AllOutboundSMS.findLatestBy</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a766bdbd7f2101a900c399a7e0e51cb79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00320.html">OutboundSMS</a>&gt; <a class="el" href="a00032.html#a766bdbd7f2101a900c399a7e0e51cb79">org.motechproject.sms.repository.AllOutboundSMS.messagesSentBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a766bdbd7f2101a900c399a7e0e51cb79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00320.html">OutboundSMS</a>&gt; <a class="el" href="a00032.html#a766bdbd7f2101a900c399a7e0e51cb79">org.motechproject.sms.repository.AllOutboundSMS.messagesSentBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phoneNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aedddd031e0ac04240527e2321f2c2d56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00320.html">OutboundSMS</a>&gt; <a class="el" href="a00032.html#a766bdbd7f2101a900c399a7e0e51cb79">org.motechproject.sms.repository.AllOutboundSMS.messagesSentBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aedddd031e0ac04240527e2321f2c2d56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00320.html">OutboundSMS</a>&gt; <a class="el" href="a00032.html#a766bdbd7f2101a900c399a7e0e51cb79">org.motechproject.sms.repository.AllOutboundSMS.messagesSentBetween</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39e26960b577e843dad34f7c0490e973"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00032.html#a39e26960b577e843dad34f7c0490e973">org.motechproject.sms.repository.AllOutboundSMS.updateDeliveryStatus</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>recipient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deliveryStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39e26960b577e843dad34f7c0490e973"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00032.html#a39e26960b577e843dad34f7c0490e973">org.motechproject.sms.repository.AllOutboundSMS.updateDeliveryStatus</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>recipient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>refNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deliveryStatus</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -4,7 +4,7 @@
         <h1 id="logo">
             <a href="/index.html">MOTECH - Mobile Technology for Community Health</a>
         </h1>
-      <header-up-right>A Grameen Foundation Initiative</header-up-right>      
+      <header-up-right>A Grameen Foundation Initiative</header-up-right>
         <nav class="dropdown">
             <ul id="nav" class="clearfix">
                 <li><a href="/index.html">Home</a></li>
@@ -22,9 +22,11 @@
                     <ul>
                         <li><a href="/getting-started/index.html">Getting Started</a></li>
                         <li><a href="/modules/index.html">Modules</a></li>
-                        <li><a href="/getting-started/developing.html">Demos</a></li>                    
-					</ul>        
+                        <li><a href="/getting-started/developing.html">Demos</a></li>
+                        <li><a href="/javadoc/0.10/modules.html">Java Docs</a></li>
+					</ul>
                 </li>
+
 
 
 			 <li><a href="#">Code</a>
@@ -35,6 +37,7 @@
                 </li>
                 <li><a href="/releases.html">Releases</a>
                   <ul>
+                    <li><a href="/releases/r0.10.html">Release 0.10</a></li>
                     <li><a href="/releases/r0.9.html">Release 0.9</a></li>
                     <li><a href="/releases/r0.8.html">Release 0.8</a></li>
                     <li><a href="/releases/r0.7.html">Release 0.7</a></li>
@@ -47,6 +50,6 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul><!-- end #nav -->
         </nav>
-                    
+
     </div><!-- end .inner-wrap -->
 </header><!-- end header -->

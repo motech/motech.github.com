@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,107 +92,81 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00938.html">openmrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00947.html">security</a>      </li>
-      <li class="navelem"><a class="el" href="a00307.html">OpenMRSSession</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01433.html">openmrs</a>      </li>
+      <li class="navelem"><a class="el" href="a01443.html">services</a>      </li>
+      <li class="navelem"><a class="el" href="a00307.html">OpenMRSConceptAdapter</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.openmrs.security.OpenMRSSession Class Reference</div>  </div>
+<div class="title">org.motechproject.openmrs.services.OpenMRSConceptAdapter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01236.html">List of all members.</a></p>
+<p><a href="a01738.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8abe9d3949f850daa30a194f20a399d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00307.html#a8abe9d3949f850daa30a194f20a399d6">open</a> ()</td></tr>
-<tr class="memitem:a1dc97f4063d6edab51f0f3462579df9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00307.html#a1dc97f4063d6edab51f0f3462579df9c">authenticate</a> ()</td></tr>
-<tr class="memitem:a56365a6187deb5470d1d869de65d6de6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00307.html#a56365a6187deb5470d1d869de65d6de6">close</a> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac972a4ba6d6fccfa097888b518369e51"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00306.html">OpenMRSSecurityUser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00307.html#ac972a4ba6d6fccfa097888b518369e51">login</a> (String userName, String password)</td></tr>
+<tr class="memitem:aa79b0e265670519988f612ade801c2a7"><td class="memItemLeft" align="right" valign="top">Concept&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00307.html#aa79b0e265670519988f612ade801c2a7">getConceptByName</a> (String conceptName)</td></tr>
+<tr class="memitem:aa79b0e265670519988f612ade801c2a7"><td class="memItemLeft" align="right" valign="top">Concept&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00307.html#aa79b0e265670519988f612ade801c2a7">getConceptByName</a> (String conceptName)</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a1dc97f4063d6edab51f0f3462579df9c"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Adapter class to get Concepts in OpenMRS. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aa79b0e265670519988f612ade801c2a7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00307.html#a1dc97f4063d6edab51f0f3462579df9c">org.motechproject.openmrs.security.OpenMRSSession.authenticate</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a56365a6187deb5470d1d869de65d6de6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00307.html#a56365a6187deb5470d1d869de65d6de6">org.motechproject.openmrs.security.OpenMRSSession.close</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac972a4ba6d6fccfa097888b518369e51"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a00306.html">OpenMRSSecurityUser</a> <a class="el" href="a00307.html#ac972a4ba6d6fccfa097888b518369e51">org.motechproject.openmrs.security.OpenMRSSession.login</a> </td>
+          <td class="memname">Concept <a class="el" href="a00307.html#aa79b0e265670519988f612ade801c2a7">org.motechproject.openmrs.services.OpenMRSConceptAdapter.getConceptByName</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>userName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>conceptName</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>password</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Fetches the Concept object of openMRS. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conceptName</td><td>Name of the concept </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>OpenMRS concept </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="a8abe9d3949f850daa30a194f20a399d6"></a>
+<a class="anchor" id="aa79b0e265670519988f612ade801c2a7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00307.html#a8abe9d3949f850daa30a194f20a399d6">org.motechproject.openmrs.security.OpenMRSSession.open</a> </td>
+          <td class="memname">Concept <a class="el" href="a00307.html#aa79b0e265670519988f612ade801c2a7">org.motechproject.openmrs.services.OpenMRSConceptAdapter.getConceptByName</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conceptName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Fetches the Concept object of openMRS. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conceptName</td><td>Name of the concept </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>OpenMRS concept </dd></dl>
 
 </div>
 </div>

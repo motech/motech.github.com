@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,126 +92,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00932.html">mrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00936.html">security</a>      </li>
-      <li class="navelem"><a class="el" href="a00270.html">MRSAuthenticationProvider</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01485.html">event</a>      </li>
+      <li class="navelem"><a class="el" href="a01486.html">annotations</a>      </li>
+      <li class="navelem"><a class="el" href="a00270.html">MotechListenerType</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.mrs.security.MRSAuthenticationProvider Class Reference</div>  </div>
+<div class="title">org.motechproject.server.event.annotations.MotechListenerType Enum Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.mrs.security.MRSAuthenticationProvider:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00270.png" usemap="#org.motechproject.mrs.security.MRSAuthenticationProvider_map" alt=""/>
-  <map id="org.motechproject.mrs.security.MRSAuthenticationProvider_map" name="org.motechproject.mrs.security.MRSAuthenticationProvider_map">
-<area href="a00298.html" alt="org.motechproject.openmrs.security.OpenMRSAuthenticationProvider" shape="rect" coords="0,56,406,80"/>
-</map>
- </div></div>
 
-<p><a href="a01213.html">List of all members.</a></p>
+<p><a href="a01853.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a28fe54e4c066bac5e637a84d849397de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#a28fe54e4c066bac5e637a84d849397de">additionalAuthenticationChecks</a> (UserDetails userDetails, UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken)  throws AuthenticationException </td></tr>
-<tr class="memitem:ab02616b6e5e16aa81f006a127bc7d058"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="a00282.html">MRSSecurityUser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#ab02616b6e5e16aa81f006a127bc7d058">retrieveUser</a> (String userName, UsernamePasswordAuthenticationToken authentication)  throws InvalidCredentialsException</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a280bc9456ac8a83dc6f17d07d176effa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#a280bc9456ac8a83dc6f17d07d176effa">MOTECH_EVENT</a></td></tr>
+<tr class="memitem:a6c221d6219788611422be9a2cce8938e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#a6c221d6219788611422be9a2cce8938e">ORDERED_PARAMETERS</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Authenticates MRS login. </p>
-<p>Uses Spring Security for authentication. </p>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a28fe54e4c066bac5e637a84d849397de"></a>
+<div class="textblock"><p>ENUM defining the annotation types. </p>
+<dl class="section author"><dt>Author:</dt><dd>yyonkov </dd></dl>
+</div><hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a280bc9456ac8a83dc6f17d07d176effa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00270.html#a28fe54e4c066bac5e637a84d849397de">org.motechproject.mrs.security.MRSAuthenticationProvider.additionalAuthenticationChecks</a> </td>
-          <td>(</td>
-          <td class="paramtype">UserDetails&#160;</td>
-          <td class="paramname"><em>userDetails</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UsernamePasswordAuthenticationToken&#160;</td>
-          <td class="paramname"><em>usernamePasswordAuthenticationToken</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throws AuthenticationException <code> [protected]</code></td>
+          <td class="memname"><a class="el" href="a00270.html#a280bc9456ac8a83dc6f17d07d176effa">org.motechproject.server.event.annotations.MotechListenerType.MOTECH_EVENT</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Method Stub to add additional authentication checks for a user. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userDetails</td><td>User's login details </td></tr>
-    <tr><td class="paramname">usernamePasswordAuthenticationToken</td><td>Authentication Token for username &amp; password </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">AuthenticationException</td><td>thrown in case of Authentication Failure </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a class="anchor" id="ab02616b6e5e16aa81f006a127bc7d058"></a>
+<a class="anchor" id="a6c221d6219788611422be9a2cce8938e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">abstract <a class="el" href="a00282.html">MRSSecurityUser</a> <a class="el" href="a00270.html#ab02616b6e5e16aa81f006a127bc7d058">org.motechproject.mrs.security.MRSAuthenticationProvider.retrieveUser</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>userName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UsernamePasswordAuthenticationToken&#160;</td>
-          <td class="paramname"><em>authentication</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throws <a class="el" href="a00186.html">InvalidCredentialsException</a><code> [protected, pure virtual]</code></td>
+          <td class="memname"><a class="el" href="a00270.html#a6c221d6219788611422be9a2cce8938e">org.motechproject.server.event.annotations.MotechListenerType.ORDERED_PARAMETERS</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Retrieves User details on successful authentication. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">userName</td><td>Login username </td></tr>
-    <tr><td class="paramname">authentication</td><td>Login credentials </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>Security Details of the user </dd></dl>
-<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">InvalidCredentialsException</td><td>thrown when Credentials are invalid </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00298.html#aab4989dd718189dc526d3248cfe007d7">org.motechproject.openmrs.security.OpenMRSAuthenticationProvider</a>.</p>
 
 </div>
 </div>

@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,52 +92,202 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00956.html">scheduler</a>      </li>
-      <li class="navelem"><a class="el" href="a00958.html">domain</a>      </li>
-      <li class="navelem"><a class="el" href="a00203.html">JobId</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01514.html">voxeo</a>      </li>
+      <li class="navelem"><a class="el" href="a01518.html">web</a>      </li>
+      <li class="navelem"><a class="el" href="a00203.html">IvrController</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.scheduler.domain.JobId Class Reference</div>  </div>
+<div class="title">org.motechproject.server.voxeo.web.IvrController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01264.html">List of all members.</a></p>
+<p>Inherits MultiActionController, and MultiActionController.</p>
+
+<p><a href="a01956.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7dc47127ee76464abefabf5258eb8873"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a7dc47127ee76464abefabf5258eb8873">JobId</a> (String subject, String id)</td></tr>
-<tr class="memitem:a3cf8391d4254ac2b6754206fe6fa7edf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a3cf8391d4254ac2b6754206fe6fa7edf">JobId</a> (<a class="el" href="a00253.html">MotechEvent</a> motechEvent)</td></tr>
-<tr class="memitem:a6e3b947ed2ebe65dd21117590274961e"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a6e3b947ed2ebe65dd21117590274961e">value</a> ()</td></tr>
-<tr class="memitem:afb331a6eed54bfacc9ccefab0158176d"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#afb331a6eed54bfacc9ccefab0158176d">toString</a> ()</td></tr>
-<tr class="memitem:a74999be61922386503aadfc1d02e29d8"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a74999be61922386503aadfc1d02e29d8">repeatingId</a> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a6a9248a7f0d922b9811c59b86bafbf26"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a6a9248a7f0d922b9811c59b86bafbf26">REPEAT_JOB_SUFFIX</a> = &quot;-repeat&quot;</td></tr>
+<tr class="memitem:a455d204b4850dc30f103b526b44cc31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a455d204b4850dc30f103b526b44cc31f">flash</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
+<tr class="memitem:a2a322eb41e903ac6f1b5cbd309455d68"><td class="memItemLeft" align="right" valign="top">ModelAndView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a2a322eb41e903ac6f1b5cbd309455d68">incoming</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
+<tr class="memitem:a50cf0f9fbbf5beee61a5a9f50971758a"><td class="memItemLeft" align="right" valign="top">ModelAndView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a50cf0f9fbbf5beee61a5a9f50971758a">outgoing</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
+<tr class="memitem:a455d204b4850dc30f103b526b44cc31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a455d204b4850dc30f103b526b44cc31f">flash</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
+<tr class="memitem:a2a322eb41e903ac6f1b5cbd309455d68"><td class="memItemLeft" align="right" valign="top">ModelAndView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a2a322eb41e903ac6f1b5cbd309455d68">incoming</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
+<tr class="memitem:a50cf0f9fbbf5beee61a5a9f50971758a"><td class="memItemLeft" align="right" valign="top">ModelAndView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a50cf0f9fbbf5beee61a5a9f50971758a">outgoing</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7dc47127ee76464abefabf5258eb8873"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>IVR Event handler for Voxeo handles flash and incoming call events and records it in <a class="el" href="a00332.html">PhoneCall</a>. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a455d204b4850dc30f103b526b44cc31f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00203.html#a7dc47127ee76464abefabf5258eb8873">org.motechproject.scheduler.domain.JobId.JobId</a> </td>
+          <td class="memname">void <a class="el" href="a00203.html#a455d204b4850dc30f103b526b44cc31f">org.motechproject.server.voxeo.web.IvrController.flash</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>subject</em>, </td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Flash is disconnecting incoming call and calling back same number. </p>
+<p>This is useful in saving call cost where incoming calls are free. Reads incoming caller id and calls back after 5 seconds </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">response</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a455d204b4850dc30f103b526b44cc31f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00203.html#a455d204b4850dc30f103b526b44cc31f">org.motechproject.server.voxeo.web.IvrController.flash</a> </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Flash is disconnecting incoming call and calling back same number. </p>
+<p>This is useful in saving call cost where incoming calls are free. Reads incoming caller id and calls back after 5 seconds </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">response</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2a322eb41e903ac6f1b5cbd309455d68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelAndView <a class="el" href="a00203.html#a2a322eb41e903ac6f1b5cbd309455d68">org.motechproject.server.voxeo.web.IvrController.incoming</a> </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Handles incoming calls and records phone call details in data-store. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">response</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2a322eb41e903ac6f1b5cbd309455d68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelAndView <a class="el" href="a00203.html#a2a322eb41e903ac6f1b5cbd309455d68">org.motechproject.server.voxeo.web.IvrController.incoming</a> </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Handles incoming calls and records phone call details in data-store. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td></td></tr>
+    <tr><td class="paramname">response</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a50cf0f9fbbf5beee61a5a9f50971758a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelAndView <a class="el" href="a00203.html#a50cf0f9fbbf5beee61a5a9f50971758a">org.motechproject.server.voxeo.web.IvrController.outgoing</a> </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -150,79 +300,26 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3cf8391d4254ac2b6754206fe6fa7edf"></a>
+<a class="anchor" id="a50cf0f9fbbf5beee61a5a9f50971758a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00203.html#a7dc47127ee76464abefabf5258eb8873">org.motechproject.scheduler.domain.JobId.JobId</a> </td>
+          <td class="memname">ModelAndView <a class="el" href="a00203.html#a50cf0f9fbbf5beee61a5a9f50971758a">org.motechproject.server.voxeo.web.IvrController.outgoing</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td>
-          <td class="paramname"><em>motechEvent</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a74999be61922386503aadfc1d02e29d8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00203.html#a74999be61922386503aadfc1d02e29d8">org.motechproject.scheduler.domain.JobId.repeatingId</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afb331a6eed54bfacc9ccefab0158176d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00203.html#afb331a6eed54bfacc9ccefab0158176d">org.motechproject.scheduler.domain.JobId.toString</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6e3b947ed2ebe65dd21117590274961e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String <a class="el" href="a00203.html#a6e3b947ed2ebe65dd21117590274961e">org.motechproject.scheduler.domain.JobId.value</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a6a9248a7f0d922b9811c59b86bafbf26"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String <a class="el" href="a00203.html#a6a9248a7f0d922b9811c59b86bafbf26">org.motechproject.scheduler.domain.JobId.REPEAT_JOB_SUFFIX</a> = &quot;-repeat&quot;<code> [static]</code></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>

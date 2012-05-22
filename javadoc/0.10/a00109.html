@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,42 +92,176 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a01031.html">util</a>      </li>
-      <li class="navelem"><a class="el" href="a00109.html">DateTimeSourceUtil</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01504.html">pillreminder</a>      </li>
+      <li class="navelem"><a class="el" href="a01505.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01507.html">contract</a>      </li>
+      <li class="navelem"><a class="el" href="a00109.html">DailyPillRegimenRequest</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.util.DateTimeSourceUtil Class Reference</div>  </div>
+<div class="title">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest Class Reference<div class="ingroups"><a class="el" href="a01548.html">Pill Reminder</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01469.html">List of all members.</a></p>
+<p><a href="a01915.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8042cfef2ae780be083e7282d63a7880"><td class="memItemLeft" align="right" valign="top">static DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a8042cfef2ae780be083e7282d63a7880">now</a> ()</td></tr>
-<tr class="memitem:a918dde8719749d448ee02645c72b394a"><td class="memItemLeft" align="right" valign="top">static LocalDate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a918dde8719749d448ee02645c72b394a">today</a> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a2dbefd8643a2f7d536e9606d89fc66a4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00108.html">DateTimeSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a2dbefd8643a2f7d536e9606d89fc66a4">SourceInstance</a> = new <a class="el" href="a00116.html">DefaultDateTimeSource</a>()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ace13d367cb1305b889b1926140907b66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ace13d367cb1305b889b1926140907b66">DailyPillRegimenRequest</a> (String externalId, int pillWindowInHours, int <a class="el" href="a00109.html#a6c32c5bcabea58434fe310fd2372ee3a">reminderRepeatIntervalInMinutes</a>, int bufferTimeForPatientToTakePill, List&lt; <a class="el" href="a00131.html">DosageRequest</a> &gt; dosageRequests)</td></tr>
+<tr class="memitem:ad708cae2c9cbb4aa0d4fadae840c713d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ad708cae2c9cbb4aa0d4fadae840c713d">getPillWindowInHours</a> ()</td></tr>
+<tr class="memitem:aedac74bede0036d9dfd481a7694922de"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#aedac74bede0036d9dfd481a7694922de">getExternalId</a> ()</td></tr>
+<tr class="memitem:aa42b6f070cdba52b13e7ac553393ddcd"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00131.html">DosageRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#aa42b6f070cdba52b13e7ac553393ddcd">getDosageRequests</a> ()</td></tr>
+<tr class="memitem:a32070217274b8f5b028748bef7e4121a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a32070217274b8f5b028748bef7e4121a">getReminderRepeatIntervalInMinutes</a> ()</td></tr>
+<tr class="memitem:ae2418429b65d06e2d2503cc9d78c4642"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ae2418429b65d06e2d2503cc9d78c4642">getBufferOverDosageTimeInMinutes</a> ()</td></tr>
+<tr class="memitem:afd59140e1d18cafda41c23c6d5c2bda1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#afd59140e1d18cafda41c23c6d5c2bda1">setBufferOverDosageTimeInMinutes</a> (int <a class="el" href="a00109.html#ab7fb1b56143c806f06bffded5d7b8ec2">bufferOverDosageTimeInMinutes</a>)</td></tr>
+<tr class="memitem:ace13d367cb1305b889b1926140907b66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ace13d367cb1305b889b1926140907b66">DailyPillRegimenRequest</a> (String externalId, int pillWindowInHours, int <a class="el" href="a00109.html#a6c32c5bcabea58434fe310fd2372ee3a">reminderRepeatIntervalInMinutes</a>, int bufferTimeForPatientToTakePill, List&lt; <a class="el" href="a00131.html">DosageRequest</a> &gt; dosageRequests)</td></tr>
+<tr class="memitem:ad708cae2c9cbb4aa0d4fadae840c713d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ad708cae2c9cbb4aa0d4fadae840c713d">getPillWindowInHours</a> ()</td></tr>
+<tr class="memitem:aedac74bede0036d9dfd481a7694922de"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#aedac74bede0036d9dfd481a7694922de">getExternalId</a> ()</td></tr>
+<tr class="memitem:aa42b6f070cdba52b13e7ac553393ddcd"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00131.html">DosageRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#aa42b6f070cdba52b13e7ac553393ddcd">getDosageRequests</a> ()</td></tr>
+<tr class="memitem:a32070217274b8f5b028748bef7e4121a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a32070217274b8f5b028748bef7e4121a">getReminderRepeatIntervalInMinutes</a> ()</td></tr>
+<tr class="memitem:ae2418429b65d06e2d2503cc9d78c4642"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ae2418429b65d06e2d2503cc9d78c4642">getBufferOverDosageTimeInMinutes</a> ()</td></tr>
+<tr class="memitem:afd59140e1d18cafda41c23c6d5c2bda1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#afd59140e1d18cafda41c23c6d5c2bda1">setBufferOverDosageTimeInMinutes</a> (int <a class="el" href="a00109.html#ab7fb1b56143c806f06bffded5d7b8ec2">bufferOverDosageTimeInMinutes</a>)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a6c32c5bcabea58434fe310fd2372ee3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a6c32c5bcabea58434fe310fd2372ee3a">reminderRepeatIntervalInMinutes</a></td></tr>
+<tr class="memitem:ab7fb1b56143c806f06bffded5d7b8ec2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ab7fb1b56143c806f06bffded5d7b8ec2">bufferOverDosageTimeInMinutes</a></td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a8042cfef2ae780be083e7282d63a7880"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Daily Pill Regimen Request represents medicine prescription details and reminder configuration. </p>
+<dl class="section see"><dt>See also:</dt><dd><a class="el" href="a00131.html" title="Dosage Request represents Dosage schedule and medicine list for the schedule.">DosageRequest</a> </dd></dl>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ace13d367cb1305b889b1926140907b66"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static DateTime <a class="el" href="a00109.html#a8042cfef2ae780be083e7282d63a7880">org.motechproject.util.DateTimeSourceUtil.now</a> </td>
+          <td class="memname"><a class="el" href="a00109.html#ace13d367cb1305b889b1926140907b66">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.DailyPillRegimenRequest</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pillWindowInHours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reminderRepeatIntervalInMinutes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bufferTimeForPatientToTakePill</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="a00131.html">DosageRequest</a> &gt;&#160;</td>
+          <td class="paramname"><em>dosageRequests</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates Daily Pill prescription for given subscriber id and reminder configuration. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">externalId</td><td>unique id for subscriber </td></tr>
+    <tr><td class="paramname">pillWindowInHours</td><td>duration in hours for reminder retry </td></tr>
+    <tr><td class="paramname">reminderRepeatIntervalInMinutes</td><td>wait time before 2 reminder retries </td></tr>
+    <tr><td class="paramname">bufferTimeForPatientToTakePill</td><td>Additional wait time before sending reminder. (Time to take pill typically 5 min) when set to 5, If pill time is 9:00 am then reminder will be set out at 9:05 am. </td></tr>
+    <tr><td class="paramname">dosageRequests</td><td>Dosage detail with dose time and medicine list. <a class="el" href="a00131.html">DosageRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ace13d367cb1305b889b1926140907b66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00109.html#ace13d367cb1305b889b1926140907b66">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.DailyPillRegimenRequest</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pillWindowInHours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reminderRepeatIntervalInMinutes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bufferTimeForPatientToTakePill</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="a00131.html">DosageRequest</a> &gt;&#160;</td>
+          <td class="paramname"><em>dosageRequests</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates Daily Pill prescription for given subscriber id and reminder configuration. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">externalId</td><td>unique id for subscriber </td></tr>
+    <tr><td class="paramname">pillWindowInHours</td><td>duration in hours for reminder retry </td></tr>
+    <tr><td class="paramname">reminderRepeatIntervalInMinutes</td><td>wait time before 2 reminder retries </td></tr>
+    <tr><td class="paramname">bufferTimeForPatientToTakePill</td><td>Additional wait time before sending reminder. (Time to take pill typically 5 min) when set to 5, If pill time is 9:00 am then reminder will be set out at 9:05 am. </td></tr>
+    <tr><td class="paramname">dosageRequests</td><td>Dosage detail with dose time and medicine list. <a class="el" href="a00131.html">DosageRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ae2418429b65d06e2d2503cc9d78c4642"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00109.html#ae2418429b65d06e2d2503cc9d78c4642">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getBufferOverDosageTimeInMinutes</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [static]</code></td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -135,15 +269,197 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a918dde8719749d448ee02645c72b394a"></a>
+<a class="anchor" id="ae2418429b65d06e2d2503cc9d78c4642"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static LocalDate <a class="el" href="a00109.html#a918dde8719749d448ee02645c72b394a">org.motechproject.util.DateTimeSourceUtil.today</a> </td>
+          <td class="memname">int <a class="el" href="a00109.html#ae2418429b65d06e2d2503cc9d78c4642">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getBufferOverDosageTimeInMinutes</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [static]</code></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa42b6f070cdba52b13e7ac553393ddcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00131.html">DosageRequest</a>&gt; <a class="el" href="a00109.html#aa42b6f070cdba52b13e7ac553393ddcd">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getDosageRequests</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>All dosage requests scheduled for pill reminder. </p>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa42b6f070cdba52b13e7ac553393ddcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00131.html">DosageRequest</a>&gt; <a class="el" href="a00109.html#aa42b6f070cdba52b13e7ac553393ddcd">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getDosageRequests</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>All dosage requests scheduled for pill reminder. </p>
+<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aedac74bede0036d9dfd481a7694922de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00109.html#aedac74bede0036d9dfd481a7694922de">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getExternalId</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Unique Id representing subscriber. </p>
+
+</div>
+</div>
+<a class="anchor" id="aedac74bede0036d9dfd481a7694922de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00109.html#aedac74bede0036d9dfd481a7694922de">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getExternalId</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Unique Id representing subscriber. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad708cae2c9cbb4aa0d4fadae840c713d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00109.html#ad708cae2c9cbb4aa0d4fadae840c713d">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getPillWindowInHours</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Valid time range to retry the reminder in-case of subscriber unreachable. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad708cae2c9cbb4aa0d4fadae840c713d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00109.html#ad708cae2c9cbb4aa0d4fadae840c713d">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getPillWindowInHours</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Valid time range to retry the reminder in-case of subscriber unreachable. </p>
+
+</div>
+</div>
+<a class="anchor" id="a32070217274b8f5b028748bef7e4121a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00109.html#a32070217274b8f5b028748bef7e4121a">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getReminderRepeatIntervalInMinutes</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Repeat interval for dosage reminder in-case not able reach subscriber. </p>
+<dl class="section return"><dt>Returns:</dt><dd>number of minutes to wait before next retry for reminder. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a32070217274b8f5b028748bef7e4121a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00109.html#a32070217274b8f5b028748bef7e4121a">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.getReminderRepeatIntervalInMinutes</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Repeat interval for dosage reminder in-case not able reach subscriber. </p>
+<dl class="section return"><dt>Returns:</dt><dd>number of minutes to wait before next retry for reminder. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afd59140e1d18cafda41c23c6d5c2bda1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00109.html#afd59140e1d18cafda41c23c6d5c2bda1">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.setBufferOverDosageTimeInMinutes</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bufferOverDosageTimeInMinutes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd59140e1d18cafda41c23c6d5c2bda1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00109.html#afd59140e1d18cafda41c23c6d5c2bda1">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.setBufferOverDosageTimeInMinutes</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bufferOverDosageTimeInMinutes</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -152,12 +468,25 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a2dbefd8643a2f7d536e9606d89fc66a4"></a>
+<a class="anchor" id="ab7fb1b56143c806f06bffded5d7b8ec2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00108.html">DateTimeSource</a> <a class="el" href="a00109.html#a2dbefd8643a2f7d536e9606d89fc66a4">org.motechproject.util.DateTimeSourceUtil.SourceInstance</a> = new <a class="el" href="a00116.html">DefaultDateTimeSource</a>()<code> [static]</code></td>
+          <td class="memname">int <a class="el" href="a00109.html#ab7fb1b56143c806f06bffded5d7b8ec2">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.bufferOverDosageTimeInMinutes</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c32c5bcabea58434fe310fd2372ee3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00109.html#a6c32c5bcabea58434fe310fd2372ee3a">org.motechproject.server.pillreminder.api.contract.DailyPillRegimenRequest.reminderRepeatIntervalInMinutes</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>

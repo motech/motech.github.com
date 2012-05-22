@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00904.html">ivr</a>      </li>
-      <li class="navelem"><a class="el" href="a00907.html">kookoo</a>      </li>
-      <li class="navelem"><a class="el" href="a00913.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00209.html">KookooCallDetailRecordsServiceImpl</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01399.html">ivr</a>      </li>
+      <li class="navelem"><a class="el" href="a01411.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a00209.html">IVRService</a>      </li>
     </ul>
   </div>
 </div>
@@ -106,387 +105,116 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl Class Reference</div>  </div>
+<div class="title">org.motechproject.ivr.service.IVRService Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl:</div>
+Inheritance diagram for org.motechproject.ivr.service.IVRService:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00209.png" usemap="#org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl_map" alt=""/>
-  <map id="org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl_map" name="org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl_map">
-<area href="a00208.html" title="Kookoo Call Detail Record Service provides call log extension point." alt="org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService" shape="rect" coords="0,0,436,24"/>
+  <img src="a00209.png" usemap="#org.motechproject.ivr.service.IVRService_map" alt=""/>
+  <map id="org.motechproject.ivr.service.IVRService_map" name="org.motechproject.ivr.service.IVRService_map">
+<area href="a00210.html" title="Asterisk specific implementation of the IVR Service interface." alt="org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl" shape="rect" coords="339,56,668,80"/>
+<area href="a00210.html" title="Asterisk specific implementation of the IVR Service interface." alt="org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl" shape="rect" coords="339,112,668,136"/>
+<area href="a00220.html" alt="org.motechproject.ivr.kookoo.KookooCallServiceImpl" shape="rect" coords="339,168,668,192"/>
+<area href="a00220.html" alt="org.motechproject.ivr.kookoo.KookooCallServiceImpl" shape="rect" coords="339,224,668,248"/>
+<area href="a00437.html" title="Verboice specific implementation of the IVR Service interface." alt="org.motechproject.server.verboice.VerboiceIVRService" shape="rect" coords="339,280,668,304"/>
+<area href="a00437.html" title="Verboice specific implementation of the IVR Service interface." alt="org.motechproject.server.verboice.VerboiceIVRService" shape="rect" coords="339,336,668,360"/>
+<area href="a00451.html" title="Voxeo specific implementation of the IVR Service interface, supports initiating call given call reque..." alt="org.motechproject.server.voxeo.VoxeoIVRService" shape="rect" coords="339,392,668,416"/>
+<area href="a00451.html" title="Voxeo specific implementation of the IVR Service interface, supports initiating call given call reque..." alt="org.motechproject.server.voxeo.VoxeoIVRService" shape="rect" coords="339,448,668,472"/>
 </map>
  </div></div>
 
-<p><a href="a01148.html">List of all members.</a></p>
+<p><a href="a01657.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab0b2b9145e8233ec61ab4194bde96ae4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#ab0b2b9145e8233ec61ab4194bde96ae4">KookooCallDetailRecordsServiceImpl</a> (<a class="el" href="a00027.html">AllKooKooCallDetailRecords</a> allKooKooCallDetailRecords, <a class="el" href="a00027.html">AllKooKooCallDetailRecords</a> allCallDetailRecords, <a class="el" href="a00159.html">EventRelay</a> eventRelay)</td></tr>
-<tr class="memitem:a563d4f8577289077c914f4c83d5df650"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00207.html">KookooCallDetailRecord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a563d4f8577289077c914f4c83d5df650">get</a> (String callDetailRecordId)</td></tr>
-<tr class="memitem:ab725b4126c746590a2a151c678722100"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#ab725b4126c746590a2a151c678722100">createAnsweredRecord</a> (String vendorCallId, String callerId, <a class="el" href="a00057.html">CallDirection</a> callDirection)</td></tr>
-<tr class="memitem:a6cfb4ee9b776e8de1030e767d3841bab"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a6cfb4ee9b776e8de1030e767d3841bab">createOutgoing</a> (String callerId, CallDetailRecord.Disposition disposition)</td></tr>
-<tr class="memitem:afe1e2ea9b70a9f5b367996acabf18e69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#afe1e2ea9b70a9f5b367996acabf18e69">appendEvent</a> (String callDetailRecordId, <a class="el" href="a00196.html">IVREvent</a> callEvent, String userInput)</td></tr>
-<tr class="memitem:acec976f5ea839a55c24450fbce4a5661"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#acec976f5ea839a55c24450fbce4a5661">appendToLastCallEvent</a> (String callDetailRecordID, HashMap&lt; String, String &gt; map)</td></tr>
-<tr class="memitem:a438b5f9d31f50d8e2dfcfe70c1beee3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a438b5f9d31f50d8e2dfcfe70c1beee3c">setCallRecordAsAnswered</a> (String vendorCallId, String callDetailRecordID)</td></tr>
-<tr class="memitem:a384e19652c86e47f30ed9397c7f0afe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a384e19652c86e47f30ed9397c7f0afe0">setCallRecordAsNotAnswered</a> (String callDetailRecordID)</td></tr>
-<tr class="memitem:a4dd8964d7f534a0b6165e8bdba412dbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a4dd8964d7f534a0b6165e8bdba412dbc">close</a> (String callDetailRecordId, String externalId, <a class="el" href="a00058.html">CallEvent</a> callEvent)</td></tr>
+<tr class="memitem:a9d94fa499973264b967c5ffe25ec4f15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a9d94fa499973264b967c5ffe25ec4f15">initiateCall</a> (<a class="el" href="a00067.html">CallRequest</a> callRequest)</td></tr>
+<tr class="memitem:a9d94fa499973264b967c5ffe25ec4f15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a9d94fa499973264b967c5ffe25ec4f15">initiateCall</a> (<a class="el" href="a00067.html">CallRequest</a> callRequest)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5fce8f9c0f2c6fa7d13485988696b789"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a5fce8f9c0f2c6fa7d13485988696b789">CLOSE_CALL_SUBJECT</a> = &quot;close_call&quot;</td></tr>
-<tr class="memitem:a873ed056a80894f688fce2eba4c11e79"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a873ed056a80894f688fce2eba4c11e79">CALL_ID</a> = &quot;call_id&quot;</td></tr>
-<tr class="memitem:a4991de6aee34df089c4215e3a8315204"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a4991de6aee34df089c4215e3a8315204">EXTERNAL_ID</a> = &quot;external_id&quot;</td></tr>
+<tr class="memitem:a7cdb55f924ebe36cc12d31e72855b4e0"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#a7cdb55f924ebe36cc12d31e72855b4e0">EXTERNAL_ID</a> = &quot;external_id&quot;</td></tr>
+<tr class="memitem:aac110a36eaace62db9599f6f74489a35"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html#aac110a36eaace62db9599f6f74489a35">CALL_TYPE</a> = &quot;call_type&quot;</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab0b2b9145e8233ec61ab4194bde96ae4"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Interface to IVR Dial out call. </p>
+<p>Originates call as per given call request. See implementation module for more configuration information. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a9d94fa499973264b967c5ffe25ec4f15"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00209.html#ab0b2b9145e8233ec61ab4194bde96ae4">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.KookooCallDetailRecordsServiceImpl</a> </td>
+          <td class="memname">void <a class="el" href="a00209.html#a9d94fa499973264b967c5ffe25ec4f15">org.motechproject.ivr.service.IVRService.initiateCall</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00027.html">AllKooKooCallDetailRecords</a>&#160;</td>
-          <td class="paramname"><em>allKooKooCallDetailRecords</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00067.html">CallRequest</a>&#160;</td>
+          <td class="paramname"><em>callRequest</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00027.html">AllKooKooCallDetailRecords</a>&#160;</td>
-          <td class="paramname"><em>allCallDetailRecords</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00159.html">EventRelay</a>&#160;</td>
-          <td class="paramname"><em>eventRelay</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="afe1e2ea9b70a9f5b367996acabf18e69"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00209.html#afe1e2ea9b70a9f5b367996acabf18e69">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.appendEvent</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>callDetailRecordId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00196.html">IVREvent</a>&#160;</td>
-          <td class="paramname"><em>callEvent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>userInput</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Adds given call event to current call detail record. </p>
+<p>Sends an initiate call command to IVR. </p>
+<p>The call should be made to the phone specified in the given <a class="el" href="a00067.html" title="This class is used to request a call from the IVR system.">CallRequest</a></p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">callDetailRecordId,:</td><td>current call detail record </td></tr>
-    <tr><td class="paramname">callEvent,:</td><td>IVR event such as Newcall, Record, Dial </td></tr>
-    <tr><td class="paramname">userInput,:</td><td>DTMF digit pressed. </td></tr>
+    <tr><td class="paramname">callRequest</td><td>- data required by IVR phone system to start outbound call </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also:</dt><dd>IVREvent </dd></dl>
-
-<p>Implements <a class="el" href="a00208.html#ab99ca7ca50604e6d08286e6fb28279c3">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acec976f5ea839a55c24450fbce4a5661"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00209.html#acec976f5ea839a55c24450fbce4a5661">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.appendToLastCallEvent</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>callDetailRecordID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">HashMap&lt; String, String &gt;&#160;</td>
-          <td class="paramname"><em>map</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Adds additional data to call log. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callDetailRecordID,:</td><td>current call detail record </td></tr>
-    <tr><td class="paramname">map,:</td><td>Map of String key value pairs. </td></tr>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00065.html" title="Thrown when IVR can not initiate phone call due to some issue.">org.motechproject.ivr.model.CallInitiationException</a></td><td>if the call can not be initiated </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00208.html#a842806309a3b98005b88bdd8754fc8ab">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService</a>.</p>
+<p>Implemented in <a class="el" href="a00451.html#a87125a306fa4bb7ea3d1c9955696fa61">org.motechproject.server.voxeo.VoxeoIVRService</a>, <a class="el" href="a00451.html#a87125a306fa4bb7ea3d1c9955696fa61">org.motechproject.server.voxeo.VoxeoIVRService</a>, <a class="el" href="a00210.html#a47351274e8d8c82ff78dd7254f8b3b00">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl</a>, <a class="el" href="a00210.html#a47351274e8d8c82ff78dd7254f8b3b00">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl</a>, <a class="el" href="a00220.html#acf908879f7eded17352f4dd1e328984a">org.motechproject.ivr.kookoo.KookooCallServiceImpl</a>, <a class="el" href="a00220.html#acf908879f7eded17352f4dd1e328984a">org.motechproject.ivr.kookoo.KookooCallServiceImpl</a>, <a class="el" href="a00437.html#a66add6e1c15739c04406754a01932264">org.motechproject.server.verboice.VerboiceIVRService</a>, and <a class="el" href="a00437.html#a66add6e1c15739c04406754a01932264">org.motechproject.server.verboice.VerboiceIVRService</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4dd8964d7f534a0b6165e8bdba412dbc"></a>
+<a class="anchor" id="a9d94fa499973264b967c5ffe25ec4f15"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00209.html#a4dd8964d7f534a0b6165e8bdba412dbc">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.close</a> </td>
+          <td class="memname">void <a class="el" href="a00209.html#a9d94fa499973264b967c5ffe25ec4f15">org.motechproject.ivr.service.IVRService.initiateCall</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>callDetailRecordId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00058.html">CallEvent</a>&#160;</td>
-          <td class="paramname"><em>callEvent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Marks the end of call either on Hangup event or Disconnect event. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callDetailRecordId,:</td><td>current call detail record </td></tr>
-    <tr><td class="paramname">externalId,:</td><td>unique Id representing caller. </td></tr>
-    <tr><td class="paramname">callEvent:IVR</td><td>event such as Newcall, Record, Dial </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00208.html#a50ee01c44f5513d39ff03d501528b15d">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab725b4126c746590a2a151c678722100"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String <a class="el" href="a00209.html#ab725b4126c746590a2a151c678722100">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.createAnsweredRecord</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>vendorCallId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>callerId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00057.html">CallDirection</a>&#160;</td>
-          <td class="paramname"><em>callDirection</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Adds an answered call details to call log. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vendorCallId</td><td></td></tr>
-    <tr><td class="paramname">callerId</td><td></td></tr>
-    <tr><td class="paramname">callDirection</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>callDetailRecordId </dd></dl>
-
-<p>Implements <a class="el" href="a00208.html#a03db2d36a4199e238e710e531cdb1606">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6cfb4ee9b776e8de1030e767d3841bab"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String <a class="el" href="a00209.html#a6cfb4ee9b776e8de1030e767d3841bab">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.createOutgoing</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>callerId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">CallDetailRecord.Disposition&#160;</td>
-          <td class="paramname"><em>disposition</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Adds an outgoing call details to call log. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callerId</td><td></td></tr>
-    <tr><td class="paramname">disposition</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>callDetail </dd></dl>
-
-<p>Implements <a class="el" href="a00208.html#a61ad96f8ad79ab0229be73667b4080c7">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a563d4f8577289077c914f4c83d5df650"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00207.html">KookooCallDetailRecord</a> <a class="el" href="a00209.html#a563d4f8577289077c914f4c83d5df650">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.get</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>callDetailRecordId</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00067.html">CallRequest</a>&#160;</td>
+          <td class="paramname"><em>callRequest</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Access call detail record for current call. </p>
+<p>Sends an initiate call command to IVR. </p>
+<p>The call should be made to the phone specified in the given <a class="el" href="a00067.html" title="This class is used to request a call from the IVR system.">CallRequest</a></p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">callDetailRecordId</td><td></td></tr>
+    <tr><td class="paramname">callRequest</td><td>- data required by IVR phone system to start outbound call </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns:</dt><dd>KookooCallDetailRecord </dd></dl>
-
-<p>Implements <a class="el" href="a00208.html#a6cd9352a179551887c7e25d5bdd359ee">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a438b5f9d31f50d8e2dfcfe70c1beee3c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00209.html#a438b5f9d31f50d8e2dfcfe70c1beee3c">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.setCallRecordAsAnswered</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>vendorCallId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>callDetailRecordID</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Update call record as answered. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vendorCallId,:</td><td>vendor session id. </td></tr>
-    <tr><td class="paramname">callDetailRecordID,:</td><td>current call detail record </td></tr>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00065.html" title="Thrown when IVR can not initiate phone call due to some issue.">org.motechproject.ivr.model.CallInitiationException</a></td><td>if the call can not be initiated </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00208.html#aa7f99c34ad043c8202bc3d68d69fe835">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a384e19652c86e47f30ed9397c7f0afe0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00209.html#a384e19652c86e47f30ed9397c7f0afe0">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.setCallRecordAsNotAnswered</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>callDetailRecordID</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Update call record as not answered. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callDetailRecordID,:</td><td>current call detail record </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00208.html#a82312366d641aee7edd7c23f9b40d299">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsService</a>.</p>
+<p>Implemented in <a class="el" href="a00451.html#a87125a306fa4bb7ea3d1c9955696fa61">org.motechproject.server.voxeo.VoxeoIVRService</a>, <a class="el" href="a00451.html#a87125a306fa4bb7ea3d1c9955696fa61">org.motechproject.server.voxeo.VoxeoIVRService</a>, <a class="el" href="a00210.html#a47351274e8d8c82ff78dd7254f8b3b00">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl</a>, <a class="el" href="a00210.html#a47351274e8d8c82ff78dd7254f8b3b00">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl</a>, <a class="el" href="a00220.html#acf908879f7eded17352f4dd1e328984a">org.motechproject.ivr.kookoo.KookooCallServiceImpl</a>, <a class="el" href="a00220.html#acf908879f7eded17352f4dd1e328984a">org.motechproject.ivr.kookoo.KookooCallServiceImpl</a>, <a class="el" href="a00437.html#a66add6e1c15739c04406754a01932264">org.motechproject.server.verboice.VerboiceIVRService</a>, and <a class="el" href="a00437.html#a66add6e1c15739c04406754a01932264">org.motechproject.server.verboice.VerboiceIVRService</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a873ed056a80894f688fce2eba4c11e79"></a>
+<a class="anchor" id="aac110a36eaace62db9599f6f74489a35"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="a00209.html#a873ed056a80894f688fce2eba4c11e79">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.CALL_ID</a> = &quot;call_id&quot;<code> [static]</code></td>
+          <td class="memname">static final String <a class="el" href="a00209.html#aac110a36eaace62db9599f6f74489a35">org.motechproject.ivr.service.IVRService.CALL_TYPE</a> = &quot;call_type&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -494,25 +222,12 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5fce8f9c0f2c6fa7d13485988696b789"></a>
+<a class="anchor" id="a7cdb55f924ebe36cc12d31e72855b4e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="a00209.html#a5fce8f9c0f2c6fa7d13485988696b789">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.CLOSE_CALL_SUBJECT</a> = &quot;close_call&quot;<code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4991de6aee34df089c4215e3a8315204"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String <a class="el" href="a00209.html#a4991de6aee34df089c4215e3a8315204">org.motechproject.ivr.kookoo.service.KookooCallDetailRecordsServiceImpl.EXTERNAL_ID</a> = &quot;external_id&quot;<code> [static]</code></td>
+          <td class="memname">static final String <a class="el" href="a00209.html#a7cdb55f924ebe36cc12d31e72855b4e0">org.motechproject.ivr.service.IVRService.EXTERNAL_ID</a> = &quot;external_id&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>

@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,76 +92,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00931.html">model</a>      </li>
-      <li class="navelem"><a class="el" href="a00105.html">CronSchedulableJob</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01487.html">messagecampaign</a>      </li>
+      <li class="navelem"><a class="el" href="a01497.html">scheduler</a>      </li>
+      <li class="navelem"><a class="el" href="a00105.html">CronBasedProgramScheduler</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.model.CronSchedulableJob Class Reference</div>  </div>
+<div class="title">org.motechproject.server.messagecampaign.scheduler.CronBasedProgramScheduler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.model.CronSchedulableJob:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00105.png" usemap="#org.motechproject.model.CronSchedulableJob_map" alt=""/>
-  <map id="org.motechproject.model.CronSchedulableJob_map" name="org.motechproject.model.CronSchedulableJob_map">
-<area href="a00044.html" alt="org.motechproject.appointments.api.model.jobs.AppointmentReminderJob" shape="rect" coords="0,56,423,80"/>
-<area href="a00418.html" alt="org.motechproject.appointments.api.model.jobs.VisitReminderJob" shape="rect" coords="433,56,856,80"/>
-</map>
- </div></div>
 
-<p><a href="a01192.html">List of all members.</a></p>
+<p>Inherits MessageCampaignScheduler&lt; CronBasedCampaignMessage, CronBasedCampaign &gt;, and MessageCampaignScheduler&lt; CronBasedCampaignMessage, CronBasedCampaign &gt;.</p>
+
+<p><a href="a01878.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0579b18ab7ab14d57066f74337165d22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a0579b18ab7ab14d57066f74337165d22">CronSchedulableJob</a> (<a class="el" href="a00253.html">MotechEvent</a> motechEvent, String cronExpression, Date startTime, Date endTime)</td></tr>
-<tr class="memitem:a025a8b5647eb127d611500e6bc2dbc42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a025a8b5647eb127d611500e6bc2dbc42">CronSchedulableJob</a> (<a class="el" href="a00253.html">MotechEvent</a> motechEvent, String cronExpression)</td></tr>
-<tr class="memitem:acc8d1b194dbc766d13bf4cbc5d2c3d9d"><td class="memItemLeft" align="right" valign="top">Date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#acc8d1b194dbc766d13bf4cbc5d2c3d9d">getStartTime</a> ()</td></tr>
-<tr class="memitem:a9902cf462d6200886587a27e5a743269"><td class="memItemLeft" align="right" valign="top">Date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a9902cf462d6200886587a27e5a743269">getEndTime</a> ()</td></tr>
-<tr class="memitem:a85b4988d437600268a1c63b6654ce0d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a85b4988d437600268a1c63b6654ce0d3">getMotechEvent</a> ()</td></tr>
-<tr class="memitem:a35bafd479440e8f6dc24e1d4d3ea2410"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a35bafd479440e8f6dc24e1d4d3ea2410">getCronExpression</a> ()</td></tr>
-<tr class="memitem:ac13cb7f09c44f9193a08034b8d91fbdc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#ac13cb7f09c44f9193a08034b8d91fbdc">hashCode</a> ()</td></tr>
-<tr class="memitem:ac83aaa09f3da907fd8f54b3548dd896c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#ac83aaa09f3da907fd8f54b3548dd896c">equals</a> (Object obj)</td></tr>
-<tr class="memitem:ac796fc7190e460e7f8b4593c50747264"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#ac796fc7190e460e7f8b4593c50747264">toString</a> ()</td></tr>
+<tr class="memitem:a7d0ddd7af783219f302b391ff8d3b385"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a7d0ddd7af783219f302b391ff8d3b385">CronBasedProgramScheduler</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService, <a class="el" href="a00080.html">CampaignRequest</a> enrollRequest, <a class="el" href="a00103.html">CronBasedCampaign</a> campaign, <a class="el" href="a00072.html">CampaignEnrollmentService</a> campaignEnrollmentService)</td></tr>
+<tr class="memitem:a7d0ddd7af783219f302b391ff8d3b385"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a7d0ddd7af783219f302b391ff8d3b385">CronBasedProgramScheduler</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService, <a class="el" href="a00080.html">CampaignRequest</a> enrollRequest, <a class="el" href="a00103.html">CronBasedCampaign</a> campaign, <a class="el" href="a00072.html">CampaignEnrollmentService</a> campaignEnrollmentService)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a925a5bd78fed826c0a5ce135ff3f540f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a925a5bd78fed826c0a5ce135ff3f540f">scheduleJobFor</a> (<a class="el" href="a00104.html">CronBasedCampaignMessage</a> message)</td></tr>
+<tr class="memitem:a0f527ab09750db8ef43cc6ed715e4ad4"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a0f527ab09750db8ef43cc6ed715e4ad4">getCampaignEnd</a> ()</td></tr>
+<tr class="memitem:a925a5bd78fed826c0a5ce135ff3f540f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a925a5bd78fed826c0a5ce135ff3f540f">scheduleJobFor</a> (<a class="el" href="a00104.html">CronBasedCampaignMessage</a> message)</td></tr>
+<tr class="memitem:a0f527ab09750db8ef43cc6ed715e4ad4"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a0f527ab09750db8ef43cc6ed715e4ad4">getCampaignEnd</a> ()</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Schedulable Job - a data carrier class for a scheduled job that can be fired unlimited number of times as specified with the cron expression. </p>
-<dl class="section author"><dt>Author:</dt><dd>Igor (<a href="#" onclick="location.href='mai'+'lto:'+'iop'+'us'+'hny'+'ev'+'@2p'+'at'+'hs.'+'co'+'m'; return false;">iopus<span style="display: none;">.nosp@m.</span>hnye<span style="display: none;">.nosp@m.</span>v@2pa<span style="display: none;">.nosp@m.</span>ths.<span style="display: none;">.nosp@m.</span>com</a>) Date: 16/02/11 <a class="el" href="a00393.html">Time</a>: 1:43 PM </dd></dl>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0579b18ab7ab14d57066f74337165d22"></a>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7d0ddd7af783219f302b391ff8d3b385"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00105.html#a0579b18ab7ab14d57066f74337165d22">org.motechproject.model.CronSchedulableJob.CronSchedulableJob</a> </td>
+          <td class="memname"><a class="el" href="a00105.html#a7d0ddd7af783219f302b391ff8d3b385">org.motechproject.server.messagecampaign.scheduler.CronBasedProgramScheduler.CronBasedProgramScheduler</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td>
-          <td class="paramname"><em>motechEvent</em>, </td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>cronExpression</em>, </td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Date&#160;</td>
-          <td class="paramname"><em>startTime</em>, </td>
+          <td class="paramtype"><a class="el" href="a00103.html">CronBasedCampaign</a>&#160;</td>
+          <td class="paramname"><em>campaign</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Date&#160;</td>
-          <td class="paramname"><em>endTime</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00072.html">CampaignEnrollmentService</a>&#160;</td>
+          <td class="paramname"><em>campaignEnrollmentService</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -174,21 +165,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a025a8b5647eb127d611500e6bc2dbc42"></a>
+<a class="anchor" id="a7d0ddd7af783219f302b391ff8d3b385"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00105.html#a0579b18ab7ab14d57066f74337165d22">org.motechproject.model.CronSchedulableJob.CronSchedulableJob</a> </td>
+          <td class="memname"><a class="el" href="a00105.html#a7d0ddd7af783219f302b391ff8d3b385">org.motechproject.server.messagecampaign.scheduler.CronBasedProgramScheduler.CronBasedProgramScheduler</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00253.html">MotechEvent</a>&#160;</td>
-          <td class="paramname"><em>motechEvent</em>, </td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>cronExpression</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00103.html">CronBasedCampaign</a>&#160;</td>
+          <td class="paramname"><em>campaign</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00072.html">CampaignEnrollmentService</a>&#160;</td>
+          <td class="paramname"><em>campaignEnrollmentService</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -202,16 +205,15 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ac83aaa09f3da907fd8f54b3548dd896c"></a>
+<a class="anchor" id="a0f527ab09750db8ef43cc6ed715e4ad4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean <a class="el" href="a00105.html#ac83aaa09f3da907fd8f54b3548dd896c">org.motechproject.model.CronSchedulableJob.equals</a> </td>
+          <td class="memname">DateTime <a class="el" href="a00105.html#a0f527ab09750db8ef43cc6ed715e4ad4">org.motechproject.server.messagecampaign.scheduler.CronBasedProgramScheduler.getCampaignEnd</a> </td>
           <td>(</td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>obj</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -219,15 +221,15 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a35bafd479440e8f6dc24e1d4d3ea2410"></a>
+<a class="anchor" id="a0f527ab09750db8ef43cc6ed715e4ad4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00105.html#a35bafd479440e8f6dc24e1d4d3ea2410">org.motechproject.model.CronSchedulableJob.getCronExpression</a> </td>
+          <td class="memname">DateTime <a class="el" href="a00105.html#a0f527ab09750db8ef43cc6ed715e4ad4">org.motechproject.server.messagecampaign.scheduler.CronBasedProgramScheduler.getCampaignEnd</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -235,15 +237,16 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9902cf462d6200886587a27e5a743269"></a>
+<a class="anchor" id="a925a5bd78fed826c0a5ce135ff3f540f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Date <a class="el" href="a00105.html#a9902cf462d6200886587a27e5a743269">org.motechproject.model.CronSchedulableJob.getEndTime</a> </td>
+          <td class="memname">void <a class="el" href="a00105.html#a925a5bd78fed826c0a5ce135ff3f540f">org.motechproject.server.messagecampaign.scheduler.CronBasedProgramScheduler.scheduleJobFor</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a00104.html">CronBasedCampaignMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -251,63 +254,16 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a85b4988d437600268a1c63b6654ce0d3"></a>
+<a class="anchor" id="a925a5bd78fed826c0a5ce135ff3f540f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00253.html">MotechEvent</a> <a class="el" href="a00105.html#a85b4988d437600268a1c63b6654ce0d3">org.motechproject.model.CronSchedulableJob.getMotechEvent</a> </td>
+          <td class="memname">void <a class="el" href="a00105.html#a925a5bd78fed826c0a5ce135ff3f540f">org.motechproject.server.messagecampaign.scheduler.CronBasedProgramScheduler.scheduleJobFor</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acc8d1b194dbc766d13bf4cbc5d2c3d9d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Date <a class="el" href="a00105.html#acc8d1b194dbc766d13bf4cbc5d2c3d9d">org.motechproject.model.CronSchedulableJob.getStartTime</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac13cb7f09c44f9193a08034b8d91fbdc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="a00105.html#ac13cb7f09c44f9193a08034b8d91fbdc">org.motechproject.model.CronSchedulableJob.hashCode</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac796fc7190e460e7f8b4593c50747264"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String <a class="el" href="a00105.html#ac796fc7190e460e7f8b4593c50747264">org.motechproject.model.CronSchedulableJob.toString</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a00104.html">CronBasedCampaignMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>

@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,66 +92,95 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a01023.html">sms</a>      </li>
-      <li class="navelem"><a class="el" href="a01028.html">smpp</a>      </li>
-      <li class="navelem"><a class="el" href="a00220.html">ManagedSmslibService</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01399.html">ivr</a>      </li>
+      <li class="navelem"><a class="el" href="a01402.html">kookoo</a>      </li>
+      <li class="navelem"><a class="el" href="a00220.html">KookooCallServiceImpl</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.sms.smpp.ManagedSmslibService Class Reference</div>  </div>
+<div class="title">org.motechproject.ivr.kookoo.KookooCallServiceImpl Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for org.motechproject.ivr.kookoo.KookooCallServiceImpl:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00220.png" usemap="#org.motechproject.ivr.kookoo.KookooCallServiceImpl_map" alt=""/>
+  <map id="org.motechproject.ivr.kookoo.KookooCallServiceImpl_map" name="org.motechproject.ivr.kookoo.KookooCallServiceImpl_map">
+<area href="a00209.html" title="Interface to IVR Dial out call." alt="org.motechproject.ivr.service.IVRService" shape="rect" coords="0,0,311,24"/>
+<area href="a00209.html" title="Interface to IVR Dial out call." alt="org.motechproject.ivr.service.IVRService" shape="rect" coords="321,0,632,24"/>
+</map>
+ </div></div>
 
-<p><a href="a01461.html">List of all members.</a></p>
+<p><a href="a01632.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e09f879f40a7979c4861be748993700"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a9e09f879f40a7979c4861be748993700">ManagedSmslibService</a> (Service smslibService, Properties smsProperties, Properties smppProperties, <a class="el" href="a00311.html">OutboundMessageNotification</a> outboundMessageNotification, <a class="el" href="a00184.html">InboundMessageNotification</a> inboundMessageNotification)</td></tr>
-<tr class="memitem:adff7396ee2350dc624add6e8d6b0c342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#adff7396ee2350dc624add6e8d6b0c342">connect</a> ()  throws SMSLibException, IOException, InterruptedException </td></tr>
-<tr class="memitem:a4f6e1528f0bd29cc07a4a5879c76b459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a4f6e1528f0bd29cc07a4a5879c76b459">disconnect</a> ()  throws SMSLibException, IOException, InterruptedException </td></tr>
-<tr class="memitem:ab3817fb61c767b1524fcb0cf0a90f7df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#ab3817fb61c767b1524fcb0cf0a90f7df">queueMessage</a> (List&lt; String &gt; recipients, final String message)</td></tr>
-<tr class="memitem:a078b370f212a691c1a30e4ec649238d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a078b370f212a691c1a30e4ec649238d2">queueMessageAt</a> (List&lt; String &gt; recipients, final String message, DateTime dateTime)</td></tr>
+<tr class="memitem:aaccb449e75b0591cc3b4ebce677782eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#aaccb449e75b0591cc3b4ebce677782eb">KookooCallServiceImpl</a> (@Qualifier(&quot;ivrProperties&quot;) Properties properties, <a class="el" href="a00218.html">KookooCallDetailRecordsService</a> kookooCallDetailRecordsService)</td></tr>
+<tr class="memitem:acf908879f7eded17352f4dd1e328984a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#acf908879f7eded17352f4dd1e328984a">initiateCall</a> (<a class="el" href="a00067.html">CallRequest</a> callRequest)</td></tr>
+<tr class="memitem:aaccb449e75b0591cc3b4ebce677782eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#aaccb449e75b0591cc3b4ebce677782eb">KookooCallServiceImpl</a> (@Qualifier(&quot;ivrProperties&quot;) Properties properties, <a class="el" href="a00218.html">KookooCallDetailRecordsService</a> kookooCallDetailRecordsService)</td></tr>
+<tr class="memitem:acf908879f7eded17352f4dd1e328984a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#acf908879f7eded17352f4dd1e328984a">initiateCall</a> (<a class="el" href="a00067.html">CallRequest</a> callRequest)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a5a3a7eec91a8aeee4d2642c6ea44adf5"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a5a3a7eec91a8aeee4d2642c6ea44adf5">OUTBOUND_URL</a> = &quot;kookoo.outbound.url&quot;</td></tr>
+<tr class="memitem:aab3e3cb8fb65c46a5011d29ee9eac7ae"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#aab3e3cb8fb65c46a5011d29ee9eac7ae">API_KEY</a> = &quot;kookoo.api.key&quot;</td></tr>
+<tr class="memitem:aebc380d1a3d411e17fa3e38e28d803bd"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#aebc380d1a3d411e17fa3e38e28d803bd">API_KEY_KEY</a> = &quot;api_key&quot;</td></tr>
+<tr class="memitem:ac9c66b2a242ca5136c2f158dbedf953b"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#ac9c66b2a242ca5136c2f158dbedf953b">URL_KEY</a> = &quot;url&quot;</td></tr>
+<tr class="memitem:a021603c2a8cb2ced53b34b916820c198"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a021603c2a8cb2ced53b34b916820c198">CALLBACK_URL_KEY</a> = &quot;callback_url&quot;</td></tr>
+<tr class="memitem:a4ebbd4ad586e73e02a84f5c6286d0128"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a4ebbd4ad586e73e02a84f5c6286d0128">PHONE_NUMBER_KEY</a> = &quot;phone_no&quot;</td></tr>
+<tr class="memitem:a6fb397a5c17a322f8c63b74cb42e3256"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a6fb397a5c17a322f8c63b74cb42e3256">CUSTOM_DATA_KEY</a> = &quot;dataMap&quot;</td></tr>
+<tr class="memitem:a4d512ff521318e47aaa0402a5341099c"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html#a4d512ff521318e47aaa0402a5341099c">IS_OUTBOUND_CALL</a> = &quot;is_outbound_call&quot;</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9e09f879f40a7979c4861be748993700"></a>
+<a class="anchor" id="aaccb449e75b0591cc3b4ebce677782eb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00220.html#a9e09f879f40a7979c4861be748993700">org.motechproject.sms.smpp.ManagedSmslibService.ManagedSmslibService</a> </td>
+          <td class="memname"><a class="el" href="a00220.html#aaccb449e75b0591cc3b4ebce677782eb">org.motechproject.ivr.kookoo.KookooCallServiceImpl.KookooCallServiceImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">Service&#160;</td>
-          <td class="paramname"><em>smslibService</em>, </td>
+          <td class="paramtype">@Qualifier(&quot;ivrProperties&quot;) Properties&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Properties&#160;</td>
-          <td class="paramname"><em>smsProperties</em>, </td>
+          <td class="paramtype"><a class="el" href="a00218.html">KookooCallDetailRecordsService</a>&#160;</td>
+          <td class="paramname"><em>kookooCallDetailRecordsService</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaccb449e75b0591cc3b4ebce677782eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00220.html#aaccb449e75b0591cc3b4ebce677782eb">org.motechproject.ivr.kookoo.KookooCallServiceImpl.KookooCallServiceImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;ivrProperties&quot;) Properties&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Properties&#160;</td>
-          <td class="paramname"><em>smppProperties</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00311.html">OutboundMessageNotification</a>&#160;</td>
-          <td class="paramname"><em>outboundMessageNotification</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00184.html">InboundMessageNotification</a>&#160;</td>
-          <td class="paramname"><em>inboundMessageNotification</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00218.html">KookooCallDetailRecordsService</a>&#160;</td>
+          <td class="paramname"><em>kookooCallDetailRecordsService</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -165,15 +194,81 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="adff7396ee2350dc624add6e8d6b0c342"></a>
+<a class="anchor" id="acf908879f7eded17352f4dd1e328984a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00220.html#adff7396ee2350dc624add6e8d6b0c342">org.motechproject.sms.smpp.ManagedSmslibService.connect</a> </td>
+          <td class="memname">void <a class="el" href="a00220.html#acf908879f7eded17352f4dd1e328984a">org.motechproject.ivr.kookoo.KookooCallServiceImpl.initiateCall</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>  throws SMSLibException, IOException, InterruptedException </td>
+          <td class="paramtype"><a class="el" href="a00067.html">CallRequest</a>&#160;</td>
+          <td class="paramname"><em>callRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends an initiate call command to IVR. </p>
+<p>The call should be made to the phone specified in the given CallRequest</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callRequest</td><td>- data required by IVR phone system to start outbound call </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00065.html" title="Thrown when IVR can not initiate phone call due to some issue.">org.motechproject.ivr.model.CallInitiationException</a></td><td>if the call can not be initiated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00209.html#a9d94fa499973264b967c5ffe25ec4f15">org.motechproject.ivr.service.IVRService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf908879f7eded17352f4dd1e328984a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00220.html#acf908879f7eded17352f4dd1e328984a">org.motechproject.ivr.kookoo.KookooCallServiceImpl.initiateCall</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00067.html">CallRequest</a>&#160;</td>
+          <td class="paramname"><em>callRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends an initiate call command to IVR. </p>
+<p>The call should be made to the phone specified in the given CallRequest</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callRequest</td><td>- data required by IVR phone system to start outbound call </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00065.html" title="Thrown when IVR can not initiate phone call due to some issue.">org.motechproject.ivr.model.CallInitiationException</a></td><td>if the call can not be initiated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00209.html#a9d94fa499973264b967c5ffe25ec4f15">org.motechproject.ivr.service.IVRService</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="aab3e3cb8fb65c46a5011d29ee9eac7ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final String <a class="el" href="a00220.html#aab3e3cb8fb65c46a5011d29ee9eac7ae">org.motechproject.ivr.kookoo.KookooCallServiceImpl.API_KEY</a> = &quot;kookoo.api.key&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -181,15 +276,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4f6e1528f0bd29cc07a4a5879c76b459"></a>
+<a class="anchor" id="aebc380d1a3d411e17fa3e38e28d803bd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00220.html#a4f6e1528f0bd29cc07a4a5879c76b459">org.motechproject.sms.smpp.ManagedSmslibService.disconnect</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>  throws SMSLibException, IOException, InterruptedException </td>
+          <td class="memname">static final String <a class="el" href="a00220.html#aebc380d1a3d411e17fa3e38e28d803bd">org.motechproject.ivr.kookoo.KookooCallServiceImpl.API_KEY_KEY</a> = &quot;api_key&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -197,26 +289,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab3817fb61c767b1524fcb0cf0a90f7df"></a>
+<a class="anchor" id="a021603c2a8cb2ced53b34b916820c198"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00220.html#ab3817fb61c767b1524fcb0cf0a90f7df">org.motechproject.sms.smpp.ManagedSmslibService.queueMessage</a> </td>
-          <td>(</td>
-          <td class="paramtype">List&lt; String &gt;&#160;</td>
-          <td class="paramname"><em>recipients</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final String&#160;</td>
-          <td class="paramname"><em>message</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">static final String <a class="el" href="a00220.html#a021603c2a8cb2ced53b34b916820c198">org.motechproject.ivr.kookoo.KookooCallServiceImpl.CALLBACK_URL_KEY</a> = &quot;callback_url&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -224,32 +302,64 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a078b370f212a691c1a30e4ec649238d2"></a>
+<a class="anchor" id="a6fb397a5c17a322f8c63b74cb42e3256"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00220.html#a078b370f212a691c1a30e4ec649238d2">org.motechproject.sms.smpp.ManagedSmslibService.queueMessageAt</a> </td>
-          <td>(</td>
-          <td class="paramtype">List&lt; String &gt;&#160;</td>
-          <td class="paramname"><em>recipients</em>, </td>
+          <td class="memname">static final String <a class="el" href="a00220.html#a6fb397a5c17a322f8c63b74cb42e3256">org.motechproject.ivr.kookoo.KookooCallServiceImpl.CUSTOM_DATA_KEY</a> = &quot;dataMap&quot;<code> [static]</code></td>
         </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d512ff521318e47aaa0402a5341099c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final String&#160;</td>
-          <td class="paramname"><em>message</em>, </td>
+          <td class="memname">static final String <a class="el" href="a00220.html#a4d512ff521318e47aaa0402a5341099c">org.motechproject.ivr.kookoo.KookooCallServiceImpl.IS_OUTBOUND_CALL</a> = &quot;is_outbound_call&quot;<code> [static]</code></td>
         </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5a3a7eec91a8aeee4d2642c6ea44adf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DateTime&#160;</td>
-          <td class="paramname"><em>dateTime</em>&#160;</td>
+          <td class="memname">static final String <a class="el" href="a00220.html#a5a3a7eec91a8aeee4d2642c6ea44adf5">org.motechproject.ivr.kookoo.KookooCallServiceImpl.OUTBOUND_URL</a> = &quot;kookoo.outbound.url&quot;<code> [static]</code></td>
         </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ebbd4ad586e73e02a84f5c6286d0128"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">static final String <a class="el" href="a00220.html#a4ebbd4ad586e73e02a84f5c6286d0128">org.motechproject.ivr.kookoo.KookooCallServiceImpl.PHONE_NUMBER_KEY</a> = &quot;phone_no&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac9c66b2a242ca5136c2f158dbedf953b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static final String <a class="el" href="a00220.html#ac9c66b2a242ca5136c2f158dbedf953b">org.motechproject.ivr.kookoo.KookooCallServiceImpl.URL_KEY</a> = &quot;url&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>

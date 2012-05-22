@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,48 +92,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00888.html">cmslite</a>      </li>
-      <li class="navelem"><a class="el" href="a00889.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00892.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00035.html">AllStreamContents</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01504.html">pillreminder</a>      </li>
+      <li class="navelem"><a class="el" href="a01505.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01508.html">dao</a>      </li>
+      <li class="navelem"><a class="el" href="a00035.html">AllPillRegimens</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.cmslite.api.repository.AllStreamContents Class Reference</div>  </div>
+<div class="title">org.motechproject.server.pillreminder.api.dao.AllPillRegimens Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits BaseContentRepository&lt; StreamContent &gt;.</p>
+<p>Inherits MotechBaseRepository&lt; PillRegimen &gt;, and MotechBaseRepository&lt; PillRegimen &gt;.</p>
 
-<p><a href="a01087.html">List of all members.</a></p>
+<p><a href="a01921.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a877b9b9f4a7854630f1a407e40ec9b77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00386.html">StreamContent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a877b9b9f4a7854630f1a407e40ec9b77">getContent</a> (String language, String name)</td></tr>
-<tr class="memitem:a74485009f62f2228116faf21b57ee6a6"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a74485009f62f2228116faf21b57ee6a6">isContentAvailable</a> (String language, String name)</td></tr>
-<tr class="memitem:a386d137ec372815189f30dfc024e3523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a386d137ec372815189f30dfc024e3523">addContent</a> (<a class="el" href="a00386.html">StreamContent</a> content)  throws CMSLiteException </td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5b5ca5c713711eb71059184d2eacd68b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a5b5ca5c713711eb71059184d2eacd68b">AllStreamContents</a> (@Qualifier(&quot;cmsLiteDatabase&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:ac6b457e61362ad5042c58c305b8fcc78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#ac6b457e61362ad5042c58c305b8fcc78">AllPillRegimens</a> (@Qualifier(&quot;pillReminderDbConnector&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a608bd6ce32d0f03587190059d80543da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00334.html">PillRegimen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a608bd6ce32d0f03587190059d80543da">findByExternalId</a> (String externalID)</td></tr>
+<tr class="memitem:a8acfbf328fb82ef86cfee4dfc0107d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a8acfbf328fb82ef86cfee4dfc0107d6c">updateLastCapturedDate</a> (String regimenId, String dosageId, LocalDate lastCapturedDate)</td></tr>
+<tr class="memitem:abe55787b25c4dda6315b9b74374ce17f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#abe55787b25c4dda6315b9b74374ce17f">addOrReplace</a> (<a class="el" href="a00334.html">PillRegimen</a> pillRegimen)</td></tr>
+<tr class="memitem:ac6b457e61362ad5042c58c305b8fcc78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#ac6b457e61362ad5042c58c305b8fcc78">AllPillRegimens</a> (@Qualifier(&quot;pillReminderDbConnector&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a608bd6ce32d0f03587190059d80543da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00334.html">PillRegimen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a608bd6ce32d0f03587190059d80543da">findByExternalId</a> (String externalID)</td></tr>
+<tr class="memitem:a8acfbf328fb82ef86cfee4dfc0107d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a8acfbf328fb82ef86cfee4dfc0107d6c">updateLastCapturedDate</a> (String regimenId, String dosageId, LocalDate lastCapturedDate)</td></tr>
+<tr class="memitem:abe55787b25c4dda6315b9b74374ce17f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#abe55787b25c4dda6315b9b74374ce17f">addOrReplace</a> (<a class="el" href="a00334.html">PillRegimen</a> pillRegimen)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5b5ca5c713711eb71059184d2eacd68b"></a>
+<a class="anchor" id="ac6b457e61362ad5042c58c305b8fcc78"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00035.html#a5b5ca5c713711eb71059184d2eacd68b">org.motechproject.cmslite.api.repository.AllStreamContents.AllStreamContents</a> </td>
+          <td class="memname"><a class="el" href="a00035.html#ac6b457e61362ad5042c58c305b8fcc78">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.AllPillRegimens</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(&quot;cmsLiteDatabase&quot;) CouchDbConnector&#160;</td>
+          <td class="paramtype">@Qualifier(&quot;pillReminderDbConnector&quot;) CouchDbConnector&#160;</td>
           <td class="paramname"><em>db</em></td><td>)</td>
-          <td><code> [protected]</code></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac6b457e61362ad5042c58c305b8fcc78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00035.html#ac6b457e61362ad5042c58c305b8fcc78">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.AllPillRegimens</a> </td>
+          <td>(</td>
+          <td class="paramtype">@Qualifier(&quot;pillReminderDbConnector&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -142,16 +161,16 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a386d137ec372815189f30dfc024e3523"></a>
+<a class="anchor" id="abe55787b25c4dda6315b9b74374ce17f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00035.html#a386d137ec372815189f30dfc024e3523">org.motechproject.cmslite.api.repository.AllStreamContents.addContent</a> </td>
+          <td class="memname">void <a class="el" href="a00035.html#abe55787b25c4dda6315b9b74374ce17f">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.addOrReplace</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00386.html">StreamContent</a>&#160;</td>
-          <td class="paramname"><em>content</em></td><td>)</td>
-          <td>  throws <a class="el" href="a00082.html">CMSLiteException</a> </td>
+          <td class="paramtype"><a class="el" href="a00334.html">PillRegimen</a>&#160;</td>
+          <td class="paramname"><em>pillRegimen</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -159,21 +178,78 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a877b9b9f4a7854630f1a407e40ec9b77"></a>
+<a class="anchor" id="abe55787b25c4dda6315b9b74374ce17f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00386.html">StreamContent</a> <a class="el" href="a00035.html#a877b9b9f4a7854630f1a407e40ec9b77">org.motechproject.cmslite.api.repository.AllStreamContents.getContent</a> </td>
+          <td class="memname">void <a class="el" href="a00035.html#abe55787b25c4dda6315b9b74374ce17f">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.addOrReplace</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00334.html">PillRegimen</a>&#160;</td>
+          <td class="paramname"><em>pillRegimen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a608bd6ce32d0f03587190059d80543da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00334.html">PillRegimen</a> <a class="el" href="a00035.html#a608bd6ce32d0f03587190059d80543da">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.findByExternalId</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
+          <td class="paramname"><em>externalID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a608bd6ce32d0f03587190059d80543da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00334.html">PillRegimen</a> <a class="el" href="a00035.html#a608bd6ce32d0f03587190059d80543da">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.findByExternalId</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8acfbf328fb82ef86cfee4dfc0107d6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00035.html#a8acfbf328fb82ef86cfee4dfc0107d6c">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.updateLastCapturedDate</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>regimenId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramname"><em>dosageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LocalDate&#160;</td>
+          <td class="paramname"><em>lastCapturedDate</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,21 +262,27 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a74485009f62f2228116faf21b57ee6a6"></a>
+<a class="anchor" id="a8acfbf328fb82ef86cfee4dfc0107d6c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean <a class="el" href="a00035.html#a74485009f62f2228116faf21b57ee6a6">org.motechproject.cmslite.api.repository.AllStreamContents.isContentAvailable</a> </td>
+          <td class="memname">void <a class="el" href="a00035.html#a8acfbf328fb82ef86cfee4dfc0107d6c">org.motechproject.server.pillreminder.api.dao.AllPillRegimens.updateLastCapturedDate</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
+          <td class="paramname"><em>regimenId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramname"><em>dosageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LocalDate&#160;</td>
+          <td class="paramname"><em>lastCapturedDate</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

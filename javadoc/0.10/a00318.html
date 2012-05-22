@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,31 +92,93 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00938.html">openmrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00942.html">omod</a>      </li>
-      <li class="navelem"><a class="el" href="a00943.html">advice</a>      </li>
-      <li class="navelem"><a class="el" href="a00318.html">PatientAdvice</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01398.html">gateway</a>      </li>
+      <li class="navelem"><a class="el" href="a00318.html">OutboundEventGateway</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.openmrs.omod.advice.PatientAdvice Class Reference</div>  </div>
+<div class="title">org.motechproject.gateway.OutboundEventGateway Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for org.motechproject.openmrs.omod.advice.PatientAdvice:</div>
+Inheritance diagram for org.motechproject.gateway.OutboundEventGateway:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00318.png" usemap="#org.motechproject.openmrs.omod.advice.PatientAdvice_map" alt=""/>
-  <map id="org.motechproject.openmrs.omod.advice.PatientAdvice_map" name="org.motechproject.openmrs.omod.advice.PatientAdvice_map">
-<area href="a00049.html" alt="org.motechproject.openmrs.omod.advice.BaseAdvice" shape="rect" coords="0,0,324,24"/>
+  <img src="a00318.png" usemap="#org.motechproject.gateway.OutboundEventGateway_map" alt=""/>
+  <map id="org.motechproject.gateway.OutboundEventGateway_map" name="org.motechproject.gateway.OutboundEventGateway_map">
+<area href="a00412.html" alt="org.motechproject.gateway.StubOutboundEventGateway" shape="rect" coords="0,56,330,80"/>
+<area href="a00412.html" alt="org.motechproject.gateway.StubOutboundEventGateway" shape="rect" coords="340,56,670,80"/>
 </map>
  </div></div>
 
-<p><a href="a01230.html">List of all members.</a></p>
+<p><a href="a01622.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a47f2e3265369175385eab77bb2ce9840"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00318.html#a47f2e3265369175385eab77bb2ce9840">sendEventMessage</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
+<tr class="memitem:a47f2e3265369175385eab77bb2ce9840"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00318.html#a47f2e3265369175385eab77bb2ce9840">sendEventMessage</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
+</table>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a47f2e3265369175385eab77bb2ce9840"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00318.html#a47f2e3265369175385eab77bb2ce9840">org.motechproject.gateway.OutboundEventGateway.sendEventMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends the given MotechEvent message as a payload to the message channel defined in the Spring Integration configuration file. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motechEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a00412.html#a84f7b6ad55dc6b9f5b7e7b5fea60e4ef">org.motechproject.gateway.StubOutboundEventGateway</a>, and <a class="el" href="a00412.html#a84f7b6ad55dc6b9f5b7e7b5fea60e4ef">org.motechproject.gateway.StubOutboundEventGateway</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47f2e3265369175385eab77bb2ce9840"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00318.html#a47f2e3265369175385eab77bb2ce9840">org.motechproject.gateway.OutboundEventGateway.sendEventMessage</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends the given MotechEvent message as a payload to the message channel defined in the Spring Integration configuration file. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motechEvent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="a00412.html#a84f7b6ad55dc6b9f5b7e7b5fea60e4ef">org.motechproject.gateway.StubOutboundEventGateway</a>, and <a class="el" href="a00412.html#a84f7b6ad55dc6b9f5b7e7b5fea60e4ef">org.motechproject.gateway.StubOutboundEventGateway</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div> <!-- end of main div -->
 </div> <!-- end of wrap div -->

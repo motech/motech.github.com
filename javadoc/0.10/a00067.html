@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00991.html">messagecampaign</a>      </li>
-      <li class="navelem"><a class="el" href="a01003.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00067.html">CampaignEnrollmentRecord</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01399.html">ivr</a>      </li>
+      <li class="navelem"><a class="el" href="a01411.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a00067.html">CallRequest</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,50 +104,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.messagecampaign.service.CampaignEnrollmentRecord Class Reference<div class="ingroups"><a class="el" href="a01043.html">Message Campaign</a></div></div>  </div>
+<div class="title">org.motechproject.ivr.service.CallRequest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01387.html">List of all members.</a></p>
+<p>Inherits Serializable, and Serializable.</p>
+
+<p><a href="a01656.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a372afaa566adbf9a2cf191e5319801c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a372afaa566adbf9a2cf191e5319801c9">CampaignEnrollmentRecord</a> (String externalId, String campaignName, LocalDate startDate, <a class="el" href="a00071.html">CampaignEnrollmentStatus</a> status)</td></tr>
-<tr class="memitem:aa22c23d0727ff00d078082a9f3653f41"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aa22c23d0727ff00d078082a9f3653f41">getExternalId</a> ()</td></tr>
-<tr class="memitem:a859fbe07dfd9b259dcf4b5a89479a976"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a859fbe07dfd9b259dcf4b5a89479a976">getCampaignName</a> ()</td></tr>
-<tr class="memitem:a1d915cd0f0c7cc173899dc8da131b377"><td class="memItemLeft" align="right" valign="top">LocalDate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a1d915cd0f0c7cc173899dc8da131b377">getStartDate</a> ()</td></tr>
-<tr class="memitem:ad991f8a36b98d9317206c5f70bcd5332"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00071.html">CampaignEnrollmentStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ad991f8a36b98d9317206c5f70bcd5332">getStatus</a> ()</td></tr>
+<tr class="memitem:ab8534b056fca90e1ce3ac61e8662e8d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ab8534b056fca90e1ce3ac61e8662e8d1">CallRequest</a> (String phone, int timeOut, String callBackUrl)</td></tr>
+<tr class="memitem:ade119fbb7b55ba7bfa4693900b715473"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ade119fbb7b55ba7bfa4693900b715473">CallRequest</a> (String phone, Map&lt; String, String &gt; params, String callBackUrl)</td></tr>
+<tr class="memitem:a9782170391702e242824b2ec02a91d44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a9782170391702e242824b2ec02a91d44">CallRequest</a> ()</td></tr>
+<tr class="memitem:a61107cdb5aaae2fb81f5ab3fae95f1aa"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a61107cdb5aaae2fb81f5ab3fae95f1aa">getPhone</a> ()</td></tr>
+<tr class="memitem:a5912fc4968b6f82611f8c057e4ab6fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a5912fc4968b6f82611f8c057e4ab6fb4">getOnSuccessEvent</a> ()</td></tr>
+<tr class="memitem:a5caef4d357b9da760cd276a2b876dd9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a5caef4d357b9da760cd276a2b876dd9c">setOnSuccessEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> onSuccessEvent)</td></tr>
+<tr class="memitem:a5a05b780e58fcfa02b0b3ea372d1175b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a5a05b780e58fcfa02b0b3ea372d1175b">getOnBusyEvent</a> ()</td></tr>
+<tr class="memitem:acc0561d06449a20e2785b64c86af1d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#acc0561d06449a20e2785b64c86af1d92">setOnBusyEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> onBusyEvent)</td></tr>
+<tr class="memitem:a4885c2817453cef0784fd784756ca411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a4885c2817453cef0784fd784756ca411">getOnNoAnswerEvent</a> ()</td></tr>
+<tr class="memitem:a2931324179a473f42d64bd9da8e663ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a2931324179a473f42d64bd9da8e663ad">setOnNoAnswerEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> onNoAnswerEvent)</td></tr>
+<tr class="memitem:aeec6412561ae00bb6a2c3d0b329ef493"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aeec6412561ae00bb6a2c3d0b329ef493">getOnFailureEvent</a> ()</td></tr>
+<tr class="memitem:a56ef643beb9f04e356e810e1e57fe2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a56ef643beb9f04e356e810e1e57fe2eb">setOnFailureEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> onFailureEvent)</td></tr>
+<tr class="memitem:a639c1450953f5b5a4ab3af5edd8a5342"><td class="memItemLeft" align="right" valign="top">Map&lt; String, String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a639c1450953f5b5a4ab3af5edd8a5342">getPayload</a> ()</td></tr>
+<tr class="memitem:a7c12c2d4caa86f251c1a5c6e5abbf129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a7c12c2d4caa86f251c1a5c6e5abbf129">setPayload</a> (Map&lt; String, String &gt; payload)</td></tr>
+<tr class="memitem:aecb84afb441c903f5996ae316f928909"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aecb84afb441c903f5996ae316f928909">getCallBackUrl</a> ()</td></tr>
+<tr class="memitem:ac45eddccfc621decbf0c69c8ccac0243"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ac45eddccfc621decbf0c69c8ccac0243">getTimeOut</a> ()</td></tr>
+<tr class="memitem:a3aee6c29d10f8b66e7238640023cca82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a3aee6c29d10f8b66e7238640023cca82">setTimeOut</a> (int timeOut)</td></tr>
+<tr class="memitem:ab8534b056fca90e1ce3ac61e8662e8d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ab8534b056fca90e1ce3ac61e8662e8d1">CallRequest</a> (String phone, int timeOut, String callBackUrl)</td></tr>
+<tr class="memitem:ade119fbb7b55ba7bfa4693900b715473"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ade119fbb7b55ba7bfa4693900b715473">CallRequest</a> (String phone, Map&lt; String, String &gt; params, String callBackUrl)</td></tr>
+<tr class="memitem:a9782170391702e242824b2ec02a91d44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a9782170391702e242824b2ec02a91d44">CallRequest</a> ()</td></tr>
+<tr class="memitem:a61107cdb5aaae2fb81f5ab3fae95f1aa"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a61107cdb5aaae2fb81f5ab3fae95f1aa">getPhone</a> ()</td></tr>
+<tr class="memitem:a5912fc4968b6f82611f8c057e4ab6fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a5912fc4968b6f82611f8c057e4ab6fb4">getOnSuccessEvent</a> ()</td></tr>
+<tr class="memitem:a5caef4d357b9da760cd276a2b876dd9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a5caef4d357b9da760cd276a2b876dd9c">setOnSuccessEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> onSuccessEvent)</td></tr>
+<tr class="memitem:a5a05b780e58fcfa02b0b3ea372d1175b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a5a05b780e58fcfa02b0b3ea372d1175b">getOnBusyEvent</a> ()</td></tr>
+<tr class="memitem:acc0561d06449a20e2785b64c86af1d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#acc0561d06449a20e2785b64c86af1d92">setOnBusyEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> onBusyEvent)</td></tr>
+<tr class="memitem:a4885c2817453cef0784fd784756ca411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a4885c2817453cef0784fd784756ca411">getOnNoAnswerEvent</a> ()</td></tr>
+<tr class="memitem:a2931324179a473f42d64bd9da8e663ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a2931324179a473f42d64bd9da8e663ad">setOnNoAnswerEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> onNoAnswerEvent)</td></tr>
+<tr class="memitem:aeec6412561ae00bb6a2c3d0b329ef493"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aeec6412561ae00bb6a2c3d0b329ef493">getOnFailureEvent</a> ()</td></tr>
+<tr class="memitem:a56ef643beb9f04e356e810e1e57fe2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a56ef643beb9f04e356e810e1e57fe2eb">setOnFailureEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> onFailureEvent)</td></tr>
+<tr class="memitem:a639c1450953f5b5a4ab3af5edd8a5342"><td class="memItemLeft" align="right" valign="top">Map&lt; String, String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a639c1450953f5b5a4ab3af5edd8a5342">getPayload</a> ()</td></tr>
+<tr class="memitem:a7c12c2d4caa86f251c1a5c6e5abbf129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a7c12c2d4caa86f251c1a5c6e5abbf129">setPayload</a> (Map&lt; String, String &gt; payload)</td></tr>
+<tr class="memitem:aecb84afb441c903f5996ae316f928909"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#aecb84afb441c903f5996ae316f928909">getCallBackUrl</a> ()</td></tr>
+<tr class="memitem:ac45eddccfc621decbf0c69c8ccac0243"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#ac45eddccfc621decbf0c69c8ccac0243">getTimeOut</a> ()</td></tr>
+<tr class="memitem:a3aee6c29d10f8b66e7238640023cca82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a3aee6c29d10f8b66e7238640023cca82">setTimeOut</a> (int timeOut)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This is the record which will be returned when message campaign service is queried for enrollments It holds the details of an enrollment. </p>
+<div class="textblock"><p>This class is used to request a call from the IVR system. </p>
+<p>To receive events related to this call provide this class with the events to raise when the following events within the IVR system happen. The supplied event will be augmented with <a class="el" href="a00059.html">org.motechproject.ivr.model.CallDetailRecord</a> if one is available</p>
+<p>onSuccessEvent - Following the successful completion of the call onBusyEvent - If the IVR system is unable to place the call because the line is busy onNoAnswerEvent - If the IVR system is unable to complete the call because of no answer onFailureEvent - It failed. I'm sorry for you. Why? Not sure. Your guess is as good as mine, </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a372afaa566adbf9a2cf191e5319801c9"></a>
+<a class="anchor" id="ab8534b056fca90e1ce3ac61e8662e8d1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00067.html#a372afaa566adbf9a2cf191e5319801c9">org.motechproject.server.messagecampaign.service.CampaignEnrollmentRecord.CampaignEnrollmentRecord</a> </td>
+          <td class="memname"><a class="el" href="a00067.html#ab8534b056fca90e1ce3ac61e8662e8d1">org.motechproject.ivr.service.CallRequest.CallRequest</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
+          <td class="paramname"><em>phone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeOut</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>campaignName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LocalDate&#160;</td>
-          <td class="paramname"><em>startDate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00071.html">CampaignEnrollmentStatus</a>&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
+          <td class="paramname"><em>callBackUrl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -159,26 +185,184 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This is the constructor which is used to create an <a class="el" href="a00067.html" title="This is the record which will be returned when message campaign service is queried for enrollments It...">CampaignEnrollmentRecord</a>. </p>
+<p>Generate a call request for the IVR system. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">campaignName</td><td></td></tr>
-    <tr><td class="paramname">startDate</td><td></td></tr>
-    <tr><td class="paramname">status</td><td></td></tr>
+    <tr><td class="paramname">phone</td><td></td></tr>
+    <tr><td class="paramname">callBackUrl</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
+<a class="anchor" id="ade119fbb7b55ba7bfa4693900b715473"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html#ab8534b056fca90e1ce3ac61e8662e8d1">org.motechproject.ivr.service.CallRequest.CallRequest</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Map&lt; String, String &gt;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>callBackUrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates call request with name value pair additional config. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phone</td><td>dialing number / sip id </td></tr>
+    <tr><td class="paramname">params</td><td>custom data for additional parameters </td></tr>
+    <tr><td class="paramname">callBackUrl</td><td>application endpoint to process callbacks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9782170391702e242824b2ec02a91d44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html#ab8534b056fca90e1ce3ac61e8662e8d1">org.motechproject.ivr.service.CallRequest.CallRequest</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8534b056fca90e1ce3ac61e8662e8d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html#ab8534b056fca90e1ce3ac61e8662e8d1">org.motechproject.ivr.service.CallRequest.CallRequest</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>callBackUrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Generate a call request for the IVR system. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phone</td><td></td></tr>
+    <tr><td class="paramname">callBackUrl</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ade119fbb7b55ba7bfa4693900b715473"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html#ab8534b056fca90e1ce3ac61e8662e8d1">org.motechproject.ivr.service.CallRequest.CallRequest</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>phone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Map&lt; String, String &gt;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>callBackUrl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates call request with name value pair additional config. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phone</td><td>dialing number / sip id </td></tr>
+    <tr><td class="paramname">params</td><td>custom data for additional parameters </td></tr>
+    <tr><td class="paramname">callBackUrl</td><td>application endpoint to process callbacks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9782170391702e242824b2ec02a91d44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html#ab8534b056fca90e1ce3ac61e8662e8d1">org.motechproject.ivr.service.CallRequest.CallRequest</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a859fbe07dfd9b259dcf4b5a89479a976"></a>
+<a class="anchor" id="aecb84afb441c903f5996ae316f928909"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00067.html#a859fbe07dfd9b259dcf4b5a89479a976">org.motechproject.server.messagecampaign.service.CampaignEnrollmentRecord.getCampaignName</a> </td>
+          <td class="memname">String <a class="el" href="a00067.html#aecb84afb441c903f5996ae316f928909">org.motechproject.ivr.service.CallRequest.getCallBackUrl</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -187,17 +371,14 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This returns the Campaign Name of a <a class="el" href="a00067.html" title="This is the record which will be returned when message campaign service is queried for enrollments It...">CampaignEnrollmentRecord</a>. </p>
-<dl class="section return"><dt>Returns:</dt><dd>String </dd></dl>
-
 </div>
 </div>
-<a class="anchor" id="aa22c23d0727ff00d078082a9f3653f41"></a>
+<a class="anchor" id="aecb84afb441c903f5996ae316f928909"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00067.html#aa22c23d0727ff00d078082a9f3653f41">org.motechproject.server.messagecampaign.service.CampaignEnrollmentRecord.getExternalId</a> </td>
+          <td class="memname">String <a class="el" href="a00067.html#aecb84afb441c903f5996ae316f928909">org.motechproject.ivr.service.CallRequest.getCallBackUrl</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -206,17 +387,14 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This returns the External Id of a <a class="el" href="a00067.html" title="This is the record which will be returned when message campaign service is queried for enrollments It...">CampaignEnrollmentRecord</a>. </p>
-<dl class="section return"><dt>Returns:</dt><dd>String </dd></dl>
-
 </div>
 </div>
-<a class="anchor" id="a1d915cd0f0c7cc173899dc8da131b377"></a>
+<a class="anchor" id="a5a05b780e58fcfa02b0b3ea372d1175b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LocalDate <a class="el" href="a00067.html#a1d915cd0f0c7cc173899dc8da131b377">org.motechproject.server.messagecampaign.service.CampaignEnrollmentRecord.getStartDate</a> </td>
+          <td class="memname"><a class="el" href="a00262.html">MotechEvent</a> <a class="el" href="a00067.html#a5a05b780e58fcfa02b0b3ea372d1175b">org.motechproject.ivr.service.CallRequest.getOnBusyEvent</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -225,17 +403,14 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This returns the Start Date of a <a class="el" href="a00067.html" title="This is the record which will be returned when message campaign service is queried for enrollments It...">CampaignEnrollmentRecord</a>. </p>
-<dl class="section return"><dt>Returns:</dt><dd>LocalDate </dd></dl>
-
 </div>
 </div>
-<a class="anchor" id="ad991f8a36b98d9317206c5f70bcd5332"></a>
+<a class="anchor" id="a5a05b780e58fcfa02b0b3ea372d1175b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00071.html">CampaignEnrollmentStatus</a> <a class="el" href="a00067.html#ad991f8a36b98d9317206c5f70bcd5332">org.motechproject.server.messagecampaign.service.CampaignEnrollmentRecord.getStatus</a> </td>
+          <td class="memname"><a class="el" href="a00262.html">MotechEvent</a> <a class="el" href="a00067.html#a5a05b780e58fcfa02b0b3ea372d1175b">org.motechproject.ivr.service.CallRequest.getOnBusyEvent</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -244,8 +419,401 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This returns the Status of a <a class="el" href="a00067.html" title="This is the record which will be returned when message campaign service is queried for enrollments It...">CampaignEnrollmentRecord</a>. </p>
-<dl class="section return"><dt>Returns:</dt><dd>CampaignEnrollmentStatus </dd></dl>
+</div>
+</div>
+<a class="anchor" id="aeec6412561ae00bb6a2c3d0b329ef493"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00262.html">MotechEvent</a> <a class="el" href="a00067.html#aeec6412561ae00bb6a2c3d0b329ef493">org.motechproject.ivr.service.CallRequest.getOnFailureEvent</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeec6412561ae00bb6a2c3d0b329ef493"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00262.html">MotechEvent</a> <a class="el" href="a00067.html#aeec6412561ae00bb6a2c3d0b329ef493">org.motechproject.ivr.service.CallRequest.getOnFailureEvent</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4885c2817453cef0784fd784756ca411"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00262.html">MotechEvent</a> <a class="el" href="a00067.html#a4885c2817453cef0784fd784756ca411">org.motechproject.ivr.service.CallRequest.getOnNoAnswerEvent</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4885c2817453cef0784fd784756ca411"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00262.html">MotechEvent</a> <a class="el" href="a00067.html#a4885c2817453cef0784fd784756ca411">org.motechproject.ivr.service.CallRequest.getOnNoAnswerEvent</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5912fc4968b6f82611f8c057e4ab6fb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00262.html">MotechEvent</a> <a class="el" href="a00067.html#a5912fc4968b6f82611f8c057e4ab6fb4">org.motechproject.ivr.service.CallRequest.getOnSuccessEvent</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5912fc4968b6f82611f8c057e4ab6fb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00262.html">MotechEvent</a> <a class="el" href="a00067.html#a5912fc4968b6f82611f8c057e4ab6fb4">org.motechproject.ivr.service.CallRequest.getOnSuccessEvent</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a639c1450953f5b5a4ab3af5edd8a5342"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, String&gt; <a class="el" href="a00067.html#a639c1450953f5b5a4ab3af5edd8a5342">org.motechproject.ivr.service.CallRequest.getPayload</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a639c1450953f5b5a4ab3af5edd8a5342"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt;String, String&gt; <a class="el" href="a00067.html#a639c1450953f5b5a4ab3af5edd8a5342">org.motechproject.ivr.service.CallRequest.getPayload</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61107cdb5aaae2fb81f5ab3fae95f1aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00067.html#a61107cdb5aaae2fb81f5ab3fae95f1aa">org.motechproject.ivr.service.CallRequest.getPhone</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61107cdb5aaae2fb81f5ab3fae95f1aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00067.html#a61107cdb5aaae2fb81f5ab3fae95f1aa">org.motechproject.ivr.service.CallRequest.getPhone</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac45eddccfc621decbf0c69c8ccac0243"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00067.html#ac45eddccfc621decbf0c69c8ccac0243">org.motechproject.ivr.service.CallRequest.getTimeOut</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac45eddccfc621decbf0c69c8ccac0243"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00067.html#ac45eddccfc621decbf0c69c8ccac0243">org.motechproject.ivr.service.CallRequest.getTimeOut</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc0561d06449a20e2785b64c86af1d92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#acc0561d06449a20e2785b64c86af1d92">org.motechproject.ivr.service.CallRequest.setOnBusyEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>onBusyEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc0561d06449a20e2785b64c86af1d92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#acc0561d06449a20e2785b64c86af1d92">org.motechproject.ivr.service.CallRequest.setOnBusyEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>onBusyEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56ef643beb9f04e356e810e1e57fe2eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a56ef643beb9f04e356e810e1e57fe2eb">org.motechproject.ivr.service.CallRequest.setOnFailureEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>onFailureEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56ef643beb9f04e356e810e1e57fe2eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a56ef643beb9f04e356e810e1e57fe2eb">org.motechproject.ivr.service.CallRequest.setOnFailureEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>onFailureEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2931324179a473f42d64bd9da8e663ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a2931324179a473f42d64bd9da8e663ad">org.motechproject.ivr.service.CallRequest.setOnNoAnswerEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>onNoAnswerEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2931324179a473f42d64bd9da8e663ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a2931324179a473f42d64bd9da8e663ad">org.motechproject.ivr.service.CallRequest.setOnNoAnswerEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>onNoAnswerEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5caef4d357b9da760cd276a2b876dd9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a5caef4d357b9da760cd276a2b876dd9c">org.motechproject.ivr.service.CallRequest.setOnSuccessEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>onSuccessEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5caef4d357b9da760cd276a2b876dd9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a5caef4d357b9da760cd276a2b876dd9c">org.motechproject.ivr.service.CallRequest.setOnSuccessEvent</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>onSuccessEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c12c2d4caa86f251c1a5c6e5abbf129"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a7c12c2d4caa86f251c1a5c6e5abbf129">org.motechproject.ivr.service.CallRequest.setPayload</a> </td>
+          <td>(</td>
+          <td class="paramtype">Map&lt; String, String &gt;&#160;</td>
+          <td class="paramname"><em>payload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c12c2d4caa86f251c1a5c6e5abbf129"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a7c12c2d4caa86f251c1a5c6e5abbf129">org.motechproject.ivr.service.CallRequest.setPayload</a> </td>
+          <td>(</td>
+          <td class="paramtype">Map&lt; String, String &gt;&#160;</td>
+          <td class="paramname"><em>payload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3aee6c29d10f8b66e7238640023cca82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a3aee6c29d10f8b66e7238640023cca82">org.motechproject.ivr.service.CallRequest.setTimeOut</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeOut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3aee6c29d10f8b66e7238640023cca82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00067.html#a3aee6c29d10f8b66e7238640023cca82">org.motechproject.ivr.service.CallRequest.setTimeOut</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeOut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,11 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00904.html">ivr</a>      </li>
-      <li class="navelem"><a class="el" href="a00907.html">kookoo</a>      </li>
-      <li class="navelem"><a class="el" href="a00210.html">KookooCallServiceImpl</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01399.html">ivr</a>      </li>
+      <li class="navelem"><a class="el" href="a01400.html">asterisk</a>      </li>
+      <li class="navelem"><a class="el" href="a00210.html">IVRServiceAsteriskImpl</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,52 +105,177 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.ivr.kookoo.KookooCallServiceImpl Class Reference</div>  </div>
+<div class="title">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for org.motechproject.ivr.kookoo.KookooCallServiceImpl:</div>
+Inheritance diagram for org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00210.png" usemap="#org.motechproject.ivr.kookoo.KookooCallServiceImpl_map" alt=""/>
-  <map id="org.motechproject.ivr.kookoo.KookooCallServiceImpl_map" name="org.motechproject.ivr.kookoo.KookooCallServiceImpl_map">
-<area href="a00200.html" title="Interface to IVR System." alt="org.motechproject.ivr.service.IVRService" shape="rect" coords="0,0,311,24"/>
+  <img src="a00210.png" usemap="#org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl_map" alt=""/>
+  <map id="org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl_map" name="org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl_map">
+<area href="a00209.html" title="Interface to IVR Dial out call." alt="org.motechproject.ivr.service.IVRService" shape="rect" coords="0,0,315,24"/>
+<area href="a00209.html" title="Interface to IVR Dial out call." alt="org.motechproject.ivr.service.IVRService" shape="rect" coords="325,0,640,24"/>
 </map>
  </div></div>
 
-<p><a href="a01131.html">List of all members.</a></p>
+<p><a href="a01624.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaccb449e75b0591cc3b4ebce677782eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#aaccb449e75b0591cc3b4ebce677782eb">KookooCallServiceImpl</a> (@Qualifier(&quot;ivrProperties&quot;) Properties properties, <a class="el" href="a00208.html">KookooCallDetailRecordsService</a> kookooCallDetailRecordsService)</td></tr>
-<tr class="memitem:acf908879f7eded17352f4dd1e328984a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#acf908879f7eded17352f4dd1e328984a">initiateCall</a> (<a class="el" href="a00064.html">CallRequest</a> callRequest)</td></tr>
+<tr class="memitem:a24c6f131d49e2a16b2d72d839377a22d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a24c6f131d49e2a16b2d72d839377a22d">IVRServiceAsteriskImpl</a> (String asteriskServerHost, String asteriskUserName, String asteriskUserPassword)</td></tr>
+<tr class="memitem:a9e8abc643104d58902e7247fbe8acdd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a9e8abc643104d58902e7247fbe8acdd7">IVRServiceAsteriskImpl</a> (String asteriskServerHost, int asteriskServerPort, String asteriskUserName, String asteriskUserPassword)</td></tr>
+<tr class="memitem:a47351274e8d8c82ff78dd7254f8b3b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a47351274e8d8c82ff78dd7254f8b3b00">initiateCall</a> (<a class="el" href="a00067.html">CallRequest</a> callRequest)</td></tr>
+<tr class="memitem:ae543b862917f0756c14d39a8ff742b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#ae543b862917f0756c14d39a8ff742b1d">setAgiUrl</a> (String agiUrl)</td></tr>
+<tr class="memitem:a7f0dd72a569f7181a695f720cb361d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a7f0dd72a569f7181a695f720cb361d72">setTimeout</a> (long timeout)</td></tr>
+<tr class="memitem:abeb36043a749c526a6eb97f59b7b2592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#abeb36043a749c526a6eb97f59b7b2592">setVxmlBaseURL</a> (String vxmlBaseURL)</td></tr>
+<tr class="memitem:a24c6f131d49e2a16b2d72d839377a22d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a24c6f131d49e2a16b2d72d839377a22d">IVRServiceAsteriskImpl</a> (String asteriskServerHost, String asteriskUserName, String asteriskUserPassword)</td></tr>
+<tr class="memitem:a9e8abc643104d58902e7247fbe8acdd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a9e8abc643104d58902e7247fbe8acdd7">IVRServiceAsteriskImpl</a> (String asteriskServerHost, int asteriskServerPort, String asteriskUserName, String asteriskUserPassword)</td></tr>
+<tr class="memitem:a47351274e8d8c82ff78dd7254f8b3b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a47351274e8d8c82ff78dd7254f8b3b00">initiateCall</a> (<a class="el" href="a00067.html">CallRequest</a> callRequest)</td></tr>
+<tr class="memitem:ae543b862917f0756c14d39a8ff742b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#ae543b862917f0756c14d39a8ff742b1d">setAgiUrl</a> (String agiUrl)</td></tr>
+<tr class="memitem:a7f0dd72a569f7181a695f720cb361d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a7f0dd72a569f7181a695f720cb361d72">setTimeout</a> (long timeout)</td></tr>
+<tr class="memitem:abeb36043a749c526a6eb97f59b7b2592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#abeb36043a749c526a6eb97f59b7b2592">setVxmlBaseURL</a> (String vxmlBaseURL)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a70d4693377e341982121333111be9276"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a70d4693377e341982121333111be9276">OUTBOUND_URL</a> = &quot;kookoo.outbound.url&quot;</td></tr>
-<tr class="memitem:a0a6ce11240903ab3bcf116bc131d2af8"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a0a6ce11240903ab3bcf116bc131d2af8">API_KEY</a> = &quot;kookoo.api.key&quot;</td></tr>
-<tr class="memitem:ada39fa837d49df2d0f0bdfaa06fc6129"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#ada39fa837d49df2d0f0bdfaa06fc6129">API_KEY_KEY</a> = &quot;api_key&quot;</td></tr>
-<tr class="memitem:aaffc46c077130f708dde79d7ba3832c8"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#aaffc46c077130f708dde79d7ba3832c8">URL_KEY</a> = &quot;url&quot;</td></tr>
-<tr class="memitem:a933bb54dcd4dbde8a5b7fac0b5b54c09"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a933bb54dcd4dbde8a5b7fac0b5b54c09">CALLBACK_URL_KEY</a> = &quot;callback_url&quot;</td></tr>
-<tr class="memitem:a97ab0fa1c0cf192867ef662fc888ca6b"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a97ab0fa1c0cf192867ef662fc888ca6b">PHONE_NUMBER_KEY</a> = &quot;phone_no&quot;</td></tr>
-<tr class="memitem:a337a528798e3850cdc3edf2158a050ca"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a337a528798e3850cdc3edf2158a050ca">CUSTOM_DATA_KEY</a> = &quot;dataMap&quot;</td></tr>
-<tr class="memitem:acab10a6405e8a5d7c9bf0340dca3d9a9"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#acab10a6405e8a5d7c9bf0340dca3d9a9">IS_OUTBOUND_CALL</a> = &quot;is_outbound_call&quot;</td></tr>
+<tr class="memitem:a1e9b0a00a306e35fa4abd8edb511a470"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#a1e9b0a00a306e35fa4abd8edb511a470">VXML_URL</a> = &quot;vxml.url&quot;</td></tr>
+<tr class="memitem:ab4b2d90017a99cf8e3fdaa464f913112"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html#ab4b2d90017a99cf8e3fdaa464f913112">VXML_TIMEOUT</a> = &quot;vxml.timeout&quot;</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aaccb449e75b0591cc3b4ebce677782eb"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Asterisk specific implementation of the IVR Service interface. </p>
+<p>Date: 07/03/11 </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a24c6f131d49e2a16b2d72d839377a22d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00210.html#aaccb449e75b0591cc3b4ebce677782eb">org.motechproject.ivr.kookoo.KookooCallServiceImpl.KookooCallServiceImpl</a> </td>
+          <td class="memname"><a class="el" href="a00210.html#a24c6f131d49e2a16b2d72d839377a22d">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.IVRServiceAsteriskImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(&quot;ivrProperties&quot;) Properties&#160;</td>
-          <td class="paramname"><em>properties</em>, </td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskServerHost</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00208.html">KookooCallDetailRecordsService</a>&#160;</td>
-          <td class="paramname"><em>kookooCallDetailRecordsService</em>&#160;</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskUserName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskUserPassword</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e8abc643104d58902e7247fbe8acdd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00210.html#a24c6f131d49e2a16b2d72d839377a22d">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.IVRServiceAsteriskImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskServerHost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>asteriskServerPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskUserName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskUserPassword</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24c6f131d49e2a16b2d72d839377a22d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00210.html#a24c6f131d49e2a16b2d72d839377a22d">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.IVRServiceAsteriskImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskServerHost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskUserName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskUserPassword</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e8abc643104d58902e7247fbe8acdd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00210.html#a24c6f131d49e2a16b2d72d839377a22d">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.IVRServiceAsteriskImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskServerHost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>asteriskServerPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskUserName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>asteriskUserPassword</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -164,14 +289,14 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="acf908879f7eded17352f4dd1e328984a"></a>
+<a class="anchor" id="a47351274e8d8c82ff78dd7254f8b3b00"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00210.html#acf908879f7eded17352f4dd1e328984a">org.motechproject.ivr.kookoo.KookooCallServiceImpl.initiateCall</a> </td>
+          <td class="memname">void <a class="el" href="a00210.html#a47351274e8d8c82ff78dd7254f8b3b00">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.initiateCall</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00064.html">CallRequest</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00067.html">CallRequest</a>&#160;</td>
           <td class="paramname"><em>callRequest</em></td><td>)</td>
           <td></td>
         </tr>
@@ -189,22 +314,158 @@ Static Public Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt><b>Exceptions:</b></dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="a00062.html" title="Thrown when IVR can not initiate phone call due to some issue.">org.motechproject.ivr.model.CallInitiationException</a></td><td>if the call can not be initiated </td></tr>
+    <tr><td class="paramname"><a class="el" href="a00065.html" title="Thrown when IVR can not initiate phone call due to some issue.">org.motechproject.ivr.model.CallInitiationException</a></td><td>if the call can not be initiated </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00200.html#a9d94fa499973264b967c5ffe25ec4f15">org.motechproject.ivr.service.IVRService</a>.</p>
+<p>Implements <a class="el" href="a00209.html#a9d94fa499973264b967c5ffe25ec4f15">org.motechproject.ivr.service.IVRService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47351274e8d8c82ff78dd7254f8b3b00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00210.html#a47351274e8d8c82ff78dd7254f8b3b00">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.initiateCall</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00067.html">CallRequest</a>&#160;</td>
+          <td class="paramname"><em>callRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends an initiate call command to IVR. </p>
+<p>The call should be made to the phone specified in the given CallRequest</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callRequest</td><td>- data required by IVR phone system to start outbound call </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="a00065.html" title="Thrown when IVR can not initiate phone call due to some issue.">org.motechproject.ivr.model.CallInitiationException</a></td><td>if the call can not be initiated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00209.html#a9d94fa499973264b967c5ffe25ec4f15">org.motechproject.ivr.service.IVRService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae543b862917f0756c14d39a8ff742b1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00210.html#ae543b862917f0756c14d39a8ff742b1d">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.setAgiUrl</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>agiUrl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae543b862917f0756c14d39a8ff742b1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00210.html#ae543b862917f0756c14d39a8ff742b1d">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.setAgiUrl</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>agiUrl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f0dd72a569f7181a695f720cb361d72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00210.html#a7f0dd72a569f7181a695f720cb361d72">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.setTimeout</a> </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f0dd72a569f7181a695f720cb361d72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00210.html#a7f0dd72a569f7181a695f720cb361d72">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.setTimeout</a> </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abeb36043a749c526a6eb97f59b7b2592"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00210.html#abeb36043a749c526a6eb97f59b7b2592">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.setVxmlBaseURL</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>vxmlBaseURL</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abeb36043a749c526a6eb97f59b7b2592"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00210.html#abeb36043a749c526a6eb97f59b7b2592">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.setVxmlBaseURL</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>vxmlBaseURL</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a0a6ce11240903ab3bcf116bc131d2af8"></a>
+<a class="anchor" id="ab4b2d90017a99cf8e3fdaa464f913112"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="a00210.html#a0a6ce11240903ab3bcf116bc131d2af8">org.motechproject.ivr.kookoo.KookooCallServiceImpl.API_KEY</a> = &quot;kookoo.api.key&quot;<code> [static]</code></td>
+          <td class="memname">static final String <a class="el" href="a00210.html#ab4b2d90017a99cf8e3fdaa464f913112">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.VXML_TIMEOUT</a> = &quot;vxml.timeout&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -212,90 +473,12 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ada39fa837d49df2d0f0bdfaa06fc6129"></a>
+<a class="anchor" id="a1e9b0a00a306e35fa4abd8edb511a470"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="a00210.html#ada39fa837d49df2d0f0bdfaa06fc6129">org.motechproject.ivr.kookoo.KookooCallServiceImpl.API_KEY_KEY</a> = &quot;api_key&quot;<code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a933bb54dcd4dbde8a5b7fac0b5b54c09"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String <a class="el" href="a00210.html#a933bb54dcd4dbde8a5b7fac0b5b54c09">org.motechproject.ivr.kookoo.KookooCallServiceImpl.CALLBACK_URL_KEY</a> = &quot;callback_url&quot;<code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a337a528798e3850cdc3edf2158a050ca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String <a class="el" href="a00210.html#a337a528798e3850cdc3edf2158a050ca">org.motechproject.ivr.kookoo.KookooCallServiceImpl.CUSTOM_DATA_KEY</a> = &quot;dataMap&quot;<code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acab10a6405e8a5d7c9bf0340dca3d9a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String <a class="el" href="a00210.html#acab10a6405e8a5d7c9bf0340dca3d9a9">org.motechproject.ivr.kookoo.KookooCallServiceImpl.IS_OUTBOUND_CALL</a> = &quot;is_outbound_call&quot;<code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a70d4693377e341982121333111be9276"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String <a class="el" href="a00210.html#a70d4693377e341982121333111be9276">org.motechproject.ivr.kookoo.KookooCallServiceImpl.OUTBOUND_URL</a> = &quot;kookoo.outbound.url&quot;<code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a97ab0fa1c0cf192867ef662fc888ca6b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String <a class="el" href="a00210.html#a97ab0fa1c0cf192867ef662fc888ca6b">org.motechproject.ivr.kookoo.KookooCallServiceImpl.PHONE_NUMBER_KEY</a> = &quot;phone_no&quot;<code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aaffc46c077130f708dde79d7ba3832c8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String <a class="el" href="a00210.html#aaffc46c077130f708dde79d7ba3832c8">org.motechproject.ivr.kookoo.KookooCallServiceImpl.URL_KEY</a> = &quot;url&quot;<code> [static]</code></td>
+          <td class="memname">static final String <a class="el" href="a00210.html#a1e9b0a00a306e35fa4abd8edb511a470">org.motechproject.ivr.asterisk.IVRServiceAsteriskImpl.VXML_URL</a> = &quot;vxml.url&quot;<code> [static]</code></td>
         </tr>
       </table>
 </div>

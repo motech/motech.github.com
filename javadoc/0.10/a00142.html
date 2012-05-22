@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,13 +92,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00959.html">scheduletracking</a>      </li>
-      <li class="navelem"><a class="el" href="a00960.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00970.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00973.html">impl</a>      </li>
-      <li class="navelem"><a class="el" href="a00142.html">EnrollmentService</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01455.html">scheduletracking</a>      </li>
+      <li class="navelem"><a class="el" href="a01456.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01466.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a01469.html">impl</a>      </li>
+      <li class="navelem"><a class="el" href="a00142.html">EnrollmentDefaultmentService</a>      </li>
     </ul>
   </div>
 </div>
@@ -106,55 +106,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.scheduletracking.api.service.impl.EnrollmentService Class Reference</div>  </div>
+<div class="title">org.motechproject.scheduletracking.api.service.impl.EnrollmentDefaultmentService Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01314.html">List of all members.</a></p>
+<p><a href="a01814.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa12c1a67e2de9bdb418d78b96a2bfd0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#aa12c1a67e2de9bdb418d78b96a2bfd0f">EnrollmentService</a> (<a class="el" href="a00037.html">AllTrackedSchedules</a> allTrackedSchedules, <a class="el" href="a00025.html">AllEnrollments</a> allEnrollments, <a class="el" href="a00137.html">EnrollmentAlertService</a> enrollmentAlertService, <a class="el" href="a00138.html">EnrollmentDefaultmentService</a> enrollmentDefaultmentService)</td></tr>
-<tr class="memitem:af5a0d575f6732225cbec9043717552b4"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#af5a0d575f6732225cbec9043717552b4">enroll</a> (String externalId, String scheduleName, String startingMilestoneName, DateTime referenceDateTime, DateTime enrollmentDateTime, <a class="el" href="a00393.html">Time</a> preferredAlertTime, Map&lt; String, String &gt; metadata)</td></tr>
-<tr class="memitem:a07e71ca6deed2999eea20eb3dac406b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a07e71ca6deed2999eea20eb3dac406b7">fulfillCurrentMilestone</a> (<a class="el" href="a00136.html">Enrollment</a> enrollment, DateTime fulfillmentDateTime)</td></tr>
-<tr class="memitem:a264b74be9e50b5925344e40ac444cf4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a264b74be9e50b5925344e40ac444cf4d">unenroll</a> (<a class="el" href="a00136.html">Enrollment</a> enrollment)</td></tr>
-<tr class="memitem:aa5de6418f1a58c5399d838c714e52c35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00434.html">WindowName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#aa5de6418f1a58c5399d838c714e52c35">getCurrentWindowAsOf</a> (<a class="el" href="a00136.html">Enrollment</a> enrollment, DateTime asOf)</td></tr>
-<tr class="memitem:a0ce155eed617cff265db19fa7321db10"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a0ce155eed617cff265db19fa7321db10">getEndOfWindowForCurrentMilestone</a> (<a class="el" href="a00136.html">Enrollment</a> enrollment, <a class="el" href="a00434.html">WindowName</a> windowName)</td></tr>
-<tr class="memitem:ab177f6d02e195991739df44bc58cb830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00242.html">MilestoneAlerts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#ab177f6d02e195991739df44bc58cb830">getAlertTimings</a> (String externalId, String scheduleName, String milestoneName, DateTime referenceDateTime, DateTime enrollmentDateTime, <a class="el" href="a00393.html">Time</a> preferredAlertTime)</td></tr>
+<tr class="memitem:ac55829038591d22b72eb43c5f98c0ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#ac55829038591d22b72eb43c5f98c0ee5">EnrollmentDefaultmentService</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService)</td></tr>
+<tr class="memitem:a3136d8048d874ea2bcb4bd0e5f43ebe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a3136d8048d874ea2bcb4bd0e5f43ebe6">scheduleJobToCaptureDefaultment</a> (<a class="el" href="a00140.html">Enrollment</a> enrollment)</td></tr>
+<tr class="memitem:a8f588d84000bf6ea27af0e47e350aefd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a8f588d84000bf6ea27af0e47e350aefd">unscheduleDefaultmentCaptureJob</a> (<a class="el" href="a00140.html">Enrollment</a> enrollment)</td></tr>
+<tr class="memitem:ac55829038591d22b72eb43c5f98c0ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#ac55829038591d22b72eb43c5f98c0ee5">EnrollmentDefaultmentService</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService)</td></tr>
+<tr class="memitem:a3136d8048d874ea2bcb4bd0e5f43ebe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a3136d8048d874ea2bcb4bd0e5f43ebe6">scheduleJobToCaptureDefaultment</a> (<a class="el" href="a00140.html">Enrollment</a> enrollment)</td></tr>
+<tr class="memitem:a8f588d84000bf6ea27af0e47e350aefd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html#a8f588d84000bf6ea27af0e47e350aefd">unscheduleDefaultmentCaptureJob</a> (<a class="el" href="a00140.html">Enrollment</a> enrollment)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa12c1a67e2de9bdb418d78b96a2bfd0f"></a>
+<a class="anchor" id="ac55829038591d22b72eb43c5f98c0ee5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00142.html#aa12c1a67e2de9bdb418d78b96a2bfd0f">org.motechproject.scheduletracking.api.service.impl.EnrollmentService.EnrollmentService</a> </td>
+          <td class="memname"><a class="el" href="a00142.html#ac55829038591d22b72eb43c5f98c0ee5">org.motechproject.scheduletracking.api.service.impl.EnrollmentDefaultmentService.EnrollmentDefaultmentService</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00037.html">AllTrackedSchedules</a>&#160;</td>
-          <td class="paramname"><em>allTrackedSchedules</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00025.html">AllEnrollments</a>&#160;</td>
-          <td class="paramname"><em>allEnrollments</em>, </td>
         </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac55829038591d22b72eb43c5f98c0ee5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname"><a class="el" href="a00142.html#ac55829038591d22b72eb43c5f98c0ee5">org.motechproject.scheduletracking.api.service.impl.EnrollmentDefaultmentService.EnrollmentDefaultmentService</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00137.html">EnrollmentAlertService</a>&#160;</td>
-          <td class="paramname"><em>enrollmentAlertService</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00138.html">EnrollmentDefaultmentService</a>&#160;</td>
-          <td class="paramname"><em>enrollmentDefaultmentService</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -163,56 +157,16 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="af5a0d575f6732225cbec9043717552b4"></a>
+<a class="anchor" id="a3136d8048d874ea2bcb4bd0e5f43ebe6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00142.html#af5a0d575f6732225cbec9043717552b4">org.motechproject.scheduletracking.api.service.impl.EnrollmentService.enroll</a> </td>
+          <td class="memname">void <a class="el" href="a00142.html#a3136d8048d874ea2bcb4bd0e5f43ebe6">org.motechproject.scheduletracking.api.service.impl.EnrollmentDefaultmentService.scheduleJobToCaptureDefaultment</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00140.html">Enrollment</a>&#160;</td>
+          <td class="paramname"><em>enrollment</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>scheduleName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>startingMilestoneName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DateTime&#160;</td>
-          <td class="paramname"><em>referenceDateTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DateTime&#160;</td>
-          <td class="paramname"><em>enrollmentDateTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00393.html">Time</a>&#160;</td>
-          <td class="paramname"><em>preferredAlertTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, String &gt;&#160;</td>
-          <td class="paramname"><em>metadata</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -220,26 +174,16 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a07e71ca6deed2999eea20eb3dac406b7"></a>
+<a class="anchor" id="a3136d8048d874ea2bcb4bd0e5f43ebe6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00142.html#a07e71ca6deed2999eea20eb3dac406b7">org.motechproject.scheduletracking.api.service.impl.EnrollmentService.fulfillCurrentMilestone</a> </td>
+          <td class="memname">void <a class="el" href="a00142.html#a3136d8048d874ea2bcb4bd0e5f43ebe6">org.motechproject.scheduletracking.api.service.impl.EnrollmentDefaultmentService.scheduleJobToCaptureDefaultment</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00136.html">Enrollment</a>&#160;</td>
-          <td class="paramname"><em>enrollment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00140.html">Enrollment</a>&#160;</td>
+          <td class="paramname"><em>enrollment</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">DateTime&#160;</td>
-          <td class="paramname"><em>fulfillmentDateTime</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -247,50 +191,16 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab177f6d02e195991739df44bc58cb830"></a>
+<a class="anchor" id="a8f588d84000bf6ea27af0e47e350aefd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00242.html">MilestoneAlerts</a> <a class="el" href="a00142.html#ab177f6d02e195991739df44bc58cb830">org.motechproject.scheduletracking.api.service.impl.EnrollmentService.getAlertTimings</a> </td>
+          <td class="memname">void <a class="el" href="a00142.html#a8f588d84000bf6ea27af0e47e350aefd">org.motechproject.scheduletracking.api.service.impl.EnrollmentDefaultmentService.unscheduleDefaultmentCaptureJob</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00140.html">Enrollment</a>&#160;</td>
+          <td class="paramname"><em>enrollment</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>scheduleName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>milestoneName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DateTime&#160;</td>
-          <td class="paramname"><em>referenceDateTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DateTime&#160;</td>
-          <td class="paramname"><em>enrollmentDateTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00393.html">Time</a>&#160;</td>
-          <td class="paramname"><em>preferredAlertTime</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -298,68 +208,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa5de6418f1a58c5399d838c714e52c35"></a>
+<a class="anchor" id="a8f588d84000bf6ea27af0e47e350aefd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00434.html">WindowName</a> <a class="el" href="a00142.html#aa5de6418f1a58c5399d838c714e52c35">org.motechproject.scheduletracking.api.service.impl.EnrollmentService.getCurrentWindowAsOf</a> </td>
+          <td class="memname">void <a class="el" href="a00142.html#a8f588d84000bf6ea27af0e47e350aefd">org.motechproject.scheduletracking.api.service.impl.EnrollmentDefaultmentService.unscheduleDefaultmentCaptureJob</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00136.html">Enrollment</a>&#160;</td>
-          <td class="paramname"><em>enrollment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DateTime&#160;</td>
-          <td class="paramname"><em>asOf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0ce155eed617cff265db19fa7321db10"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DateTime <a class="el" href="a00142.html#a0ce155eed617cff265db19fa7321db10">org.motechproject.scheduletracking.api.service.impl.EnrollmentService.getEndOfWindowForCurrentMilestone</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00136.html">Enrollment</a>&#160;</td>
-          <td class="paramname"><em>enrollment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00434.html">WindowName</a>&#160;</td>
-          <td class="paramname"><em>windowName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a264b74be9e50b5925344e40ac444cf4d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00142.html#a264b74be9e50b5925344e40ac444cf4d">org.motechproject.scheduletracking.api.service.impl.EnrollmentService.unenroll</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00136.html">Enrollment</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00140.html">Enrollment</a>&#160;</td>
           <td class="paramname"><em>enrollment</em></td><td>)</td>
           <td></td>
         </tr>

@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,48 +92,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00888.html">cmslite</a>      </li>
-      <li class="navelem"><a class="el" href="a00889.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00892.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00036.html">AllStringContents</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01372.html">appointments</a>      </li>
+      <li class="navelem"><a class="el" href="a01373.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01379.html">repository</a>      </li>
+      <li class="navelem"><a class="el" href="a00036.html">AllReminderJobs</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.cmslite.api.repository.AllStringContents Class Reference</div>  </div>
+<div class="title">org.motechproject.appointments.api.repository.AllReminderJobs Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits BaseContentRepository&lt; StringContent &gt;.</p>
-
-<p><a href="a01088.html">List of all members.</a></p>
+<p><a href="a01573.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac29b21c3c9e39a73fe126f4b5df9917f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00387.html">StringContent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#ac29b21c3c9e39a73fe126f4b5df9917f">getContent</a> (String language, String name)</td></tr>
-<tr class="memitem:aed7bd1dbf010d5809e962d6192a56fce"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#aed7bd1dbf010d5809e962d6192a56fce">isContentAvailable</a> (String language, String name)</td></tr>
-<tr class="memitem:aaa48f203440e172abff96881e0fb8977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#aaa48f203440e172abff96881e0fb8977">addContent</a> (<a class="el" href="a00387.html">StringContent</a> content)  throws CMSLiteException </td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab22a92511d58d1a77556f02c2ce738ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#ab22a92511d58d1a77556f02c2ce738ee">AllStringContents</a> (@Qualifier(&quot;cmsLiteDatabase&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:a168babaad3b471dec297f8d6a174385b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a168babaad3b471dec297f8d6a174385b">AllReminderJobs</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService)</td></tr>
+<tr class="memitem:a8a335e087939a5b6ed6be4ae5c9b8d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a8a335e087939a5b6ed6be4ae5c9b8d25">addAppointmentJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a56cd50bd58be35a73742629df30638f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a56cd50bd58be35a73742629df30638f9">addVisitJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a825171e7cbbb6aec7f65b0609abf66a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a825171e7cbbb6aec7f65b0609abf66a9">removeAppointmentJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a6ee7d7e41ba7d59834ca92c7d46a056c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a6ee7d7e41ba7d59834ca92c7d46a056c">removeVisitJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a6250c9381bb544c7592bb52f5d5feb19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a6250c9381bb544c7592bb52f5d5feb19">rescheduleAppointmentJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:aa7232cd3432bf125046df5efa15cb1dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#aa7232cd3432bf125046df5efa15cb1dd">rescheduleVisitJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a0493431d21b42ca1dacabdc6f698e5dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a0493431d21b42ca1dacabdc6f698e5dd">removeAll</a> (String externalId)</td></tr>
+<tr class="memitem:a168babaad3b471dec297f8d6a174385b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a168babaad3b471dec297f8d6a174385b">AllReminderJobs</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService)</td></tr>
+<tr class="memitem:a8a335e087939a5b6ed6be4ae5c9b8d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a8a335e087939a5b6ed6be4ae5c9b8d25">addAppointmentJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a56cd50bd58be35a73742629df30638f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a56cd50bd58be35a73742629df30638f9">addVisitJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a825171e7cbbb6aec7f65b0609abf66a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a825171e7cbbb6aec7f65b0609abf66a9">removeAppointmentJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a6ee7d7e41ba7d59834ca92c7d46a056c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a6ee7d7e41ba7d59834ca92c7d46a056c">removeVisitJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a6250c9381bb544c7592bb52f5d5feb19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a6250c9381bb544c7592bb52f5d5feb19">rescheduleAppointmentJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:aa7232cd3432bf125046df5efa15cb1dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#aa7232cd3432bf125046df5efa15cb1dd">rescheduleVisitJob</a> (String externalId, <a class="el" href="a00440.html">Visit</a> visit)</td></tr>
+<tr class="memitem:a0493431d21b42ca1dacabdc6f698e5dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html#a0493431d21b42ca1dacabdc6f698e5dd">removeAll</a> (String externalId)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab22a92511d58d1a77556f02c2ce738ee"></a>
+<a class="anchor" id="a168babaad3b471dec297f8d6a174385b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00036.html#ab22a92511d58d1a77556f02c2ce738ee">org.motechproject.cmslite.api.repository.AllStringContents.AllStringContents</a> </td>
+          <td class="memname"><a class="el" href="a00036.html#a168babaad3b471dec297f8d6a174385b">org.motechproject.appointments.api.repository.AllReminderJobs.AllReminderJobs</a> </td>
           <td>(</td>
-          <td class="paramtype">@Qualifier(&quot;cmsLiteDatabase&quot;) CouchDbConnector&#160;</td>
-          <td class="paramname"><em>db</em></td><td>)</td>
-          <td><code> [protected]</code></td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a168babaad3b471dec297f8d6a174385b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00036.html#a168babaad3b471dec297f8d6a174385b">org.motechproject.appointments.api.repository.AllReminderJobs.AllReminderJobs</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -142,38 +166,21 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aaa48f203440e172abff96881e0fb8977"></a>
+<a class="anchor" id="a8a335e087939a5b6ed6be4ae5c9b8d25"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00036.html#aaa48f203440e172abff96881e0fb8977">org.motechproject.cmslite.api.repository.AllStringContents.addContent</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00387.html">StringContent</a>&#160;</td>
-          <td class="paramname"><em>content</em></td><td>)</td>
-          <td>  throws <a class="el" href="a00082.html">CMSLiteException</a> </td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac29b21c3c9e39a73fe126f4b5df9917f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00387.html">StringContent</a> <a class="el" href="a00036.html#ac29b21c3c9e39a73fe126f4b5df9917f">org.motechproject.cmslite.api.repository.AllStringContents.getContent</a> </td>
+          <td class="memname">void <a class="el" href="a00036.html#a8a335e087939a5b6ed6be4ae5c9b8d25">org.motechproject.appointments.api.repository.AllReminderJobs.addAppointmentJob</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
+          <td class="paramname"><em>externalId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,21 +193,325 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aed7bd1dbf010d5809e962d6192a56fce"></a>
+<a class="anchor" id="a8a335e087939a5b6ed6be4ae5c9b8d25"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean <a class="el" href="a00036.html#aed7bd1dbf010d5809e962d6192a56fce">org.motechproject.cmslite.api.repository.AllStringContents.isContentAvailable</a> </td>
+          <td class="memname">void <a class="el" href="a00036.html#a8a335e087939a5b6ed6be4ae5c9b8d25">org.motechproject.appointments.api.repository.AllReminderJobs.addAppointmentJob</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
+          <td class="paramname"><em>externalId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56cd50bd58be35a73742629df30638f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a56cd50bd58be35a73742629df30638f9">org.motechproject.appointments.api.repository.AllReminderJobs.addVisitJob</a> </td>
+          <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56cd50bd58be35a73742629df30638f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a56cd50bd58be35a73742629df30638f9">org.motechproject.appointments.api.repository.AllReminderJobs.addVisitJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0493431d21b42ca1dacabdc6f698e5dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a0493431d21b42ca1dacabdc6f698e5dd">org.motechproject.appointments.api.repository.AllReminderJobs.removeAll</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0493431d21b42ca1dacabdc6f698e5dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a0493431d21b42ca1dacabdc6f698e5dd">org.motechproject.appointments.api.repository.AllReminderJobs.removeAll</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a825171e7cbbb6aec7f65b0609abf66a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a825171e7cbbb6aec7f65b0609abf66a9">org.motechproject.appointments.api.repository.AllReminderJobs.removeAppointmentJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a825171e7cbbb6aec7f65b0609abf66a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a825171e7cbbb6aec7f65b0609abf66a9">org.motechproject.appointments.api.repository.AllReminderJobs.removeAppointmentJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ee7d7e41ba7d59834ca92c7d46a056c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a6ee7d7e41ba7d59834ca92c7d46a056c">org.motechproject.appointments.api.repository.AllReminderJobs.removeVisitJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ee7d7e41ba7d59834ca92c7d46a056c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a6ee7d7e41ba7d59834ca92c7d46a056c">org.motechproject.appointments.api.repository.AllReminderJobs.removeVisitJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6250c9381bb544c7592bb52f5d5feb19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a6250c9381bb544c7592bb52f5d5feb19">org.motechproject.appointments.api.repository.AllReminderJobs.rescheduleAppointmentJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6250c9381bb544c7592bb52f5d5feb19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#a6250c9381bb544c7592bb52f5d5feb19">org.motechproject.appointments.api.repository.AllReminderJobs.rescheduleAppointmentJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7232cd3432bf125046df5efa15cb1dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#aa7232cd3432bf125046df5efa15cb1dd">org.motechproject.appointments.api.repository.AllReminderJobs.rescheduleVisitJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7232cd3432bf125046df5efa15cb1dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00036.html#aa7232cd3432bf125046df5efa15cb1dd">org.motechproject.appointments.api.repository.AllReminderJobs.rescheduleVisitJob</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00440.html">Visit</a>&#160;</td>
+          <td class="paramname"><em>visit</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

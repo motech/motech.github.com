@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,13 +92,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00876.html">appointments</a>      </li>
-      <li class="navelem"><a class="el" href="a00877.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00884.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00887.html">impl</a>      </li>
-      <li class="navelem"><a class="el" href="a00046.html">AppointmentServiceImpl</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01372.html">appointments</a>      </li>
+      <li class="navelem"><a class="el" href="a01373.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01380.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a01381.html">contract</a>      </li>
+      <li class="navelem"><a class="el" href="a00046.html">AppointmentCalendarRequest</a>      </li>
     </ul>
   </div>
 </div>
@@ -106,63 +106,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl Class Reference</div>  </div>
+<div class="title">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest Class Reference<div class="ingroups"><a class="el" href="a01542.html">Appointments</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.appointments.api.service.impl.AppointmentServiceImpl:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00046.png" usemap="#org.motechproject.appointments.api.service.impl.AppointmentServiceImpl_map" alt=""/>
-  <map id="org.motechproject.appointments.api.service.impl.AppointmentServiceImpl_map" name="org.motechproject.appointments.api.service.impl.AppointmentServiceImpl_map">
-<area href="a00045.html" title="Appointment Service exposes appointment management operations such as create appointment, find and mark as visited etc." alt="org.motechproject.appointments.api.service.AppointmentService" shape="rect" coords="0,0,423,24"/>
-</map>
- </div></div>
 
-<p><a href="a01080.html">List of all members.</a></p>
+<p><a href="a01575.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1bd97ff8d160133c273185e16a69538c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a1bd97ff8d160133c273185e16a69538c">AppointmentServiceImpl</a> (<a class="el" href="a00023.html">AllAppointmentCalendars</a> allAppointmentCalendars, <a class="el" href="a00033.html">AllReminderJobs</a> allReminderJobs, <a class="el" href="a00422.html">VisitsQueryService</a> visitsQueryService)</td></tr>
-<tr class="memitem:a8f38cd8b6d8046bebc95a14f078e8086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a8f38cd8b6d8046bebc95a14f078e8086">addCalendar</a> (AppointmentCalendarRequest appointmentCalendarRequest)</td></tr>
-<tr class="memitem:af7de09ffb53ffa9c8fa923ee1458daa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#af7de09ffb53ffa9c8fa923ee1458daa6">removeCalendar</a> (String externalId)</td></tr>
-<tr class="memitem:aff5d7af7a52122fbb2385ccb0c8fa106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00419.html">VisitResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#aff5d7af7a52122fbb2385ccb0c8fa106">addVisit</a> (String externalId, CreateVisitRequest createVisitRequest)</td></tr>
-<tr class="memitem:abe7198e2cd5a7129b43506be1fd8df35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00419.html">VisitResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#abe7198e2cd5a7129b43506be1fd8df35">findVisit</a> (String externalId, String visitName)</td></tr>
-<tr class="memitem:a446a3aae3ee3390cab1ef8037c605201"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00419.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a446a3aae3ee3390cab1ef8037c605201">getAllVisits</a> (String externalId)</td></tr>
-<tr class="memitem:a336e5c2b4e405374a7cbcc52cd78e06a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a336e5c2b4e405374a7cbcc52cd78e06a">addCustomDataToVisit</a> (String externalId, String visitName, Map&lt; String, Object &gt; data)</td></tr>
-<tr class="memitem:a2b4002cdd16817ec77932d7a2defb636"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a2b4002cdd16817ec77932d7a2defb636">rescheduleAppointment</a> (RescheduleAppointmentRequest rescheduleAppointmentRequest)</td></tr>
-<tr class="memitem:a2af2de6f2882c486dea95d903dcc41cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a2af2de6f2882c486dea95d903dcc41cc">confirmAppointment</a> (ConfirmAppointmentRequest request)</td></tr>
-<tr class="memitem:a39dcda7e058c9f526a22d9a056d0408d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a39dcda7e058c9f526a22d9a056d0408d">visited</a> (String externalId, String visitName, DateTime visitedDate)</td></tr>
-<tr class="memitem:a310e44d91ef18b2a799ea9b4faa22aeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a310e44d91ef18b2a799ea9b4faa22aeb">markVisitAsMissed</a> (String externalId, String visitName)</td></tr>
-<tr class="memitem:acc60a336edfa097b8d994fd929205d74"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00419.html">VisitResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#acc60a336edfa097b8d994fd929205d74">search</a> (<a class="el" href="a00421.html">VisitsQuery</a> query)</td></tr>
+<tr class="memitem:a57bebb8442c5b54a63a3990da1072d38"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a57bebb8442c5b54a63a3990da1072d38">getExternalId</a> ()</td></tr>
+<tr class="memitem:a28f516bfd1d6402bb00e68e6ec704af2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00046.html">AppointmentCalendarRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a28f516bfd1d6402bb00e68e6ec704af2">setExternalId</a> (String externalId)</td></tr>
+<tr class="memitem:afebe480b7a0fedc4a9f4d2137d779510"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00098.html">CreateVisitRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#afebe480b7a0fedc4a9f4d2137d779510">getCreateVisitRequests</a> ()</td></tr>
+<tr class="memitem:a64075afb3fe46c9a0c582dc383e357b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00046.html">AppointmentCalendarRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a64075afb3fe46c9a0c582dc383e357b5">setCreateVisitRequests</a> (List&lt; <a class="el" href="a00098.html">CreateVisitRequest</a> &gt; createVisitRequests)</td></tr>
+<tr class="memitem:a81fcab6ccef3d56fbf81d7be0515b246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00046.html">AppointmentCalendarRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a81fcab6ccef3d56fbf81d7be0515b246">addVisitRequest</a> (<a class="el" href="a00098.html">CreateVisitRequest</a> createVisitRequest)</td></tr>
+<tr class="memitem:a57bebb8442c5b54a63a3990da1072d38"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a57bebb8442c5b54a63a3990da1072d38">getExternalId</a> ()</td></tr>
+<tr class="memitem:a28f516bfd1d6402bb00e68e6ec704af2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00046.html">AppointmentCalendarRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a28f516bfd1d6402bb00e68e6ec704af2">setExternalId</a> (String externalId)</td></tr>
+<tr class="memitem:afebe480b7a0fedc4a9f4d2137d779510"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00098.html">CreateVisitRequest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#afebe480b7a0fedc4a9f4d2137d779510">getCreateVisitRequests</a> ()</td></tr>
+<tr class="memitem:a64075afb3fe46c9a0c582dc383e357b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00046.html">AppointmentCalendarRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a64075afb3fe46c9a0c582dc383e357b5">setCreateVisitRequests</a> (List&lt; <a class="el" href="a00098.html">CreateVisitRequest</a> &gt; createVisitRequests)</td></tr>
+<tr class="memitem:a81fcab6ccef3d56fbf81d7be0515b246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00046.html">AppointmentCalendarRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a81fcab6ccef3d56fbf81d7be0515b246">addVisitRequest</a> (<a class="el" href="a00098.html">CreateVisitRequest</a> createVisitRequest)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1bd97ff8d160133c273185e16a69538c"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Appointment schedule template for creating multiple appointments/scheduled visits. </p>
+<p>It takes <a class="el" href="a00098.html">CreateVisitRequest</a> list and user id and schedules appointments/visits. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a81fcab6ccef3d56fbf81d7be0515b246"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00046.html#a1bd97ff8d160133c273185e16a69538c">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.AppointmentServiceImpl</a> </td>
+          <td class="memname"><a class="el" href="a00046.html">AppointmentCalendarRequest</a> <a class="el" href="a00046.html#a81fcab6ccef3d56fbf81d7be0515b246">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.addVisitRequest</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00023.html">AllAppointmentCalendars</a>&#160;</td>
-          <td class="paramname"><em>allAppointmentCalendars</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00098.html">CreateVisitRequest</a>&#160;</td>
+          <td class="paramname"><em>createVisitRequest</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00033.html">AllReminderJobs</a>&#160;</td>
-          <td class="paramname"><em>allReminderJobs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00422.html">VisitsQueryService</a>&#160;</td>
-          <td class="paramname"><em>visitsQueryService</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -170,191 +146,127 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a8f38cd8b6d8046bebc95a14f078e8086"></a>
+<a class="anchor" id="a81fcab6ccef3d56fbf81d7be0515b246"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00046.html#a8f38cd8b6d8046bebc95a14f078e8086">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.addCalendar</a> </td>
+          <td class="memname"><a class="el" href="a00046.html">AppointmentCalendarRequest</a> <a class="el" href="a00046.html#a81fcab6ccef3d56fbf81d7be0515b246">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.addVisitRequest</a> </td>
           <td>(</td>
-          <td class="paramtype">AppointmentCalendarRequest&#160;</td>
-          <td class="paramname"><em>appointmentCalendarRequest</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00098.html">CreateVisitRequest</a>&#160;</td>
+          <td class="paramname"><em>createVisitRequest</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Adds appointment schedules based on <a class="el" href="">AppointmentCalendarRequest</a> and <a class="el" href="">CreateVisitRequest</a>. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">appointmentCalendarRequest</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00045.html#a4508a43d0e389da44ac439bc6194ad2f">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a336e5c2b4e405374a7cbcc52cd78e06a"></a>
+<a class="anchor" id="afebe480b7a0fedc4a9f4d2137d779510"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00046.html#a336e5c2b4e405374a7cbcc52cd78e06a">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.addCustomDataToVisit</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00098.html">CreateVisitRequest</a>&gt; <a class="el" href="a00046.html#afebe480b7a0fedc4a9f4d2137d779510">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.getCreateVisitRequests</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>visitName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Appends the given custom data to the existing data of a visit identified by the given visit name and user identifier (external id) </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">visitName</td><td></td></tr>
-    <tr><td class="paramname">data</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00045.html#a4abea6d98ef5a22107b14d1b4229bf42">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aff5d7af7a52122fbb2385ccb0c8fa106"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00419.html">VisitResponse</a> <a class="el" href="a00046.html#aff5d7af7a52122fbb2385ccb0c8fa106">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.addVisit</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">CreateVisitRequest&#160;</td>
-          <td class="paramname"><em>createVisitRequest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Adds a visit as per given <a class="el" href="">CreateVisitRequest</a>. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">createVisitRequest</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
-
-<p>Implements <a class="el" href="a00045.html#aae9f1e45c8aa96ce8478f7890956d7b8">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2af2de6f2882c486dea95d903dcc41cc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00046.html#a2af2de6f2882c486dea95d903dcc41cc">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.confirmAppointment</a> </td>
-          <td>(</td>
-          <td class="paramtype">ConfirmAppointmentRequest&#160;</td>
-          <td class="paramname"><em>confirmAppointmentRequest</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Sets confirmed visit/appointment date. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">confirmAppointmentRequest</td><td>specifies visit/appointment and confirmed date. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also:</dt><dd>ConfirmAppointmentRequest </dd></dl>
-
-<p>Implements <a class="el" href="a00045.html#a69da2fe5bf0cdbfae478aca343c98869">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="abe7198e2cd5a7129b43506be1fd8df35"></a>
+<a class="anchor" id="afebe480b7a0fedc4a9f4d2137d779510"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00419.html">VisitResponse</a> <a class="el" href="a00046.html#abe7198e2cd5a7129b43506be1fd8df35">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.findVisit</a> </td>
+          <td class="memname">List&lt;<a class="el" href="a00098.html">CreateVisitRequest</a>&gt; <a class="el" href="a00046.html#afebe480b7a0fedc4a9f4d2137d779510">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.getCreateVisitRequests</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>visitName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Find visit for given user identifier (external id) and visit name. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">visitName</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
-
-<p>Implements <a class="el" href="a00045.html#a02a5eff71f7949f05e6893c6c538795f">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a446a3aae3ee3390cab1ef8037c605201"></a>
+<a class="anchor" id="a57bebb8442c5b54a63a3990da1072d38"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00419.html">VisitResponse</a>&gt; <a class="el" href="a00046.html#a446a3aae3ee3390cab1ef8037c605201">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.getAllVisits</a> </td>
+          <td class="memname">String <a class="el" href="a00046.html#a57bebb8442c5b54a63a3990da1072d38">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.getExternalId</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57bebb8442c5b54a63a3990da1072d38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00046.html#a57bebb8442c5b54a63a3990da1072d38">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.getExternalId</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64075afb3fe46c9a0c582dc383e357b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00046.html">AppointmentCalendarRequest</a> <a class="el" href="a00046.html#a64075afb3fe46c9a0c582dc383e357b5">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.setCreateVisitRequests</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="a00098.html">CreateVisitRequest</a> &gt;&#160;</td>
+          <td class="paramname"><em>createVisitRequests</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64075afb3fe46c9a0c582dc383e357b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00046.html">AppointmentCalendarRequest</a> <a class="el" href="a00046.html#a64075afb3fe46c9a0c582dc383e357b5">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.setCreateVisitRequests</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="a00098.html">CreateVisitRequest</a> &gt;&#160;</td>
+          <td class="paramname"><em>createVisitRequests</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a28f516bfd1d6402bb00e68e6ec704af2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00046.html">AppointmentCalendarRequest</a> <a class="el" href="a00046.html#a28f516bfd1d6402bb00e68e6ec704af2">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.setExternalId</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em></td><td>)</td>
@@ -364,63 +276,14 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Gets all scheduled visits for a given user identifier (external id) </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
-
-<p>Implements <a class="el" href="a00045.html#a9598dae7b3318cacd115374039c2ce48">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a310e44d91ef18b2a799ea9b4faa22aeb"></a>
+<a class="anchor" id="a28f516bfd1d6402bb00e68e6ec704af2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00046.html#a310e44d91ef18b2a799ea9b4faa22aeb">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.markVisitAsMissed</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>visitName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Mark the visit/appointment as missed. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td>identifies user </td></tr>
-    <tr><td class="paramname">visitName</td><td>unique visit id for the user </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00045.html#a5228e9bb61fd5b6b8673b1282cf868a2">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af7de09ffb53ffa9c8fa923ee1458daa6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00046.html#af7de09ffb53ffa9c8fa923ee1458daa6">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.removeCalendar</a> </td>
+          <td class="memname"><a class="el" href="a00046.html">AppointmentCalendarRequest</a> <a class="el" href="a00046.html#a28f516bfd1d6402bb00e68e6ec704af2">org.motechproject.appointments.api.service.contract.AppointmentCalendarRequest.setExternalId</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>externalId</em></td><td>)</td>
@@ -429,106 +292,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Removes all appointments and reminders for given user (identified by externalId) </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00045.html#a208279423207a028eb890badbe088188">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2b4002cdd16817ec77932d7a2defb636"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00046.html#a2b4002cdd16817ec77932d7a2defb636">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.rescheduleAppointment</a> </td>
-          <td>(</td>
-          <td class="paramtype">RescheduleAppointmentRequest&#160;</td>
-          <td class="paramname"><em>rescheduleAppointmentRequest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Change the due date and reminder configuration for given appointment/visit. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rescheduleAppointmentRequest</td><td>specifies reschedule due date and reminder configuration. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also:</dt><dd>RescheduleAppointmentRequest </dd></dl>
-
-<p>Implements <a class="el" href="a00045.html#adc3da0db33593b8236b4b30899d0ca52">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acc60a336edfa097b8d994fd929205d74"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="a00419.html">VisitResponse</a>&gt; <a class="el" href="a00046.html#acc60a336edfa097b8d994fd929205d74">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.search</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00421.html">VisitsQuery</a>&#160;</td>
-          <td class="paramname"><em>query</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a39dcda7e058c9f526a22d9a056d0408d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00046.html#a39dcda7e058c9f526a22d9a056d0408d">org.motechproject.appointments.api.service.impl.AppointmentServiceImpl.visited</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>visitName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DateTime&#160;</td>
-          <td class="paramname"><em>visitedDate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Mark visit/appointment as Visited along with setting visit date and time. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td>identifies user </td></tr>
-    <tr><td class="paramname">visitName</td><td>unique visit id for the user </td></tr>
-    <tr><td class="paramname">visitedDate</td><td>visited date </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00045.html#a9b14d4d09330ab6855d2c2f21f8f85fe">org.motechproject.appointments.api.service.AppointmentService</a>.</p>
 
 </div>
 </div>

@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,12 +92,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00959.html">scheduletracking</a>      </li>
-      <li class="navelem"><a class="el" href="a00960.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00969.html">repository</a>      </li>
-      <li class="navelem"><a class="el" href="a00037.html">AllTrackedSchedules</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01392.html">dao</a>      </li>
+      <li class="navelem"><a class="el" href="a00037.html">AllRules</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,38 +103,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.scheduletracking.api.repository.AllTrackedSchedules Class Reference</div>  </div>
+<div class="title">org.motechproject.dao.AllRules Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01300.html">List of all members.</a></p>
+<p>Inherits MotechBaseRepository&lt; Rule &gt;, and MotechBaseRepository&lt; Rule &gt;.</p>
+
+<p><a href="a01600.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6f94fe97770fae984cca07e04bb34be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#ac6f94fe97770fae984cca07e04bb34be">AllTrackedSchedules</a> (<a class="el" href="a00394.html">TrackedSchedulesJsonReader</a> schedulesJsonReader, <a class="el" href="a00361.html">ScheduleFactory</a> scheduleFactory)</td></tr>
-<tr class="memitem:a1276d01fb583e91b0c8c4ff4cc0cde5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00359.html">Schedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#a1276d01fb583e91b0c8c4ff4cc0cde5b">getByName</a> (String name)</td></tr>
+<tr class="memitem:aa40bafb159074a465ab7975dcde0ea5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#aa40bafb159074a465ab7975dcde0ea5b">AllRules</a> (@Qualifier(&quot;ruleDatabase&quot;) CouchDbConnector db)</td></tr>
+<tr class="memitem:aa40bafb159074a465ab7975dcde0ea5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00037.html#aa40bafb159074a465ab7975dcde0ea5b">AllRules</a> (@Qualifier(&quot;ruleDatabase&quot;) CouchDbConnector db)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac6f94fe97770fae984cca07e04bb34be"></a>
+<a class="anchor" id="aa40bafb159074a465ab7975dcde0ea5b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00037.html#ac6f94fe97770fae984cca07e04bb34be">org.motechproject.scheduletracking.api.repository.AllTrackedSchedules.AllTrackedSchedules</a> </td>
+          <td class="memname"><a class="el" href="a00037.html#aa40bafb159074a465ab7975dcde0ea5b">org.motechproject.dao.AllRules.AllRules</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00394.html">TrackedSchedulesJsonReader</a>&#160;</td>
-          <td class="paramname"><em>schedulesJsonReader</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">@Qualifier(&quot;ruleDatabase&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00361.html">ScheduleFactory</a>&#160;</td>
-          <td class="paramname"><em>scheduleFactory</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -144,16 +134,15 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a1276d01fb583e91b0c8c4ff4cc0cde5b"></a>
+<a class="anchor" id="aa40bafb159074a465ab7975dcde0ea5b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00359.html">Schedule</a> <a class="el" href="a00037.html#a1276d01fb583e91b0c8c4ff4cc0cde5b">org.motechproject.scheduletracking.api.repository.AllTrackedSchedules.getByName</a> </td>
+          <td class="memname"><a class="el" href="a00037.html#aa40bafb159074a465ab7975dcde0ea5b">org.motechproject.dao.AllRules.AllRules</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramtype">@Qualifier(&quot;ruleDatabase&quot;) CouchDbConnector&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

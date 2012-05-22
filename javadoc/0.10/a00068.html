@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,12 +92,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00991.html">messagecampaign</a>      </li>
-      <li class="navelem"><a class="el" href="a01003.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00068.html">CampaignEnrollmentRecordMapper</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01487.html">messagecampaign</a>      </li>
+      <li class="navelem"><a class="el" href="a01491.html">domain</a>      </li>
+      <li class="navelem"><a class="el" href="a01492.html">campaign</a>      </li>
+      <li class="navelem"><a class="el" href="a00068.html">Campaign&lt; T extends CampaignMessage &gt;</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,26 +106,286 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.messagecampaign.service.CampaignEnrollmentRecordMapper Class Reference</div>  </div>
+<div class="title">org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends CampaignMessage &gt; Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01388.html">List of all members.</a></p>
+<p><a href="a01864.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afb0ecae404708544cb6ce40f096ebcfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00067.html">CampaignEnrollmentRecord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#afb0ecae404708544cb6ce40f096ebcfd">map</a> (<a class="el" href="a00066.html">CampaignEnrollment</a> enrollment)</td></tr>
+<tr class="memitem:aa7d945805471835933d80a602d87c80f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aa7d945805471835933d80a602d87c80f">name</a> ()</td></tr>
+<tr class="memitem:a18e1ded58f2d353b5917c739eedcbaf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a18e1ded58f2d353b5917c739eedcbaf5">setName</a> (String name)</td></tr>
+<tr class="memitem:a23cf4679e64000fe5a63bb25028d85f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00081.html">CampaignType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a23cf4679e64000fe5a63bb25028d85f9">type</a> ()</td></tr>
+<tr class="memitem:a4fcde168e2bf5eacc9670a2f7aa45cb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a4fcde168e2bf5eacc9670a2f7aa45cb9">setType</a> (<a class="el" href="a00081.html">CampaignType</a> type)</td></tr>
+<tr class="memitem:afe6967691caf8fe052edf28ac612eb79"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#afe6967691caf8fe052edf28ac612eb79">setMessages</a> (List&lt; T &gt; messages)</td></tr>
+<tr class="memitem:a7ad19c04e87477d0688bff4a07651260"><td class="memItemLeft" align="right" valign="top">abstract List&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a7ad19c04e87477d0688bff4a07651260">messages</a> ()</td></tr>
+<tr class="memitem:a2b1b3ec795203138e5f6df308e51c0d6"><td class="memItemLeft" align="right" valign="top">abstract MessageCampaignScheduler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a2b1b3ec795203138e5f6df308e51c0d6">getScheduler</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> motechSchedulerService, <a class="el" href="a00072.html">CampaignEnrollmentService</a> campaignEnrollmentService, <a class="el" href="a00080.html">CampaignRequest</a> enrollRequest)</td></tr>
+<tr class="memitem:aa7d945805471835933d80a602d87c80f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aa7d945805471835933d80a602d87c80f">name</a> ()</td></tr>
+<tr class="memitem:a18e1ded58f2d353b5917c739eedcbaf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a18e1ded58f2d353b5917c739eedcbaf5">setName</a> (String name)</td></tr>
+<tr class="memitem:a23cf4679e64000fe5a63bb25028d85f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00081.html">CampaignType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a23cf4679e64000fe5a63bb25028d85f9">type</a> ()</td></tr>
+<tr class="memitem:a4fcde168e2bf5eacc9670a2f7aa45cb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a4fcde168e2bf5eacc9670a2f7aa45cb9">setType</a> (<a class="el" href="a00081.html">CampaignType</a> type)</td></tr>
+<tr class="memitem:afe6967691caf8fe052edf28ac612eb79"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#afe6967691caf8fe052edf28ac612eb79">setMessages</a> (List&lt; T &gt; messages)</td></tr>
+<tr class="memitem:a7ad19c04e87477d0688bff4a07651260"><td class="memItemLeft" align="right" valign="top">abstract List&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a7ad19c04e87477d0688bff4a07651260">messages</a> ()</td></tr>
+<tr class="memitem:a2b1b3ec795203138e5f6df308e51c0d6"><td class="memItemLeft" align="right" valign="top">abstract MessageCampaignScheduler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a2b1b3ec795203138e5f6df308e51c0d6">getScheduler</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> motechSchedulerService, <a class="el" href="a00072.html">CampaignEnrollmentService</a> campaignEnrollmentService, <a class="el" href="a00080.html">CampaignRequest</a> enrollRequest)</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="afb0ecae404708544cb6ce40f096ebcfd"></a>
+<a class="anchor" id="a2b1b3ec795203138e5f6df308e51c0d6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00067.html">CampaignEnrollmentRecord</a> <a class="el" href="a00068.html#afb0ecae404708544cb6ce40f096ebcfd">org.motechproject.server.messagecampaign.service.CampaignEnrollmentRecordMapper.map</a> </td>
+          <td class="memname">abstract MessageCampaignScheduler org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.<a class="el" href="a00068.html#a2b1b3ec795203138e5f6df308e51c0d6">getScheduler</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00066.html">CampaignEnrollment</a>&#160;</td>
-          <td class="paramname"><em>enrollment</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>motechSchedulerService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00072.html">CampaignEnrollmentService</a>&#160;</td>
+          <td class="paramname"><em>campaignEnrollmentService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b1b3ec795203138e5f6df308e51c0d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract MessageCampaignScheduler org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.<a class="el" href="a00068.html#a2b1b3ec795203138e5f6df308e51c0d6">getScheduler</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>motechSchedulerService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00072.html">CampaignEnrollmentService</a>&#160;</td>
+          <td class="paramname"><em>campaignEnrollmentService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ad19c04e87477d0688bff4a07651260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract List&lt;T&gt; org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.messages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ad19c04e87477d0688bff4a07651260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract List&lt;T&gt; org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.messages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7d945805471835933d80a602d87c80f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7d945805471835933d80a602d87c80f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe6967691caf8fe052edf28ac612eb79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.<a class="el" href="a00068.html#afe6967691caf8fe052edf28ac612eb79">setMessages</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>messages</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe6967691caf8fe052edf28ac612eb79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.<a class="el" href="a00068.html#afe6967691caf8fe052edf28ac612eb79">setMessages</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>messages</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a18e1ded58f2d353b5917c739eedcbaf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.<a class="el" href="a00068.html#a18e1ded58f2d353b5917c739eedcbaf5">setName</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a18e1ded58f2d353b5917c739eedcbaf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.<a class="el" href="a00068.html#a18e1ded58f2d353b5917c739eedcbaf5">setName</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4fcde168e2bf5eacc9670a2f7aa45cb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.<a class="el" href="a00068.html#a4fcde168e2bf5eacc9670a2f7aa45cb9">setType</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00081.html">CampaignType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4fcde168e2bf5eacc9670a2f7aa45cb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.<a class="el" href="a00068.html#a4fcde168e2bf5eacc9670a2f7aa45cb9">setType</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00081.html">CampaignType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23cf4679e64000fe5a63bb25028d85f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00081.html">CampaignType</a> org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23cf4679e64000fe5a63bb25028d85f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00081.html">CampaignType</a> org.motechproject.server.messagecampaign.domain.campaign.Campaign&lt; T extends <a class="el" href="a00075.html">CampaignMessage</a> &gt;.type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

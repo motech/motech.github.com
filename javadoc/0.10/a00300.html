@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,135 +92,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00938.html">openmrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00948.html">services</a>      </li>
-      <li class="navelem"><a class="el" href="a00300.html">OpenMRSEncounterAdapter</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01487.html">messagecampaign</a>      </li>
+      <li class="navelem"><a class="el" href="a01491.html">domain</a>      </li>
+      <li class="navelem"><a class="el" href="a01492.html">campaign</a>      </li>
+      <li class="navelem"><a class="el" href="a00300.html">OffsetCampaign</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.openmrs.services.OpenMRSEncounterAdapter Class Reference</div>  </div>
+<div class="title">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.openmrs.services.OpenMRSEncounterAdapter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00300.png" usemap="#org.motechproject.openmrs.services.OpenMRSEncounterAdapter_map" alt=""/>
-  <map id="org.motechproject.openmrs.services.OpenMRSEncounterAdapter_map" name="org.motechproject.openmrs.services.OpenMRSEncounterAdapter_map">
-<area href="a00273.html" title="Interface for fetching and storing MRSEncounter details." alt="org.motechproject.mrs.services.MRSEncounterAdapter" shape="rect" coords="0,0,383,24"/>
-</map>
- </div></div>
 
-<p><a href="a01238.html">List of all members.</a></p>
+<p>Inherits Campaign&lt; OffsetCampaignMessage &gt;, and Campaign&lt; OffsetCampaignMessage &gt;.</p>
+
+<p><a href="a01869.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d48961ea5d7aa4da00feb19000a8464"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a9d48961ea5d7aa4da00feb19000a8464">OpenMRSEncounterAdapter</a> (EncounterService encounterService, <a class="el" href="a00308.html">OpenMRSUserAdapter</a> openMRSUserAdapter, <a class="el" href="a00301.html">OpenMRSFacilityAdapter</a> openMRSFacilityAdapter, <a class="el" href="a00303.html">OpenMRSPatientAdapter</a> openMRSPatientAdapter, <a class="el" href="a00302.html">OpenMRSObservationAdapter</a> openMRSObservationAdapter, <a class="el" href="a00304.html">OpenMRSPersonAdapter</a> openMRSPersonAdapter)</td></tr>
-<tr class="memitem:a844d07038308f18788660c0c2df32cd2"><td class="memItemLeft" align="right" valign="top">MRSEncounter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a844d07038308f18788660c0c2df32cd2">createEncounter</a> (MRSEncounter mrsEncounter)</td></tr>
-<tr class="memitem:a3852a5300bf8cef9f1af1f00cd95f602"><td class="memItemLeft" align="right" valign="top">MRSEncounter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a3852a5300bf8cef9f1af1f00cd95f602">getLatestEncounterByPatientMotechId</a> (String motechId, String encounterType)</td></tr>
+<tr class="memitem:a9dbc85be71e0af9510b5f762cf2a0446"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00301.html">OffsetCampaignMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a9dbc85be71e0af9510b5f762cf2a0446">messages</a> ()</td></tr>
+<tr class="memitem:ada7f2ca8c928a6a62b759ebbc60a0d39"><td class="memItemLeft" align="right" valign="top">MessageCampaignScheduler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#ada7f2ca8c928a6a62b759ebbc60a0d39">getScheduler</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService, <a class="el" href="a00072.html">CampaignEnrollmentService</a> campaignEnrollmentService, <a class="el" href="a00080.html">CampaignRequest</a> enrollRequest)</td></tr>
+<tr class="memitem:a746bd38c81cb7577d5134ca18a34f704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a746bd38c81cb7577d5134ca18a34f704">setMessages</a> (List&lt; <a class="el" href="a00301.html">OffsetCampaignMessage</a> &gt; messages)</td></tr>
+<tr class="memitem:a9ceccb5b618ccd7eeb74adc6f66e5d04"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a9ceccb5b618ccd7eeb74adc6f66e5d04">maxDuration</a> ()</td></tr>
+<tr class="memitem:ab1333b67b1649c9c8300765c6939b6f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#ab1333b67b1649c9c8300765c6939b6f9">maxDuration</a> (String <a class="el" href="a00300.html#ab333e3ac0686fd9676615764424881eb">maxDuration</a>)</td></tr>
+<tr class="memitem:a9dbc85be71e0af9510b5f762cf2a0446"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00301.html">OffsetCampaignMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a9dbc85be71e0af9510b5f762cf2a0446">messages</a> ()</td></tr>
+<tr class="memitem:ada7f2ca8c928a6a62b759ebbc60a0d39"><td class="memItemLeft" align="right" valign="top">MessageCampaignScheduler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#ada7f2ca8c928a6a62b759ebbc60a0d39">getScheduler</a> (<a class="el" href="a00277.html">MotechSchedulerService</a> schedulerService, <a class="el" href="a00072.html">CampaignEnrollmentService</a> campaignEnrollmentService, <a class="el" href="a00080.html">CampaignRequest</a> enrollRequest)</td></tr>
+<tr class="memitem:a746bd38c81cb7577d5134ca18a34f704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a746bd38c81cb7577d5134ca18a34f704">setMessages</a> (List&lt; <a class="el" href="a00301.html">OffsetCampaignMessage</a> &gt; messages)</td></tr>
+<tr class="memitem:a9ceccb5b618ccd7eeb74adc6f66e5d04"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#a9ceccb5b618ccd7eeb74adc6f66e5d04">maxDuration</a> ()</td></tr>
+<tr class="memitem:ab1333b67b1649c9c8300765c6939b6f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#ab1333b67b1649c9c8300765c6939b6f9">maxDuration</a> (String <a class="el" href="a00300.html#ab333e3ac0686fd9676615764424881eb">maxDuration</a>)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab333e3ac0686fd9676615764424881eb"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html#ab333e3ac0686fd9676615764424881eb">maxDuration</a></td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Manages OpenMRS Encounters. </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9d48961ea5d7aa4da00feb19000a8464"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00300.html#a9d48961ea5d7aa4da00feb19000a8464">org.motechproject.openmrs.services.OpenMRSEncounterAdapter.OpenMRSEncounterAdapter</a> </td>
-          <td>(</td>
-          <td class="paramtype">EncounterService&#160;</td>
-          <td class="paramname"><em>encounterService</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00308.html">OpenMRSUserAdapter</a>&#160;</td>
-          <td class="paramname"><em>openMRSUserAdapter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00301.html">OpenMRSFacilityAdapter</a>&#160;</td>
-          <td class="paramname"><em>openMRSFacilityAdapter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00303.html">OpenMRSPatientAdapter</a>&#160;</td>
-          <td class="paramname"><em>openMRSPatientAdapter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00302.html">OpenMRSObservationAdapter</a>&#160;</td>
-          <td class="paramname"><em>openMRSObservationAdapter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00304.html">OpenMRSPersonAdapter</a>&#160;</td>
-          <td class="paramname"><em>openMRSPersonAdapter</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a844d07038308f18788660c0c2df32cd2"></a>
+<a class="anchor" id="ada7f2ca8c928a6a62b759ebbc60a0d39"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MRSEncounter <a class="el" href="a00300.html#a844d07038308f18788660c0c2df32cd2">org.motechproject.openmrs.services.OpenMRSEncounterAdapter.createEncounter</a> </td>
+          <td class="memname">MessageCampaignScheduler <a class="el" href="a00300.html#ada7f2ca8c928a6a62b759ebbc60a0d39">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.getScheduler</a> </td>
           <td>(</td>
-          <td class="paramtype">MRSEncounter&#160;</td>
-          <td class="paramname"><em>mrsEncounter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Saves the given MRS Encounter to the OpenMRS system. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mrsEncounter</td><td>The object to be saved </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>The saved instance of MRS Encounter </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3852a5300bf8cef9f1af1f00cd95f602"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MRSEncounter <a class="el" href="a00300.html#a3852a5300bf8cef9f1af1f00cd95f602">org.motechproject.openmrs.services.OpenMRSEncounterAdapter.getLatestEncounterByPatientMotechId</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>motechId</em>, </td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>encounterType</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00072.html">CampaignEnrollmentService</a>&#160;</td>
+          <td class="paramname"><em>campaignEnrollmentService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -231,17 +163,184 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Fetches the latest encounter of a patient identified by MOTECH ID and the encounter type. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">motechId</td><td>Identifier of the patient </td></tr>
-    <tr><td class="paramname">encounterType</td><td>Type of the encounter. (e.g. ANCVISIT) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>The latest MRSEncounter if found, else null. </dd></dl>
+</div>
+</div>
+<a class="anchor" id="ada7f2ca8c928a6a62b759ebbc60a0d39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MessageCampaignScheduler <a class="el" href="a00300.html#ada7f2ca8c928a6a62b759ebbc60a0d39">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.getScheduler</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00277.html">MotechSchedulerService</a>&#160;</td>
+          <td class="paramname"><em>schedulerService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00072.html">CampaignEnrollmentService</a>&#160;</td>
+          <td class="paramname"><em>campaignEnrollmentService</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00080.html">CampaignRequest</a>&#160;</td>
+          <td class="paramname"><em>enrollRequest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
-<p>Implements <a class="el" href="a00273.html#a486a9af31b6c8a186fa9bbc528cb0969">org.motechproject.mrs.services.MRSEncounterAdapter</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a9ceccb5b618ccd7eeb74adc6f66e5d04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00300.html#ab333e3ac0686fd9676615764424881eb">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.maxDuration</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ceccb5b618ccd7eeb74adc6f66e5d04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00300.html#ab333e3ac0686fd9676615764424881eb">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.maxDuration</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1333b67b1649c9c8300765c6939b6f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00300.html#ab333e3ac0686fd9676615764424881eb">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.maxDuration</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>maxDuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1333b67b1649c9c8300765c6939b6f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00300.html#ab333e3ac0686fd9676615764424881eb">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.maxDuration</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>maxDuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9dbc85be71e0af9510b5f762cf2a0446"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00301.html">OffsetCampaignMessage</a>&gt; org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.messages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9dbc85be71e0af9510b5f762cf2a0446"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="a00301.html">OffsetCampaignMessage</a>&gt; org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.messages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a746bd38c81cb7577d5134ca18a34f704"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00300.html#a746bd38c81cb7577d5134ca18a34f704">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.setMessages</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="a00301.html">OffsetCampaignMessage</a> &gt;&#160;</td>
+          <td class="paramname"><em>messages</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a746bd38c81cb7577d5134ca18a34f704"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00300.html#a746bd38c81cb7577d5134ca18a34f704">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.setMessages</a> </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="a00301.html">OffsetCampaignMessage</a> &gt;&#160;</td>
+          <td class="paramname"><em>messages</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="ab333e3ac0686fd9676615764424881eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String <a class="el" href="a00300.html#ab333e3ac0686fd9676615764424881eb">org.motechproject.server.messagecampaign.domain.campaign.OffsetCampaign.maxDuration</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

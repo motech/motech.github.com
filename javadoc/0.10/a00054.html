@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,11 +92,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a01005.html">osgi</a>      </li>
-      <li class="navelem"><a class="el" href="a00054.html">BundleLoader</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01392.html">dao</a>      </li>
+      <li class="navelem"><a class="el" href="a00054.html">BaseDao&lt; T extends MotechBaseDataObject &gt;</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,58 +103,263 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.osgi.BundleLoader Interface Reference</div>  </div>
+<div class="title">org.motechproject.dao.BaseDao&lt; T extends MotechBaseDataObject &gt; Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.server.osgi.BundleLoader:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00054.png" usemap="#org.motechproject.server.osgi.BundleLoader_map" alt=""/>
-  <map id="org.motechproject.server.osgi.BundleLoader_map" name="org.motechproject.server.osgi.BundleLoader_map">
-<area href="a00216.html" title="Custom log4j configuration loader." alt="org.motechproject.server.osgi.Log4JBundleLoader" shape="rect" coords="0,56,300,80"/>
-<area href="a00355.html" title="Custom log4j configuration loader." alt="org.motechproject.server.osgi.RuleBundleLoader" shape="rect" coords="310,56,610,80"/>
-</map>
- </div></div>
 
-<p><a href="a01396.html">List of all members.</a></p>
+<p><a href="a01601.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa8e665376581d423fd3f20497a612190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#aa8e665376581d423fd3f20497a612190">loadBundle</a> (Bundle bundle)  throws Exception</td></tr>
+<tr class="memitem:a81960df2dc8a8d8c9150526a271f8bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a81960df2dc8a8d8c9150526a271f8bbf">add</a> (T entity)</td></tr>
+<tr class="memitem:a87ad841f8e5e315e4c6360786bdcc1a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a87ad841f8e5e315e4c6360786bdcc1a2">update</a> (T entity)</td></tr>
+<tr class="memitem:a70a0d3568f8c5717e3b8dfb0fa501b11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a70a0d3568f8c5717e3b8dfb0fa501b11">remove</a> (T entity)</td></tr>
+<tr class="memitem:ac61c492ab0aa850b752775bf7f7c51c0"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ac61c492ab0aa850b752775bf7f7c51c0">get</a> (String id)</td></tr>
+<tr class="memitem:ade450111a83ccc200d8020325a084d1b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ade450111a83ccc200d8020325a084d1b">contains</a> (String id)</td></tr>
+<tr class="memitem:a03657c295e64d35fc5f5dbec621cf976"><td class="memItemLeft" align="right" valign="top">List&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a03657c295e64d35fc5f5dbec621cf976">getAll</a> ()</td></tr>
+<tr class="memitem:a0c325e602eb6f364a994db744e06f018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a0c325e602eb6f364a994db744e06f018">safeRemove</a> (T entity)</td></tr>
+<tr class="memitem:a81960df2dc8a8d8c9150526a271f8bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a81960df2dc8a8d8c9150526a271f8bbf">add</a> (T entity)</td></tr>
+<tr class="memitem:a87ad841f8e5e315e4c6360786bdcc1a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a87ad841f8e5e315e4c6360786bdcc1a2">update</a> (T entity)</td></tr>
+<tr class="memitem:a70a0d3568f8c5717e3b8dfb0fa501b11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a70a0d3568f8c5717e3b8dfb0fa501b11">remove</a> (T entity)</td></tr>
+<tr class="memitem:ac61c492ab0aa850b752775bf7f7c51c0"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ac61c492ab0aa850b752775bf7f7c51c0">get</a> (String id)</td></tr>
+<tr class="memitem:ade450111a83ccc200d8020325a084d1b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ade450111a83ccc200d8020325a084d1b">contains</a> (String id)</td></tr>
+<tr class="memitem:a03657c295e64d35fc5f5dbec621cf976"><td class="memItemLeft" align="right" valign="top">List&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a03657c295e64d35fc5f5dbec621cf976">getAll</a> ()</td></tr>
+<tr class="memitem:a0c325e602eb6f364a994db744e06f018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a0c325e602eb6f364a994db744e06f018">safeRemove</a> (T entity)</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Interface for custom bundle loading processes. </p>
-<dl class="section author"><dt>Author:</dt><dd>Ricky Wang </dd></dl>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa8e665376581d423fd3f20497a612190"></a>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a81960df2dc8a8d8c9150526a271f8bbf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00054.html#aa8e665376581d423fd3f20497a612190">org.motechproject.server.osgi.BundleLoader.loadBundle</a> </td>
+          <td class="memname">void org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a81960df2dc8a8d8c9150526a271f8bbf">add</a> </td>
           <td>(</td>
-          <td class="paramtype">Bundle&#160;</td>
-          <td class="paramname"><em>bundle</em></td><td>)</td>
-          <td>  throws Exception</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bundle</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">Exception</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Implemented in <a class="el" href="a00216.html#ac35cd6518f1e56ebb809d7af6c84ce1a">org.motechproject.server.osgi.Log4JBundleLoader</a>, and <a class="el" href="a00355.html#a47561d3dab28c4d4277f46473d1bb2d2">org.motechproject.server.osgi.RuleBundleLoader</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a81960df2dc8a8d8c9150526a271f8bbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a81960df2dc8a8d8c9150526a271f8bbf">add</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade450111a83ccc200d8020325a084d1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#ade450111a83ccc200d8020325a084d1b">contains</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade450111a83ccc200d8020325a084d1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#ade450111a83ccc200d8020325a084d1b">contains</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac61c492ab0aa850b752775bf7f7c51c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#ac61c492ab0aa850b752775bf7f7c51c0">get</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac61c492ab0aa850b752775bf7f7c51c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#ac61c492ab0aa850b752775bf7f7c51c0">get</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03657c295e64d35fc5f5dbec621cf976"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;T&gt; org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a03657c295e64d35fc5f5dbec621cf976">getAll</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03657c295e64d35fc5f5dbec621cf976"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;T&gt; org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a03657c295e64d35fc5f5dbec621cf976">getAll</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70a0d3568f8c5717e3b8dfb0fa501b11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a70a0d3568f8c5717e3b8dfb0fa501b11">remove</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70a0d3568f8c5717e3b8dfb0fa501b11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a70a0d3568f8c5717e3b8dfb0fa501b11">remove</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c325e602eb6f364a994db744e06f018"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a0c325e602eb6f364a994db744e06f018">safeRemove</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c325e602eb6f364a994db744e06f018"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a0c325e602eb6f364a994db744e06f018">safeRemove</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87ad841f8e5e315e4c6360786bdcc1a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a87ad841f8e5e315e4c6360786bdcc1a2">update</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87ad841f8e5e315e4c6360786bdcc1a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void org.motechproject.dao.BaseDao&lt; T extends <a class="el" href="a00260.html">MotechBaseDataObject</a> &gt;.<a class="el" href="a00054.html#a87ad841f8e5e315e4c6360786bdcc1a2">update</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

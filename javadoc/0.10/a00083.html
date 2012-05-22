@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,12 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00888.html">cmslite</a>      </li>
-      <li class="navelem"><a class="el" href="a00889.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00893.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00083.html">CMSLiteService</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01514.html">voxeo</a>      </li>
+      <li class="navelem"><a class="el" href="a01518.html">web</a>      </li>
+      <li class="navelem"><a class="el" href="a00083.html">CcxmlController</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,122 +105,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.cmslite.api.service.CMSLiteService Interface Reference</div>  </div>
+<div class="title">org.motechproject.server.voxeo.web.CcxmlController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.cmslite.api.service.CMSLiteService:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00083.png" usemap="#org.motechproject.cmslite.api.service.CMSLiteService_map" alt=""/>
-  <map id="org.motechproject.cmslite.api.service.CMSLiteService_map" name="org.motechproject.cmslite.api.service.CMSLiteService_map">
-<area href="a00084.html" alt="org.motechproject.cmslite.api.service.CMSLiteServiceImpl" shape="rect" coords="0,56,341,80"/>
-</map>
- </div></div>
 
-<p><a href="a01090.html">List of all members.</a></p>
+<p>Inherits Controller, and Controller.</p>
+
+<p><a href="a01955.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9032b052539ad0bf627a882a5ddc26f1"><td class="memItemLeft" align="right" valign="top">StreamContent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a9032b052539ad0bf627a882a5ddc26f1">getStreamContent</a> (String language, String name)  throws ContentNotFoundException</td></tr>
-<tr class="memitem:a91e577b5686be46d4a77fd588f723e8e"><td class="memItemLeft" align="right" valign="top">StringContent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a91e577b5686be46d4a77fd588f723e8e">getStringContent</a> (String language, String name)  throws ContentNotFoundException</td></tr>
-<tr class="memitem:a17c697e06c1229d3fc94969cdc0924fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a17c697e06c1229d3fc94969cdc0924fd">addContent</a> (Content content)  throws CMSLiteException</td></tr>
-<tr class="memitem:a69d7761f03deaa3d8f55d2c97bd3b522"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a69d7761f03deaa3d8f55d2c97bd3b522">isStreamContentAvailable</a> (String language, String name)</td></tr>
-<tr class="memitem:a520d593edafb5b53e2d3a902c2f93ed6"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a520d593edafb5b53e2d3a902c2f93ed6">isStringContentAvailable</a> (String language, String name)</td></tr>
+<tr class="memitem:aea35d6ef1a01609858aae1518ca92ce1"><td class="memItemLeft" align="right" valign="top">ModelAndView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#aea35d6ef1a01609858aae1518ca92ce1">handleRequest</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
+<tr class="memitem:aea35d6ef1a01609858aae1518ca92ce1"><td class="memItemLeft" align="right" valign="top">ModelAndView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#aea35d6ef1a01609858aae1518ca92ce1">handleRequest</a> (HttpServletRequest request, HttpServletResponse response)</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a17c697e06c1229d3fc94969cdc0924fd"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Spring MVC controller implementation provides method to handle HTTP requests and generate Appointment Reminder related VXML documents. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aea35d6ef1a01609858aae1518ca92ce1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00083.html#a17c697e06c1229d3fc94969cdc0924fd">org.motechproject.cmslite.api.service.CMSLiteService.addContent</a> </td>
+          <td class="memname">ModelAndView <a class="el" href="a00083.html#aea35d6ef1a01609858aae1518ca92ce1">org.motechproject.server.voxeo.web.CcxmlController.handleRequest</a> </td>
           <td>(</td>
-          <td class="paramtype">Content&#160;</td>
-          <td class="paramname"><em>content</em></td><td>)</td>
-          <td>  throws CMSLiteException</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implemented in <a class="el" href="a00084.html#a26bdfd4bbfade4f9f75e18a4ca902c27">org.motechproject.cmslite.api.service.CMSLiteServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9032b052539ad0bf627a882a5ddc26f1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">StreamContent <a class="el" href="a00083.html#a9032b052539ad0bf627a882a5ddc26f1">org.motechproject.cmslite.api.service.CMSLiteService.getStreamContent</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throws ContentNotFoundException</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implemented in <a class="el" href="a00084.html#a33a469cbb46bccc925f3873db9289f35">org.motechproject.cmslite.api.service.CMSLiteServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a91e577b5686be46d4a77fd588f723e8e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">StringContent <a class="el" href="a00083.html#a91e577b5686be46d4a77fd588f723e8e">org.motechproject.cmslite.api.service.CMSLiteService.getStringContent</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throws ContentNotFoundException</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implemented in <a class="el" href="a00084.html#a57a744ed0d12304058c3cfcff45664d3">org.motechproject.cmslite.api.service.CMSLiteServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a69d7761f03deaa3d8f55d2c97bd3b522"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean <a class="el" href="a00083.html#a69d7761f03deaa3d8f55d2c97bd3b522">org.motechproject.cmslite.api.service.CMSLiteService.isStreamContentAvailable</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -231,25 +146,23 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="a00084.html#adb6990ad64c035e3347a04090dc53705">org.motechproject.cmslite.api.service.CMSLiteServiceImpl</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a520d593edafb5b53e2d3a902c2f93ed6"></a>
+<a class="anchor" id="aea35d6ef1a01609858aae1518ca92ce1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boolean <a class="el" href="a00083.html#a520d593edafb5b53e2d3a902c2f93ed6">org.motechproject.cmslite.api.service.CMSLiteService.isStringContentAvailable</a> </td>
+          <td class="memname">ModelAndView <a class="el" href="a00083.html#aea35d6ef1a01609858aae1518ca92ce1">org.motechproject.server.voxeo.web.CcxmlController.handleRequest</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>language</em>, </td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramtype">HttpServletResponse&#160;</td>
+          <td class="paramname"><em>response</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -259,8 +172,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Implemented in <a class="el" href="a00084.html#a96b631b37004ebdf6a36a5c97213ac1c">org.motechproject.cmslite.api.service.CMSLiteServiceImpl</a>.</p>
 
 </div>
 </div>

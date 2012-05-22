@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,82 +92,127 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00938.html">openmrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00947.html">security</a>      </li>
-      <li class="navelem"><a class="el" href="a00306.html">OpenMRSSecurityUser</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01433.html">openmrs</a>      </li>
+      <li class="navelem"><a class="el" href="a01442.html">security</a>      </li>
+      <li class="navelem"><a class="el" href="a00306.html">OpenMRSAuthenticationProvider</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.openmrs.security.OpenMRSSecurityUser Class Reference</div>  </div>
+<div class="title">org.motechproject.openmrs.security.OpenMRSAuthenticationProvider Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for org.motechproject.openmrs.security.OpenMRSSecurityUser:</div>
+Inheritance diagram for org.motechproject.openmrs.security.OpenMRSAuthenticationProvider:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00306.png" usemap="#org.motechproject.openmrs.security.OpenMRSSecurityUser_map" alt=""/>
-  <map id="org.motechproject.openmrs.security.OpenMRSSecurityUser_map" name="org.motechproject.openmrs.security.OpenMRSSecurityUser_map">
-<area href="a00282.html" title="Hold authentication Details of the user." alt="org.motechproject.mrs.security.MRSSecurityUser" shape="rect" coords="0,0,350,24"/>
+  <img src="a00306.png" usemap="#org.motechproject.openmrs.security.OpenMRSAuthenticationProvider_map" alt=""/>
+  <map id="org.motechproject.openmrs.security.OpenMRSAuthenticationProvider_map" name="org.motechproject.openmrs.security.OpenMRSAuthenticationProvider_map">
+<area href="a00279.html" title="Authenticates MRS login." alt="org.motechproject.mrs.security.MRSAuthenticationProvider" shape="rect" coords="0,0,406,24"/>
+<area href="a00279.html" title="Authenticates MRS login." alt="org.motechproject.mrs.security.MRSAuthenticationProvider" shape="rect" coords="416,0,822,24"/>
 </map>
  </div></div>
 
-<p><a href="a01235.html">List of all members.</a></p>
+<p><a href="a01735.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a38cc6b95dd46321b240bcecc78305a88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00306.html#a38cc6b95dd46321b240bcecc78305a88">OpenMRSSecurityUser</a> (User user, String password)</td></tr>
-<tr class="memitem:a5db6702c049efe34e93a723c96888481"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00306.html#a5db6702c049efe34e93a723c96888481">getPassword</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aab4989dd718189dc526d3248cfe007d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00291.html">MRSSecurityUser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00306.html#aab4989dd718189dc526d3248cfe007d7">retrieveUser</a> (String userName, UsernamePasswordAuthenticationToken authentication)  throws InvalidCredentialsException </td></tr>
+<tr class="memitem:aab4989dd718189dc526d3248cfe007d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00291.html">MRSSecurityUser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00306.html#aab4989dd718189dc526d3248cfe007d7">retrieveUser</a> (String userName, UsernamePasswordAuthenticationToken authentication)  throws InvalidCredentialsException </td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a38cc6b95dd46321b240bcecc78305a88"></a>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aab4989dd718189dc526d3248cfe007d7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00306.html#a38cc6b95dd46321b240bcecc78305a88">org.motechproject.openmrs.security.OpenMRSSecurityUser.OpenMRSSecurityUser</a> </td>
+          <td class="memname"><a class="el" href="a00291.html">MRSSecurityUser</a> <a class="el" href="a00306.html#aab4989dd718189dc526d3248cfe007d7">org.motechproject.openmrs.security.OpenMRSAuthenticationProvider.retrieveUser</a> </td>
           <td>(</td>
-          <td class="paramtype">User&#160;</td>
-          <td class="paramname"><em>user</em>, </td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>userName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>password</em>&#160;</td>
+          <td class="paramtype">UsernamePasswordAuthenticationToken&#160;</td>
+          <td class="paramname"><em>authentication</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>  throws <a class="el" href="a00195.html">InvalidCredentialsException</a> <code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Retrieves User details on successful authentication. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userName</td><td>Login username </td></tr>
+    <tr><td class="paramname">authentication</td><td>Login credentials </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Security Details of the user </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidCredentialsException</td><td>thrown when Credentials are invalid </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00279.html#ab02616b6e5e16aa81f006a127bc7d058">org.motechproject.mrs.security.MRSAuthenticationProvider</a>.</p>
+
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a5db6702c049efe34e93a723c96888481"></a>
+<a class="anchor" id="aab4989dd718189dc526d3248cfe007d7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00306.html#a5db6702c049efe34e93a723c96888481">org.motechproject.openmrs.security.OpenMRSSecurityUser.getPassword</a> </td>
+          <td class="memname"><a class="el" href="a00291.html">MRSSecurityUser</a> <a class="el" href="a00306.html#aab4989dd718189dc526d3248cfe007d7">org.motechproject.openmrs.security.OpenMRSAuthenticationProvider.retrieveUser</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>userName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">UsernamePasswordAuthenticationToken&#160;</td>
+          <td class="paramname"><em>authentication</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="a00195.html">InvalidCredentialsException</a> <code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="a00282.html#a6c157d83a7219a849ad7a7abac53efe8">org.motechproject.mrs.security.MRSSecurityUser</a>.</p>
+<p>Retrieves User details on successful authentication. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userName</td><td>Login username </td></tr>
+    <tr><td class="paramname">authentication</td><td>Login credentials </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Security Details of the user </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidCredentialsException</td><td>thrown when Credentials are invalid </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00279.html#ab02616b6e5e16aa81f006a127bc7d058">org.motechproject.mrs.security.MRSAuthenticationProvider</a>.</p>
 
 </div>
 </div>

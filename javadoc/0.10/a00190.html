@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,13 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00959.html">scheduletracking</a>      </li>
-      <li class="navelem"><a class="el" href="a00960.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00961.html">domain</a>      </li>
-      <li class="navelem"><a class="el" href="a00963.html">exception</a>      </li>
-      <li class="navelem"><a class="el" href="a00190.html">InvalidScheduleDefinitionException</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01528.html">smpp</a>      </li>
+      <li class="navelem"><a class="el" href="a00190.html">InboundMessageNotification</a>      </li>
     </ul>
   </div>
 </div>
@@ -106,32 +104,141 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.scheduletracking.api.domain.exception.InvalidScheduleDefinitionException Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.smpp.InboundMessageNotification Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01278.html">List of all members.</a></p>
+<p><a href="a01985.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3de487d747168cad4a9af6f65da037f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00190.html#a3de487d747168cad4a9af6f65da037f7">InvalidScheduleDefinitionException</a> (String s, String...args)</td></tr>
+<tr class="memitem:ac533f65a3deb994b26f6a785da78611f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00190.html#ac533f65a3deb994b26f6a785da78611f">InboundMessageNotification</a> (<a class="el" href="a00163.html">EventRelay</a> eventRelay, <a class="el" href="a00027.html">AllInboundSMS</a> allInboundSMS, <a class="el" href="a00032.html">AllOutboundSMS</a> allOutboundSMS)</td></tr>
+<tr class="memitem:a50a0d005b949051995b672fc285aacd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00190.html#a50a0d005b949051995b672fc285aacd2">process</a> (AGateway gateway, Message.MessageTypes msgType, InboundMessage msg)</td></tr>
+<tr class="memitem:ac533f65a3deb994b26f6a785da78611f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00190.html#ac533f65a3deb994b26f6a785da78611f">InboundMessageNotification</a> (<a class="el" href="a00163.html">EventRelay</a> eventRelay, <a class="el" href="a00027.html">AllInboundSMS</a> allInboundSMS, <a class="el" href="a00032.html">AllOutboundSMS</a> allOutboundSMS)</td></tr>
+<tr class="memitem:a50a0d005b949051995b672fc285aacd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00190.html#a50a0d005b949051995b672fc285aacd2">process</a> (AGateway gateway, Message.MessageTypes msgType, InboundMessage msg)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3de487d747168cad4a9af6f65da037f7"></a>
+<a class="anchor" id="ac533f65a3deb994b26f6a785da78611f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00190.html#a3de487d747168cad4a9af6f65da037f7">org.motechproject.scheduletracking.api.domain.exception.InvalidScheduleDefinitionException.InvalidScheduleDefinitionException</a> </td>
+          <td class="memname"><a class="el" href="a00190.html#ac533f65a3deb994b26f6a785da78611f">org.motechproject.sms.smpp.InboundMessageNotification.InboundMessageNotification</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
+          <td class="paramtype"><a class="el" href="a00163.html">EventRelay</a>&#160;</td>
+          <td class="paramname"><em>eventRelay</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00027.html">AllInboundSMS</a>&#160;</td>
+          <td class="paramname"><em>allInboundSMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00032.html">AllOutboundSMS</a>&#160;</td>
+          <td class="paramname"><em>allOutboundSMS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac533f65a3deb994b26f6a785da78611f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00190.html#ac533f65a3deb994b26f6a785da78611f">org.motechproject.sms.smpp.InboundMessageNotification.InboundMessageNotification</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00163.html">EventRelay</a>&#160;</td>
+          <td class="paramname"><em>eventRelay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00027.html">AllInboundSMS</a>&#160;</td>
+          <td class="paramname"><em>allInboundSMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00032.html">AllOutboundSMS</a>&#160;</td>
+          <td class="paramname"><em>allOutboundSMS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a50a0d005b949051995b672fc285aacd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00190.html#a50a0d005b949051995b672fc285aacd2">org.motechproject.sms.smpp.InboundMessageNotification.process</a> </td>
+          <td>(</td>
+          <td class="paramtype">AGateway&#160;</td>
+          <td class="paramname"><em>gateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Message.MessageTypes&#160;</td>
+          <td class="paramname"><em>msgType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InboundMessage&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a50a0d005b949051995b672fc285aacd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00190.html#a50a0d005b949051995b672fc285aacd2">org.motechproject.sms.smpp.InboundMessageNotification.process</a> </td>
+          <td>(</td>
+          <td class="paramtype">AGateway&#160;</td>
+          <td class="paramname"><em>gateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Message.MessageTypes&#160;</td>
+          <td class="paramname"><em>msgType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InboundMessage&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

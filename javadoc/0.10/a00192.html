@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,49 +92,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00919.html">mobileforms</a>      </li>
-      <li class="navelem"><a class="el" href="a00920.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00926.html">utils</a>      </li>
-      <li class="navelem"><a class="el" href="a00192.html">IOUtils</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01519.html">sms</a>      </li>
+      <li class="navelem"><a class="el" href="a01524.html">http</a>      </li>
+      <li class="navelem"><a class="el" href="a00192.html">InboundSmsController</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.mobileforms.api.utils.IOUtils Class Reference</div>  </div>
+<div class="title">org.motechproject.sms.http.InboundSmsController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01178.html">List of all members.</a></p>
+<p><a href="a01970.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a65d420714164049c02033dbbaf1c0719"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#a65d420714164049c02033dbbaf1c0719">getFileContent</a> (String fileName, String formGroupName)</td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:acd4b63a1b4cc04b9a4500d1b3a9b0ab7"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#acd4b63a1b4cc04b9a4500d1b3a9b0ab7">XFORMS_FOLDER</a> = &quot;xforms&quot;</td></tr>
+<tr class="memitem:a0510361389719107ebd6f2bffc1ea6e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#a0510361389719107ebd6f2bffc1ea6e6">InboundSmsController</a> (<a class="el" href="a00414.html">TemplateReader</a> templateReader, <a class="el" href="a00163.html">EventRelay</a> eventRelay)</td></tr>
+<tr class="memitem:a1d3201938af19ddf75d710c7d8d6cc71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#a1d3201938af19ddf75d710c7d8d6cc71">handle</a> (HttpServletRequest request)</td></tr>
+<tr class="memitem:a0510361389719107ebd6f2bffc1ea6e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#a0510361389719107ebd6f2bffc1ea6e6">InboundSmsController</a> (<a class="el" href="a00414.html">TemplateReader</a> templateReader, <a class="el" href="a00163.html">EventRelay</a> eventRelay)</td></tr>
+<tr class="memitem:a1d3201938af19ddf75d710c7d8d6cc71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#a1d3201938af19ddf75d710c7d8d6cc71">handle</a> (HttpServletRequest request)</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a65d420714164049c02033dbbaf1c0719"></a>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0510361389719107ebd6f2bffc1ea6e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00192.html#a65d420714164049c02033dbbaf1c0719">org.motechproject.mobileforms.api.utils.IOUtils.getFileContent</a> </td>
+          <td class="memname"><a class="el" href="a00192.html#a0510361389719107ebd6f2bffc1ea6e6">org.motechproject.sms.http.InboundSmsController.InboundSmsController</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>fileName</em>, </td>
+          <td class="paramtype"><a class="el" href="a00414.html">TemplateReader</a>&#160;</td>
+          <td class="paramname"><em>templateReader</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>formGroupName</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00163.html">EventRelay</a>&#160;</td>
+          <td class="paramname"><em>eventRelay</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -147,13 +145,61 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="acd4b63a1b4cc04b9a4500d1b3a9b0ab7"></a>
+<a class="anchor" id="a0510361389719107ebd6f2bffc1ea6e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">final String <a class="el" href="a00192.html#acd4b63a1b4cc04b9a4500d1b3a9b0ab7">org.motechproject.mobileforms.api.utils.IOUtils.XFORMS_FOLDER</a> = &quot;xforms&quot;<code> [static]</code></td>
+          <td class="memname"><a class="el" href="a00192.html#a0510361389719107ebd6f2bffc1ea6e6">org.motechproject.sms.http.InboundSmsController.InboundSmsController</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00414.html">TemplateReader</a>&#160;</td>
+          <td class="paramname"><em>templateReader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00163.html">EventRelay</a>&#160;</td>
+          <td class="paramname"><em>eventRelay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a1d3201938af19ddf75d710c7d8d6cc71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00192.html#a1d3201938af19ddf75d710c7d8d6cc71">org.motechproject.sms.http.InboundSmsController.handle</a> </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1d3201938af19ddf75d710c7d8d6cc71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00192.html#a1d3201938af19ddf75d710c7d8d6cc71">org.motechproject.sms.http.InboundSmsController.handle</a> </td>
+          <td>(</td>
+          <td class="paramtype">HttpServletRequest&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>

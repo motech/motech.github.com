@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00959.html">scheduletracking</a>      </li>
-      <li class="navelem"><a class="el" href="a00960.html">api</a>      </li>
-      <li class="navelem"><a class="el" href="a00970.html">service</a>      </li>
-      <li class="navelem"><a class="el" href="a00367.html">ScheduleTrackingService</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01501.html">osgi</a>      </li>
+      <li class="navelem"><a class="el" href="a00367.html">RuleBundleLoader</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,403 +104,163 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.scheduletracking.api.service.ScheduleTrackingService Interface Reference<div class="ingroups"><a class="el" href="a01048.html">Schedule Tracking Service</a></div></div>  </div>
+<div class="title">org.motechproject.server.osgi.RuleBundleLoader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for org.motechproject.scheduletracking.api.service.ScheduleTrackingService:</div>
+Inheritance diagram for org.motechproject.server.osgi.RuleBundleLoader:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00367.png" usemap="#org.motechproject.scheduletracking.api.service.ScheduleTrackingService_map" alt=""/>
-  <map id="org.motechproject.scheduletracking.api.service.ScheduleTrackingService_map" name="org.motechproject.scheduletracking.api.service.ScheduleTrackingService_map">
-<area href="a00368.html" alt="org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl" shape="rect" coords="0,56,479,80"/>
+  <img src="a00367.png" usemap="#org.motechproject.server.osgi.RuleBundleLoader_map" alt=""/>
+  <map id="org.motechproject.server.osgi.RuleBundleLoader_map" name="org.motechproject.server.osgi.RuleBundleLoader_map">
+<area href="a00057.html" title="Interface for custom bundle loading processes." alt="org.motechproject.server.osgi.BundleLoader" shape="rect" coords="0,0,290,24"/>
+<area href="a00057.html" title="Interface for custom bundle loading processes." alt="org.motechproject.server.osgi.BundleLoader" shape="rect" coords="300,0,590,24"/>
 </map>
  </div></div>
 
-<p><a href="a01308.html">List of all members.</a></p>
+<p><a href="a01901.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a34ee1e79a36654559388d8786efa70fd"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a34ee1e79a36654559388d8786efa70fd">enroll</a> (<a class="el" href="a00141.html">EnrollmentRequest</a> enrollmentRequest)</td></tr>
-<tr class="memitem:acf86fd9734c8d4015e79985dd6eec6af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#acf86fd9734c8d4015e79985dd6eec6af">fulfillCurrentMilestone</a> (String externalId, String scheduleName)</td></tr>
-<tr class="memitem:a6271dbc35a2ba31791339440486a256a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a6271dbc35a2ba31791339440486a256a">fulfillCurrentMilestone</a> (String externalId, String scheduleName, LocalDate fulfillmentDate)</td></tr>
-<tr class="memitem:a7b881d3f3a90a01ffdde8a9db3bf8ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a7b881d3f3a90a01ffdde8a9db3bf8ea6">fulfillCurrentMilestone</a> (String externalId, String scheduleName, LocalDate fulfillmentDate, <a class="el" href="a00393.html">Time</a> fulfillmentTime)</td></tr>
-<tr class="memitem:a5df19172fbe1afc126750f0c20cb6183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a5df19172fbe1afc126750f0c20cb6183">unenroll</a> (String externalId, List&lt; String &gt; scheduleNames)</td></tr>
-<tr class="memitem:a4216df0804b733f1a16ffea45345fecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00139.html">EnrollmentRecord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a4216df0804b733f1a16ffea45345fecc">getEnrollment</a> (String externalId, String scheduleName)</td></tr>
-<tr class="memitem:a73afeb00c8978394d631b6fc1b586190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a73afeb00c8978394d631b6fc1b586190">updateEnrollment</a> (String externalId, String scheduleName, <a class="el" href="a00402.html">UpdateCriteria</a> updateCriteria)</td></tr>
-<tr class="memitem:a78c90be5135cf509e1d512e9b46feb3e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00139.html">EnrollmentRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a78c90be5135cf509e1d512e9b46feb3e">search</a> (<a class="el" href="a00143.html">EnrollmentsQuery</a> query)</td></tr>
-<tr class="memitem:a39fa713558bbd8c9fa134e01c355a7ca"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00139.html">EnrollmentRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a39fa713558bbd8c9fa134e01c355a7ca">searchWithWindowDates</a> (<a class="el" href="a00143.html">EnrollmentsQuery</a> query)</td></tr>
-<tr class="memitem:a38a58ac35581e4342631a3f23f812bfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00242.html">MilestoneAlerts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a38a58ac35581e4342631a3f23f812bfa">getAlertTimings</a> (<a class="el" href="a00141.html">EnrollmentRequest</a> enrollmentRequest)</td></tr>
+<tr class="memitem:a47561d3dab28c4d4277f46473d1bb2d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a47561d3dab28c4d4277f46473d1bb2d2">loadBundle</a> (Bundle bundle)  throws Exception </td></tr>
+<tr class="memitem:a1ab9e952d53c96794aa323ac4d2eca89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a1ab9e952d53c96794aa323ac4d2eca89">setRuleFolder</a> (String ruleFolder)</td></tr>
+<tr class="memitem:a1bfcce2dd8a141457f3920ee6b1a6ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a1bfcce2dd8a141457f3920ee6b1a6ec0">setKnowledgeBaseManager</a> (<a class="el" href="a00215.html">KnowledgeBaseManager</a> knowledgeBaseManager)</td></tr>
+<tr class="memitem:a47561d3dab28c4d4277f46473d1bb2d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a47561d3dab28c4d4277f46473d1bb2d2">loadBundle</a> (Bundle bundle)  throws Exception </td></tr>
+<tr class="memitem:a1ab9e952d53c96794aa323ac4d2eca89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a1ab9e952d53c96794aa323ac4d2eca89">setRuleFolder</a> (String ruleFolder)</td></tr>
+<tr class="memitem:a1bfcce2dd8a141457f3920ee6b1a6ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html#a1bfcce2dd8a141457f3920ee6b1a6ec0">setKnowledgeBaseManager</a> (<a class="el" href="a00215.html">KnowledgeBaseManager</a> knowledgeBaseManager)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Schedule Tracking Service interface Provides methods to enroll an external id into a schedule, fulfill milestones in a schedule and uneroll an external id from a schedule. </p>
-<p>It also provides querying functionality on Enrollments using various search criteria </p>
+<div class="textblock"><p>Custom log4j configuration loader. </p>
+<p>Merge bundle specific configurations to the existing if a bundle contains log4j.xml</p>
+<dl class="section author"><dt>Author:</dt><dd>Ricky Wang </dd></dl>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a34ee1e79a36654559388d8786efa70fd"></a>
+<a class="anchor" id="a47561d3dab28c4d4277f46473d1bb2d2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00367.html#a34ee1e79a36654559388d8786efa70fd">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.enroll</a> </td>
+          <td class="memname">void <a class="el" href="a00367.html#a47561d3dab28c4d4277f46473d1bb2d2">org.motechproject.server.osgi.RuleBundleLoader.loadBundle</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00141.html">EnrollmentRequest</a>&#160;</td>
-          <td class="paramname"><em>enrollmentRequest</em></td><td>)</td>
+          <td class="paramtype">Bundle&#160;</td>
+          <td class="paramname"><em>bundle</em></td><td>)</td>
+          <td>  throws Exception </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bundle</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00057.html#aa8e665376581d423fd3f20497a612190">org.motechproject.server.osgi.BundleLoader</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47561d3dab28c4d4277f46473d1bb2d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00367.html#a47561d3dab28c4d4277f46473d1bb2d2">org.motechproject.server.osgi.RuleBundleLoader.loadBundle</a> </td>
+          <td>(</td>
+          <td class="paramtype">Bundle&#160;</td>
+          <td class="paramname"><em>bundle</em></td><td>)</td>
+          <td>  throws Exception </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bundle</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00057.html#aa8e665376581d423fd3f20497a612190">org.motechproject.server.osgi.BundleLoader</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1bfcce2dd8a141457f3920ee6b1a6ec0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00367.html#a1bfcce2dd8a141457f3920ee6b1a6ec0">org.motechproject.server.osgi.RuleBundleLoader.setKnowledgeBaseManager</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00215.html">KnowledgeBaseManager</a>&#160;</td>
+          <td class="paramname"><em>knowledgeBaseManager</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Enrolls a user with external id into a schedule using the details in the <a class="el" href="a00141.html" title="This is the request document to create an enrollment.">EnrollmentRequest</a> and schedules alerts. </p>
-<p>If the user has already enrolled for the same schedule which is currently active, then we update the existing details and reschedule alerts </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enrollmentRequest</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>enrollmentId string </dd></dl>
-
-<p>Implemented in <a class="el" href="a00368.html#a79d63b9a6e13a64bf77243ebbab8ae89">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="acf86fd9734c8d4015e79985dd6eec6af"></a>
+<a class="anchor" id="a1bfcce2dd8a141457f3920ee6b1a6ec0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00367.html#acf86fd9734c8d4015e79985dd6eec6af">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.fulfillCurrentMilestone</a> </td>
+          <td class="memname">void <a class="el" href="a00367.html#a1bfcce2dd8a141457f3920ee6b1a6ec0">org.motechproject.server.osgi.RuleBundleLoader.setKnowledgeBaseManager</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>scheduleName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Fulfills the current milestone(with now as the fulfillment date time) of the enrollment which belongs to the given externalId and schedule name. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">scheduleName</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00368.html#a128136e7347061e8745860b7c89de741">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6271dbc35a2ba31791339440486a256a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00367.html#acf86fd9734c8d4015e79985dd6eec6af">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.fulfillCurrentMilestone</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>scheduleName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LocalDate&#160;</td>
-          <td class="paramname"><em>fulfillmentDate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Fulfills the current milestone of the enrollment(with fulfillmentDate as the the given date and time as midnight) which belongs to the given externalId and schedule name. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">scheduleName</td><td></td></tr>
-    <tr><td class="paramname">fulfillmentDate</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00368.html#ac867d28affa0e56fe74e421f2e3ee132">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7b881d3f3a90a01ffdde8a9db3bf8ea6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00367.html#acf86fd9734c8d4015e79985dd6eec6af">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.fulfillCurrentMilestone</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>scheduleName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">LocalDate&#160;</td>
-          <td class="paramname"><em>fulfillmentDate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00393.html">Time</a>&#160;</td>
-          <td class="paramname"><em>fulfillmentTime</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Fulfills the current milestone of the enrollment(with fulfillmentDate and time as the the given date and time) which belongs to the given externalId and schedule name *. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">scheduleName</td><td></td></tr>
-    <tr><td class="paramname">fulfillmentDate</td><td></td></tr>
-    <tr><td class="paramname">fulfillmentTime</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00368.html#aea54a3656fb16d65be8f5f015587012b">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a38a58ac35581e4342631a3f23f812bfa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00242.html">MilestoneAlerts</a> <a class="el" href="a00367.html#a38a58ac35581e4342631a3f23f812bfa">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.getAlertTimings</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00141.html">EnrollmentRequest</a>&#160;</td>
-          <td class="paramname"><em>enrollmentRequest</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00215.html">KnowledgeBaseManager</a>&#160;</td>
+          <td class="paramname"><em>knowledgeBaseManager</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gives the alert timings of all the windows in the milestone without actually scheduling the alert jobs. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enrollmentRequest</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="a00242.html" title="This contains the alert timings of all the windows of a milestone.">MilestoneAlerts</a> : contains the alert timings for all the windows of the milestone </dd></dl>
-
-<p>Implemented in <a class="el" href="a00368.html#aef2de71382dd41c62bfbee0e12998417">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a4216df0804b733f1a16ffea45345fecc"></a>
+<a class="anchor" id="a1ab9e952d53c96794aa323ac4d2eca89"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00139.html">EnrollmentRecord</a> <a class="el" href="a00367.html#a4216df0804b733f1a16ffea45345fecc">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.getEnrollment</a> </td>
+          <td class="memname">void <a class="el" href="a00367.html#a1ab9e952d53c96794aa323ac4d2eca89">org.motechproject.server.osgi.RuleBundleLoader.setRuleFolder</a> </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>scheduleName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Returns the <a class="el" href="a00139.html" title="This is the record which will be returned when schedule tracking service is queried for enrollments I...">EnrollmentRecord</a> corresponds to the given externalId and schedule name. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">scheduleName</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd></dd></dl>
-
-<p>Implemented in <a class="el" href="a00368.html#a495b289b0ca109f06e002cf5d1f3336b">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a78c90be5135cf509e1d512e9b46feb3e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="a00139.html">EnrollmentRecord</a>&gt; <a class="el" href="a00367.html#a78c90be5135cf509e1d512e9b46feb3e">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.search</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00143.html">EnrollmentsQuery</a>&#160;</td>
-          <td class="paramname"><em>query</em></td><td>)</td>
+          <td class="paramname"><em>ruleFolder</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Searches and returns the Enrollment Records as per the criteria in the given <a class="el" href="a00143.html" title="This is the Query builder for retrieving enrollments Provides methods for different query criteria Th...">EnrollmentsQuery</a>. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">query</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>List&lt;EnrollmentRecord&gt; </dd></dl>
-
-<p>Implemented in <a class="el" href="a00368.html#a72a8c5c16b20bdcf15e6fdba14283275">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a39fa713558bbd8c9fa134e01c355a7ca"></a>
+<a class="anchor" id="a1ab9e952d53c96794aa323ac4d2eca89"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00139.html">EnrollmentRecord</a>&gt; <a class="el" href="a00367.html#a39fa713558bbd8c9fa134e01c355a7ca">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.searchWithWindowDates</a> </td>
+          <td class="memname">void <a class="el" href="a00367.html#a1ab9e952d53c96794aa323ac4d2eca89">org.motechproject.server.osgi.RuleBundleLoader.setRuleFolder</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00143.html">EnrollmentsQuery</a>&#160;</td>
-          <td class="paramname"><em>query</em></td><td>)</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ruleFolder</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Searches and returns the Enrollment Records(with all window start dates populated in them) as per the criteria in the given <a class="el" href="a00143.html" title="This is the Query builder for retrieving enrollments Provides methods for different query criteria Th...">EnrollmentsQuery</a>. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">query</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>List&lt;EnrollmentRecord&gt; </dd></dl>
-
-<p>Implemented in <a class="el" href="a00368.html#a65d8d3b7e1fba6c0ad9ada2963686374">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5df19172fbe1afc126750f0c20cb6183"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00367.html#a5df19172fbe1afc126750f0c20cb6183">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.unenroll</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">List&lt; String &gt;&#160;</td>
-          <td class="paramname"><em>scheduleNames</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Unenrolls / Removes all the scheduled jobs of enrollments which belongs to the given externalId and schedule names. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">externalId</td><td></td></tr>
-    <tr><td class="paramname">scheduleNames</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00368.html#abfc517ce8f54230e7cbc1159ef5958ab">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a73afeb00c8978394d631b6fc1b586190"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00367.html#a73afeb00c8978394d631b6fc1b586190">org.motechproject.scheduletracking.api.service.ScheduleTrackingService.updateEnrollment</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>externalId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>scheduleName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00402.html">UpdateCriteria</a>&#160;</td>
-          <td class="paramname"><em>updateCriteria</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Updates an active Enrollment which has the given external id and schedule name. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">updateCriteria</td><td>states the fields to be updated in the enrollment </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="a00368.html#aa3d44abd47317c45880e113becad0112">org.motechproject.scheduletracking.api.service.impl.ScheduleTrackingServiceImpl</a>.</p>
 
 </div>
 </div>

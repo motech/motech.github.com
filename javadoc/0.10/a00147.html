@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,110 +92,750 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00989.html">event</a>      </li>
-      <li class="navelem"><a class="el" href="a00990.html">annotations</a>      </li>
-      <li class="navelem"><a class="el" href="a00147.html">EventAnnotationBeanPostProcessor</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01455.html">scheduletracking</a>      </li>
+      <li class="navelem"><a class="el" href="a01456.html">api</a>      </li>
+      <li class="navelem"><a class="el" href="a01466.html">service</a>      </li>
+      <li class="navelem"><a class="el" href="a00147.html">EnrollmentsQuery</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.event.annotations.EventAnnotationBeanPostProcessor Class Reference</div>  </div>
+<div class="title">org.motechproject.scheduletracking.api.service.EnrollmentsQuery Class Reference<div class="ingroups"><a class="el" href="a01551.html">Schedule Tracking Service</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits BeanPostProcessor.</p>
-
-<p><a href="a01345.html">List of all members.</a></p>
+<p><a href="a01807.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa0ba04a4595696cd9aff92da5233d6d1"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#aa0ba04a4595696cd9aff92da5233d6d1">postProcessBeforeInitialization</a> (Object bean, String beanName)  throws BeansException </td></tr>
-<tr class="memitem:a658fea48cd41238a80e2b6d7cf5a99f1"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a658fea48cd41238a80e2b6d7cf5a99f1">postProcessAfterInitialization</a> (Object bean, String beanName)  throws BeansException </td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a873bb5022ea8705473558d8ad90bdebd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a873bb5022ea8705473558d8ad90bdebd">registerHandlers</a> (Map&lt; String, Object &gt; beans)</td></tr>
+<tr class="memitem:a81013985906f583893a2d2cef3ef141f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a81013985906f583893a2d2cef3ef141f">havingExternalId</a> (String externalId)</td></tr>
+<tr class="memitem:a43b10047860a37078b18e1fd819d459c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a43b10047860a37078b18e1fd819d459c">havingSchedule</a> (String...scheduleNames)</td></tr>
+<tr class="memitem:aa9cf5df2f07304f6185cc4fa129409ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#aa9cf5df2f07304f6185cc4fa129409ca">havingCurrentMilestone</a> (String milestoneName)</td></tr>
+<tr class="memitem:a8ee9937b314b9af81c49d5662d7b2c9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a8ee9937b314b9af81c49d5662d7b2c9a">havingWindowStartingDuring</a> (<a class="el" href="a00458.html">WindowName</a> windowName, DateTime start, DateTime end)</td></tr>
+<tr class="memitem:a7a4b20226a424fcc24dfb90b2b9b3345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a7a4b20226a424fcc24dfb90b2b9b3345">havingWindowEndingDuring</a> (<a class="el" href="a00458.html">WindowName</a> windowName, DateTime start, DateTime end)</td></tr>
+<tr class="memitem:ad316c7f27ce0e711f354273750fa1e1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#ad316c7f27ce0e711f354273750fa1e1b">currentlyInWindow</a> (WindowName...windowNames)</td></tr>
+<tr class="memitem:af2426a3abd39606a44140e11588d5ff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#af2426a3abd39606a44140e11588d5ff2">havingState</a> (<a class="el" href="a00149.html">EnrollmentStatus</a> enrollmentStatus)</td></tr>
+<tr class="memitem:a52b74f271c2b117de4acf13b19ea0757"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a52b74f271c2b117de4acf13b19ea0757">completedDuring</a> (DateTime start, DateTime end)</td></tr>
+<tr class="memitem:aa254a0ba46474fb02e0038f0e674ca48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#aa254a0ba46474fb02e0038f0e674ca48">havingMetadata</a> (String key, String value)</td></tr>
+<tr class="memitem:a0a6ed9077fa1662a32008bcffb980bf5"><td class="memItemLeft" align="right" valign="top">List&lt; Criterion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a0a6ed9077fa1662a32008bcffb980bf5">getCriteria</a> ()</td></tr>
+<tr class="memitem:a6b973add00a1bfd6512b41b8c3dc81e4"><td class="memItemLeft" align="right" valign="top">Criterion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a6b973add00a1bfd6512b41b8c3dc81e4">getPrimaryCriterion</a> ()</td></tr>
+<tr class="memitem:a7934bd44a5a94ee15d91abf23b9618b5"><td class="memItemLeft" align="right" valign="top">List&lt; Criterion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a7934bd44a5a94ee15d91abf23b9618b5">getSecondaryCriteria</a> ()</td></tr>
+<tr class="memitem:a81013985906f583893a2d2cef3ef141f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a81013985906f583893a2d2cef3ef141f">havingExternalId</a> (String externalId)</td></tr>
+<tr class="memitem:a43b10047860a37078b18e1fd819d459c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a43b10047860a37078b18e1fd819d459c">havingSchedule</a> (String...scheduleNames)</td></tr>
+<tr class="memitem:aa9cf5df2f07304f6185cc4fa129409ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#aa9cf5df2f07304f6185cc4fa129409ca">havingCurrentMilestone</a> (String milestoneName)</td></tr>
+<tr class="memitem:a8ee9937b314b9af81c49d5662d7b2c9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a8ee9937b314b9af81c49d5662d7b2c9a">havingWindowStartingDuring</a> (<a class="el" href="a00458.html">WindowName</a> windowName, DateTime start, DateTime end)</td></tr>
+<tr class="memitem:a7a4b20226a424fcc24dfb90b2b9b3345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a7a4b20226a424fcc24dfb90b2b9b3345">havingWindowEndingDuring</a> (<a class="el" href="a00458.html">WindowName</a> windowName, DateTime start, DateTime end)</td></tr>
+<tr class="memitem:ad316c7f27ce0e711f354273750fa1e1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#ad316c7f27ce0e711f354273750fa1e1b">currentlyInWindow</a> (WindowName...windowNames)</td></tr>
+<tr class="memitem:af2426a3abd39606a44140e11588d5ff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#af2426a3abd39606a44140e11588d5ff2">havingState</a> (<a class="el" href="a00149.html">EnrollmentStatus</a> enrollmentStatus)</td></tr>
+<tr class="memitem:a52b74f271c2b117de4acf13b19ea0757"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a52b74f271c2b117de4acf13b19ea0757">completedDuring</a> (DateTime start, DateTime end)</td></tr>
+<tr class="memitem:aa254a0ba46474fb02e0038f0e674ca48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">EnrollmentsQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#aa254a0ba46474fb02e0038f0e674ca48">havingMetadata</a> (String key, String value)</td></tr>
+<tr class="memitem:a0a6ed9077fa1662a32008bcffb980bf5"><td class="memItemLeft" align="right" valign="top">List&lt; Criterion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a0a6ed9077fa1662a32008bcffb980bf5">getCriteria</a> ()</td></tr>
+<tr class="memitem:a6b973add00a1bfd6512b41b8c3dc81e4"><td class="memItemLeft" align="right" valign="top">Criterion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a6b973add00a1bfd6512b41b8c3dc81e4">getPrimaryCriterion</a> ()</td></tr>
+<tr class="memitem:a7934bd44a5a94ee15d91abf23b9618b5"><td class="memItemLeft" align="right" valign="top">List&lt; Criterion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a7934bd44a5a94ee15d91abf23b9618b5">getSecondaryCriteria</a> ()</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Responsible for registering handlers based on annotations. </p>
-<dl class="section author"><dt>Author:</dt><dd>yyonkov </dd></dl>
+<div class="textblock"><p>This is the Query builder for retrieving enrollments Provides methods for different query criteria The order of criteria matters, as the first criterion is used to fetch the result from database and the other criterion are used to filter the results(in the specified sequence) fetched by the first criterion(in memory) </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a658fea48cd41238a80e2b6d7cf5a99f1"></a>
+<a class="anchor" id="a52b74f271c2b117de4acf13b19ea0757"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Object <a class="el" href="a00147.html#a658fea48cd41238a80e2b6d7cf5a99f1">org.motechproject.server.event.annotations.EventAnnotationBeanPostProcessor.postProcessAfterInitialization</a> </td>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a52b74f271c2b117de4acf13b19ea0757">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.completedDuring</a> </td>
           <td>(</td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>bean</em>, </td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on them being completed in the given date range. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td>The start and end dates are inclusive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with completed during criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a52b74f271c2b117de4acf13b19ea0757"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a52b74f271c2b117de4acf13b19ea0757">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.completedDuring</a> </td>
+          <td>(</td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on them being completed in the given date range. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td>The start and end dates are inclusive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with completed during criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad316c7f27ce0e711f354273750fa1e1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#ad316c7f27ce0e711f354273750fa1e1b">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.currentlyInWindow</a> </td>
+          <td>(</td>
+          <td class="paramtype">WindowName...&#160;</td>
+          <td class="paramname"><em>windowNames</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their current window(of current milestone) is in the given window name list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowNames</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with currently in window criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad316c7f27ce0e711f354273750fa1e1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#ad316c7f27ce0e711f354273750fa1e1b">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.currentlyInWindow</a> </td>
+          <td>(</td>
+          <td class="paramtype">WindowName...&#160;</td>
+          <td class="paramname"><em>windowNames</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their current window(of current milestone) is in the given window name list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowNames</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with currently in window criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0a6ed9077fa1662a32008bcffb980bf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Criterion&gt; <a class="el" href="a00147.html#a0a6ed9077fa1662a32008bcffb980bf5">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.getCriteria</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives all the criterion which are present in the built query. </p>
+<dl class="section return"><dt>Returns:</dt><dd>List&lt;Criterion&gt; </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0a6ed9077fa1662a32008bcffb980bf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Criterion&gt; <a class="el" href="a00147.html#a0a6ed9077fa1662a32008bcffb980bf5">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.getCriteria</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives all the criterion which are present in the built query. </p>
+<dl class="section return"><dt>Returns:</dt><dd>List&lt;Criterion&gt; </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6b973add00a1bfd6512b41b8c3dc81e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Criterion <a class="el" href="a00147.html#a6b973add00a1bfd6512b41b8c3dc81e4">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.getPrimaryCriterion</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives the primary criterion in the built query, which is used to fetch the results from database. </p>
+<dl class="section return"><dt>Returns:</dt><dd>Criterion </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6b973add00a1bfd6512b41b8c3dc81e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Criterion <a class="el" href="a00147.html#a6b973add00a1bfd6512b41b8c3dc81e4">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.getPrimaryCriterion</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives the primary criterion in the built query, which is used to fetch the results from database. </p>
+<dl class="section return"><dt>Returns:</dt><dd>Criterion </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7934bd44a5a94ee15d91abf23b9618b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Criterion&gt; <a class="el" href="a00147.html#a7934bd44a5a94ee15d91abf23b9618b5">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.getSecondaryCriteria</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives all the criterion other than primary criterion in the built query, which are used to filter the results of the primary criterion. </p>
+<dl class="section return"><dt>Returns:</dt><dd>List&lt;Criterion&gt; </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7934bd44a5a94ee15d91abf23b9618b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Criterion&gt; <a class="el" href="a00147.html#a7934bd44a5a94ee15d91abf23b9618b5">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.getSecondaryCriteria</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This gives all the criterion other than primary criterion in the built query, which are used to filter the results of the primary criterion. </p>
+<dl class="section return"><dt>Returns:</dt><dd>List&lt;Criterion&gt; </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa9cf5df2f07304f6185cc4fa129409ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#aa9cf5df2f07304f6185cc4fa129409ca">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingCurrentMilestone</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>milestoneName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their current milestone name. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">milestoneName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with current milestone criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa9cf5df2f07304f6185cc4fa129409ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#aa9cf5df2f07304f6185cc4fa129409ca">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingCurrentMilestone</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>milestoneName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their current milestone name. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">milestoneName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with current milestone criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a81013985906f583893a2d2cef3ef141f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a81013985906f583893a2d2cef3ef141f">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingExternalId</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on external id. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">externalId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with external id criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a81013985906f583893a2d2cef3ef141f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a81013985906f583893a2d2cef3ef141f">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingExternalId</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>externalId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on external id. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">externalId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with external id criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa254a0ba46474fb02e0038f0e674ca48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#aa254a0ba46474fb02e0038f0e674ca48">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingMetadata</a> </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>beanName</em>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throws BeansException </td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>This adds the criteria using which enrollments are filtered based on them having given metadata values in their metadata map. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with metadata criteria added to the criteria list </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="aa0ba04a4595696cd9aff92da5233d6d1"></a>
+<a class="anchor" id="aa254a0ba46474fb02e0038f0e674ca48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Object <a class="el" href="a00147.html#aa0ba04a4595696cd9aff92da5233d6d1">org.motechproject.server.event.annotations.EventAnnotationBeanPostProcessor.postProcessBeforeInitialization</a> </td>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#aa254a0ba46474fb02e0038f0e674ca48">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingMetadata</a> </td>
           <td>(</td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>bean</em>, </td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>beanName</em>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throws BeansException </td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>This adds the criteria using which enrollments are filtered based on them having given metadata values in their metadata map. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with metadata criteria added to the criteria list </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="a873bb5022ea8705473558d8ad90bdebd"></a>
+<a class="anchor" id="a43b10047860a37078b18e1fd819d459c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="a00147.html#a873bb5022ea8705473558d8ad90bdebd">org.motechproject.server.event.annotations.EventAnnotationBeanPostProcessor.registerHandlers</a> </td>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a43b10047860a37078b18e1fd819d459c">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingSchedule</a> </td>
           <td>(</td>
-          <td class="paramtype">Map&lt; String, Object &gt;&#160;</td>
-          <td class="paramname"><em>beans</em></td><td>)</td>
-          <td><code> [static]</code></td>
+          <td class="paramtype">String...&#160;</td>
+          <td class="paramname"><em>scheduleNames</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Registers event handlers (hack because we are running spring embedded in an OSGi module) </p>
+<p>This adds the criteria using which enrollments are filtered based on their schedule name. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scheduleNames</td><td>- one or more string values indicating the schedule names </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with schedule criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a43b10047860a37078b18e1fd819d459c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a43b10047860a37078b18e1fd819d459c">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingSchedule</a> </td>
+          <td>(</td>
+          <td class="paramtype">String...&#160;</td>
+          <td class="paramname"><em>scheduleNames</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their schedule name. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scheduleNames</td><td>- one or more string values indicating the schedule names </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with schedule criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af2426a3abd39606a44140e11588d5ff2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#af2426a3abd39606a44140e11588d5ff2">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingState</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00149.html">EnrollmentStatus</a>&#160;</td>
+          <td class="paramname"><em>enrollmentStatus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enrollmentStatus</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with status criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af2426a3abd39606a44140e11588d5ff2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#af2426a3abd39606a44140e11588d5ff2">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingState</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00149.html">EnrollmentStatus</a>&#160;</td>
+          <td class="paramname"><em>enrollmentStatus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enrollmentStatus</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with status criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a4b20226a424fcc24dfb90b2b9b3345"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a7a4b20226a424fcc24dfb90b2b9b3345">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingWindowEndingDuring</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00458.html">WindowName</a>&#160;</td>
+          <td class="paramname"><em>windowName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their given window end datetime falls during the given period. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowName</td><td></td></tr>
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td>The start and end dates are inclusive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with window end criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a4b20226a424fcc24dfb90b2b9b3345"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a7a4b20226a424fcc24dfb90b2b9b3345">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingWindowEndingDuring</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00458.html">WindowName</a>&#160;</td>
+          <td class="paramname"><em>windowName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their given window end datetime falls during the given period. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowName</td><td></td></tr>
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td>The start and end dates are inclusive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with window end criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ee9937b314b9af81c49d5662d7b2c9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a8ee9937b314b9af81c49d5662d7b2c9a">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingWindowStartingDuring</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00458.html">WindowName</a>&#160;</td>
+          <td class="paramname"><em>windowName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their given window start datetime falls during the given period. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowName</td><td></td></tr>
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td>The start and end dates are inclusive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with window start criteria added to the criteria list </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ee9937b314b9af81c49d5662d7b2c9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00147.html">EnrollmentsQuery</a> <a class="el" href="a00147.html#a8ee9937b314b9af81c49d5662d7b2c9a">org.motechproject.scheduletracking.api.service.EnrollmentsQuery.havingWindowStartingDuring</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00458.html">WindowName</a>&#160;</td>
+          <td class="paramname"><em>windowName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>This adds the criteria using which enrollments are filtered based on their given window start datetime falls during the given period. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowName</td><td></td></tr>
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td>The start and end dates are inclusive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>returns the instance with window start criteria added to the criteria list </dd></dl>
 
 </div>
 </div>

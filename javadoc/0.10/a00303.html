@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,11 +92,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00938.html">openmrs</a>      </li>
-      <li class="navelem"><a class="el" href="a00948.html">services</a>      </li>
-      <li class="navelem"><a class="el" href="a00303.html">OpenMRSPatientAdapter</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01433.html">openmrs</a>      </li>
+      <li class="navelem"><a class="el" href="a01437.html">omod</a>      </li>
+      <li class="navelem"><a class="el" href="a01440.html">listener</a>      </li>
+      <li class="navelem"><a class="el" href="a00303.html">OmodActivator</a>      </li>
     </ul>
   </div>
 </div>
@@ -104,268 +105,219 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.openmrs.services.OpenMRSPatientAdapter Class Reference</div>  </div>
+<div class="title">org.motechproject.openmrs.omod.listener.OmodActivator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for org.motechproject.openmrs.services.OpenMRSPatientAdapter:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00303.png" usemap="#org.motechproject.openmrs.services.OpenMRSPatientAdapter_map" alt=""/>
-  <map id="org.motechproject.openmrs.services.OpenMRSPatientAdapter_map" name="org.motechproject.openmrs.services.OpenMRSPatientAdapter_map">
-<area href="a00280.html" title="Interface for handling Patients." alt="org.motechproject.mrs.services.MRSPatientAdapter" shape="rect" coords="0,0,363,24"/>
-</map>
- </div></div>
 
-<p><a href="a01241.html">List of all members.</a></p>
+<p>Inherits ModuleActivator, and ModuleActivator.</p>
+
+<p><a href="a01733.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6f02343737cfbd2690015300bbb2a9ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00279.html">MRSPatient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a6f02343737cfbd2690015300bbb2a9ee">getPatient</a> (String patientId)</td></tr>
-<tr class="memitem:a342f0d474ff5819898164377c60677ca"><td class="memItemLeft" align="right" valign="top">Integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a342f0d474ff5819898164377c60677ca">getAgeOfPatientByMotechId</a> (String motechId)</td></tr>
-<tr class="memitem:a65456598b116c5edfddd98e86d7be13e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00279.html">MRSPatient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a65456598b116c5edfddd98e86d7be13e">getPatientByMotechId</a> (String motechId)</td></tr>
-<tr class="memitem:a4c51938b4112eb144a4788b413513ac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00279.html">MRSPatient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a4c51938b4112eb144a4788b413513ac8">savePatient</a> (<a class="el" href="a00279.html">MRSPatient</a> patient)</td></tr>
-<tr class="memitem:af6e34e60035b35734f15b4d47ef8020a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00279.html">MRSPatient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#af6e34e60035b35734f15b4d47ef8020a">updatePatient</a> (<a class="el" href="a00279.html">MRSPatient</a> patient)</td></tr>
-<tr class="memitem:a32aa8190d00a5b9d77d3196218f8f779"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="a00279.html">MRSPatient</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a32aa8190d00a5b9d77d3196218f8f779">search</a> (String name, String motechId)</td></tr>
-<tr class="memitem:a4626d19ad254e5974561931b91e46f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a4626d19ad254e5974561931b91e46f62">deceasePatient</a> (String motechId, String conceptName, Date dateOfDeath, String comment)  throws PatientNotFoundException </td></tr>
+<tr class="memitem:ad7a545e8e4bf4916c69e772e40f1bbad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#ad7a545e8e4bf4916c69e772e40f1bbad">willRefreshContext</a> ()</td></tr>
+<tr class="memitem:a90049f165775af25723a03be4e240909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a90049f165775af25723a03be4e240909">contextRefreshed</a> ()</td></tr>
+<tr class="memitem:af606b93acda386a1b374aba3192e3a11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#af606b93acda386a1b374aba3192e3a11">willStart</a> ()</td></tr>
+<tr class="memitem:a371791c2e63da53afdfcd2cd6ea03eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a371791c2e63da53afdfcd2cd6ea03eb5">started</a> ()</td></tr>
+<tr class="memitem:a93a2555e612d1721216afff5a94d2765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a93a2555e612d1721216afff5a94d2765">willStop</a> ()</td></tr>
+<tr class="memitem:a149a69097c6f57f5e47e00b97676a11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a149a69097c6f57f5e47e00b97676a11d">stopped</a> ()</td></tr>
+<tr class="memitem:ad7a545e8e4bf4916c69e772e40f1bbad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#ad7a545e8e4bf4916c69e772e40f1bbad">willRefreshContext</a> ()</td></tr>
+<tr class="memitem:a90049f165775af25723a03be4e240909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a90049f165775af25723a03be4e240909">contextRefreshed</a> ()</td></tr>
+<tr class="memitem:af606b93acda386a1b374aba3192e3a11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#af606b93acda386a1b374aba3192e3a11">willStart</a> ()</td></tr>
+<tr class="memitem:a371791c2e63da53afdfcd2cd6ea03eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a371791c2e63da53afdfcd2cd6ea03eb5">started</a> ()</td></tr>
+<tr class="memitem:a93a2555e612d1721216afff5a94d2765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a93a2555e612d1721216afff5a94d2765">willStop</a> ()</td></tr>
+<tr class="memitem:a149a69097c6f57f5e47e00b97676a11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a149a69097c6f57f5e47e00b97676a11d">stopped</a> ()</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Manages Patients in OpenMRS. </p>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a4626d19ad254e5974561931b91e46f62"></a>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a90049f165775af25723a03be4e240909"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00303.html#a4626d19ad254e5974561931b91e46f62">org.motechproject.openmrs.services.OpenMRSPatientAdapter.deceasePatient</a> </td>
+          <td class="memname">void <a class="el" href="a00303.html#a90049f165775af25723a03be4e240909">org.motechproject.openmrs.omod.listener.OmodActivator.contextRefreshed</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>motechId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>conceptName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Date&#160;</td>
-          <td class="paramname"><em>dateOfDeath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>comment</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throws <a class="el" href="a00320.html">PatientNotFoundException</a> </td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Marks a patient as dead with the given date of death and comment. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">motechId</td><td>Deceased patient's MOTECH id </td></tr>
-    <tr><td class="paramname">conceptName</td><td>Concept name for tracking deceased patients </td></tr>
-    <tr><td class="paramname">dateOfDeath</td><td>Patient's date of death </td></tr>
-    <tr><td class="paramname">comment</td><td>Additional information for the cause of death </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">PatientNotFoundException</td><td>Throws this exception if patient with the given MOTECH id does not exists </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00280.html#acd88b6a84cd6405c00c68dee43d93f4e">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a342f0d474ff5819898164377c60677ca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Integer <a class="el" href="a00303.html#a342f0d474ff5819898164377c60677ca">org.motechproject.openmrs.services.OpenMRSPatientAdapter.getAgeOfPatientByMotechId</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>motechId</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Gets the patient's age. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">motechId</td><td>Motech id of the patient </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>The age of the patient if found, else null </dd></dl>
-
-<p>Implements <a class="el" href="a00280.html#a56f03adae16cb0fbbe53f72040d18bdb">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a6f02343737cfbd2690015300bbb2a9ee"></a>
+<a class="anchor" id="a90049f165775af25723a03be4e240909"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00279.html">MRSPatient</a> <a class="el" href="a00303.html#a6f02343737cfbd2690015300bbb2a9ee">org.motechproject.openmrs.services.OpenMRSPatientAdapter.getPatient</a> </td>
+          <td class="memname">void <a class="el" href="a00303.html#a90049f165775af25723a03be4e240909">org.motechproject.openmrs.omod.listener.OmodActivator.contextRefreshed</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>patientId</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Finds a patient by patient id. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">patientId</td><td>Value to be used to find a patient </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>Patient object if found, else null </dd></dl>
-
-<p>Implements <a class="el" href="a00280.html#a9f62ec8897799be82b396767480c5df6">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a65456598b116c5edfddd98e86d7be13e"></a>
+<a class="anchor" id="a371791c2e63da53afdfcd2cd6ea03eb5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00279.html">MRSPatient</a> <a class="el" href="a00303.html#a65456598b116c5edfddd98e86d7be13e">org.motechproject.openmrs.services.OpenMRSPatientAdapter.getPatientByMotechId</a> </td>
+          <td class="memname">void <a class="el" href="a00303.html#a371791c2e63da53afdfcd2cd6ea03eb5">org.motechproject.openmrs.omod.listener.OmodActivator.started</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>motechId</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Finds a patient by motech id. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">motechId</td><td>Value to be used to find a patient </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>Patient object if found, else null </dd></dl>
-
-<p>Implements <a class="el" href="a00280.html#ae883291656864496e9f316432c6b8855">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a4c51938b4112eb144a4788b413513ac8"></a>
+<a class="anchor" id="a371791c2e63da53afdfcd2cd6ea03eb5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00279.html">MRSPatient</a> <a class="el" href="a00303.html#a4c51938b4112eb144a4788b413513ac8">org.motechproject.openmrs.services.OpenMRSPatientAdapter.savePatient</a> </td>
+          <td class="memname">void <a class="el" href="a00303.html#a371791c2e63da53afdfcd2cd6ea03eb5">org.motechproject.openmrs.omod.listener.OmodActivator.started</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00279.html">MRSPatient</a>&#160;</td>
-          <td class="paramname"><em>patient</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Saves a patient to the OpenMRS system. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">patient</td><td>Object to be saved </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>saved instance of Patient </dd></dl>
-
-<p>Implements <a class="el" href="a00280.html#ad026eba203ac9069491467fa11e201ef">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a32aa8190d00a5b9d77d3196218f8f779"></a>
+<a class="anchor" id="a149a69097c6f57f5e47e00b97676a11d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="a00279.html">MRSPatient</a>&gt; <a class="el" href="a00303.html#a32aa8190d00a5b9d77d3196218f8f779">org.motechproject.openmrs.services.OpenMRSPatientAdapter.search</a> </td>
+          <td class="memname">void <a class="el" href="a00303.html#a149a69097c6f57f5e47e00b97676a11d">org.motechproject.openmrs.omod.listener.OmodActivator.stopped</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>motechId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Searches for patients in the MRS system by patient's name and/or MOTECH id. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the patient to be searched for (Optional : can be null) </td></tr>
-    <tr><td class="paramname">motechId</td><td>Motech id of the patient to be searched for (Optional : can be null) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>Matched patients for the given search criteria [if both parameters are null, will return all the patients] </dd></dl>
-
-<p>Implements <a class="el" href="a00280.html#a9dec76120c16016a7fb1edbcd6700cdd">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af6e34e60035b35734f15b4d47ef8020a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00279.html">MRSPatient</a> <a class="el" href="a00303.html#af6e34e60035b35734f15b4d47ef8020a">org.motechproject.openmrs.services.OpenMRSPatientAdapter.updatePatient</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00279.html">MRSPatient</a>&#160;</td>
-          <td class="paramname"><em>patient</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Finds a patient by Motech id and updates the patient's details in the MRS system. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">patient</td><td>Patient instance with updated values (MOTECH identifier cannot be changed) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>The updated Patient object if found, else null </dd></dl>
+</div>
+</div>
+<a class="anchor" id="a149a69097c6f57f5e47e00b97676a11d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00303.html#a149a69097c6f57f5e47e00b97676a11d">org.motechproject.openmrs.omod.listener.OmodActivator.stopped</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
-<p>Implements <a class="el" href="a00280.html#ad6f0d58096ce69344e494bbfa98abcba">org.motechproject.mrs.services.MRSPatientAdapter</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ad7a545e8e4bf4916c69e772e40f1bbad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00303.html#ad7a545e8e4bf4916c69e772e40f1bbad">org.motechproject.openmrs.omod.listener.OmodActivator.willRefreshContext</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad7a545e8e4bf4916c69e772e40f1bbad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00303.html#ad7a545e8e4bf4916c69e772e40f1bbad">org.motechproject.openmrs.omod.listener.OmodActivator.willRefreshContext</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af606b93acda386a1b374aba3192e3a11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00303.html#af606b93acda386a1b374aba3192e3a11">org.motechproject.openmrs.omod.listener.OmodActivator.willStart</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af606b93acda386a1b374aba3192e3a11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00303.html#af606b93acda386a1b374aba3192e3a11">org.motechproject.openmrs.omod.listener.OmodActivator.willStart</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a93a2555e612d1721216afff5a94d2765"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00303.html#a93a2555e612d1721216afff5a94d2765">org.motechproject.openmrs.omod.listener.OmodActivator.willStop</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a93a2555e612d1721216afff5a94d2765"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00303.html#a93a2555e612d1721216afff5a94d2765">org.motechproject.openmrs.omod.listener.OmodActivator.willStop</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>

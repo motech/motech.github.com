@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,12 +92,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00974.html">server</a>      </li>
-      <li class="navelem"><a class="el" href="a00991.html">messagecampaign</a>      </li>
-      <li class="navelem"><a class="el" href="a01004.html">userspecified</a>      </li>
-      <li class="navelem"><a class="el" href="a00076.html">CampaignRecord</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01470.html">server</a>      </li>
+      <li class="navelem"><a class="el" href="a01487.html">messagecampaign</a>      </li>
+      <li class="navelem"><a class="el" href="a00076.html">CampaignMessageHandler</a>      </li>
     </ul>
   </div>
 </div>
@@ -105,31 +104,84 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.server.messagecampaign.userspecified.CampaignRecord Class Reference</div>  </div>
+<div class="title">org.motechproject.server.messagecampaign.CampaignMessageHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01395.html">List of all members.</a></p>
+<p><a href="a01855.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9af61664c04cd86d09a781a9f205a2f9"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a9af61664c04cd86d09a781a9f205a2f9">name</a> ()</td></tr>
-<tr class="memitem:a639e166d33d0e22370e2edf8fcb5cfa1"><td class="memItemLeft" align="right" valign="top">Campaign&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a639e166d33d0e22370e2edf8fcb5cfa1">build</a> ()</td></tr>
-<tr class="memitem:a25ff78a9f2768a5d0fc3da58f9769ed2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html">CampaignRecord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a25ff78a9f2768a5d0fc3da58f9769ed2">name</a> (String name)</td></tr>
-<tr class="memitem:ae9aeaa13f9e88d7924b41329783e1ea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html">CampaignRecord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ae9aeaa13f9e88d7924b41329783e1ea2">messages</a> (List&lt; <a class="el" href="a00074.html">CampaignMessageRecord</a> &gt; campaignMessageRecords)</td></tr>
-<tr class="memitem:ada6b0288cc6067e0d8382562a46469f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html">CampaignRecord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ada6b0288cc6067e0d8382562a46469f1">type</a> (<a class="el" href="a00078.html">CampaignType</a> type)</td></tr>
-<tr class="memitem:a7d6a22179a58202007d71abade6c9976"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a7d6a22179a58202007d71abade6c9976">maxDuration</a> ()</td></tr>
-<tr class="memitem:a74c7f3972c34b42bbcfe263b77bc4e30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00076.html">CampaignRecord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a74c7f3972c34b42bbcfe263b77bc4e30">maxDuration</a> (String maxDuration)</td></tr>
+<tr class="memitem:a279bef7c9430c93b5724068502e0908e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a279bef7c9430c93b5724068502e0908e">CampaignMessageHandler</a> (<a class="el" href="a00318.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="a00030.html">AllMessageCampaigns</a> allMessageCampaigns)</td></tr>
+<tr class="memitem:ab36432ec72360c523fb76986ca5e0509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ab36432ec72360c523fb76986ca5e0509">handleEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
+<tr class="memitem:a279bef7c9430c93b5724068502e0908e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a279bef7c9430c93b5724068502e0908e">CampaignMessageHandler</a> (<a class="el" href="a00318.html">OutboundEventGateway</a> outboundEventGateway, <a class="el" href="a00030.html">AllMessageCampaigns</a> allMessageCampaigns)</td></tr>
+<tr class="memitem:ab36432ec72360c523fb76986ca5e0509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#ab36432ec72360c523fb76986ca5e0509">handleEvent</a> (<a class="el" href="a00262.html">MotechEvent</a> motechEvent)</td></tr>
 </table>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a279bef7c9430c93b5724068502e0908e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00076.html#a279bef7c9430c93b5724068502e0908e">org.motechproject.server.messagecampaign.CampaignMessageHandler.CampaignMessageHandler</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00318.html">OutboundEventGateway</a>&#160;</td>
+          <td class="paramname"><em>outboundEventGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00030.html">AllMessageCampaigns</a>&#160;</td>
+          <td class="paramname"><em>allMessageCampaigns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a279bef7c9430c93b5724068502e0908e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00076.html#a279bef7c9430c93b5724068502e0908e">org.motechproject.server.messagecampaign.CampaignMessageHandler.CampaignMessageHandler</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00318.html">OutboundEventGateway</a>&#160;</td>
+          <td class="paramname"><em>outboundEventGateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00030.html">AllMessageCampaigns</a>&#160;</td>
+          <td class="paramname"><em>allMessageCampaigns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a639e166d33d0e22370e2edf8fcb5cfa1"></a>
+<a class="anchor" id="ab36432ec72360c523fb76986ca5e0509"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Campaign <a class="el" href="a00076.html#a639e166d33d0e22370e2edf8fcb5cfa1">org.motechproject.server.messagecampaign.userspecified.CampaignRecord.build</a> </td>
+          <td class="memname">void <a class="el" href="a00076.html#ab36432ec72360c523fb76986ca5e0509">org.motechproject.server.messagecampaign.CampaignMessageHandler.handleEvent</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -138,98 +190,15 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7d6a22179a58202007d71abade6c9976"></a>
+<a class="anchor" id="ab36432ec72360c523fb76986ca5e0509"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String org.motechproject.server.messagecampaign.userspecified.CampaignRecord.maxDuration </td>
+          <td class="memname">void <a class="el" href="a00076.html#ab36432ec72360c523fb76986ca5e0509">org.motechproject.server.messagecampaign.CampaignMessageHandler.handleEvent</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a74c7f3972c34b42bbcfe263b77bc4e30"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00076.html">CampaignRecord</a> org.motechproject.server.messagecampaign.userspecified.CampaignRecord.maxDuration </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>maxDuration</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae9aeaa13f9e88d7924b41329783e1ea2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00076.html">CampaignRecord</a> org.motechproject.server.messagecampaign.userspecified.CampaignRecord.messages </td>
-          <td>(</td>
-          <td class="paramtype">List&lt; <a class="el" href="a00074.html">CampaignMessageRecord</a> &gt;&#160;</td>
-          <td class="paramname"><em>campaignMessageRecords</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9af61664c04cd86d09a781a9f205a2f9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String org.motechproject.server.messagecampaign.userspecified.CampaignRecord.name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a25ff78a9f2768a5d0fc3da58f9769ed2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00076.html">CampaignRecord</a> org.motechproject.server.messagecampaign.userspecified.CampaignRecord.name </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ada6b0288cc6067e0d8382562a46469f1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00076.html">CampaignRecord</a> org.motechproject.server.messagecampaign.userspecified.CampaignRecord.type </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00078.html">CampaignType</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="a00262.html">MotechEvent</a>&#160;</td>
+          <td class="paramname"><em>motechEvent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

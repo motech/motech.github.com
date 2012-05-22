@@ -29,7 +29,7 @@
 	<header id="header" >
 			<div class="clearfix" style="padding-bottom:10px">
 
-				<h1 id="logo" style ="margin-left:21px">
+				<h1 id="logo" style ="margin-left:21px;color:gold">
 					<a href="/index.html">MOTECH - Mobile Technology for Community Health</a>v0.10
 				</h1>
 				<header-up-right style ="margin-top:21px">A Grameen Foundation Initiative</header-up-right>    
@@ -92,49 +92,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00870.html">org</a>      </li>
-      <li class="navelem"><a class="el" href="a00874.html">motechproject</a>      </li>
-      <li class="navelem"><a class="el" href="a00904.html">ivr</a>      </li>
-      <li class="navelem"><a class="el" href="a00915.html">model</a>      </li>
-      <li class="navelem"><a class="el" href="a00202.html">IVRStatus</a>      </li>
+      <li class="navelem"><a class="el" href="a01366.html">org</a>      </li>
+      <li class="navelem"><a class="el" href="a01370.html">motechproject</a>      </li>
+      <li class="navelem"><a class="el" href="a01393.html">decisiontree</a>      </li>
+      <li class="navelem"><a class="el" href="a01394.html">model</a>      </li>
+      <li class="navelem"><a class="el" href="a00202.html">ITreeCommand</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org.motechproject.ivr.model.IVRStatus Enum Reference</div>  </div>
+<div class="title">org.motechproject.decisiontree.model.ITreeCommand Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="a01154.html">List of all members.</a></p>
+<p><a href="a01609.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11df4c389c5faedbc05c93c985b1b68c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a11df4c389c5faedbc05c93c985b1b68c">IVRStatus</a> (String value)</td></tr>
-<tr class="memitem:a8a77a8c0b237a4d604fbfb23d07945dc"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a8a77a8c0b237a4d604fbfb23d07945dc">getValue</a> ()</td></tr>
-<tr class="memitem:a6c9c94d80e703070c0e7ce11a2f40ad1"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a6c9c94d80e703070c0e7ce11a2f40ad1">toString</a> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a34993e3d6841ac60da37d639fe1b41d6"><td class="memItemLeft" align="right" valign="top">static boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a34993e3d6841ac60da37d639fe1b41d6">isAnswered</a> (String status)</td></tr>
-<tr><td colspan="2"><h2><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a0dfeda001b9408b0944a293533ee2e39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a0dfeda001b9408b0944a293533ee2e39">Answered</a> = (&quot;answered&quot;)</td></tr>
-<tr class="memitem:a9bc5c6b5c4a03aa61bc8448f5f0dfe07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a9bc5c6b5c4a03aa61bc8448f5f0dfe07">NotAnswered</a> = (&quot;not_answered&quot;)</td></tr>
+<tr class="memitem:a158b14350f4fc0c7754016bb0f044ea7"><td class="memItemLeft" align="right" valign="top">String[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a158b14350f4fc0c7754016bb0f044ea7">execute</a> (Object obj)</td></tr>
+<tr class="memitem:a158b14350f4fc0c7754016bb0f044ea7"><td class="memItemLeft" align="right" valign="top">String[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a158b14350f4fc0c7754016bb0f044ea7">execute</a> (Object obj)</td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a11df4c389c5faedbc05c93c985b1b68c"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Contract for tree command. </p>
+<p><br/>
+ Known use cases:<br/>
+ Call back from tree node, executed whenever tree node is processed. See also <a class="el" href="a00295.html#a812042f6de5a2ea0574c75317f24bf52">org.motechproject.decisiontree.model.Node#getTreeCommands()</a> <br/>
+ Dynamic prompts by setting command on prompt, result of command will be used in prompt text. See also <a class="el" href="a00342.html#af77ab86a917ee598878fc62f71080bb8">AudioPrompt#setCommand(ITreeCommand)</a>, <a class="el" href="a00342.html#af77ab86a917ee598878fc62f71080bb8">TextToSpeechPrompt#setCommand(ITreeCommand)</a> </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a158b14350f4fc0c7754016bb0f044ea7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00202.html#a11df4c389c5faedbc05c93c985b1b68c">org.motechproject.ivr.model.IVRStatus.IVRStatus</a> </td>
+          <td class="memname">String [] <a class="el" href="a00202.html#a158b14350f4fc0c7754016bb0f044ea7">org.motechproject.decisiontree.model.ITreeCommand.execute</a> </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -143,76 +139,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a8a77a8c0b237a4d604fbfb23d07945dc"></a>
+<a class="anchor" id="a158b14350f4fc0c7754016bb0f044ea7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">String <a class="el" href="a00202.html#a8a77a8c0b237a4d604fbfb23d07945dc">org.motechproject.ivr.model.IVRStatus.getValue</a> </td>
+          <td class="memname">String [] <a class="el" href="a00202.html#a158b14350f4fc0c7754016bb0f044ea7">org.motechproject.decisiontree.model.ITreeCommand.execute</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a34993e3d6841ac60da37d639fe1b41d6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static boolean <a class="el" href="a00202.html#a34993e3d6841ac60da37d639fe1b41d6">org.motechproject.ivr.model.IVRStatus.isAnswered</a> </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>status</em></td><td>)</td>
-          <td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6c9c94d80e703070c0e7ce11a2f40ad1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String <a class="el" href="a00202.html#a6c9c94d80e703070c0e7ce11a2f40ad1">org.motechproject.ivr.model.IVRStatus.toString</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a0dfeda001b9408b0944a293533ee2e39"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00202.html#a0dfeda001b9408b0944a293533ee2e39">org.motechproject.ivr.model.IVRStatus.Answered</a> = (&quot;answered&quot;)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9bc5c6b5c4a03aa61bc8448f5f0dfe07"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00202.html#a9bc5c6b5c4a03aa61bc8448f5f0dfe07">org.motechproject.ivr.model.IVRStatus.NotAnswered</a> = (&quot;not_answered&quot;)</td>
         </tr>
       </table>
 </div>
