@@ -254,7 +254,7 @@ The campaign name determines which campaign will be retrieved or unscheduled fro
 the calendar date that the campaign will begin for that user. If no reference date is supplied, then the current date upon enrollment is used 
 in its place. The reminder time specifies what time of day in hours and minutes that the message will be sent. </p>
 
-   <img src="/assets/modules/campaignrequest.png"/>
+   <img src="/assets/modules/campaignrequest.PNG"/>
 <p>  The message-campaign module exposes a MessageCampaignService interface with three methods that accept a Campaign Request 
 object: startFor, stopFor, and stopAll. The startFor method creates an enrollment record for the request. It also schedules a campaign’s 
 message or messages as jobs in the scheduler. The stopFor method also accepts the unique key of the message to stop. This method 
@@ -262,7 +262,7 @@ unschedules one particular campaign message of the given campaign request. The s
 from the campaign. The search() method allows querying for enrollments and is discussed below.</p>
     
 
-    <img src="/assets/modules/messagecampaignservice.png"/>
+    <img src="/assets/modules/messagecampaignservice.PNG"/>
 
     <h4>Content</h4>
     <p>The content for messages is provided through the CMSlite module. </p>
@@ -390,7 +390,7 @@ are not sent as part of an event payload.</p>
 
     <p>Graphical representation of the event flow through the message campaign module:</p>
 
-    <img src="/assets/modules/campaignmessageflow.png"/>
+    <img src="/assets/modules/campaignmessageflow.PNG"/>
 
     <h4>Querying enrollments</h4> 
     <p>The module’s Message Campaign Service, in addition to its capability to start, stop, or stop all message(s), is capable of searching Campaign Enrollment 
@@ -416,9 +416,9 @@ Query’s list of criteria. The clauses together define specific search criteria. 
 	will find active enrollments enrolled into "My Program" campaign.
 	</p>
 
-<img src="/assets/modules/campaignenrollmentrecord.png"/>
+<img src="/assets/modules/campaignenrollmentrecord.PNG"/>
 <br>
-<img src="/assets/modules/campaignenrollmentsquery.png"/>
+<img src="/assets/modules/campaignenrollmentsquery.PNG"/>
 	
     <h4>Questions for the message campaign module</h4>
 
