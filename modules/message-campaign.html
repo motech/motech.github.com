@@ -133,7 +133,7 @@ maxDuration field, which specifies the maximum duration in which the messages wi
  campaign messages contain the following additional message fields: repeatInterval, calendarStartOfWeek, weekDaysApplicable, 
 and deliverTime. The repeat interval combined with the maximum duration determines how many messages will be scheduled. 
 Week days determine which days of the week the messages will be sent at the time specified by the deliver time. A repeating message 
-will always have the basic campaign message’s fields (name, formats, languages, and messageKey) in addition to a combination of 
+will always have the basic campaign messageï¿½s fields (name, formats, languages, and messageKey) in addition to a combination of 
 the additional fields defined above. A new message can be constructed in three ways:</p>
 <dd>1) A repeat interval and a delivery time</dd>
 <dd>2) A list of applicable week days and a delivery time</dd>
@@ -256,13 +256,13 @@ in its place. The reminder time specifies what time of day in hours and minutes 
 
    <img src="/assets/modules/campaignrequest.PNG"/>
 <p>  The message-campaign module exposes a MessageCampaignService interface with three methods that accept a Campaign Request 
-object: startFor, stopFor, and stopAll. The startFor method creates an enrollment record for the request. It also schedules a campaign’s 
+object: startFor, stopFor, and stopAll. The startFor method creates an enrollment record for the request. It also schedules a campaignï¿½s 
 message or messages as jobs in the scheduler. The stopFor method also accepts the unique key of the message to stop. This method 
 unschedules one particular campaign message of the given campaign request. The stopAll method unschedules all campaign messages 
 from the campaign. The search() method allows querying for enrollments and is discussed below.</p>
     
 
-    <img src="/assets/modules/messagecampaignservice.PNG"/>
+    <img src="/assets/modules/messagecampaignservice.png"/>
 
     <h4>Content</h4>
     <p>The content for messages is provided through the CMSlite module. </p>
@@ -383,20 +383,20 @@ The external ID field of the Campaign Request is a user ID, identifying a patien
 campaign name and external ID, and one field from the campaign message: messageKey.</p>
 
 <p>As an example, if the campaign name is Campaign1, externalID is 123 and the message key is MessageKey4, then the 
-Job ID would be: “org.motechproject.server.messagecampaign.Campaign1.123.MessageKey4.”</p>
+Job ID would be: ï¿½org.motechproject.server.messagecampaign.Campaign1.123.MessageKey4.ï¿½</p>
 
 <p>Note that some characteristics of a campaign message (for example, repeatInterval from repeating messages) 
 are not sent as part of an event payload.</p>
 
     <p>Graphical representation of the event flow through the message campaign module:</p>
 
-    <img src="/assets/modules/campaignmessageflow.PNG"/>
+    <img src="/assets/modules/campaignmessageflow.png"/>
 
     <h4>Querying enrollments</h4> 
-    <p>The module’s Message Campaign Service, in addition to its capability to start, stop, or stop all message(s), is capable of searching Campaign Enrollment 
-Records based on particular criteria provided by a Campaign Enrollments Query object. This  service’s search() allows the client to query for enrollment records
+    <p>The moduleï¿½s Message Campaign Service, in addition to its capability to start, stop, or stop all message(s), is capable of searching Campaign Enrollment 
+Records based on particular criteria provided by a Campaign Enrollments Query object. This  serviceï¿½s search() allows the client to query for enrollment records
  using various criteria: external ID, status, and/or campaign name. Queries are built by adding one or more of these criteria to the Campaign Enrollment 
-Query’s list of criteria. The clauses together define specific search criteria. The method returns a list of matching Campaign Enrollment Records.</p>
+Queryï¿½s list of criteria. The clauses together define specific search criteria. The method returns a list of matching Campaign Enrollment Records.</p>
 
 	<p>Examples:
 
