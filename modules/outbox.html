@@ -9,13 +9,13 @@ title: MOTECH - Mobile Technology for Community Health
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
-    <h2>Outbox Module</h2> 
+    <h3>Outbox Module</h3> 
 
-    <h3>Description</h3> 
+    <h4>Description</h4> 
 
     <p>The outbox module acts as a repository of pending and saved voice messages for the client. The module provides a service for the retrieval and manipulation of messages and information from a party's outbox. A party could be a patient, nurse, doctor, etc. The module provides event handling that allows for the scheduling or unscheduling of voice messages for a specific time of day. Implementers may configure some of the details regarding the outbox's limits (for example, the maximum number of messages in the outbox may be configured).</p>
 
-    <h3>Information for implementation</h3> 
+    <h4>Information for implementation</h4> 
 
     <p>The outbox module presents implementers with the following functionality:</p>
 
@@ -30,11 +30,11 @@ title: MOTECH - Mobile Technology for Community Health
 
     <p>Pending and saved OutboundVoiceMessages are stored in CouchDB.</p>
 
-    <h3>Retrieval and manipulation of information and messages from an outbox</h3> 
+    <h4>Retrieval and manipulation of information and messages from an outbox</h4> 
 
     <p>The VoiceOutBoxService interface provides methods for the retrieval and manipulation of information and messages from a party's outbox.</p>
 
-    <img src="/assets/modules/voiceoutboxservice.PNG"/>
+    <img src="/assets/modules/voiceoutboxservice.png"/>
 
     <p>For more details about the API, refer to the javadoc. </p>
 
@@ -42,7 +42,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <p>Several methods of the service require OutboundVoiceMessages.</p>
 
-    <h4>Outbound Voice Message:</h4>
+    <h5>Outbound Voice Message:</h5>
 
     <img src="/assets/modules/outboundvoicemessages.PNG"/>
 
