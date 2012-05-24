@@ -9,13 +9,13 @@ title: MOTECH - Mobile Technology for Community Health
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
-    <h2>Outbox Module</h2> 
+    <h3>Outbox Module</h3> 
 
-    <h3>Description</h3> 
+    <h4>Description</h4> 
 
     <p>The outbox module acts as a repository of pending and saved voice messages for the client. The module provides a service for the retrieval and manipulation of messages and information from a party's outbox. A party could be a patient, nurse, doctor, etc. The module provides event handling that allows for the scheduling or unscheduling of voice messages for a specific time of day. Implementers may configure some of the details regarding the outbox's limits (for example, the maximum number of messages in the outbox may be configured).</p>
 
-    <h3>Information for implementation</h3> 
+    <h4>Information for implementation</h4> 
 
     <p>The outbox module presents implementers with the following functionality:</p>
 
@@ -30,7 +30,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <p>Pending and saved OutboundVoiceMessages are stored in CouchDB.</p>
 
-    <h3>Retrieval and manipulation of information and messages from an outbox</h3> 
+    <h4>Retrieval and manipulation of information and messages from an outbox</h4> 
 
     <p>The VoiceOutBoxService interface provides methods for the retrieval and manipulation of information and messages from a party's outbox.</p>
 
@@ -42,7 +42,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <p>Several methods of the service require OutboundVoiceMessages.</p>
 
-    <h4>Outbound Voice Message:</h4>
+    <h5>Outbound Voice Message:</h5>
 
     <img src="/assets/modules/outboundvoicemessages.PNG"/>
 
@@ -59,16 +59,16 @@ title: MOTECH - Mobile Technology for Community Health
 	please fix your appointment with doctor Johnson" and then redirect the user to the outbox main menu. The main menu  
 	gives the message recipient the option to repeat a message, save a message, play the next message, or return to the main TAMA menu.</p>
 	
-	<h4>OutboundVoiceMessageStatus</h4>
+	<h5>OutboundVoiceMessageStatus</h5>
 	<p>An enumeration that determines whether a voice message is pending, played, or saved. Messages should initially be created as PENDING.</p>
 
-	<h4>VoiceMessageType</h4>
+	<h5>VoiceMessageType</h5>
 	<p><i>voiceMessageTypeName</i> - Used if no templateName is specified.</p>
 	<p><i>templateName</i> - Used to determine which VXML document to associate with the voice message.</p>
 	<p><i>canBeSaved</i> - Allows the party to save the message.</p>
 	<p><i>canBeReplayed</i> - Allows the party to replay a message.</p>
 
-    <h3>Configuration of outbox properties</h3> 
+    <h4>Configuration of outbox properties</h4> 
 
     <p>In the applicationOutboxAPI.xml configuration file, the number of days to keep saved messages and the maximum number of pending messages can be set through Spring setter injection:</p>
 
@@ -79,7 +79,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <p>The value specifies the number of messages for each respective property.</p>
 
-    <h3>Outbox voice message menu</h3>
+    <h4>Outbox voice message menu</h4>
 
     <p>The outbox module includes vm template files that are used for a voice message menu system for a user's outbox. These vm files may be edited to contain different audio files or synthesized speech.</p>
 
@@ -110,7 +110,7 @@ which is the main menu for Tama. The redirection includes the user's external Id
 
     <p>The text or audio files in the vm templates may be changed and specified by implementers.</p>
 
-    <h3>Scheduling and unscheduling voice messages</h3> 
+    <h4>Scheduling and unscheduling voice messages</h4> 
 
     <p>The OutboxExecutionHandler is capable of handling three different event emissions with the following keys:</p>
 
@@ -135,9 +135,9 @@ A cron schedulable job is scheduled with the call hour and call minute.</p>
       <dd>This event is automatically created and scheduled by the schedule method.</dd>
     </dl>
     
-    <h3>Events consumed and emitted by the outbox module</h3>
+    <h4>Events consumed and emitted by the outbox module</h4>
 
-    <h4>Consumed events:</h4>
+    <h5>Consumed events:</h5>
 
     <p>OutboxExecutionHandler handles and consumes the following keyed events:</p>
 
@@ -166,7 +166,7 @@ A cron schedulable job is scheduled with the call hour and call minute.</p>
       EventKeys.SCHEDULE_JOB_ID_KEY (JobID) - String
     {% endhighlight %}
 
-    <h4>Emitted events:</h4>
+    <h5>Emitted events:</h5>
 
     <p>OutboxExecutionHandler emits the following keyed events:</p>
 
@@ -204,7 +204,7 @@ A cron schedulable job is scheduled with the call hour and call minute.</p>
     {% endhighlight %}
 
 
- <h3>Outbox as an OSGi module</h3> 
+ <h4>Outbox as an OSGi module</h4> 
 
     <p>The outbox module encapsulates two projects, Outbox and Outbox-API. The Outbox acts as an OSGi module 
 that imports the Outbox-API and exposes (exports) several of its constituent classes. The classes 
@@ -223,7 +223,7 @@ These are accessed with HTTP requests and event emissions, respectively. The cha
       <dt>OutboxContext</dt>
     </dl>
 
-    <h3>Questions</h3>
+    <h4>Questions</h4>
 
     <p>What is the fundamental role of OutboxExecutionHandler? As it stands, implementing the scheduling of calls with the OutboxExecutionHandler would require writing and emitting your own scheduled events that are then handled. Should there be an easier way to schedule, or is this old functionality that is no longer delegated to the outbox module?</p>
 
