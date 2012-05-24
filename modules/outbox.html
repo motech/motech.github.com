@@ -9,15 +9,15 @@ title: MOTECH - Mobile Technology for Community Health
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
-    <h3>Outbox Module</h3> 
+    <h2>Outbox Module</h2> 
 
-    <h4>Description</h4> 
+    <h3>Description</h3> 
 
-    <p>The outbox module acts as a repository of pending and saved voice messages for the client. The module provides a service for the retrieval and manipulation of messages and information from a party's outbox. A party could be a patient, nurse, doctor, etc. The module provides event handling that allows for the scheduling or unscheduling of voice messages for a specific time of day. End users may configure some of the details regarding the outbox's limits (for example, the maximum number of messages in the outbox may be configured).</p>
+    <p>The outbox module acts as a repository of pending and saved voice messages for the client. The module provides a service for the retrieval and manipulation of messages and information from a party's outbox. A party could be a patient, nurse, doctor, etc. The module provides event handling that allows for the scheduling or unscheduling of voice messages for a specific time of day. Implementers may configure some of the details regarding the outbox's limits (for example, the maximum number of messages in the outbox may be configured).</p>
 
-    <h4>Information for implementation</h4> 
+    <h3>Information for implementation</h3> 
 
-    <p>The outbox module presents end users with the following functionality:</p>
+    <p>The outbox module presents implementers with the following functionality:</p>
 
     <ul>
         <li>The retrieval and manipulation of information and messages from a party's outbox using a voice outbox service</li>
@@ -30,19 +30,45 @@ title: MOTECH - Mobile Technology for Community Health
 
     <p>Pending and saved OutboundVoiceMessages are stored in CouchDB.</p>
 
-    <h4>Retrieval and manipulation of information and messages from an outbox</h4> 
+    <h3>Retrieval and manipulation of information and messages from an outbox</h3> 
 
     <p>The VoiceOutBoxService interface provides methods for the retrieval and manipulation of information and messages from a party's outbox.</p>
 
-    <img src="/assets/modules/voiceoutboxservice.png"/>
+    <img src="/assets/modules/voiceoutboxservice.PNG"/>
 
-    <p>For more details about the API, refer javadoc. </p>
+    <p>For more details about the API, refer to the javadoc. </p>
 
     <p>The configurable properties of the outbox are described in the following section.</p>
 
-    <p>Several methods of the service require OutboundVoiceMessages. [[outbound-voice-messages|See here]] for more information about OutboundVoiceMessages.</p>
+    <p>Several methods of the service require OutboundVoiceMessages.</p>
 
-    <h4>Configuration of outbox properties</h4> 
+    <h4>Outbound Voice Message:</h4>
+
+    <img src="/assets/modules/outboundvoicemessages.PNG"/>
+
+    <p> <i>externalId:</i> A unique identifier for the party.</p>
+	<p><i>creationTime:</i> When the message was created.</p>
+	<p><i>expirationDate:</i> When the message should expire.</p>
+	<p><i>sequenceNumber:</i> represents the order in which the message has to be retrieved from the party's outbox.</p>
+	<p><i>parameters:</i> Used for additional content in voice messages. For example, if an OutboundVoiceMessage is 
+	created with a VoiceMessageType of "appointmentReminder", the appointmentReminder.vm file will be used for 
+	the scheduled voice message. In this case, the appointmentReminder plays a hello wav file, followed by a 
+	synthesized voice stating "Please fix your appointment", followed by dynamic retrieval of the "message" 
+	key in the parameters map. Whatever text was keyed with that message will be spoken by the synthesized voice. 
+	If the "message" key was paired with a string of "with doctor Johnson", the voice message would say "(Hello.wav), 
+	please fix your appointment with doctor Johnson" and then redirect the user to the outbox main menu. The main menu  
+	gives the message recipient the option to repeat a message, save a message, play the next message, or return to the main TAMA menu.</p>
+	
+	<h4>OutboundVoiceMessageStatus</h4>
+	<p>An enumeration that determines whether a voice message is pending, played, or saved. Messages should initially be created as PENDING.</p>
+
+	<h4>VoiceMessageType</h4>
+	<p><i>voiceMessageTypeName</i> - Used if no templateName is specified.</p>
+	<p><i>templateName</i> - Used to determine which VXML document to associate with the voice message.</p>
+	<p><i>canBeSaved</i> - Allows the party to save the message.</p>
+	<p><i>canBeReplayed</i> - Allows the party to replay a message.</p>
+
+    <h3>Configuration of outbox properties</h3> 
 
     <p>In the applicationOutboxAPI.xml configuration file, the number of days to keep saved messages and the maximum number of pending messages can be set through Spring setter injection:</p>
 
@@ -75,13 +101,18 @@ title: MOTECH - Mobile Technology for Community Health
     </vxml>
     {% endhighlight %}
 
-    <p>Above is a voice XML form using Apache velocity for dynamic content. Prompts define the audio or voice message to be played for the recipient. The audio src tag specifies a wav file to be played for the user when there are no messages. After the hello.wav file is played, a synthesized voice will tell the user "There are no pending messages in your outbox". The goto next tag redirects the user to the url that was set in the preceding line, which is the main menu for Tama. The redirection includes the user's party Id in the request.</p>
+    <p>Above is a voice XML form using Apache Velocity for dynamic content. 
+Prompts define the audio or voice message to be played for the recipient. 
+The audio src tag specifies a wav file to be played for the user when there are no messages. 
+After the hello.wav file is played, a synthesized voice will tell the user "There are no pending messages in your outbox". 
+The goto next tag redirects the user to the url that was set in the preceding line, 
+which is the main menu for Tama. The redirection includes the user's external Id in the request.</p>
 
-    <p>The text or audio files in the vm templates may be changed and specified by end users.</p>
+    <p>The text or audio files in the vm templates may be changed and specified by implementers.</p>
 
-    <h4>Scheduling and unscheduling voice messages</h4> 
+    <h3>Scheduling and unscheduling voice messages</h3> 
 
-    <p>The OutBoxExecutionHandler is capable of handling three different event emissions with the following keys:</p>
+    <p>The OutboxExecutionHandler is capable of handling three different event emissions with the following keys:</p>
 
     EventKeys.EXECUTE_OUTBOX_SUBJECT (org.motechproject.server.outbox.execute)<br/>
     EventKeys.SCHEDULE_EXECUTION_SUBJECT (org.motechproject.server.outbox.schedule-execution)<br/>
@@ -91,7 +122,9 @@ title: MOTECH - Mobile Technology for Community Health
     <p>Implementers may emit events for scheduling and unscheduling voice messages. The initiation of the voice message calls is handled by the execute method in the handler.</p>
 
     <i>Schedule event:</i>
-    <p>Scheduling requires a call hour, call minute, party Id and phone number. The handled event's payload is added to the event emitted by this scheduling. A cron schedulable job is scheduled with the call hour and call minute.</p>
+    <p>Scheduling requires a call hour, call minute, external Id and phone number. 
+The handled event's payload is added to the event emitted by this scheduling. 
+A cron schedulable job is scheduled with the call hour and call minute.</p>
 
     <p>When executing a scheduled call, the next pending message will be used for the reminder call.</p>
 
@@ -101,25 +134,7 @@ title: MOTECH - Mobile Technology for Community Health
       <dt>Execute event:</dt>
       <dd>This event is automatically created and scheduled by the schedule method.</dd>
     </dl>
-
-    <p>See [[outbox-events|event handling]] for a more detailed description regarding the payloads of these events.</p>
-
-    <h4>Outbox as an OSGi module</h4> 
-
-    <p>The outbox module encapsulates two projects, Outbox and Outbox-API. The Outbox acts as an OSGi module that imports the Outbox-API and exposes (exports) several of its constituent classes. The classes in the Outbox itself, such as VxmlController and OutboxExecutionHandler, are not exported and are private to the module. These are accessed with HTTP requests and event emissions, respectively. The characteristics of the module are specified with a plugin in the Maven pom.xml.</p>
-
-    <p>Publicly exposed classes expored by the module</p>
-
-    <dl>
-      <dt>VoiceOutBoxService</dt>
-      <dt>EventKeys</dt>
-	  <dt>SortKey</dt>
-      <dt>OutboundVoiceMessage</dt>
-      <dt>VoiceMessageType</dt>
-      <dt>OutboundVoiceMessageStatus</dt>
-      <dt>OutboxContext</dt>
-    </dl>
-
+    
     <h3>Events consumed and emitted by the outbox module</h3>
 
     <h4>Consumed events:</h4>
@@ -129,7 +144,7 @@ title: MOTECH - Mobile Technology for Community Health
     {% highlight java %}
     EventKeys.EXECUTE_OUTBOX_SUBJECT (execute method)
     Parameters/Payload:
-      EventKeys.PARTY_ID_KEY (PartyID) - String
+      EventKeys.EXTERNAL_ID_KEY (ExternalID) - String
       EventKeys.PHONE_NUMBER_KEY (PhoneNumber) - String
       EventKeys.LANGUAGE_KEY (Language) - String
       And the parameters inherited from the SCHEDULE_EXECUTION_SUBJECT
@@ -140,9 +155,8 @@ title: MOTECH - Mobile Technology for Community Health
     Parameters/Payload:
       EventKeys.CALL_HOUR_KEY (CallHour) - Integer
       EventKeys.CALL_MINUTE_KEY (CallMinute) - Integer
-      EventKeys.PARTY_ID_KEY (PartyID) - String
+      EventKeys.EXTERNAL_ID_KEY (ExternalID) - String
       EventKeys.PHONE_NUMBER_KEY (PhoneNumber) - String
-      EventKeys.LANGUAGE_KEY (Language) - String
       And any other parameters inherited from the emitted schedule event.
     {% endhighlight %}
 
@@ -160,7 +174,7 @@ title: MOTECH - Mobile Technology for Community Health
     EventKeys.EXECUTE_OUTBOX_SUBJECT (schedule method)
     This event is emitted by the scheduler. It originates from the schedule method found in the OutboxExecutionHandler.
     Parameters/Payload:
-      EventKeys.PARTY_ID_KEY (PartyID) - String
+      EventKeys.EXTERNAL_ID_KEY (ExternalID) - String
       EventKeys.PHONE_NUMBER_KEY (PhoneNumber) - String
       EventKeys.LANGUAGE_KEY (Language) - String
       And the parameters inherited from the SCHEDULE_EXECUTION_SUBJECT
@@ -170,14 +184,14 @@ title: MOTECH - Mobile Technology for Community Health
     EventKeys.INCOMPLETE_OUTBOX_CALL_SUBJECT (execute method)
     This event is emitted if the execution of a call fails
     Parameters/Payload:
-      EventKeys.PARTY_ID_KEY (PartyID) - String
+      EventKeys.EXTERNAL_ID_KEY (ExternalID) - String
     {% endhighlight %}
 
     {% highlight java %}
     EventKeys.COMPLETED_OUTBOX_CALL_SUBJECT (execute method)
     This event is emitted if the execution of a call is successful
     Parameters/Payload:
-      EventKeys.PARTY_ID_KEY(PartyID) - String
+      EventKeys.EXTERNAL_ID_KEY(ExternalID) - String
     {% endhighlight %}
 
     <p>VoiceOutBoxServiceImpl emits the following keyed event(s):</p>
@@ -186,14 +200,34 @@ title: MOTECH - Mobile Technology for Community Health
     EventKeys.OUTBOX_MAX_PENDING_MESSAGES_EVENT_SUBJECT
     This event is emitted if the maximum number of messages in a party's outbox has been reached
     Parameters/Payload:
-      EventKeys.PARTY_ID_KEY(PartyID) - String
+      EventKeys.EXTERNAL_ID_KEY(ExternalID) - String
     {% endhighlight %}
+
+
+ <h3>Outbox as an OSGi module</h3> 
+
+    <p>The outbox module encapsulates two projects, Outbox and Outbox-API. The Outbox acts as an OSGi module 
+that imports the Outbox-API and exposes (exports) several of its constituent classes. The classes 
+in the Outbox itself, such as VxmlController and OutboxExecutionHandler, are not exported and are private to the module. 
+These are accessed with HTTP requests and event emissions, respectively. The characteristics of the module are specified with a plugin in the Maven pom.xml.</p>
+
+    <p>Publicly exposed classes expored by the module</p>
+
+    <dl>
+      <dt>VoiceOutBoxService</dt>
+      <dt>EventKeys</dt>
+	  <dt>SortKey</dt>
+      <dt>OutboundVoiceMessage</dt>
+      <dt>VoiceMessageType</dt>
+      <dt>OutboundVoiceMessageStatus</dt>
+      <dt>OutboxContext</dt>
+    </dl>
 
     <h3>Questions</h3>
 
     <p>What is the fundamental role of OutboxExecutionHandler? As it stands, implementing the scheduling of calls with the OutboxExecutionHandler would require writing and emitting your own scheduled events that are then handled. Should there be an easier way to schedule, or is this old functionality that is no longer delegated to the outbox module?</p>
 
-    <p>Does the VxmlController need to be documented at all? I have noticed other modules, TAMA for instance, construct Vxml URL requests that the controller handles. Are there instances where an end user would be composing Vxml URLs on their own?</p>
+    <p>Does the VxmlController need to be documented at all? I have noticed other modules, TAMA for instance, construct Vxml URL requests that the controller handles. Are there instances where an implementer would be composing Vxml URLs on their own?</p>
 
   </div>
  </div>
