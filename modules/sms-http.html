@@ -22,12 +22,17 @@ title: MOTECH - Mobile Technology for Community Health
     "outgoing":{
         "request":{
             "urlPath":"http://smshost.com/sms/send",
+            "type":"GET",
+            "recipientsSeparator":"+",
             "queryParameters":{
                 "recipient":"$numbers",
                 "message":"$message",
                 "apiKey":"jdhf7yelkjae"
             },
-            "recipientsSeparator":"+"
+            "authentication":{
+                "username":"username",
+                "password":"password"
+            }
         },
         "response":{
             "success":"sent"
@@ -41,11 +46,47 @@ title: MOTECH - Mobile Technology for Community Health
 }
 
 {% endhighlight %}
+
+<strong> Another example </strong>
+{% highlight javascript %}
+{
+    "outgoing":{
+        "request":{
+            "urlPath":"http://smshost.com/sms/send",
+            "type":"POST",
+            "recipientsSeparator":"+",
+            "bodyParameters":{
+                "recipients":"$recipients",
+                "message":"$message",
+                "key1":"value1"
+            },
+            "authentication":{
+                "username":"username",
+                "password":"password"
+            }
+        },
+        "response":{
+            "success":"<status>success</status>"
+        }
+    }
+}
+
+{% endhighlight %}
+
 <h4>Outgoing</h4>
-<p>In outgoing, $numbers and $message act as placeholders that are dynamically filled in when the message is generated.</p>
-<p>queryParameters are appended to the request urlPath</p>
+<p>In outgoing, <strong>$numbers</strong> and <strong>$message</strong> act as placeholders that are dynamically filled in when the message is generated.</p>
+<div>
+	<ul>
+		<li><strong>type : </strong> HTTP request method to connect to SMS gateway. (GET / POST)</li>
+		<li><strong>queryParameters : </strong> are appended to the request urlPath</li>
+		<li><strong>bodyParameters : </strong> are put in the body of POST request</li>
+		<li><strong>authentication : </strong> configures credentials for basic authentication</li>
+	</ul>
+</div>
+
 <p>The request field in the templates is used to generate the HTTP request. The response field is used to check the HTTP response. If the actual response does not contain the text found in the response field from the json template, an SmsDeliveryFailureException is thrown. Otherwise the message is considered sent.
 </p>
+
 <h4>Incoming</h4>
 <p>messageKey, senderKey and timestampKey specify the request parameter sent by the provider that contains the message, sender and time at which message is received respectively. </p>
 {% highlight javascript %}
@@ -72,8 +113,12 @@ title: MOTECH - Mobile Technology for Community Health
 
 {% endhighlight %}
 <p> Here 'message', 'from', 'time' are keys used by kookoo for message, sender and time at which message is received. 
-<h3>Events consumed and emitted by the SMS-HTTP module</h3>
 
+<h4>Configuration file</h4>
+By default, json configuration file is named <strong>sms-http-template.json</strong> . This can be configured by changing
+<strong>sms.http.configuration.filename</strong> property in <strong>sms-http.properties</strong> file.
+
+<h3>Events consumed and emitted by the SMS-HTTP module</h3>
     <h4>Consumed events:</h4></br>
 {% highlight java %}
 Subject: EventSubjects.SEND_SMS ("SendSMS")

@@ -14,7 +14,15 @@ title: MOTECH - Mobile Technology for Community Health
 <p>The SMS-api module provides implementers with an event driven SMS framework. The SMS module alone is not enough to send SMS messages; an accompanying listener must also be included or implemented.</p>
     <h4>Information for implementation</h4> 
 <p>The SMS-api provides a single service interface for raising "send SMS" events in the system. The key concern is to have an appropriate event handler for the send SMS event. The SMS-api will split a single message into multiple messages based on a maximum character count of 160. Each split message will have its own send SMS event raised in the system.</p>
+
     <h4>Configuration</h4>
+<p>
+	<span>Following properties can be changed in <strong>sms-api.properties</strong> file -</span>
+	<ul>
+		<li><strong>sms.multi.recipient.supported : </strong>Set this to false, when SMS provider does not support multiple recipients in single call. Default is true.</li>
+		<li><strong>sms.schedule.future.sms : </strong> Set this to false, when SMS provider supports scheduling of SMS on their end. Default is true.</li>
+	</ul>
+</p>
 
     <h3>Events consumed and emitted by the SMS module</h3>
 
