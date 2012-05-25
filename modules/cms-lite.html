@@ -12,7 +12,8 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h4>Description</h4> 
 
-    <p>A very simple CMS that allows for content to be entered and served. Content should be associated with a key and include attributes such as language and format. Content is provided both via api and http. Content can be accessed in a single return value or streamed.</p>
+    <p>A very simple CMS that allows for content to be entered and served. Content should be associated with a 
+key and include attributes such as language and format. Content is provided both via api and http. Content can be accessed in a single return value or streamed.</p>
 
     <h4>Information for implementation</h4> 
 
@@ -22,7 +23,7 @@ title: MOTECH - Mobile Technology for Community Health
       <li>Name content and associate it with a language</li>
       <li>Associate either strings or streams with content</li>
       <li>Test for the existence of content</li>
-      <li>Load or stream content via api or http</li>
+      <li>Load or stream content via API or HTTP</li>
     </ul>
 
     <h4>Define String Content</h4>
@@ -31,7 +32,9 @@ title: MOTECH - Mobile Technology for Community Health
     StringContent stringContent = new StringContent("language", "name", "value");
     cmsLiteService.addContent(stringContent);
     {% endhighlight %}
-
+<br>
+<img src="/assets/modules/StringContent.PNG"/>
+<br>
     <h4>Define Stream Content</h4>
 
     {% highlight java %}
@@ -39,7 +42,9 @@ title: MOTECH - Mobile Technology for Community Health
     StreamContent streamContent = new StreamContent("language", "name", inputStream, "checksum", "audio/x-wav");
     cmsLiteService.addContent(streamContent);
     {% endhighlight %}
-
+<br>
+<img src="/assets/modules/streamcontent.PNG"/>
+<br>
     <h4>Test If Content Exists</h4>
 
     {% highlight java %}
@@ -47,7 +52,9 @@ title: MOTECH - Mobile Technology for Community Health
       // Content exists
     }
     {% endhighlight %}
-
+<br>
+<img src="/assets/modules/cmsliteservice.PNG"/>
+<br>
     <h4>Configuration</h4>
 
     <p>This modules requires no external configuration.</p>
@@ -63,6 +70,8 @@ title: MOTECH - Mobile Technology for Community Health
     <p>This module does not emit any events.</p>
 
     <h3>Questions</h3>
+
+	<p> There are currently no questions regarding this module.</p>
 
   </div>
  </div>
