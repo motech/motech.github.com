@@ -1,0 +1,13 @@
+This documentation uses "jekyll" to generate static site.
+Take a look at https://github.com/mojombo/jekyll/wiki/Install
+
+To install "jekyll" (via Rubygems)
+> gem install jeykyll
+
+Jekyll uses Pygmentize. To install - 
+> pip install pygments
+OR
+> easy_install Pygments
+
+To start the server - 
+> jekyll --server
