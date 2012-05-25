@@ -13,11 +13,11 @@ title: MOTECH - Mobile Technology for Community Health
     <h4>Description</h4> 
 
     <p>A very simple CMS that allows for content to be entered and served. Content should be associated with a 
-key and include attributes such as language and format. Content is provided both via api and http. Content can be accessed in a single return value or streamed.</p>
+key and include attributes such as language and format. Content is provided both via API and HTTP. Content can be accessed in a single return value or streamed.</p>
 
     <h4>Information for implementation</h4> 
 
-    The CMS Lite module allows implementers to:
+    <p>The CMS Lite module allows implementers to:</p>
 
     <ul>
       <li>Name content and associate it with a language</li>
@@ -32,7 +32,6 @@ key and include attributes such as language and format. Content is provided both
     StringContent stringContent = new StringContent("language", "name", "value");
     cmsLiteService.addContent(stringContent);
     {% endhighlight %}
-<br>
 <img src="/assets/modules/StringContent.PNG"/>
 <br>
     <h4>Define Stream Content</h4>
@@ -42,7 +41,6 @@ key and include attributes such as language and format. Content is provided both
     StreamContent streamContent = new StreamContent("language", "name", inputStream, "checksum", "audio/x-wav");
     cmsLiteService.addContent(streamContent);
     {% endhighlight %}
-<br>
 <img src="/assets/modules/streamcontent.PNG"/>
 <br>
     <h4>Test If Content Exists</h4>
@@ -52,7 +50,6 @@ key and include attributes such as language and format. Content is provided both
       // Content exists
     }
     {% endhighlight %}
-<br>
 <img src="/assets/modules/cmsliteservice.PNG"/>
 <br>
     <h4>Configuration</h4>
