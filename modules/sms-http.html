@@ -8,15 +8,27 @@ title: MOTECH - Mobile Technology for Community Health
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
-    <h3> Module</h3> 
+    <h3>SMS HTTP Module</h3> 
 
     <h4>Description</h4> 
-<p>The SMS-HTTP module is an SMS implementation that helps to send and receive sms through HTTP via a specified SMS provider.</p>
+<p>The SMS HTTP module is an SMS implementation that helps to send and receive SMS through HTTP via a 
+specified SMS provider.</p>
 
     <h4>Information for implementation</h4> 
-<p>The SMS-HTTP module should be deployed alongside the SMS-API module. An implementation should use the SMS service provided by the SMS-API module in order to send their messages. These message events are handled by the HTTP module. The HTTP module uses the Apache Commons HTTP Client to generate the HTTP requests. The implementer never directly calls this module. The callback url for handling incoming sms in sms provider should be set to the action handleIncoming of InboundSmsController (sms/inbound). This action triggers a motech event for every incoming sms. Templates must be specified for custom query parameters and the URI of the SMS provider. See configuration below.</p>
+<p>The SMS HTTP module should be deployed alongside the SMS API module. An implementation should use 
+the SmsService provided by the SMS API module in order to send messages. Message events are handled by the
+ HTTP module. The HTTP module uses the Apache Commons HTTP Client to generate HTTP requests. 
+An implementer never directly calls this module. The callback URL for handling incoming SMS in an SMS 
+provider should be set to the inbound handling method of the module's InboundSmsController ("sms/inbound"). 
+This action triggers a MoTeCH event for every incoming SMS message. Templates must be specified for custom 
+query parameters and the URI of the SMS provider. See the Configuration section below for examples of this.</p>
+
     <h4>Configuration</h4>
-<p>An implementer must configure a sms-http-template.json file like the one found in the test resources folder. This file is responsible for providing the template information the module needs in order to generate the HTTP requests. An example template is provided below:</p>
+<p>An implementer must configure a <strong>sms-http-template.json</strong> file like the one found in the test 
+resources folder of the SMS HTTP module. This file is responsible for providing the template information the module needs in 
+order to generate the HTTP requests. Example templates are provided below.</p>
+
+<strong>GET Example</strong>
 {% highlight javascript %}
 {
     "outgoing":{
@@ -44,10 +56,10 @@ title: MOTECH - Mobile Technology for Community Health
         "timestampKey": "$time"
     }
 }
-
 {% endhighlight %}
 
-<strong> Another example </strong>
+
+<strong>POST Example</strong>
 {% highlight javascript %}
 {
     "outgoing":{
@@ -57,8 +69,7 @@ title: MOTECH - Mobile Technology for Community Health
             "recipientsSeparator":"+",
             "bodyParameters":{
                 "recipients":"$recipients",
-                "message":"$message",
-                "key1":"value1"
+                "message":"$message"
             },
             "authentication":{
                 "username":"username",
@@ -70,25 +81,32 @@ title: MOTECH - Mobile Technology for Community Health
         }
     }
 }
-
 {% endhighlight %}
 
 <h4>Outgoing</h4>
-<p>In outgoing, <strong>$numbers</strong> and <strong>$message</strong> act as placeholders that are dynamically filled in when the message is generated.</p>
+<p>In the <i>outgoing</i> configuration, <i><strong>$numbers</strong></i> and <i><strong>$message</strong></i>
+ act as placeholders that are dynamically filled in when the message is generated.</p>
 <div>
 	<ul>
-		<li><strong>type : </strong> HTTP request method to connect to SMS gateway. (GET / POST)</li>
-		<li><strong>queryParameters : </strong> are appended to the request urlPath</li>
-		<li><strong>bodyParameters : </strong> are put in the body of POST request</li>
+		<li><strong>type : </strong> the HTTP request method to connect to SMS gateway. 
+			(<strong><i>GET</i></strong> / <strong><i>POST</i></strong>)</li>
+		<li><strong>queryParameters : </strong> the parameters appended to the request's urlPath</li>
+		<li><strong>bodyParameters : </strong> the parameters put in the body of POST request</li>
 		<li><strong>authentication : </strong> configures credentials for basic authentication</li>
 	</ul>
 </div>
 
-<p>The request field in the templates is used to generate the HTTP request. The response field is used to check the HTTP response. If the actual response does not contain the text found in the response field from the json template, an SmsDeliveryFailureException is thrown. Otherwise the message is considered sent.
+<p>The <i>request</i> field in the templates is used to generate the HTTP request. The <i>response</i> field is used to 
+check the HTTP response. If the actual response does not contain the text found in the response field from the JSON 
+template, an SmsDeliveryFailureException is thrown. Otherwise, the message is considered sent.
 </p>
 
 <h4>Incoming</h4>
-<p>messageKey, senderKey and timestampKey specify the request parameter sent by the provider that contains the message, sender and time at which message is received respectively. </p>
+<p>In the <i>incoming</i> configuration, <strong><i>messageKey</i></strong> specifies the request parameter 
+that contains the message sent by the provider. <strong><i>senderKey</i></strong> specifies the sender. 
+<strong><i>timestampKey</i></strong> specifies the time at which message is received.</p>
+
+<strong>KooKoo Example</strong>
 {% highlight javascript %}
 {
     "outgoing": {
@@ -110,41 +128,44 @@ title: MOTECH - Mobile Technology for Community Health
         "timestampKey": "time"
     }
 }
-
 {% endhighlight %}
-<p> Here 'message', 'from', 'time' are keys used by kookoo for message, sender and time at which message is received. 
+
+<p> Here the <i>message</i>, <i>from</i>, and <i>time</i>parameters are keys used by KooKoo for the message, 
+sender, and time at which message is received.</p>
 
 <h4>Configuration file</h4>
-By default, json configuration file is named <strong>sms-http-template.json</strong> . This can be configured by changing
-<strong>sms.http.configuration.filename</strong> property in <strong>sms-http.properties</strong> file.
+<p>By default, the JSON configuration file is named <strong>sms-http-template.json</strong> . This can be 
+configured by changing the <strong>sms.http.configuration.filename</strong> property in the 
+<strong>sms-http.properties</strong> file.</p>
 
-<h3>Events consumed and emitted by the SMS-HTTP module</h3>
-    <h4>Consumed events:</h4></br>
+<h4>Events consumed and emitted by the SMS-HTTP module</h4>
+ 
+<h5>Consumed events:</h5></br>
 {% highlight java %}
 Subject: EventSubjects.SEND_SMS ("SendSMS")
 Payload:
-EventDataKeys.RECIPIENTS ("number") mapped to a List<String>
-EventDataKeys.MESSAGE ("message") mapped to a String
-EventDataKeys.DELIVERY_TIME ("delivery_time") mapped to a DateTime
+EventDataKeys.RECIPIENTS ("number"): List<String> containing the recipients of the message
+EventDataKeys.MESSAGE ("message"): String containing the message text
+EventDataKeys.DELIVERY_TIME ("delivery_time") DateTime containing the time the message should be delivered
 {% endhighlight %}
-This event will be emitted by the sms-api module. The HTTP module will send an sms to all the recipients with given message, both being defined in the payload of the event. In addition a delivery time can also be specified in which case the message will be scheduled to be sent out at the specified time.
 
-    <h4>Emitted events:</h4>
+<p>This event will be emitted by the SMS API module. The HTTP module will send an SMS to all recipients 
+with the given message. As demonstrated above, both the recipients and message are defined in the payload of the event. 
+An optional delivery time can be specified, in which case the message will be scheduled to be sent out at the specified time.</p>
+
+<h5>Emitted events:</h5>
 {% highlight java %}
 Subject: EventSubjects.INBOUND_SMS
 Payload:
-EventDataKeys.SENDER ("number") mapped to a String
-EventDataKeys.INBOUND_MESSAGE ("message") mapped to a String
-EventDataKeys.TIMESTAMP ("date") mapped to DateTime
+EventDataKeys.SENDER ("sender"): String containing the sender of the message
+EventDataKeys.INBOUND_MESSAGE ("inbound_message") String containing the content of the message
+EventDataKeys.TIMESTAMP ("timestamp") DateTime representing the time sent
 {% endhighlight %}
 
-<p>This event is emitted for an inbound sms. The payload contains the sender's number, the message text and the timestamp when the sender sent the message.</p>
+<p>This event is emitted for an inbound SMS. The payload contains the sender's number, the message text, and a
+timestamp representing when the sender sent the message.</p>
 
-    <h3>Questions</h3>
-<p>Currently the SMS-HTTP module does not support authentication. See the campaign demonstration branch for a work around for simple authentication.
-</p>
-<p>
-An implementation uses the SMS-API service to interact with the HTTP module. This means they cannot catch SmsDeliveryFailureExceptions that the HTTP module throws, because it is not in their calling thread of execution.
- </p>
+    <h4>Questions</h4>
+<p>There are currently no questions regarding this module.</p>
  </div>
  </div>
