@@ -8,37 +8,59 @@ title: MOTECH - Mobile Technology for Community Health
   {% include modules/navigation.incl %}
 
   <div class="column five-sixths">
-    <h3>SMS-API Module</h3> 
+    <h3>SMS API Module</h3> 
 
     <h4>Description</h4> 
-<p>The SMS-api module provides implementers with an event driven SMS framework. The SMS module alone is not enough to send SMS messages; an accompanying listener must also be included or implemented.</p>
+<p>The SMS API module provides implementers with an event-driven SMS framework. The SMS module 
+alone is not enough to send SMS messages; an accompanying listener must also be included or implemented.</p>
+
     <h4>Information for implementation</h4> 
-<p>The SMS-api provides a single service interface for raising "send SMS" events in the system. The key concern is to have an appropriate event handler for the send SMS event. The SMS-api will split a single message into multiple messages based on a maximum character count of 160. Each split message will have its own send SMS event raised in the system.</p>
+<p>The SMS-api provides a single service interface for raising <em>SendSMS</em> events in the system. 
+The key concern is to have an appropriate event handler for the <em>SendSMS</em> event. The SMS API will split 
+a single message into multiple messages based on a maximum character count of 160. Each split message will 
+have its own send SMS event raised in the system.</p>
 
     <h4>Configuration</h4>
 <p>
-	<span>Following properties can be changed in <strong>sms-api.properties</strong> file -</span>
+	<span>The following properties can be changed in the <strong>sms-api.properties</strong> file: </span>
 	<ul>
-		<li><strong>sms.multi.recipient.supported : </strong>Set this to false, when SMS provider does not support multiple recipients in single call. Default is true.</li>
-		<li><strong>sms.schedule.future.sms : </strong> Set this to false, when SMS provider supports scheduling of SMS on their end. Default is true.</li>
+		<li><strong>sms.multi.recipient.supported:</strong> Set this to false when the SMS provider 
+		does not support multiple recipients in single call. The default is true.</li>
+		<li><strong>sms.schedule.future.sms:</strong> Set this to false when the SMS provider supports
+		 scheduling of SMS on their end. The default is true.</li>
 	</ul>
 </p>
 
-    <h3>Events consumed and emitted by the SMS module</h3>
+    <h4>Events consumed and emitted by the SMS module</h4>
 
-<h4>Emitted events:</h4><br />
-<em>Subject</em>: EventSubjects.SEND_SMS (&quot;SendSMS&quot;)<br />
-<em>Payload:</em><br />
-EventDataKeys.RECIPIENTS (&quot;number&quot;) mapped to a List&lt;String&gt;<br />
-EventDataKeys.MESSAGE (&quot;message&quot;) mapped to a String<br />
-EventDataKeys.DELIVERY_TIME (&quot;delivery_time&quot;) mapped to a DateTime<br />
-<br />
+<p>There are no events consumed in this module.</p>
+
+<h5>Emitted events:</h5><br />
+{% highlight java %}
+Subject: EventSubjects.SEND_SMS ("SendSMS")
+Payload:
+EventDataKeys.RECIPIENTS ("number"): List<String> containing the recipients of the message
+EventDataKeys.MESSAGE ("message"): String containing the message text
+EventDataKeys.DELIVERY_TIME ("delivery_time") DateTime containing the time the message should be delivered
+{% endhighlight %}
 
 
-    <h3>Sms Interface</h3>
-<p>The SMS interface provides four methods, one for sending a single message to a single recipient, one for sending a single message to a list of recipients, one for sending a single message to a single recipient at a specified delivery time, and one for sending a single message to a list of recipients at a specified delivery time. An implementer should access this interface by using Spring dependency injection.</p>
+    <h4>SMS Interface</h4>
+<p>The SMS interface provides four methods:
+	<li>A method for sending a single message to a single recipient.</li>
+	<li>A method for sending a single message to a list of recipients.</li>
+	<li>A method for sending a single message to a single recipient at a specified delivery time.</li>
+	<li>A method for sending a single message to a list of recipients at a specified delivery time.</li>
+ 
 <img src="/assets/modules/smsinterface.png"/>
-<p>Two modules consume the SEND_SMS event: SMS-HTTP and SMS-SMPP. An implementer may also consume this event and send the SMS message through a different format.</p>
+
+<p>An implementer should access this interface by injecting the SmsService bean into the calling class.</p>
+
+<p>Two modules consume the SEND_SMS event: SMS HTTP and SMS SMPP. An implementer may also consume
+ this event and send the SMS message through a different format.</p>
+
+<h4>Questions</h4>
+<p>Currently, there is no implementation of SMS auditing. Are there plans to implement this?</p>
 
   </div>
  </div>

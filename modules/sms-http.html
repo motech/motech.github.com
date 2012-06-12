@@ -84,27 +84,27 @@ order to generate the HTTP requests. Example templates are provided below.</p>
 {% endhighlight %}
 
 <h4>Outgoing</h4>
-<p>In the <i>outgoing</i> configuration, <i><strong>$numbers</strong></i> and <i><strong>$message</strong></i>
+<p>In the <em>outgoing</em> configuration, <em><strong>$numbers</strong></em> and <em><strong>$message</strong></em>
  act as placeholders that are dynamically filled in when the message is generated.</p>
 <div>
 	<ul>
 		<li><strong>type : </strong> the HTTP request method to connect to SMS gateway. 
-			(<strong><i>GET</i></strong> / <strong><i>POST</i></strong>)</li>
+			(<em><strong>GET</strong></em>/<em><strong>POST</strong></em>)</li>
 		<li><strong>queryParameters : </strong> the parameters appended to the request's urlPath</li>
 		<li><strong>bodyParameters : </strong> the parameters put in the body of POST request</li>
 		<li><strong>authentication : </strong> configures credentials for basic authentication</li>
 	</ul>
 </div>
 
-<p>The <i>request</i> field in the templates is used to generate the HTTP request. The <i>response</i> field is used to 
+<p>The <em>request</em> field in the templates is used to generate the HTTP request. The <em>response</em> field is used to 
 check the HTTP response. If the actual response does not contain the text found in the response field from the JSON 
 template, an SmsDeliveryFailureException is thrown. Otherwise, the message is considered sent.
 </p>
 
 <h4>Incoming</h4>
-<p>In the <i>incoming</i> configuration, <strong><i>messageKey</i></strong> specifies the request parameter 
-that contains the message sent by the provider. <strong><i>senderKey</i></strong> specifies the sender. 
-<strong><i>timestampKey</i></strong> specifies the time at which message is received.</p>
+<p>In the <em>incoming</em> configuration, <em><strong>messageKey</strong></em> specifies the request parameter 
+that contains the message sent by the provider. <em><strong>senderKey</strong></em> specifies the sender. 
+<em><strong>timestampKey</strong></em> specifies the time at which message is received.</p>
 
 <strong>KooKoo Example</strong>
 {% highlight javascript %}
@@ -130,7 +130,7 @@ that contains the message sent by the provider. <strong><i>senderKey</i></strong
 }
 {% endhighlight %}
 
-<p> Here the <i>message</i>, <i>from</i>, and <i>time</i>parameters are keys used by KooKoo for the message, 
+<p> Here the <em>message</em>, <em>from</em>, and <em>time</em>parameters are keys used by KooKoo for the message, 
 sender, and time at which message is received.</p>
 
 <h4>Configuration file</h4>
