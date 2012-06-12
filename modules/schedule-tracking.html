@@ -10,197 +10,111 @@ title: MOTECH - Mobile Technology for Community Health
   <div class="column five-sixths">
     <h3>Schedule Tracking Module</h3>
 
-    <h3>Description</h3>
-    <p>The schedule tracking module allows a client to be enrolled in a clearly defined schedule consisting of specified milestones. Milestones represent windows of time that a certain criteria, treatment, course, etc should be fulfilled before moving on to the next milestone. Alerts are sent to the enrolled clients when they are due, late or past on the period of fulfillment. Clients may be enrolled in unlimited schedules, but can only be active in one enrollment for a given schedule.</p>
+    <h4>Description</h4>
+    <p>The schedule tracking module allows a client to be enrolled in a clearly defined schedule. Schedules consist of specified 
+"milestones." Milestones represent windows of time in which certain criteria, treatments, courses, etc. should be fulfilled 
+before moving on to the next milestone. Clients enrolled in these schedules are sent alerts when they are due, late, or 
+past due on the period of schedule fulfillment. Clients may be enrolled in an unlimited number of schedules, but they can only be 
+active in one enrollment for a given schedule.</p>
 
-    <h3>Information for implementation</h3>
+    <h4>Information for Implementation</h4>
 
-    <p>Schedules define a set of milestones that should be fulfilled in specified windows of time. Implementers can use the module to accomplish the following:</p>
+    <p>A schedule defines a set of milestones that should be fulfilled in specified windows of time. 
+Implementers can use the schedule tracking module to accomplish the following:</p>
 
     <ul>
-      <li>Use a schedule tracking service that allows a specific client to be enrolled into a specific schedule for its duration</li>
-      <li>Send alerts to clients that have been enrolled in a schedule</li>
-      <li>Define JSON documents that specify a schedule and its set of milestones</li>
+      <li>Enroll a particular client in a schedule for a specific duration. This is accomplished by means of the schedule 
+	tracking service.</li>
+      <li>Send alerts to clients that have been enrolled in a schedule.</li>
+      <li>Define JSON documents that specify a schedule and its set of milestones.</li>
+      <li>Query for client enrollments in schedules based on specific criteria.</li>
     </ul>
 
-    <p>Enrollments are stored in CouchDB.</p>
-    <h3>Life cycle of a Milestone</h3>
+    <p>Client enrollments are stored in CouchDB.</p>
+
+    <h4>Life Cycle of a Milestone</h4>
     <p>
       <ul>
-        <li>A milestone is started when the previous milestone gets fulfilled or the start of the schedule(in the case of first milestone).</li>
-        <li>Once started, the milestone will be in earliest , due , late or max windows as per the schedule configuration. This forms the lifetime of the milestone.</li>
+        <li>The first milestone is triggered at the start of the schedule. Subsequent milestones are started when the previous 
+	milestone is fulfilled.</li>
+        <li>Once started, a milestone is in an <em>earliest</em>, <em>due</em>, <em>late</em>, or <em>max</em> 
+	window as per the schedule configuration. These window durations form the lifetime of the milestone.</li>
         <li>A milestone can be defaulted within its lifetime.</li>
-        <li>If the milestone is not fulfilled before the expiration of its lifetime, the enrollment will be defaulted and all the alerts previously configured will not be raised.</li>
+        <li>If a milestone is not fulfilled before the expiration of its lifetime, the associated client enrollment 
+	will be defaulted, and all of the previously configured alerts will not be raised.</li>
       </ul>
     </p>
-    <h3>Specifying a schedule and its milestones</h3>
-    <p>Specifying the characteristics of a schedule and its milestones is typically accomplished using a JSON (JavaScript Object Notation) document. The schedule_tracking.properties file specifies the directory to scan for schedule definitions. Any json file in the directory will be treated as a schedule definition. Multiple schedules can be defined, each in their own file. Schedules have a name and list of milestones. A milestone has a name, four standard windows, data (not currently used) and alerts. The window durations can be customized. Below is an example of a JSON schedule definition.</p>
+    <h4>Specifying a Schedule and its Milestones</h4>
+    <p>Specifying the characteristics of a schedule and its milestones is typically accomplished using a JSON 
+(JavaScript Object Notation) document. The <strong>schedule_tracking.properties</strong> file specifies the directory
+ to scan for schedule definitions. Any JSON file in the directory will be treated as a schedule definition. Multiple schedules 
+can be defined, each in their own file. Schedules have a name and a list of milestones. A milestone has: 
+<ul>
+	<li>A name</li>
+	<li>A list of four standard time windows (<em>earliest</em>, <em>due</em>, <em>late</em>, and <em>max</em>)</li>
+	<li>A list of alerts.</li>
+ 	<li>A map of data (not currently used)</li>
+</ul>
+</p>
 
-    <h3>Sample Schedule Definition</h3>
-    <p>Below is an example JSON definition file for a single schedule. The schedule has a name, IPTI Schedule. There are two distinct milestones specified within the schedule.</p>
-	<p>The first, IPTI 1, will spend its first 13 weeks in waiting status called the "earliest" window. 1 week will be spent in in due status. (14 weeks is relative to start of milestone). 2 months after the start of IPTI 1, the late window elapses. The max window has no duration (see Specifying Times for more details). Due to no maximum period being defined, as soon as the late period is entered, the enrollment's status will be set to defaulted. Note that in the case of windows, the values specify when the window should end with respect to the start of the milestone.</p>
-	<p>While the milestone is in due, one alert per day will be sent to the client at the preferred time they were enrolled with. Once in the late window, one alert per week is sent except for the first week. If no preferred time is passed, the alert will be raised exactly as per its offset from the reference date and time.</p>
-<p> Also, the second milestone named "IPTI 2" will spend 1 week in waiting status called the "earliest" window, 1 week will be spent in due status. (2 weeks is relative to start of milestone). Note that, the start of second milestone is the time when the first milestone got fulfilled. All the window configurations in the second milestone are made with respect to the start of the second milestone.</p>
-    <p>Both milestones define data that is included in the alert event payload. The client may pass any data they wish to receive when the event will be raised.</p>
+<p>Window durations can be customized.</p>
 
-    {% highlight javascript %}
-{
-    "name":"IPTI Schedule",
-    "milestones":[
-        {
-            "name":"IPTI 1",
-            "scheduleWindows":{
-                "earliest":["13 Weeks"],
-                "due":["14 Weeks"],
-                "late":["2 Months"],
-                "max":[""]
-            },
-            "data":{
-                "Foo":"Bar"
-            },
-            "alerts":[
-                {
-                    "window":"due",
-                    "offset":["0 Weeks"],
-                    "interval":["1 Day"],
-                    "count":"7"
-                },
-                {
-                    "window":"late",
-                    "offset":["1 Week"],
-                    "interval":["1 Week"],
-                    "count":"10"
-                }
-            ]
-        },
-        {
-            "name":"IPTI 2",
-            "scheduleWindows":{
-                "earliest":["1 Weeks"],
-                "due":["2 Weeks"],
-                "late":["3 Weeks"],
-                "max":[""]
-            },
-            "data":{
-                "doo":"Bar"
-            }
-        }
-    ]
-}
-    {% endhighlight %}
+    <h4>Sample Schedule Definition</h4>
+    <p>Below is an example JSON definition file for a single schedule.</p>
 
+<img src="/assets/modules/ExampleSchedule.PNG"/>
 
-    <h3>Specifying Times</h3>
+<p>The schedule has a name, IPTI Schedule. There are two distinct milestones specified within
+ the schedule, each specifying four different windows of time. The value specified for a window 
+indicates when that window will end in respect to the start of the milestone.</p>
+
+<p>The first milestone, IPTI 1, will spend its first 13 weeks in a waiting status called the <em>earliest</em> window. 
+1 week will be spent in the <em>due</em> window (the reference to "14 weeks" is relative to start of milestone). 
+2 months after the start of IPTI 1, the <em>late</em> window will elapse. The <em>max</em> window has no duration 
+(see the <b>Specifying Times</b> section for more details about time values in the schedule definition). Because no 
+maximum period is defined, as soon as the <em>late</em> period is entered, the enrollment's status will be set to defaulted. </p>
+
+<p>While the milestone is in the <em>due</em> window, one alert per day will be sent to the client at the 
+preferred time specified at the time of enrollment. Once in the <em>late</m> window, one alert per week is sent
+ except for the first week. If no preferred time is specified, all alerts will be raised exactly as per 
+their offset from the date and time of enrollment.</p>
+
+<p>The second milestone, named "IPTI 2," will begin when the first milestone has been fulfilled. All of the 
+window configurations in the second milestone begin with respect to the start of the second milestone. IPTI 2 will spend 1 week in
+the <em>earliest</em> window. It will also spend 1 week in the <em>due</em> window. </p>
+
+<p>Both milestones define data that will be included in the alert event payload. 
+Implementers may pass any data they wish to send when the alert event is raised.</p>
+
+    <h4>Specifying Window Times</h4>
 
     <p>Time values in the schedule definition are specified in the following format.</p>
-	<p>number unit</p>
-	<p>where, number is any number</p>
-	<p>unit is any of year, month, week, day, hour, minute or second. Plural form of the word can also be used. Note that durations involving year and month might not remain consistent. A month might have 28, 30 or 31 days, and a year may have 366 days. The actual duration will depend on the reference date around which the windows are defined.</p>
-	<p>e.g : 1 Day, 4 Weeks</p>
+	<p><em>number  unit</em></p>
+	<p>where:</p>
+	<p>&nbsp; &nbsp; <em>number</em> is any number</p>
+	<p>&nbsp; &nbsp; <em>unit</em> is any of year, month, week, day, hour, minute or second. </p>
+<p>Plural forms of units can also be used (i.e. days, months, etc.) Note that durations involving year and month might 
+not remain consistent: a month might have 28, 30, or 31 days, and a year may have 365 or 366 days. The actual duration 
+of these units depends on the reference date around which the windows are defined.</p>
 
-	<p>Multiple time values can be combined together (as an array in the json) to result in a period which is a sum of all the values.</p>
-	<p>e.g: ["2 Weeks", "3 Days"] represents a period equivalent to 17 days.</p>
+<p>Examples of time values:</p>
+	<p>&nbsp; &nbsp; 1 Day, 4 Weeks</p>
+	<p>&nbsp; &nbsp; 2 Months, 3 Weeks, 2 Days</p>
+	
+<p>As seen above, multiple time values can be combined together as a JSON array to result in a period 
+that represents the sum of all values in the array. For example, ["2 Weeks", "3 Days"] represents a period equivalent to 17 days.</p>
 
-	<p>An empty string normally means a zero duration. However, in the case a window is defined with an empty duration it DOES NOT mean the window has a zero offset from the start of the milestone. It simply means the window does not have a duration.</p>
+<p>An empty string normally means a zero duration; however, if a window is defined with an empty duration,
+this DOES NOT mean that the window is triggered at the start of the milestone. An empty string simply indicates that the associated
+window has no duration.</p>
 
-	<p>Alert times can also be specified in a similar way. However, variable duration units such as month and year cannot be used. This is because our scheduling logic is very much rooted to fixed interval repeats. The behaviour in the case, where variable duration units are used for alerts, is undefined.</p>
+<h4>Absolute Window Schedules</h4>
 
-	<p>Support for minute and second units has been added so that you can create short lived schedules handy for testing.</p>
+<p>Implementers may define an Absolute window schedule if they wish to schedule all milestones 
+and alerts in reference to the start of the schedule.Unlike regular schedules, absolute schedules 
+do not depend on milestone windows.</p>
 
-	<p>NOTE: All the intervals are left closed right open. For example,</p>
-	  {%highlight javascript%}
-    "alerts":[
-        {
-            "window":"earliest",
-            "offset":["3 Days"],
-            "interval":["1 Day"],
-            "count":"7"
-        }]
-
-     {%endhighlight%}
-    <p>For the above alert configuration, if the "earliest" window duration is "1 Week", then, alerts will be raised on 3rd,4th,5th,6th days. No alerts will be raised on the 7th day.</p>
-    <h3>Alerts</h3>
-    <p>
-      The schedule tracking module can be configured to raise alerts during each window. Consider the following alerts section of a schedule configuration.
-    </p>
-      {%highlight javascript%}
-        "alerts":[
-            {
-                "window":"earliest",
-                "offset":["0 Weeks"],
-                "interval":["1 Day"],
-                "count":"7"
-            },
-            {
-                "window":"late",
-                "offset":["2 Week", "4 hours"],
-                "interval":["1 Week"],
-                "count":"51"
-            }
-        ]
-      {%endhighlight%}
-      <p>
-        The module will now, raise alerts during the earliest and the late windows of the milestone.
-      </p>
-      <p>
-        The "offset" specifies a time lapse from the alert reference time, from which the alerts will be raised.
-      </p>
-      <p>
-        The Alert Reference time is computed as follows.
-      </p>
-
-      <p><u>In the case of an absolute schedule</u></p>
-      <ul>
-        <li>The alert reference time is the start of the schedule. All the offset for all the alerts are specified from the start of schedule.</li>
-      </ul>
-      <p><u>In the case of a normal schedule</u></p>
-      <ul>
-        <li>
-          If there is a last milestone which got fulfilled, then, that last milestone's fulfillment date will be taken.
-        </li>
-        <li>
-          In cases, where there is no last milestone's fulfillment date, then, the enrollment date is taken.
-        </li>
-      </ul>
-
-      <p>The "interval" is the time interval between two consecutive alerts.</p>
-
-      <p>The "count" is the total number of alerts that should be raised. The module will not raise any more alerts if the window has elapsed, even though the count has not been satisfied.</p>
-
-      <h4>Floating Alerts</h4>
-      <p>
-        Alerts can be configured as floating by providing the below parameter in the alert configuration.
-       <p>
-        {%highlight javascript%}
-        "floating":"true"
-        {%endhighlight%}
-       </p>
-        <p>
-          A floating alert is one, in which, the alert times are not very strict, and they can be raised as long as the window is not elapsed.
-        Here, the alert reference time will be the enrollment date. Therefore, the alerts will be scheduled from the time of enrollment till the end of the window.
-        An example usage of this type of alert is as follows.
-        Consider a case, where the alert configuration is as follows.
-        </p>
-          {%highlight javascript%}
-            "alerts":[
-                {
-                    "window":"earliest",
-                    "offset":["1 Day"],
-                    "interval":["1 Day"],
-                    "count":"1"
-                }
-            ]
-          {%endhighlight%}
-          <p>
-          <p>
-            For the above normal alert configuration, if the earliest window duration is 1 week and the enrollment happens in the middle of the week, say day 4,
-            then all the alerts would have elapsed at the time of enrollment itself.
-            But, if the alerts are floating, then even though the enrollment happens in the middle of the week, say day 4, alerts will still be raised,starting from day 5(considering offset is 1 day), as the window has not elapsed yet.
-          </p>
-        <p>NOTE: By default, the floating value is false.</p>
-      </p>
-    <h3>Absolute Window Schedule</h3>
-    <p>An absolute window schedule is one, where all the milestones and alerts are configured based on the starting of the schedule and not with respect to the milestone windows. Am example milestone and alert configuration for an absolute window schedule is given below. The milestone named "milestone2" has its earliest window configured as 5 weeks, which is from the start of the schedule and not from the time when the first milestone named "milestone1" is fulfilled. Similarly, the alert configuration for late window of milestone1 is given 2 weeks, 4 hours and it is with respect to the start of schedule and not with the "late" window start date.</p>
+<p>An example milestone and alert configuration for an absolute window schedule is given below.</p>
 
         {% highlight javascript %}
         {
@@ -264,63 +178,240 @@ title: MOTECH - Mobile Technology for Community Health
         }
 
         {% endhighlight %}
-        <p>Also, in order to configure an absolute window alert, the following should be mentioned in the schedule.</p>
+       
+
+<p>The milestone named "milestone2" has its <em>earliest</em> window configuration of 5 weeks. 
+These 5 weeks are referenced from the start of the schedule, NOT from the time when the 
+first milestone, milestone1, was fulfilled. Similarly, the alert configuration for the <em>late</em> window 
+of milestone1 of 2 weeks, 4 hours is with respect to the start of schedule, NOT with respect to the start of the <em>late window.</em></p>
+
+<p>In order to configure an absolute window alert, implementers should indicate the following in the configuration of the schedule:</p>
         {% highlight java %}
          "absolute": true
          {% endhighlight %}
 
-    <h3>Enrolling a user in a schedule</h3>
+<p>If no such line exists, the default is to create a schedule that is not absolute.</p>
 
-    <p>The schedule tracking module exposes a class ScheduleTrackingService. To enroll a user into a schedule, an EnrollRequest must be passed to the enroll method in the ScheduleTrackingService. EnrollRequest has the following information:</p>
+   
+ <h4>Alerts</h4>
+
+<p>Alert times can be specified in a manner similar to window times; however, 
+variable duration units (month and year) are not allowed. MoTeCH scheduling logic is deeply rooted in fixed 
+repeating intervals, and therefore support for variable duration units for alerts is undefined.</p>
+
+<p>In addition, alert scheduling includes support for minute and second units so that short-lived 
+schedules can be created, which is handy for testing.</p>
+
+
+<p>NOTE: All time intervals are left-closed, right-open. For example, in the below alert configuration, 
+if the <em>earliest</em> window duration is "1 Week," then alerts will be raised on the 3rd, 4th, 5th, and 6th days; 
+yet, no alerts will be raised on the 7th day.</p>
+
+ {%highlight javascript%}
+"alerts":[
+        {
+            "window":"earliest",
+            "offset":["3 Days"],
+            "interval":["1 Day"],
+            "count":"7"
+         }
+]
+ {%endhighlight%}
+
+ <p>The schedule tracking module can be configured to raise alerts during each window. 
+Consider the following alerts section of a schedule configuration.</p>
+
+      {%highlight javascript%}
+        "alerts":[
+            {
+                "window":"earliest",
+                "offset":["0 Weeks"],
+                "interval":["1 Day"],
+                "count":"7"
+            },
+            {
+                "window":"late",
+                "offset":["2 Week", "4 hours"],
+                "interval":["1 Week"],
+                "count":"51"
+            }
+        ]
+      {%endhighlight%}
+
+
+      <p>This module raises alerts during the <em>earliest</em> and <em>late</em> windows of the milestone. 
+The <em>"offset"</em> specifies the amount of time that will pass from the alert reference time to when the alert is raised.</p>
+
+        <p>The alert reference time is computed as follows:</p>
+
+      <p><u>If the schedule is absolute:</u></p>
+      <ul>
+        <li>The alert reference time is the start of the schedule. All offsets for alerts are calculated from the start of schedule.</li>
+      </ul>
+      <p><u>If the schedule is not absolute:</u></p>
+      <ul>
+        <li>If there are no fulfilled milestones, the enrollment date is used as the alert reference time.</li>
+        <li>If there are fulfilled milestones, the last milestone's fulfillment date is used as the alert reference time.</li>
+      </ul>
+
+      <p>The <em>interval</em> is the time interval between two consecutive alerts.</p>
+
+      <p>The <em>count</em> is the total number of alerts that should be raised; yet, window 
+duration takes precedence over the <em>count</em>. If a window's duration has elapsed, the
+ module will not raise any more alerts, and the <em>count</em> will remain unsatisfied. </p>
+
+      <h4>Floating Alerts</h4>
+      <p>A floating alert is one in which alert times can be raised as long as the window 
+duration is not elapsed. In this case, the enrollment date is used as the alert reference time. 
+Alerts are scheduled from the time of enrollment until the end of the window. </p>
+
+<p>Alerts can be configured as floating by providing the below parameter in the alert configuration.</p>
+       
+ {%highlight javascript%}
+        "floating":"true"
+{%endhighlight%}
+
+<p>Consider a case where the alert configuration is as follows:</p>
+
+{%highlight javascript%}
+            "alerts":[
+                {
+                    "window":"earliest",
+                    "offset":["1 Day"],
+                    "interval":["1 Day"],
+                    "count":"1"
+                }
+            ]
+{%endhighlight%}
+
+<p>The above is a normal alert configuration. The value specified for the window indicates 
+when that current window will end in respect to the start of the milestone. Consider that the 
+<em>earliest</em> window duration has been set to 1 week. If the enrollment does not occur until the 
+middle of the week, say day 4, then any alerts would have already elapsed at the time of enrollment. 
+
+{%highlight javascript%}
+"alerts":[
+	{
+                    "window":"earliest",
+                    "offset":["1 Day"],
+                    "interval":["1 Day"],
+                    "count":"1"
+	  "floating": "true"
+	}
+]
+{%endhighlight%}
+
+<p>The above is a floating alert configuration. Consider again that the <em>earliest</em> window duration 
+has been set to 1 week. Even if the enrollment happens in the middle of the week, say day 4, an alert would still be raised on day 5 
+(considering the offset is 1 day), as the <em>earliest</em> window would not have not elapsed yet.
+
+<p>NOTE: By default, the floating value is false.</p>
+
+ 
+    <h4>Enrolling a user in a schedule</h4>
+
+    <p>The schedule tracking module exposes the interface ScheduleTrackingService.</p>
+
+<img src="/assets/modules/ScheduleTrackingService.PNG"/>
+
+
+<p>To enroll a user into a schedule, an EnrollmentRequest must be passed to 
+the enroll() method in the ScheduleTrackingService. An EnrollmentRequest has the following information:</p>
 
     <dl>
       <dt>externalId (String)</dt>  <dd>A unique ID of the client.</dd>
-      <dt>scheduleName (String)</dt>  <dd>The name of the schedule defined in the JSON document to be enrolled in.</dd>
-      <dt>startingMilestoneName (String)</dt>  <dd>The name of the milestone in the schedule into which to directly enroll the user.</dd>
-      <dt>referenceDate (LocalDate)</dt>  <dd>The date when the schedule starts for the user.</dd>
-      <dt>referenceTime (Time)</dt>  <dd>optional time component can be specified for fine grained scheduling (defaults to midnight).</dd>
-      <dt>enrollmentDate (LocalDate)</dt>  <dd>The date when the user is being enrolled into the schedule.</dd>
-      <dt>enrollmentTime (Time)</dt>  <dd>optional time component can be specified for fine grained scheduling (defaults to midnight).</dd>
-      <dt>preferredAlertTime (Time)</dt>  <dd>The time of day, in hours and minutes, the user should be sent alerts.</dd>
+      <dt>scheduleName (String)</dt>  <dd>The name of the schedule the user will be enrolled in (defined in the JSON document).</dd>
+      <dt>startingMilestoneName (String)</dt>  <dd>The name of the first milestone into which the user will be directly enrolled.</dd>
+      <dt>referenceDate (LocalDate)</dt>  <dd>The date on which the schedule will start.</dd>
+      <dt>referenceTime (Time)</dt>  <dd>An optional time component that can be specified for fine grained referencing (defaults to midnight).</dd>
+      <dt>enrollmentDate (LocalDate)</dt>  <dd>The date on which the user is enrolled into the schedule.</dd>
+      <dt>enrollmentTime (Time)</dt>  <dd>An optional time component that can be specified for fine grained enrolling (defaults to midnight).</dd>
+      <dt>preferredAlertTime (Time)</dt>  <dd>The time of day, in hours and minutes, that the user should be sent alerts.</dd>
       <dt>metadata (Map&lt;String, String&gt;)</dt>  <dd>Additional information can be stored in metadata as property => value pair. eg: facility_id => 1234</dd>
     </dl>
 
-    <p>When enroll is invoked, the service determines whether that client is already enrolled and active in the schedule. If they are, the service overwrites the previous enrollment with the new one. An enrollment record for the user is created and added to the database. Jobs are scheduled for the current milestone, one per alert definition, to fire accordingly. Another job called a defaultment job is scheduled on the day the milestone would be defaulted to capture that state.</p>
+    <p>When the ScheduleTrackingService's enroll() method is invoked, the service determines whether that client is already 
+enrolled and active in the schedule. If the client is already enrolled, the service overwrites the previous enrollment with the new one. 
+A new enrollment record for the client is created and added to the database.</p>
 
-    <h3>Events</h3>
+    <h4>Events consumed and emitted by the Schedule Tracking Module</h4>
 
-	{% highlight java %}
-    EventSubjects.MILESTONE_ALERT
-	{% endhighlight %}
+    <h5>Consumed Events:</h5>
+<p>This module exposes an EndOfMilestoneListener, which handles and consumes events with the subject 
+EventSubjects.DEFAULTMENT_CAPTURE.</p>
 
-    <p>This event is emitted when to indicate that an alert is being raised. The client may handle this event and act accordingly. The parameters passed with the event are as follows.</p>
-	<dl>
-	<dt>external id</dt>
-    <dt>schedule name</dt>
-	<dt>window name</dt>
-	<dt>reference date and time</dt>
-	<dt>start dates for each of the four windows</dt>
-	<dt>custom data</dt>
-	</dl>
+{% highlight java %}
+    EventSubjects.DEFAULTMENT_CAPTURE (org.motechproject.scheduletracking.api.defaultment.capture)
+	Parameters/Payload:
+		EventDataKeys.ENROLLMENT_ID (enrollmentId)
+		EventDataKeys.EXTERNAL_ID (externalId)
+		MotechSchedulerService.JOB_ID_KEY (jobId)
+{% endhighlight %}
 
-    <h3>Fulfilling milestones</h3>
 
-    <p>Fulfills the current milestone the user is in the enrollment. After fulfillment of a milestone, the user moves to the next milestone in the schedule. If no more milestones remain the schedule, the enrollment is marked as complete. This fulfillment date and time is mandatory while fulfilling a milestone. This fulfillment date and time will be used to make this fulfillment process idempotent. For example, invoking fulfill current milestone more than once with the same fulfillment date and time will not make multiple fulfillments.</p>
+<h5>Emitted Events:</h5>
+<p>The EnrollmentAlertService emits events with the subject EventSubjects.MILESTONE_ALERT.</p>
 
-    <h3>Defaulted enrollments</h3>
+{% highlight java %}
+EventSubjects.MILESTONE_ALERT (org.motechproject.scheduletracking.api.milestone.alert)
+    Parameters/Payload:
+    	EventDataKeys.WINDOW_NAME (windowName)
+     	EventDataKeys.MILESTONE_NAME (milestoneAlert);
+    	EventDataKeys.SCHEDULE_NAME (scheduleName);
+    	EventDataKeys.EXTERNAL_ID (externalId);
+    	EventDataKeys.REFERENCE_DATE (referenceDateTime);
+{% endhighlight %}
 
-    <p>For any milestone in an enrollment, if the milestone has not been fulfilled by the last day of the milestone then the enrollment will be marked as defaulted. The last day of the milestone is the day when all four windows of the milestone elapse. A defaulted enrollment will not raise any more alerts. It also cannot move to an active state (the default state of an enrollment that raised alerts).</p>
 
-    <h3>Un-enrolling a user from a schedule</h3>
+<p>Milestone alert events are scheduled for the current milestone per each alert definition.</p>
 
-    <p>Removes a user from an active enrollment. Only active enrollments can be removed. The enrollment will be marked as Unenrolled. Defaulted or Completed enrollments are preserved in the database for record keeping.</p>
+<p>The EnrollmentDefaultmentService emits events with the subject EventSubjects.DEFAULTMENT_CAPTURE.</p>
 
-	<h3>Updating an active enrollment</h3>
+{% highlight java %}
+    EventSubjects.DEFAULTMENT_CAPTURE (org.motechproject.scheduletracking.api.defaultment.capture)
+	Parameters/Payload:
+		EventDataKeys.ENROLLMENT_ID (enrollmentId)
+		EventDataKeys.EXTERNAL_ID (externalId)
+		MotechSchedulerService.JOB_ID_KEY (jobId)
+{% endhighlight %}
 
-    <p>Updates an active enrollment. Currently we support updating  only metadata field of an active enrollment. Metadata property => value pair can be updated/inserted but cannot be deleted from an existing enrollment.</p>
+,p>Defaultment jobs are scheduled on the day a milestone would be defaulted. Their role is to capture and save the 
+defaulted state of the milestone.</p>
 
-	<p> Example:<br/>
-	Consider an active enrollment with external id : &quot;foo&quot; and schedule name : &quot;some_schedule&quot; and metadata value pairs : {foo1: bar1; foo2: bar2}
+   <h4>Fulfilling milestones</h4>
+
+<p>The fulfillCurrentMilestone() method of the module's ScheduleTrackingService fulfills the current milestone 
+of the client within an enrollment. After fulfillment of a milestone, the client moves to the next milestone in the schedule. 
+If no more milestones remain the schedule, the enrollment is marked as complete. This fulfillment date and time is mandatory 
+while fulfilling a milestone. The fulfillment date and time are used to make the fulfillment process idempotent. 
+This ensures that invoking fulfillCurrentMilestone() more than once with the same fulfillment date and time will not make 
+multiple fulfillments.</p>
+
+    <h4>Defaulted enrollments</h4>
+
+    <p>For any milestone in an enrollment, if the milestone has not been fulfilled by the last day of the milestone, then that 
+enrollment is marked as defaulted. The last day of the milestone is the day when all four windows of the milestone elapse.
+A defaulted enrollment will not raise any more alerts. It also cannot move to an active state, which is the default state of 
+an enrollment that raises alerts.</p>
+
+    <h4>Unenrolling a user from a schedule</h4>
+
+<p>The unenroll() method of the module's ScheduleTrackingService removes a user from an active enrollment. 
+Only active enrollments can be removed. Envoking unenroll() on an enrollment will cause the enrollment to be marked as 
+<em>UNENROLLED</em> in the database. <em>DEFAULTED</em> and <em>COMPLETED</em> enrollments are also preserved 
+in the database for record keeping.</p>
+
+    <h4>Updating an active enrollment</h4>
+
+<p>The updateEnrollment() method of the module's ScheduleTrackingService updates an active enrollment. 
+Currently, MoTeCH supports updating only the metadata field of an active enrollment. Metadata property => 
+value pair can be updated or inserted but cannot be deleted from an existing enrollment.</p>
+<p> Example:<br/>
+Consider an active enrollment with the following attributes:</p>
+
+<p>&nsbp; &nsbp;&nsbp; external id : "foo"</p>
+<p>&nsbp; &nsbp;&nsbp; schedule name : "some_schedule"</p>
+<p>&nsbp; &nsbp;&nsbp; metadata value pairs : {foo1: bar1; foo2: bar2}</p>
 
 {% highlight java %}
 HashMap<String, String> toBeUpdatedMetadata = new HashMap<String, String>();
@@ -330,20 +421,44 @@ UpdateCriteria updateCriteria = new UpdateCriteria().Metadata(toBeUpdatedMetadat
 scheduleTrackingService.updateEnrollment("foo", "some_schedule", updateCriteria);
 {% endhighlight %}
 
-	  will update the metadata of the enrollment as {foo1:bar1; foo2: val2; foo3: val3}
-	  </p>
+<p> will update the metadata of the enrollment as {foo1:bar1; foo2: val2; foo3: val3}</p>
 
-    <h3>Querying API</h3>
+<h4>Previewing Alert Timings</h4>
 
-    <p>The module provides a search() method for querying enrollments. This allows the client to find enrollments using various critera (e.g all active enrollments, enrollments due in the next week etc). search() takes an EnrollmentQuery. The query can be built by adding search clauses such as enrollment status, current window etc. The clauses together will define a specific seatch criteria.</p>
+<p>The getAlertTimings() method of the module's ScheduleTrackingService provides a preview 
+of alert timings given a particular enrollment request. For the given enrollment request, the alert 
+timings of all windows of the current milestone will be returned. This gives an idea of the alerts that 
+a client might miss if the enrollment were to be scheduled on the date specified by the enrollment request. 
+This is useful in cases where the client needs to be enrolled into the middle of the milestone but should not miss any alerts.
+After previewing the alert timings, clients would be enrolled on a reference date that results in a schedule with no elapsed alerts.</p>
 
-<p>Examples:
+<h4>Querying the API</h4>
+
+<p>The search() method of the module's ScheduleTrackingService allows for querying enrollments. 
+This allows clients to find enrollments using various criteria. Queries can be performed based on the following list of criteria: </p>
+
+<ul>
+	<li>havingExternalId(externalId)</li>
+	<li>havingSchedule(scheduleNames...)</li>
+	<li>havingCurrentMilestone(milestoneName)</li>
+	<li>havingWindowStartingDuring(WindowName, DateTime start, DateTime end)</li>
+	<li>havingWindowEndingDuring(WindowName, DateTime start, DateTime end)</li>
+	<li>currentlyInWindow(WindowNames...)</li>
+	<li>havingState(EnrollmentStatus)</li>	(<em>ACTIVE</em>, <em>DEFAULTED</em>, COMPLETED</em>, or <em>UNENROLLED</em>)
+	<li>completedDuring(DateTime start, DateTime end)</li>
+	<li>havingMetadata(key, value)</li>
+</ul>
+
+
+<p>Each of these methods returns an EnrollmentsQuery object, which the search() method takes as a parameter. </p>
+
+<p>Examples:</p>
 
 {% highlight java %}
 scheduleTrackingService.search(new EnrollmentsQuery().havingState("active"))
 {% endhighlight %}
 
-will find all active enrollments</p>
+<p>will find all active enrollments.</p>
 
 {% highlight java %}
 scheduleTrackingService.search(
@@ -353,24 +468,16 @@ scheduleTrackingService.search(
 		.havingWindowStartingDuring(WindowName.due, weeksAgo(1), now))
 {% endhighlight %}
 
-will find active enrollments enrolled into IPTI Schedule that will enter the due window any time in the next one week.
-</p>
+<p>will find active enrollments enrolled into the IPTI Schedule that will enter the <em>due</em> window any time in the 
+next one week. </p>
 
-<p>
-The return value is a list of EnrollmentRecords. An EnrollmentRecord represents an enrollment in the system. It has the following fields.
-	<dl>
-	<dt>external id</dt>
-    <dt>schedule name</dt>
-	<dt>reference date and time</dt>
-	<dt>enrollment date and time</dt>
-	<dt>start dates for each of the four windows</dt>
-	<dt>preferred alert time</dt>
-	</dl>
-</p>
+<p>The return value of the search() method is a list of EnrollmentRecords. An EnrollmentRecord represents an enrollment 
+in the system. EnrollmentRecords contain an external id, schedule name, preferred alert time, reference date and time, enrollment 
+date and time, start dates for each of the four windows, and a reference to the current milestone.</p>
 
-<h3>Preview Alert Timings</h3>
-<p>
-  The module provides a preview of alert timings given an enrollment request. For the given enrollment request, the alert timings of all the windows of current milestone will be returned. This will give an idea of the alerts that the user will miss, if the enrollment is done on the date as per the enrollment request. This will be useful in cases, where the user has to be enrolled into middle of the milestone, but he should not miss any alerts. In such a situation, by previewing the alert timings, the user will be enrolled on a particular reference date, so that the alerts will not be elapsed.
-</p>
+<img src="/assets/modules/EnrollmentRecord.PNG"/>
+
+<h4>Questions</h4>
+<p>There are currently no questions regarding this module.</p>
   </div>
 </div>
