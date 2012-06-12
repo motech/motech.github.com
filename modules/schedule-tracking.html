@@ -183,7 +183,7 @@ do not depend on milestone windows.</p>
 <p>The milestone named "milestone2" has its <em>earliest</em> window configuration of 5 weeks. 
 These 5 weeks are referenced from the start of the schedule, NOT from the time when the 
 first milestone, milestone1, was fulfilled. Similarly, the alert configuration for the <em>late</em> window 
-of milestone1 of 2 weeks, 4 hours is with respect to the start of schedule, NOT with respect to the start of the <em>late window.</em></p>
+of milestone1 of 2 weeks, 4 hours is with respect to the start of schedule, NOT with respect to the start of the <em>late</em> window.</em></p>
 
 <p>In order to configure an absolute window alert, implementers should indicate the following in the configuration of the schedule:</p>
         {% highlight java %}
@@ -295,8 +295,8 @@ middle of the week, say day 4, then any alerts would have already elapsed at the
                     "window":"earliest",
                     "offset":["1 Day"],
                     "interval":["1 Day"],
-                    "count":"1"
-	  "floating": "true"
+                    "count":"1",
+	  	    "floating": "true"
 	}
 ]
 {%endhighlight%}
@@ -375,7 +375,7 @@ EventSubjects.MILESTONE_ALERT (org.motechproject.scheduletracking.api.milestone.
 		MotechSchedulerService.JOB_ID_KEY (jobId)
 {% endhighlight %}
 
-,p>Defaultment jobs are scheduled on the day a milestone would be defaulted. Their role is to capture and save the 
+<p>Defaultment jobs are scheduled on the day a milestone would be defaulted. Their role is to capture and save the 
 defaulted state of the milestone.</p>
 
    <h4>Fulfilling milestones</h4>
@@ -409,9 +409,9 @@ value pair can be updated or inserted but cannot be deleted from an existing enr
 <p> Example:<br/>
 Consider an active enrollment with the following attributes:</p>
 
-<p>&nsbp; &nsbp;&nsbp; external id : "foo"</p>
-<p>&nsbp; &nsbp;&nsbp; schedule name : "some_schedule"</p>
-<p>&nsbp; &nsbp;&nsbp; metadata value pairs : {foo1: bar1; foo2: bar2}</p>
+&nsbp; &nsbp;&nsbp; external id : "foo"
+&nsbp; &nsbp;&nsbp; schedule name : "some_schedule"
+&nsbp; &nsbp;&nsbp; metadata value pairs : {foo1: bar1; foo2: bar2}
 
 {% highlight java %}
 HashMap<String, String> toBeUpdatedMetadata = new HashMap<String, String>();
@@ -444,7 +444,7 @@ This allows clients to find enrollments using various criteria. Queries can be p
 	<li>havingWindowStartingDuring(WindowName, DateTime start, DateTime end)</li>
 	<li>havingWindowEndingDuring(WindowName, DateTime start, DateTime end)</li>
 	<li>currentlyInWindow(WindowNames...)</li>
-	<li>havingState(EnrollmentStatus)</li>	(<em>ACTIVE</em>, <em>DEFAULTED</em>, COMPLETED</em>, or <em>UNENROLLED</em>)
+	<li>havingState(EnrollmentStatus)</li>	<br>&nsbp;(<em>ACTIVE</em>, <em>DEFAULTED</em>, <em>COMPLETED</em>, or <em>UNENROLLED</em>)
 	<li>completedDuring(DateTime start, DateTime end)</li>
 	<li>havingMetadata(key, value)</li>
 </ul>
