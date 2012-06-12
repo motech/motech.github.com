@@ -409,9 +409,9 @@ value pair can be updated or inserted but cannot be deleted from an existing enr
 <p> Example:<br/>
 Consider an active enrollment with the following attributes:</p>
 
-&nsbp; &nsbp;&nsbp; external id : "foo"
-&nsbp; &nsbp;&nsbp; schedule name : "some_schedule"
-&nsbp; &nsbp;&nsbp; metadata value pairs : {foo1: bar1; foo2: bar2}
+<p>external id : "foo"</p>
+<p>schedule name : "some_schedule"</p>
+<p>metadata value pairs : {foo1: bar1; foo2: bar2}</p>
 
 {% highlight java %}
 HashMap<String, String> toBeUpdatedMetadata = new HashMap<String, String>();
@@ -444,7 +444,7 @@ This allows clients to find enrollments using various criteria. Queries can be p
 	<li>havingWindowStartingDuring(WindowName, DateTime start, DateTime end)</li>
 	<li>havingWindowEndingDuring(WindowName, DateTime start, DateTime end)</li>
 	<li>currentlyInWindow(WindowNames...)</li>
-	<li>havingState(EnrollmentStatus)</li>	<br>&nsbp;(<em>ACTIVE</em>, <em>DEFAULTED</em>, <em>COMPLETED</em>, or <em>UNENROLLED</em>)
+	<li>havingState(EnrollmentStatus) (<em>ACTIVE</em>, <em>DEFAULTED</em>, <em>COMPLETED</em>, or <em>UNENROLLED</em>)</li>
 	<li>completedDuring(DateTime start, DateTime end)</li>
 	<li>havingMetadata(key, value)</li>
 </ul>
