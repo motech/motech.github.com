@@ -97,7 +97,7 @@ order to generate the HTTP requests. Example templates are provided below.</p>
 </div>
 
 <p>The <em>request</em> field in the templates is used to generate the HTTP request. The <em>response</em> field is used to 
-check the HTTP response. If the actual response does not contain the text found in the response field from the JSON 
+check the HTTP response. If the actual response does not contain the text found in the <em>response</em> field from the JSON 
 template, an SmsDeliveryFailureException is thrown. Otherwise, the message is considered sent.
 </p>
 
@@ -130,7 +130,7 @@ that contains the message sent by the provider. <em><strong>senderKey</strong></
 }
 {% endhighlight %}
 
-<p> Here the <em>message</em>, <em>from</em>, and <em>time</em>parameters are keys used by KooKoo for the message, 
+<p> Here the <em>message</em>, <em>from</em>, and <em>time</em> parameters are keys used by KooKoo for the message, 
 sender, and time at which message is received.</p>
 
 <h4>Configuration file</h4>
