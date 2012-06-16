@@ -11,7 +11,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <h3>Installation</h3>
 
-    <p>This installation guide was based on an ubuntu lucid 64bit machine set up using <a href="http://vagrantup.com">vagrant</a>.  It assumes you are running on the same.  MOTECH will run on other operating systems but the commands required and external pckages will change.  The changes shouldn't be drastic but they aren't documented here.</p>
+    <p>This installation guide was based on an ubuntu lucid 64-bit machine set up using <a href="http://vagrantup.com">vagrant</a>.  It assumes you are running on the same.  MOTECH will run on other operating systems but the commands required and external packages will change.  The changes shouldn't be drastic but they aren't documented here.</p>
     
     <p>To get up and running with MOTECH you'll need to first install dependent software and systems, then check out and build the code and lastly deploy the artifacts.  This guide will walk you through all the required steps to go from clean machine to a functioning MOTECH installation.<p>
 
@@ -21,7 +21,6 @@ title: MOTECH - Mobile Technology for Community Health
 
     <ul>
       <li>Git</li>
-      <li>Java</li>
       <li>Maven 2</li>
       <li>Curl</li>
     </ul>
@@ -35,39 +34,57 @@ title: MOTECH - Mobile Technology for Community Health
     # maven2 is the build system used within Motech
     # curl is used by some of our unit/integration tests to set up CouchDB in known states.
     sudo apt-get install git-core python-software-properties maven2 curl
+    {% endhighlight %}
 
-    # Add the partner repository and install sun java from it
-    sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
-    sudo apt-get update
-    sudo apt-get install sun-java6-jdk
+    <p>Java requires manual installation because Oracle no longer publishes a package for it. Start by downloading jdk7 from <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html ">Oracle's website.</a></p>
+
+    {% highlight bash %}
+    # change to the download directory and move the jdk tarball to /usr/lib/jvm/:
+    sudo mv jdk-7u5-linux-x64.tar.gz /usr/lib/jvm/
+    cd /usr/lib/jvm
+
+    # Untar it:
+    sudo tar zxvf jdk-7u5-linux-x64.tar.gz
 
     # Remove Open JDK to prevent conflicts
     sudo apt-get remove openjdk-6-jdk openjdk-6-jre openjdk-6-jre-headless openjdk-6-jre-lib
+
+    # Create symbolic links to the new binary:
+    sudo ln -s -b /usr/lib/jvm/jdk1.7.0_05/jre/bin/java /etc/alternatives/java
+    sudo ln -s -b /usr/lib/jvm/jdk1.7.0_05/jre/bin/java /usr/bin/java
+
+    # Double-check version:
+    java -version
     {% endhighlight %}
 
     <h4>Dependent Systems</h4>
 
-    <p>MOTECH makes use of a number of third-party open source systems and they each need to be installed for MOTECH to function correclty.  We use Tomcat as our application container, ActiveMQ as our message queue, Quartz and MySQL for timers and CouchDB as our persitence store.  Each of these packages can be downloaded from their respective sites:</p>
+    <p>MOTECH makes use of a number of third-party open source systems and they each need to be installed for MOTECH to function correctly.  We use Tomcat as our application container, ActiveMQ as our message queue, Quartz and MySQL for timers and CouchDB as our persistence store.  Each of these packages can be downloaded from their respective sites:</p>
 
     <ul>
       <li><a href="http://tomcat.apache.org/download-70.cgi">Tomcat7</a></li>
-      <li><a href="http://activemq.apache.org/activemq-551-release.html">ActiveMQ</a><li>
-      <li><a href="http://couchdb.apache.org/downloads.html">CouchDB</a><li>
+      <li><a href="http://activemq.apache.org/activemq-551-release.html">ActiveMQ</a></li>
+      <li><a href="http://couchdb.apache.org/downloads.html">CouchDB</a></li>
       <li><a href="http://dev.mysql.com/downloads/mysql/5.5.html">MySQL</a></li>
     </ul>
 
-    <p>If you are running on a 64 bit linux system you can use the following script to download and install tomcat7, ActiveMQ and CouchDB for you.  The script places the systems in /opt and creates simple <a href="http://upstart.ubuntu.com/">upstart</a> scripts to start/stop ActiveMQ and CouchDB.  It should be run as root.  Trust us, it's ok. :)
+    <p>If you are running on a 64-bit linux system you can use the following script to download and install tomcat7, ActiveMQ and CouchDB for you.  The script places the systems in /opt and creates simple <a href="http://upstart.ubuntu.com/">upstart</a> scripts to start/stop ActiveMQ and CouchDB.  It should be run as root.  Trust us, it's ok. :)
 
     <script src="https://gist.github.com/1705702.js"> </script>
 
-    <p>MySQL should be available and easily installable via your systems package manager.  MySQL 5.5 is not currently available in most package managers, but instructions for installing it are easily found online.</p>
-    
+    <p>MySQL may be installed via:</p>
+
+    {% highlight bash %}
+    sudo apt-get install mysql-server
+    {% endhighlight %}
+
     <p>Once the systems are installed you can start them like this:</p>
 
     {% highlight bash %}
     sudo start activemq
     sudo start couchdb
     sudo /opt/tomcat7/bin/startup.sh
+    sudo start mysql
     {% endhighlight %}
     
     <p>ActiveMQ and CouchDB will log to /var/log/motech, tomcat will write it's logs to /opt/tomcat7/logs</p>
@@ -78,13 +95,12 @@ title: MOTECH - Mobile Technology for Community Health
     sudo stop activemq
     sudo stop couchdb
     sudo /opt/tomcat7/bin/shutdown.sh
+    sudo stop mysql
     {% endhighlight %}
 
-    <p>Starting MySQl will vary based on the method used to install it.  Typically for ubuntu it is started like this <i>sudo /etc/init.d/mysql.server start</i></p>
-      
   <h4>Code</h4>
 
-  <p>The code for MOTECH is open souce and can be found on <a href="http://code.google.com/p/motech">Google Code</a>.  You'll need a working understand of <A href="http://git-scm.com/">git</a> to check it out and <a href="http://maven.apache.org/">maven</a> to compile it.  A more detailed description of the code architecture can be found in the <a href="/getting-started/index.html">Overview</a> while a description of the source tree can be found in the <a href="/getting-started/source.html">Source Overview</a> of this guide.</p>
+  <p>The code for MOTECH is open souce and can be found on <a href="http://code.google.com/p/motech">Google Code</a>.  You'll need a working understanding of <a href="http://git-scm.com/">git</a> to check it out and <a href="http://maven.apache.org/">maven</a> to compile it.  A more detailed description of the code architecture can be found in the <a href="/getting-started/index.html">Overview</a> while a description of the source tree can be found in the <a href="/getting-started/source.html">Source Overview</a> of this guide.</p>
 
   <p>To simply check out and compile the code, make sure all dependent software is installed then enter these commands.</p>
   {% highlight bash %}
