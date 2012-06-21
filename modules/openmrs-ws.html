@@ -1,0 +1,87 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+
+  {% include modules/navigation.incl %}
+
+  <div class="column five-sixths">
+    <h3>MoTeCH OpenMRS REST Web Services Module</h3> 
+
+    <h4>Description</h4> 
+    <p>
+      The MoTeCH OpenMRS REST Web Services module is an implementation of the MoTeCH MRS API that communicates with the OpenMRS application through web services. 
+    </p>
+
+    <h4>Information for implementation</h4> 
+    
+    <h4>Configuration</h4>
+    <p>
+      To use the MoTeCH OpenMRS REST Web Service module, you will need the following:
+    </p>
+    <ul>
+      <li><a href="http://openmrs.org/download/">OpenMRS 1.8.3+</a></li>
+      <li><a href="https://modules.openmrs.org/modules/view.jsp?module=webservices.rest">OpenMRS REST Web Service Module 1.0+</a></li>
+    </ul>
+    
+    <p>
+      Start by installing the OpenMRS application, and the OpenMRS REST Web Service module:
+    </p>
+    <ul>
+      <li><a href="https://wiki.openmrs.org/display/docs/Installing+OpenMRS">Installing OpenMRS</a></li>
+      <li><a href="https://wiki.openmrs.org/display/docs/Administering+Modules">Installing OpenMRS Modules</a></li>
+    </ul>
+    <p>
+      Next, configure the OpenMRS REST Web Service module:
+    </p>
+    <ul>
+      <li>Login to the OpenMRS Application as an administrative user</li>
+      <li>Select Administration</li>
+      <li>Select <strong>Settings</strong> under the REST Web Services subsection</li>
+      <li>Configure the <strong>Rest Web Services URI Prefix</strong></li>
+      <li>Optionally set the Allowed IP Addresses, Absolute Max Result Size, and Default Result Size</li>
+      <li>Save the settings</li>
+    </ul>
+    
+    <p>
+      Next, you will need to add a <strong>Patient Identifier</strong>:
+    </p>
+    <ul>
+      <li>Login to the OpenMRS Application as an administrative user</li>
+      <li>Select Administration</li>
+      <li>Select <strong>Manage Patient Identifier Types</strong> under the Patient subsection</li>
+      <li>Select <strong>Add Patient Identifier Type</strong></li>
+      <li>Provide a Name for the patient identifier (this name will be referred to later in the configuration of the MoTeCH module)</li>
+    </ul>
+    
+    <p>
+      Finally, you need to configure the MoTeCH REST Web Service module to use your OpenMRS instance:
+    </p>
+    <ul>
+      <li><a href="http://www.motechproject.org/getting-started/installation.html">Setup and Configure the MoTeCH Project</a></li>
+      <li>Edit the openmrs.properties file under: motech-openmrs-ws/src/main/resources</li>
+      <li>Set <strong>openmrs.url</strong> to the URL of your OpenMRS instance</li>
+      <li>Set <strong>openmrs.user</strong> to a user with privileges to access the web services</li>
+      <li>Set <strong>openmrs.password</strong> to the password for the user</li>
+      <li>Set <strong>openmrs.motechIdName</strong> to the <strong>Patient Identifier Name</strong> you created in the previous step</li>
+      <li>Save the file, and build the MoTeCH Project</li>
+    </ul>
+    
+    <h3>Events consumed and emitted by the OpenMRS module</h3>
+
+    <h4>Consumed events:</h4>
+    <p>
+      No events consumed by OpenMRS API module
+    </p>
+    <h4>Emitted events:</h4>
+    <p>
+      No events emitted by OpenMRS API module
+    </p>
+    
+    <h3>Questions</h3>
+    <p>
+    </p>
+  </div>
+ </div>
