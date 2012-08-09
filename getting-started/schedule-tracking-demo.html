@@ -11,7 +11,7 @@ title: MOTECH - Mobile Technology for Community Health
 
 		<h3>Schedule Tracking Demo</h3>
     <p>
-      View the source code for the demo <a href="http://code.google.com/p/motech/source/browse/?name=motech-campaigndemo">here</a>.
+      View the source code for the demo <a href="https://github.com/motech/motech-campaign-demo">here</a>. (Note: The demo is built from tag campaign-demo-0.8.0)
     </p>
     
 		<p>Please note that we often take the demo down for maintainance/upgrades.  Please <a href="/contact.html">contact us</a> if it is not up and you would like to use it.</p>
@@ -57,8 +57,8 @@ title: MOTECH - Mobile Technology for Community Health
 		<h5>Registering a patient in Open MRS by Motech ID:</h5>
 
 		<ul>
-			<li>Login to OpenMRS and click "Manage Patients" under the Patients category</li>
-			<li>Click "Create a New Patient" under the Patient heading</li>
+			<li>Login to OpenMRS and click &quot;Manage Patients&quot; under the Patients category</li>
+			<li>Click &quot;Create a New Patient&quot; under the Patient heading</li>
 			<li>After you fill out the information and create the person, make sure the patient looks as follows:</li>
 		</ul>
 
@@ -94,35 +94,57 @@ title: MOTECH - Mobile Technology for Community Health
       When you run the application for the first time, you will be prompted for Connection Settings. You can leave the defaults and select 'Ok'.<br /><br />
 
       Then, you can choose <strong>Select Form</strong> to complete a form. The forms you can complete are as follows:
-      <ul>
-        <li>Patient Registration - This form will create an OpenMRS patient, create a MoTeCH patient, and optionally enroll the patient into the Demo Schedule.</li>
-        <li>Patient Enrollment - This form will enroll the MoTeCH patient into the Demo Schedule (A corresponding OpenMRS patient with the same MoTeCH Id must exist to use this form.)</li>
-        <li>Patient Encounter - This form will create an encounter for an OpenMRS patient. You must provide the MoTeCH Id of the patient in OpenMRS, an observation date, and an observed concept.</li>
-      </ul>
+    </p>
+    <ul>
+      <li>Patient Registration - This form will create an OpenMRS patient, create a MoTeCH patient, and optionally enroll the patient into the Demo Schedule.</li>
+      <li>Patient Enrollment - This form will enroll the MoTeCH patient into the Demo Schedule (A corresponding OpenMRS patient with the same MoTeCH Id must exist to use this form.)</li>
+      <li>Patient Encounter - This form will create an encounter for an OpenMRS patient. You must provide the MoTeCH Id of the patient in OpenMRS, an observation date, and an observed concept.</li>
+    </ul>
+    <p>
       If you wish to enroll in the Demo Schedule, be aware that you must provide a valid phone number to receive messages. The phone number should be specified XXX-XXX-XXXX<br /><br />
 
       Once you have completed form entry, you can send the data back to the MoTeCH server by using the <strong>Upload Data</strong> list item from the main menu.<br /><br />
 
       After uploading has completed, you will be shown whether or not the forms were successfully processed. A few of the reasons a form may fail include:
-      <ul>
-        <li>Bad phone number format</li>
-        <li>Out of sequence Concept, e.g. you can't complete 'Demo Concept Question #3' before completing 'Demo Concept Question #2'</li>
-      </ul>
-      
+    </p>
+    <ul>
+      <li>Bad phone number format</li>
+      <li>Out of sequence Concept, e.g. you can't complete &quot;Demo Concept Question #3&quot; before completing &quot;Demo Concept Question #2&quot;</li>
+    </ul>
+    <p>
       To remedy form failures, choose <strong>Select Form</strong>. A red exclamation point will be displayed next to any form names that had submission failures. Choose a form with the red exclamation point. In the list of form submission, any that have failed validation will also be displayed with a red exclamation point icon. Select a form with the icon. Then, select Options (bottom left of display), and Show Errors. This will list any form submission errors that may have occurred.
     </p>
+    <h4>Typical Workflow</h4>
     <p>
-      <strong>Typical Workflow</strong><br />
       The intended work flow for the demo can generally be defined as:
-      <ul>
-        <li>Enroll into the Demo Schedule</li>
-        <li>Receive a message that you need to complete an OpenMRS concept</li>
-        <li>Use the Patient Encounter Form to complete required concept</li>
-        <li>Submit Patient Encounter form</li>
-      </ul>
-
+    </p>
+    <ul>
+      <li>Enroll into the Demo Schedule</li>
+      <li>Receive a message that you need to complete an OpenMRS concept</li>
+      <li>Use the Patient Encounter Form to complete required concept</li>
+      <li>Submit Patient Encounter form</li>
+    </ul>
+    <p>
       After you have completed all 4 concepts, you will be removed from the Demo Schedule<br />
       You are also free to complete concepts (e.g. Demo Concept Question #1,) before you enroll. In this case, when you do enroll, you will be enrolled at the next required concept milestone. For example, if you complete Demo Concept Question #1 and #2, then enroll in the Demo Schedule, you will be scheduled for the third milestone (Demo Concept Question #3.)
+    </p>
+    <h4>Development Setup with Eclipse</h4>
+    <p>
+      First, clone the repository and checkout the campaign-demo-0.8.0 tag
+    </p>
+    <pre>
+git clone https://github.com/motech/motech-campaign-demo.git
+cd motech-campaign-demo/
+git checkout -b demo campaign-demo-0.8.0
+    </pre>
+    <p>
+      Generate Eclipse project files
+    </p>
+    <pre>
+mvn eclipse:eclipse
+    </pre>
+    <p>
+      Import the project into Eclipse: File -> Import -> (General) Existing Projects into Workspace
     </p>
     <h4>Technical Details</h4>
     <p>
@@ -131,7 +153,7 @@ title: MOTECH - Mobile Technology for Community Health
       The mobile forms project was modified slightly to fit in the Spring context (e.g. using Spring controllers rather than pure Java servlets.)<br /><br />
 
       <strong>Mobile Client</strong><br />
-      The mobile client was built from the old MoTeCH project site: <a href="http://motech.rcg.usm.maine.edu/svn/openxdata-mobile/trunk">http://motech.rcg.usm.maine.edu/svn/openxdata-mobile/trunk</a><br /><br />
+      The mobile client was built from the old MoTeCH project site: <a href="http://motech.rcg.usm.maine.edu/svn/openxdata-mobile/tags/0.8.0/">http://motech.rcg.usm.maine.edu/svn/openxdata-mobile/tags/0.8.0/</a> <br /><br />
 
       The defaults.properties file (epihandy-midlet/res/defaults.properties) was modified so the default form download and upload URLs point at the demo.<br /><br />
 
