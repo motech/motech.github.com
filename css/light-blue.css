@@ -110,6 +110,8 @@ h5 {
 	text-transform: uppercase;
 }
 
+
+
 h6 {
 	color: #434e59;
 	font-size: 11px;
@@ -181,6 +183,30 @@ p {
 	margin-bottom: 18px;
 		font-size: 14px;
 }
+
+.roundedcornr_box_364832 {
+   background: #f2a618;
+}
+.roundedcornr_top_364832 div {
+   background: url(/assets/icons/roundedcornr_364832_tl.png) no-repeat top left;
+}
+.roundedcornr_top_364832 {
+   background: url(/assets/icons/roundedcornr_364832_tr.png) no-repeat top right;
+}
+.roundedcornr_bottom_364832 div {
+   background: url(/assets/icons/roundedcornr_364832_bl.png) no-repeat bottom left;
+}
+.roundedcornr_bottom_364832 {
+   background: url(/assets/icons/roundedcornr_364832_br.png) no-repeat bottom right;
+}
+
+.roundedcornr_top_364832 div, .roundedcornr_top_364832, 
+.roundedcornr_bottom_364832 div, .roundedcornr_bottom_364832 {
+   width: 100%;
+   height: 10px;
+   font-size: 1px;
+}
+.roundedcornr_content_364832 { margin: 0 10px; }
 
 a {
 	color: #5684b2;
@@ -1348,9 +1374,9 @@ pre.allowed-tags {
 }
 
 #logo a {
-	background: transparent url(../assets/icons/logo_color_y-orig.gif) no-repeat 0 0;
+	background: transparent url(../assets/icons/motechsuite.gif) no-repeat 0 0;
 	display: block;
-	height: 120px; /* Set this to your logo image height */
+	height: 80px; /* Set this to your logo image height */
 	width: 325px; /* Set this to your logo image width */
 	overflow: hidden;
 	text-indent: -9999em;
