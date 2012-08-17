@@ -1,0 +1,83 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+        <div class="column-container clearfix">
+          
+          <h4>Description</h4>
+          
+          Release 0.12 of the MOTECH platform is meant as an early technology release focused on developers. At this point in time the system is functional, but we have not spent much time yet on documentation or user interface so the use of the system for non-developers is limited.
+          
+          <h4>Release Notes</h4>
+          Please refer to the following <a href="http://code.google.com/p/motech/wiki/ReleaseZeroPointTwelve">link</a> for the release notes for this release.
+          
+          <h4>Build Instructions</h4>
+          
+          You can build the platform by checking out the <a href="http://code.google.com/p/motech/source/list?name=motech-0.12">motech-0.12</a> tag and running <pre>mvn install</pre>
+          
+          You can include any platform module in your mvn build by placing the following in your pom:
+          
+          {% highlight xml %}
+            <repositories>
+                <repository>
+                    <id>motech-repo</id>
+                    <name>Motech Maven Repository</name>
+                    <url>http://nexus.motechproject.org/content/repositories/public</url>
+                </repository>
+            </repositories>
+        
+          <dependency>
+            <groupId>org.motechproject</groupId>
+            <artifactId>[module name]</artifactId>
+            <version>0.12</version>
+          </dependency>
+          {% endhighlight %}
+          
+          <h4>Installation Instructions</h4>
+          
+          With this release we've created debian and rpm packages that can install MOTECH and it's dependencies for you.  We'll be posting those shortly.
+
+
+          If you want to manually install MOTECH you will need:
+          
+          <ul>
+            <li>Tomcat</li>
+            <li>MySQL</li>
+            <li>CouchDB</li>
+            <li>Java</li>
+            <li>ActiveMQ</li>
+          </ul>
+          
+          <h4>Platform</h4>
+          
+          Grab the platform war from our nexus repository: <a href="http://nexus.motechproject.org/content/groups/all/org/motechproject/motech-platform-server/0.12/motech-platform-server-0.12.war">war</a>
+          
+          <br>
+          <h4> Java Documentation</h4>
+          You can find the java documentation for this release <a href="/javadoc/0.12/modules.html">here</a>.
+          
+          <br>
+          <h4>Open Source License</h4>
+          
+          The MOTECH platform is available under the following OpenSource software license: <br>
+
+          <br>
+          Copyright (c) 2011 Grameen Foundation USA. All rights reserved. <br>
+          
+          <br>
+          Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: <br>
+
+
+          1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. <br>
+
+          2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. <br>
+
+          3. Neither the name of Grameen Foundation USA, nor its respective contributors may be used to endorse or promote products derived from this software without specific prior written permission. <br>
+
+          <br>          
+          THIS SOFTWARE IS PROVIDED BY GRAMEEN FOUNDATION USA AND ITS CONTRIBUTORS *AS IS* AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL GRAMEEN FOUNDATION USA OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+
+
+        </div><!-- end .column-container -->
+          
