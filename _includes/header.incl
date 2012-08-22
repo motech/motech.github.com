@@ -16,6 +16,7 @@
                         <li><a href="/about/features.html">Features</a></li>
 						<li><a href="/about/roadmap.html">Roadmap</a></li>
                         <li><a href="/about/contribute.html">Contribute</a></li>
+						<li><a href="/about/contact.html">Contact</a></li>
                      </ul>
                 </li>
                 <li><a href="#">Documentation</a>
@@ -27,26 +28,29 @@
 					</ul>
                 </li>
 
-			 <li><a href="#">Code</a>
+			    <li><a href="#">Tools</a>
                     <ul>
-                        <li><a href="http://code.google.com/p/motech/source/checkout">Source</a></li>
-                        <li><a href="http://code.google.com/p/motech/issues/list">Issues</a></li>
-                     </ul>
+                        <li><a href="http://code.google.com/p/motech/source/checkout">Source Code</a></li>
+                        <li><a href="https://trello.com/motechproject">Issue Tracking</a></li>
+           		        <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
+           		        <li><a href="http://ci.motechproject.org/">Continuous Integration</a></li>					
+						<li><a href="http://review.motechproject.org/">Code Review</a></li>
+                    </ul>
                 </li>
-                <li><a href="/releases.html">Releases</a>
-                  <ul>
-                    <li><a href="/releases/r0.11.html">Release 0.11</a></li>
-                    <li><a href="/releases/r0.10.html">Release 0.10</a></li>
-                    <li><a href="/releases/r0.9.html">Release 0.9</a></li>
-                    <li><a href="/releases/r0.8.html">Release 0.8</a></li>
-                    <li><a href="/releases/r0.7.html">Release 0.7</a></li>
-                    <li><a href="/releases/r0.6.html">Release 0.6</a></li>
-                    <li><a href="/releases/r0.5.html">Release 0.5</a></li>
-                    <li><a href="/releases/r0.4.html">Release 0.4</a></li>
-                    <li><a href="/releases/dr1.html">Developer Release 1</a></li>
-                  </ul>
+                <li><a href="/">Demos</a></li>
+                <li><a href="/releases.html">Download</a>
+                    <ul>
+                        <li><a href="/releases/r0.11.html">Release 0.11</a></li>
+                        <li><a href="/releases/r0.10.html">Release 0.10</a></li>
+                        <li><a href="/releases/r0.9.html">Release 0.9</a></li>
+                        <li><a href="/releases/r0.8.html">Release 0.8</a></li>
+                        <li><a href="/releases/r0.7.html">Release 0.7</a></li>
+                        <li><a href="/releases/r0.6.html">Release 0.6</a></li>
+                        <li><a href="/releases/r0.5.html">Release 0.5</a></li>
+                        <li><a href="/releases/r0.4.html">Release 0.4</a></li>
+                        <li><a href="/releases/dr1.html">Developer Release 1</a></li>
+                    </ul>
                 </li>
-                <li><a href="/contact.html">Contact</a></li>
             </ul><!-- end #nav -->
         </nav>
 
