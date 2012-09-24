@@ -1,0 +1,47 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+
+  {% include modules/navigation.incl %}
+
+  <div class="column five-sixths">
+    <h3>Mobile Forms Module</h3> 
+
+    <h4>Description</h4> 
+<p>Mobile forms module helps offline data collection and uploading to server</p>
+
+    <h4>Information for implementation</h4> 
+<p>Mobile forms api module is server component to enable form serving and data upload. Mobile forms j2me app downloads form definitions from the mobile forms api module and enables data collection. Forms are configurable thought xml and classified by form groups.</p>
+
+    <h4>Configuration</h4>
+<p>
+	<span>The following properties can be changed in the <strong>mobileForms.properties</strong> file: </span>
+	<ul>
+		<li><strong>forms.config.file</strong> Points to master forms configuration.</li>
+		<li><strong>forms.user.accounts:</strong> Forms server login account configuration.</li>
+		<li><strong>forms.xml.form.name:</strong> Form name in xml form definition.</li>
+	</ul>
+</p>
+
+    <h4>Events consumed and emitted by the Mobile forms api</h4>
+
+<p>formBeanGroup - publishes on valid form upload, client can implement listener to handle forms.</p>
+
+<h5>Emitted events:</h5><br />
+{% highlight java %}
+Subject: "formBeanGroup"
+Payload:
+"handle.valid.xforms.group": org.motechproject.mobileforms.api.domain.FormBeanGroup
+{% endhighlight %}
+
+
+    <h4>Mobile forms extention points</h4>
+<p>
+	<li><code>org.motechproject.mobileforms.api.callbacks.FormPublishHandler#handleFormEvent</code> Implement this to process forms.</li>
+
+</p>
+  </div>
+ </div>
