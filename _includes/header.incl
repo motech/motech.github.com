@@ -19,17 +19,16 @@
 						<li><a href="/about/contact.html">Contact</a></li>
                      </ul>
                 </li>
-                <li><a href="#">Documentation</a>
+                <li><a href="contribute.html">Contribute</a>
                     <ul>
-                        <li><a href="/getting-started/index.html">Getting Started</a></li>
-                        <li><a href="/modules/index.html">Modules</a></li>
-                        <li><a href="/javadoc/0.10/modules.html">Java Docs</a></li>
+                        <li><a href="/contribute/develop.html">Develop</a></li>
+                        <li><a href="/contribute/translate.html">Translate</a></li>
 					</ul>
                 </li>
 			    <li><a href="#">Tools</a>
                     <ul>
-                        <li><a href="">Developer Documentation</a></li>
-                        <li><a href="">Module List</a></li>
+                        <li><a href="/devdocs/index.html">Developer Documentation</a></li>
+                        <li><a href="/modules/index.html">Module List</a></li>
                         <li><a href="http://code.google.com/p/motech/source/checkout">Source Code</a></li>
                         <li><a href="https://trello.com/motechproject">Issue Tracking</a></li>
            		        <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
@@ -37,7 +36,7 @@
 						<li><a href="http://review.motechproject.org/">Code Review</a></li>
                     </ul>
                 </li>
-                <li><a href="/">Demos</a>
+                <li><a href="#">Demos</a>
                     <ul>
                         <li><a href="/demos/getting-started.html">Getting Started</a></li>
                     </ul>
