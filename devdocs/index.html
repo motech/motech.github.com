@@ -1,0 +1,55 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+  
+  {% include devdocs/navigation.incl %}
+
+  <div class="column five-sixths">
+
+    <h3>Getting Started with MOTECH</h3>
+    
+    <p>The goal of this getting started guide is to present you with a high level overview of the MOTECH system architecture and code along with a quick set of instructions aimed at getting a functioning MOTECH up and running.
+
+    <h4><a name="overview">Architecture Overview</a></h4>
+
+    <p>MOTECH can logically be broken into three different tiers: Core, Modules and Implementations.  The core layer wraps several well known open source systems and augments and exposes their features to the layers above it.  The main functions at the core layer are to wrap ActiveMQ and present an internal pub/sub like event interface to the module and implementation layers.  The core also provides a module loading environment (OSGi) an interface to the scheduler and access to CouchDB.<p>
+    
+    <img src="/assets/CorePlatform.png"/>
+
+    <p>The module layer is a collection of reusable components that can be loaded into a MOTECH deployment.  Refer to the Modules page for a list of current and planned modules.  The implementation layer is a logical layer that contains implementation specific code.  In reality it is implemented exactly the same as a module only the logic contained within that module is only applicable to a single implementation.</p>
+
+    <p>MOTECH is designed to be horizontally scalable with multiple MOTECHs all acting as workers connecting to the same message queue.  The CouchDB is a shared resource as is the scheduler - both are able to be clustered to serve higher loads.</p>
+
+    <h4>Modules</h4>
+
+    <p>Modules within MOTECH are self-contained bits of functionality that are loaded into the server via the OSGi host.  Modules interact with the core platform through its APIs and with other modules either through their service interfaces or by consuming their events.  Modules can expose a service interface of their own as well as emit their own events.  Modules may also register servlet controllers which allow them to respond to HTTP requests.</p>
+
+    <p>See the <a href="/modules/index.html">Modules</a> page for the list of current and planned modules.</p>
+
+    <h4>Stateless</h4>
+
+    <p>A core design principle of the MOTECH platform is that the server should be stateless across requests to allow for horizontal scalability.  It is expected that code running within the MOTECH server should perform a single action per request and then return.  The module should never persist any state in memory and expect that state to be available to later requests.</p>
+
+    <h4>Events</h4>
+
+    <p>To aid in the development of stateless services the MOTECH engine provides a pub/sub like event system.  The event system helps to decouple emitters of events from the modules that wish to consume them.  Any module can emit an event by calling the <i>eventRelay</i> and passing it a <i>MotechEvent</i> and a subject.  To register for an event a module just needs to annotate a method with the list of event subjects or interest.</p>
+
+    {% highlight java %}
+    @MotechListener(subjects={EventKeys.SAMPLE_EVENT_SUBJECT})
+    public void handle(MotechEvent event) {
+      logger.info("Received sample event");
+    }
+    {% endhighlight %}
+
+    <p>For a more detailed explanation of the event system and how to integrate with it see the <a href="/demos/ping-pong.html">Event Demo</a>.</p>
+
+    <h4>Scheduled Events &amp; Timers</h4>
+
+    <p>To assist in the development of a stateless event based server the MOTECH platform provides access to a flexible scheduling system.  Using the open source Quartz engine applications written on MOTECH can easily schedule events for future consumption.  For more information see the <a href="/architecture/scheduler.html">Scheduler</a> section of the <!-- <a href="/architecture"> -->architecture<!--</a>--> guide.</p>
+  </div>
+
+</div><!-- end .column-container -->
+  

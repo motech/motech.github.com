@@ -23,13 +23,13 @@
                     <ul>
                         <li><a href="/getting-started/index.html">Getting Started</a></li>
                         <li><a href="/modules/index.html">Modules</a></li>
-                        <li><a href="/getting-started/developing.html">Demos</a></li>
-                        <li><a href="/javadoc/0.13/modules.html">Java Docs</a></li>
+                        <li><a href="/javadoc/0.10/modules.html">Java Docs</a></li>
 					</ul>
                 </li>
-
 			    <li><a href="#">Tools</a>
                     <ul>
+                        <li><a href="">Developer Documentation</a></li>
+                        <li><a href="">Module List</a></li>
                         <li><a href="http://code.google.com/p/motech/source/checkout">Source Code</a></li>
                         <li><a href="https://trello.com/motechproject">Issue Tracking</a></li>
            		        <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
@@ -37,7 +37,11 @@
 						<li><a href="http://review.motechproject.org/">Code Review</a></li>
                     </ul>
                 </li>
-                <li><a href="/">Demos</a></li>
+                <li><a href="/">Demos</a>
+                    <ul>
+                        <li><a href="/demos/getting-started.html">Getting Started</a></li>
+                    </ul>
+                </li>
                 <li><a href="/releases.html">Download</a>
                     <ul>
                         <li><a href="/releases/r0.11.html">Release 0.11</a></li>

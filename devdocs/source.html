@@ -1,0 +1,43 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+  
+  {% include devdocs/navigation.incl %}
+
+  <div class="column five-sixths">
+
+    <h3>Source</h3>
+
+    <p>MOTECH's architecture can logically be broken into three different levels, Core, Modules & Implementation.  The platform source contains no implementation code.  When you check out a copy of the code you will get many different directories, most of which are related to modules.  Following is a brief description of the different source directories and what each is responsible for.</p>
+
+    <h4>Core</h4>
+
+    <p>The following directories contain the source that makes up the core of MOTECH.</p>
+
+    <dl>
+        <dt>motech-platform-server</dt>
+        <dd>Used as the main artifact that compiles to the motech-platform war.</dd>
+
+        <dt>motech-platform-scheduler</dt>
+        <dd>Contains the implementation of the MOTECH scheduler.  This is a standalone server that wraps quartz and proxies it's jobs onto the MOTECH event queue.</dd>
+
+        <dt>motech-platform-common</dt>
+        <dd>Contains base set of objects for accessing CouchDB and collecting system performance metrics.  Contains interfaces that describe the services used for raising and subscribing to events and accessing the scheduler.  Anything needed by more than one component within core should be here.</dd>
+
+        <dt>motech-platform-server-api</dt>
+        <dd>Contains implementations of the event system, annotations for registering handlers with events and the osgi and rule engine.</dd>
+    </dl>
+    
+    <p>Currently there are a few other directories that are linked into core that shouldn't be.  A good example is <i>motech-platform-ivr</i>.  We are in the process of moving it out into a module similar to <i>motech-sms-api</i>.  Additionally there are some packages within these core modules that we are in the process of refactoring into modules. A good example of that is the ruleengine package within <i>motech-platform-server-api</i>.
+
+    <h4>Modules</h4>
+
+    <p>Modules are meant to be generic reusable feature sets that can be assembled together within a single MOTECH instance to allow implementers to more easily create full featured deployments.  The original idea behind the module architecture was to allow them to be loaded via OSGi, accessed remotly via a REST interface and expose services internally by emiting and consuming events, via a pojo api that mirrored the REST api or via OSGi service lookup.  Additionally each module was meant to be executable either embedded within the platforms OSGi container, or in a "remote" fashion talking to a replicated instance of the CouchDB.  That last requirement is why some modules are split into two packages, one being *-api that contains no event or business logic code and a core module.  It was intended that the *-api package would be the one implementation code interacted with and that module could be configured to run in the server or externally.  We've since gotten away from that paradigm and need to make a pass back through the code to consolidate things.</p>
+         
+  </div>
+
+</div><!-- end .column-container -->
+  

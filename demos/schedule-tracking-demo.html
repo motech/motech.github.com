@@ -1,0 +1,169 @@
+---
+layout: main
+title: MOTECH - Mobile Technology for Community Health
+---
+
+<div class="column-container clearfix">
+  
+  {% include getting-started/navigation.incl %}
+
+  <div class="column five-sixths">
+
+		<h3>Schedule Tracking Demo</h3>
+    <p>
+      View the source code for the demo <a href="https://github.com/motech/motech-campaign-demo">here</a>. (Note: The demo is built from tag campaign-demo-0.8.0)
+    </p>
+    
+		<p>Please note that we often take the demo down for maintainance/upgrades.  Please <a href="/contact.html">contact us</a> if it is not up and you would like to use it.</p>
+
+		<p>The schedule tracking demo uses Open MRS to monitor and fulfill a series of milestones that are part of a schedule.</p>
+
+
+		
+		<p>OpenMRS for the demo is available
+		<a href="http://motech.rcg.usm.maine.edu/openmrs-demo">here</a>.</p>
+
+		<p>(<a href="/contact.html">Contact us</a> for login credentials for Open MRS.)</p>
+
+		<p>The MoTeCH schedule tracking demo is available <a href="http://motech.rcg.usm.maine.edu/motech-platform-server/enroll/scheduleTracking">here</a>.</p>
+		
+
+		<p>In order to use the demo, you must register a patient into Motech with a valid phone number (no symbols, it should look like 2074503879)
+		This same patient ID must also be registered into OpenMRS. You may then enroll that patient in the schedule from the scheduleTracking page. If an enrolled patient is not found in BOTH the demo's Motech phone number database and in Open MRS, they will not be enrolled in the schedule.</p>
+
+		<p>In this demo, a milestone corresponds to an observation of a particular concept having been made on or after the initial date of enrollment into the Demo Schedule. The four milestones are:</p>
+
+
+		<ul>
+			<li>Demo Concept Question #1: <a href="http://motech.rcg.usm.maine.edu/openmrs-demo/dictionary/concept.htm?conceptId=6100">http://motech.rcg.usm.maine.edu/openmrs-demo/dictionary/concept.htm?conceptId=6100</a></li>
+			<li>Demo Concept Question #2: <a href="http://motech.rcg.usm.maine.edu/openmrs-demo/dictionary/concept.htm?conceptId=6101">http://motech.rcg.usm.maine.edu/openmrs-demo/dictionary/concept.htm?conceptId=6101</a></li>
+			<li>Demo Concept Question #3: <a href="http://motech.rcg.usm.maine.edu/openmrs-demo/dictionary/concept.htm?conceptId=6103">http://motech.rcg.usm.maine.edu/openmrs-demo/dictionary/concept.htm?conceptId=6103</a></li>
+			<li>Demo Concept Question #4: <a href="http://motech.rcg.usm.maine.edu/openmrs-demo/dictionary/concept.htm?conceptId=6102">http://motech.rcg.usm.maine.edu/openmrs-demo/dictionary/concept.htm?conceptId=6102</a></li>
+		</ul>
+
+		<p>Milestones have "windows" which represent a period of time. For example, today through five days from now represents a five day window. In the demo, each milestone has the same window periods. 0-1 minutes is the "early" window and no messages or alerts are raised.</p>
+
+		<p>At 1 minute in, a due message is raised and a phone call as well as text message are placed to the patient indicating that they are due for that particular Concept Question.
+		</p>
+
+		<p>At 3 minutes, they enter the late window, and a late message is dispatched in the same manner. They receive a second late message one minute later at the 4 minute mark. The late window lasts until the 6th minute.</p>
+
+		<p>After this, no more late messages are sent and they enter the "max" window. They may still complete the milestone during this period. If they go beyond 15 minutes from the start of a milestone without fulfilling it, they are defaulted and their enrollment in the schedule is no longer active.</p>
+
+		<p>If a patient fulfills a milestone before they have defaulted, they will move on to the next milestone (unless there are no more, then the enrollment is completed) with new messages scheduled following the same format outlined above.</p>
+
+		<p>A patient may only have one active enrollment in the schedule at any given time, but may unenroll and start a new enrollment, or enroll after theirs is completed or defaulted.</p>
+
+		<h5>Registering a patient in Open MRS by Motech ID:</h5>
+
+		<ul>
+			<li>Login to OpenMRS and click &quot;Manage Patients&quot; under the Patients category</li>
+			<li>Click &quot;Create a New Patient&quot; under the Patient heading</li>
+			<li>After you fill out the information and create the person, make sure the patient looks as follows:</li>
+		</ul>
+
+		<img src="/assets/getting-started/patientidentifier.png"/>
+
+		<p>Where YourIdentifierHere is the unique Motech ID you registered in the demo with your phone number.</p>
+
+		<p>After you save patient, you may add encounters and observations to your patient normally.</p>
+
+		<p>When adding the observation, it will only considered to be fulfilled if the Date/Time Answer field is on or after the day you started the enrollment in the demo schedule.</p>
+
+		<img src="/assets/getting-started/exampleobservation.png"/>
+
+    <h4>MoTeCH Mobile Demo</h4>
+    <p>
+      The mobile demo fits alongside the other parts of the schedule tracking demo. Using a mobile phone, users can register and enroll patients into a demo schedule, and they can also complete the OpenMRS demo concepts required to fulfill milestones for the demo schedule.
+    </p>
+    <p>
+      <strong>Usage Details</strong><br />
+      Start by downloading the mobile client (NOTE: You must have a J2ME compatible device to use the mobile software.) Alternatively, you can set up the WTK provided by Oracle, but that is beyond the scope of this document. 
+    </p>
+    <p>
+      Link to Mobile Client download: <a href="http://motech.rcg.usm.maine.edu/motech-platform-server/mobileapp/motech-mforms-tiny.jad">http://motech.rcg.usm.maine.edu/motech-platform-server/mobileapp/motech-mforms-tiny.jad</a>
+    </p>
+    <p>
+      After the download is finished, launch the application<br /><br />
+
+      You are required to enter in a user name and password when you launch the application:<br />
+      Username: <strong>admin</strong><br />
+      Password: <strong>ghs</strong><br /><br />
+
+      After successful login, choose <strong>Select Study</strong> -> <strong>DemoGroup</strong>. <br />
+      When you run the application for the first time, you will be prompted for Connection Settings. You can leave the defaults and select 'Ok'.<br /><br />
+
+      Then, you can choose <strong>Select Form</strong> to complete a form. The forms you can complete are as follows:
+    </p>
+    <ul>
+      <li>Patient Registration - This form will create an OpenMRS patient, create a MoTeCH patient, and optionally enroll the patient into the Demo Schedule.</li>
+      <li>Patient Enrollment - This form will enroll the MoTeCH patient into the Demo Schedule (A corresponding OpenMRS patient with the same MoTeCH Id must exist to use this form.)</li>
+      <li>Patient Encounter - This form will create an encounter for an OpenMRS patient. You must provide the MoTeCH Id of the patient in OpenMRS, an observation date, and an observed concept.</li>
+    </ul>
+    <p>
+      If you wish to enroll in the Demo Schedule, be aware that you must provide a valid phone number to receive messages. The phone number should be specified XXX-XXX-XXXX<br /><br />
+
+      Once you have completed form entry, you can send the data back to the MoTeCH server by using the <strong>Upload Data</strong> list item from the main menu.<br /><br />
+
+      After uploading has completed, you will be shown whether or not the forms were successfully processed. A few of the reasons a form may fail include:
+    </p>
+    <ul>
+      <li>Bad phone number format</li>
+      <li>Out of sequence Concept, e.g. you can't complete &quot;Demo Concept Question #3&quot; before completing &quot;Demo Concept Question #2&quot;</li>
+    </ul>
+    <p>
+      To remedy form failures, choose <strong>Select Form</strong>. A red exclamation point will be displayed next to any form names that had submission failures. Choose a form with the red exclamation point. In the list of form submission, any that have failed validation will also be displayed with a red exclamation point icon. Select a form with the icon. Then, select Options (bottom left of display), and Show Errors. This will list any form submission errors that may have occurred.
+    </p>
+    <h4>Typical Workflow</h4>
+    <p>
+      The intended work flow for the demo can generally be defined as:
+    </p>
+    <ul>
+      <li>Enroll into the Demo Schedule</li>
+      <li>Receive a message that you need to complete an OpenMRS concept</li>
+      <li>Use the Patient Encounter Form to complete required concept</li>
+      <li>Submit Patient Encounter form</li>
+    </ul>
+    <p>
+      After you have completed all 4 concepts, you will be removed from the Demo Schedule<br />
+      You are also free to complete concepts (e.g. Demo Concept Question #1,) before you enroll. In this case, when you do enroll, you will be enrolled at the next required concept milestone. For example, if you complete Demo Concept Question #1 and #2, then enroll in the Demo Schedule, you will be scheduled for the third milestone (Demo Concept Question #3.)
+    </p>
+    <h4>Development Setup with Eclipse</h4>
+    <p>
+      First, clone the repository and checkout the campaign-demo-0.8.0 tag
+    </p>
+    <pre>
+git clone https://github.com/motech/motech-campaign-demo.git
+cd motech-campaign-demo/
+git checkout -b demo campaign-demo-0.8.0
+    </pre>
+    <p>
+      Generate Eclipse project files
+    </p>
+    <pre>
+mvn eclipse:eclipse
+    </pre>
+    <p>
+      Import the project into Eclipse: File -> Import -> (General) Existing Projects into Workspace
+    </p>
+    <h4>Technical Details</h4>
+    <p>
+      <strong>MoTeCH Mobile Forms API</strong><br />
+      The mobile portion of the demo uses the mobile forms API included with the MoTeCH platform. <br />
+      The mobile forms project was modified slightly to fit in the Spring context (e.g. using Spring controllers rather than pure Java servlets.)<br /><br />
+
+      <strong>Mobile Client</strong><br />
+      The mobile client was built from the old MoTeCH project site: <a href="http://motech.rcg.usm.maine.edu/svn/openxdata-mobile/tags/0.8.0/">http://motech.rcg.usm.maine.edu/svn/openxdata-mobile/tags/0.8.0/</a> <br /><br />
+
+      The defaults.properties file (epihandy-midlet/res/defaults.properties) was modified so the default form download and upload URLs point at the demo.<br /><br />
+
+      <strong>Demo Forms</strong><br />
+      The XForm form definitions created for the demo were hand written, and are based on the forms that reside in the mobile forms api project (src/test/resources/xforms).<br /><br />
+
+      <strong>Implementation</strong><br />
+      To use the mobile forms api project, the dependency was added to the Maven pom file (pom.xml). Then, the mobileForms.properties and forms-config.json files were copied from the mobile forms api project (src/test/resources). The forms-config.json file was edited, and a DemoGroup was defined, along with 3 forms.<br /><br />
+
+      For each form defined in the forms-config.json, a form definition was created (based on the fileName property in forms-config.json), along with classes for bean and validator.<br /><br />
+    </p>
+  </div>
+</div>
