@@ -1,6 +1,6 @@
   <div class="column sixth">
     <ul class="nav-tree">
-      <li><h6><a href="/getting-started/">Overview</a></h6></li>
+      <li><h6><a href="/devdocs/">Overview</a></h6></li>
         <ul>
             <li>Architecture Overview</li>
             <li>Modules</li>
@@ -8,23 +8,17 @@
             <li>Events</li>
             <li>Scheduled Events &amp; Timers</li>
         </ul>
-      <li><h6><a href="/getting-started/installation.html">Installation</a></h6></li>
+      <li><h6><a href="/devdocs/installation.html">Installation</a></h6></li>
         <ul>
             <li>Dependent Software</li>
             <li>Dependent Systems</li>
             <li>Code</li>
         </ul>
-      <li><h6><a href="/getting-started/running.html">Running</a></h6></li>
-      <li><h6><a href="/getting-started/source.html">Source</a></h6></li>
+      <li><h6><a href="/devdocs/running.html">Running</a></h6></li>
+      <li><h6><a href="/devdocs/source.html">Source</a></h6></li>
         <ul>
             <li>Core</li>
             <li>Modules</li>
-        </ul>
-      <li><h6><a href="/getting-started/developing.html">Developing</a></h6></li>
-        <ul>
-            <li>CouchDB Storage</li>
-            <li>Ping Pong Demo</li>
-            <li>Schedule Tracking Demo</li>
-        </ul>      
+        </ul>   
     </ul>
   </div>
