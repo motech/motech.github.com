@@ -15,7 +15,6 @@
                         <li><a href="/about/implementations.html">Implementations</a></li>
                         <li><a href="/about/features.html">Features</a></li>
 						<li><a href="/about/roadmap.html">Roadmap</a></li>
-                        <li><a href="/about/contribute.html">Contribute</a></li>
 						<li><a href="/about/contact.html">Contact</a></li>
                      </ul>
                 </li>
@@ -29,6 +28,7 @@
                     <ul>
                         <li><a href="/devdocs/index.html">Developer Documentation</a></li>
                         <li><a href="/modules/index.html">Module List</a></li>
+                        <li><a href="/javadoc/0.13.1/">Javadoc</a></li>
                         <li><a href="http://code.google.com/p/motech/source/checkout">Source Code</a></li>
                         <li><a href="https://trello.com/motechproject">Issue Tracking</a></li>
            		        <li><a href="http://code.google.com/p/motech/wiki/Home?tm=6">Wiki</a></li>
