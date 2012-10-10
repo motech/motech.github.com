@@ -129,6 +129,7 @@ clients to enroll into the sequence of messages at any point within the sequence
     <dl>
       <dt>name</dt> <dd>The name of the campaign. Campaign requests use this parameter to associate a user with a given campaign.</dd>
       <dt>type</dt> <dd> Specifies that this is an offset campaign.</dd>
+      <dt>maxDuration (optional) </dt> <dd>This determines how long the offset campaign is valid for. Messages will not be scheduled beyond this point.</dd>
       <dt>messages</dt> <dd>An array of messages of type OFFSET.</dd>
     </dl>
 
@@ -185,7 +186,7 @@ maximum duration determines how many messages will be scheduled at the time spec
     <h6>Campaign Fields:</h6>
     <dl>
       <dt>name</dt> <dd>The name of the campaign. Campaign requests use this parameter to associate a user with a given campaign.</dd>
-      <dt>type></dt> <dd> Specifies that this is a repeat interval campaign.</dd>
+      <dt>type</dt> <dd> Specifies that this is a repeat interval campaign.</dd>
       <dt>maxDuration</dt> <dd>This determines how long the repeat interval campaign is valid for. Messages will not be scheduled beyond this point.</dd>
       <dt>messages</dt> <dd>An array of messages of type REPEAT_INTERVAL.</dd>
     </dl>
@@ -225,6 +226,7 @@ The cron expression determines the periodic schedule the messages will follow. <
     <dl>
       <dt>name</dt> <dd>The name of the campaign. Campaign requests use this parameter to associate a user with a given campaign.</dd>
       <dt>type</dt> <dd>Specifies that this campaign is a cron campaign.</dd>
+      <dt>maxDuration</dt> <dd>This determines how long the cron campaign is valid for. Messages will not be scheduled beyond this point.</dd>
       <dt>messages</dt> <dd>An array of messages of type CRON.</dd>
     </dl>
 
@@ -265,6 +267,7 @@ the message will be sent on.  </p>
     <dl>
       <dt>name</dt> <dd>The name of the campaign. Campaign requests use this parameter to associate a user with a given campaign.</dd>
       <dt>type</dt> <dd>Specifies that this campaign is a day of week campaign.</dd>
+      <dt>maxDuration</dt> <dd>This determines how long the day of week campaign is valid for. Messages will not be scheduled beyond this point.</dd>
       <dt>messages</dt> <dd>An array of messages of type DAY_OF_WEEK.</dd>
     </dl>
 
@@ -286,7 +289,7 @@ the calendar date that the campaign will begin for that user. If no reference da
 in its place. The start time specifies what time of day in hours and minutes that the message will be sent. </p>
 
    <img src="/assets/modules/campaignrequest.PNG"/>
-<p>  The message-campaign module exposes a MessageCampaignService interface with two methods that accept a Campaign Request 
+<p>  The message campaign module exposes a MessageCampaignService interface with two methods that accept a Campaign Request 
 object: startFor and stopAll. The startFor method creates an enrollment record for the request. It also schedules a campaign's 
 message or messages as jobs in the scheduler. The stopAll method unschedules all campaign messages 
 from the campaign. The search() method allows querying for enrollments and is discussed below. The getCampaignTimings() method returns the time
@@ -300,8 +303,8 @@ schedule of messages for a given active campaign.</p>
 
     <h4>Example</h4>
     <p>Below is an example of a JSON document that includes two campaigns, each with a number of campaign messages. 
-Each campaign object has three fields: name, type and an array of messages. Each message contains fields determined 
-by its type. Campaign requests associate the user with these campaigns. A reference to the campaign's name, such 
+Each campaign object has three fields: name, type and an array of messages. The REPEAT_INTERVAL Campaign has an additional maxDuration field.
+Each message contains fields determined by its type. Campaign requests associate the user with these campaigns. A reference to the campaign's name, such 
 as "Absolute Dates Message Program" must be included in the CampaignRequest. This allows the system to schedule jobs 
 for the user based on the associated campaign. In the below example, if a user is enrolled in "Absolute Dates Message Program", 
 two separate jobs (messages) will be scheduled. In the "Relative Parameterized Dates Message Program", twelve jobs will be 
@@ -427,13 +430,13 @@ Records based on particular criteria provided by a Campaign Enrollments Query ob
  using various criteria: external ID, status, and/or campaign name. Queries are built by adding one or more of these criteria to the Campaign Enrollment 
 Query's list of criteria. The clauses together define specific search criteria. The method returns a list of matching Campaign Enrollment Records.</p>
 
-	<p>Examples:
+	<p>Examples:</p>
 
 	{% highlight java %}
 	messageCampaignService.search(new CampaignEnrollmentsQuery().havingState(CampaignEnrollmentStatus.ACTIVE))
 	{% endhighlight %}
 
-	will find all active enrollments</p>
+	<p>will find all active enrollments</p>
 
 	{% highlight java %}
 	messageCampaignService.search(
@@ -442,7 +445,7 @@ Query's list of criteria. The clauses together define specific search criteria. 
 			.havingState(CampaignEnrollmentStatus.ACTIVE)
 	{% endhighlight %}
 
-	will find active enrollments enrolled into "My Program" campaign.
+	<p>will find active enrollments enrolled into "My Program" campaign.
 	</p>
 
 <img src="/assets/modules/campaignenrollmentrecord.PNG"/>
