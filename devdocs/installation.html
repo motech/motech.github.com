@@ -36,23 +36,12 @@ title: MOTECH - Mobile Technology for Community Health
     sudo apt-get install git-core python-software-properties maven2 curl
     {% endhighlight %}
 
-    <p>Java requires manual installation because Oracle no longer publishes a package for it. Start by downloading jdk7 from <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html ">Oracle's website.</a></p>
+    <p>Java 7 cannot be installed via apt-get on Ubuntu because Oracle no longer publishes a package for it. 
+    There are a few super easy ways to install Oracle Java described <a href="https://help.ubuntu.com/community/Java">here.</a></p>
 
+    <p>Use the following command to check that Java install was successful:</p>
+    
     {% highlight bash %}
-    # change to the download directory and move the jdk tarball to /usr/lib/jvm/:
-    sudo mv jdk-7u5-linux-x64.tar.gz /usr/lib/jvm/
-    cd /usr/lib/jvm
-
-    # Untar it:
-    sudo tar zxvf jdk-7u5-linux-x64.tar.gz
-
-    # Remove Open JDK to prevent conflicts
-    sudo apt-get remove openjdk-6-jdk openjdk-6-jre openjdk-6-jre-headless openjdk-6-jre-lib
-
-    # Create symbolic links to the new binary:
-    sudo ln -s -b /usr/lib/jvm/jdk1.7.0_05/jre/bin/java /etc/alternatives/java
-    sudo ln -s -b /usr/lib/jvm/jdk1.7.0_05/jre/bin/java /usr/bin/java
-
     # Double-check version:
     java -version
     {% endhighlight %}
