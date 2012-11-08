@@ -21,7 +21,7 @@ title: MOTECH - Mobile Technology for Community Health
 
     <ul>
       <li>Git</li>
-      <li>Maven 2</li>
+      <li>Maven 3</li>
       <li>Curl</li>
     </ul>
 
@@ -31,9 +31,9 @@ title: MOTECH - Mobile Technology for Community Health
     # Install required software 
     # git-core provides git which is the source control software used in Motech
     # python-software-properties provides add-apt-repository
-    # maven2 is the build system used within Motech
+    # maven is the build system used within Motech
     # curl is used by some of our unit/integration tests to set up CouchDB in known states.
-    sudo apt-get install git-core python-software-properties maven2 curl
+    sudo apt-get install git-core python-software-properties maven curl
     {% endhighlight %}
 
     <p>Java 7 cannot be installed via apt-get on Ubuntu because Oracle no longer publishes a package for it. 
