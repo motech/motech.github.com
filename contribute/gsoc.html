@@ -19,39 +19,39 @@ title: MOTECH - Mobile Technology for Community Health
 
     <ul>
         <li>
-            <h3><a href="https://applab.atlassian.net/browse/MOTECH-607">MOTECH on Google App Engine</a></h3>
-            <p><strong>Project Description:</strong> To enable easier use by non-technical users, as well as provide a hosted offering we should enable the install and execution of MOTECH on Google App Engine.</p> 
+            <h5><a href="https://applab.atlassian.net/browse/MOTECH-607">MOTECH on Google App Engine</a></h5>
+            <p><strong>Project Description:</strong> It isn't easy for non-technical users to get started with MOTECH - there are a lot of prerequisites to install before you can get going, and many potential MOTECH users aren't familiar with Linux. To enable easier use by non-technical users, as well as provide a hosted offering we should enable the installation and execution of MOTECH on Google App Engine.</p> 
             <p><strong>Prerequisites:</strong> Java/Spring/OSGi, some experience with Google App Engine or other PaaS</p> 
         </li>
         <li>
-            <h3><a href="https://applab.atlassian.net/browse/MOTECH-606">MOTECH on Arduino/Raspberry Pi</a></h3>
-            <p><strong>Project Description:</strong> This is a relatively open-ended idea that requires definition, exploration, and a spec before anything can be implemented. Whomever picks up this item should explore whether we can run MOTECH on a low powered device like an Arduino or Raspberry Pi - and then propose and implement any required changes to MOTECH Platform to make this a viable self-hosting option for MOTECH customers.</p> 
+            <h5><a href="https://applab.atlassian.net/browse/MOTECH-606">MOTECH on Arduino/Raspberry Pi</a></h5>
+            <p><strong>Project Description:</strong> This is a relatively open-ended idea that requires definition, exploration, and a spec before anything can be implemented. Whomever picks up this item should explore whether we can run MOTECH on a low powered device like an Arduino or Raspberry Pi - and then propose and implement any required changes to MOTECH Platform to make this a viable self-hosting option for MOTECH customers. A complete solution would also include written documentation in the form of a how-to guide on getting up and running with MOTECH on Raspberry Pi.</p> 
             <p><strong>Prerequisites:</strong> Java</p>
         </li>
         <li>
-            <h3><a href="https://applab.atlassian.net/browse/MOTECH-608">MOTECH Modules in Other Languages</a></h3>
-            <p><strong>Project Description:</strong> To enable easier development of MOTECH modules, and allow reuse from organizations that have developed similar tools in other languages, we should enable MOTECH modules to be authored in other languages besides Java. e.g. Python and Ruby </p> 
+            <h5><a href="https://applab.atlassian.net/browse/MOTECH-608">MOTECH Modules in Other Languages</a></h5>
+            <p><strong>Project Description:</strong> To enable easier development of MOTECH modules, and allow reuse from organizations that have developed similar tools in other languages, we should enable MOTECH modules to be authored in other languages besides Java. e.g. Python and Ruby. A complete solution would include a Python or Ruby module sample and documentation.</p> 
             <p><strong>Prerequisites:</strong> Java, OSGi, techniques and tools for Java/Ruby integration and/or Java/Python integration</p> 
         </li>
         <li>
-            <h3><a href="https://applab.atlassian.net/browse/MOTECH-586">Lightweight Analytics for Non-Technical Users</a></h3>
-            <p><strong>Project Description:</strong> Develop a lightweight set of analytical tools, in advance of rolling out a more full-fledged reporting solution. The idea is that an end user can build simple queries within the MOTECH Data Services ("Seuss") UI and then take the dataset and display it in a graph. Users will be able to view data in a graph or table - this will not include the ability to define a dashboard containing multiple metrics or save the analysis and share within MOTECH.</p> 
+            <h5><a href="https://applab.atlassian.net/browse/MOTECH-586">Lightweight Analytics for Non-Technical Users</a></h5>
+            <p><strong>Project Description:</strong> Reporting and dashboards are frequently requested MOTECH features. While full-fledged versions of these are still a ways out on our development roadmap, we could develop some lightweight tools to bridge the gap. This project idea is to develop a lightweight set of analytical tools in advance of rolling out a more full-fledged reporting solution. The idea is that an end user can build simple queries within the MOTECH Data Services ("Seuss") UI and then take the dataset and display it in a graph. Users will be able to view data in a graph or table - this will not include the ability to define a dashboard containing multiple metrics or save the analysis and share within MOTECH.</p> 
             <p><strong>Prerequisites:</strong> Java, AngularJS, HTML/Javascript</p>
         </li>
         <li>
-            <h3><a href="https://applab.atlassian.net/browse/MOTECH-591">MOTECH Dashboard</a></h3>
+            <h5><a href="https://applab.atlassian.net/browse/MOTECH-591">MOTECH Dashboard</a></h5>
             <p><strong>Project Description:</strong> Today, when an admin user logs into MOTECH, the UI he sees is rather sparse. Ultimately we want a user to be presented with a helpful dashboard that reports on key indicators he cares about for his MOTECH installation. To get there, we'll start by building a generic dashboard view (with efficient data refresh and user permissions). Then we can build out a set of predefined widgets that it can display and a set of data feeds that can be connected to those widgets. Finally allow the lightweight analytics from <a href="https://applab.atlassian.net/browse/MOTECH-586">MOTECH-586</a> to be set as a widget or data source.</p>
             <p><strong>Prerequisites:</strong> Java, AngularJS, HTML/Javascript</p>
         </li>
         <li>
-            <h3><a href="https://applab.atlassian.net/browse/MOTECH-588">MOTECH-CommCare Integration 3.0</a></h3>
-            <p><strong>Project Description:</strong> The MOTECH CommCare module already provides the ability to connect to CommCare and use data from CommCare forms within MOTECH. Notably, CommCare forms can be integrated with the Tasks module. However, there are still a handful of improvements needed to make this integration seamless. This project will track (at least): surfacing CC fields in the Tasks UI; and supporting multiple versions of CC forms</p> 
+            <h5><a href="https://applab.atlassian.net/browse/MOTECH-588">MOTECH-CommCare Integration 3.0</a></h5>
+            <p><strong>Project Description:</strong> CommCare is a system for managing health care workers and enabling them to do data collection with patients - it is part of the "MOTECH Suite" and is often deployed along with MOTECH. To enable integration of MOTECH and CommCare, we have developed a MOTECH CommCare module that provides the ability to connect to CommCare and use data from CommCare forms within MOTECH. Notably, CommCare forms can be integrated with the Tasks module. However, there are still a handful of improvements needed to make this integration seamless. This project will track (at least): surfacing CC fields in the Tasks UI; and supporting multiple versions of CC forms. The developer working on this will likely need to interact with the CommCare team at Dimagi as well.</p> 
             <p><strong>Prerequisites:</strong> Java, REST, CommCare</p> 
         </li>
     </ul>
     
     <h4>Idea Template</h4>
-    <p>Have your own idea for how you'd like to contribute to MOTECH? Fantastic. Please use the following template to tell us more about it.</p>
+    <p>Have your own idea for how you'd like to contribute to MOTECH? Fantastic. Please use the following template to tell us more about it. We encourage you to engage with the community on our <a href="mailto:motech-dev@googlegroups.com">mailing list</a> as you are drafting up your proposal.</p>
     
     <p><strong>Project Description:</strong> A brief description of what you plan to deliver. What does it do and who would be likely to use it? If the proposed project will include a UI, a quick and dirty UI mockup might help illustrate your idea better.</p>
     <p><strong>Prerequisites:</strong> What technologies or concepts should a developer be versed in to be able to effectively implement this idea?</p>
