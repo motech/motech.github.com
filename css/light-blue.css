@@ -1374,10 +1374,10 @@ pre.allowed-tags {
 }
 
 #logo a {
-	background: transparent url(../assets/icons/motechsuite.gif) no-repeat 0 0;
+	background: transparent url(../assets/icons/logo_color_y-orig.gif) no-repeat 0 0;
 	display: block;
-	height: 80px; /* Set this to your logo image height */
-	width: 325px; /* Set this to your logo image width */
+	height: 117px; /* Set this to your logo image height */
+	width: 312px; /* Set this to your logo image width */
 	overflow: hidden;
 	text-indent: -9999em;
 }
